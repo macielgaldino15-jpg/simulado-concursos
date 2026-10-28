@@ -67,7 +67,7 @@
                     </span>
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Escolha o seu Simulado</h2>
                     <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm sm:text-base max-w-2xl mx-auto">
-                        Resolva provas fixas completas ou gere provas inéditas sob medida com a nossa Inteligência Artificial integrada.
+                        Resolva provas oficiais completas ou monte simulados personalizados sob medida com os nossos filtros avançados.
                     </p>
                 </div>
 
@@ -118,7 +118,7 @@
 
                     <!-- Botões de Ação -->
                     <button onclick="startQuiz()" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4">
-                        <span>Iniciar Simulado Padrão (Fixo)</span>
+                        <span>Iniciar Simulado</span>
                         <i class="fa-solid fa-play text-sm"></i>
                     </button>
                 </div>
@@ -458,8 +458,6 @@
     renderMap(); 
     loadQuestion(0);
 }
-        }
-
         function setupTimer() {
             clearInterval(timerInterval);
             const timerContainer = document.getElementById('timerContainer');
