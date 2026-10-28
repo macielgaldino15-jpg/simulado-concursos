@@ -2,20 +2,20 @@ window.bancoDeQuestoes = {
     "Língua Portuguesa": [
         {
             id: 1,
-            enunciado: "Assinale a alternativa em que a regência verbal está correta de acordo com a norma-padrão.",
+            enunciado: "Assinale a alternativa em que a regência verbal está correta de acordo com a norma-padrão da língua portuguesa.",
             opcoes: [
-                "A) Assistimos o jogo de futebol no estádio.",
-                "B) O médico aspirava o cargo de diretor.",
-                "C) Visando ao bem-estar de todos, o prefeito assinou o decreto.",
-                "D) Obedeci o regulamento rigorosamente.",
-                "E) Implicou-se com o atraso do colega."
+                "A) Assistimos o jogo de futebol no estádio do Rio Branco.",
+                "B) O candidato aspirava o cargo de Agente Legislativo.",
+                "C) Visando ao bem-estar da comunidade, a câmara aprovou o projeto.",
+                "D) Obedeci o regulamento interno rigorosamente durante o expediente.",
+                "E) Implicou-se com o atraso do colega na sessão ordinária."
             ],
             correta: 2,
-            comentario: "O verbo 'visar' no sentido de 'objetivar' rege a preposição 'a' (visar a algo)."
+            comentario: "O verbo 'visar' no sentido de 'objetivar' ou 'almejar' rege a preposição 'a' (visar a algo), logo o correto é 'visando ao bem-estar'."
         },
         {
             id: 2,
-            enunciado: "No que se refere à acentuação gráfica, assinale a palavra que NÃO deve receber acento:",
+            enunciado: "No que se refere à acentuação gráfica conforme o Novo Acordo Ortográfico, assinale a palavra que NÃO deve receber acento:",
             opcoes: [
                 "A) Assembleia",
                 "B) Ideia",
@@ -24,72 +24,47 @@ window.bancoDeQuestoes = {
                 "E) Jiboia"
             ],
             correta: 2,
-            comentario: "Os ditongos abertos ('ei', 'oi') nas palavras paroxítonas perderam o acento gráfico com o Novo Acordo."
+            comentario: "Os ditongos abertos ('ei', 'oi') nas palavras paroxítonas perderam o acento gráfico com o Novo Acordo Ortográfico."
         },
-        // ... (Pode continuar a adicionar aqui os IDs 3 até 100 de Português)
-    ],
-    "Legislação Municipal": [
         {
-            id: 101,
-            enunciado: "Conforme a Lei Orgânica do Município de Rio Branco (AC), a fiscalização financeira é exercida com o auxílio de:",
+            id: 3,
+            enunciado: "Assinale a alternativa em que a concordância nominal está estritamente correta:",
             opcoes: [
-                "A) Tribunal de Contas do Estado do Acre (TCE/AC).",
-                "B) Tribunal de Contas da União.",
-                "C) Controladoria-Geral da União.",
-                "D) Comissão de Finanças.",
-                "E) Ministério Público."
+                "A) É proibido entrada de pessoas não autorizadas no plenário.",
+                "B) Seguem anexo as certidões negativas solicitadas.",
+                "C) Muito obrigada, disse a servidora ao vereador.",
+                "D) Meio confusa com o edital, ela não entendeu o prazo.",
+                "E) Haviam muitos candidatos inscritos para o concurso."
             ],
-            correta: 0,
-            comentario: "O controle externo conta com o auxílio técnico do TCE/AC."
+            correta: 2,
+            comentario: "'Obrigada' concorda com o género feminino de quem fala. Em 'É proibido entrada', o correto seria 'É proibida a entrada'."
         },
         {
-            id: 102,
-            enunciado: "São Poderes do Município de Rio Branco, independentes e harmônicos entre si:",
+            id: 4,
+            enunciado: "Assinale a alternativa em que a crase foi empregada incorretamente, contrariando a norma-padrão.",
             opcoes: [
-                "A) Apenas Executivo e Legislativo.",
-                "B) Executivo, Legislativo e Judiciário.",
-                "C) Executivo, Legislativo e Tribunal de Contas.",
-                "D) Prefeitura e Conselho Municipal.",
-                "E) Legislativo e Ministério Público."
+                "A) O candidato compareceu à sessão solene da câmara.",
+                "B) Os vereadores voltaram à pauta de votações.",
+                "C) Dirigiu-se à Vossa Excelência com o devido respeito.",
+                "D) Aprovou-se o projeto à revelia da oposição.",
+                "E) Fomos à Paris conhecer as inovações tecnológicas."
             ],
-            correta: 0,
-            comentario: "O município é constituído apenas pelos Poderes Executivo e Legislativo."
+            correta: 4,
+            comentario: "Não se emprega crase antes de nomes de cidades que não aceitam o artigo 'a'."
         },
-        // ... (Pode continuar a adicionar aqui os IDs 103 até 200 de Legislação)
-    ],
-    "Raciocínio Lógico-Matemático": [
         {
-            id: 201,
-            enunciado: "Se a proposição 'Se o candidato estuda, então ele é aprovado' é falsa, o valor lógico das proposições simples é:",
+            id: 5,
+            enunciado: "Assinale a opção em que a formação de plural de substantivos compostos está em desacordo com a gramática:",
             opcoes: [
-                "A) Ambas verdadeiras.",
-                "B) A primeira verdadeira e a segunda falsa.",
-                "C) A primeira falsa e a segunda verdadeira.",
-                "D) Ambas falsas.",
-                "E) Indeterminado."
+                "A) Couve-flor / couves-flores",
+                "B) Beija-flor / beija-flores",
+                "C) Decreto-lei / decretos-leis",
+                "D) Amor-perfeito / amores-perfeitos",
+                "E) Segunda-feira / segundas-feiras"
             ],
             correta: 1,
-            comentario: "Uma condicional só é falsa quando a antecedente é verdadeira e a consequente é falsa (V -> F)."
+            comentario: "Na palavra composta 'beija-flor', formada por verbo + substantivo, o verbo permanece invariável e o substantivo vai para o plural, logo o correto é 'beija-flores'."
         },
-        // ... (Pode continuar a adicionar aqui os IDs 202 até 250 de RLM)
-    ],
-    "Noções de Informática": [
-        {
-            id: 301,
-            enunciado: "No Windows, o atalho de teclado para abrir o Explorador de Arquivos diretamente é:",
-            opcoes: [
-                "A) Win + D",
-                "B) Win + E",
-                "C) Win + R",
-                "D) Win + L",
-                "E) Ctrl + Alt + Del"
-            ],
-            correta: 1,
-            comentario: "A combinação Tecla Windows + E abre o Explorador de Arquivos."
-        },
-        // ... (Pode continuar a adicionar aqui os IDs 302 até 300 de Informática)
-    ],
-"Língua Portuguesa": [
         {
             id: 6,
             enunciado: "Assinale a alternativa que apresenta a grafia correta de todas as palavras segundo o vocabulário ortográfico da língua portuguesa:",
@@ -101,7 +76,7 @@ window.bancoDeQuestoes = {
                 "E) Analizar, paralisia, marrom."
             ],
             correta: 1,
-            comentario: "A palavra 'impecilho' grafa-se com 'e' (e não empecilho com i), 'despesa' e 'ascensão' estão corretas. 'Paralização' grafa-se com 's' (paralisação), 'analizar' escreve-se com 'z' (analisar)."
+            comentario: "A palavra 'impecilho' grafa-se com 'e', 'despesa' e 'ascensão' estão corretas. 'Paralização' grafa-se com 's'."
         },
         {
             id: 7,
@@ -114,7 +89,7 @@ window.bancoDeQuestoes = {
                 "E) O fiscal pediu que todos guardassem os materiais."
             ],
             correta: 1,
-            comentario: "A oração 'de que passaria nas primeiras vagas' explica o substantivo 'certeza' antecedido por dois-pontos, funcionando como aposto (oração subordinada substantiva apositiva)."
+            comentario: "A oração 'de que passaria nas primeiras vagas' explica o substantivo 'certeza' antecedido por dois-pontos, funcionando como aposto."
         },
         {
             id: 8,
@@ -127,11 +102,11 @@ window.bancoDeQuestoes = {
                 "E) 'Conforme o edital determina, a prova será às 8h' -> 'Segundo o edital determina...'"
             ],
             correta: 2,
-            comentario: "'Caso' expressa condição, enquanto 'contanto que' expressa condição com valor restritivo ou concessivo dependendo do contexto, mas a troca altera a nuance exata. Nas demais opções, os conectivos são sinônimos perfeitos (concessão, causa, consequência e conformidade)."
+            comentario: "'Caso' expressa condição, enquanto 'contanto que' expressa condição com valor restritivo ou concessivo."
         },
         {
             id: 9,
-            enunciado: "Em 'O Diretor entregou **ao servidor** o memorando', a expressão destacada exerce a função sintática de:",
+            enunciado: "Em 'O Diretor entregou ao servidor o memorando', a expressão destacada exerce a função sintática de:",
             opcoes: [
                 "A) Objeto direto.",
                 "B) Objeto indireto.",
@@ -140,7 +115,7 @@ window.bancoDeQuestoes = {
                 "E) Agente da passiva."
             ],
             correta: 1,
-            comentario: "O verbo 'entregar' é bitransitivo (quem entrega, entrega algo a alguém). O objeto direto é 'o memorando' e o objeto indireto (regido por preposição 'a') é 'ao servidor'."
+            comentario: "O verbo 'entregar' é bitransitivo. O objeto direto é 'o memorando' e o objeto indireto é 'ao servidor'."
         },
         {
             id: 10,
@@ -153,75 +128,50 @@ window.bancoDeQuestoes = {
                 "E) Livre-escolha / alto-relevos"
             ],
             correta: 0,
-            comentario: "Em 'guarda-chuva' (verbo + substantivo), apenas o segundo elemento varia. Em 'pão-duro' (substantivo + adjetivo), ambos variam. As demais opções contêm erros como 'decretos-leis' (o correto é decretos-lei ou decreto-leis dependendo da gramática tradicional, mas a regra padrão exige atenção aos elementos)."
-        },
-        {
-            id: 11,
-            enunciado: "Assinale a frase em que a regência nominal está correta:",
-            opcoes: [
-                "A) Ele tinha grande amor para a pátria.",
-                "B) O servidor estava apto para assumir o cargo.",
-                "C) Era favorável àquela medida administrativa.",
-                "D) Tinha ojeriza com injustiças no serviço público.",
-                "E) Estava ansioso em saber o resultado do concurso."
-            ],
-            correta: 2,
-            comentario: "O adjetivo 'favorável' rege a preposição 'a' (favorável a algo). 'Apto' rege preferencialmente 'a' (apto a), 'amor' rege 'a' ou 'por', 'ojeriza' rege 'a' ou 'por', e 'ansioso' rege 'de' ou 'para'."
-        },
-        {
-            id: 12,
-            enunciado: "A função da linguagem predominante em textos informativos de editais de concursos públicos, focada em transmitir dados objetivos, é a:",
-            opcoes: [
-                "A) Emotiva ou expressiva.",
-                "B) Poética.",
-                "C) Fática.",
-                "D) Referencial ou denotativa.",
-                "E) Conativa ou apelativa."
-            ],
-            correta: 3,
-            comentario: "A função referencial (ou denotativa) prioriza a transmissão de informações reais, objetivas e diretas, característica essencial de manuais, notícias e editais."
-        },
-        {
-            id: 13,
-            enunciado: "Assinale a alternativa em que a palavra destacada NÃO funciona como pronome relativo:",
-            opcoes: [
-                "A) O edital **que** foi publicado hoje trouxe novidades.",
-                "B) A vaga **que** o candidato almejava era difícil.",
-                "C) Não sei **que** dia será a prova de títulos.",
-                "D) A cidade **onde** (em que) moro é maravilhosa.",
-                "E) O fiscal **cujo** caderno foi extraviado chamou a banca."
-            ],
-            correta: 2,
-            comentario: "Em 'Não sei que dia...', a palavra 'que' acompanha o substantivo 'dia', funcionando como pronome adjetivo interrogativo (ou determinativo), e não como pronome relativo."
-        },
-        {
-            id: 14,
-            enunciado: "Assinale a opção em que todas as palavras são formadas pelo processo de derivação por prefixação e sufixação simultânea (parassíntese):",
-            opcoes: [
-                "A) Desleal, infeliz, prever.",
-                "B) Amanhecer, entardecer, esquentar.",
-                "C) Infelizmente, submarino, reorganizar.",
-                "D) Glorificar, pastelaria, caatinga.",
-                "E) Despejar, reescrever, amoral."
-            ],
-            correta: 1,
-            comentario: "A parassíntese ocorre quando um prefixo e um sufixo são acrescentados a uma base *ao mesmo tempo*, sendo que a palavra não existe sem um deles (ex: a + manh + ecer -> não existe 'amanh' nem 'manhecer' isolados com o mesmo sentido)."
-        },
-        {
-            id: 15,
-            enunciado: "Assinale a alternativa correta quanto ao uso dos porquês:",
-            opcoes: [
-                "A) Por quê você não estudou para o concurso?",
-                "B) O candidato não foi aprovado porque faltou à prova.",
-                "C) Não sei o por quê de tanta demora na divulgação.",
-                "D) Os fiscais saíram por que estavam cansados.",
-                "E) Eles venceram a etapa, porquê?"
-            ],
-            correta: 1,
-            comentario: "'Porque' junto e sem acento é conjunção explicativa/causal, usada em respostas. 'Por quê' separado e com acento fica no final de frases interrogativas. 'O porquê' é substantivo (precisa de artigo). 'Por que' separado e sem acento usa-se em perguntas diretas no início."
-        },
+            comentario: "Em 'guarda-chuva' (verbo + substantivo), apenas o segundo elemento varia. Em 'pão-duro', ambos variam."
+        }
     ],
+
     "Legislação Municipal": [
+        {
+            id: 101,
+            enunciado: "Conforme a Lei Orgânica do Município de Rio Branco (AC), a fiscalização financeira e orçamentária do município é exercida com o auxílio de qual órgão técnico?",
+            opcoes: [
+                "A) Tribunal de Contas do Estado do Acre (TCE/AC).",
+                "B) Tribunal de Contas da União (TCU).",
+                "C) Controladoria-Geral da União.",
+                "D) Comissão Permanente de Finanças da Câmara Municipal.",
+                "E) Ministério Público do Estado do Acre."
+            ],
+            correta: 0,
+            comentario: "O controle externo da Câmara Municipal de Rio Branco é exercido com o auxílio técnico do Tribunal de Contas do Estado do Acre (TCE/AC)."
+        },
+        {
+            id: 102,
+            enunciado: "De acordo com a Lei Orgânica de Rio Branco, a iniciativa das leis complementares e ordinárias cabe a:",
+            opcoes: [
+                "A) Exclusivamente ao Prefeito Municipal.",
+                "B) Exclusivamente a qualquer membro da Câmara Municipal.",
+                "C) Ao Prefeito, a qualquer membro ou comissão da Câmara, e aos cidadãos na forma da lei.",
+                "D) Apenas ao Tribunal de Contas.",
+                "E) Aos secretários municipais em conjunto com o Poder Judiciário."
+            ],
+            correta: 2,
+            comentario: "A iniciativa legislativa municipal é ampla, cabendo ao Prefeito, aos Vereadores ou Comissões da Câmara, e também por iniciativa popular."
+        },
+        {
+            id: 103,
+            enunciado: "São Poderes do Município de Rio Branco, independentes e harmônicos entre si:",
+            opcoes: [
+                "A) Apenas o Poder Executivo e o Poder Legislativo.",
+                "B) O Poder Executivo, o Poder Legislativo e o Poder Judiciário municipal.",
+                "C) O Poder Executivo, o Poder Legislativo e o Tribunal de Contas.",
+                "D) A Prefeitura, a Câmara de Vereadores e o Conselho Tutelar.",
+                "E) O Poder Legislativo, o Ministério Público e a Guarda Municipal."
+            ],
+            correta: 0,
+            comentario: "O Município é constituído apenas pelos Poderes Legislativo e Executivo, não havendo Poder Judiciário municipal."
+        },
         {
             id: 104,
             enunciado: "Conforme a Lei Orgânica do Município de Rio Branco, a criação, estruturação e atribuições das secretarias municipais competem privativamente a qual autoridade?",
@@ -246,114 +196,37 @@ window.bancoDeQuestoes = {
                 "E) 6 meses."
             ],
             correta: 1,
-            comentario: "A Mesa Diretora da Câmara de Rio Branco possui mandato de dois anos, sendo vedada a recondução para o mesmo cargo na eleição seguinte do mesmo período legislativo (conforme regras comuns em leis orgânicas municipais)."
-        },
-        {
-            id: 106,
-            enunciado: "Qual é a percentagem mínima da receita municipal de impostos que deve ser aplicada na manutenção e desenvolvimento do ensino, conforme preceitos constitucionais e orgânicos?",
-            opcoes: [
-                "A) 10%",
-                "B) 15%",
-                "C) 25%",
-                "D) 30%",
-                "E) 50%"
-            ],
-            correta: 2,
-            comentario: "Os municípios devem aplicar anualmente nunca menos de 25% da sua receita resultante de impostos na manutenção e desenvolvimento do ensino."
-        },
-        {
-            id: 107,
-            enunciado: "O plano diretor do município de Rio Branco é obrigatório para cidades com mais de quantos habitantes, servindo de instrumento básico da política de desenvolvimento:",
-            opcoes: [
-                "A) 10.000 habitantes.",
-                "B) 20.000 habitantes.",
-                "C) 50.000 habitantes.",
-                "D) 100.000 habitantes.",
-                "E) 500.000 habitantes."
-            ],
-            correta: 1,
-            comentario: "Conforme o Estatuto da Cidade e diretrizes aplicadas, o plano diretor é obrigatório para cidades com mais de 20 mil habitantes."
-        },
-        {
-            id: 108,
-            enunciado: "De acordo com a Lei Orgânica Municipal, as contas prestadas anualmente pelo Prefeito ficarão disponíveis para exame dos cidadãos por qual período na Câmara Municipal?",
-            opcoes: [
-                "A) 15 dias",
-                "B) 30 dias",
-                "C) 60 dias",
-                "D) 90 dias",
-                "E) 120 dias"
-            ],
-            correta: 2,
-            comentario: "As contas do município ficam abertas à apreciação e fiscalização popular pelo prazo de 60 dias anualmente na Câmara."
-        },
-        {
-            id: 109,
-            enunciado: "As leis complementares municipais em Rio Branco exigem para sua aprovação o voto favorável de:",
-            opcoes: [
-                "A) Maioria simples dos membros da Câmara.",
-                "B) Maioria absoluta dos membros da Câmara Municipal.",
-                "C) Dois terços dos vereadores.",
-                "D) Unanimidade dos presentes.",
-                "E) Maioria de três quintos."
-            ],
-            correta: 1,
-            comentario: "As leis complementares exigem maioria absoluta (metade mais um do total de membros da casa legislativa), diferindo das leis ordinárias que exigem maioria simples."
-        },
-        {
-            id: 110,
-            enunciado: "É vedada a cassação de direitos políticos em âmbito municipal. Contudo, a perda ou suspensão de direitos políticos acarreta para o vereador:",
-            opcoes: [
-                "A) Apenas advertência verbal.",
-                "B) A perda do mandato declarada pela Mesa da Câmara.",
-                "C) Afastamento temporário sem perda de subsídio.",
-                "D) Pagamento de multa eleitoral.",
-                "E) Redução da carga horária."
-            ],
-            correta: 1,
-            comentario: "A suspensão ou perda dos direitos políticos gera a perda do mandato eletivo, declarada pela Mesa da Câmara ou mediante provocação de partido político/cidadão."
-        },
-        {
-            id: 111,
-            enunciado: "A fiscalização contábil, financeira, orçamentária, operacional e patrimonial do Município será exercida pela Câmara Municipal mediante:",
-            opcoes: [
-                "A) Controle externo e sistema de controle interno de cada poder.",
-                "B) Auditoria federal exclusiva.",
-                "C) Intervenção estadual imediata.",
-                "D) Conselho de Cidadãos Voluntários.",
-                "E) Ministério Público Federal."
-            ],
-            correta: 0,
-            comentario: "O controle externo é exercido pela Câmara com auxílio do Tribunal de Contas, e o controle interno é mantido por cada um dos poderes municipais."
-        },
-        {
-            id: 112,
-            enunciado: "Qual é o regime jurídico adotado de regra para os servidores da administração direta, autárquica e das fundações públicas do município de Rio Branco?",
-            opcoes: [
-                "A) Regime da CLT (Consolidação das Leis do Trabalho).",
-                "B) Regime estatutário único.",
-                "C) Regime de terceirização temporária.",
-                "D) Contrato de prestação de serviços autônomos.",
-                "E) Regime celetista flexível."
-            ],
-            correta: 1,
-            comentario: "A Constituição Federal e as leis orgânicas preveem a instituição de regime jurídico estatutário único e planos de carreira para os servidores públicos da administração direta e autárquica."
-        },
-        {
-            id: 113,
-            enunciado: "A criação de cargos, empregos e funções públicas na administração direta e autárquica do município depende de:",
-            opcoes: [
-                "A) Decreto exclusivo do Prefeito.",
-                "B) Portaria do Secretário de Administração.",
-                "C) Lei específica de iniciativa do poder competente.",
-                "D) Resolução interna da Câmara.",
-                "E) Medida provisória municipal."
-            ],
-            correta: 2,
-            comentario: "A criação, alteração ou extinção de cargos públicos exige lei em sentido formal, respeitando a reserva de lei."
-        },
+            comentario: "A Mesa Diretora da Câmara de Rio Branco possui mandato de dois anos."
+        }
+    ],
 
     "Raciocínio Lógico-Matemático": [
+        {
+            id: 201,
+            enunciado: "Se a proposição 'Se o candidato estuda, então ele é aprovado' é falsa, qual é o valor lógico das proposições simples que a compõem?",
+            opcoes: [
+                "A) Ambas são verdadeiras.",
+                "B) A primeira é verdadeira e a segunda é falsa.",
+                "C) A primeira é falsa e a segunda é verdadeira.",
+                "D) Ambas são falsas.",
+                "E) Não é possível determinar sem dados adicionais."
+            ],
+            correta: 1,
+            comentario: "A implicação material (condicional) só é falsa quando a antecedente é verdadeira e a consequente é falsa (V -> F)."
+        },
+        {
+            id: 202,
+            enunciado: "Em uma sequência lógica, os números seguem um padrão: 3, 6, 12, 24, 48, ... O próximo termo desta sequência é:",
+            opcoes: [
+                "A) 64",
+                "B) 84",
+                "C) 96",
+                "D) 100",
+                "E) 120"
+            ],
+            correta: 2,
+            comentario: "Cada termo a partir do segundo é o dobro do anterior (multiplica-se por 2). Assim, 48 x 2 = 96."
+        },
         {
             id: 203,
             enunciado: "Se a negação da proposição 'Todos os candidatos estudaram' é verdadeira, qual das seguintes alternativas expressa corretamente essa negação?",
@@ -365,100 +238,36 @@ window.bancoDeQuestoes = {
                 "E) Pelo menos um candidato estudou."
             ],
             correta: 1,
-            comentario: "A negação de um quantificador universal ('Todo A é B') é um quantificador existencial negativo ('Algum A não é B' ou 'Existe pelo menos um que não é'). Portanto, 'Algum candidato não estudou'."
-        },
-        {
-            id: 204,
-            enunciado: "Numa turma de 40 alunos, 25 gostam de Direito Constitucional, 20 gostam de Língua Portuguesa, e 5 não gostam de nenhuma das duas matérias. Quantos alunos gostam de ambas as disciplinas?",
-            opcoes: [
-                "A) 5",
-                "B) 10",
-                "C) 15",
-                "D) 20",
-                "E) 25"
-            ],
-            correta: 1,
-            comentario: "Total de alunos = 40. Alunos que gostam de pelo menos uma = 40 - 5 = 35. Pelo princípio da inclusão-exclusão: Total(União) = A + B - Intersecção. Logo, 35 = 25 + 20 - X => 35 = 45 - X => X = 10."
-        },
-        {
-            id: 205,
-            enunciado: "Se o dia 10 de março de um ano não bissexto caiu em uma terça-feira, em que dia da semana cairá o dia 10 de abril do mesmo ano?",
-            opcoes: [
-                "A) Quinta-feira",
-                "B) Sexta-feira",
-                "C) Sábado",
-                "D) Domingo",
-                "E) Quarta-feira"
-            ],
-            correta: 1,
-            comentario: "O mês de março tem 31 dias. De 10 de março até 10 de abril passam-se exatamente 31 dias. Dividindo 31 por 7 (dias da semana), o quociente é 4 semanas e o resto é 3. Adicionando 3 dias à terça-feira: quarta (1), quinta (2), sexta-feira (3)."
-        },
-        {
-            id: 206,
-            enunciado: "Assinale a alternativa que apresenta uma tautologia (proposição sempre verdadeira independentemente dos valores lógicos das partes):",
-            opcoes: [
-                "A) P ∧ ~P",
-                "B) P → F",
-                "C) P ∨ ~P",
-                "D) P ↔ ~P",
-                "E) ~(P ∨ Q)"
-            ],
-            correta: 2,
-            comentario: "A disjunção exclusiva ou inclusiva com a própria negação (P ou não-P) resulta sempre em Verdadeiro (tautologia). Exemplo: 'Chove ou não chove' é sempre verdade."
-        },
-        {
-            id: 207,
-            enunciado: "Se 5 máquinas idênticas produzem 50 peças em 5 minutos, em quantos minutos 10 máquinas iguais produzirão 100 peças?",
-            opcoes: [
-                "A) 2 minutos",
-                "B) 5 minutos",
-                "C) 10 minutos",
-                "D) 20 minutos",
-                "E) 50 minutos"
-            ],
-            correta: 1,
-            comentario: "Regra de três composta: 5 máquinas produzem 50 peças em 5 min. 10 máquinas (o dobro de máquinas) produzirão o dobro de peças (100 peças) exatamente no mesmo tempo (5 minutos), pois a proporção de capacidade produtiva mantém-se."
-        },
+            comentario: "A negação de um quantificador universal ('Todo A é B') é um quantificador existencial negativo ('Algum A não é B')."
+        }
+    ],
 
     "Noções de Informática": [
         {
-            id: 304,
-            enunciado: "Qual dos seguintes protocolos é utilizado especificamente para o envio seguro de mensagens de correio eletrônico (e-mail) através da internet?",
+            id: 301,
+            enunciado: "No sistema operacional Windows, qual atalho de teclado é utilizado para abrir o Explorador de Arquivos diretamente?",
             opcoes: [
-                "A) POP3",
-                "B) IMAP",
-                "C) SMTPS (ou SMTP com TLS)",
-                "D) HTTP",
-                "E) FTP"
+                "A) Tecla Windows + D",
+                "B) Tecla Windows + E",
+                "C) Tecla Windows + R",
+                "D) Tecla Windows + L",
+                "E) Ctrl + Alt + Delete"
             ],
-            correta: 2,
-            comentario: "O SMTP (Simple Mail Transfer Protocol) é o protocolo padrão para envio de e-mails, e suas versões seguras utilizam criptografia (como SMTPS ou portas com TLS/SSL). POP3 e IMAP servem para recebimento."
+            correta: 1,
+            comentario: "O atalho Tecla Windows + E abre o Explorador de Arquivos."
         },
         {
-            id: 305,
-            enunciado: "No sistema operacional Windows, qual atalho de teclado abre o Gerenciador de Tarefas diretamente?",
+            id: 302,
+            enunciado: "No Microsoft Excel, qual função é utilizada para calcular a média aritmética de um intervalo de células de A1 até A10?",
             opcoes: [
-                "A) Ctrl + Shift + Esc",
-                "B) Alt + Tab",
-                "C) Win + X",
-                "D) Ctrl + Alt + Delete",
-                "E) F3"
+                "A) =SOMA(A1:A10)",
+                "B) =MEDIA(A1:A10)",
+                "C) =MAXIMO(A1:A10)",
+                "D) =CONT.VALORES(A1:A10)",
+                "E) =MED(A1:A10)"
             ],
-            correta: 0,
-            comentario: "O atalho direto para abrir o Gerenciador de Tarefas no Windows é Ctrl + Shift + Esc. (Nota: Ctrl + Alt + Delete abre um menu de opções onde o Gerenciador é uma delas, mas o atalho direto é o primeiro)."
-        },
-        {
-            id: 306,
-            enunciado: "No Microsoft Word, qual é a tecla de função padrão utilizada para acionar o comando 'Salvar Como' ou abrir a caixa de diálogo correspondente na maioria das versões?",
-            opcoes: [
-                "A) F1",
-                "B) F4",
-                "C) F7",
-                "D) F12",
-                "E) F5"
-            ],
-            correta: 3,
-            comentario: "A tecla F12 aciona a opção 'Salvar Como' no Word e em grande parte dos softwares do pacote Office. A tecla F7 aciona a verificação ortográfica e gramatical."
+            correta: 1,
+            comentario: "A função =MEDIA(intervalo) calcula a média aritmética dos valores contidos nas células especificadas."
         },
         {
             id: 307,
@@ -471,7 +280,7 @@ window.bancoDeQuestoes = {
                 "E) Não repúdio"
             ],
             correta: 2,
-            comentario: "A Confidencialidade assegura que o dado não seja divulgado a entidades ou pessoas não autorizadas (sigilo). Integridade garante que o dado não foi alterado indevidamente, e Disponibilidade garante o acesso quando necessário."
+            comentario: "A Confidencialidade assegura que o dado não seja divulgado a entidades ou pessoas não autorizadas (sigilo)."
         },
         {
             id: 308,
@@ -484,7 +293,7 @@ window.bancoDeQuestoes = {
                 "E) Erro de sintaxe"
             ],
             correta: 2,
-            comentario: "A função condicional SE testa a condição (10 > 5). Como 10 é maior que 5, a condição é verdadeira, retornando o primeiro argumento de resultado ('Aprovado')."
+            comentario: "A função condicional SE testa a condição (10 > 5). Como 10 é maior que 5, a condição é verdadeira, retornando o primeiro argumento ('Aprovado')."
         }
     ]
 };
