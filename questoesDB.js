@@ -1,5 +1,5 @@
 // questoesDB.js
-const bancoDeQuestoes = {
+window.bancoDeQuestoes = {
     "Língua Portuguesa": [
         {
             id: 1,
