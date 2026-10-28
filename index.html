@@ -520,6 +520,20 @@
             currentIndex = index;
             const q = activeQuestions[currentIndex];
             if (!q) return;
+
+            let nomeDisciplina = "CONHECIMENTOS GERAIS";
+            
+            if (q.disciplinaAtual) {
+                nomeDisciplina = q.disciplinaAtual;
+            } else if (q.materia) {
+                nomeDisciplina = q.materia;
+            }
+
+            // Atualiza o elemento visual da tag de disciplina no topo da questão
+            const discTag = document.getElementById('questionDisciplineTag') || document.querySelector('.bg-blue-100'); 
+            if (discTag) {
+                discTag.innerText = nomeDisciplina;
+            }
             const examInfo = EXAMS_DATA[currentExamKey] || {banca: "IDIB", title: "Concurso"};
 
             const disciplineBadge = document.getElementById('disciplineBadge');
