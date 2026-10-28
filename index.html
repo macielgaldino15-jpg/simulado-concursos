@@ -528,7 +528,7 @@
             const questionCode = document.getElementById('questionCode');
             const questionText = document.getElementById('questionText');
 
-            if (disciplineBadge) disciplineBadge.textContent = q.disciplineName || "Geral";
+            if (disciplineBadge) disciplineBadge.textContent = q.disciplinaAtual || q.disciplinaName || "Geral";
             if (questionCounterText) questionCounterText.textContent = `Questão ${currentIndex + 1} de ${activeQuestions.length}`;
             if (examMetaTag) examMetaTag.textContent = `${examInfo.banca} • ${examInfo.title}`;
             if (questionCode) questionCode.textContent = `#Q${q.id}`;
