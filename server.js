@@ -21,7 +21,7 @@ app.post('/api/gerar-questoes', async (req, res) => {
         const { concurso, disciplina, quantidade, historicoTemas } = req.body;
         
         // Usando a forma direta e compatível com todas as versões recentes
-        const model = genAI.getGenerativeModel({ model: "gemini-3.8-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const prompt = `
         Aja como um examinador de concursos públicos da banca ${concurso}.
