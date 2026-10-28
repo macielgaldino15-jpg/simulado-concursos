@@ -220,7 +220,7 @@ window.bancoDeQuestoes = {
             correta: 1,
             comentario: "'Porque' junto e sem acento é conjunção explicativa/causal, usada em respostas. 'Por quê' separado e com acento fica no final de frases interrogativas. 'O porquê' é substantivo (precisa de artigo). 'Por que' separado e sem acento usa-se em perguntas diretas no início."
         },
-
+    ],
     "Legislação Municipal": [
         {
             id: 104,
