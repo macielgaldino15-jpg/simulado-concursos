@@ -413,11 +413,52 @@
                 selecionadas = embaralhadas.slice(0, quantidadeDesejada);
             }
 
-            // 5. Salvar os novos IDs vistos no localStorage
+            // 5. Estruturar por Concurso (Blocos por Disciplina) respeitando o anti-repetição
+            if (discValue === 'ALL') {
+                // Percorre cada disciplina mantendo a ordem oficial da prova
+                for (let disciplina in bancoDeQuestoes) {
+                    let poolDisc = bancoDeQuestoes[disciplina] || [];
+                    
+                    // Filtra apenas as questões que o usuário AINDA NÃO VIU nesta disciplina
+                    let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(q.id));
+
+                    // Se esgotaram as inéditas desta disciplina, reinicia o ciclo para ela
+                    if (disponiveisDisc.length === 0) {
+                        disponiveisDisc = [...poolDisc];
+                    }
+
+                    // Se o usuário ativou o embaralhamento, embaralha dentro da própria disciplina
+                    let escolhidasDisc = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
+
+                    // Adiciona as questões desta disciplina à prova sequencial
+                    selecionadas = selecionadas.concat(escolhidasDisc);
+                }
+            } else {
+                // Se o usuário escolheu uma disciplina específica
+                let pool = bancoDeQuestoes[discValue] || [];
+                if (pool.length === 0) {
+                    alert("Não há questões cadastradas para esta disciplina no 'questoesDB.js'.");
+                    return;
+                }
+
+                let disponiveis = pool.filter(q => !questoesVistas.includes(q.id));
+                const quantidadeDesejada = 10; // Limite por lote de disciplina específica
+
+                if (disponiveis.length < quantidadeDesejada) {
+                    alert("Parabéns! Concluiu todas as questões inéditas desta disciplina. O histórico foi reiniciado.");
+                    localStorage.removeItem('questoes_vistas');
+                    questoesVistas = [];
+                    disponiveis = [...pool];
+                }
+
+                let embaralhadas = shuffle ? disponiveis.sort(() => Math.random() - 0.5) : disponiveis;
+                selecionadas = embaralhadas.slice(0, quantidadeDesejada);
+            }
+            // 6. Salvar os novos IDs vistos no localStorage
             const novosIdsVistos = selecionadas.map(q => q.id);
             localStorage.setItem('questoes_vistas', JSON.stringify([...questoesVistas, ...novosIdsVistos]));
 
-            // 6. Configurar o estado do quiz e iniciar
+            // 7. Configurar o estado do quiz e iniciar
             activeQuestions = selecionadas;
             currentIndex = 0; 
             userAnswers = {}; 
