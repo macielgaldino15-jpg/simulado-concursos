@@ -373,68 +373,39 @@
             let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
             let selecionadas = [];
 
-            // 3. Estruturar por Concurso (Blocos por Disciplina) respeitando o anti-repetição
-            if (discValue === 'ALL') {
-                const estruturaEdital = [
-                    { nome: "Língua Portuguesa", limite: 10 },
-                    { nome: "Raciocínio Lógico", limite: 5 },
-                    { nome: "Ética no Serviço Público e Legislação", limite: 5 },
-                    { nome: "Conhecimentos Específicos", limite: 20 }
-                ];
+            // 3. Montar Prova Completa seguindo RIGOROSAMENTE a tabela do edital e o anti-repetição
+        if (discValue === 'ALL') {
+            const estruturaEdital = [
+                { nome: "Língua Portuguesa", limite: 10 },
+                { nome: "Raciocínio Lógico", limite: 5 },
+                { nome: "Ética no Serviço Público e Legislação", limite: 5 },
+                { nome: "Conhecimentos Específicos", limite: 20 }
+            ];
 
-                for (let bloco of estruturaEdital) {
-                    let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
+            for (let bloco of estruturaEdital) {
+                // Puxa diretamente do objeto bancoDeQuestoes
+                let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
 
-                    // Filtra apenas as questões que o usuário AINDA NÃO VIU (usando Nome + ID)
-                    let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
+                // Filtra as questões que o usuário AINDA NÃO VIU usando a chave única da disciplina
+                let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
 
-                    // Se esgotaram as inéditas desta disciplina, reinicia o ciclo para ela
-                    if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
-                        disponiveisDisc = [...poolDisc];
-                    }
-
-                    // Se o usuário ativou o embaralhamento, embaralha dentro da própria disciplina
-                    let escolhidasDisc = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
-                    
-                    // Corta o limite exato da tabela do edital
-                    let loteBloco = escolhidasDisc.slice(0, bloco.limite);
-
-                    // Cria o ID Global único para o histórico
-                    loteBloco.forEach(q => {
-                        q.disciplinaAtual = bloco.nome;
-                        q.idGlobal = bloco.nome + "_" + q.id; 
-                    });
-
-                    // Adiciona as questões desta disciplina à prova sequencial
-                    selecionadas = selecionadas.concat(loteBloco);
-                }
-            } else {
-                // Se o usuário escolheu uma disciplina específica
-                let pool = window.bancoDeQuestoes[discValue] || [];
-                if (pool.length === 0) {
-                    alert("Não há questões cadastradas para esta disciplina no 'questoesDB.js'.");
-                    return;
+                // Se as inéditas esgotarem, recicla apenas esta disciplina de forma inteligente
+                if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
+                    disponiveisDisc = [...poolDisc];
                 }
 
-                let disponiveis = pool.filter(q => !questoesVistas.includes(discValue + "_" + q.id));
-                const quantidadeDesejada = 10; 
+                // Embaralha se a opção estiver ativa
+                let escolhidas = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
+                let loteBloco = escolhidas.slice(0, bloco.limite);
 
-                if (disponiveis.length < quantidadeDesejada) {
-                    alert("Parabéns! Concluiu todas as questões inéditas desta disciplina. O histórico foi reiniciado.");
-                    // Limpa apenas o histórico se acabar tudo no treino isolado
-                    localStorage.removeItem('questoes_vistas');
-                    questoesVistas = [];
-                    disponiveis = [...pool];
-                }
-
-                let embaralhadas = shuffle ? disponiveis.sort(() => Math.random() - 0.5) : disponiveis;
-                let loteUnico = embaralhadas.slice(0, quantidadeDesejada);
-                loteUnico.forEach(q => {
-                    q.disciplinaAtual = discValue;
-                    q.idGlobal = discValue + "_" + q.id;
+                loteBloco.forEach(q => {
+                    q.disciplinaAtual = bloco.nome;
+                    q.idGlobal = bloco.nome + "_" + q.id; 
                 });
-                selecionadas = loteUnico;
+
+                selecionadas = selecionadas.concat(loteBloco);
             }
+        }
 
             // 4. Salvar os novos IDs vistos no localStorage (Exatamente como você pediu)
             const novosIdsVistos = selecionadas.map(q => q.idGlobal); // Pega o ID com o nome da matéria
