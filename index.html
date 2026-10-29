@@ -355,7 +355,7 @@
             if (activeExamBadge) activeExamBadge.textContent = examData.title.split('-')[0].trim();
         }
 
-        // ======= SIMULADO FIXO COM HISTÓRICO LOCAL (SEM REPETIÇÃO) =======
+       // ======= SIMULADO OFICIAL CÂMARA RB (COM HISTÓRICO LOCAL PROTEGIDO) =======
         function startQuiz() {
             const discSelectElem = document.getElementById('disciplineSelect');
             const timerSelectElem = document.getElementById('timerSelect');
@@ -364,12 +364,10 @@
             if (!discSelectElem) return;
             const discValue = discSelectElem.value;
             const timerVal = timerSelectElem ? parseInt(timerSelectElem.value) : 210;
-            const shuffle = shuffleToggleElem ? shuffleToggleElem.checked : true;
+            const shuffle = shuffleToggleElem ? shuffleToggleElem.checked : false;
 
             const feedbackRadios = document.getElementsByName('feedbackMode');
             for (let r of feedbackRadios) { if (r.checked) feedbackMode = r.value; }
-
-            const quantidadeDesejada = 10; 
 
             // 1. Validar se o banco de dados foi carregado
             if (!window.bancoDeQuestoes) {
@@ -377,90 +375,83 @@
                 return;
             }
 
-            // 2. Reunir o conjunto de questões base
-            let pool = [];
-            if (discValue === 'ALL') {
-                for (let mat in bancoDeQuestoes) {
-                    pool = pool.concat(bancoDeQuestoes[mat]);
-                }
-            } else {
-                pool = bancoDeQuestoes[discValue] || [];
-            }
-
-            if (pool.length === 0) {
-                alert("Não há questões cadastradas para esta seleção no 'questoesDB.js'.");
-                return;
-            }
-
-            // 3. Recuperar IDs já vistos pelo usuário armazenados no navegador
+            // 2. Recuperar IDs já vistos pelo usuário armazenados no navegador
             let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
-
-            // 4. Filtrar apenas as questões que o usuário AINDA NÃO VIU
-            const disponiveis = pool.filter(q => !questoesVistas.includes(q.id));
-
             let selecionadas = [];
-            if (disponiveis.length < quantidadeDesejada) {
-                alert("Parabéns! Concluiu todas as questões inéditas disponíveis. O histórico foi reiniciado para continuar a treinar.");
-                localStorage.removeItem('questoes_vistas');
-                questoesVistas = [];
-                
-                const embaralhadasTotal = [...pool].sort(() => Math.random() - 0.5);
-                selecionadas = embaralhadasTotal.slice(0, quantidadeDesejada);
-            } else {
-                const embaralhadas = shuffle ? disponiveis.sort(() => Math.random() - 0.5) : disponiveis;
-                selecionadas = embaralhadas.slice(0, quantidadeDesejada);
-            }
 
-            // 5. Estruturar por Concurso (Blocos por Disciplina) respeitando o anti-repetição
+            // 3. Estruturar por Concurso (Blocos por Disciplina) respeitando o anti-repetição
             if (discValue === 'ALL') {
-                // Percorre cada disciplina mantendo a ordem oficial da prova
-                for (let disciplina in bancoDeQuestoes) {
-                    let poolDisc = bancoDeQuestoes[disciplina] || [];
-                    
-                    // Filtra apenas as questões que o usuário AINDA NÃO VIU nesta disciplina
-                    let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(q.id));
+                const estruturaEdital = [
+                    { nome: "Língua Portuguesa", limite: 10 },
+                    { nome: "Raciocínio Lógico", limite: 5 },
+                    { nome: "Ética no Serviço Público e Legislação", limite: 5 },
+                    { nome: "Conhecimentos Específicos", limite: 20 }
+                ];
+
+                for (let bloco of estruturaEdital) {
+                    let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
+
+                    // Filtra apenas as questões que o usuário AINDA NÃO VIU (usando Nome + ID)
+                    let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
 
                     // Se esgotaram as inéditas desta disciplina, reinicia o ciclo para ela
-                    if (disponiveisDisc.length === 0) {
+                    if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
                         disponiveisDisc = [...poolDisc];
                     }
 
                     // Se o usuário ativou o embaralhamento, embaralha dentro da própria disciplina
                     let escolhidasDisc = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
+                    
+                    // Corta o limite exato da tabela do edital
+                    let loteBloco = escolhidasDisc.slice(0, bloco.limite);
+
+                    // Cria o ID Global único para o histórico
+                    loteBloco.forEach(q => {
+                        q.disciplinaAtual = bloco.nome;
+                        q.idGlobal = bloco.nome + "_" + q.id; 
+                    });
 
                     // Adiciona as questões desta disciplina à prova sequencial
-                    selecionadas = selecionadas.concat(escolhidasDisc);
+                    selecionadas = selecionadas.concat(loteBloco);
                 }
             } else {
                 // Se o usuário escolheu uma disciplina específica
-                let pool = bancoDeQuestoes[discValue] || [];
+                let pool = window.bancoDeQuestoes[discValue] || [];
                 if (pool.length === 0) {
                     alert("Não há questões cadastradas para esta disciplina no 'questoesDB.js'.");
                     return;
                 }
 
-                let disponiveis = pool.filter(q => !questoesVistas.includes(q.id));
-                const quantidadeDesejada = 10; // Limite por lote de disciplina específica
+                let disponiveis = pool.filter(q => !questoesVistas.includes(discValue + "_" + q.id));
+                const quantidadeDesejada = 10; 
 
                 if (disponiveis.length < quantidadeDesejada) {
                     alert("Parabéns! Concluiu todas as questões inéditas desta disciplina. O histórico foi reiniciado.");
+                    // Limpa apenas o histórico se acabar tudo no treino isolado
                     localStorage.removeItem('questoes_vistas');
                     questoesVistas = [];
                     disponiveis = [...pool];
                 }
 
                 let embaralhadas = shuffle ? disponiveis.sort(() => Math.random() - 0.5) : disponiveis;
-                selecionadas = embaralhadas.slice(0, quantidadeDesejada);
+                let loteUnico = embaralhadas.slice(0, quantidadeDesejada);
+                loteUnico.forEach(q => {
+                    q.disciplinaAtual = discValue;
+                    q.idGlobal = discValue + "_" + q.id;
+                });
+                selecionadas = loteUnico;
             }
-            // 6. Salvar os novos IDs vistos no localStorage
-            const novosIdsVistos = selecionadas.map(q => q.id);
-            localStorage.setItem('questoes_vistas', JSON.stringify([...questoesVistas, ...novosIdsVistos]));
 
-            // 7. Configurar o estado do quiz e iniciar
+            // 4. Salvar os novos IDs vistos no localStorage (Exatamente como você pediu)
+            const novosIdsVistos = selecionadas.map(q => q.idGlobal); // Pega o ID com o nome da matéria
+            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos])); // Previne duplicações no array
+            localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
+
+            // 5. Configurar o estado do quiz e iniciar
             activeQuestions = selecionadas;
             currentIndex = 0; 
-            userAnswers = {}; 
-            bookmarked = {}; 
+            userAnswers = {};  // MUDANÇA CRÍTICA: Agora guardaremos a resposta pelo Índice
+            bookmarked = {};   // MUDANÇA CRÍTICA: Agora guardaremos a revisão pelo Índice
             secondsElapsed = 0; 
             isTimerPaused = false;
             timerLimitSeconds = timerVal * 60;
@@ -478,6 +469,53 @@
             setupTimer(); 
             renderMap(); 
             loadQuestion(0);
+        }
+
+        // ======= FUNÇÕES DE APOIO CORRIGIDAS =======
+        
+        function selectOption(optionIndex) {
+            // Guarda a resposta usando o ÍNDICE da tela (0 a 39) e não o ID do banco
+            userAnswers[currentIndex] = optionIndex;
+            loadQuestion(currentIndex);
+            renderMap(); // Atualiza o cartão resposta imediatamente
+        }
+
+        function toggleBookmarkCurrent() {
+            // Guarda a revisão usando o ÍNDICE da tela (0 a 39)
+            bookmarked[currentIndex] = !bookmarked[currentIndex];
+            if (typeof updateBookmarkButtonUI === "function") updateBookmarkButtonUI();
+            renderMap(); // Atualiza a cor amarela no cartão imediatamente
+        }
+
+        function renderMap() {
+            const mapContainer = document.getElementById('answerMapContainer') || document.getElementById('questionMap');
+            if (!mapContainer) return;
+            mapContainer.innerHTML = '';
+
+            activeQuestions.forEach((q, index) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = "w-10 h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ";
+                
+                // MUDANÇA CRÍTICA: Lê o estado visual através do ÍNDICE e não do q.id
+                const isAnswered = userAnswers[index] !== undefined;
+                const isBookmarked = bookmarked[index];
+                const isCurrent = currentIndex === index;
+
+                if (isCurrent) {
+                    btn.className += " border-2 border-blue-600 bg-blue-50 text-blue-700 shadow-md";
+                } else if (isBookmarked) {
+                    btn.className += " bg-amber-400 text-slate-900";
+                } else if (isAnswered) {
+                    btn.className += " bg-emerald-500 text-white";
+                } else {
+                    btn.className += " bg-slate-100 text-slate-600 hover:bg-slate-200";
+                }
+
+                btn.textContent = index + 1; // Mostra de 1 a 40
+                btn.onclick = () => loadQuestion(index);
+                mapContainer.appendChild(btn);
+            });
         }
 
         function setupTimer() {
