@@ -604,8 +604,9 @@
         }
 
         function selectOption(optionIndex) {
-            userAnswers[activeQuestions[currentIndex].id] = optionIndex;
-            loadQuestion(currentIndex);
+        userAnswers[activeQuestions[currentIndex].id] = optionIndex;
+        loadQuestion(currentIndex);
+        renderMap(); // Atualiza o cartão-resposta imediatamente ao selecionar
         }
 
         function toggleBookmarkCurrent() {
