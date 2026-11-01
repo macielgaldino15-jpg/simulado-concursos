@@ -859,17 +859,8 @@
         }
 
         function retakeSameQuiz() {
-            userAnswers = {}; bookmarked = {}; currentIndex = 0; secondsElapsed = 0; isTimerPaused = false;
-            const screenResults = document.getElementById('screenResults');
-            const screenQuiz = document.getElementById('screenQuiz');
-            const quickRestartBtn = document.getElementById('quickRestartBtn');
-
-            if (screenResults) screenResults.classList.add('hidden');
-            if (screenQuiz) screenQuiz.classList.remove('hidden');
-            if (quickRestartBtn) quickRestartBtn.classList.remove('hidden');
-            setupTimer(); 
-            renderMap(); 
-            loadQuestion(0);
+            // Apenas chama o startQuiz para o sistema sortear 40 novas perguntas do banco de 200+
+            startQuiz();
         }
 
         function restartApp() {
