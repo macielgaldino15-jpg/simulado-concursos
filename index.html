@@ -406,12 +406,6 @@
                 selecionadas = selecionadas.concat(loteBloco);
             }
         }
-
-            // 4. Salvar os novos IDs vistos no localStorage (Exatamente como você pediu)
-            const novosIdsVistos = selecionadas.map(q => q.idGlobal); // Pega o ID com o nome da matéria
-            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos])); // Previne duplicações no array
-            localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
-
             // 5. Configurar o estado do quiz e iniciar
             activeQuestions = selecionadas;
             currentIndex = 0; 
