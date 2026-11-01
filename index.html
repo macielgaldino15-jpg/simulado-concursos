@@ -393,7 +393,9 @@
                 if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
                     disponiveisDisc = [...poolDisc];
                 }
-
+                 // 2. ORDENAÇÃO OBRIGATÓRIA POR ID: Garante que ficam em ordem crescente (1, 2, 3, 4...)
+                disponiveisDisc.sort((a, b) => Number(a.id) - Number(b.id));
+                
                 // Embaralha se a opção estiver ativa
                 let escolhidas = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
                 let loteBloco = escolhidas.slice(0, bloco.limite);
