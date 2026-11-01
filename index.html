@@ -393,8 +393,6 @@
                 if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
                     disponiveisDisc = [...poolDisc];
                 }
-                 // 2. ORDENAÇÃO OBRIGATÓRIA POR ID: Garante que ficam em ordem crescente (1, 2, 3, 4...)
-                disponiveisDisc.sort((a, b) => Number(a.id) - Number(b.id));
                 
                 // Embaralha se a opção estiver ativa
                 let escolhidas = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
@@ -408,11 +406,6 @@
                 selecionadas = selecionadas.concat(loteBloco);
             }
         }
-
-            // 4. Salvar os novos IDs vistos no localStorage (Exatamente como você pediu)
-            const novosIdsVistos = selecionadas.map(q => q.idGlobal); // Pega o ID com o nome da matéria
-            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos])); // Previne duplicações no array
-            localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
 
             // 5. Configurar o estado do quiz e iniciar
             activeQuestions = selecionadas;
@@ -784,6 +777,12 @@
 
             renderChart(correctCount, wrongCount);
             renderReviewAccordion();
+
+            // SALVAMENTO INTELIGENTE: Grava no localStorage apenas quando o utilizador conclui a prova
+            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
+            const novosIdsVistos = activeQuestions.map(q => q.idGlobal);
+            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos]));
+            localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
         }
 
         function renderChart(correct, wrong) {
