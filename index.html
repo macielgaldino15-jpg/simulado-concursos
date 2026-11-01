@@ -383,21 +383,19 @@
             ];
 
             for (let bloco of estruturaEdital) {
+                // Puxa diretamente do objeto bancoDeQuestoes
                 let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
 
-                // 1. Filtra estritamente o que o usuário AINDA NÃO VIU
+                // Filtra as questões que o usuário AINDA NÃO VIU usando a chave única da disciplina
                 let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
 
-                // 2. Se as inéditas acabaram na matéria, recicla o banco dela
+                // Se as inéditas esgotarem, recicla apenas esta disciplina de forma inteligente
                 if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
                     disponiveisDisc = [...poolDisc];
                 }
 
-                // 3. Se o embaralhamento estiver DESLIGADO, mantemos a ordem sequencial exata (1, 2, 3, 4, 5, 6...)
-                // Se estiver LIGADO, embaralhamos apenas as disponíveis
+                // Embaralha se a opção estiver ativa
                 let escolhidas = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
-
-                // 4. Pega exatamente a quantidade exigida pelo edital (ex: 10, 5, 20) pegando do INÍCIO da lista para não saltar
                 let loteBloco = escolhidas.slice(0, bloco.limite);
 
                 loteBloco.forEach(q => {
@@ -407,6 +405,7 @@
 
                 selecionadas = selecionadas.concat(loteBloco);
             }
+        }
 
             // 4. Salvar os novos IDs vistos no localStorage (Exatamente como você pediu)
             const novosIdsVistos = selecionadas.map(q => q.idGlobal); // Pega o ID com o nome da matéria
