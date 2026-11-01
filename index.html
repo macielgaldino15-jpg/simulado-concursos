@@ -859,9 +859,21 @@
         }
 
         function retakeSameQuiz() {
-            // Apenas chama o startQuiz para o sistema sortear 40 novas perguntas do banco de 200+
+            // 1. Esconde a tela de resultados
+            const screenResults = document.getElementById('screenResults');
+            if (screenResults) screenResults.classList.add('hidden');
+
+            
+            // 2. Limpa o estado das respostas e variáveis da prova anterior
+            userAnswers = {};
+            bookmarked = {};
+            currentIndex = 0;
+            secondsElapsed = 0;
+            isTimerPaused = false;
+ 
+            // 3. Executa o startQuiz para puxar um lote 100% novo de perguntas inéditas do banco de 200+
             startQuiz();
-        }
+}
 
         function restartApp() {
             clearInterval(timerInterval);
