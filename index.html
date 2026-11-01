@@ -383,19 +383,21 @@
             ];
 
             for (let bloco of estruturaEdital) {
-                // Puxa diretamente do objeto bancoDeQuestoes
                 let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
 
-                // Filtra as questões que o usuário AINDA NÃO VIU usando a chave única da disciplina
+                // 1. Filtra estritamente o que o usuário AINDA NÃO VIU
                 let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
 
-                // Se as inéditas esgotarem, recicla apenas esta disciplina de forma inteligente
+                // 2. Se as inéditas acabaram na matéria, recicla o banco dela
                 if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
                     disponiveisDisc = [...poolDisc];
                 }
 
-                // Embaralha se a opção estiver ativa
+                // 3. Se o embaralhamento estiver DESLIGADO, mantemos a ordem sequencial exata (1, 2, 3, 4, 5, 6...)
+                // Se estiver LIGADO, embaralhamos apenas as disponíveis
                 let escolhidas = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
+
+                // 4. Pega exatamente a quantidade exigida pelo edital (ex: 10, 5, 20) pegando do INÍCIO da lista para não saltar
                 let loteBloco = escolhidas.slice(0, bloco.limite);
 
                 loteBloco.forEach(q => {
@@ -405,7 +407,6 @@
 
                 selecionadas = selecionadas.concat(loteBloco);
             }
-        }
 
             // 4. Salvar os novos IDs vistos no localStorage (Exatamente como você pediu)
             const novosIdsVistos = selecionadas.map(q => q.idGlobal); // Pega o ID com o nome da matéria
@@ -863,7 +864,7 @@
             const screenResults = document.getElementById('screenResults');
             if (screenResults) screenResults.classList.add('hidden');
 
-            
+
             // 2. Limpa o estado das respostas e variáveis da prova anterior
             userAnswers = {};
             bookmarked = {};
