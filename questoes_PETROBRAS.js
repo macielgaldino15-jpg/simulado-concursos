@@ -1,7 +1,18 @@
-// Array com 100 novas questões focadas na área de Conhecimentos Específicos - Operações e Engenharia
-
-const novasQuestoes = [
-    {
+// Questões do simulado Petrobras - 700 Questões
+registrarConcurso("PETROBRAS", {
+    title: "Petrobras",
+    banca: "Cebraspe / FGV / Cesgranrio",
+    emoji: "🛢️",
+    tempo: 360,
+    estrutura: [
+        { nome: "Língua Portuguesa", limite: 175 },
+        { nome: "Raciocínio Lógico-Matemático", limite: 175 },
+        { nome: "Conhecimentos Específicos - Fundamentos de Petróleo e Gás", limite: 175 },
+        { nome: "Conhecimentos Específicos - Operações e Engenharia", limite: 175 }
+    ],
+    questoes: {
+        "Língua Portuguesa": [
+            {
         "id": 454,
         "enunciado": "Questão 1 (Conhecimentos Específicos) - Referente ao tema 'Cálculo de NPSH em bombas centrífugas': No contexto das operações da Petrobras, este processo exige rigorosa conformidade técnica. Com base nos preceitos da engenharia e normas aplicáveis, assinale a afirmativa correta.",
         "opcoes": [
