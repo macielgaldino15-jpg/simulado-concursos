@@ -90,8 +90,8 @@
                         <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
                             <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Gabarito</label>
                             <div class="space-y-2">
-                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="immediate" checked class="text-brand-600 focus:ring-brand-500"><span>Gabarito Imediato</span></label>
-                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="end" class="text-brand-600 focus:ring-brand-500"><span>Gabarito ao Final</span></label>
+                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="immediate" class="text-brand-600 focus:ring-brand-500"><span>Gabarito Imediato</span></label>
+                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="end" checked class="text-brand-600 focus:ring-brand-500"><span>Gabarito ao Final</span></label>
                             </div>
                         </div>
                         <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
@@ -100,13 +100,6 @@
                                 <option value="0">Livre</option><option value="60">60 Minutos</option><option value="120">120 Minutos</option><option value="210" selected>210 Minutos</option>
                             </select>
                         </div>
-                        <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
-                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Opções</label>
-                            <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer mt-1">
-                                <input type="checkbox" id="shuffleToggle" checked class="rounded text-brand-600 focus:ring-brand-500"><span>Embaralhar Tudo</span>
-                            </label>
-                        </div>
-                    </div>
 
                     <!-- Botão de Iniciar -->
                     <button onclick="startQuiz()" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4">
@@ -247,9 +240,7 @@
                 disciplines: [
                     { id: "ALL", name: "🎯 Prova Completa" },
                     { id: "Língua Portuguesa", name: "📚 Língua Portuguesa" },
-                    { id: "Raciocínio Lógico", name: "🧮 Raciocínio Lógico" },
-                    { id: "Ética no Serviço Público e Legislação", name: "⚖️ Ética no Serviço Público e Legislação" },
-                    { id: "Conhecimentos Específicos", name: "🏛️ Conhecimentos Específicos" }
+                    { id: "Conhecimentos Gerais", name: "🏛️ Conhecimentos Gerais e Rio Branco" }
                 ]
             },
             PRF: {
@@ -351,37 +342,6 @@
             if (activeExamBadge) activeExamBadge.textContent = examData.title.split('-')[0].trim();
         }
 
-       // ======= HISTÓRICO (só conta como "vista" a questão realmente exibida) =======
-        const CHAVE_VISTAS = 'questoes_vistas_v2';
-        let vistasMemoria = null;
-        function getVistas() {
-            if (vistasMemoria === null) {
-                try { vistasMemoria = JSON.parse(localStorage.getItem(CHAVE_VISTAS) || '[]'); } catch (e) { vistasMemoria = []; }
-            }
-            return vistasMemoria;
-        }
-        function marcarVista(idGlobal) {
-            const v = getVistas();
-            const i = v.indexOf(idGlobal);
-            if (v.length > 0 && i === v.length - 1) return;      // já é a mais recente
-            if (i >= 0) v.splice(i, 1);          // reposiciona como a mais recente
-            v.push(idGlobal);
-            try { localStorage.setItem(CHAVE_VISTAS, JSON.stringify(v)); } catch (e) {}
-        }
-        function hashTexto(t) {
-            let h = 5381;
-            for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) | 0;
-            return (h >>> 0).toString(36);
-        }
-        function embaralhar(arr) {
-            const a = arr.slice();
-            for (let i = a.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [a[i], a[j]] = [a[j], a[i]];
-            }
-            return a;
-        }
-
        // ======= SIMULADO OFICIAL CÂMARA RB (COM HISTÓRICO LOCAL PROTEGIDO) =======
         function startQuiz() {
             const discSelectElem = document.getElementById('disciplineSelect');
@@ -402,44 +362,43 @@
                 return;
             }
 
-            // 2. Montar a prova: inéditas primeiro; se faltar, completa com as vistas há mais tempo
+            // 2. Recuperar IDs já vistos pelo usuário armazenados no navegador
+            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
             let selecionadas = [];
-            const vistas = getVistas();
-            const posVista = {};
-            vistas.forEach((id, i) => { posVista[id] = i; });
 
+            // 3. Montar Prova Completa seguindo RIGOROSAMENTE a tabela do edital e o anti-repetição
+        if (discValue === 'ALL') {
             const estruturaEdital = [
                 { nome: "Língua Portuguesa", limite: 10 },
                 { nome: "Raciocínio Lógico", limite: 5 },
                 { nome: "Ética no Serviço Público e Legislação", limite: 5 },
                 { nome: "Conhecimentos Específicos", limite: 20 }
             ];
-            const blocos = discValue === 'ALL'
-                ? estruturaEdital
-                : [{ nome: discValue, limite: 20 }];
 
-            for (let bloco of blocos) {
-                const pool = window.bancoDeQuestoes[bloco.nome] || [];
-                pool.forEach(q => {
+            for (let bloco of estruturaEdital) {
+                // Puxa diretamente do objeto bancoDeQuestoes
+                let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
+
+                // Filtra as questões que o usuário AINDA NÃO VIU usando a chave única da disciplina
+                let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
+
+                // Se as inéditas esgotarem, recicla apenas esta disciplina de forma inteligente
+                if (disponiveisDisc.length === 0 && poolDisc.length > 0) {
+                    disponiveisDisc = [...poolDisc];
+                }
+                
+                // Embaralha se a opção estiver ativa
+                let escolhidas = shuffle ? [...disponiveisDisc].sort(() => Math.random() - 0.5) : disponiveisDisc;
+                let loteBloco = escolhidas.slice(0, bloco.limite);
+
+                loteBloco.forEach(q => {
                     q.disciplinaAtual = bloco.nome;
-                    q.idGlobal = bloco.nome + "_" + hashTexto((q.enunciado || q.question || String(q.id)) + "|" + (q.opcoes || q.options || []).join("|"));
+                    q.idGlobal = bloco.nome + "_" + q.id; 
                 });
-                const unicas = new Set();
-                const poolUnico = pool.filter(q => !unicas.has(q.idGlobal) && unicas.add(q.idGlobal));
-                const ineditas = poolUnico.filter(q => posVista[q.idGlobal] === undefined);
-                const jaVistas = poolUnico.filter(q => posVista[q.idGlobal] !== undefined)
-                                     .sort((x, y) => posVista[x.idGlobal] - posVista[y.idGlobal]);
-                const ordem = shuffle ? embaralhar(ineditas) : ineditas;
-                let lote = ordem.slice(0, bloco.limite);
-                if (lote.length < bloco.limite) lote = lote.concat(jaVistas.slice(0, bloco.limite - lote.length));
-                if (shuffle) lote = embaralhar(lote);
-                selecionadas = selecionadas.concat(lote);
+
+                selecionadas = selecionadas.concat(loteBloco);
             }
-            if (selecionadas.length === 0) {
-                alert("Nenhuma questão encontrada para esta seleção no banco de dados.");
-                return;
-            }
-            // O histórico NÃO é gravado aqui: cada questão só conta como vista quando aparece na tela (loadQuestion).
+        }
 
             // 5. Configurar o estado do quiz e iniciar
             activeQuestions = selecionadas;
@@ -463,6 +422,100 @@
             setupTimer(); 
             renderMap(); 
             loadQuestion(0);
+        }
+
+        // ======= FUNÇÕES DE APOIO CORRIGIDAS =======
+        
+        function selectOption(optionIndex) {
+            // Guarda a resposta usando o ÍNDICE da tela (0 a 39) e não o ID do banco
+            userAnswers[currentIndex] = optionIndex;
+            loadQuestion(currentIndex);
+            renderMap(); // Atualiza o cartão resposta imediatamente
+        }
+
+        function toggleBookmarkCurrent() {
+            // Guarda a revisão usando o ÍNDICE da tela (0 a 39)
+            bookmarked[currentIndex] = !bookmarked[currentIndex];
+            if (typeof updateBookmarkButtonUI === "function") updateBookmarkButtonUI();
+            renderMap(); // Atualiza a cor amarela no cartão imediatamente
+        }
+
+        function renderMap() {
+            const mapContainer = document.getElementById('answerMapContainer') || document.getElementById('questionMap');
+            if (!mapContainer) return;
+            mapContainer.innerHTML = '';
+
+            activeQuestions.forEach((q, index) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = "w-10 h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ";
+                
+                // MUDANÇA CRÍTICA: Lê o estado visual através do ÍNDICE e não do q.id
+                const isAnswered = userAnswers[index] !== undefined;
+                const isBookmarked = bookmarked[index];
+                const isCurrent = currentIndex === index;
+
+                if (isCurrent) {
+                    btn.className += " border-2 border-blue-600 bg-blue-50 text-blue-700 shadow-md";
+                } else if (isBookmarked) {
+                    btn.className += " bg-amber-400 text-slate-900";
+                } else if (isAnswered) {
+                    btn.className += " bg-emerald-500 text-white";
+                } else {
+                    btn.className += " bg-slate-100 text-slate-600 hover:bg-slate-200";
+                }
+
+                btn.textContent = index + 1; // Mostra de 1 a 40
+                btn.onclick = () => loadQuestion(index);
+                mapContainer.appendChild(btn);
+            });
+        }
+
+        // ======= FUNÇÕES DE APOIO CORRIGIDAS =======
+        
+        function selectOption(optionIndex) {
+            // Guarda a resposta usando o ÍNDICE da tela (0 a 39) e não o ID do banco
+            userAnswers[currentIndex] = optionIndex;
+            loadQuestion(currentIndex);
+            renderMap(); // Atualiza o cartão resposta imediatamente
+        }
+
+        function toggleBookmarkCurrent() {
+            // Guarda a revisão usando o ÍNDICE da tela (0 a 39)
+            bookmarked[currentIndex] = !bookmarked[currentIndex];
+            if (typeof updateBookmarkButtonUI === "function") updateBookmarkButtonUI();
+            renderMap(); // Atualiza a cor amarela no cartão imediatamente
+        }
+
+        function renderMap() {
+            const mapContainer = document.getElementById('answerMapContainer') || document.getElementById('questionMap');
+            if (!mapContainer) return;
+            mapContainer.innerHTML = '';
+
+            activeQuestions.forEach((q, index) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = "w-10 h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ";
+                
+                // MUDANÇA CRÍTICA: Lê o estado visual através do ÍNDICE e não do q.id
+                const isAnswered = userAnswers[index] !== undefined;
+                const isBookmarked = bookmarked[index];
+                const isCurrent = currentIndex === index;
+
+                if (isCurrent) {
+                    btn.className += " border-2 border-blue-600 bg-blue-50 text-blue-700 shadow-md";
+                } else if (isBookmarked) {
+                    btn.className += " bg-amber-400 text-slate-900";
+                } else if (isAnswered) {
+                    btn.className += " bg-emerald-500 text-white";
+                } else {
+                    btn.className += " bg-slate-100 text-slate-600 hover:bg-slate-200";
+                }
+
+                btn.textContent = index + 1; // Mostra de 1 a 40
+                btn.onclick = () => loadQuestion(index);
+                mapContainer.appendChild(btn);
+            });
         }
 
         function setupTimer() {
@@ -503,7 +556,6 @@
             currentIndex = index;
             const q = activeQuestions[currentIndex];
             if (!q) return;
-            marcarVista(q.idGlobal);
 
             let nomeDisciplina = "CONHECIMENTOS GERAIS";
             
@@ -538,7 +590,7 @@
             if (!container) return;
             container.innerHTML = '';
             const letters = ['A', 'B', 'C', 'D', 'E'];
-            const currentSelected = userAnswers[q.idGlobal];
+            const currentSelected = userAnswers[q.id];
             const opcoesLista = q.opcoes || q.options;
 
             opcoesLista.forEach((optText, optIdx) => {
@@ -590,7 +642,7 @@
         }
 
         function selectOption(optionIndex) {
-        userAnswers[activeQuestions[currentIndex].idGlobal] = optionIndex;
+        userAnswers[activeQuestions[currentIndex].id] = optionIndex;
         loadQuestion(currentIndex);
         renderMap(); // Atualiza o cartão-resposta imediatamente ao selecionar
         }
@@ -598,7 +650,7 @@
         function toggleBookmarkCurrent() {
             const q = activeQuestions[currentIndex];
             if (!q) return;
-            bookmarked[q.idGlobal] = !bookmarked[q.idGlobal];
+            bookmarked[q.id] = !bookmarked[q.id];
             updateBookmarkButtonUI(); 
             renderMap();
         }
@@ -606,7 +658,7 @@
         function updateBookmarkButtonUI() {
             const q = activeQuestions[currentIndex];
             if (!q) return;
-            const isBookmarked = !!bookmarked[q.idGlobal];
+            const isBookmarked = !!bookmarked[q.id];
             const bookmarkIcon = document.getElementById('bookmarkIcon');
             const bookmarkLabel = document.getElementById('bookmarkLabel');
             if (bookmarkIcon) bookmarkIcon.className = isBookmarked ? 'fa-solid fa-bookmark text-amber-500' : 'fa-regular fa-bookmark';
@@ -619,8 +671,8 @@
             container.innerHTML = '';
             activeQuestions.forEach((q, idx) => {
                 const isCurrent = idx === currentIndex;
-                const isAnswered = userAnswers[q.idGlobal] !== undefined;
-                const isMarked = bookmarked[q.idGlobal];
+                const isAnswered = userAnswers[q.id] !== undefined;
+                const isMarked = bookmarked[q.id];
                 let bgClass = 'bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-300';
                 if (isAnswered) bgClass = 'bg-emerald-500 text-white font-bold';
                 if (isMarked) bgClass = 'bg-amber-400 text-slate-900 font-bold';
@@ -643,12 +695,19 @@
             const answeredCount = Object.keys(userAnswers).length;
             const total = activeQuestions.length;
             let msg = `Respondeu a ${answeredCount} de ${total} questões.`;
+          
             if (answeredCount < total) msg += `\nFaltam ${total - answeredCount} questões em branco. Deseja finalizar?`;
             else msg += `\nDeseja entregar a prova?`;
             if (confirm(msg)) finishQuiz();
         }
 
         function finishQuiz() {
+            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
+            const novosIdsVistos = activeQuestions.map(q => q.idGlobal || (q.disciplinaAtual + "_" + q.id));
+            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos]));
+            localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
+        // --------------------------------------------------------------------------
+        
             clearInterval(timerInterval);
             const timerContainer = document.getElementById('timerContainer');
             const quickRestartBtn = document.getElementById('quickRestartBtn');
@@ -664,10 +723,10 @@
             const disciplineStats = {};
 
             activeQuestions.forEach(q => {
-                const selected = userAnswers[q.idGlobal];
+                const selected = userAnswers[q.id];
                 const gabarito = q.correta !== undefined ? q.correta : q.correct;
                 const isCorrect = selected === gabarito;
-                const dName = q.disciplinaAtual || q.disciplineName || "Geral";
+                const dName = q.disciplineName || "Geral";
                 
                 if (!disciplineStats[dName]) disciplineStats[dName] = { correct: 0, total: 0 };
                 disciplineStats[dName].total++;
@@ -718,6 +777,7 @@
 
             renderChart(correctCount, wrongCount);
             renderReviewAccordion();
+            
         }
 
         function renderChart(correct, wrong) {
@@ -750,10 +810,11 @@
             container.innerHTML = '';
             const letters = ['A', 'B', 'C', 'D', 'E'];
             activeQuestions.forEach((q, idx) => {
-                const selected = userAnswers[q.idGlobal];
+                const selected = userAnswers[q.id];
                 const gabarito = q.correta !== undefined ? q.correta : q.correct;
                 const isCorrect = selected === gabarito;
                 const isUnanswered = selected === undefined;
+                if (isUnanswered) return;
                 if (reviewFilter === 'wrong' && isCorrect) return;
                 if (reviewFilter === 'correct' && !isCorrect) return;
                 
@@ -764,7 +825,7 @@
                 const enunciadoTexto = q.enunciado || q.question;
                 const opcoesLista = q.opcoes || q.options;
                 const comentarioTexto = q.comentario || q.explanation;
-                const dName = q.disciplinaAtual || q.disciplineName || "Geral";
+                const dName = q.disciplineName || "Geral";
 
                 const card = document.createElement('div');
                 card.className = 'border border-slate-200 dark:border-slate-700 rounded-2xl p-5 bg-slate-50 dark:bg-slate-900/40 space-y-3';
@@ -795,18 +856,21 @@
         }
 
         function retakeSameQuiz() {
-            userAnswers = {}; bookmarked = {}; currentIndex = 0; secondsElapsed = 0; isTimerPaused = false;
+            // 1. Esconde a tela de resultados
             const screenResults = document.getElementById('screenResults');
-            const screenQuiz = document.getElementById('screenQuiz');
-            const quickRestartBtn = document.getElementById('quickRestartBtn');
-
             if (screenResults) screenResults.classList.add('hidden');
-            if (screenQuiz) screenQuiz.classList.remove('hidden');
-            if (quickRestartBtn) quickRestartBtn.classList.remove('hidden');
-            setupTimer(); 
-            renderMap(); 
-            loadQuestion(0);
-        }
+
+            
+            // 2. Limpa o estado das respostas e variáveis da prova anterior
+            userAnswers = {};
+            bookmarked = {};
+            currentIndex = 0;
+            secondsElapsed = 0;
+            isTimerPaused = false;
+ 
+            // 3. Executa o startQuiz para puxar um lote 100% novo de perguntas inéditas do banco de 200+
+            startQuiz();
+}
 
         function restartApp() {
             clearInterval(timerInterval);
@@ -826,5 +890,73 @@
 
     <!-- Importação do banco de dados local -->
     <script src="/questoesDB.js"></script>
+    <!-- SEU CÓDIGO HTML EXISTENTE ACABA AQUI -->
+
+    <!-- MODAL DE CONFIRMAÇÃO PERSONALIZADO -->
+    <div id="customConfirmModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-md w-full p-6 border border-slate-100 dark:border-slate-700 space-y-4">
+            <div class="flex items-center space-x-3 text-amber-500">
+                <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">Finalizar Simulado</h3>
+            </div>
+            <p id="customConfirmText" class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-line"></p>
+            <div class="flex justify-end space-x-3 pt-2">
+                <button id="customConfirmCancel" class="px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-all">
+                    Continuar a Prova
+                </button>
+                <button id="customConfirmOk" class="px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition-all shadow-sm">
+                    Sim, Finalizar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE CONTROLO DO MODAL -->
+    <script>
+        function finishQuizConfirmation() {
+            const answeredCount = Object.keys(userAnswers).length;
+            const total = activeQuestions.length;
+            let msg = `Respondeu a ${answeredCount} de ${total} questões.`;
+            
+            if (answeredCount < total) {
+                msg += `\nFaltam ${total - answeredCount} questões em branco. Deseja finalizar?`;
+            } else {
+                msg += `\nDeseja entregar a prova?`;
+            }
+
+            showCustomConfirm(msg, () => {
+                finishQuiz();
+            });
+        }
+
+        function showCustomConfirm(message, onConfirm) {
+            const modal = document.getElementById('customConfirmModal');
+            const textElem = document.getElementById('customConfirmText');
+            const btnOk = document.getElementById('customConfirmOk');
+            const btnCancel = document.getElementById('customConfirmCancel');
+
+            if (!modal) {
+                if (confirm(message)) onConfirm();
+                return;
+            }
+
+            textElem.textContent = message;
+            modal.classList.remove('hidden');
+
+            const newBtnOk = btnOk.cloneNode(true);
+            const newBtnCancel = btnCancel.cloneNode(true);
+            btnOk.parentNode.replaceChild(newBtnOk, btnOk);
+            btnCancel.parentNode.replaceChild(newBtnCancel, btnCancel);
+
+            document.getElementById('customConfirmOk').addEventListener('click', () => {
+                modal.classList.add('hidden');
+                onConfirm();
+            });
+
+            document.getElementById('customConfirmCancel').addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+        }
+    </script>
 </body>
 </html>
