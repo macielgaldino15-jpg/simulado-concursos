@@ -702,6 +702,12 @@
         }
 
         function finishQuiz() {
+            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
+            const novosIdsVistos = activeQuestions.map(q => q.idGlobal || (q.disciplinaAtual + "_" + q.id));
+            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos]));
+            localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
+        // --------------------------------------------------------------------------
+        
             clearInterval(timerInterval);
             const timerContainer = document.getElementById('timerContainer');
             const quickRestartBtn = document.getElementById('quickRestartBtn');
