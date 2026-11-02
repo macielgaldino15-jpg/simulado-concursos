@@ -820,6 +820,7 @@
                 const gabarito = q.correta !== undefined ? q.correta : q.correct;
                 const isCorrect = selected === gabarito;
                 const isUnanswered = selected === undefined;
+                if (isUnanswered) return;
                 if (reviewFilter === 'wrong' && isCorrect) return;
                 if (reviewFilter === 'correct' && !isCorrect) return;
                 
