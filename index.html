@@ -368,8 +368,11 @@
         function getSeen() {
             let list = [];
             try { list = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch (e) { return []; }
-            // Versões antigas gravavam só "Disciplina_id" (Câmara de Rio Branco)
-            return list.map(k => k.includes('::') ? k : 'CMRB::' + k);
+            if (!Array.isArray(list)) return [];
+            // Descarta formatos de versões antigas que não são texto (ex.: só o número da questão).
+            // Versões antigas também gravavam "Disciplina_id" sem o concurso (era a Câmara de Rio Branco).
+            return list.filter(k => typeof k === 'string' && k)
+                       .map(k => k.indexOf('::') >= 0 ? k : 'CMRB::' + k);
         }
         function seenPrefix(key) { return (key || currentExamKey) + '::'; }
         function saveSeen(list) {
