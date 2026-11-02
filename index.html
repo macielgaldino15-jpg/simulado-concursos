@@ -53,6 +53,10 @@
             <button id="quickRestartBtn" onclick="confirmRestart()" title="Voltar ao início" class="hidden w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center">
                 <i class="fa-solid fa-house text-sm"></i>
             </button>
+            <!-- Sair da conta -->
+            <button onclick="sairDaConta()" title="Sair da conta" class="h-9 px-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white flex items-center gap-2 text-sm font-semibold">
+                <i class="fa-solid fa-right-from-bracket text-sm"></i><span class="hidden sm:inline">Sair</span>
+            </button>
             <!-- Modo escuro -->
             <button onclick="toggleDarkMode()" title="Alternar tema" class="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center">
                 <i id="themeIcon" class="fa-solid fa-moon text-base"></i>
@@ -854,6 +858,24 @@
             clearInterval(timerInterval);
             showScreen('screenStart');
             updateHistoryInfo();
+        }
+
+        // ======= CONTA E SESSÃO =======
+        // Confere a sessão periodicamente: se a conta for aberta em outro aparelho, esta tela volta ao login.
+        async function conferirSessao() {
+            try {
+                const r = await fetch('/api/sessao', { credentials: 'same-origin', cache: 'no-store' });
+                if (r.status === 401) location.href = '/entrar?motivo=sessao';
+            } catch (e) { /* sem internet: tenta de novo na próxima verificação */ }
+        }
+        setInterval(conferirSessao, 60000);
+        document.addEventListener('visibilitychange', () => { if (!document.hidden) conferirSessao(); });
+
+        function sairDaConta() {
+            showCustomConfirm({ title: 'Sair da conta', message: 'Deseja sair da sua conta neste aparelho?', okText: 'Sair', cancelText: 'Cancelar' }, async () => {
+                try { await fetch('/api/sair', { method: 'POST', credentials: 'same-origin' }); } catch (e) {}
+                location.href = '/entrar?motivo=saiu';
+            });
         }
 
         // ======= MODAL DE CONFIRMAÇÃO =======

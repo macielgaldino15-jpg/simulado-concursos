@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Simulados Concursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { 50: '#f0f7ff', 100: '#e0effe', 400: '#38bdf8', 500: '#0284c7', 600: '#0284c7', 700: '#0369a1' } } } } };
+        try { const t = localStorage.getItem('tema'); if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark'); } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-full flex flex-col">
+    <header class="flex items-center px-4 sm:px-6 py-4 bg-slate-900 border-b border-slate-800 shadow-md">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center justify-center w-11 h-11 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-xl text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <div>
+                <h1 class="text-lg sm:text-xl font-extrabold tracking-tight text-white">Simulados Concursos</h1>
+                <p class="hidden sm:block text-xs font-medium text-slate-400 mt-0.5">Preparatório Focado &bull; Questões Comentadas</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-4 py-10">
+        <div class="w-full max-w-md bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 p-6 sm:p-8">
+            <div class="flex p-1 bg-slate-100 dark:bg-slate-900 rounded-2xl mb-6 text-sm font-bold" role="tablist">
+                <button id="abaEntrar" onclick="mostrar('entrar')" class="flex-1 py-2.5 rounded-xl">Entrar</button>
+                <button id="abaPrimeiro" onclick="mostrar('primeiro')" class="flex-1 py-2.5 rounded-xl">Primeiro acesso</button>
+            </div>
+
+            <div id="aviso" class="hidden mb-5 p-3.5 rounded-2xl text-sm border"></div>
+
+            <!-- Entrar -->
+            <form id="formEntrar" onsubmit="entrar(event)" class="space-y-4">
+                <div>
+                    <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">Acesse seus simulados</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Use o e-mail da compra e a senha que você criou.</p>
+                </div>
+                <label class="block">
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-300">E-mail</span>
+                    <input name="email" type="email" required autocomplete="email" class="mt-1.5 w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-300">Senha</span>
+                    <input name="senha" type="password" required autocomplete="current-password" class="mt-1.5 w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </label>
+                <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow transition-colors">Entrar</button>
+                <p class="text-xs text-center text-slate-500 dark:text-slate-400">Esqueceu a senha? Use a aba <button type="button" onclick="mostrar('primeiro')" class="font-bold text-brand-600 hover:underline">Primeiro acesso</button> para criar uma nova.</p>
+            </form>
+
+            <!-- Primeiro acesso / nova senha -->
+            <form id="formPrimeiro" onsubmit="primeiroAcesso(event)" class="space-y-4 hidden">
+                <div>
+                    <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">Crie sua senha</h2>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Para o primeiro acesso ou se esqueceu a senha. Confirmamos sua compra pelo e-mail e CPF informados no pagamento.</p>
+                </div>
+                <label class="block">
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-300">E-mail da compra</span>
+                    <input name="email" type="email" required autocomplete="email" class="mt-1.5 w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-300">CPF (ou número do pedido)</span>
+                    <input name="verificacao" required inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" class="mt-1.5 w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-300">Nova senha</span>
+                    <input name="senha" type="password" required minlength="8" autocomplete="new-password" class="mt-1.5 w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                    <span class="text-xs text-slate-500">Mínimo de 8 caracteres.</span>
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-300">Repita a nova senha</span>
+                    <input name="senha2" type="password" required minlength="8" autocomplete="new-password" class="mt-1.5 w-full p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </label>
+                <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow transition-colors">Criar senha e entrar</button>
+            </form>
+
+            <p class="mt-6 pt-5 border-t border-slate-100 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                <i class="fa-solid fa-shield-halved mr-1"></i> Cada conta pode ficar conectada em um aparelho por vez. Ao entrar em outro aparelho, a sessão anterior é encerrada.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        const ativo = 'flex-1 py-2.5 rounded-xl bg-white dark:bg-slate-700 text-brand-700 dark:text-white shadow-sm';
+        const inativo = 'flex-1 py-2.5 rounded-xl text-slate-500 dark:text-slate-400';
+        function mostrar(qual) {
+            document.getElementById('formEntrar').classList.toggle('hidden', qual !== 'entrar');
+            document.getElementById('formPrimeiro').classList.toggle('hidden', qual !== 'primeiro');
+            document.getElementById('abaEntrar').className = qual === 'entrar' ? ativo : inativo;
+            document.getElementById('abaPrimeiro').className = qual === 'primeiro' ? ativo : inativo;
+            esconderAviso();
+        }
+        function aviso(texto, tipo) {
+            const el = document.getElementById('aviso');
+            el.className = 'mb-5 p-3.5 rounded-2xl text-sm border ' + (tipo === 'erro'
+                ? 'bg-rose-50 dark:bg-rose-950/30 border-rose-300 dark:border-rose-800 text-rose-800 dark:text-rose-200'
+                : 'bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-800 text-amber-800 dark:text-amber-200');
+            el.textContent = texto;
+        }
+        function esconderAviso() { document.getElementById('aviso').classList.add('hidden'); }
+
+        async function enviar(url, dados, botao) {
+            const original = botao.textContent;
+            botao.disabled = true; botao.textContent = 'Aguarde...';
+            try {
+                const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(dados), credentials: 'same-origin' });
+                const resp = await r.json().catch(() => ({}));
+                if (r.ok) { location.href = '/'; return; }
+                aviso(resp.erro || 'Não foi possível concluir. Tente novamente.', 'erro');
+            } catch (e) {
+                aviso('Sem conexão com o servidor. Verifique sua internet e tente novamente.', 'erro');
+            }
+            botao.disabled = false; botao.textContent = original;
+        }
+        function entrar(ev) {
+            ev.preventDefault();
+            const f = ev.target;
+            enviar('/api/entrar', { email: f.email.value, senha: f.senha.value }, f.querySelector('button[type=submit]'));
+        }
+        function primeiroAcesso(ev) {
+            ev.preventDefault();
+            const f = ev.target;
+            if (f.senha.value !== f.senha2.value) { aviso('As duas senhas não são iguais.', 'erro'); return; }
+            enviar('/api/primeiro-acesso', { email: f.email.value, verificacao: f.verificacao.value, senha: f.senha.value }, f.querySelector('button[type=submit]'));
+        }
+
+        mostrar('entrar');
+        const motivo = new URLSearchParams(location.search).get('motivo');
+        if (motivo === 'sessao') aviso('Sua sessão foi encerrada porque sua conta foi acessada em outro aparelho. Entre novamente para continuar.', 'info');
+        if (motivo === 'saiu') aviso('Você saiu da sua conta.', 'info');
+    </script>
+</body>
+</html>
