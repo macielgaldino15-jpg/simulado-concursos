@@ -212,7 +212,7 @@
 
                 <div class="mb-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-200 dark:border-slate-700 pt-6">
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-list-check text-brand-600"></i><span>Revisão</span>
+                        <i class="fa-solid fa-list-check text-brand-600"></i><span>Revisão (Apenas Questões Vistas)</span>
                     </h3>
                     <div class="flex items-center space-x-2 text-xs">
                         <button onclick="filterReview('all')" id="btnFilterAll" class="px-3 py-1.5 rounded-lg bg-brand-600 text-white font-bold transition-colors">Todas</button>
@@ -295,6 +295,7 @@
         let activeQuestions = [];
         let currentIndex = 0;
         let userAnswers = {}; 
+        let visitedQuestions = new Set(); // Rastreia apenas as questões que o usuário visitou/viu
         let bookmarked = {}; 
         let timerInterval = null;
         let secondsElapsed = 0;
@@ -349,7 +350,7 @@
                 return;
             }
 
-            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
+            let questoesVistasHistorico = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
             let selecionadas = [];
 
             const configLimitesTotais = {
@@ -372,7 +373,7 @@
 
                     for (let bloco of estruturaEdital) {
                         let poolDisc = window.bancoDeQuestoes[bloco.nome] || [];
-                        let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(bloco.nome + "_" + q.id));
+                        let disponiveisDisc = poolDisc.filter(q => !questoesVistasHistorico.includes(bloco.nome + "_" + q.id));
                         if (disponiveisDisc.length === 0 && poolDisc.length > 0) disponiveisDisc = [...poolDisc];
                         
                         let loteBloco = disponiveisDisc.slice(0, bloco.limite);
@@ -391,7 +392,7 @@
                             }
                         });
                     }
-                    let disponiveis = poolExame.filter(q => !questoesVistas.includes(currentExamKey + "_" + q.id));
+                    let disponiveis = poolExame.filter(q => !questoesVistasHistorico.includes(currentExamKey + "_" + q.id));
                     if (disponiveis.length === 0 && poolExame.length > 0) disponiveis = [...poolExame];
 
                     let lote = disponiveis.slice(0, limiteTotalProva);
@@ -403,7 +404,7 @@
                 }
             } else {
                 let poolDisc = window.bancoDeQuestoes[discValue] || [];
-                let disponiveisDisc = poolDisc.filter(q => !questoesVistas.includes(discValue + "_" + q.id));
+                let disponiveisDisc = poolDisc.filter(q => !questoesVistasHistorico.includes(discValue + "_" + q.id));
                 if (disponiveisDisc.length === 0 && poolDisc.length > 0) disponiveisDisc = [...poolDisc];
                 let loteBloco = disponiveisDisc.slice(0, limiteTotalProva);
                 loteBloco.forEach(q => {
@@ -431,6 +432,7 @@
             activeQuestions = selecionadas;
             currentIndex = 0; 
             userAnswers = {};  
+            visitedQuestions = new Set(); // Reseta o rastreio de vistas
             bookmarked = {};   
             secondsElapsed = 0; 
             isTimerPaused = false;
@@ -522,6 +524,8 @@
 
         function loadQuestion(index) {
             currentIndex = index;
+            visitedQuestions.add(currentIndex); // Marca esta questão como vista/navegada pelo usuário
+
             const q = activeQuestions[currentIndex];
             if (!q) return;
 
@@ -648,9 +652,10 @@
         }
 
         function finishQuiz() {
-            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
-            const novosIdsVistos = activeQuestions.map(q => q.idGlobal || (q.disciplinaAtual + "_" + q.id));
-            const idsAtualizados = Array.from(new Set([...questoesVistas, ...novosIdsVistos]));
+            // Salva apenas as questões vistas no histórico geral para não repeti-las em provas futuras
+            let questoesVistasHistorico = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
+            const vistosArray = Array.from(visitedQuestions).map(idx => activeQuestions[idx].idGlobal || (activeQuestions[idx].disciplinaAtual + "_" + activeQuestions[idx].id));
+            const idsAtualizados = Array.from(new Set([...questoesVistasHistorico, ...vistosArray]));
             localStorage.setItem('questoes_vistas', JSON.stringify(idsAtualizados));
         
             clearInterval(timerInterval);
@@ -663,7 +668,9 @@
             let correctCount = 0, wrongCount = 0;
             const disciplineStats = {};
 
-            activeQuestions.forEach((q, idx) => {
+            // Analisa apenas as questões que foram VISITAS pelo usuário
+            visitedQuestions.forEach(idx => {
+                const q = activeQuestions[idx];
                 const selected = userAnswers[idx];
                 const gabarito = q.correta !== undefined ? q.correta : q.correct;
                 const isCorrect = selected === gabarito;
@@ -674,11 +681,11 @@
                 if (selected !== undefined) {
                     if (isCorrect) { correctCount++; disciplineStats[dName].correct++; } 
                     else { wrongCount++; }
-                } else { wrongCount++; }
+                } else { wrongCount++; } // Considera erro/branco caso tenha passado por ela e não respondido
             });
 
-            const total = activeQuestions.length;
-            const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+            const totalVistas = visitedQuestions.size;
+            const percentage = totalVistas > 0 ? Math.round((correctCount / totalVistas) * 100) : 0;
             
             const examInfo = EXAMS_DATA[currentExamKey] || {banca: "IDIB", title: "Simulado Fixo"};
             const resultExamTitle = document.getElementById('resultExamTitle');
@@ -749,7 +756,10 @@
             if (!container) return;
             container.innerHTML = '';
             const letters = ['A', 'B', 'C', 'D', 'E'];
-            activeQuestions.forEach((q, idx) => {
+
+            // MODIFICADO: Itera apenas pelas questões que foram VISITAS pelo usuário
+            visitedQuestions.forEach(idx => {
+                const q = activeQuestions[idx];
                 const selected = userAnswers[idx];
                 const gabarito = q.correta !== undefined ? q.correta : q.correct;
                 const isCorrect = selected === gabarito;
