@@ -24,6 +24,17 @@
     </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-full flex flex-col transition-colors duration-200">
+    <!-- Aviso de erro: se algo falhar no navegador, mostra uma mensagem em vez de deixar os botões sem resposta -->
+    <div id="erroNavegador" style="display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;padding:14px 16px;border-radius:14px;background:#fff1f2;border:1px solid #fda4af;color:#881337;font:14px/1.45 system-ui,-apple-system,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.15)"></div>
+    <script>
+        window.onerror = function (msg, arquivo, linha) {
+            var el = document.getElementById('erroNavegador');
+            if (!el || /tailwind|chart\.js|ResizeObserver/i.test(String(arquivo) + String(msg))) return;
+            el.style.display = 'block';
+            el.innerHTML = '<b>Algo não funcionou neste navegador.</b><br>Atualize a página. Se continuar, atualize o sistema do celular ou use o Chrome. ' +
+                '<span style="opacity:.7;font-size:12px">(' + String(msg).slice(0, 120) + (linha ? ' · linha ' + linha : '') + ')</span>';
+        };
+    </script>
 
     <!-- Cabeçalho -->
     <header class="flex items-center justify-between px-4 sm:px-6 py-4 bg-slate-900 border-b border-slate-800 shadow-md sticky top-0 z-40">
@@ -121,8 +132,8 @@
                         </div>
                     </div>
 
-                    <button onclick="startQuiz()" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4">
-                        <span>Iniciar Simulado</span>
+                    <button id="startBtn" type="button" onclick="startQuiz()" disabled class="w-full py-4 bg-brand-600 hover:bg-brand-700 disabled:opacity-60 disabled:cursor-wait text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4" style="touch-action: manipulation;">
+                        <span id="startBtnText">Carregando questões...</span>
                         <i class="fa-solid fa-play text-sm"></i>
                     </button>
                 </div>
@@ -340,7 +351,7 @@
         function $(id) { return document.getElementById(id); }
 
         function escapeHTML(str) {
-            return String(str ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+            return String(str === null || str === undefined ? '' : str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
         }
 
         // Embaralhamento justo (Fisher-Yates)
@@ -398,6 +409,8 @@
             updateThemeIcon();
             popularConcursos();
             onExamChange();
+            $('startBtn').disabled = false;
+            $('startBtnText').textContent = 'Iniciar Simulado';
         };
 
         function toggleDarkMode() {
@@ -501,7 +514,7 @@
                 let chave = nome + "_" + q.id;
                 if (usados.has(chave)) chave += "#" + pos;
                 usados.add(chave);
-                return { ...q, disciplinaAtual: nome, idGlobal: seenPrefix() + chave };
+                return Object.assign({}, q, { disciplinaAtual: nome, idGlobal: seenPrefix() + chave });
             });
             let ineditas = pool.filter(q => !vistas.has(q.idGlobal));
             let repetidas = pool.filter(q => vistas.has(q.idGlobal));
