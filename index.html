@@ -90,8 +90,8 @@
                         <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
                             <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Gabarito</label>
                             <div class="space-y-2">
-                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="immediate" checked class="text-brand-600 focus:ring-brand-500"><span>Gabarito Imediato</span></label>
                                 <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="end" class="text-brand-600 focus:ring-brand-500"><span>Gabarito ao Final</span></label>
+                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="immediate" class="text-brand-600 focus:ring-brand-500"><span>Gabarito Imediato</span></label>
                             </div>
                         </div>
                         <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
@@ -100,13 +100,6 @@
                                 <option value="0">Livre</option><option value="60">60 Minutos</option><option value="120">120 Minutos</option><option value="210" selected>210 Minutos</option>
                             </select>
                         </div>
-                        <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
-                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Opções</label>
-                            <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer mt-1">
-                                <input type="checkbox" id="shuffleToggle" checked class="rounded text-brand-600 focus:ring-brand-500"><span>Embaralhar Tudo</span>
-                            </label>
-                        </div>
-                    </div>
 
                     <!-- Botão de Iniciar -->
                     <button onclick="startQuiz()" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4">
