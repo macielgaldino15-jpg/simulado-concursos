@@ -455,6 +455,15 @@
             const posVista = {};
             vistas.forEach((id, i) => { posVista[id] = i; });
 
+            const configLimitesTotais = {
+            'PRF': 120,
+            'PC': 100,
+            'PM': 60,
+            'PETROBRAS': 60,
+            'CMRB': 40
+        };
+        let limiteTotalProva = configLimitesTotais[currentExamKey] || 40;
+
             const estruturaEdital = conc.estrutura;
             const blocos = discValue === 'ALL'
                 ? estruturaEdital
@@ -472,6 +481,7 @@
                 const jaVistas = poolUnico.filter(q => posVista[q.idGlobal] !== undefined)
                                      .sort((x, y) => posVista[x.idGlobal] - posVista[y.idGlobal]);
                 // Sempre na ordem do banco: continua da primeira questão ainda não vista
+                let limiteBloco = discValue === 'ALL' ? bloco.limite : limiteTotalProva;
                 let lote = ineditas.slice(0, bloco.limite);
                 if (lote.length < bloco.limite) lote = lote.concat(jaVistas.slice(0, bloco.limite - lote.length));
                 selecionadas = selecionadas.concat(lote);
