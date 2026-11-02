@@ -75,7 +75,11 @@
                             <i class="fa-solid fa-building-columns text-brand-600"></i> Concurso / Órgão Alvo:
                         </label>
                         <select id="examSelect" onchange="onExamChange()" class="w-full p-3.5 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:outline-none text-slate-900 dark:text-white text-base font-medium shadow-sm">
-                            <option value="CMRB">🏛️ Câmara Municipal de Rio Branco - AC (Banca IDIB)</option>
+                            <option value="CMRB">🏛️ Câmara Municipal de Rio Branco - AC (40 Questões)</option>
+                            <option value="PRF">🚔 Polícia Rodoviária Federal - PRF (120 Questões)</option>
+                            <option value="PC">🕵️ Polícia Civil - PC (100 Questões)</option>
+                            <option value="PM">🚓 Polícia Militar - PM (60 Questões)</option>
+                            <option value="PETROBRAS">🛢️ Petrobras (60 Questões)</option>
                         </select>
                     </div>
 
@@ -423,6 +427,19 @@
 
             const feedbackRadios = document.getElementsByName('feedbackMode');
             for (let r of feedbackRadios) { if (r.checked) feedbackMode = r.value; }
+
+            const configQuestoes = {
+                'PRF': 120,
+                'PC': 100,
+                'PM': 60,
+                'PETROBRAS': 60,
+                'CMRB': 40
+            };
+            let totalQuestoes = configQuestoes[currentExamKey] || 40;
+            // ============================================
+
+            let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
+            let selecionadas = [];
 
             // 1. Validar se o banco de dados foi carregado
             const conc = window.CONCURSOS && window.CONCURSOS[currentExamKey];
