@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Simulados Concursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' };
+        try { const t = localStorage.getItem('tema'); if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark'); } catch (e) {}
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .doc h2 { font-weight: 800; font-size: 1.05rem; margin-top: 1.75rem; margin-bottom: .5rem; }
+        .doc p, .doc li { line-height: 1.7; margin-bottom: .6rem; }
+        .doc ul { list-style: disc; padding-left: 1.25rem; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-full flex flex-col">
+    <header class="px-4 sm:px-6 py-4 bg-slate-900 border-b border-slate-800 flex items-center justify-between gap-3">
+        <a href="/" class="text-lg font-extrabold text-white">Simulados Concursos</a>
+        <a href="javascript:history.back()" class="text-sm text-slate-300 hover:text-white">← Voltar</a>
+    </header>
+
+    <main class="flex-grow px-4 py-8">
+        <article class="doc max-w-3xl mx-auto bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 p-6 sm:p-10 text-sm sm:text-base text-slate-700 dark:text-slate-300">
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Política de Privacidade</h1>
+            <p class="text-xs text-slate-500 mt-1">Última atualização: 2 de novembro de 2026</p>
+
+            <p class="mt-6">Esta Política explica como <b data-empresa="nome">MG Tecnologia Educacional</b>, responsável pela plataforma <b data-empresa="produto">Simulados Concursos</b>, trata os dados pessoais dos usuários, de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+
+            <h2>1. Dados que coletamos</h2>
+            <ul>
+                <li><b>Dados da compra</b>, recebidos da Kiwify: nome, e-mail, CPF e número do pedido.</li>
+                <li><b>Dados de acesso</b>: senha (guardada apenas em forma criptografada, que nem nós conseguimos ler) e data e hora do último login.</li>
+                <li><b>Dados de estudo no seu aparelho</b>: histórico de questões já vistas, tema (claro/escuro) e último concurso escolhido ficam guardados no próprio navegador e não são enviados aos nossos servidores.</li>
+            </ul>
+            <p>Não coletamos dados de pagamento (cartão, conta bancária). Eles são tratados exclusivamente pela Kiwify.</p>
+
+            <h2>2. Para que usamos os dados</h2>
+            <ul>
+                <li>Liberar e manter o acesso que você comprou (execução do contrato — art. 7º, V, da LGPD).</li>
+                <li>Confirmar sua identidade no primeiro acesso e na criação de nova senha, usando o CPF ou o número do pedido.</li>
+                <li>Garantir a segurança da conta, incluindo a regra de uma sessão por vez e o bloqueio de acessos indevidos (legítimo interesse — art. 7º, IX).</li>
+                <li>Bloquear o acesso em caso de reembolso ou chargeback.</li>
+                <li>Cumprir obrigações legais, quando houver (art. 7º, II).</li>
+            </ul>
+            <p>Não vendemos nem usamos seus dados para publicidade de terceiros.</p>
+
+            <h2>3. Com quem os dados são compartilhados</h2>
+            <p>Apenas com prestadores de serviço necessários para o funcionamento da plataforma, que atuam como operadores dos dados:</p>
+            <ul>
+                <li><b>Kiwify</b>: processamento de pagamentos e envio dos dados da compra.</li>
+                <li><b>Supabase</b>: banco de dados onde ficam os dados de cadastro.</li>
+                <li><b>Render</b>: hospedagem do site.</li>
+            </ul>
+            <p>Alguns desses serviços podem armazenar ou processar dados fora do Brasil, com medidas de segurança compatíveis com a LGPD (arts. 33 a 36).</p>
+
+            <h2>4. Cookies</h2>
+            <p>Usamos apenas um cookie essencial de sessão, que mantém você conectado. Ele não é usado para rastreamento nem publicidade. Sem ele, não é possível usar a área logada.</p>
+
+            <h2>5. Por quanto tempo guardamos</h2>
+            <p>Enquanto o acesso estiver ativo e, depois disso, pelo tempo necessário para cumprir obrigações legais ou resolver eventuais disputas. Após esse período, os dados são excluídos ou anonimizados.</p>
+
+            <h2>6. Segurança</h2>
+            <p>Adotamos medidas como conexão criptografada (HTTPS), senhas armazenadas com criptografia irreversível, acesso ao banco de dados restrito ao servidor e limite de tentativas de login. Nenhum sistema é totalmente imune a falhas, mas trabalhamos para proteger seus dados.</p>
+
+            <h2>7. Seus direitos</h2>
+            <p>Conforme o art. 18 da LGPD, você pode solicitar a qualquer momento:</p>
+            <ul>
+                <li>confirmação de que tratamos seus dados e acesso a eles;</li>
+                <li>correção de dados incompletos ou desatualizados;</li>
+                <li>exclusão dos dados, ressalvadas as hipóteses de guarda obrigatória;</li>
+                <li>informações sobre o compartilhamento dos dados;</li>
+                <li>revogação do consentimento, quando ele for a base do tratamento.</li>
+            </ul>
+            <p>Você também pode registrar reclamação na Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+            <h2>8. Contato</h2>
+            <p>Responsável pelo tratamento: <span data-empresa="nome">MG Tecnologia Educacional</span>, <span data-empresa="cidade">Rio Branco/AC</span>.</p>
+            <p>Para exercer seus direitos ou tirar dúvidas: <span data-empresa="contato">pelo canal de suporte da Kiwify</span>.</p>
+
+            <h2>9. Alterações</h2>
+            <p>Esta Política pode ser atualizada. A data da última atualização aparece no topo da página.</p>
+        </article>
+    </main>
+
+    <footer id="rodape"></footer>
+    <script src="/rodape.js"></script>
+</body>
+</html>

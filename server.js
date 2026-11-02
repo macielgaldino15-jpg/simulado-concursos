@@ -29,7 +29,10 @@ const SESSAO_DIAS = 30;
 
 // Páginas e arquivos que só quem está logado pode baixar
 const PROTEGIDOS = new Set(['index.html', 'questoesDB.js', 'questoes_PRF.js', 'questoes_PC.js', 'questoes_PM.js', 'questoes_PETROBRAS.js']);
-const PUBLICOS = { '/entrar': 'publico/entrar.html', '/admin': 'publico/admin.html', '/bem-vindo': 'publico/bem-vindo.html' };
+const PUBLICOS = {
+  '/entrar': 'publico/entrar.html', '/admin': 'publico/admin.html', '/bem-vindo': 'publico/bem-vindo.html',
+  '/termos': 'publico/termos.html', '/privacidade': 'publico/privacidade.html', '/rodape.js': 'publico/rodape.js',
+};
 
 // ======================= ARMAZENAMENTO =======================
 // Tabela "usuarios": email, nome, cpf, pedido, status ('ativo' | 'bloqueado'),
