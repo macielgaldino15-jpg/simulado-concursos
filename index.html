@@ -66,7 +66,6 @@
                         <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2 flex items-center gap-2">
                             <i class="fa-solid fa-building-columns text-brand-600"></i> Concurso / Órgão Alvo:
                         </label>
-                        <!-- CORRIGIDO: Select restaurado com todas as opções de concursos -->
                         <select id="examSelect" onchange="onExamChange()" class="w-full p-3.5 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:outline-none text-slate-900 dark:text-white text-base font-medium shadow-sm">
                             <option value="CMRB">🏛️ Câmara Municipal de Rio Branco - AC (40 Questões)</option>
                             <option value="PRF">🚔 Polícia Rodoviária Federal - PRF (120 Questões)</option>
@@ -99,7 +98,6 @@
                         </div>
                     </div>
 
-                    <!-- Botão de Iniciar -->
                     <button onclick="startQuiz()" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4">
                         <span>Iniciar Simulado</span>
                         <i class="fa-solid fa-play text-sm"></i>
@@ -228,8 +226,26 @@
         </section>
     </main>
 
+    <!-- MODAL DE CONFIRMAÇÃO PERSONALIZADO -->
+    <div id="customConfirmModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-md w-full p-6 border border-slate-100 dark:border-slate-700 space-y-4">
+            <div class="flex items-center space-x-3 text-amber-500">
+                <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">Finalizar Simulado</h3>
+            </div>
+            <p id="customConfirmText" class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-line"></p>
+            <div class="flex justify-end space-x-3 pt-2">
+                <button id="customConfirmCancel" class="px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-all">
+                    Continuar a Prova
+                </button>
+                <button id="customConfirmOk" class="px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition-all shadow-sm">
+                    Sim, Finalizar
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // CORRIGIDO: Disciplinas mapeadas para todos os concursos para preencher o select corretamente
         const EXAMS_DATA = {
             CMRB: {
                 title: "Câmara Municipal de Rio Branco (AC)",
@@ -336,7 +352,6 @@
             let questoesVistas = JSON.parse(localStorage.getItem('questoes_vistas') || '[]');
             let selecionadas = [];
 
-            // Limites exatos solicitados por concurso
             const configLimitesTotais = {
                 'PRF': 120,
                 'PC': 100,
@@ -368,7 +383,6 @@
                         selecionadas = selecionadas.concat(loteBloco);
                     }
                 } else {
-                    // Para PRF, PC, PM, Petrobras
                     let poolExame = window.bancoDeQuestoes[currentExamKey] || [];
                     if (poolExame.length === 0) {
                         Object.keys(window.bancoDeQuestoes).forEach(k => {
@@ -399,7 +413,6 @@
                 selecionadas = selecionadas.concat(loteBloco);
             }
 
-            // Fallback de preenchimento visual se faltarem questões no banco
             let faltam = limiteTotalProva - selecionadas.length;
             if (faltam > 0) {
                 for (let i = 1; i <= faltam; i++) {
@@ -591,13 +604,47 @@
         }
 
         function finishQuizConfirmation() {
-            const answeredCount = Object.keys(userAnswers).length;
+            const answeredCount = Object.keys(userAnswers).filter(k => userAnswers[k] !== undefined).length;
             const total = activeQuestions.length;
             let msg = `Respondeu a ${answeredCount} de ${total} questões.`;
-            if (answeredCount < total) msg += `\nFaltam ${total - answeredCount} questões em branco. Deseja finalizar?`;
-            else msg += `\nDeseja entregar a prova?`;
-            
-            if (confirm(msg)) finishQuiz();
+            if (answeredCount < total) {
+                msg += `\nFaltam ${total - answeredCount} questões em branco. Deseja finalizar?`;
+            } else {
+                msg += `\nDeseja entregar a prova?`;
+            }
+
+            showCustomConfirm(msg, () => {
+                finishQuiz();
+            });
+        }
+
+        function showCustomConfirm(message, onConfirm) {
+            const modal = document.getElementById('customConfirmModal');
+            const textElem = document.getElementById('customConfirmText');
+            const btnOk = document.getElementById('customConfirmOk');
+            const btnCancel = document.getElementById('customConfirmCancel');
+
+            if (!modal) {
+                if (confirm(message)) onConfirm();
+                return;
+            }
+
+            textElem.textContent = message;
+            modal.classList.remove('hidden');
+
+            const newBtnOk = btnOk.cloneNode(true);
+            const newBtnCancel = btnCancel.cloneNode(true);
+            btnOk.parentNode.replaceChild(newBtnOk, btnOk);
+            btnCancel.parentNode.replaceChild(newBtnCancel, btnCancel);
+
+            document.getElementById('customConfirmOk').addEventListener('click', () => {
+                modal.classList.add('hidden');
+                onConfirm();
+            });
+
+            document.getElementById('customConfirmCancel').addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
         }
 
         function finishQuiz() {
