@@ -1312,4 +1312,4 @@ registrarConcurso("PETROBRAS", {
         "correta": 2,
         "comentario": "Gabarito: C. O entendimento correto sobre 'Ergonomia em salas de controle (NR-17)' é vital para a integridade dos equipamentos e para a segurança operacional (SMS) nas refinarias e plataformas offshore."
     }
-];
+}];
