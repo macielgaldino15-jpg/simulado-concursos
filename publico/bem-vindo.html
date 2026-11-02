@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo - Simulados Concursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { 50: '#f0f7ff', 600: '#0284c7', 700: '#0369a1' } } } } };
+        try { const t = localStorage.getItem('tema'); if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark'); } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-full flex flex-col">
+    <header class="flex items-center px-4 sm:px-6 py-4 bg-slate-900 border-b border-slate-800">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center justify-center w-11 h-11 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-xl text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <h1 class="text-lg sm:text-xl font-extrabold tracking-tight text-white">Simulados Concursos</h1>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-4 py-10">
+        <div class="w-full max-w-lg bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 p-6 sm:p-8">
+            <div class="text-center mb-6">
+                <span class="inline-flex p-3 bg-emerald-50 dark:bg-slate-700 text-emerald-600 rounded-2xl mb-3"><i class="fa-solid fa-circle-check text-3xl"></i></span>
+                <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">Compra confirmada!</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Siga os passos abaixo para acessar seus simulados.</p>
+            </div>
+
+            <ol class="space-y-4 text-sm sm:text-base">
+                <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">1</span>
+                    <span>Clique no botão <b>Acessar meus simulados</b> abaixo.</span></li>
+                <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">2</span>
+                    <span>Na tela de login, escolha <b>Primeiro acesso</b>.</span></li>
+                <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">3</span>
+                    <span>Informe o <b>e-mail</b> e o <b>CPF</b> usados na compra e crie sua senha.</span></li>
+                <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">4</span>
+                    <span>Pronto! Nas próximas vezes, entre com seu e-mail e senha.</span></li>
+            </ol>
+
+            <a href="/entrar" class="mt-7 w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow transition-colors flex items-center justify-center gap-2 text-lg">
+                Acessar meus simulados <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+
+            <div class="mt-6 p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 text-sm text-amber-900 dark:text-amber-200 space-y-2">
+                <p><i class="fa-solid fa-lightbulb mr-1"></i> <b>Dicas</b></p>
+                <p>• Se o pagamento foi por boleto, o acesso é liberado assim que o banco confirmar (pode levar até 3 dias úteis).</p>
+                <p>• Salve o endereço do site nos favoritos do navegador.</p>
+                <p>• A conta é pessoal: ao entrar em outro aparelho, a sessão anterior é encerrada.</p>
+                <p>• Esqueceu a senha? Use <b>Primeiro acesso</b> novamente para criar uma nova.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
