@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Multi-Concursos - Simulados Interativos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { brand: { 50: '#f0f7ff', 100: '#e0effe', 400: '#38bdf8', 500: '#0284c7', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' } } } }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(241, 245, 249, 0.5); }
+        .dark .custom-scrollbar::-webkit-scrollbar-track { background: rgba(30, 41, 59, 0.5); }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-full flex flex-col transition-colors duration-200">
+
+    <!-- Cabeçalho -->
+    <header class="flex items-center justify-between px-4 sm:px-6 py-4 bg-slate-900 border-b border-slate-800 shadow-md sticky top-0 z-40">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center justify-center w-11 h-11 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-xl shadow-inner text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                </svg>
+            </div>
+            <div>
+                <h1 class="text-lg sm:text-xl font-extrabold tracking-tight text-white">Simulados Concursos</h1>
+                <p class="hidden sm:block text-xs font-medium text-slate-400 tracking-wide mt-0.5">Preparatório Focado &bull; Questões Comentadas</p>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-2 sm:space-x-3">
+            <!-- Cronômetro (aparece durante a prova) -->
+            <div id="timerContainer" class="hidden flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-slate-800 border border-slate-700 text-white">
+                <i class="fa-regular fa-clock text-amber-400 text-sm"></i>
+                <span id="timerDisplay" class="font-mono font-bold text-sm">00:00</span>
+                <button onclick="togglePauseTimer()" title="Pausar / Retomar" class="text-slate-300 hover:text-white text-xs ml-1">
+                    <i id="pauseTimerIcon" class="fa-solid fa-pause"></i>
+                </button>
+            </div>
+            <!-- Voltar ao início (aparece durante a prova) -->
+            <button id="quickRestartBtn" onclick="confirmRestart()" title="Voltar ao início" class="hidden w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center">
+                <i class="fa-solid fa-house text-sm"></i>
+            </button>
+            <!-- Modo escuro -->
+            <button onclick="toggleDarkMode()" title="Alternar tema" class="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center">
+                <i id="themeIcon" class="fa-solid fa-moon text-base"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col">
+        <!-- TELA 1: Configuração -->
+        <section id="screenStart" class="max-w-4xl mx-auto w-full my-auto py-4 sm:py-8">
+            <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 p-6 sm:p-10">
+                <div class="text-center mb-8">
+                    <span class="inline-flex p-3 bg-brand-50 dark:bg-slate-700 text-brand-600 dark:text-brand-400 rounded-2xl mb-3 shadow-inner">
+                        <i class="fa-solid fa-list-check text-3xl"></i>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Escolha o seu Simulado</h2>
+                    <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm sm:text-base max-w-2xl mx-auto">
+                        Resolva provas completas com histórico inteligente que evita a repetição de questões já vistas.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-building-columns text-brand-600"></i> Concurso / Órgão Alvo:
+                        </label>
+                        <select id="examSelect" onchange="onExamChange()" class="w-full p-3.5 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:outline-none text-slate-900 dark:text-white text-base font-medium shadow-sm">
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-book-bookmark text-brand-600"></i> Modo de Estudo / Disciplina:
+                        </label>
+                        <select id="disciplineSelect" class="w-full p-3.5 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:outline-none text-slate-900 dark:text-white text-base font-medium shadow-sm"></select>
+                        <p id="historyInfo" class="text-xs text-slate-500 dark:text-slate-400 mt-2"></p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Gabarito</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="immediate" class="text-brand-600 focus:ring-brand-500"><span>Gabarito Imediato</span></label>
+                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="end" checked class="text-brand-600 focus:ring-brand-500"><span>Gabarito ao Final</span></label>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Tempo Limite</label>
+                            <select id="timerSelect" class="w-full p-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-xs text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-brand-500">
+                                <option value="0">Livre</option><option value="60">60 Minutos</option><option value="120">120 Minutos</option><option value="210" selected>210 Minutos</option>
+                            </select>
+                        </div>
+                        <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Ordem</label>
+                            <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer">
+                                <input type="checkbox" id="shuffleToggle" checked class="rounded text-brand-600 focus:ring-brand-500">
+                                <span>Embaralhar questões</span>
+                            </label>
+                            <button type="button" onclick="resetHistory()" class="mt-3 text-xs text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1">
+                                <i class="fa-solid fa-trash-can"></i> Zerar histórico
+                            </button>
+                        </div>
+                    </div>
+
+                    <button onclick="startQuiz()" class="w-full py-4 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200 flex items-center justify-center space-x-3 text-lg mt-4">
+                        <span>Iniciar Simulado</span>
+                        <i class="fa-solid fa-play text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA 2: Simulado -->
+        <section id="screenQuiz" class="hidden flex-grow flex flex-col gap-6">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-wrap justify-between items-center gap-4">
+                <div class="flex items-center space-x-3">
+                    <span id="disciplineBadge" class="bg-brand-100 dark:bg-brand-900/60 text-brand-700 dark:text-brand-300 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider">Disciplina</span>
+                    <span class="text-slate-500 text-xs font-semibold" id="questionCounterText">Questão 1 de 10</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <button onclick="toggleBookmarkCurrent()" id="bookmarkBtn" class="flex items-center space-x-1 px-3 py-1.5 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 text-xs font-semibold transition-colors">
+                        <i class="fa-regular fa-bookmark" id="bookmarkIcon"></i><span id="bookmarkLabel">Revisar Depois</span>
+                    </button>
+                    <button onclick="finishQuizConfirmation()" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-check-double"></i><span>Entregar Prova</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 flex-grow items-start">
+                <div class="lg:col-span-3 bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col min-h-[500px]">
+                    <div class="mb-6 flex-grow">
+                        <div class="flex justify-between items-start mb-3 border-b border-slate-100 dark:border-slate-700/60 pb-3">
+                            <span id="examMetaTag" class="text-xs font-bold text-slate-400 uppercase tracking-widest">IDIB</span>
+                            <span id="questionCode" class="text-xs font-mono text-slate-400">#Q101</span>
+                        </div>
+                        <h3 id="questionText" class="text-base sm:text-lg font-medium text-slate-800 dark:text-slate-100 leading-relaxed whitespace-pre-line">Carregando enunciado...</h3>
+                    </div>
+                    <div id="optionsContainer" class="space-y-3 mb-6"></div>
+                    <div id="explanationBox" class="hidden my-4 p-4 rounded-2xl border transition-all text-sm">
+                        <div class="font-bold flex items-center mb-1.5" id="explanationHeader"></div>
+                        <p id="explanationText" class="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line"></p>
+                    </div>
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-100 dark:border-slate-700/60 mt-auto">
+                        <button id="prevBtn" onclick="prevQuestion()" class="px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 text-sm font-semibold transition-colors flex items-center">
+                            <i class="fa-solid fa-chevron-left mr-2"></i> Anterior
+                        </button>
+                        <button id="nextBtn" onclick="nextQuestion()" class="px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow transition-colors flex items-center">
+                            Próxima <i class="fa-solid fa-chevron-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1 bg-white dark:bg-slate-800 rounded-3xl p-5 shadow-sm border border-slate-200 dark:border-slate-700 lg:sticky lg:top-24">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 flex items-center justify-between">
+                        <span>Cartão Resposta</span><i class="fa-solid fa-grip-vertical"></i>
+                    </h4>
+                    <div id="questionsMap" class="grid grid-cols-5 gap-2 max-h-[360px] overflow-y-auto custom-scrollbar p-1"></div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-700 text-xs space-y-2 text-slate-500 dark:text-slate-400">
+                        <div class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-brand-600 inline-block"></span><span>Questão Atual</span></div>
+                        <div class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-slate-200 dark:bg-slate-700 inline-block"></span><span>Pendente</span></div>
+                        <div class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span><span>Respondida</span></div>
+                        <div class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span><span>Marcada p/ Revisão</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA 3: Resultado -->
+        <section id="screenResults" class="hidden max-w-5xl mx-auto w-full py-6">
+            <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 p-6 sm:p-10">
+                <div class="text-center pb-6 border-b border-slate-200 dark:border-slate-700 mb-6">
+                    <span class="inline-flex p-3 bg-amber-50 dark:bg-slate-700 rounded-2xl mb-3 text-amber-500">
+                        <i class="fa-solid fa-trophy text-4xl"></i>
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Resultado Final do Simulado</h2>
+                    <p id="resultExamTitle" class="text-slate-500 dark:text-slate-400 text-sm mt-1">Câmara Municipal de Rio Branco (AC)</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="retakeSameQuiz()" class="px-6 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-extrabold rounded-2xl shadow-lg transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-rotate-right"></i><span>Novo Simulado (questões inéditas)</span>
+                    </button>
+                    <button onclick="restartApp()" class="px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-extrabold rounded-2xl shadow transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-house"></i><span>Outro Concurso / Matéria</span>
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 text-center">
+                        <p class="text-xs text-slate-500 dark:text-slate-400 uppercase font-bold">Aproveitamento</p>
+                        <p id="resultPercentage" class="text-2xl sm:text-3xl font-black text-brand-600 dark:text-brand-400 mt-1">0%</p>
+                    </div>
+                    <div class="bg-emerald-50 dark:bg-emerald-950/20 p-4 rounded-2xl border border-emerald-200 dark:border-emerald-900/40 text-center">
+                        <p class="text-xs text-emerald-600 dark:text-emerald-400 uppercase font-bold">Acertos</p>
+                        <p id="resultCorrect" class="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400 mt-1">0</p>
+                    </div>
+                    <div class="bg-rose-50 dark:bg-rose-950/20 p-4 rounded-2xl border border-rose-200 dark:border-rose-900/40 text-center">
+                        <p class="text-xs text-rose-600 dark:text-rose-400 uppercase font-bold">Erros / Brancos</p>
+                        <p id="resultWrong" class="text-2xl sm:text-3xl font-black text-rose-600 dark:text-rose-400 mt-1">0</p>
+                    </div>
+                    <div class="bg-amber-50 dark:bg-amber-950/20 p-4 rounded-2xl border border-amber-200 dark:border-amber-900/40 text-center">
+                        <p class="text-xs text-amber-600 dark:text-amber-400 uppercase font-bold">Tempo</p>
+                        <p id="resultTime" class="text-2xl sm:text-3xl font-black text-amber-600 dark:text-amber-400 mt-1">00:00</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 flex flex-col items-center justify-center">
+                        <h4 class="text-xs font-bold uppercase text-slate-500 mb-4">Gráfico de Rendimento</h4>
+                        <div class="w-48 h-48 relative"><canvas id="performanceChart"></canvas></div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 flex flex-col justify-center">
+                        <h4 class="text-xs font-bold uppercase text-slate-500 mb-4">Desempenho por Matéria</h4>
+                        <div id="disciplineBreakdown" class="space-y-3 max-h-[220px] overflow-y-auto custom-scrollbar pr-1"></div>
+                    </div>
+                </div>
+
+                <div class="mb-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-200 dark:border-slate-700 pt-6">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-brand-600"></i><span>Revisão</span>
+                    </h3>
+                    <div class="flex flex-wrap items-center gap-2 text-xs">
+                        <button onclick="filterReview('all')" id="btnFilterAll">Todas</button>
+                        <button onclick="filterReview('wrong')" id="btnFilterWrong">Erros</button>
+                        <button onclick="filterReview('correct')" id="btnFilterCorrect">Acertos</button>
+                        <button onclick="filterReview('blank')" id="btnFilterBlank">Em branco</button>
+                    </div>
+                </div>
+
+                <div id="reviewContainer" class="space-y-4 max-h-[600px] overflow-y-auto custom-scrollbar pr-2 mb-8"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DE CONFIRMAÇÃO -->
+    <div id="customConfirmModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-md w-full p-6 border border-slate-100 dark:border-slate-700 space-y-4">
+            <div class="flex items-center space-x-3 text-amber-500">
+                <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                <h3 id="customConfirmTitle" class="text-lg font-bold text-slate-800 dark:text-slate-100">Finalizar Simulado</h3>
+            </div>
+            <p id="customConfirmText" class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-line"></p>
+            <div class="flex justify-end space-x-3 pt-2">
+                <button id="customConfirmCancel" class="px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-all">Continuar a Prova</button>
+                <button id="customConfirmOk" class="px-4 py-2 text-sm font-semibold text-white bg-brand-600 rounded-xl hover:bg-brand-700 transition-all shadow-sm">Sim, Finalizar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registro dos concursos: cada arquivo questoes_*.js chama registrarConcurso("CHAVE", {...}) -->
+    <script>
+        window.CONCURSOS = {};
+        function registrarConcurso(chave, dados) {
+            if (!chave || !dados) return;
+            window.CONCURSOS[chave] = Object.assign({ title: chave, banca: "Diversas", emoji: "📘", tempo: 0, questoes: {} }, dados);
+        }
+    </script>
+
+    <!-- Bancos de questões (caminho relativo). Para um concurso novo, crie questoes_XXX.js e adicione uma linha aqui. -->
+    <script src="questoesDB.js"></script>
+    <script src="questoes_PRF.js"></script>
+    <script src="questoes_PC.js"></script>
+    <script src="questoes_PM.js"></script>
+    <script src="questoes_PETROBRAS.js"></script>
+
+    <script>
+        // O banco da Câmara usa o formato antigo (window.bancoDeQuestoes); registra-o no mesmo padrão dos outros.
+        if (window.bancoDeQuestoes) {
+            registrarConcurso("CMRB", {
+                title: "Câmara Municipal de Rio Branco (AC)",
+                banca: "IDIB",
+                emoji: "🏛️",
+                tempo: 210,
+                estrutura: [
+                    { nome: "Língua Portuguesa", limite: 10 },
+                    { nome: "Raciocínio Lógico", limite: 5 },
+                    { nome: "Ética no Serviço Público e Legislação", limite: 5 },
+                    { nome: "Conhecimentos Específicos", limite: 20 }
+                ],
+                questoes: window.bancoDeQuestoes
+            });
+        }
+    </script>
+
+    <script>
+        // ======= CONCURSOS =======
+        // Ordem em que aparecem no seletor (os que não estiverem aqui entram no fim)
+        const ORDEM_CONCURSOS = ["CMRB", "PRF", "PC", "PM", "PETROBRAS"];
+        const LIMITE_PADRAO = 10; // questões por disciplina quando o concurso não define "estrutura"
+
+        function getExam(key) { return window.CONCURSOS[key || currentExamKey]; }
+        function getBanco(key) { return (getExam(key) || {}).questoes || {}; }
+        function contarQuestoes(key) {
+            return Object.values(getBanco(key)).reduce((s, arr) => s + (Array.isArray(arr) ? arr.length : 0), 0);
+        }
+        // Estrutura da prova completa: a do edital ou, se ausente, LIMITE_PADRAO por disciplina
+        function getEstrutura(key) {
+            const exam = getExam(key);
+            if (exam && Array.isArray(exam.estrutura) && exam.estrutura.length) return exam.estrutura;
+            return Object.keys(getBanco(key)).map(nome => ({ nome, limite: LIMITE_PADRAO }));
+        }
+
+        const LIMITE_POR_DISCIPLINA = 20; // quantidade de questões no modo "uma disciplina só"
+        const STORAGE_KEY = 'questoes_vistas';
+        const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+
+        let currentExamKey = null;
+        let activeQuestions = [];
+        let currentIndex = 0;
+        let userAnswers = {};   // chave = índice da questão na prova (0..n-1)
+        let bookmarked = {};    // chave = índice da questão na prova (0..n-1)
+        let timerInterval = null;
+        let secondsElapsed = 0;
+        let timerLimitSeconds = 0;
+        let isTimerPaused = false;
+        let feedbackMode = 'end';
+        let chartInstance = null;
+        let reviewFilter = 'all';
+
+        // ======= UTILITÁRIOS =======
+        function $(id) { return document.getElementById(id); }
+
+        function escapeHTML(str) {
+            return String(str ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        }
+
+        // Embaralhamento justo (Fisher-Yates)
+        function shuffleArray(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        // Chave de cada questão no histórico: "CONCURSO::Disciplina_id"
+        function getSeen() {
+            let list = [];
+            try { list = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch (e) { return []; }
+            // Versões antigas gravavam só "Disciplina_id" (Câmara de Rio Branco)
+            return list.map(k => k.includes('::') ? k : 'CMRB::' + k);
+        }
+        function seenPrefix(key) { return (key || currentExamKey) + '::'; }
+        function saveSeen(list) {
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); } catch (e) { /* armazenamento indisponível */ }
+        }
+
+        function getCorrect(q) { return q.correta !== undefined ? q.correta : q.correct; }
+        function getOptions(q) {
+            return (q.opcoes || q.options || []).map(t => String(t).replace(/^\s*[A-Ea-e]\s*[\)\.\-–]\s*/, ''));
+        }
+        function getStatement(q) { return q.enunciado || q.question || ''; }
+        function getComment(q) { return q.comentario || q.explanation || 'Sem comentário cadastrado.'; }
+
+        function formatClock(totalSecs) {
+            const hrs = Math.floor(totalSecs / 3600);
+            const mins = Math.floor((totalSecs % 3600) / 60);
+            const secs = totalSecs % 60;
+            return (hrs > 0 ? String(hrs).padStart(2, '0') + ':' : '') + String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+        }
+
+        function showScreen(name) {
+            ['screenStart', 'screenQuiz', 'screenResults'].forEach(id => $(id).classList.toggle('hidden', id !== name));
+            const inQuiz = name === 'screenQuiz';
+            $('timerContainer').classList.toggle('hidden', !inQuiz);
+            $('quickRestartBtn').classList.toggle('hidden', !inQuiz);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ======= INICIALIZAÇÃO =======
+        window.onload = function () {
+            let savedTheme = null;
+            try { savedTheme = localStorage.getItem('tema'); } catch (e) {}
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark');
+            }
+            updateThemeIcon();
+            popularConcursos();
+            onExamChange();
+        };
+
+        function toggleDarkMode() {
+            const isDark = document.documentElement.classList.toggle('dark');
+            try { localStorage.setItem('tema', isDark ? 'dark' : 'light'); } catch (e) {}
+            updateThemeIcon();
+        }
+        function updateThemeIcon() {
+            const isDark = document.documentElement.classList.contains('dark');
+            $('themeIcon').className = isDark ? 'fa-solid fa-sun text-base' : 'fa-solid fa-moon text-base';
+        }
+
+        function popularConcursos() {
+            const sel = $('examSelect');
+            sel.innerHTML = '';
+            const chaves = Object.keys(window.CONCURSOS).sort((a, b) => {
+                const ia = ORDEM_CONCURSOS.indexOf(a), ib = ORDEM_CONCURSOS.indexOf(b);
+                return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+            });
+            chaves.forEach(key => {
+                const exam = getExam(key);
+                const qtd = contarQuestoes(key);
+                const opt = document.createElement('option');
+                opt.value = key;
+                opt.textContent = `${exam.emoji} ${exam.title} (Banca ${exam.banca})` + (qtd ? ` — ${qtd} questões` : ' — em breve');
+                if (!qtd) opt.disabled = true;
+                sel.appendChild(opt);
+            });
+            let salvo = null;
+            try { salvo = localStorage.getItem('ultimo_concurso'); } catch (e) {}
+            const primeiroComQuestoes = chaves.find(k => contarQuestoes(k) > 0);
+            sel.value = (salvo && contarQuestoes(salvo) > 0) ? salvo : (primeiroComQuestoes || '');
+        }
+
+        function onExamChange() {
+            currentExamKey = $('examSelect').value;
+            try { localStorage.setItem('ultimo_concurso', currentExamKey); } catch (e) {}
+            const discSelect = $('disciplineSelect');
+            discSelect.innerHTML = '';
+            if (!getExam()) { updateHistoryInfo(); return; }
+
+            const estrutura = getEstrutura();
+            const totalProva = estrutura.reduce((s, b) => s + Math.min(b.limite, (getBanco()[b.nome] || []).length), 0);
+            const optAll = document.createElement('option');
+            optAll.value = 'ALL';
+            optAll.textContent = `🎯 Prova Completa (${totalProva} questões)`;
+            discSelect.appendChild(optAll);
+
+            const banco = getBanco();
+            const nomes = [...new Set([...estrutura.map(b => b.nome), ...Object.keys(banco)])];
+            nomes.forEach(nome => {
+                const qtd = (banco[nome] || []).length;
+                const opt = document.createElement('option');
+                opt.value = nome;
+                opt.textContent = `📚 ${nome} (${qtd} questões)`;
+                if (qtd === 0) opt.disabled = true;
+                discSelect.appendChild(opt);
+            });
+
+            // Tempo sugerido pelo concurso
+            const tempo = parseInt(getExam().tempo) || 0;
+            const timerSel = $('timerSelect');
+            if (tempo && ![...timerSel.options].some(o => o.value === String(tempo))) {
+                const opt = document.createElement('option');
+                opt.value = tempo; opt.textContent = `${tempo} Minutos`;
+                timerSel.appendChild(opt);
+            }
+            timerSel.value = String(tempo);
+            updateHistoryInfo();
+        }
+
+        function updateHistoryInfo() {
+            const info = $('historyInfo');
+            if (!Object.keys(window.CONCURSOS).length) {
+                info.innerHTML = '<span class="text-rose-600 font-semibold"><i class="fa-solid fa-circle-exclamation"></i> Nenhum banco de questões foi carregado. Verifique se os arquivos questoes*.js estão na mesma pasta do index.html.</span>';
+                return;
+            }
+            if (!getExam()) { info.textContent = ''; return; }
+            const vistas = getSeen().filter(k => k.startsWith(seenPrefix())).length;
+            info.textContent = `Você já viu ${vistas} de ${contarQuestoes()} questões deste concurso.`;
+        }
+
+        function resetHistory() {
+            const exam = getExam();
+            if (!exam) return;
+            showCustomConfirm({
+                title: 'Zerar histórico',
+                message: `As questões de "${exam.title}" voltarão a ser consideradas inéditas. Os outros concursos não são afetados. Deseja continuar?`,
+                okText: 'Sim, zerar',
+                cancelText: 'Cancelar'
+            }, () => { saveSeen(getSeen().filter(k => !k.startsWith(seenPrefix()))); updateHistoryInfo(); });
+        }
+
+        // ======= MONTAGEM DA PROVA =======
+        // Escolhe 'limite' questões de uma disciplina, priorizando as inéditas
+        // e completando com já vistas quando as inéditas não bastam.
+        function pickFromDiscipline(nome, limite, shuffle, vistas) {
+            const usados = new Set();
+            const pool = (getBanco()[nome] || []).map((q, pos) => {
+                // Se dois itens tiverem o mesmo id, o segundo recebe a posição para não se confundirem no histórico
+                let chave = nome + "_" + q.id;
+                if (usados.has(chave)) chave += "#" + pos;
+                usados.add(chave);
+                return { ...q, disciplinaAtual: nome, idGlobal: seenPrefix() + chave };
+            });
+            let ineditas = pool.filter(q => !vistas.has(q.idGlobal));
+            let repetidas = pool.filter(q => vistas.has(q.idGlobal));
+            if (shuffle) { ineditas = shuffleArray(ineditas); repetidas = shuffleArray(repetidas); }
+            return [...ineditas, ...repetidas].slice(0, limite);
+        }
+
+        function startQuiz() {
+            if (!getExam()) {
+                alert("Escolha um concurso com questões cadastradas.");
+                return;
+            }
+            const discValue = $('disciplineSelect').value;
+            const timerVal = parseInt($('timerSelect').value) || 0;
+            const shuffle = $('shuffleToggle').checked;
+            for (const r of document.getElementsByName('feedbackMode')) { if (r.checked) feedbackMode = r.value; }
+
+            const vistas = new Set(getSeen());
+            let selecionadas = [];
+
+            if (discValue === 'ALL') {
+                for (const bloco of getEstrutura()) {
+                    selecionadas = selecionadas.concat(pickFromDiscipline(bloco.nome, bloco.limite, shuffle, vistas));
+                }
+            } else {
+                selecionadas = pickFromDiscipline(discValue, LIMITE_POR_DISCIPLINA, shuffle, vistas);
+            }
+
+            if (selecionadas.length === 0) {
+                alert("Não há questões cadastradas para esta opção no banco de questões.");
+                return;
+            }
+
+            activeQuestions = selecionadas;
+            currentIndex = 0;
+            userAnswers = {};
+            bookmarked = {};
+            secondsElapsed = 0;
+            isTimerPaused = false;
+            timerLimitSeconds = timerVal * 60;
+
+            showScreen('screenQuiz');
+            setupTimer();
+            loadQuestion(0);
+        }
+
+        // ======= CRONÔMETRO =======
+        function renderTimer() {
+            const display = timerLimitSeconds > 0 ? Math.max(timerLimitSeconds - secondsElapsed, 0) : secondsElapsed;
+            $('timerDisplay').textContent = formatClock(display);
+            const urgente = timerLimitSeconds > 0 && display <= 300;
+            $('timerDisplay').classList.toggle('text-rose-400', urgente);
+        }
+
+        function setupTimer() {
+            clearInterval(timerInterval);
+            $('pauseTimerIcon').className = 'fa-solid fa-pause';
+            renderTimer();
+            timerInterval = setInterval(() => {
+                if (isTimerPaused) return;
+                secondsElapsed++;
+                renderTimer();
+                if (timerLimitSeconds > 0 && secondsElapsed >= timerLimitSeconds) {
+                    clearInterval(timerInterval);
+                    alert("O tempo limite expirou! Entregando a prova...");
+                    finishQuiz();
+                }
+            }, 1000);
+        }
+
+        function togglePauseTimer() {
+            isTimerPaused = !isTimerPaused;
+            $('pauseTimerIcon').className = isTimerPaused ? 'fa-solid fa-play' : 'fa-solid fa-pause';
+        }
+
+        // ======= QUESTÕES =======
+        function loadQuestion(index) {
+            currentIndex = index;
+            const q = activeQuestions[currentIndex];
+            if (!q) return;
+            const examInfo = getExam();
+
+            $('disciplineBadge').textContent = q.disciplinaAtual || q.materia || "Geral";
+            $('questionCounterText').textContent = `Questão ${currentIndex + 1} de ${activeQuestions.length}`;
+            $('examMetaTag').textContent = `${examInfo.banca} • ${examInfo.title}`;
+            $('questionCode').textContent = `#Q${q.id}`;
+            $('questionText').textContent = getStatement(q);
+
+            updateBookmarkButtonUI();
+
+            const container = $('optionsContainer');
+            container.innerHTML = '';
+            const currentSelected = userAnswers[currentIndex];
+            const gabarito = getCorrect(q);
+            // No modo "gabarito imediato" a resposta fica travada depois de marcada
+            const locked = feedbackMode === 'immediate' && currentSelected !== undefined;
+
+            getOptions(q).forEach((optText, optIdx) => {
+                const isSelected = currentSelected === optIdx;
+                let style = isSelected
+                    ? 'border-brand-600 bg-brand-50 dark:bg-brand-900/30 text-brand-900 dark:text-brand-100 font-semibold ring-2 ring-brand-500/30'
+                    : 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700/50';
+                let badge = isSelected ? 'bg-brand-600 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300';
+                if (locked) {
+                    if (optIdx === gabarito) { style = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-900 dark:text-emerald-100 font-semibold'; badge = 'bg-emerald-600 text-white'; }
+                    else if (isSelected) { style = 'border-rose-500 bg-rose-50 dark:bg-rose-950/30 text-rose-900 dark:text-rose-100 font-semibold'; badge = 'bg-rose-600 text-white'; }
+                    else { style = 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 text-slate-500 dark:text-slate-400 opacity-70'; }
+                }
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.disabled = locked;
+                btn.className = `w-full text-left p-4 rounded-2xl border transition-all flex items-start space-x-3 text-sm sm:text-base ${style} ${locked ? 'cursor-default' : ''}`;
+                btn.onclick = () => selectOption(optIdx);
+                btn.innerHTML = `<span class="w-7 h-7 rounded-xl flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 ${badge}">${LETTERS[optIdx]}</span><span class="leading-relaxed">${escapeHTML(optText)}</span>`;
+                container.appendChild(btn);
+            });
+
+            const expBox = $('explanationBox');
+            if (locked) {
+                const isCorrect = currentSelected === gabarito;
+                expBox.className = `my-4 p-4 rounded-2xl border transition-all text-sm ${isCorrect ? 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200' : 'bg-rose-50 dark:bg-rose-950/30 border-rose-300 dark:border-rose-800 text-rose-900 dark:text-rose-200'}`;
+                $('explanationHeader').innerHTML = isCorrect
+                    ? `<i class="fa-solid fa-circle-check text-emerald-600 mr-2 text-base"></i> Resposta Correta!`
+                    : `<i class="fa-solid fa-circle-xmark text-rose-600 mr-2 text-base"></i> Resposta Incorreta (Gabarito: Letra ${LETTERS[gabarito]})`;
+                $('explanationText').textContent = getComment(q);
+            } else {
+                expBox.classList.add('hidden');
+            }
+
+            const prevBtn = $('prevBtn');
+            prevBtn.disabled = currentIndex === 0;
+            prevBtn.style.opacity = currentIndex === 0 ? '0.4' : '1';
+
+            const nextBtn = $('nextBtn');
+            if (currentIndex === activeQuestions.length - 1) {
+                nextBtn.innerHTML = `Entregar Prova <i class="fa-solid fa-check-double ml-2"></i>`;
+                nextBtn.className = "px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold shadow transition-colors flex items-center";
+            } else {
+                nextBtn.innerHTML = `Próxima <i class="fa-solid fa-chevron-right ml-2"></i>`;
+                nextBtn.className = "px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow transition-colors flex items-center";
+            }
+            renderMap();
+        }
+
+        function selectOption(optionIndex) {
+            if (feedbackMode === 'immediate' && userAnswers[currentIndex] !== undefined) return;
+            userAnswers[currentIndex] = optionIndex;
+            loadQuestion(currentIndex);
+        }
+
+        function toggleBookmarkCurrent() {
+            bookmarked[currentIndex] = !bookmarked[currentIndex];
+            updateBookmarkButtonUI();
+            renderMap();
+        }
+
+        function updateBookmarkButtonUI() {
+            const isMarked = !!bookmarked[currentIndex];
+            $('bookmarkIcon').className = isMarked ? 'fa-solid fa-bookmark text-amber-500' : 'fa-regular fa-bookmark';
+            $('bookmarkLabel').textContent = isMarked ? 'Marcada' : 'Revisar Depois';
+        }
+
+        function renderMap() {
+            const container = $('questionsMap');
+            container.innerHTML = '';
+            activeQuestions.forEach((q, idx) => {
+                let bgClass = 'bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-300';
+                if (userAnswers[idx] !== undefined) bgClass = 'bg-emerald-500 text-white font-bold';
+                if (bookmarked[idx]) bgClass = 'bg-amber-400 text-slate-900 font-bold';
+                if (idx === currentIndex) bgClass = 'bg-brand-600 text-white font-bold ring-2 ring-brand-400';
+                const item = document.createElement('button');
+                item.type = 'button';
+                item.className = `w-8 h-8 rounded-xl text-xs flex items-center justify-center transition-all ${bgClass}`;
+                item.textContent = idx + 1;
+                item.title = q.disciplinaAtual || '';
+                item.onclick = () => loadQuestion(idx);
+                container.appendChild(item);
+            });
+        }
+
+        function prevQuestion() { if (currentIndex > 0) loadQuestion(currentIndex - 1); }
+        function nextQuestion() {
+            if (currentIndex < activeQuestions.length - 1) loadQuestion(currentIndex + 1);
+            else finishQuizConfirmation();
+        }
+
+        // ======= ENTREGA E RESULTADO =======
+        function finishQuizConfirmation() {
+            const answeredCount = Object.keys(userAnswers).length;
+            const total = activeQuestions.length;
+            const marcadas = Object.values(bookmarked).filter(Boolean).length;
+            let msg = `Você respondeu ${answeredCount} de ${total} questões.`;
+            if (answeredCount < total) msg += `\nFaltam ${total - answeredCount} questões em branco.`;
+            if (marcadas > 0) msg += `\nVocê tem ${marcadas} questão(ões) marcada(s) para revisão.`;
+            msg += `\nDeseja entregar a prova?`;
+            showCustomConfirm({ title: 'Finalizar Simulado', message: msg, okText: 'Sim, Finalizar', cancelText: 'Continuar a Prova' }, finishQuiz);
+        }
+
+        function finishQuiz() {
+            clearInterval(timerInterval);
+
+            // Registra no histórico as questões desta prova
+            const vistas = new Set(getSeen());
+            activeQuestions.forEach(q => vistas.add(q.idGlobal));
+            saveSeen([...vistas]);
+
+            showScreen('screenResults');
+
+            let correctCount = 0, wrongCount = 0;
+            const disciplineStats = {};
+            activeQuestions.forEach((q, idx) => {
+                const selected = userAnswers[idx];
+                const dName = q.disciplinaAtual || "Geral";
+                if (!disciplineStats[dName]) disciplineStats[dName] = { correct: 0, total: 0 };
+                disciplineStats[dName].total++;
+                if (selected !== undefined && selected === getCorrect(q)) {
+                    correctCount++;
+                    disciplineStats[dName].correct++;
+                } else {
+                    wrongCount++;
+                }
+            });
+
+            const total = activeQuestions.length;
+            const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+            const examInfo = getExam();
+
+            $('resultExamTitle').textContent = `${examInfo.title} • Banca ${examInfo.banca}`;
+            $('resultPercentage').textContent = `${percentage}%`;
+            $('resultCorrect').textContent = correctCount;
+            $('resultWrong').textContent = wrongCount;
+            const hrs = Math.floor(secondsElapsed / 3600);
+            const mins = Math.floor((secondsElapsed % 3600) / 60);
+            const secs = secondsElapsed % 60;
+            $('resultTime').textContent = (hrs > 0 ? hrs + 'h ' : '') + mins + 'm ' + secs + 's';
+
+            const breakdown = $('disciplineBreakdown');
+            breakdown.innerHTML = '';
+            for (const [discName, stat] of Object.entries(disciplineStats)) {
+                const discPerc = stat.total > 0 ? Math.round((stat.correct / stat.total) * 100) : 0;
+                const item = document.createElement('div');
+                item.className = 'text-xs space-y-1';
+                item.innerHTML = `
+                    <div class="flex justify-between font-bold text-slate-700 dark:text-slate-300 gap-2">
+                        <span>${escapeHTML(discName)}</span><span class="shrink-0">${stat.correct}/${stat.total} (${discPerc}%)</span>
+                    </div>
+                    <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                        <div class="h-full bg-brand-600 rounded-full" style="width: ${discPerc}%"></div>
+                    </div>`;
+                breakdown.appendChild(item);
+            }
+
+            renderChart(correctCount, wrongCount);
+            filterReview('all');
+            updateHistoryInfo();
+        }
+
+        function renderChart(correct, wrong) {
+            const canvas = $('performanceChart');
+            if (!canvas || typeof Chart === 'undefined') return;
+            if (chartInstance) chartInstance.destroy();
+            chartInstance = new Chart(canvas.getContext('2d'), {
+                type: 'doughnut',
+                data: { labels: ['Acertos', 'Erros / Brancos'], datasets: [{ data: [correct, wrong], backgroundColor: ['#10b981', '#f43f5e'], borderWidth: 0 }] },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, cutout: '75%' }
+            });
+        }
+
+        function filterReview(type) {
+            reviewFilter = type;
+            const ativo = 'px-3 py-1.5 rounded-lg bg-brand-600 text-white font-bold transition-colors';
+            const inativo = 'px-3 py-1.5 rounded-lg bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors';
+            $('btnFilterAll').className = type === 'all' ? ativo : inativo;
+            $('btnFilterWrong').className = type === 'wrong' ? ativo : inativo;
+            $('btnFilterCorrect').className = type === 'correct' ? ativo : inativo;
+            $('btnFilterBlank').className = type === 'blank' ? ativo : inativo;
+            renderReviewAccordion();
+        }
+
+        function renderReviewAccordion() {
+            const container = $('reviewContainer');
+            container.innerHTML = '';
+            let shown = 0;
+
+            activeQuestions.forEach((q, idx) => {
+                const selected = userAnswers[idx];
+                const gabarito = getCorrect(q);
+                const isUnanswered = selected === undefined;
+                const isCorrect = !isUnanswered && selected === gabarito;
+
+                if (reviewFilter === 'wrong' && (isCorrect || isUnanswered)) return;
+                if (reviewFilter === 'correct' && !isCorrect) return;
+                if (reviewFilter === 'blank' && !isUnanswered) return;
+                shown++;
+
+                const statusBadge = isCorrect
+                    ? `<span class="bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap"><i class="fa-solid fa-check mr-1"></i> Correta</span>`
+                    : isUnanswered
+                        ? `<span class="bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap"><i class="fa-solid fa-minus mr-1"></i> Sem Resposta</span>`
+                        : `<span class="bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap"><i class="fa-solid fa-xmark mr-1"></i> Incorreta</span>`;
+
+                const opcoes = getOptions(q);
+                const card = document.createElement('div');
+                card.className = 'border border-slate-200 dark:border-slate-700 rounded-2xl p-5 bg-slate-50 dark:bg-slate-900/40 space-y-3';
+                card.innerHTML = `
+                    <div class="flex justify-between items-start gap-2">
+                        <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Q${idx + 1}. [${escapeHTML(q.disciplinaAtual || 'Geral')}]</div>
+                        <div>${statusBadge}</div>
+                    </div>
+                    <p class="text-sm font-medium text-slate-800 dark:text-slate-200 leading-relaxed whitespace-pre-line">${escapeHTML(getStatement(q))}</p>
+                    <div class="text-xs space-y-2 pt-2 border-t border-slate-200 dark:border-slate-700/60">
+                        <div class="flex items-start space-x-2 text-slate-600 dark:text-slate-400">
+                            <span class="font-bold shrink-0">Sua escolha:</span>
+                            <span class="${isCorrect ? 'text-emerald-600 font-bold' : (isUnanswered ? 'text-amber-600 font-bold' : 'text-rose-600 font-bold')}">
+                                ${isUnanswered ? 'Nenhuma alternativa' : `Letra ${LETTERS[selected]} - ${escapeHTML(opcoes[selected])}`}
+                            </span>
+                        </div>
+                        <div class="flex items-start space-x-2 text-emerald-600 dark:text-emerald-400 font-semibold">
+                            <span class="shrink-0">Gabarito correto:</span><span>Letra ${LETTERS[gabarito]} - ${escapeHTML(opcoes[gabarito])}</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                        <span class="font-bold text-brand-600 block mb-1"><i class="fa-solid fa-comment-dots mr-1"></i> Comentário e Fundamentação:</span>
+                        <p class="whitespace-pre-line">${escapeHTML(getComment(q))}</p>
+                    </div>`;
+                container.appendChild(card);
+            });
+
+            if (shown === 0) {
+                container.innerHTML = '<p class="text-center text-sm text-slate-500 dark:text-slate-400 py-8">Nenhuma questão neste filtro.</p>';
+            }
+        }
+
+        // ======= NAVEGAÇÃO ENTRE TELAS =======
+        function retakeSameQuiz() {
+            // Monta um novo simulado com as mesmas configurações, priorizando questões inéditas
+            startQuiz();
+        }
+
+        function confirmRestart() {
+            showCustomConfirm({
+                title: 'Sair do simulado',
+                message: 'Seu progresso nesta prova será perdido. Deseja voltar ao início?',
+                okText: 'Sim, sair',
+                cancelText: 'Continuar a Prova'
+            }, restartApp);
+        }
+
+        function restartApp() {
+            clearInterval(timerInterval);
+            showScreen('screenStart');
+            updateHistoryInfo();
+        }
+
+        // ======= MODAL DE CONFIRMAÇÃO =======
+        function showCustomConfirm({ title, message, okText, cancelText }, onConfirm) {
+            const modal = $('customConfirmModal');
+            $('customConfirmTitle').textContent = title;
+            $('customConfirmText').textContent = message;
+
+            // Substitui os botões para remover ouvintes antigos
+            const oldOk = $('customConfirmOk'), oldCancel = $('customConfirmCancel');
+            const btnOk = oldOk.cloneNode(true), btnCancel = oldCancel.cloneNode(true);
+            oldOk.replaceWith(btnOk);
+            oldCancel.replaceWith(btnCancel);
+            btnOk.textContent = okText;
+            btnCancel.textContent = cancelText;
+
+            btnOk.addEventListener('click', () => { modal.classList.add('hidden'); onConfirm(); });
+            btnCancel.addEventListener('click', () => modal.classList.add('hidden'));
+            modal.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
