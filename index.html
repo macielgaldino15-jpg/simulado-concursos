@@ -247,7 +247,9 @@
                 disciplines: [
                     { id: "ALL", name: "🎯 Prova Completa" },
                     { id: "Língua Portuguesa", name: "📚 Língua Portuguesa" },
-                    { id: "Conhecimentos Gerais", name: "🏛️ Conhecimentos Gerais e Rio Branco" }
+                    { id: "Raciocínio Lógico", name: "🧮 Raciocínio Lógico" },
+                    { id: "Ética no Serviço Público e Legislação", name: "⚖️ Ética no Serviço Público e Legislação" },
+                    { id: "Conhecimentos Específicos", name: "🏛️ Conhecimentos Específicos" }
                 ]
             },
             PRF: {
@@ -361,7 +363,7 @@
         function marcarVista(idGlobal) {
             const v = getVistas();
             const i = v.indexOf(idGlobal);
-            if (i === v.length - 1) return;      // já é a mais recente
+            if (v.length > 0 && i === v.length - 1) return;      // já é a mais recente
             if (i >= 0) v.splice(i, 1);          // reposiciona como a mais recente
             v.push(idGlobal);
             try { localStorage.setItem(CHAVE_VISTAS, JSON.stringify(v)); } catch (e) {}
@@ -420,10 +422,12 @@
                 const pool = window.bancoDeQuestoes[bloco.nome] || [];
                 pool.forEach(q => {
                     q.disciplinaAtual = bloco.nome;
-                    q.idGlobal = bloco.nome + "_" + hashTexto(q.enunciado || q.question || String(q.id));
+                    q.idGlobal = bloco.nome + "_" + hashTexto((q.enunciado || q.question || String(q.id)) + "|" + (q.opcoes || q.options || []).join("|"));
                 });
-                const ineditas = pool.filter(q => posVista[q.idGlobal] === undefined);
-                const jaVistas = pool.filter(q => posVista[q.idGlobal] !== undefined)
+                const unicas = new Set();
+                const poolUnico = pool.filter(q => !unicas.has(q.idGlobal) && unicas.add(q.idGlobal));
+                const ineditas = poolUnico.filter(q => posVista[q.idGlobal] === undefined);
+                const jaVistas = poolUnico.filter(q => posVista[q.idGlobal] !== undefined)
                                      .sort((x, y) => posVista[x.idGlobal] - posVista[y.idGlobal]);
                 const ordem = shuffle ? embaralhar(ineditas) : ineditas;
                 let lote = ordem.slice(0, bloco.limite);
