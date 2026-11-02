@@ -698,13 +698,55 @@
         }
 
         function finishQuizConfirmation() {
-            const answeredCount = Object.keys(userAnswers).length;
-            const total = activeQuestions.length;
-            let msg = `Respondeu a ${answeredCount} de ${total} questões.`;
-            if (answeredCount < total) msg += `\nFaltam ${total - answeredCount} questões em branco. Deseja finalizar?`;
-            else msg += `\nDeseja entregar a prova?`;
-            if (confirm(msg)) finishQuiz();
-        }
+    const answeredCount = Object.keys(userAnswers).length;
+    const total = activeQuestions.length;
+    let msg = `Respondeu a ${answeredCount} de ${total} questões.`;
+    
+    // Corrigido para fazer a subtração correta das questões em branco
+    if (answeredCount < total) {
+        msg += `\nFaltam ${total - answeredCount} questões em branco. Deseja finalizar?`;
+    } else {
+        msg += `\nDeseja entregar a prova?`;
+    }
+
+    // Chama o nosso modal bonito em vez do confirm() nativo
+    showCustomConfirm(msg, () => {
+        finishQuiz(); // Executa a finalização se o utilizador clicar em "Sim, Finalizar"
+    });
+}
+
+// Função auxiliar do modal
+function showCustomConfirm(message, onConfirm) {
+    const modal = document.getElementById('customConfirmModal');
+    const textElem = document.getElementById('customConfirmText');
+    const btnOk = document.getElementById('customConfirmOk');
+    const btnCancel = document.getElementById('customConfirmCancel');
+
+    if (!modal) {
+        if (confirm(message)) onConfirm();
+        return;
+    }
+
+    textElem.textContent = message;
+    modal.classList.remove('hidden');
+
+    // Substitui os botões para limpar eventos duplicados anteriores
+    const newBtnOk = btnOk.cloneNode(true);
+    const newBtnCancel = btnCancel.cloneNode(true);
+    btnOk.parentNode.replaceChild(newBtnOk, btnOk);
+    btnCancel.parentNode.replaceChild(newBtnCancel, btnCancel);
+
+    // Evento de confirmação
+    document.getElementById('customConfirmOk').addEventListener('click', () => {
+        modal.classList.add('hidden');
+        onConfirm();
+    });
+
+    // Evento de cancelamento
+    document.getElementById('customConfirmCancel').addEventListener('click', () => {
+        modal.classList.add('hidden');
+    });
+}
 
         function finishQuiz() {
             clearInterval(timerInterval);
