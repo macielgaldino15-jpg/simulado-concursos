@@ -103,32 +103,27 @@
                             <i class="fa-solid fa-book-bookmark text-brand-600"></i> Modo de Estudo / Disciplina:
                         </label>
                         <select id="disciplineSelect" class="w-full p-3.5 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:outline-none text-slate-900 dark:text-white text-base font-medium shadow-sm"></select>
-                        <p id="historyInfo" class="text-xs text-slate-500 dark:text-slate-400 mt-2"></p>
+                        <div class="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 mt-2">
+                            <p id="historyInfo" class="text-xs text-slate-500 dark:text-slate-400"></p>
+                            <button type="button" onclick="resetHistory()" class="text-xs text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1">
+                                <i class="fa-solid fa-trash-can"></i> Zerar histórico
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                         <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
-                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Gabarito</label>
-                            <div class="space-y-2">
-                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="immediate" class="text-brand-600 focus:ring-brand-500"><span>Gabarito Imediato</span></label>
-                                <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer"><input type="radio" name="feedbackMode" value="end" checked class="text-brand-600 focus:ring-brand-500"><span>Gabarito ao Final</span></label>
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider"><i class="fa-solid fa-clipboard-check mr-1.5 text-brand-600"></i>Gabarito</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="flex items-center justify-center gap-2 p-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 cursor-pointer has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 dark:has-[:checked]:bg-brand-900/30 has-[:checked]:text-brand-700 dark:has-[:checked]:text-brand-100 has-[:checked]:font-semibold transition-colors"><input type="radio" name="feedbackMode" value="immediate" class="text-brand-600 focus:ring-brand-500"><span>Imediato</span></label>
+                                <label class="flex items-center justify-center gap-2 p-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 cursor-pointer has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 dark:has-[:checked]:bg-brand-900/30 has-[:checked]:text-brand-700 dark:has-[:checked]:text-brand-100 has-[:checked]:font-semibold transition-colors"><input type="radio" name="feedbackMode" value="end" checked class="text-brand-600 focus:ring-brand-500"><span>Ao final</span></label>
                             </div>
                         </div>
                         <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
-                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Tempo Limite</label>
-                            <select id="timerSelect" class="w-full p-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-xs text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-brand-500">
+                            <label for="timerSelect" class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider"><i class="fa-regular fa-clock mr-1.5 text-brand-600"></i>Tempo Limite</label>
+                            <select id="timerSelect" class="w-full p-2.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-xl text-sm font-medium text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none">
                                 <option value="0">Livre</option><option value="60">60 Minutos</option><option value="120">120 Minutos</option><option value="210" selected>210 Minutos</option>
                             </select>
-                        </div>
-                        <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-900/40">
-                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-2 uppercase tracking-wider">Ordem</label>
-                            <label class="flex items-center space-x-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer">
-                                <input type="checkbox" id="shuffleToggle" checked class="rounded text-brand-600 focus:ring-brand-500">
-                                <span>Embaralhar questões</span>
-                            </label>
-                            <button type="button" onclick="resetHistory()" class="mt-3 text-xs text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1">
-                                <i class="fa-solid fa-trash-can"></i> Zerar histórico
-                            </button>
                         </div>
                     </div>
 
@@ -535,7 +530,7 @@
             }
             const discValue = $('disciplineSelect').value;
             const timerVal = parseInt($('timerSelect').value) || 0;
-            const shuffle = $('shuffleToggle').checked;
+            const shuffle = true; // as questões são sempre sorteadas
             for (const r of document.getElementsByName('feedbackMode')) { if (r.checked) feedbackMode = r.value; }
 
             const vistas = new Set(getSeen());
