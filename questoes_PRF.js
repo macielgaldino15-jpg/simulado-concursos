@@ -37,7 +37,15 @@ registrarConcurso("PRF", {
             "limite": 5
         },
         {
+            "nome": "Direito Processual Penal",
+            "limite": 4
+        },
+        {
             "nome": "Direito Administrativo",
+            "limite": 4
+        },
+        {
+            "nome": "Direitos Humanos",
             "limite": 4
         }
     ],
@@ -2310,6 +2318,461 @@ registrarConcurso("PRF", {
                 ],
                 "correta": 0,
                 "comentario": "Tempos: 1 h + 2 h = 3 h para 120 km. Velocidade média = 120 ÷ 3 = 40 km/h."
+            },
+            {
+                "id": 4001,
+                "enunciado": "Um veículo trafega a 108 km/h. Sua velocidade, em metros por segundo, é:",
+                "opcoes": [
+                    "A) 18 m/s",
+                    "B) 108 m/s",
+                    "C) 30 m/s",
+                    "D) 38,9 m/s",
+                    "E) 300 m/s"
+                ],
+                "correta": 2,
+                "comentario": "Para converter km/h em m/s, divide-se por 3,6: 108 ÷ 3,6 = 30 m/s."
+            },
+            {
+                "id": 4002,
+                "enunciado": "Um condutor a 72 km/h tem tempo de reação de 0,75 s. A distância percorrida durante o tempo de reação, antes de começar a frear, é:",
+                "opcoes": [
+                    "A) 15 m",
+                    "B) 96 m",
+                    "C) 20 m",
+                    "D) 54 m",
+                    "E) 7,5 m"
+                ],
+                "correta": 0,
+                "comentario": "72 km/h = 20 m/s. Durante a reação, o movimento é uniforme: d = v × t = 20 × 0,75 = 15 m."
+            },
+            {
+                "id": 4003,
+                "enunciado": "Em uma perícia de acidente, um veículo deixou marcas de frenagem de 40 m até parar, em pista com coeficiente de atrito 0,8 (g = 10 m/s²). A velocidade do veículo no início da frenagem era de aproximadamente:",
+                "opcoes": [
+                    "A) 40 m/s (cerca de 144 km/h)",
+                    "B) 25,3 m/s (cerca de 91 km/h)",
+                    "C) 16 m/s (cerca de 58 km/h)",
+                    "D) 12,6 m/s (cerca de 45 km/h)",
+                    "E) 32 m/s (cerca de 115 km/h)"
+                ],
+                "correta": 1,
+                "comentario": "Com desaceleração μ·g = 8 m/s², pela equação de Torricelli: v₀ = √(2·a·d) = √(2 × 8 × 40) = √640 ≈ 25,3 m/s. É o princípio usado para estimar a velocidade a partir das marcas de pneus."
+            },
+            {
+                "id": 4004,
+                "enunciado": "Se a velocidade de um veículo dobrar, mantida a mesma desaceleração, a distância de frenagem:",
+                "opcoes": [
+                    "A) cai pela metade.",
+                    "B) quadruplica.",
+                    "C) permanece igual.",
+                    "D) dobra.",
+                    "E) triplica."
+                ],
+                "correta": 1,
+                "comentario": "A distância de frenagem é proporcional ao quadrado da velocidade (d = v²/2a). Dobrando v, d fica 4 vezes maior."
+            },
+            {
+                "id": 4005,
+                "enunciado": "Um veículo freia de 25 m/s até parar em 5 s, com desaceleração constante. A desaceleração é de:",
+                "opcoes": [
+                    "A) 2,5 m/s²",
+                    "B) 125 m/s²",
+                    "C) 5 m/s²",
+                    "D) 20 m/s²",
+                    "E) 0,2 m/s²"
+                ],
+                "correta": 2,
+                "comentario": "a = Δv / Δt = (0 − 25) / 5 = −5 m/s². Em módulo, 5 m/s²."
+            },
+            {
+                "id": 4006,
+                "enunciado": "Um veículo parte do repouso com aceleração constante de 2 m/s². A distância percorrida em 10 s é:",
+                "opcoes": [
+                    "A) 100 m",
+                    "B) 10 m",
+                    "C) 20 m",
+                    "D) 50 m",
+                    "E) 200 m"
+                ],
+                "correta": 0,
+                "comentario": "S = v₀t + at²/2 = 0 + 2 × 100 / 2 = 100 m."
+            },
+            {
+                "id": 4007,
+                "enunciado": "Um veículo percorre metade de um trajeto a 60 km/h e a outra metade a 90 km/h. Sua velocidade média no trajeto todo é:",
+                "opcoes": [
+                    "A) 65 km/h",
+                    "B) 75 km/h",
+                    "C) 80 km/h",
+                    "D) 70 km/h",
+                    "E) 72 km/h"
+                ],
+                "correta": 4,
+                "comentario": "Para metades iguais de distância, a velocidade média é a média harmônica: 2 × 60 × 90 / (60 + 90) = 10.800 / 150 = 72 km/h. A média aritmética (75) está errada."
+            },
+            {
+                "id": 4008,
+                "enunciado": "Dois veículos estão separados por 300 m na mesma pista e se aproximam em sentidos opostos, a 20 m/s e 30 m/s. O tempo até se encontrarem é:",
+                "opcoes": [
+                    "A) 60 s",
+                    "B) 15 s",
+                    "C) 30 s",
+                    "D) 10 s",
+                    "E) 6 s"
+                ],
+                "correta": 4,
+                "comentario": "Velocidade relativa = 20 + 30 = 50 m/s. Tempo = 300 ÷ 50 = 6 s."
+            },
+            {
+                "id": 4009,
+                "enunciado": "Em um gráfico de velocidade em função do tempo, a área sob a curva representa:",
+                "opcoes": [
+                    "A) a aceleração do móvel.",
+                    "B) a energia cinética.",
+                    "C) o deslocamento do móvel.",
+                    "D) a massa do veículo.",
+                    "E) a força aplicada."
+                ],
+                "correta": 2,
+                "comentario": "No gráfico v × t, a área entre a curva e o eixo do tempo é o deslocamento; a inclinação (coeficiente angular) é a aceleração."
+            },
+            {
+                "id": 4010,
+                "enunciado": "Um objeto é abandonado do alto de um viaduto e leva 2 s para atingir o solo. Desprezando a resistência do ar, a altura do viaduto é:",
+                "opcoes": [
+                    "A) 10 m",
+                    "B) 40 m",
+                    "C) 4 m",
+                    "D) 5 m",
+                    "E) 20 m"
+                ],
+                "correta": 4,
+                "comentario": "Na queda livre: h = g·t²/2 = 10 × 4 / 2 = 20 m."
+            },
+            {
+                "id": 4011,
+                "enunciado": "Segundo a Primeira Lei de Newton (inércia), quando um veículo freia bruscamente, os passageiros sem cinto tendem a:",
+                "opcoes": [
+                    "A) ser atraídos para o centro do veículo.",
+                    "B) ser empurrados para trás.",
+                    "C) continuar em movimento para a frente, com a velocidade que tinham.",
+                    "D) parar junto com o veículo, sem se mover.",
+                    "E) subir em direção ao teto."
+                ],
+                "correta": 2,
+                "comentario": "Pela inércia, um corpo tende a manter seu estado de movimento. Sem o cinto, nada aplica força para frear o passageiro, que continua para a frente."
+            },
+            {
+                "id": 4012,
+                "enunciado": "Para acelerar um caminhão de 8.000 kg a 0,5 m/s², a força resultante necessária é:",
+                "opcoes": [
+                    "A) 4.000 N",
+                    "B) 80.000 N",
+                    "C) 16.000 N",
+                    "D) 400 N",
+                    "E) 8.000 N"
+                ],
+                "correta": 0,
+                "comentario": "Pela Segunda Lei de Newton: F = m × a = 8.000 × 0,5 = 4.000 N."
+            },
+            {
+                "id": 4013,
+                "enunciado": "Um veículo de 1.200 kg está sobre uma pista horizontal com coeficiente de atrito estático de 0,6 entre pneus e asfalto. A força de atrito máxima é (g = 10 m/s²):",
+                "opcoes": [
+                    "A) 12.000 N",
+                    "B) 6.000 N",
+                    "C) 720 N",
+                    "D) 2.000 N",
+                    "E) 7.200 N"
+                ],
+                "correta": 4,
+                "comentario": "Fat máx = μ × N = μ × m × g = 0,6 × 1.200 × 10 = 7.200 N."
+            },
+            {
+                "id": 4014,
+                "enunciado": "Em pista molhada, o coeficiente de atrito entre pneus e asfalto diminui. Para a mesma velocidade inicial, isso faz com que a distância de frenagem:",
+                "opcoes": [
+                    "A) permaneça igual.",
+                    "B) aumente.",
+                    "C) dependa apenas da massa do veículo.",
+                    "D) fique igual a zero.",
+                    "E) diminua."
+                ],
+                "correta": 1,
+                "comentario": "A desaceleração máxima é μ·g. Com μ menor, a desaceleração diminui e a distância de frenagem (v²/2μg) aumenta."
+            },
+            {
+                "id": 4015,
+                "enunciado": "Considerando apenas o atrito, a distância mínima de frenagem de um veículo a 20 m/s, com coeficiente de atrito 0,8 (g = 10 m/s²), é:",
+                "opcoes": [
+                    "A) 25 m",
+                    "B) 12,5 m",
+                    "C) 16 m",
+                    "D) 50 m",
+                    "E) 40 m"
+                ],
+                "correta": 0,
+                "comentario": "Desaceleração = μ·g = 8 m/s². d = v² / (2a) = 400 / 16 = 25 m. Note que a massa não interfere."
+            },
+            {
+                "id": 4016,
+                "enunciado": "A Terceira Lei de Newton (ação e reação) explica que, em uma colisão entre um caminhão e um carro:",
+                "opcoes": [
+                    "A) o carro não exerce força sobre o caminhão.",
+                    "B) só o veículo em movimento sofre força.",
+                    "C) o caminhão exerce força maior sobre o carro do que o carro sobre o caminhão.",
+                    "D) as forças que um exerce sobre o outro têm a mesma intensidade e sentidos opostos.",
+                    "E) as forças têm o mesmo sentido."
+                ],
+                "correta": 3,
+                "comentario": "As forças de ação e reação são iguais em intensidade. O carro sofre mais danos e maior aceleração por ter massa menor (a = F/m), não por receber força maior."
+            },
+            {
+                "id": 4017,
+                "enunciado": "Um veículo faz uma curva circular de raio 50 m a 10 m/s. A aceleração centrípeta é:",
+                "opcoes": [
+                    "A) 500 m/s²",
+                    "B) 2 m/s²",
+                    "C) 0,2 m/s²",
+                    "D) 20 m/s²",
+                    "E) 5 m/s²"
+                ],
+                "correta": 1,
+                "comentario": "ac = v² / R = 100 / 50 = 2 m/s²."
+            },
+            {
+                "id": 4018,
+                "enunciado": "Em uma curva plana, a força que mantém o veículo na trajetória circular é fornecida principalmente:",
+                "opcoes": [
+                    "A) pela força normal.",
+                    "B) pelo peso do veículo.",
+                    "C) pelo motor do veículo.",
+                    "D) pelo atrito lateral entre os pneus e a pista.",
+                    "E) pela resistência do ar."
+                ],
+                "correta": 3,
+                "comentario": "Em curva plana, o atrito lateral atua como força centrípeta. Se a velocidade exceder o limite (v² > μgR), o veículo derrapa para fora da curva."
+            },
+            {
+                "id": 4019,
+                "enunciado": "A velocidade máxima com que um veículo pode fazer uma curva plana de raio 80 m, com coeficiente de atrito 0,5 (g = 10 m/s²), sem derrapar, é:",
+                "opcoes": [
+                    "A) 28 m/s",
+                    "B) 10 m/s",
+                    "C) 20 m/s",
+                    "D) 40 m/s",
+                    "E) 400 m/s"
+                ],
+                "correta": 2,
+                "comentario": "Na velocidade máxima, o atrito é a força centrípeta: μ·m·g = m·v²/R → v = √(μ·g·R) = √(0,5 × 10 × 80) = √400 = 20 m/s (72 km/h)."
+            },
+            {
+                "id": 4020,
+                "enunciado": "Um veículo de 1.000 kg acelera de 0 a 20 m/s em 10 s em pista plana. Desprezando perdas, a potência média útil fornecida pelo motor é:",
+                "opcoes": [
+                    "A) 10 kW",
+                    "B) 200 kW",
+                    "C) 20 kW",
+                    "D) 2 kW",
+                    "E) 40 kW"
+                ],
+                "correta": 2,
+                "comentario": "O trabalho do motor é a variação da energia cinética: 1.000 × 20² / 2 = 200.000 J. Potência média = 200.000 ÷ 10 = 20.000 W = 20 kW."
+            },
+            {
+                "id": 4021,
+                "enunciado": "Se a velocidade de um veículo triplicar, sua energia cinética fica multiplicada por:",
+                "opcoes": [
+                    "A) 6",
+                    "B) 27",
+                    "C) 1,5",
+                    "D) 9",
+                    "E) 3"
+                ],
+                "correta": 3,
+                "comentario": "A energia cinética é proporcional ao quadrado da velocidade: 3² = 9. Por isso colisões em alta velocidade são muito mais destrutivas."
+            },
+            {
+                "id": 4022,
+                "enunciado": "Um caminhão de 10.000 kg está parado no alto de uma ladeira de 20 m de altura em relação à base. Sua energia potencial gravitacional em relação à base é (g = 10 m/s²):",
+                "opcoes": [
+                    "A) 200.000 J",
+                    "B) 500 J",
+                    "C) 100.000 J",
+                    "D) 20.000 J",
+                    "E) 2.000.000 J"
+                ],
+                "correta": 4,
+                "comentario": "Ep = m·g·h = 10.000 × 10 × 20 = 2.000.000 J (2 MJ)."
+            },
+            {
+                "id": 4023,
+                "enunciado": "Durante uma frenagem até a parada total, a energia cinética do veículo é transformada principalmente em:",
+                "opcoes": [
+                    "A) energia nuclear.",
+                    "B) energia potencial gravitacional.",
+                    "C) massa adicional do veículo.",
+                    "D) energia térmica, pelo atrito nos freios e pneus.",
+                    "E) energia elétrica, sempre."
+                ],
+                "correta": 3,
+                "comentario": "O atrito converte a energia cinética em calor nas pastilhas, discos e pneus. Por isso freios superaquecem em descidas longas, podendo perder eficiência."
+            },
+            {
+                "id": 4024,
+                "enunciado": "O trabalho realizado pela força de atrito para parar um veículo de 1.000 kg que estava a 30 m/s é, em módulo:",
+                "opcoes": [
+                    "A) 45.000 J",
+                    "B) 900.000 J",
+                    "C) 15.000 J",
+                    "D) 450.000 J",
+                    "E) 30.000 J"
+                ],
+                "correta": 3,
+                "comentario": "Pelo teorema da energia cinética, o trabalho da força resultante é igual à variação de Ec: 0 − (1.000 × 900 / 2) = −450.000 J. Em módulo, 450 kJ."
+            },
+            {
+                "id": 4025,
+                "enunciado": "Um motor eleva uma carga de 500 kg a 10 m de altura em 20 s, com velocidade constante. A potência útil desenvolvida é (g = 10 m/s²):",
+                "opcoes": [
+                    "A) 5.000 W",
+                    "B) 100.000 W",
+                    "C) 50.000 W",
+                    "D) 250 W",
+                    "E) 2.500 W"
+                ],
+                "correta": 4,
+                "comentario": "Trabalho = m·g·h = 50.000 J. Potência = trabalho ÷ tempo = 50.000 ÷ 20 = 2.500 W."
+            },
+            {
+                "id": 4026,
+                "enunciado": "A quantidade de movimento de um veículo de 1.000 kg a 25 m/s é:",
+                "opcoes": [
+                    "A) 25 kg·m/s",
+                    "B) 2.500 kg·m/s",
+                    "C) 40 kg·m/s",
+                    "D) 312.500 kg·m/s",
+                    "E) 25.000 kg·m/s"
+                ],
+                "correta": 4,
+                "comentario": "Q = m·v = 1.000 × 25 = 25.000 kg·m/s."
+            },
+            {
+                "id": 4027,
+                "enunciado": "Um carro de 1.000 kg a 20 m/s colide com outro de 1.000 kg parado, e os dois seguem juntos após o choque. A velocidade do conjunto logo após a colisão é:",
+                "opcoes": [
+                    "A) 0 m/s",
+                    "B) 20 m/s",
+                    "C) 5 m/s",
+                    "D) 10 m/s",
+                    "E) 40 m/s"
+                ],
+                "correta": 3,
+                "comentario": "Conservação da quantidade de movimento: 1.000 × 20 = 2.000 × v → v = 10 m/s. É uma colisão perfeitamente inelástica."
+            },
+            {
+                "id": 4028,
+                "enunciado": "O airbag reduz os danos ao ocupante em uma colisão porque:",
+                "opcoes": [
+                    "A) transforma a colisão em elástica.",
+                    "B) aumenta o tempo de desaceleração do corpo, diminuindo a força média sofrida.",
+                    "C) aumenta a velocidade do ocupante.",
+                    "D) elimina a inércia do ocupante.",
+                    "E) reduz a variação da quantidade de movimento do ocupante para zero."
+                ],
+                "correta": 1,
+                "comentario": "Pelo teorema do impulso (F·Δt = ΔQ), a variação da quantidade de movimento é a mesma; aumentando Δt, a força média diminui."
+            },
+            {
+                "id": 4029,
+                "enunciado": "Um veículo de 1.200 kg reduz sua velocidade de 20 m/s para zero em 0,1 s em uma colisão. A força média sobre o veículo tem intensidade de:",
+                "opcoes": [
+                    "A) 240.000 N",
+                    "B) 24.000 N",
+                    "C) 2.400.000 N",
+                    "D) 120.000 N",
+                    "E) 2.400 N"
+                ],
+                "correta": 0,
+                "comentario": "F = ΔQ / Δt = (1.200 × 20) / 0,1 = 24.000 / 0,1 = 240.000 N."
+            },
+            {
+                "id": 4030,
+                "enunciado": "O efeito Doppler, utilizado em alguns radares de velocidade, consiste na:",
+                "opcoes": [
+                    "A) variação da massa de um corpo em alta velocidade.",
+                    "B) atração gravitacional entre veículos.",
+                    "C) dilatação térmica dos metais.",
+                    "D) variação da frequência da onda percebida quando há movimento relativo entre a fonte e o observador.",
+                    "E) reflexão total da luz em fibras ópticas."
+                ],
+                "correta": 3,
+                "comentario": "O radar emite ondas que, refletidas por um veículo em movimento, voltam com frequência alterada; a diferença permite calcular a velocidade."
+            },
+            {
+                "id": 4031,
+                "enunciado": "Um radar fixo mede o tempo que um veículo leva para percorrer a distância entre dois sensores separados por 4 m. Se o tempo foi de 0,16 s, a velocidade do veículo é:",
+                "opcoes": [
+                    "A) 25 km/h",
+                    "B) 90 km/h",
+                    "C) 40 km/h",
+                    "D) 100 km/h",
+                    "E) 64 km/h"
+                ],
+                "correta": 1,
+                "comentario": "v = 4 ÷ 0,16 = 25 m/s. Em km/h: 25 × 3,6 = 90 km/h."
+            },
+            {
+                "id": 4032,
+                "enunciado": "Em uma descida longa, recomenda-se usar o freio-motor (marcha reduzida) porque:",
+                "opcoes": [
+                    "A) reduz o peso do veículo.",
+                    "B) parte da energia é dissipada pelo motor, evitando o superaquecimento dos freios.",
+                    "C) elimina a necessidade de usar os freios em qualquer situação.",
+                    "D) aumenta a energia cinética do veículo.",
+                    "E) aumenta o coeficiente de atrito dos pneus."
+                ],
+                "correta": 1,
+                "comentario": "Freios superaquecidos perdem eficiência (fadiga). O freio-motor ajuda a controlar a velocidade, dividindo a dissipação de energia."
+            },
+            {
+                "id": 4033,
+                "enunciado": "A pressão exercida pelos pneus de um veículo de 2.000 kg sobre o solo, distribuída igualmente em uma área total de contato de 0,08 m², é (g = 10 m/s²):",
+                "opcoes": [
+                    "A) 250.000 Pa",
+                    "B) 160 Pa",
+                    "C) 16.000 Pa",
+                    "D) 25.000 Pa",
+                    "E) 2.500 Pa"
+                ],
+                "correta": 0,
+                "comentario": "P = F / A = (2.000 × 10) / 0,08 = 20.000 / 0,08 = 250.000 Pa."
+            },
+            {
+                "id": 4034,
+                "enunciado": "Um veículo descreve uma curva com velocidade de módulo constante. Nessa situação, é correto afirmar que:",
+                "opcoes": [
+                    "A) o veículo está em movimento retilíneo uniforme.",
+                    "B) não há atrito entre os pneus e a pista.",
+                    "C) há aceleração, pois a direção da velocidade está mudando.",
+                    "D) a força resultante sobre o veículo é nula.",
+                    "E) a aceleração é nula, pois o módulo da velocidade não muda."
+                ],
+                "correta": 2,
+                "comentario": "A velocidade é um vetor. Mudando a direção, há aceleração centrípeta, voltada para o centro da curva, e uma força resultante não nula."
+            },
+            {
+                "id": 4035,
+                "enunciado": "A distância total de parada de um veículo é a soma da distância de reação com a de frenagem. A 20 m/s, com tempo de reação de 1 s e desaceleração de 5 m/s², a distância total de parada é:",
+                "opcoes": [
+                    "A) 60 m",
+                    "B) 20 m",
+                    "C) 80 m",
+                    "D) 40 m",
+                    "E) 45 m"
+                ],
+                "correta": 0,
+                "comentario": "Reação: 20 × 1 = 20 m. Frenagem: 20² / (2 × 5) = 40 m. Total: 60 m. O tempo de reação aumenta muito com sono, álcool ou uso do celular."
             }
         ],
         "Legislação de Trânsito": [
@@ -4186,6 +4649,656 @@ registrarConcurso("PRF", {
                 ],
                 "correta": 0,
                 "comentario": "Art. 5º, XLII: a prática do racismo é crime inafiançável e imprescritível, sujeito à pena de reclusão."
+            },
+            {
+                "id": 6001,
+                "enunciado": "Segundo o art. 3º da Constituição Federal, constitui objetivo fundamental da República Federativa do Brasil:",
+                "opcoes": [
+                    "A) a soberania.",
+                    "B) o pluralismo político.",
+                    "C) erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais.",
+                    "D) a independência nacional.",
+                    "E) a dignidade da pessoa humana."
+                ],
+                "correta": 2,
+                "comentario": "Soberania, dignidade da pessoa humana e pluralismo político são fundamentos (art. 1º). Independência nacional é princípio das relações internacionais (art. 4º). Objetivos (art. 3º) usam verbos: construir, garantir, erradicar, promover."
+            },
+            {
+                "id": 6002,
+                "enunciado": "São Poderes da União, independentes e harmônicos entre si, segundo o art. 2º da Constituição:",
+                "opcoes": [
+                    "A) o Legislativo, o Executivo e o Ministério Público.",
+                    "B) o Legislativo, o Executivo e o Judiciário.",
+                    "C) o Legislativo, o Judiciário e o Tribunal de Contas.",
+                    "D) o Executivo, o Judiciário e as Forças Armadas.",
+                    "E) o Executivo, o Legislativo e a Defensoria Pública."
+                ],
+                "correta": 1,
+                "comentario": "O art. 2º consagra a separação dos três Poderes. Ministério Público, Defensoria e Tribunais de Contas são órgãos essenciais ou auxiliares, não Poderes."
+            },
+            {
+                "id": 6003,
+                "enunciado": "A República Federativa do Brasil é formada pela união indissolúvel de:",
+                "opcoes": [
+                    "A) Estados, Municípios, Distrito Federal e regiões administrativas.",
+                    "B) Municípios e Territórios, apenas.",
+                    "C) União, Estados e regiões metropolitanas.",
+                    "D) Estados e Territórios, apenas.",
+                    "E) Estados, Municípios e Distrito Federal."
+                ],
+                "correta": 4,
+                "comentario": "O art. 1º fala na união indissolúvel dos Estados, Municípios e Distrito Federal. Pelo art. 18, a organização político-administrativa compreende União, Estados, DF e Municípios, todos autônomos."
+            },
+            {
+                "id": 6004,
+                "enunciado": "Segundo o art. 5º, XII, da Constituição, é inviolável o sigilo das comunicações telefônicas, salvo:",
+                "opcoes": [
+                    "A) para fins de processos civis e trabalhistas.",
+                    "B) por requisição do delegado de polícia, em qualquer investigação.",
+                    "C) por ordem judicial, nas hipóteses e na forma que a lei estabelecer, para fins de investigação criminal ou instrução processual penal.",
+                    "D) por determinação do Ministério Público, sem ordem judicial.",
+                    "E) em nenhuma hipótese."
+                ],
+                "correta": 2,
+                "comentario": "A interceptação telefônica exige ordem judicial e finalidade penal, nos termos da Lei 9.296/1996. Não cabe para processos cíveis."
+            },
+            {
+                "id": 6005,
+                "enunciado": "Segundo a Constituição, a prática da tortura, o tráfico ilícito de entorpecentes, o terrorismo e os crimes hediondos são:",
+                "opcoes": [
+                    "A) afiançáveis e prescritíveis.",
+                    "B) imprescritíveis e inafiançáveis.",
+                    "C) punidos com pena de morte.",
+                    "D) julgados exclusivamente pela Justiça Militar.",
+                    "E) inafiançáveis e insuscetíveis de graça ou anistia."
+                ],
+                "correta": 4,
+                "comentario": "Pelo art. 5º, XLIII, esses crimes (os '3T' mais hediondos) são inafiançáveis e insuscetíveis de graça ou anistia. Imprescritíveis são o racismo e a ação de grupos armados contra a ordem constitucional."
+            },
+            {
+                "id": 6006,
+                "enunciado": "São crimes imprescritíveis, segundo a Constituição Federal:",
+                "opcoes": [
+                    "A) o homicídio e o latrocínio.",
+                    "B) a tortura e o terrorismo.",
+                    "C) o tráfico de drogas e os crimes hediondos.",
+                    "D) todos os crimes contra a administração pública.",
+                    "E) o racismo e a ação de grupos armados, civis ou militares, contra a ordem constitucional e o Estado Democrático."
+                ],
+                "correta": 4,
+                "comentario": "O art. 5º, XLII e XLIV, prevê apenas essas duas hipóteses de imprescritibilidade (além de serem inafiançáveis)."
+            },
+            {
+                "id": 6007,
+                "enunciado": "Segundo o art. 5º, XLVII, da Constituição, NÃO haverá penas, salvo exceção expressa:",
+                "opcoes": [
+                    "A) de perda de bens.",
+                    "B) de morte, salvo em caso de guerra declarada, de caráter perpétuo, de trabalhos forçados, de banimento e cruéis.",
+                    "C) restritivas de direitos.",
+                    "D) privativas de liberdade e de multa.",
+                    "E) de suspensão ou interdição de direitos."
+                ],
+                "correta": 1,
+                "comentario": "A pena de morte só é admitida em guerra declarada. As demais (perpétua, trabalhos forçados, banimento e cruéis) são proibidas sem exceção. As penas listadas nas alternativas incorretas são admitidas pelo inciso XLVI."
+            },
+            {
+                "id": 6008,
+                "enunciado": "O preso será informado de seus direitos, segundo a Constituição, entre os quais:",
+                "opcoes": [
+                    "A) o de obter indenização automática pela prisão.",
+                    "B) o de escolher o juiz que o julgará.",
+                    "C) o de permanecer calado, sendo-lhe assegurada a assistência da família e de advogado.",
+                    "D) o de ser solto imediatamente após 24 horas, em qualquer caso.",
+                    "E) o de não ser identificado criminalmente em nenhuma hipótese."
+                ],
+                "correta": 2,
+                "comentario": "O art. 5º, LXIII, assegura o direito ao silêncio e à assistência da família e de advogado. É a base do princípio da não autoincriminação."
+            },
+            {
+                "id": 6009,
+                "enunciado": "Segundo o art. 5º, LXII, da Constituição, a prisão de qualquer pessoa e o local onde se encontre serão comunicados imediatamente:",
+                "opcoes": [
+                    "A) somente ao advogado, se houver.",
+                    "B) ao Presidente da República.",
+                    "C) à imprensa local.",
+                    "D) apenas ao Ministério Público.",
+                    "E) ao juiz competente e à família do preso ou à pessoa por ele indicada."
+                ],
+                "correta": 4,
+                "comentario": "A comunicação imediata ao juiz e à família é garantia contra prisões ilegais e desaparecimentos."
+            },
+            {
+                "id": 6010,
+                "enunciado": "O civilmente identificado, segundo a Constituição, não será submetido a identificação criminal:",
+                "opcoes": [
+                    "A) salvo nas hipóteses previstas em lei.",
+                    "B) salvo se for estrangeiro.",
+                    "C) em nenhuma hipótese.",
+                    "D) salvo autorização do delegado.",
+                    "E) salvo em crimes de trânsito."
+                ],
+                "correta": 0,
+                "comentario": "O art. 5º, LVIII, admite a identificação criminal do civilmente identificado nas hipóteses legais, hoje previstas na Lei 12.037/2009."
+            },
+            {
+                "id": 6011,
+                "enunciado": "Segundo a Constituição, ninguém será considerado culpado até:",
+                "opcoes": [
+                    "A) a condenação em primeira instância.",
+                    "B) o trânsito em julgado de sentença penal condenatória.",
+                    "C) a conclusão do inquérito policial.",
+                    "D) a prisão em flagrante.",
+                    "E) a denúncia do Ministério Público."
+                ],
+                "correta": 1,
+                "comentario": "O art. 5º, LVII, consagra a presunção de inocência (ou de não culpabilidade). Em 2019, o STF reafirmou que a execução da pena exige o trânsito em julgado (ADCs 43, 44 e 54)."
+            },
+            {
+                "id": 6012,
+                "enunciado": "Segundo o art. 5º, LVI, da Constituição, são inadmissíveis no processo:",
+                "opcoes": [
+                    "A) as provas obtidas por meios ilícitos.",
+                    "B) as confissões espontâneas.",
+                    "C) as provas periciais.",
+                    "D) as provas testemunhais.",
+                    "E) as provas documentais."
+                ],
+                "correta": 0,
+                "comentario": "A Constituição proíbe as provas ilícitas. O CPP (art. 157) também determina o desentranhamento das provas ilícitas e das derivadas delas, com exceções."
+            },
+            {
+                "id": 6013,
+                "enunciado": "Segundo a Constituição, é livre a manifestação do pensamento, sendo:",
+                "opcoes": [
+                    "A) proibida a crítica a autoridades.",
+                    "B) vedado o anonimato.",
+                    "C) permitido o anonimato em qualquer caso.",
+                    "D) exigida autorização prévia do Estado.",
+                    "E) garantido apenas aos brasileiros natos."
+                ],
+                "correta": 1,
+                "comentario": "O art. 5º, IV, garante a livre manifestação do pensamento, vedando o anonimato, para permitir a responsabilização por abusos."
+            },
+            {
+                "id": 6014,
+                "enunciado": "Todos podem reunir-se pacificamente, sem armas, em locais abertos ao público, segundo a Constituição:",
+                "opcoes": [
+                    "A) somente com autorização da polícia.",
+                    "B) desde que o número de participantes não ultrapasse cem pessoas.",
+                    "C) apenas em dias úteis.",
+                    "D) somente com autorização judicial prévia.",
+                    "E) independentemente de autorização, desde que não frustrem outra reunião anteriormente convocada para o mesmo local, sendo apenas exigido prévio aviso à autoridade competente."
+                ],
+                "correta": 4,
+                "comentario": "O art. 5º, XVI, garante a liberdade de reunião sem autorização, exigindo apenas aviso prévio para não frustrar outra reunião."
+            },
+            {
+                "id": 6015,
+                "enunciado": "Segundo a Constituição, a criação de associações e, na forma da lei, a de cooperativas:",
+                "opcoes": [
+                    "A) são proibidas para servidores públicos.",
+                    "B) dependem de autorização do Poder Executivo.",
+                    "C) dependem de registro na Polícia Federal.",
+                    "D) dependem de aprovação do Congresso Nacional.",
+                    "E) independem de autorização, sendo vedada a interferência estatal em seu funcionamento."
+                ],
+                "correta": 4,
+                "comentario": "O art. 5º, XVIII, garante a liberdade de associação. A dissolução compulsória exige decisão judicial transitada em julgado; a suspensão das atividades, decisão judicial (inciso XIX)."
+            },
+            {
+                "id": 6016,
+                "enunciado": "Segundo a Constituição, a lei penal não retroagirá:",
+                "opcoes": [
+                    "A) salvo para beneficiar o réu.",
+                    "B) salvo para crimes hediondos.",
+                    "C) salvo para agravar a pena.",
+                    "D) em nenhuma hipótese.",
+                    "E) salvo se o juiz autorizar."
+                ],
+                "correta": 0,
+                "comentario": "O art. 5º, XL, prevê a irretroatividade da lei penal mais grave e a retroatividade da lei mais benéfica."
+            },
+            {
+                "id": 6017,
+                "enunciado": "Conceder-se-á habeas corpus sempre que alguém sofrer ou se achar ameaçado de sofrer:",
+                "opcoes": [
+                    "A) omissão do legislador na regulamentação de direito.",
+                    "B) lesão ao patrimônio público.",
+                    "C) violação de direito líquido e certo não amparado por outro remédio.",
+                    "D) violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder.",
+                    "E) negativa de acesso a informações pessoais em banco de dados público."
+                ],
+                "correta": 3,
+                "comentario": "O habeas corpus protege a liberdade de locomoção (art. 5º, LXVIII). Direito líquido e certo: mandado de segurança. Informações pessoais: habeas data. Patrimônio público: ação popular. Omissão legislativa: mandado de injunção."
+            },
+            {
+                "id": 6018,
+                "enunciado": "O remédio constitucional adequado para assegurar o conhecimento de informações relativas à pessoa do impetrante, constantes de registros ou bancos de dados de entidades governamentais, é o:",
+                "opcoes": [
+                    "A) mandado de injunção.",
+                    "B) habeas data.",
+                    "C) mandado de segurança.",
+                    "D) ação popular.",
+                    "E) habeas corpus."
+                ],
+                "correta": 1,
+                "comentario": "O habeas data (art. 5º, LXXII) serve para conhecer e retificar dados pessoais em registros públicos ou de caráter público."
+            },
+            {
+                "id": 6019,
+                "enunciado": "Qualquer cidadão é parte legítima para propor ação que vise anular ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente e ao patrimônio histórico e cultural. Trata-se da:",
+                "opcoes": [
+                    "A) ação popular.",
+                    "B) ação civil pública.",
+                    "C) ação direta de inconstitucionalidade.",
+                    "D) mandado de injunção.",
+                    "E) habeas data."
+                ],
+                "correta": 0,
+                "comentario": "A ação popular (art. 5º, LXXIII) é proposta pelo cidadão (eleitor). Salvo comprovada má-fé, o autor fica isento de custas e do ônus da sucumbência."
+            },
+            {
+                "id": 6020,
+                "enunciado": "O mandado de injunção será concedido sempre que:",
+                "opcoes": [
+                    "A) houver lesão ao meio ambiente.",
+                    "B) houver abuso de autoridade em concurso público.",
+                    "C) a falta de norma regulamentadora tornar inviável o exercício de direitos e liberdades constitucionais.",
+                    "D) o cidadão quiser corrigir dados em cadastro público.",
+                    "E) houver prisão ilegal."
+                ],
+                "correta": 2,
+                "comentario": "O mandado de injunção (art. 5º, LXXI) combate a omissão normativa que impede o exercício de direitos constitucionais."
+            },
+            {
+                "id": 6021,
+                "enunciado": "O mandado de segurança coletivo pode ser impetrado, segundo a Constituição, por:",
+                "opcoes": [
+                    "A) qualquer cidadão, individualmente.",
+                    "B) partido político com representação no Congresso Nacional, organização sindical, entidade de classe ou associação legalmente constituída e em funcionamento há pelo menos um ano.",
+                    "C) qualquer pessoa jurídica de direito privado, sem requisitos.",
+                    "D) apenas o Ministério Público.",
+                    "E) somente a Defensoria Pública."
+                ],
+                "correta": 1,
+                "comentario": "O art. 5º, LXX, lista os legitimados. Para associações, exige-se constituição legal e funcionamento há pelo menos um ano, em defesa de seus membros."
+            },
+            {
+                "id": 6022,
+                "enunciado": "Segundo o art. 5º, LXVI, da Constituição, ninguém será levado à prisão ou nela mantido quando:",
+                "opcoes": [
+                    "A) a vítima não comparecer à delegacia.",
+                    "B) o fato ocorrer durante a noite.",
+                    "C) o crime for de menor gravidade, a critério do policial.",
+                    "D) o preso for servidor público.",
+                    "E) a lei admitir a liberdade provisória, com ou sem fiança."
+                ],
+                "correta": 4,
+                "comentario": "A liberdade é a regra e a prisão, exceção. Quando a lei admitir a liberdade provisória, a prisão não pode ser mantida."
+            },
+            {
+                "id": 6023,
+                "enunciado": "Segundo a Constituição, são privativos de brasileiro nato os cargos de:",
+                "opcoes": [
+                    "A) Presidente e Vice-Presidente da República, Ministro do STF, oficial das Forças Armadas e Ministro de Estado da Defesa, entre outros.",
+                    "B) Senador e Deputado Federal.",
+                    "C) Ministro de qualquer pasta.",
+                    "D) Governador e Prefeito.",
+                    "E) Policial Rodoviário Federal."
+                ],
+                "correta": 0,
+                "comentario": "O art. 12, §3º, lista os cargos privativos de nato: Presidente e Vice, Presidentes da Câmara e do Senado, Ministros do STF, carreira diplomática, oficial das Forças Armadas e Ministro da Defesa."
+            },
+            {
+                "id": 6024,
+                "enunciado": "O alistamento eleitoral e o voto são obrigatórios para os maiores de 18 anos e facultativos para:",
+                "opcoes": [
+                    "A) os maiores de 60 anos.",
+                    "B) os servidores públicos.",
+                    "C) os analfabetos, os maiores de 70 anos e os maiores de 16 e menores de 18 anos.",
+                    "D) os militares em serviço.",
+                    "E) os estrangeiros residentes no Brasil."
+                ],
+                "correta": 2,
+                "comentario": "O art. 14, §1º, prevê voto facultativo para esses três grupos. Estrangeiros e conscritos (durante o serviço militar obrigatório) não podem se alistar."
+            },
+            {
+                "id": 6025,
+                "enunciado": "Segundo o art. 14, §3º, da Constituição, a idade mínima para concorrer ao cargo de Senador é:",
+                "opcoes": [
+                    "A) 35 anos.",
+                    "B) 21 anos.",
+                    "C) 30 anos.",
+                    "D) 18 anos.",
+                    "E) 40 anos."
+                ],
+                "correta": 0,
+                "comentario": "Idades mínimas: 35 anos para Presidente, Vice e Senador; 30 para Governador e Vice; 21 para Deputado, Prefeito, Vice e juiz de paz; 18 para Vereador."
+            },
+            {
+                "id": 6026,
+                "enunciado": "É vedada a cassação de direitos políticos. Sua perda ou suspensão só se dará, entre outros casos, em razão de:",
+                "opcoes": [
+                    "A) não pagamento de impostos.",
+                    "B) denúncia anônima.",
+                    "C) decisão administrativa do Tribunal de Contas.",
+                    "D) simples instauração de inquérito.",
+                    "E) condenação criminal transitada em julgado, enquanto durarem seus efeitos."
+                ],
+                "correta": 4,
+                "comentario": "O art. 15 lista as hipóteses: cancelamento da naturalização, incapacidade civil absoluta, condenação criminal transitada em julgado, recusa de obrigação a todos imposta e improbidade administrativa."
+            },
+            {
+                "id": 6027,
+                "enunciado": "Segundo o art. 21 da Constituição, compete à União, entre outras atribuições:",
+                "opcoes": [
+                    "A) legislar sobre assuntos de interesse local.",
+                    "B) explorar o serviço de gás canalizado local.",
+                    "C) organizar as polícias civis dos Estados.",
+                    "D) executar os serviços de polícia marítima, aeroportuária e de fronteiras.",
+                    "E) instituir o IPVA."
+                ],
+                "correta": 3,
+                "comentario": "O art. 21, XXII, atribui à União esses serviços, executados pela Polícia Federal. Assuntos de interesse local são dos Municípios; gás canalizado, dos Estados; IPVA é tributo estadual."
+            },
+            {
+                "id": 6028,
+                "enunciado": "Compete privativamente à União legislar sobre:",
+                "opcoes": [
+                    "A) direito penal, processual, civil, eleitoral, trânsito e transporte.",
+                    "B) organização das polícias civis estaduais.",
+                    "C) assuntos de interesse local.",
+                    "D) proteção ao meio ambiente, exclusivamente.",
+                    "E) direito tributário e financeiro, apenas."
+                ],
+                "correta": 0,
+                "comentario": "O art. 22 lista as matérias privativas da União, incluindo direito penal e processual (I) e trânsito e transporte (XI). Direito tributário e meio ambiente são concorrentes (art. 24)."
+            },
+            {
+                "id": 6029,
+                "enunciado": "A intervenção federal nos Estados, prevista no art. 34 da Constituição, é:",
+                "opcoes": [
+                    "A) a regra na relação entre União e Estados.",
+                    "B) livre, a critério do Presidente da República.",
+                    "C) permitida para resolver conflitos entre Municípios do mesmo Estado.",
+                    "D) medida excepcional, cabível apenas nas hipóteses taxativas da Constituição.",
+                    "E) decretada pelo Congresso Nacional, exclusivamente."
+                ],
+                "correta": 3,
+                "comentario": "A regra é a não intervenção, em respeito à autonomia dos entes. Ela é decretada pelo Presidente e submetida ao Congresso (art. 36), apenas nas hipóteses previstas."
+            },
+            {
+                "id": 6030,
+                "enunciado": "Segundo o art. 37, II, da Constituição, a investidura em cargo ou emprego público depende de:",
+                "opcoes": [
+                    "A) indicação política do chefe do Poder.",
+                    "B) sorteio entre os candidatos inscritos.",
+                    "C) aprovação prévia em concurso público de provas ou de provas e títulos, ressalvadas as nomeações para cargo em comissão.",
+                    "D) entrevista pessoal com o superior hierárquico.",
+                    "E) análise curricular, apenas."
+                ],
+                "correta": 2,
+                "comentario": "O concurso garante isonomia e moralidade. Os cargos em comissão, de livre nomeação e exoneração, destinam-se a direção, chefia e assessoramento."
+            },
+            {
+                "id": 6031,
+                "enunciado": "O prazo de validade do concurso público, segundo a Constituição, é de:",
+                "opcoes": [
+                    "A) indeterminado.",
+                    "B) até quatro anos, prorrogável por mais um ano.",
+                    "C) cinco anos, prorrogável duas vezes.",
+                    "D) até dois anos, prorrogável uma vez, por igual período.",
+                    "E) um ano, improrrogável."
+                ],
+                "correta": 3,
+                "comentario": "O art. 37, III, fixa validade de até dois anos, prorrogável uma vez por igual período."
+            },
+            {
+                "id": 6032,
+                "enunciado": "A Constituição garante ao servidor público civil o direito de greve, que será exercido:",
+                "opcoes": [
+                    "A) somente pelos servidores policiais.",
+                    "B) sem qualquer limite.",
+                    "C) de forma proibida em qualquer caso.",
+                    "D) nos termos e nos limites definidos em lei específica.",
+                    "E) apenas com autorização do Presidente."
+                ],
+                "correta": 3,
+                "comentario": "O art. 37, VII, prevê a greve nos termos de lei específica. Diante da omissão, o STF determinou a aplicação da Lei 7.783/1989, com adaptações. Para policiais, o STF fixou a proibição da greve (Tema 541)."
+            },
+            {
+                "id": 6033,
+                "enunciado": "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros. Essa responsabilidade é:",
+                "opcoes": [
+                    "A) objetiva, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.",
+                    "B) inexistente quando o agente agir em serviço.",
+                    "C) objetiva, sem direito de regresso em nenhum caso.",
+                    "D) exclusiva do agente público, sem participação do Estado.",
+                    "E) subjetiva, dependendo sempre da prova de culpa do Estado."
+                ],
+                "correta": 0,
+                "comentario": "O art. 37, §6º, adota a teoria do risco administrativo: a vítima não precisa provar culpa. O Estado pode cobrar do agente se houve dolo ou culpa."
+            },
+            {
+                "id": 6034,
+                "enunciado": "Segundo a Constituição, é vedada a acumulação remunerada de cargos públicos, exceto quando houver compatibilidade de horários, nos casos de:",
+                "opcoes": [
+                    "A) dois cargos policiais de esferas diferentes.",
+                    "B) qualquer cargo efetivo com qualquer cargo em comissão.",
+                    "C) dois cargos de professor; um de professor com outro técnico ou científico; ou dois cargos privativos de profissionais de saúde com profissões regulamentadas.",
+                    "D) três cargos de professor.",
+                    "E) um cargo efetivo e um mandato de Senador."
+                ],
+                "correta": 2,
+                "comentario": "O art. 37, XVI, lista as exceções taxativas à proibição de acumular."
+            },
+            {
+                "id": 6035,
+                "enunciado": "Segundo o art. 144 da Constituição, a segurança pública é:",
+                "opcoes": [
+                    "A) dever do Estado, direito e responsabilidade de todos, exercida para a preservação da ordem pública e da incolumidade das pessoas e do patrimônio.",
+                    "B) dever apenas das empresas de vigilância privada.",
+                    "C) exclusivamente responsabilidade das Forças Armadas.",
+                    "D) atividade reservada à Polícia Federal.",
+                    "E) competência privativa dos Municípios."
+                ],
+                "correta": 0,
+                "comentario": "O caput do art. 144 define a segurança pública como dever do Estado e responsabilidade de todos, e lista seus órgãos."
+            },
+            {
+                "id": 6036,
+                "enunciado": "Segundo o art. 144 da Constituição, NÃO é órgão de segurança pública listado em seus incisos:",
+                "opcoes": [
+                    "A) a Polícia Federal.",
+                    "B) a Guarda Municipal.",
+                    "C) os corpos de bombeiros militares.",
+                    "D) as polícias penais.",
+                    "E) a Polícia Rodoviária Federal."
+                ],
+                "correta": 1,
+                "comentario": "Os incisos listam PF, PRF, Polícia Ferroviária Federal, polícias civis, polícias militares e corpos de bombeiros militares e polícias penais. As guardas municipais estão no §8º, como órgãos que os Municípios podem constituir."
+            },
+            {
+                "id": 6037,
+                "enunciado": "Segundo o art. 144, §1º, da Constituição, compete à Polícia Federal, entre outras atribuições:",
+                "opcoes": [
+                    "A) executar atividades de defesa civil.",
+                    "B) exercer a polícia ostensiva nos Estados.",
+                    "C) exercer, com exclusividade, as funções de polícia judiciária da União.",
+                    "D) realizar o patrulhamento ostensivo das rodovias federais.",
+                    "E) realizar a segurança dos estabelecimentos penais estaduais."
+                ],
+                "correta": 2,
+                "comentario": "A PF exerce com exclusividade a polícia judiciária da União. O patrulhamento ostensivo das rodovias federais é da PRF (§2º)."
+            },
+            {
+                "id": 6038,
+                "enunciado": "Segundo a Constituição, às polícias militares cabem:",
+                "opcoes": [
+                    "A) as funções de polícia marítima e aeroportuária.",
+                    "B) as funções de polícia judiciária e a apuração de infrações penais.",
+                    "C) a segurança dos estabelecimentos penais.",
+                    "D) a polícia ostensiva e a preservação da ordem pública.",
+                    "E) o patrulhamento ostensivo das rodovias federais."
+                ],
+                "correta": 3,
+                "comentario": "O §5º do art. 144 atribui às PMs a polícia ostensiva e a preservação da ordem pública. A apuração de infrações (exceto militares) cabe às polícias civis (§4º)."
+            },
+            {
+                "id": 6039,
+                "enunciado": "A Polícia Rodoviária Federal é, segundo a Constituição:",
+                "opcoes": [
+                    "A) órgão temporário, criado por decreto do Presidente.",
+                    "B) órgão estadual subordinado aos Detrans.",
+                    "C) instituição militar auxiliar do Exército.",
+                    "D) órgão permanente, organizado e mantido pela União e estruturado em carreira.",
+                    "E) órgão municipal de fiscalização de trânsito."
+                ],
+                "correta": 3,
+                "comentario": "O art. 144, §2º, define a PRF como órgão permanente, organizado e mantido pela União e estruturado em carreira, destinado ao patrulhamento ostensivo das rodovias federais."
+            },
+            {
+                "id": 6040,
+                "enunciado": "O estado de defesa pode ser decretado pelo Presidente da República para preservar ou prontamente restabelecer, em locais restritos e determinados, a ordem pública ou a paz social ameaçadas por grave e iminente instabilidade institucional ou atingidas por calamidades de grandes proporções. Ele terá duração de:",
+                "opcoes": [
+                    "A) até 1 ano.",
+                    "B) até 15 dias, improrrogável.",
+                    "C) até 30 dias, prorrogável uma vez, por igual período.",
+                    "D) prazo indeterminado.",
+                    "E) até 90 dias, prorrogável indefinidamente."
+                ],
+                "correta": 2,
+                "comentario": "O art. 136, §2º, limita o estado de defesa a 30 dias, prorrogável uma vez. O decreto é submetido ao Congresso em 24 horas."
+            },
+            {
+                "id": 6041,
+                "enunciado": "O estado de sítio, diferentemente do estado de defesa:",
+                "opcoes": [
+                    "A) pode ser decretado sem consulta ao Congresso.",
+                    "B) depende de autorização prévia do Congresso Nacional para ser decretado.",
+                    "C) tem duração máxima de 10 dias.",
+                    "D) é decretado pelo Supremo Tribunal Federal.",
+                    "E) só se aplica a locais restritos e determinados."
+                ],
+                "correta": 1,
+                "comentario": "No estado de sítio (art. 137), o Presidente solicita autorização ao Congresso antes de decretar. No estado de defesa, decreta e depois submete ao Congresso."
+            },
+            {
+                "id": 6042,
+                "enunciado": "Compete exclusivamente ao Congresso Nacional, segundo o art. 49 da Constituição:",
+                "opcoes": [
+                    "A) sancionar as leis.",
+                    "B) editar medidas provisórias.",
+                    "C) julgar o Presidente da República por crimes comuns.",
+                    "D) sustar os atos normativos do Poder Executivo que exorbitem do poder regulamentar.",
+                    "E) nomear os Ministros de Estado."
+                ],
+                "correta": 3,
+                "comentario": "O art. 49, V, permite ao Congresso sustar atos do Executivo que exorbitem o poder regulamentar. Nomear Ministros e editar MPs é competência do Presidente; crimes comuns do Presidente são julgados pelo STF."
+            },
+            {
+                "id": 6043,
+                "enunciado": "As medidas provisórias, editadas pelo Presidente da República em caso de relevância e urgência, perdem a eficácia, desde a edição, se não forem convertidas em lei no prazo de:",
+                "opcoes": [
+                    "A) 30 dias, improrrogáveis.",
+                    "B) 1 ano.",
+                    "C) 90 dias, prorrogáveis duas vezes.",
+                    "D) 60 dias, prorrogável uma vez por igual período.",
+                    "E) 120 dias, improrrogáveis."
+                ],
+                "correta": 3,
+                "comentario": "O art. 62, §3º, fixa 60 dias prorrogáveis por mais 60. O prazo fica suspenso durante o recesso parlamentar."
+            },
+            {
+                "id": 6044,
+                "enunciado": "É vedada a edição de medidas provisórias sobre matéria relativa a:",
+                "opcoes": [
+                    "A) direito penal, processual penal e processual civil.",
+                    "B) tributos, em qualquer caso.",
+                    "C) organização da administração federal.",
+                    "D) criação de cargos no Executivo.",
+                    "E) trânsito e transporte."
+                ],
+                "correta": 0,
+                "comentario": "O art. 62, §1º, I, 'b', proíbe MP sobre direito penal, processual penal e processual civil, entre outras matérias."
+            },
+            {
+                "id": 6045,
+                "enunciado": "O julgamento do Presidente da República por crime de responsabilidade será feito:",
+                "opcoes": [
+                    "A) pela Câmara dos Deputados, por maioria simples.",
+                    "B) pelo Senado Federal, após autorização da Câmara dos Deputados por dois terços de seus membros.",
+                    "C) pelo Tribunal Superior Eleitoral.",
+                    "D) pelo Supremo Tribunal Federal, sem participação do Congresso.",
+                    "E) pelo Superior Tribunal de Justiça."
+                ],
+                "correta": 1,
+                "comentario": "Nos crimes de responsabilidade, a Câmara autoriza (2/3) e o Senado julga, sob a presidência do Presidente do STF (arts. 51, I, 52, I, e 86)."
+            },
+            {
+                "id": 6046,
+                "enunciado": "Compete originariamente ao Supremo Tribunal Federal processar e julgar:",
+                "opcoes": [
+                    "A) os crimes de trânsito em rodovias federais.",
+                    "B) os mandados de segurança contra atos de Prefeitos.",
+                    "C) as causas entre Município e particular.",
+                    "D) a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual.",
+                    "E) os crimes comuns praticados por Governadores."
+                ],
+                "correta": 3,
+                "comentario": "O art. 102, I, 'a', atribui ao STF a ADI. Governadores são julgados pelo STJ nos crimes comuns (art. 105, I, 'a')."
+            },
+            {
+                "id": 6047,
+                "enunciado": "Compete aos juízes federais processar e julgar, entre outros, os crimes:",
+                "opcoes": [
+                    "A) eleitorais.",
+                    "B) praticados em detrimento de bens, serviços ou interesse da União, de suas entidades autárquicas ou empresas públicas.",
+                    "C) contra o patrimônio de particulares em geral.",
+                    "D) de trânsito cometidos em qualquer rodovia, sem exceção.",
+                    "E) praticados contra sociedades de economia mista federais, como o Banco do Brasil."
+                ],
+                "correta": 1,
+                "comentario": "O art. 109, IV, fixa a competência federal. Crimes contra sociedades de economia mista (como Banco do Brasil e Petrobras) são, em regra, da Justiça Estadual (Súmula 42 do STJ). Crimes eleitorais são da Justiça Eleitoral."
+            },
+            {
+                "id": 6048,
+                "enunciado": "São direitos sociais, segundo o art. 6º da Constituição, entre outros:",
+                "opcoes": [
+                    "A) a propriedade, a herança e a liberdade de expressão.",
+                    "B) a ação popular e o habeas corpus.",
+                    "C) o voto obrigatório e a nacionalidade.",
+                    "D) a soberania e a cidadania.",
+                    "E) a educação, a saúde, a alimentação, o trabalho, a moradia, o transporte, o lazer e a segurança."
+                ],
+                "correta": 4,
+                "comentario": "O art. 6º lista os direitos sociais. O transporte foi incluído pela EC 90/2015. Propriedade e herança são direitos individuais (art. 5º)."
+            },
+            {
+                "id": 6049,
+                "enunciado": "Segundo a Constituição, é proibido o trabalho noturno, perigoso ou insalubre a menores de:",
+                "opcoes": [
+                    "A) 16 anos, sem exceção.",
+                    "B) 21 anos, em qualquer caso.",
+                    "C) 18 anos, e qualquer trabalho a menores de 16 anos, salvo na condição de aprendiz, a partir de 14 anos.",
+                    "D) 14 anos, apenas.",
+                    "E) 12 anos, salvo aprendiz."
+                ],
+                "correta": 2,
+                "comentario": "O art. 7º, XXXIII, proíbe trabalho noturno, perigoso ou insalubre aos menores de 18 e qualquer trabalho aos menores de 16, salvo aprendiz a partir de 14."
+            },
+            {
+                "id": 6050,
+                "enunciado": "Segundo o art. 5º, XXXIV, da Constituição, são a todos assegurados, independentemente do pagamento de taxas:",
+                "opcoes": [
+                    "A) o fornecimento gratuito de documentos de veículos.",
+                    "B) a dispensa de custas em todos os processos judiciais.",
+                    "C) a isenção de multas de trânsito.",
+                    "D) o acesso gratuito a qualquer serviço público, sem exceção.",
+                    "E) o direito de petição aos Poderes Públicos e a obtenção de certidões em repartições públicas para defesa de direitos e esclarecimento de situações de interesse pessoal."
+                ],
+                "correta": 4,
+                "comentario": "O direito de petição e o direito de certidão são gratuitos, como instrumentos de defesa de direitos e de controle da Administração."
             }
         ],
         "Direito Penal": [
@@ -4266,9 +5379,920 @@ registrarConcurso("PRF", {
                 ],
                 "correta": 3,
                 "comentario": "Homicídio simples: reclusão, de 6 a 20 anos. O homicídio qualificado tem pena de 12 a 30 anos."
+            },
+            {
+                "id": 7001,
+                "enunciado": "Segundo o art. 4º do Código Penal, considera-se praticado o crime:",
+                "opcoes": [
+                    "A) no momento do resultado, apenas.",
+                    "B) no momento em que a vítima registra a ocorrência.",
+                    "C) no momento da ação ou omissão, ainda que outro seja o momento do resultado.",
+                    "D) no momento do oferecimento da denúncia.",
+                    "E) no momento da descoberta do crime pela polícia."
+                ],
+                "correta": 2,
+                "comentario": "O CP adota a teoria da atividade para o tempo do crime. Para o lugar do crime (art. 6º), adota a teoria da ubiquidade."
+            },
+            {
+                "id": 7002,
+                "enunciado": "Quanto ao lugar do crime, o art. 6º do Código Penal adota a teoria:",
+                "opcoes": [
+                    "A) do resultado, apenas.",
+                    "B) da ubiquidade: considera-se praticado o crime tanto no lugar da ação ou omissão quanto onde se produziu ou deveria produzir-se o resultado.",
+                    "C) da atividade, apenas.",
+                    "D) do domicílio da vítima.",
+                    "E) da residência do autor."
+                ],
+                "correta": 1,
+                "comentario": "Pela ubiquidade, tanto o lugar da conduta quanto o do resultado são considerados lugar do crime, o que é importante em crimes à distância."
+            },
+            {
+                "id": 7003,
+                "enunciado": "Ninguém pode ser punido por fato que lei posterior deixa de considerar crime. Esse fenômeno é chamado de:",
+                "opcoes": [
+                    "A) perdão judicial.",
+                    "B) analogia in malam partem.",
+                    "C) novatio legis in pejus.",
+                    "D) abolitio criminis, que faz cessar a execução e os efeitos penais da sentença condenatória.",
+                    "E) ultratividade da lei mais grave."
+                ],
+                "correta": 3,
+                "comentario": "Pelo art. 2º do CP, a abolitio criminis retroage e extingue a punibilidade. Os efeitos civis, como o dever de indenizar, permanecem."
+            },
+            {
+                "id": 7004,
+                "enunciado": "Segundo o art. 14, II, do Código Penal, diz-se o crime tentado quando:",
+                "opcoes": [
+                    "A) iniciada a execução, não se consuma por circunstâncias alheias à vontade do agente.",
+                    "B) o crime se consuma, mas a vítima sobrevive.",
+                    "C) o agente desiste voluntariamente de prosseguir.",
+                    "D) o agente apenas planeja o crime.",
+                    "E) o agente se arrepende após a consumação."
+                ],
+                "correta": 0,
+                "comentario": "Na tentativa, o agente quer consumar, mas é impedido por fatores externos. Salvo disposição em contrário, pune-se com a pena do crime consumado reduzida de um a dois terços."
+            },
+            {
+                "id": 7005,
+                "enunciado": "O agente que, voluntariamente, desiste de prosseguir na execução ou impede que o resultado se produza:",
+                "opcoes": [
+                    "A) responde com a pena reduzida pela metade.",
+                    "B) só responde pelos atos já praticados.",
+                    "C) responde pela tentativa do crime pretendido.",
+                    "D) fica isento de qualquer responsabilidade, em todos os casos.",
+                    "E) responde pelo crime consumado."
+                ],
+                "correta": 1,
+                "comentario": "É a desistência voluntária ou o arrependimento eficaz (art. 15 do CP). O agente não responde pela tentativa, mas pelos atos já praticados, se forem crimes."
+            },
+            {
+                "id": 7006,
+                "enunciado": "Nos crimes cometidos sem violência ou grave ameaça à pessoa, reparado o dano ou restituída a coisa, por ato voluntário do agente, até o recebimento da denúncia ou da queixa, a pena será reduzida de um a dois terços. Trata-se do:",
+                "opcoes": [
+                    "A) estado de necessidade.",
+                    "B) arrependimento posterior.",
+                    "C) perdão judicial.",
+                    "D) arrependimento eficaz.",
+                    "E) crime impossível."
+                ],
+                "correta": 1,
+                "comentario": "O arrependimento posterior (art. 16 do CP) ocorre após a consumação e reduz a pena. O arrependimento eficaz ocorre antes da consumação."
+            },
+            {
+                "id": 7007,
+                "enunciado": "Não se pune a tentativa quando, por ineficácia absoluta do meio ou por absoluta impropriedade do objeto, é impossível consumar-se o crime. Trata-se do:",
+                "opcoes": [
+                    "A) crime preterdoloso.",
+                    "B) crime culposo.",
+                    "C) erro de proibição.",
+                    "D) crime impossível.",
+                    "E) arrependimento posterior."
+                ],
+                "correta": 3,
+                "comentario": "No crime impossível (art. 17), não há risco ao bem jurídico, como tentar matar alguém já morto ou usar arma de brinquedo para atirar."
+            },
+            {
+                "id": 7008,
+                "enunciado": "Diz-se o crime culposo quando o agente deu causa ao resultado por:",
+                "opcoes": [
+                    "A) vontade livre e consciente de produzi-lo.",
+                    "B) coação moral irresistível.",
+                    "C) ter assumido o risco de produzi-lo.",
+                    "D) erro sobre a ilicitude do fato.",
+                    "E) imprudência, negligência ou imperícia."
+                ],
+                "correta": 4,
+                "comentario": "Art. 18, II, do CP. Quando o agente quer o resultado ou assume o risco de produzi-lo, o crime é doloso (dolo direto ou eventual)."
+            },
+            {
+                "id": 7009,
+                "enunciado": "O motorista que, mesmo prevendo a possibilidade de atropelar alguém, acredita sinceramente que conseguirá evitá-lo por sua habilidade, e acaba atropelando, age com:",
+                "opcoes": [
+                    "A) culpa consciente.",
+                    "B) culpa inconsciente.",
+                    "C) preterdolo.",
+                    "D) dolo eventual.",
+                    "E) dolo direto."
+                ],
+                "correta": 0,
+                "comentario": "Na culpa consciente, o agente prevê o resultado, mas confia que não ocorrerá. No dolo eventual, prevê e aceita o risco ('tanto faz')."
+            },
+            {
+                "id": 7010,
+                "enunciado": "Segundo o art. 25 do Código Penal, entende-se em legítima defesa quem, usando moderadamente dos meios necessários, repele:",
+                "opcoes": [
+                    "A) perigo atual que não provocou por sua vontade.",
+                    "B) agressão futura e incerta.",
+                    "C) qualquer agressão, mesmo que justa.",
+                    "D) ofensa ocorrida no dia anterior.",
+                    "E) injusta agressão, atual ou iminente, a direito seu ou de outrem."
+                ],
+                "correta": 4,
+                "comentario": "A legítima defesa exige agressão injusta, atual ou iminente, e uso moderado dos meios necessários. Perigo atual não provocado é requisito do estado de necessidade (art. 24)."
+            },
+            {
+                "id": 7011,
+                "enunciado": "Considera-se também em legítima defesa, segundo o parágrafo único do art. 25 do Código Penal (incluído pela Lei 13.964/2019):",
+                "opcoes": [
+                    "A) o agente que reage a ofensas verbais com disparos.",
+                    "B) o segurança que agride quem ofendeu sua honra.",
+                    "C) qualquer pessoa que pratique vingança por crime anterior.",
+                    "D) o agente de segurança pública que repele agressão ou risco de agressão a vítima mantida refém durante a prática de crimes.",
+                    "E) o policial que atira em suspeito em fuga, sem ameaça."
+                ],
+                "correta": 3,
+                "comentario": "O pacote anticrime explicitou essa hipótese, mantendo os requisitos gerais da legítima defesa (moderação e meios necessários)."
+            },
+            {
+                "id": 7012,
+                "enunciado": "Segundo o art. 27 do Código Penal, os menores de 18 anos são:",
+                "opcoes": [
+                    "A) imputáveis a partir dos 16 anos.",
+                    "B) isentos de qualquer medida.",
+                    "C) julgados pela Justiça Federal.",
+                    "D) penalmente inimputáveis, ficando sujeitos às normas da legislação especial.",
+                    "E) imputáveis, com pena reduzida pela metade."
+                ],
+                "correta": 3,
+                "comentario": "Os menores de 18 anos respondem por atos infracionais, nos termos do Estatuto da Criança e do Adolescente, e não por crimes do CP."
+            },
+            {
+                "id": 7013,
+                "enunciado": "Segundo o art. 28, II, do Código Penal, a embriaguez voluntária ou culposa, pelo álcool ou substância de efeitos análogos:",
+                "opcoes": [
+                    "A) impede a prisão em flagrante.",
+                    "B) não exclui a imputabilidade penal.",
+                    "C) transforma o crime doloso em culposo.",
+                    "D) reduz obrigatoriamente a pena pela metade.",
+                    "E) exclui sempre a imputabilidade."
+                ],
+                "correta": 1,
+                "comentario": "Pela teoria da actio libera in causa, quem se embriaga voluntariamente responde pelo crime. Só a embriaguez completa e involuntária (caso fortuito ou força maior) pode isentar de pena (art. 28, §1º)."
+            },
+            {
+                "id": 7014,
+                "enunciado": "Segundo o art. 29 do Código Penal, quem, de qualquer modo, concorre para o crime:",
+                "opcoes": [
+                    "A) responde sempre com pena maior que a do autor.",
+                    "B) responde apenas por contravenção.",
+                    "C) incide nas penas a este cominadas, na medida de sua culpabilidade.",
+                    "D) responde com metade da pena do autor, sempre.",
+                    "E) não responde se não executou pessoalmente o crime."
+                ],
+                "correta": 2,
+                "comentario": "O CP adota a teoria monista: todos respondem pelo mesmo crime, cada um na medida de sua culpabilidade. A participação de menor importância pode reduzir a pena de um sexto a um terço."
+            },
+            {
+                "id": 7015,
+                "enunciado": "Segundo o art. 32 do Código Penal, as penas são:",
+                "opcoes": [
+                    "A) de advertência, de multa e de trabalhos forçados.",
+                    "B) apenas privativas de liberdade.",
+                    "C) de morte, perpétua e de multa.",
+                    "D) de reclusão, de banimento e de multa.",
+                    "E) privativas de liberdade, restritivas de direitos e de multa."
+                ],
+                "correta": 4,
+                "comentario": "As três espécies de pena estão no art. 32. A Constituição proíbe penas de morte (salvo guerra), perpétuas, de banimento, de trabalhos forçados e cruéis."
+            },
+            {
+                "id": 7016,
+                "enunciado": "A pena de reclusão, segundo o art. 33 do Código Penal, deve ser cumprida em regime:",
+                "opcoes": [
+                    "A) fechado, semiaberto ou aberto; a de detenção, em regime semiaberto ou aberto, salvo necessidade de transferência ao fechado.",
+                    "B) apenas fechado.",
+                    "C) semiaberto ou aberto, sem possibilidade de regime fechado.",
+                    "D) domiciliar, em qualquer caso.",
+                    "E) apenas aberto."
+                ],
+                "correta": 0,
+                "comentario": "Reclusão admite os três regimes desde o início; detenção começa no semiaberto ou aberto, podendo regredir ao fechado."
+            },
+            {
+                "id": 7017,
+                "enunciado": "As penas restritivas de direitos substituem as privativas de liberdade, segundo o art. 44 do Código Penal, quando, entre outros requisitos:",
+                "opcoes": [
+                    "A) o crime for hediondo.",
+                    "B) o crime for praticado com violência à pessoa.",
+                    "C) o réu for reincidente em crime doloso, sempre.",
+                    "D) a pena aplicada for superior a 8 anos.",
+                    "E) a pena aplicada não for superior a 4 anos e o crime não for cometido com violência ou grave ameaça, ou, qualquer que seja a pena, se o crime for culposo."
+                ],
+                "correta": 4,
+                "comentario": "O art. 44 permite a substituição em crimes sem violência ou grave ameaça com pena de até 4 anos e em qualquer crime culposo, observados outros requisitos subjetivos."
+            },
+            {
+                "id": 7018,
+                "enunciado": "A pena do homicídio qualificado (art. 121, §2º, do Código Penal) é de:",
+                "opcoes": [
+                    "A) reclusão de 6 a 20 anos.",
+                    "B) detenção de 1 a 3 anos.",
+                    "C) reclusão de 12 a 30 anos.",
+                    "D) reclusão de 20 a 40 anos, sempre.",
+                    "E) detenção de 2 a 4 anos."
+                ],
+                "correta": 2,
+                "comentario": "O homicídio simples tem pena de 6 a 20 anos; o qualificado, de 12 a 30 anos. O feminicídio passou a ser crime autônomo (art. 121-A) com pena de 20 a 40 anos, pela Lei 14.994/2024."
+            },
+            {
+                "id": 7019,
+                "enunciado": "Com a Lei 14.994/2024, o feminicídio passou a ser:",
+                "opcoes": [
+                    "A) contravenção penal.",
+                    "B) uma qualificadora do homicídio, com pena de 12 a 30 anos.",
+                    "C) crime autônomo, previsto no art. 121-A do Código Penal, com pena de reclusão de 20 a 40 anos.",
+                    "D) uma simples agravante genérica.",
+                    "E) crime culposo."
+                ],
+                "correta": 2,
+                "comentario": "A lei retirou o feminicídio do rol de qualificadoras do art. 121 e o transformou em tipo penal próprio, com uma das maiores penas do Código."
+            },
+            {
+                "id": 7020,
+                "enunciado": "A lesão corporal simples, prevista no art. 129, caput, do Código Penal, tem pena de:",
+                "opcoes": [
+                    "A) detenção de 3 meses a 1 ano.",
+                    "B) reclusão de 1 a 5 anos.",
+                    "C) detenção de 2 a 4 anos.",
+                    "D) apenas multa.",
+                    "E) reclusão de 2 a 8 anos."
+                ],
+                "correta": 0,
+                "comentario": "A lesão simples é crime de menor potencial ofensivo. Lesões graves, gravíssimas e seguidas de morte têm penas maiores (§§1º a 3º)."
+            },
+            {
+                "id": 7021,
+                "enunciado": "Deixar de prestar assistência, quando possível fazê-lo sem risco pessoal, a pessoa ferida ou em grave e iminente perigo, ou não pedir o socorro da autoridade pública, é crime de:",
+                "opcoes": [
+                    "A) omissão de socorro (art. 135 do Código Penal).",
+                    "B) homicídio culposo.",
+                    "C) lesão corporal culposa.",
+                    "D) prevaricação.",
+                    "E) abandono de incapaz."
+                ],
+                "correta": 0,
+                "comentario": "A omissão de socorro do art. 135 do CP é crime comum. No trânsito, quando o omitente é o condutor envolvido no acidente, aplica-se o art. 304 do CTB, por especialidade."
+            },
+            {
+                "id": 7022,
+                "enunciado": "Subtrair, para si ou para outrem, coisa alheia móvel, sem violência ou grave ameaça, configura o crime de:",
+                "opcoes": [
+                    "A) receptação.",
+                    "B) apropriação indébita.",
+                    "C) estelionato.",
+                    "D) furto.",
+                    "E) roubo."
+                ],
+                "correta": 3,
+                "comentario": "Furto (art. 155): subtração sem violência ou grave ameaça. Com violência ou grave ameaça, é roubo (art. 157)."
+            },
+            {
+                "id": 7023,
+                "enunciado": "O furto de veículo automotor que venha a ser transportado para outro Estado ou para o exterior é punido, segundo o art. 155, §5º, do Código Penal, com:",
+                "opcoes": [
+                    "A) detenção de 6 meses a 2 anos.",
+                    "B) apenas multa.",
+                    "C) reclusão de 1 a 4 anos.",
+                    "D) reclusão de 12 a 30 anos.",
+                    "E) reclusão de 3 a 8 anos."
+                ],
+                "correta": 4,
+                "comentario": "É uma forma qualificada específica do furto, relevante na atuação da PRF em fronteiras e divisas."
+            },
+            {
+                "id": 7024,
+                "enunciado": "Subtrair coisa alheia móvel mediante grave ameaça ou violência à pessoa configura:",
+                "opcoes": [
+                    "A) estelionato.",
+                    "B) roubo, punido com reclusão de 4 a 10 anos e multa.",
+                    "C) extorsão mediante sequestro.",
+                    "D) furto qualificado.",
+                    "E) dano qualificado."
+                ],
+                "correta": 1,
+                "comentario": "O roubo (art. 157) envolve violência ou grave ameaça. O emprego de arma de fogo aumenta a pena em dois terços (§2º-A, I)."
+            },
+            {
+                "id": 7025,
+                "enunciado": "Se da violência empregada no roubo resulta morte (latrocínio), a pena é de:",
+                "opcoes": [
+                    "A) reclusão de 4 a 10 anos.",
+                    "B) reclusão de 30 a 40 anos.",
+                    "C) reclusão de 20 a 30 anos e multa.",
+                    "D) reclusão de 6 a 20 anos.",
+                    "E) reclusão de 12 a 30 anos."
+                ],
+                "correta": 2,
+                "comentario": "O §3º, II, do art. 157 prevê 20 a 30 anos. O latrocínio é crime hediondo e, por ser crime contra o patrimônio, é julgado pelo juiz singular, não pelo júri (Súmula 603 do STF)."
+            },
+            {
+                "id": 7026,
+                "enunciado": "Adquirir, receber, transportar, conduzir ou ocultar, em proveito próprio ou alheio, coisa que sabe ser produto de crime configura:",
+                "opcoes": [
+                    "A) favorecimento pessoal.",
+                    "B) furto.",
+                    "C) lavagem de dinheiro, sempre.",
+                    "D) apropriação indébita.",
+                    "E) receptação (art. 180 do Código Penal)."
+                ],
+                "correta": 4,
+                "comentario": "A receptação dolosa tem pena de reclusão de 1 a 4 anos e multa. Há também a forma qualificada (atividade comercial) e a culposa (§3º)."
+            },
+            {
+                "id": 7027,
+                "enunciado": "Obter, para si ou para outrem, vantagem ilícita, em prejuízo alheio, induzindo ou mantendo alguém em erro, mediante artifício, ardil ou outro meio fraudulento, é o crime de:",
+                "opcoes": [
+                    "A) extorsão.",
+                    "B) estelionato.",
+                    "C) roubo.",
+                    "D) furto mediante fraude.",
+                    "E) apropriação indébita."
+                ],
+                "correta": 1,
+                "comentario": "No estelionato (art. 171), a vítima entrega o bem enganada. No furto mediante fraude, a fraude serve para diminuir a vigilância e permitir a subtração."
+            },
+            {
+                "id": 7028,
+                "enunciado": "Após a Lei 13.964/2019 (pacote anticrime), a ação penal no crime de estelionato, como regra, é:",
+                "opcoes": [
+                    "A) pública incondicionada, sempre.",
+                    "B) privada personalíssima.",
+                    "C) pública condicionada à representação da vítima.",
+                    "D) dispensada, por ser crime de menor potencial ofensivo.",
+                    "E) privada exclusiva."
+                ],
+                "correta": 2,
+                "comentario": "O §5º do art. 171 passou a exigir representação, salvo quando a vítima for a Administração Pública, criança ou adolescente, pessoa com deficiência mental, maior de 70 anos ou incapaz."
+            },
+            {
+                "id": 7029,
+                "enunciado": "Adulterar ou remarcar número de chassi ou qualquer sinal identificador de veículo automotor, de seu componente ou equipamento, é crime previsto no art. 311 do Código Penal, punido com:",
+                "opcoes": [
+                    "A) reclusão de 12 a 20 anos.",
+                    "B) apenas multa.",
+                    "C) reclusão de 1 a 2 anos.",
+                    "D) reclusão de 3 a 6 anos e multa.",
+                    "E) detenção de 6 meses a 1 ano."
+                ],
+                "correta": 3,
+                "comentario": "O crime é frequente em fiscalizações da PRF. A Lei 14.562/2023 ampliou o tipo para alcançar também veículos elétricos, híbridos, reboques, semirreboques e suas combinações."
+            },
+            {
+                "id": 7030,
+                "enunciado": "Fazer uso de documento falso, como uma CNH falsificada apresentada em fiscalização, configura o crime de:",
+                "opcoes": [
+                    "A) estelionato.",
+                    "B) desobediência.",
+                    "C) falsa identidade apenas, sem pena específica.",
+                    "D) uso de documento falso (art. 304 do Código Penal), com a mesma pena cominada à falsificação ou à alteração.",
+                    "E) falsidade ideológica, sempre."
+                ],
+                "correta": 3,
+                "comentario": "O art. 304 remete às penas dos arts. 297 a 302. A CNH é documento público; sua falsificação é punida com reclusão de 2 a 6 anos e multa."
+            },
+            {
+                "id": 7031,
+                "enunciado": "Atribuir-se ou atribuir a terceiro falsa identidade para obter vantagem, em proveito próprio ou alheio, ou para causar dano a outrem, é o crime de:",
+                "opcoes": [
+                    "A) falsa identidade (art. 307 do Código Penal).",
+                    "B) favorecimento real.",
+                    "C) estelionato.",
+                    "D) falsidade ideológica.",
+                    "E) uso de documento falso."
+                ],
+                "correta": 0,
+                "comentario": "Segundo a Súmula 522 do STJ, a conduta de atribuir-se falsa identidade perante autoridade policial é típica, mesmo em situação de alegada autodefesa."
+            },
+            {
+                "id": 7032,
+                "enunciado": "Omitir, em documento público ou particular, declaração que dele devia constar, ou nele inserir declaração falsa, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante, é crime de:",
+                "opcoes": [
+                    "A) falsa identidade.",
+                    "B) falsificação de documento público (art. 297).",
+                    "C) falsidade ideológica (art. 299 do Código Penal).",
+                    "D) uso de documento falso.",
+                    "E) supressão de documento."
+                ],
+                "correta": 2,
+                "comentario": "Na falsidade ideológica, o documento é materialmente verdadeiro, mas seu conteúdo é falso. Na falsificação material, o próprio documento é forjado ou alterado."
+            },
+            {
+                "id": 7033,
+                "enunciado": "Exigir, para si ou para outrem, direta ou indiretamente, ainda que fora da função ou antes de assumi-la, mas em razão dela, vantagem indevida, é crime de:",
+                "opcoes": [
+                    "A) corrupção passiva.",
+                    "B) concussão (art. 316 do Código Penal).",
+                    "C) prevaricação.",
+                    "D) peculato.",
+                    "E) corrupção ativa."
+                ],
+                "correta": 1,
+                "comentario": "Na concussão, o funcionário EXIGE (impõe). Na corrupção passiva, SOLICITA, RECEBE ou ACEITA promessa. O verbo nuclear diferencia os crimes."
+            },
+            {
+                "id": 7034,
+                "enunciado": "Solicitar ou receber, para si ou para outrem, vantagem indevida, ou aceitar promessa de tal vantagem, em razão da função pública, é crime de:",
+                "opcoes": [
+                    "A) corrupção passiva (art. 317 do Código Penal).",
+                    "B) corrupção ativa.",
+                    "C) concussão.",
+                    "D) tráfico de influência.",
+                    "E) advocacia administrativa."
+                ],
+                "correta": 0,
+                "comentario": "A corrupção passiva é praticada pelo funcionário público e tem pena de reclusão de 2 a 12 anos e multa."
+            },
+            {
+                "id": 7035,
+                "enunciado": "O motorista que oferece dinheiro a um policial rodoviário para que este deixe de lavrar o auto de infração comete o crime de:",
+                "opcoes": [
+                    "A) tráfico de influência.",
+                    "B) desacato.",
+                    "C) concussão.",
+                    "D) corrupção ativa (art. 333 do Código Penal).",
+                    "E) corrupção passiva."
+                ],
+                "correta": 3,
+                "comentario": "A corrupção ativa é crime do particular que oferece ou promete vantagem indevida ao funcionário para que pratique, omita ou retarde ato de ofício. Basta a oferta para a consumação."
+            },
+            {
+                "id": 7036,
+                "enunciado": "Desacatar funcionário público no exercício da função ou em razão dela é crime previsto no art. 331 do Código Penal. Sobre ele, o STF decidiu (ADPF 496) que:",
+                "opcoes": [
+                    "A) é inconstitucional e não pode ser aplicado.",
+                    "B) só se aplica a ofensas escritas.",
+                    "C) só vale para ofensas a juízes.",
+                    "D) foi revogado pelo pacote anticrime.",
+                    "E) o tipo penal foi recepcionado pela Constituição e é compatível com a liberdade de expressão."
+                ],
+                "correta": 4,
+                "comentario": "O STF entendeu que o crime de desacato é compatível com a Constituição e com a Convenção Americana de Direitos Humanos. A pena é de detenção de 6 meses a 2 anos, ou multa."
+            },
+            {
+                "id": 7037,
+                "enunciado": "Opor-se à execução de ato legal, mediante violência ou ameaça a funcionário competente para executá-lo ou a quem lhe esteja prestando auxílio, é crime de:",
+                "opcoes": [
+                    "A) coação no curso do processo.",
+                    "B) exercício arbitrário das próprias razões.",
+                    "C) desacato.",
+                    "D) desobediência.",
+                    "E) resistência (art. 329 do Código Penal)."
+                ],
+                "correta": 4,
+                "comentario": "A resistência exige violência ou ameaça. A simples recusa em cumprir a ordem, sem violência ou ameaça, configura desobediência (art. 330)."
+            },
+            {
+                "id": 7038,
+                "enunciado": "Desobedecer a ordem legal de funcionário público é crime de desobediência, punido com:",
+                "opcoes": [
+                    "A) reclusão de 2 a 12 anos.",
+                    "B) detenção de 2 a 4 anos.",
+                    "C) detenção de 15 dias a 6 meses e multa.",
+                    "D) apenas advertência.",
+                    "E) reclusão de 3 a 6 anos."
+                ],
+                "correta": 2,
+                "comentario": "O art. 330 do CP pune a desobediência com detenção de 15 dias a 6 meses e multa. É crime de menor potencial ofensivo."
+            },
+            {
+                "id": 7039,
+                "enunciado": "Importar ou exportar mercadoria proibida configura o crime de:",
+                "opcoes": [
+                    "A) sonegação fiscal, apenas.",
+                    "B) descaminho, com pena de detenção.",
+                    "C) tráfico de influência.",
+                    "D) contrabando (art. 334-A do Código Penal), com pena de reclusão de 2 a 5 anos.",
+                    "E) receptação."
+                ],
+                "correta": 3,
+                "comentario": "Contrabando envolve mercadoria proibida (ex.: cigarros sem registro na Anvisa, que o STJ trata como contrabando). Descaminho (art. 334) é iludir o pagamento de tributo por mercadoria permitida."
+            },
+            {
+                "id": 7040,
+                "enunciado": "Iludir, no todo ou em parte, o pagamento de direito ou imposto devido pela entrada, pela saída ou pelo consumo de mercadoria permitida configura:",
+                "opcoes": [
+                    "A) descaminho (art. 334 do Código Penal), com pena de reclusão de 1 a 4 anos.",
+                    "B) peculato.",
+                    "C) estelionato.",
+                    "D) receptação.",
+                    "E) contrabando."
+                ],
+                "correta": 0,
+                "comentario": "No descaminho, a mercadoria é lícita, mas o tributo é sonegado. A jurisprudência admite a insignificância quando o tributo iludido não ultrapassa R$ 20.000,00, ressalvada a reiteração delitiva."
+            },
+            {
+                "id": 7041,
+                "enunciado": "Patrocinar, direta ou indiretamente, interesse privado perante a administração pública, valendo-se da qualidade de funcionário, é crime de:",
+                "opcoes": [
+                    "A) prevaricação.",
+                    "B) concussão.",
+                    "C) corrupção ativa.",
+                    "D) tráfico de influência.",
+                    "E) advocacia administrativa (art. 321 do Código Penal)."
+                ],
+                "correta": 4,
+                "comentario": "Na advocacia administrativa, o funcionário usa sua condição para defender interesses privados junto à Administração, ainda que o interesse seja legítimo."
+            },
+            {
+                "id": 7042,
+                "enunciado": "Solicitar, exigir, cobrar ou obter vantagem a pretexto de influir em ato praticado por funcionário público no exercício da função é crime de:",
+                "opcoes": [
+                    "A) tráfico de influência (art. 332 do Código Penal).",
+                    "B) advocacia administrativa.",
+                    "C) corrupção passiva.",
+                    "D) exploração de prestígio, sempre.",
+                    "E) concussão."
+                ],
+                "correta": 0,
+                "comentario": "No tráfico de influência, um particular 'vende' uma influência (real ou não) sobre funcionário. Se for junto a juiz, jurado ou membro do MP, é exploração de prestígio (art. 357)."
+            },
+            {
+                "id": 7043,
+                "enunciado": "Para os efeitos penais, a pena é aumentada da terça parte quando o autor dos crimes contra a administração pública for ocupante de:",
+                "opcoes": [
+                    "A) emprego em empresa privada concessionária.",
+                    "B) cargo em comissão ou função de direção ou assessoramento de órgão da administração direta, sociedade de economia mista, empresa pública ou fundação instituída pelo poder público.",
+                    "C) cargo eletivo municipal, apenas.",
+                    "D) função de estagiário.",
+                    "E) qualquer cargo efetivo, sempre."
+                ],
+                "correta": 1,
+                "comentario": "É a causa de aumento do art. 327, §2º, do CP, aplicável aos crimes funcionais."
+            },
+            {
+                "id": 7044,
+                "enunciado": "O funcionário público que, por indulgência, deixa de responsabilizar subordinado que cometeu infração no exercício do cargo comete o crime de:",
+                "opcoes": [
+                    "A) corrupção passiva.",
+                    "B) omissão de socorro.",
+                    "C) condescendência criminosa (art. 320 do Código Penal).",
+                    "D) prevaricação.",
+                    "E) advocacia administrativa."
+                ],
+                "correta": 2,
+                "comentario": "Na condescendência criminosa, o superior deixa de punir ou de comunicar a infração do subordinado por indulgência (tolerância), sem buscar vantagem."
+            },
+            {
+                "id": 7045,
+                "enunciado": "Segundo o art. 26 do Código Penal, é isento de pena o agente que, por doença mental ou desenvolvimento mental incompleto ou retardado, era, ao tempo da ação ou omissão:",
+                "opcoes": [
+                    "A) reincidente em crime doloso.",
+                    "B) inteiramente incapaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento.",
+                    "C) embriagado voluntariamente.",
+                    "D) parcialmente capaz de entender o caráter ilícito do fato, sempre.",
+                    "E) maior de 70 anos."
+                ],
+                "correta": 1,
+                "comentario": "O inimputável por doença mental é isento de pena e pode receber medida de segurança. Se a capacidade era apenas reduzida (semi-imputável), a pena pode ser diminuída de um a dois terços (parágrafo único)."
             }
         ],
-        "Direito Processual Penal": [],
+        "Direito Processual Penal": [
+            {
+                "id": 8001,
+                "enunciado": "Segundo o art. 301 do Código de Processo Penal, em relação à prisão em flagrante:",
+                "opcoes": [
+                    "A) somente o delegado de polícia pode prender em flagrante.",
+                    "B) qualquer pessoa deverá prender, sob pena de crime.",
+                    "C) qualquer do povo poderá, e as autoridades policiais e seus agentes deverão, prender quem quer que seja encontrado em flagrante delito.",
+                    "D) os policiais poderão prender, se quiserem, sem obrigação.",
+                    "E) apenas o juiz pode determinar a prisão em flagrante."
+                ],
+                "correta": 2,
+                "comentario": "Para o cidadão, o flagrante é facultativo; para as autoridades policiais e seus agentes, é obrigatório (flagrante compulsório)."
+            },
+            {
+                "id": 8002,
+                "enunciado": "Considera-se em flagrante delito, segundo o art. 302 do CPP, quem é perseguido, logo após, pela autoridade, pelo ofendido ou por qualquer pessoa, em situação que faça presumir ser autor da infração. Essa modalidade é chamada de flagrante:",
+                "opcoes": [
+                    "A) presumido (ou ficto).",
+                    "B) preparado.",
+                    "C) impróprio (ou quase flagrante).",
+                    "D) próprio.",
+                    "E) diferido."
+                ],
+                "correta": 2,
+                "comentario": "Próprio: está cometendo ou acaba de cometer. Impróprio: perseguido logo após. Presumido: encontrado logo depois com instrumentos, armas ou objetos que façam presumir ser o autor."
+            },
+            {
+                "id": 8003,
+                "enunciado": "O agente encontrado, logo depois do crime, com instrumentos, armas, objetos ou papéis que façam presumir ser ele o autor da infração está em flagrante:",
+                "opcoes": [
+                    "A) impróprio.",
+                    "B) presumido (ou ficto).",
+                    "C) preparado.",
+                    "D) esperado, apenas.",
+                    "E) próprio."
+                ],
+                "correta": 1,
+                "comentario": "É a hipótese do art. 302, IV, do CPP. Não há perseguição; a presunção decorre dos objetos encontrados com o agente."
+            },
+            {
+                "id": 8004,
+                "enunciado": "Segundo a Súmula 145 do STF, não há crime quando a preparação do flagrante pela polícia torna impossível a sua consumação. Isso se refere ao flagrante:",
+                "opcoes": [
+                    "A) próprio.",
+                    "B) impróprio.",
+                    "C) diferido (ação controlada).",
+                    "D) preparado (ou provocado).",
+                    "E) esperado."
+                ],
+                "correta": 3,
+                "comentario": "No flagrante preparado, o agente é induzido a cometer o crime, que não pode se consumar: há crime impossível. No flagrante esperado, a polícia apenas aguarda o crime acontecer, e a prisão é válida."
+            },
+            {
+                "id": 8005,
+                "enunciado": "Após a prisão em flagrante, o preso deve ser apresentado ao juiz em audiência de custódia no prazo de:",
+                "opcoes": [
+                    "A) até 72 horas.",
+                    "B) até 5 dias.",
+                    "C) até 24 horas.",
+                    "D) até 10 dias.",
+                    "E) até 48 horas, em qualquer caso."
+                ],
+                "correta": 2,
+                "comentario": "O art. 310 do CPP (redação da Lei 13.964/2019) prevê a audiência de custódia em até 24 horas após a prisão. Nela, o juiz relaxa a prisão ilegal, converte em preventiva ou concede liberdade provisória."
+            },
+            {
+                "id": 8006,
+                "enunciado": "Após a Lei 13.964/2019 (pacote anticrime), a prisão preventiva:",
+                "opcoes": [
+                    "A) pode ser decretada de ofício pelo juiz, em qualquer fase.",
+                    "B) é obrigatória em todos os crimes dolosos.",
+                    "C) dispensa fundamentação.",
+                    "D) não pode ser decretada de ofício pelo juiz, dependendo de requerimento do Ministério Público, do querelante ou do assistente, ou de representação da autoridade policial.",
+                    "E) pode ser decretada pelo delegado de polícia."
+                ],
+                "correta": 3,
+                "comentario": "O art. 311 do CPP passou a vedar a decretação de ofício, reforçando o sistema acusatório."
+            },
+            {
+                "id": 8007,
+                "enunciado": "Segundo o art. 312 do CPP, a prisão preventiva poderá ser decretada, entre outros fundamentos, como garantia:",
+                "opcoes": [
+                    "A) da arrecadação de multas.",
+                    "B) da celeridade do inquérito, apenas.",
+                    "C) da satisfação da vítima.",
+                    "D) da imagem da instituição policial.",
+                    "E) da ordem pública, da ordem econômica, por conveniência da instrução criminal ou para assegurar a aplicação da lei penal."
+                ],
+                "correta": 4,
+                "comentario": "Além desses fundamentos, exige-se prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado."
+            },
+            {
+                "id": 8008,
+                "enunciado": "Decretada a prisão preventiva, o órgão emissor deverá revisar a necessidade de sua manutenção a cada:",
+                "opcoes": [
+                    "A) 90 dias, mediante decisão fundamentada, sob pena de tornar a prisão ilegal.",
+                    "B) 180 dias.",
+                    "C) 1 ano.",
+                    "D) 30 dias.",
+                    "E) prazo nenhum; a revisão é facultativa."
+                ],
+                "correta": 0,
+                "comentario": "É o parágrafo único do art. 316 do CPP, incluído pelo pacote anticrime."
+            },
+            {
+                "id": 8009,
+                "enunciado": "A prisão temporária, prevista na Lei 7.960/1989, tem prazo, como regra, de:",
+                "opcoes": [
+                    "A) 5 dias, prorrogável por igual período em caso de extrema e comprovada necessidade.",
+                    "B) 30 dias, improrrogáveis.",
+                    "C) prazo indeterminado.",
+                    "D) 24 horas.",
+                    "E) 10 dias, prorrogáveis por 30."
+                ],
+                "correta": 0,
+                "comentario": "Nos crimes hediondos e equiparados, o prazo é de 30 dias, prorrogável por mais 30 (Lei 8.072/1990). A temporária só cabe na fase de investigação."
+            },
+            {
+                "id": 8010,
+                "enunciado": "A prisão temporária pode ser decretada:",
+                "opcoes": [
+                    "A) pelo delegado, sem ordem judicial.",
+                    "B) pelo Ministério Público, diretamente.",
+                    "C) durante o processo, após a sentença.",
+                    "D) apenas durante a investigação policial, pelo juiz, mediante representação da autoridade policial ou requerimento do Ministério Público.",
+                    "E) de ofício pelo juiz, em qualquer fase."
+                ],
+                "correta": 3,
+                "comentario": "A temporária é cautelar da fase pré-processual, destinada a viabilizar investigações de crimes graves listados na Lei 7.960/1989."
+            },
+            {
+                "id": 8011,
+                "enunciado": "O inquérito policial tem como características, entre outras, ser:",
+                "opcoes": [
+                    "A) escrito, sigiloso, inquisitivo e dispensável.",
+                    "B) conduzido pelo juiz.",
+                    "C) oral, público e contraditório.",
+                    "D) arquivável pelo próprio delegado.",
+                    "E) obrigatório para o oferecimento de qualquer denúncia."
+                ],
+                "correta": 0,
+                "comentario": "O inquérito é procedimento administrativo, escrito e inquisitivo, com sigilo necessário à investigação. É dispensável se o MP já tiver elementos. A autoridade policial não pode arquivá-lo (art. 17 do CPP)."
+            },
+            {
+                "id": 8012,
+                "enunciado": "Segundo o art. 17 do CPP, a autoridade policial:",
+                "opcoes": [
+                    "A) pode arquivar o inquérito com autorização do investigado.",
+                    "B) não poderá mandar arquivar autos de inquérito.",
+                    "C) poderá arquivar o inquérito se não encontrar o autor.",
+                    "D) deverá arquivar o inquérito em 30 dias.",
+                    "E) arquiva o inquérito nos crimes de menor potencial ofensivo."
+                ],
+                "correta": 1,
+                "comentario": "O arquivamento é atribuição do Ministério Público, com controle previsto no art. 28 do CPP. O delegado não arquiva inquéritos."
+            },
+            {
+                "id": 8013,
+                "enunciado": "Nos termos do art. 10 do CPP, o inquérito deverá terminar no prazo de 10 dias se o indiciado estiver preso, ou no prazo de:",
+                "opcoes": [
+                    "A) 15 dias, quando estiver solto.",
+                    "B) 1 ano, quando estiver solto.",
+                    "C) 30 dias, quando estiver solto.",
+                    "D) 90 dias, em qualquer caso.",
+                    "E) 60 dias, quando estiver solto."
+                ],
+                "correta": 2,
+                "comentario": "São os prazos gerais do CPP. Na esfera federal, a Lei 5.010/1966 prevê 15 dias para indiciado preso, prorrogáveis por mais 15."
+            },
+            {
+                "id": 8014,
+                "enunciado": "Segundo o art. 244 do CPP, a busca pessoal independe de mandado:",
+                "opcoes": [
+                    "A) apenas com autorização do Ministério Público.",
+                    "B) no caso de prisão ou quando houver fundada suspeita de que a pessoa esteja na posse de arma proibida ou de objetos ou papéis que constituam corpo de delito.",
+                    "C) somente durante o dia.",
+                    "D) em qualquer situação, a critério do policial.",
+                    "E) somente em residências."
+                ],
+                "correta": 1,
+                "comentario": "A busca pessoal sem mandado exige fundada suspeita, baseada em elementos objetivos. O STJ tem anulado buscas fundadas apenas em impressões subjetivas, como 'nervosismo'."
+            },
+            {
+                "id": 8015,
+                "enunciado": "A cadeia de custódia da prova, prevista no art. 158-A do CPP, é:",
+                "opcoes": [
+                    "A) a audiência de apresentação do preso ao juiz.",
+                    "B) o prazo de prescrição do crime.",
+                    "C) o local onde os presos ficam custodiados.",
+                    "D) o registro da ficha criminal do acusado.",
+                    "E) o conjunto de procedimentos para manter e documentar a história cronológica do vestígio coletado, rastreando sua posse e manuseio."
+                ],
+                "correta": 4,
+                "comentario": "A cadeia de custódia, incluída pelo pacote anticrime, garante a integridade e a rastreabilidade dos vestígios, do reconhecimento ao descarte."
+            },
+            {
+                "id": 8016,
+                "enunciado": "Segundo o art. 158-A, §2º, do CPP, o agente público que reconhecer um elemento como de potencial interesse para a produção da prova pericial:",
+                "opcoes": [
+                    "A) fica responsável por sua preservação.",
+                    "B) deve descartá-lo imediatamente.",
+                    "C) não tem responsabilidade sobre ele.",
+                    "D) deve entregá-lo à vítima.",
+                    "E) pode levá-lo para casa até a perícia."
+                ],
+                "correta": 0,
+                "comentario": "Policiais que primeiro chegam ao local, como os da PRF em acidentes e apreensões, devem preservar os vestígios até a chegada da perícia."
+            },
+            {
+                "id": 8017,
+                "enunciado": "O acordo de não persecução penal (art. 28-A do CPP) pode ser proposto pelo Ministério Público quando, entre outros requisitos:",
+                "opcoes": [
+                    "A) houver violência ou grave ameaça à pessoa.",
+                    "B) o investigado confessar formal e circunstancialmente a prática de infração penal sem violência ou grave ameaça, com pena mínima inferior a 4 anos.",
+                    "C) o crime for de violência doméstica contra a mulher.",
+                    "D) o crime for hediondo.",
+                    "E) o investigado negar a autoria."
+                ],
+                "correta": 1,
+                "comentario": "O ANPP é vedado, entre outros casos, nos crimes de violência doméstica ou familiar e quando cabível transação penal. O investigado cumpre condições, e não há processo."
+            },
+            {
+                "id": 8018,
+                "enunciado": "Segundo o art. 322 do CPP, a autoridade policial poderá conceder fiança nos casos de infração cuja pena privativa de liberdade máxima não seja superior a:",
+                "opcoes": [
+                    "A) 2 anos.",
+                    "B) 1 ano.",
+                    "C) 10 anos.",
+                    "D) 8 anos.",
+                    "E) 4 anos."
+                ],
+                "correta": 4,
+                "comentario": "Nos demais casos, a fiança é requerida ao juiz, que decide em 48 horas."
+            },
+            {
+                "id": 8019,
+                "enunciado": "São infrações penais de menor potencial ofensivo, segundo a Lei 9.099/1995, as contravenções penais e os crimes a que a lei comine pena máxima não superior a:",
+                "opcoes": [
+                    "A) 6 meses.",
+                    "B) 4 anos.",
+                    "C) 8 anos.",
+                    "D) 1 ano, apenas.",
+                    "E) 2 anos, cumulada ou não com multa."
+                ],
+                "correta": 4,
+                "comentario": "Nesses casos, lavra-se termo circunstanciado em vez de auto de prisão em flagrante, se o autor se comprometer a comparecer ao Juizado (art. 69)."
+            },
+            {
+                "id": 8020,
+                "enunciado": "Nos crimes de ação penal pública condicionada à representação, a representação da vítima deve ser oferecida, como regra, no prazo decadencial de:",
+                "opcoes": [
+                    "A) 2 anos, contados da denúncia.",
+                    "B) 1 ano, contado do fato.",
+                    "C) 30 dias, contados do fato.",
+                    "D) 6 meses, contados do dia em que vier a saber quem é o autor do crime.",
+                    "E) não há prazo."
+                ],
+                "correta": 3,
+                "comentario": "O art. 38 do CPP fixa o prazo de 6 meses, contado do conhecimento da autoria. Passado o prazo, ocorre a decadência e extingue-se a punibilidade."
+            },
+            {
+                "id": 8021,
+                "enunciado": "Segundo a Súmula Vinculante 11 do STF, só é lícito o uso de algemas:",
+                "opcoes": [
+                    "A) apenas em presos condenados.",
+                    "B) nunca, por violar a dignidade humana.",
+                    "C) em qualquer prisão, como regra geral.",
+                    "D) somente por ordem judicial prévia.",
+                    "E) em casos de resistência e de fundado receio de fuga ou de perigo à integridade física própria ou alheia, justificada a excepcionalidade por escrito."
+                ],
+                "correta": 4,
+                "comentario": "O uso indevido de algemas pode gerar responsabilidade do agente e nulidade da prisão ou do ato processual."
+            },
+            {
+                "id": 8022,
+                "enunciado": "Segundo o art. 70 do CPP, a competência será, de regra, determinada:",
+                "opcoes": [
+                    "A) pelo lugar em que se consumar a infração, ou, no caso de tentativa, pelo lugar em que for praticado o último ato de execução.",
+                    "B) pela escolha do Ministério Público.",
+                    "C) pelo local onde o réu for preso.",
+                    "D) pelo local da delegacia que instaurou o inquérito.",
+                    "E) pelo domicílio da vítima, sempre."
+                ],
+                "correta": 0,
+                "comentario": "O CPP adota, como regra, a teoria do resultado para a competência. O domicílio do réu é critério subsidiário (art. 72), quando o lugar da infração for desconhecido."
+            },
+            {
+                "id": 8023,
+                "enunciado": "Sobre o juiz das garantias, introduzido pela Lei 13.964/2019, o STF, no julgamento das ADIs 6.298 e outras (2023), decidiu que:",
+                "opcoes": [
+                    "A) aplica-se apenas aos crimes de trânsito.",
+                    "B) sua adoção é facultativa para cada juiz.",
+                    "C) o instituto é constitucional e de implementação obrigatória, com prazo para adaptação dos tribunais.",
+                    "D) o instituto é inconstitucional e foi extinto.",
+                    "E) o juiz das garantias também julga o mérito da ação penal."
+                ],
+                "correta": 2,
+                "comentario": "O STF validou o juiz das garantias, responsável pelo controle da legalidade da investigação, e fixou prazo de 12 meses, prorrogável por mais 12, para a implantação."
+            },
+            {
+                "id": 8024,
+                "enunciado": "As provas ilícitas, segundo o art. 157 do CPP, devem ser desentranhadas do processo. São também inadmissíveis as provas derivadas das ilícitas, salvo quando:",
+                "opcoes": [
+                    "A) o juiz considerar a prova relevante.",
+                    "B) não evidenciado o nexo de causalidade entre umas e outras, ou quando puderem ser obtidas por fonte independente.",
+                    "C) o acusado for reincidente.",
+                    "D) forem favoráveis à acusação.",
+                    "E) o crime for hediondo."
+                ],
+                "correta": 1,
+                "comentario": "O CPP adota a teoria dos frutos da árvore envenenada, com as exceções da fonte independente e da ausência de nexo causal."
+            },
+            {
+                "id": 8025,
+                "enunciado": "A ação penal nos crimes de ação penal pública incondicionada é promovida:",
+                "opcoes": [
+                    "A) pela vítima, por meio de queixa-crime.",
+                    "B) pelo juiz, de ofício.",
+                    "C) pela Defensoria Pública.",
+                    "D) pelo Ministério Público, por meio de denúncia, independentemente da vontade da vítima.",
+                    "E) pelo delegado de polícia, por meio de portaria."
+                ],
+                "correta": 3,
+                "comentario": "Na ação pública incondicionada, o MP é o titular (art. 129, I, da CF) e não depende de representação. Na ação privada, a vítima oferece queixa-crime."
+            }
+        ],
         "Direito Administrativo": [
             {
                 "id": 701,
@@ -4347,8 +6371,854 @@ registrarConcurso("PRF", {
                 ],
                 "correta": 0,
                 "comentario": "As autarquias são pessoas jurídicas de direito público, criadas por lei específica, para atividades típicas de Estado."
+            },
+            {
+                "id": 9001,
+                "enunciado": "A distribuição de competências dentro de uma mesma pessoa jurídica, criando órgãos sem personalidade própria (por exemplo, superintendências regionais da PRF), denomina-se:",
+                "opcoes": [
+                    "A) delegação legislativa.",
+                    "B) privatização.",
+                    "C) desconcentração.",
+                    "D) terceirização.",
+                    "E) descentralização."
+                ],
+                "correta": 2,
+                "comentario": "Na desconcentração, há divisão interna em órgãos, com hierarquia. Na descentralização, a atividade é transferida a outra pessoa jurídica (como autarquias e concessionárias)."
+            },
+            {
+                "id": 9002,
+                "enunciado": "A empresa pública caracteriza-se por:",
+                "opcoes": [
+                    "A) ter personalidade de direito público e ser criada diretamente por lei.",
+                    "B) ter capital majoritariamente privado.",
+                    "C) ser obrigatoriamente uma sociedade anônima com ações na bolsa.",
+                    "D) ter personalidade jurídica de direito privado, capital exclusivamente público e poder adotar qualquer forma societária admitida em direito.",
+                    "E) não integrar a Administração Indireta."
+                ],
+                "correta": 3,
+                "comentario": "Na sociedade de economia mista, o capital é misto, com maioria votante do poder público, e a forma é obrigatoriamente de sociedade anônima."
+            },
+            {
+                "id": 9003,
+                "enunciado": "Segundo o art. 37, XIX, da Constituição, somente por lei específica poderá ser:",
+                "opcoes": [
+                    "A) criado qualquer órgão público por decreto.",
+                    "B) criada autarquia e autorizada a instituição de empresa pública, de sociedade de economia mista e de fundação.",
+                    "C) extinto um Ministério, sem necessidade de lei.",
+                    "D) criada empresa pública, diretamente pela lei.",
+                    "E) autorizada a criação de autarquia, que depende de registro em cartório."
+                ],
+                "correta": 1,
+                "comentario": "A autarquia é criada pela própria lei. As empresas estatais e as fundações têm a criação autorizada por lei, sendo constituídas depois pelo registro dos atos."
+            },
+            {
+                "id": 9004,
+                "enunciado": "As agências reguladoras, como a ANTT, possuem natureza jurídica de:",
+                "opcoes": [
+                    "A) autarquias em regime especial.",
+                    "B) empresas públicas.",
+                    "C) organizações sociais privadas.",
+                    "D) sociedades de economia mista.",
+                    "E) órgãos da administração direta sem personalidade."
+                ],
+                "correta": 0,
+                "comentario": "As agências reguladoras são autarquias com maior autonomia, como mandatos fixos para os dirigentes (Lei 13.848/2019)."
+            },
+            {
+                "id": 9005,
+                "enunciado": "Segundo a Súmula 473 do STF, a Administração pode anular seus próprios atos quando eivados de vícios que os tornem ilegais, ou revogá-los por motivo de conveniência ou oportunidade. Essa prerrogativa expressa o princípio da:",
+                "opcoes": [
+                    "A) tutela.",
+                    "B) impessoalidade.",
+                    "C) publicidade.",
+                    "D) continuidade.",
+                    "E) autotutela."
+                ],
+                "correta": 4,
+                "comentario": "A autotutela permite à Administração rever seus próprios atos. A tutela é o controle finalístico da Administração Direta sobre a Indireta."
+            },
+            {
+                "id": 9006,
+                "enunciado": "Sobre a anulação e a revogação de atos administrativos, é correto afirmar que:",
+                "opcoes": [
+                    "A) a revogação decorre de ilegalidade.",
+                    "B) ambas produzem efeitos apenas para o futuro.",
+                    "C) a revogação pode ser feita pelo Poder Judiciário em qualquer caso.",
+                    "D) a anulação só pode ser feita pelo Judiciário.",
+                    "E) a anulação decorre de ilegalidade e produz efeitos retroativos; a revogação decorre de conveniência e oportunidade e produz efeitos a partir de então."
+                ],
+                "correta": 4,
+                "comentario": "Anulação: controle de legalidade, efeitos ex tunc, pela Administração ou pelo Judiciário. Revogação: controle de mérito, efeitos ex nunc, apenas pela própria Administração."
+            },
+            {
+                "id": 9007,
+                "enunciado": "O poder que permite à Administração distribuir e escalonar funções, dar ordens, fiscalizar, delegar e avocar atribuições é o poder:",
+                "opcoes": [
+                    "A) hierárquico.",
+                    "B) disciplinar, apenas.",
+                    "C) de polícia.",
+                    "D) regulamentar.",
+                    "E) discricionário."
+                ],
+                "correta": 0,
+                "comentario": "O poder hierárquico organiza a estrutura interna. O disciplinar permite punir servidores e particulares com vínculo especial; o regulamentar, editar atos normativos para a fiel execução das leis."
+            },
+            {
+                "id": 9008,
+                "enunciado": "O poder que permite à Administração apurar infrações e aplicar penalidades aos servidores públicos é o poder:",
+                "opcoes": [
+                    "A) normativo.",
+                    "B) regulamentar.",
+                    "C) disciplinar.",
+                    "D) de polícia.",
+                    "E) hierárquico, exclusivamente."
+                ],
+                "correta": 2,
+                "comentario": "O poder disciplinar alcança servidores e particulares sujeitos à disciplina interna (como contratados). A multa de trânsito aplicada a um motorista decorre do poder de polícia."
+            },
+            {
+                "id": 9009,
+                "enunciado": "São atributos do poder de polícia, segundo a doutrina majoritária:",
+                "opcoes": [
+                    "A) vinculação absoluta e inércia.",
+                    "B) discricionariedade, autoexecutoriedade e coercibilidade.",
+                    "C) imparcialidade, contraditório e ampla defesa.",
+                    "D) hierarquia, disciplina e subordinação.",
+                    "E) gratuidade, onerosidade e perpetuidade."
+                ],
+                "correta": 1,
+                "comentario": "O poder de polícia, como o exercido pela PRF na fiscalização de trânsito, pode ser executado diretamente (autoexecutoriedade) e imposto ao particular (coercibilidade)."
+            },
+            {
+                "id": 9010,
+                "enunciado": "Segundo a Lei 9.784/1999, NÃO podem ser objeto de delegação:",
+                "opcoes": [
+                    "A) a edição de atos de caráter normativo, a decisão de recursos administrativos e as matérias de competência exclusiva do órgão ou autoridade.",
+                    "B) quaisquer atos administrativos.",
+                    "C) as atividades de fiscalização em geral.",
+                    "D) a assinatura de ofícios.",
+                    "E) os atos de mero expediente."
+                ],
+                "correta": 0,
+                "comentario": "O art. 13 da Lei 9.784/1999 lista essas três vedações à delegação."
+            },
+            {
+                "id": 9011,
+                "enunciado": "Ocorre desvio de finalidade (ou desvio de poder) quando o agente público:",
+                "opcoes": [
+                    "A) pratica ato com atraso.",
+                    "B) pratica ato fora de sua competência.",
+                    "C) pratica ato dentro de sua competência, mas visando fim diverso do interesse público ou do previsto em lei.",
+                    "D) pratica ato em local diferente do usual.",
+                    "E) pratica ato com fundamento em lei revogada."
+                ],
+                "correta": 2,
+                "comentario": "O abuso de poder tem duas espécies: excesso de poder (atuar além da competência) e desvio de finalidade (atuar dentro da competência, mas para fim ilegítimo)."
+            },
+            {
+                "id": 9012,
+                "enunciado": "São elementos (ou requisitos) do ato administrativo:",
+                "opcoes": [
+                    "A) agente, vítima e resultado.",
+                    "B) publicidade, eficiência e moralidade.",
+                    "C) imperatividade, presunção de legitimidade e autoexecutoriedade.",
+                    "D) conveniência, oportunidade e legalidade.",
+                    "E) competência, finalidade, forma, motivo e objeto."
+                ],
+                "correta": 4,
+                "comentario": "Os cinco elementos estão na Lei 4.717/1965 (Ação Popular). Presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade são atributos."
+            },
+            {
+                "id": 9013,
+                "enunciado": "No ato administrativo discricionário, o chamado mérito administrativo reside nos elementos:",
+                "opcoes": [
+                    "A) forma e finalidade.",
+                    "B) competência e forma.",
+                    "C) competência e objeto.",
+                    "D) motivo e objeto.",
+                    "E) finalidade e competência."
+                ],
+                "correta": 3,
+                "comentario": "Competência, finalidade e forma são sempre vinculados. A margem de escolha (conveniência e oportunidade) recai sobre motivo e objeto."
+            },
+            {
+                "id": 9014,
+                "enunciado": "Pela teoria dos motivos determinantes:",
+                "opcoes": [
+                    "A) a validade do ato fica vinculada aos motivos indicados como seu fundamento; se forem falsos ou inexistentes, o ato é nulo.",
+                    "B) o administrador pode alterar os motivos após a prática do ato, sem consequência.",
+                    "C) os motivos não podem ser controlados pelo Judiciário.",
+                    "D) apenas os atos vinculados precisam de motivo.",
+                    "E) o motivo do ato é sempre irrelevante."
+                ],
+                "correta": 0,
+                "comentario": "Mesmo em atos discricionários, se a Administração declara um motivo, fica vinculada a ele."
+            },
+            {
+                "id": 9015,
+                "enunciado": "O atributo do ato administrativo que permite à Administração executar suas decisões diretamente, sem necessidade de autorização judicial, é a:",
+                "opcoes": [
+                    "A) presunção de legitimidade.",
+                    "B) tipicidade.",
+                    "C) motivação.",
+                    "D) imperatividade.",
+                    "E) autoexecutoriedade."
+                ],
+                "correta": 4,
+                "comentario": "A remoção de um veículo irregular pela PRF é exemplo de autoexecutoriedade. A imperatividade é a imposição do ato ao particular independentemente de sua concordância."
+            },
+            {
+                "id": 9016,
+                "enunciado": "Segundo a Lei 8.112/1990, a posse em cargo público ocorrerá no prazo de:",
+                "opcoes": [
+                    "A) 15 dias, contados da aprovação no concurso.",
+                    "B) 30 dias, contados da publicação do ato de provimento.",
+                    "C) 10 dias, contados da nomeação.",
+                    "D) 1 ano, contado da nomeação.",
+                    "E) 60 dias, contados da homologação do concurso."
+                ],
+                "correta": 1,
+                "comentario": "Art. 13, §1º, da Lei 8.112/1990. Se a posse não ocorrer no prazo, o ato de provimento é tornado sem efeito."
+            },
+            {
+                "id": 9017,
+                "enunciado": "Segundo a Lei 8.112/1990, o servidor empossado deverá entrar em exercício no prazo de:",
+                "opcoes": [
+                    "A) 5 dias, contados da nomeação.",
+                    "B) 60 dias, contados da publicação.",
+                    "C) 15 dias, contados da data da posse.",
+                    "D) imediatamente, sem prazo.",
+                    "E) 30 dias, contados da posse."
+                ],
+                "correta": 2,
+                "comentario": "Art. 15, §1º. Se não entrar em exercício no prazo, o servidor será exonerado."
+            },
+            {
+                "id": 9018,
+                "enunciado": "NÃO é forma de provimento de cargo público prevista na Lei 8.112/1990:",
+                "opcoes": [
+                    "A) a transferência.",
+                    "B) a reversão.",
+                    "C) a recondução.",
+                    "D) a nomeação.",
+                    "E) a reintegração."
+                ],
+                "correta": 0,
+                "comentario": "As formas atuais são nomeação, promoção, readaptação, reversão, aproveitamento, reintegração e recondução. Transferência e ascensão foram revogadas por serem consideradas inconstitucionais."
+            },
+            {
+                "id": 9019,
+                "enunciado": "A reinvestidura do servidor estável no cargo anteriormente ocupado, quando invalidada a sua demissão por decisão administrativa ou judicial, com ressarcimento de todas as vantagens, denomina-se:",
+                "opcoes": [
+                    "A) readaptação.",
+                    "B) reintegração.",
+                    "C) reversão.",
+                    "D) aproveitamento.",
+                    "E) recondução."
+                ],
+                "correta": 1,
+                "comentario": "Reintegração: volta após demissão invalidada. Recondução: retorno ao cargo anterior (inabilitação em estágio ou reintegração do anterior ocupante). Reversão: retorno do aposentado. Aproveitamento: retorno do servidor em disponibilidade."
+            },
+            {
+                "id": 9020,
+                "enunciado": "O retorno à atividade de servidor aposentado denomina-se:",
+                "opcoes": [
+                    "A) recondução.",
+                    "B) reversão.",
+                    "C) reintegração.",
+                    "D) readaptação.",
+                    "E) aproveitamento."
+                ],
+                "correta": 1,
+                "comentario": "A reversão ocorre por insubsistência dos motivos da aposentadoria por invalidez ou, no interesse da Administração, a pedido do aposentado voluntário, nas condições da lei."
+            },
+            {
+                "id": 9021,
+                "enunciado": "Segundo a Lei 8.112/1990, NÃO é forma de vacância do cargo público:",
+                "opcoes": [
+                    "A) a exoneração.",
+                    "B) a demissão.",
+                    "C) o falecimento.",
+                    "D) a nomeação.",
+                    "E) a aposentadoria."
+                ],
+                "correta": 3,
+                "comentario": "O art. 33 lista como vacância: exoneração, demissão, promoção, readaptação, aposentadoria, posse em outro cargo inacumulável e falecimento. Nomeação é forma de provimento."
+            },
+            {
+                "id": 9022,
+                "enunciado": "São penalidades disciplinares previstas no art. 127 da Lei 8.112/1990:",
+                "opcoes": [
+                    "A) censura, remoção compulsória e exílio.",
+                    "B) multa, prisão administrativa e exoneração.",
+                    "C) repreensão, multa e perda da nacionalidade.",
+                    "D) advertência, suspensão, demissão, cassação de aposentadoria ou disponibilidade e destituição de cargo em comissão ou de função comissionada.",
+                    "E) advertência verbal, transferência e rebaixamento."
+                ],
+                "correta": 3,
+                "comentario": "A exoneração não é penalidade (ocorre a pedido ou de ofício, sem caráter punitivo). Não existe prisão administrativa para servidores civis."
+            },
+            {
+                "id": 9023,
+                "enunciado": "Segundo a Lei 8.112/1990, a penalidade de suspensão não poderá exceder:",
+                "opcoes": [
+                    "A) 90 dias.",
+                    "B) 120 dias.",
+                    "C) 60 dias.",
+                    "D) 1 ano.",
+                    "E) 30 dias."
+                ],
+                "correta": 0,
+                "comentario": "Art. 130. Quando houver conveniência para o serviço, a suspensão pode ser convertida em multa de 50% por dia de vencimento, com o servidor obrigado a permanecer em serviço."
+            },
+            {
+                "id": 9024,
+                "enunciado": "A ação disciplinar prescreverá, segundo o art. 142 da Lei 8.112/1990, em relação às infrações puníveis com demissão, cassação de aposentadoria ou disponibilidade e destituição de cargo em comissão, em:",
+                "opcoes": [
+                    "A) 1 ano.",
+                    "B) 180 dias.",
+                    "C) 2 anos.",
+                    "D) 10 anos.",
+                    "E) 5 anos."
+                ],
+                "correta": 4,
+                "comentario": "Prazos: 5 anos (penas expulsivas), 2 anos (suspensão) e 180 dias (advertência), contados da data em que o fato se tornou conhecido."
+            },
+            {
+                "id": 9025,
+                "enunciado": "Configura abandono de cargo, segundo a Lei 8.112/1990, a ausência intencional do servidor ao serviço por mais de:",
+                "opcoes": [
+                    "A) 60 dias consecutivos.",
+                    "B) 10 dias consecutivos.",
+                    "C) 30 dias interpolados em 12 meses.",
+                    "D) 30 dias consecutivos.",
+                    "E) 15 dias consecutivos."
+                ],
+                "correta": 3,
+                "comentario": "O abandono (art. 138) é punido com demissão. A inassiduidade habitual (art. 139) é a falta sem causa justificada por 60 dias, interpoladamente, em 12 meses."
+            },
+            {
+                "id": 9026,
+                "enunciado": "O processo administrativo disciplinar (PAD) será conduzido por comissão composta de:",
+                "opcoes": [
+                    "A) um único servidor, de livre escolha.",
+                    "B) cinco servidores, sendo pelo menos dois advogados.",
+                    "C) membros do Ministério Público.",
+                    "D) dois servidores e um representante sindical.",
+                    "E) três servidores estáveis, designados pela autoridade competente."
+                ],
+                "correta": 4,
+                "comentario": "Art. 149 da Lei 8.112/1990. O presidente deve ocupar cargo efetivo superior ou de mesmo nível, ou ter escolaridade igual ou superior à do indiciado."
+            },
+            {
+                "id": 9027,
+                "enunciado": "O prazo para a conclusão do processo administrativo disciplinar não excederá:",
+                "opcoes": [
+                    "A) 15 dias, improrrogáveis.",
+                    "B) 60 dias, contados da publicação do ato que constituir a comissão, admitida a prorrogação por igual prazo.",
+                    "C) 30 dias, improrrogáveis.",
+                    "D) 1 ano.",
+                    "E) 120 dias, prorrogáveis duas vezes."
+                ],
+                "correta": 1,
+                "comentario": "Art. 152 da Lei 8.112/1990. A sindicância tem prazo de 30 dias, prorrogável por igual período (art. 145)."
+            },
+            {
+                "id": 9028,
+                "enunciado": "Após cada quinquênio de efetivo exercício, o servidor poderá, no interesse da Administração, afastar-se do exercício do cargo efetivo, com a respectiva remuneração, por até três meses, para participar de curso de capacitação profissional. Trata-se da:",
+                "opcoes": [
+                    "A) licença para capacitação.",
+                    "B) licença-prêmio por assiduidade.",
+                    "C) licença para tratar de interesses particulares.",
+                    "D) licença para atividade política.",
+                    "E) férias acumuladas."
+                ],
+                "correta": 0,
+                "comentario": "A licença para capacitação (art. 87) substituiu a antiga licença-prêmio. Os períodos não são acumuláveis."
+            },
+            {
+                "id": 9029,
+                "enunciado": "Segundo a Lei 8.112/1990, é dever do servidor, entre outros:",
+                "opcoes": [
+                    "A) manter sob sua chefia imediata cônjuge ou parente até o segundo grau.",
+                    "B) representar contra ilegalidade, omissão ou abuso de poder.",
+                    "C) recusar fé a documentos públicos.",
+                    "D) valer-se do cargo para lograr proveito pessoal.",
+                    "E) participar de gerência de empresa privada, como administrador."
+                ],
+                "correta": 1,
+                "comentario": "O art. 116 lista os deveres, entre eles representar contra ilegalidades. As demais condutas são proibições do art. 117."
+            },
+            {
+                "id": 9030,
+                "enunciado": "Após a Lei 14.230/2021, para a configuração de ato de improbidade administrativa, exige-se:",
+                "opcoes": [
+                    "A) mero erro administrativo, independentemente da intenção.",
+                    "B) apenas culpa, em qualquer modalidade.",
+                    "C) dolo, não sendo punível a conduta meramente culposa.",
+                    "D) culpa grave, nos atos que causam prejuízo ao erário.",
+                    "E) apenas o resultado, sem análise da vontade."
+                ],
+                "correta": 2,
+                "comentario": "A reforma da Lei 8.429/1992 passou a exigir dolo em todas as modalidades (enriquecimento ilícito, dano ao erário e violação de princípios)."
+            },
+            {
+                "id": 9031,
+                "enunciado": "Após a Lei 14.230/2021, o prazo de prescrição da ação de improbidade administrativa é de:",
+                "opcoes": [
+                    "A) 20 anos.",
+                    "B) 5 anos, contados do fim do mandato.",
+                    "C) 8 anos, contados a partir da ocorrência do fato ou, no caso de infrações permanentes, do dia em que cessou a permanência.",
+                    "D) 2 anos, contados da ciência do fato.",
+                    "E) imprescritível, em qualquer caso."
+                ],
+                "correta": 2,
+                "comentario": "O art. 23 da Lei 8.429/1992 passou a prever o prazo único de 8 anos. A ação de ressarcimento por ato doloso de improbidade continua imprescritível (STF, Tema 897)."
+            },
+            {
+                "id": 9032,
+                "enunciado": "Constitui ato de improbidade administrativa que importa enriquecimento ilícito, entre outros:",
+                "opcoes": [
+                    "A) deixar de praticar ato de ofício por desatenção.",
+                    "B) atrasar a entrega de relatório.",
+                    "C) cometer erro de digitação em ofício.",
+                    "D) receber vantagem econômica para tolerar a prática de contrabando ou de outra atividade ilícita.",
+                    "E) conceder férias a servidor no prazo legal."
+                ],
+                "correta": 3,
+                "comentario": "O art. 9º, V, da Lei 8.429/1992 prevê essa conduta, especialmente relevante para agentes que fiscalizam rodovias e fronteiras."
+            },
+            {
+                "id": 9033,
+                "enunciado": "Segundo a Lei 14.133/2021, a licitação será inexigível quando:",
+                "opcoes": [
+                    "A) o administrador assim decidir, por conveniência.",
+                    "B) não acudirem interessados à licitação anterior.",
+                    "C) houver inviabilidade de competição, como na contratação de fornecedor exclusivo.",
+                    "D) o valor da contratação for pequeno.",
+                    "E) houver emergência ou calamidade pública."
+                ],
+                "correta": 2,
+                "comentario": "Inexigibilidade (art. 74): a competição é inviável. Dispensa (art. 75): a competição é possível, mas a lei permite não licitar (como em pequenos valores e emergências)."
+            },
+            {
+                "id": 9034,
+                "enunciado": "Segundo a Lei 14.133/2021, o pregão é a modalidade de licitação obrigatória para a aquisição de:",
+                "opcoes": [
+                    "A) obras de grande vulto, exclusivamente.",
+                    "B) alienação de bens imóveis.",
+                    "C) serviços técnicos especializados de natureza intelectual.",
+                    "D) trabalhos artísticos e científicos.",
+                    "E) bens e serviços comuns, cujo critério de julgamento poderá ser o de menor preço ou o de maior desconto."
+                ],
+                "correta": 4,
+                "comentario": "O pregão é usado para bens e serviços comuns, como combustível e pneus para viaturas. O concurso serve para trabalhos técnicos, científicos ou artísticos; o leilão, para alienações."
+            },
+            {
+                "id": 9035,
+                "enunciado": "A modalidade de licitação da Lei 14.133/2021 em que a Administração realiza diálogos com licitantes previamente selecionados para desenvolver alternativas capazes de atender às suas necessidades é o:",
+                "opcoes": [
+                    "A) leilão.",
+                    "B) pregão.",
+                    "C) convite.",
+                    "D) diálogo competitivo.",
+                    "E) concurso."
+                ],
+                "correta": 3,
+                "comentario": "O diálogo competitivo é voltado a contratações inovadoras ou complexas. A modalidade convite foi extinta pela nova lei."
+            },
+            {
+                "id": 9036,
+                "enunciado": "Segundo a Lei de Acesso à Informação (Lei 12.527/2011), o prazo máximo de restrição de acesso à informação classificada como ultrassecreta é de:",
+                "opcoes": [
+                    "A) 25 anos.",
+                    "B) 50 anos.",
+                    "C) 5 anos.",
+                    "D) 100 anos.",
+                    "E) 15 anos."
+                ],
+                "correta": 0,
+                "comentario": "Prazos máximos: ultrassecreta, 25 anos (prorrogável uma vez); secreta, 15 anos; reservada, 5 anos. Informações pessoais têm acesso restrito por até 100 anos."
+            },
+            {
+                "id": 9037,
+                "enunciado": "Segundo a Lei 9.784/1999, concluída a instrução do processo administrativo, a Administração tem o prazo de até 30 dias para decidir, salvo prorrogação:",
+                "opcoes": [
+                    "A) por 90 dias, sem motivação.",
+                    "B) por tempo indeterminado.",
+                    "C) apenas com autorização judicial.",
+                    "D) por igual período, expressamente motivada.",
+                    "E) por 1 ano, automaticamente."
+                ],
+                "correta": 3,
+                "comentario": "É o art. 49 da Lei 9.784/1999. A demora excessiva pode ser questionada, inclusive judicialmente."
+            },
+            {
+                "id": 9038,
+                "enunciado": "O controle exercido pelo Poder Legislativo sobre a Administração Pública, com o auxílio do Tribunal de Contas da União, no âmbito federal, é denominado:",
+                "opcoes": [
+                    "A) controle hierárquico.",
+                    "B) controle externo.",
+                    "C) autotutela.",
+                    "D) controle interno.",
+                    "E) controle social, exclusivamente."
+                ],
+                "correta": 1,
+                "comentario": "O controle externo (arts. 70 e 71 da CF) é feito pelo Congresso Nacional com o auxílio do TCU. O controle interno é exercido por cada Poder sobre seus próprios atos."
+            },
+            {
+                "id": 9039,
+                "enunciado": "Segundo o art. 37, §6º, da Constituição, quando um agente da PRF causa dano a terceiro no exercício da função, a vítima pode buscar a indenização:",
+                "opcoes": [
+                    "A) somente se provar culpa grave do agente.",
+                    "B) do próprio Tribunal de Contas.",
+                    "C) diretamente da União, que responde objetivamente, cabendo a ela ação de regresso contra o agente em caso de dolo ou culpa.",
+                    "D) apenas do Município onde ocorreu o fato.",
+                    "E) exclusivamente do agente, pessoalmente."
+                ],
+                "correta": 2,
+                "comentario": "O STF fixou a tese da dupla garantia (Tema 940): a ação deve ser proposta contra o Estado, e não diretamente contra o agente."
+            },
+            {
+                "id": 9040,
+                "enunciado": "Segundo a Lei 8.112/1990, é proibido ao servidor, entre outras condutas:",
+                "opcoes": [
+                    "A) ser leal às instituições a que servir.",
+                    "B) guardar sigilo sobre assunto da repartição.",
+                    "C) zelar pela economia do material e pela conservação do patrimônio público.",
+                    "D) levar as irregularidades de que tiver ciência ao conhecimento da autoridade superior.",
+                    "E) valer-se do cargo para lograr proveito pessoal ou de outrem, em detrimento da dignidade da função pública."
+                ],
+                "correta": 4,
+                "comentario": "Essa proibição (art. 117, IX) é punida com demissão (art. 132, XIII). As demais alternativas são deveres do servidor (art. 116)."
             }
         ],
-        "Direitos Humanos": []
+        "Direitos Humanos": [
+            {
+                "id": 10001,
+                "enunciado": "A característica dos direitos humanos segundo a qual eles se aplicam a todas as pessoas, independentemente de nacionalidade, sexo, raça, religião ou qualquer outra condição, é a:",
+                "opcoes": [
+                    "A) disponibilidade.",
+                    "B) relatividade cultural absoluta.",
+                    "C) universalidade.",
+                    "D) temporariedade.",
+                    "E) exclusividade."
+                ],
+                "correta": 2,
+                "comentario": "Os direitos humanos são universais, indivisíveis, interdependentes, inalienáveis, imprescritíveis e irrenunciáveis, entre outras características."
+            },
+            {
+                "id": 10002,
+                "enunciado": "A característica dos direitos humanos que impede seu titular de renunciar a eles ou de vendê-los é a:",
+                "opcoes": [
+                    "A) relatividade.",
+                    "B) complementaridade.",
+                    "C) historicidade.",
+                    "D) inalienabilidade (e irrenunciabilidade).",
+                    "E) universalidade."
+                ],
+                "correta": 3,
+                "comentario": "Os direitos humanos não podem ser objeto de comércio nem de renúncia definitiva, ainda que o titular deixe de exercê-los em situações concretas."
+            },
+            {
+                "id": 10003,
+                "enunciado": "Os direitos de primeira dimensão (ou geração) correspondem, principalmente, aos:",
+                "opcoes": [
+                    "A) direitos civis e políticos, ligados à liberdade e à limitação do poder do Estado.",
+                    "B) direitos dos povos à paz, exclusivamente.",
+                    "C) direitos ligados à biotecnologia.",
+                    "D) direitos difusos, como o meio ambiente.",
+                    "E) direitos sociais, econômicos e culturais."
+                ],
+                "correta": 0,
+                "comentario": "Associação usual: 1ª dimensão, liberdade (civis e políticos); 2ª, igualdade (sociais, econômicos e culturais); 3ª, fraternidade ou solidariedade (difusos, como meio ambiente e paz)."
+            },
+            {
+                "id": 10004,
+                "enunciado": "A Declaração Universal dos Direitos Humanos foi adotada pela Assembleia Geral da ONU em:",
+                "opcoes": [
+                    "A) 1966.",
+                    "B) 1988.",
+                    "C) 1969.",
+                    "D) 1945.",
+                    "E) 1948."
+                ],
+                "correta": 4,
+                "comentario": "A DUDH foi adotada em 10 de dezembro de 1948. Em 1945, foi criada a ONU; em 1966, os dois Pactos Internacionais; em 1969, a Convenção Americana (Pacto de San José)."
+            },
+            {
+                "id": 10005,
+                "enunciado": "Segundo a Declaração Universal dos Direitos Humanos (art. 5º), ninguém será submetido a:",
+                "opcoes": [
+                    "A) tortura, nem a tratamento ou castigo cruel, desumano ou degradante.",
+                    "B) fiscalização de trânsito.",
+                    "C) processo judicial.",
+                    "D) qualquer tipo de investigação policial.",
+                    "E) prisão em flagrante."
+                ],
+                "correta": 0,
+                "comentario": "A proibição da tortura é absoluta no direito internacional e também está no art. 5º, III, da Constituição Federal."
+            },
+            {
+                "id": 10006,
+                "enunciado": "A Convenção Americana sobre Direitos Humanos (Pacto de San José da Costa Rica) foi incorporada ao ordenamento brasileiro e, segundo o STF (RE 466.343), possui hierarquia:",
+                "opcoes": [
+                    "A) de emenda constitucional, desde sua incorporação em 1992.",
+                    "B) supralegal, acima das leis ordinárias e abaixo da Constituição.",
+                    "C) de lei ordinária, apenas.",
+                    "D) superior à Constituição Federal.",
+                    "E) inferior aos decretos do Executivo."
+                ],
+                "correta": 1,
+                "comentario": "Tratados de direitos humanos aprovados antes da EC 45/2004, sem o rito do §3º do art. 5º, têm status supralegal. Por isso, a prisão civil do depositário infiel tornou-se ilícita (Súmula Vinculante 25)."
+            },
+            {
+                "id": 10007,
+                "enunciado": "Segundo o art. 5º, §3º, da Constituição (incluído pela EC 45/2004), os tratados e convenções internacionais sobre direitos humanos aprovados em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes:",
+                "opcoes": [
+                    "A) às leis complementares.",
+                    "B) às emendas constitucionais.",
+                    "C) às leis ordinárias.",
+                    "D) aos decretos legislativos simples.",
+                    "E) às medidas provisórias."
+                ],
+                "correta": 1,
+                "comentario": "A Convenção sobre os Direitos das Pessoas com Deficiência (e seu Protocolo) foi a primeira aprovada por esse rito, com status de emenda constitucional."
+            },
+            {
+                "id": 10008,
+                "enunciado": "Segundo a Súmula Vinculante 25 do STF, é ilícita a prisão civil:",
+                "opcoes": [
+                    "A) de estrangeiros em situação irregular.",
+                    "B) de qualquer devedor.",
+                    "C) do devedor de pensão alimentícia.",
+                    "D) de depositário infiel, qualquer que seja a modalidade do depósito.",
+                    "E) de quem comete crime de trânsito."
+                ],
+                "correta": 3,
+                "comentario": "Por força do Pacto de San José, a única prisão civil admitida no Brasil é a do devedor de alimentos."
+            },
+            {
+                "id": 10009,
+                "enunciado": "O incidente de deslocamento de competência para a Justiça Federal, nas hipóteses de grave violação de direitos humanos, pode ser suscitado:",
+                "opcoes": [
+                    "A) por qualquer cidadão, perante o Congresso Nacional.",
+                    "B) pelo Governador do Estado, perante o STJ.",
+                    "C) pelo Procurador-Geral da República, perante o Superior Tribunal de Justiça.",
+                    "D) pelo delegado de polícia, perante o juiz federal.",
+                    "E) pela vítima, perante o STF."
+                ],
+                "correta": 2,
+                "comentario": "O art. 109, §5º, da Constituição (EC 45/2004) prevê o incidente para assegurar o cumprimento de obrigações internacionais de direitos humanos assumidas pelo Brasil."
+            },
+            {
+                "id": 10010,
+                "enunciado": "O órgão do sistema interamericano que pode receber petições individuais de vítimas de violações de direitos humanos e, se for o caso, submeter o caso à Corte é a:",
+                "opcoes": [
+                    "A) Organização Mundial da Saúde.",
+                    "B) Comissão de Direitos Humanos da Câmara dos Deputados.",
+                    "C) Corte Internacional de Justiça.",
+                    "D) Comissão Interamericana de Direitos Humanos.",
+                    "E) Assembleia Geral da ONU."
+                ],
+                "correta": 3,
+                "comentario": "Indivíduos não acionam diretamente a Corte Interamericana: peticionam à Comissão, que analisa o caso e pode submetê-lo à Corte. O Brasil reconhece a jurisdição da Corte desde 1998."
+            },
+            {
+                "id": 10011,
+                "enunciado": "Segundo a Lei 9.455/1997, constitui crime de tortura constranger alguém com emprego de violência ou grave ameaça, causando-lhe sofrimento físico ou mental, com o fim de:",
+                "opcoes": [
+                    "A) proteger a vítima de perigo iminente.",
+                    "B) cumprir ordem legal de autoridade.",
+                    "C) realizar fiscalização de trânsito.",
+                    "D) conduzir preso que oferece resistência, com uso moderado da força.",
+                    "E) obter informação, declaração ou confissão da vítima ou de terceira pessoa."
+                ],
+                "correta": 4,
+                "comentario": "A tortura-prova (art. 1º, I, 'a') é uma das modalidades. A lei também pune a tortura para provocar ação criminosa, por discriminação racial ou religiosa, e como castigo a quem está sob guarda."
+            },
+            {
+                "id": 10012,
+                "enunciado": "Segundo a Lei 9.455/1997, aquele que se omite em face das condutas de tortura, quando tinha o dever de evitá-las ou apurá-las:",
+                "opcoes": [
+                    "A) responde apenas administrativamente.",
+                    "B) não comete crime algum.",
+                    "C) incorre na pena de detenção de 1 a 4 anos.",
+                    "D) recebe a mesma pena do torturador.",
+                    "E) comete contravenção penal."
+                ],
+                "correta": 2,
+                "comentario": "É a tortura-omissão (art. 1º, §2º), com pena menor que a da tortura praticada diretamente (reclusão de 2 a 8 anos)."
+            },
+            {
+                "id": 10013,
+                "enunciado": "Segundo a Lei 9.455/1997, a condenação por crime de tortura acarretará:",
+                "opcoes": [
+                    "A) apenas advertência funcional.",
+                    "B) transferência para outro órgão.",
+                    "C) suspensão do cargo por 30 dias.",
+                    "D) nenhum efeito sobre o cargo público.",
+                    "E) a perda do cargo, função ou emprego público e a interdição para seu exercício pelo dobro do prazo da pena aplicada."
+                ],
+                "correta": 4,
+                "comentario": "O efeito do art. 1º, §5º, é automático, segundo a jurisprudência, não exigindo fundamentação específica na sentença."
+            },
+            {
+                "id": 10014,
+                "enunciado": "Segundo a Lei 13.869/2019 (Lei de Abuso de Autoridade), as condutas descritas na lei constituem crime quando praticadas pelo agente com a finalidade específica de:",
+                "opcoes": [
+                    "A) cumprir a lei com rigor.",
+                    "B) proteger a vítima de crime.",
+                    "C) aplicar a penalidade de trânsito prevista no CTB.",
+                    "D) realizar abordagem com fundada suspeita.",
+                    "E) prejudicar outrem ou beneficiar a si mesmo ou a terceiro, ou ainda por mero capricho ou satisfação pessoal."
+                ],
+                "correta": 4,
+                "comentario": "A lei exige esse dolo específico (art. 1º, §1º). A divergência na interpretação da lei ou na avaliação de fatos e provas não configura, por si só, abuso de autoridade (§2º)."
+            },
+            {
+                "id": 10015,
+                "enunciado": "Segundo a Lei 13.869/2019, os crimes de abuso de autoridade são de ação penal:",
+                "opcoes": [
+                    "A) privada exclusiva da vítima.",
+                    "B) pública condicionada à representação, sempre.",
+                    "C) pública condicionada à requisição do Ministro da Justiça.",
+                    "D) pública incondicionada, admitida ação privada subsidiária se a ação pública não for intentada no prazo legal.",
+                    "E) dispensada, por se tratar de infração administrativa."
+                ],
+                "correta": 3,
+                "comentario": "É o que estabelece o art. 3º da lei."
+            },
+            {
+                "id": 10016,
+                "enunciado": "Segundo a Lei 13.060/2014, os órgãos de segurança pública deverão priorizar a utilização de:",
+                "opcoes": [
+                    "A) força letal como primeira opção.",
+                    "B) instrumentos de menor potencial ofensivo, desde que seu uso não coloque em risco a integridade física ou psíquica dos policiais.",
+                    "C) apenas a negociação, proibido qualquer instrumento.",
+                    "D) instrumentos de tortura para obter informações.",
+                    "E) armas de fogo em qualquer abordagem."
+                ],
+                "correta": 1,
+                "comentario": "A lei também veda o uso de arma de fogo contra pessoa desarmada em fuga que não represente risco imediato, e contra veículo que desrespeite bloqueio policial, salvo risco de morte ou lesão a agentes ou terceiros."
+            },
+            {
+                "id": 10017,
+                "enunciado": "Segundo a Lei 13.060/2014, NÃO é legítimo o uso de arma de fogo contra veículo que desrespeite bloqueio policial em via pública:",
+                "opcoes": [
+                    "A) em qualquer situação de desobediência.",
+                    "B) salvo autorização prévia do superior por rádio, sempre.",
+                    "C) exceto quando o ato represente risco de morte ou lesão aos agentes de segurança pública ou a terceiros.",
+                    "D) em nenhuma hipótese, nem mesmo em risco de morte.",
+                    "E) somente durante a noite."
+                ],
+                "correta": 2,
+                "comentario": "O art. 2º, parágrafo único, II, da Lei 13.060/2014 trata dessa situação, diretamente ligada ao trabalho da PRF em bloqueios."
+            },
+            {
+                "id": 10018,
+                "enunciado": "Os Princípios Básicos sobre o Uso da Força e de Armas de Fogo pelos Funcionários Responsáveis pela Aplicação da Lei (ONU, 1990) orientam que o uso da força deve observar, entre outros, os princípios da:",
+                "opcoes": [
+                    "A) legalidade, necessidade e proporcionalidade.",
+                    "B) rapidez e sigilo.",
+                    "C) discricionariedade absoluta e surpresa.",
+                    "D) conveniência e oportunidade, exclusivamente.",
+                    "E) vingança e intimidação."
+                ],
+                "correta": 0,
+                "comentario": "A Portaria Interministerial 4.226/2010, no Brasil, adotou esses parâmetros, acrescentando os princípios da moderação e da conveniência."
+            },
+            {
+                "id": 10019,
+                "enunciado": "O Código de Conduta para os Funcionários Responsáveis pela Aplicação da Lei, adotado pela ONU em 1979, estabelece que esses funcionários:",
+                "opcoes": [
+                    "A) não precisam guardar sigilo sobre informações confidenciais.",
+                    "B) estão dispensados de respeitar a dignidade humana em situações de risco.",
+                    "C) só podem empregar a força quando estritamente necessário e na medida exigida para o cumprimento do seu dever.",
+                    "D) podem empregar a força de forma ilimitada para manter a ordem.",
+                    "E) podem praticar tortura em casos de terrorismo."
+                ],
+                "correta": 2,
+                "comentario": "O art. 3º do Código consagra o uso excepcional e proporcional da força. O documento também proíbe a tortura em qualquer circunstância (art. 5º)."
+            },
+            {
+                "id": 10020,
+                "enunciado": "Segundo a Lei 13.344/2016, o crime de tráfico de pessoas (art. 149-A do Código Penal) consiste em agenciar, aliciar, recrutar, transportar, transferir, comprar, alojar ou acolher pessoa, mediante grave ameaça, violência, coação, fraude ou abuso, com a finalidade de, entre outras:",
+                "opcoes": [
+                    "A) contratá-la legalmente com carteira assinada.",
+                    "B) transportá-la em transporte público regular.",
+                    "C) levá-la a uma viagem turística consentida.",
+                    "D) oferecer-lhe curso de capacitação gratuito.",
+                    "E) submetê-la a trabalho em condições análogas à de escravo ou à exploração sexual."
+                ],
+                "correta": 4,
+                "comentario": "O art. 149-A lista as finalidades: remoção de órgãos, trabalho escravo, servidão, adoção ilegal e exploração sexual. A PRF atua no enfrentamento desse crime nas rodovias."
+            },
+            {
+                "id": 10021,
+                "enunciado": "Segundo o Estatuto da Criança e do Adolescente, nenhuma criança ou adolescente menor de 16 anos poderá viajar para fora da comarca onde reside desacompanhado dos pais ou dos responsáveis sem:",
+                "opcoes": [
+                    "A) passaporte, mesmo em viagens nacionais.",
+                    "B) expressa autorização judicial, ressalvadas as exceções previstas em lei.",
+                    "C) autorização do motorista do ônibus.",
+                    "D) autorização da escola.",
+                    "E) autorização do Conselho Tutelar, sempre."
+                ],
+                "correta": 1,
+                "comentario": "O art. 83 do ECA (redação da Lei 13.812/2019) estendeu a exigência aos menores de 16 anos. É dispensada, por exemplo, quando acompanhados de ascendente ou colateral maior até o 3º grau, comprovado o parentesco, ou de pessoa maior autorizada pelos pais."
+            },
+            {
+                "id": 10022,
+                "enunciado": "Segundo a Lei 7.716/1989 e o entendimento do STF, a prática de injúria racial:",
+                "opcoes": [
+                    "A) é equiparada ao crime de racismo, sendo imprescritível e inafiançável.",
+                    "B) depende de representação da vítima e admite fiança.",
+                    "C) prescreve em 2 anos.",
+                    "D) não é crime.",
+                    "E) é contravenção penal."
+                ],
+                "correta": 0,
+                "comentario": "O STF equiparou a injúria racial ao racismo (HC 154.248, 2021), e a Lei 14.532/2023 a incluiu expressamente na Lei 7.716/1989 (art. 2º-A), com pena de reclusão de 2 a 5 anos."
+            },
+            {
+                "id": 10023,
+                "enunciado": "Segundo o Estatuto da Pessoa Idosa (Lei 10.741/2003), considera-se pessoa idosa aquela com idade igual ou superior a:",
+                "opcoes": [
+                    "A) 55 anos.",
+                    "B) 70 anos.",
+                    "C) 65 anos.",
+                    "D) 60 anos.",
+                    "E) 80 anos."
+                ],
+                "correta": 3,
+                "comentario": "O Estatuto protege as pessoas com 60 anos ou mais e prevê prioridade especial às maiores de 80 anos (art. 3º, §2º)."
+            },
+            {
+                "id": 10024,
+                "enunciado": "As Regras Mínimas das Nações Unidas para o Tratamento de Reclusos são conhecidas como:",
+                "opcoes": [
+                    "A) Regras de Bangkok.",
+                    "B) Regras de Mandela.",
+                    "C) Regras de Tóquio.",
+                    "D) Regras de Pequim.",
+                    "E) Regras de Havana."
+                ],
+                "correta": 1,
+                "comentario": "As Regras de Mandela (revisão de 2015) tratam do tratamento de presos. As de Bangkok tratam de mulheres presas; as de Pequim, da justiça juvenil; as de Tóquio, de medidas não privativas de liberdade."
+            },
+            {
+                "id": 10025,
+                "enunciado": "O princípio da proibição do retrocesso (ou efeito cliquet), em matéria de direitos humanos, significa que:",
+                "opcoes": [
+                    "A) uma vez reconhecido e concretizado um direito, o Estado não pode suprimi-lo ou reduzi-lo arbitrariamente.",
+                    "B) o Estado deve reduzir direitos em tempos de crise, obrigatoriamente.",
+                    "C) os direitos humanos podem ser revogados a qualquer momento.",
+                    "D) os tratados internacionais não podem ser ratificados.",
+                    "E) os direitos devem retroagir para punir condutas antigas."
+                ],
+                "correta": 0,
+                "comentario": "O princípio impede o retrocesso injustificado no nível de proteção alcançado, especialmente em direitos sociais."
+            }
+        ]
     }
 });
