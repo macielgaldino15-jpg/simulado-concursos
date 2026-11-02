@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Administração - Simulados Concursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { 50: '#f0f7ff', 100: '#e0effe', 500: '#0284c7', 600: '#0284c7', 700: '#0369a1' } } } } };
+        try { const t = localStorage.getItem('tema'); if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark'); } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-full">
+    <header class="px-4 sm:px-6 py-4 bg-slate-900 border-b border-slate-800 text-white flex items-center justify-between gap-3">
+        <h1 class="text-lg font-extrabold"><i class="fa-solid fa-user-shield mr-2 text-blue-400"></i>Administração de acessos</h1>
+        <a href="/" class="text-sm text-slate-300 hover:text-white">Ir para o simulado</a>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-6 space-y-6">
+        <!-- Senha de administrador -->
+        <section id="secLogin" class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 p-6 max-w-md mx-auto">
+            <h2 class="font-extrabold text-lg mb-1">Senha de administrador</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">É o valor da variável ADMIN_TOKEN configurada no Render.</p>
+            <form onsubmit="entrarAdmin(event)" class="flex gap-2">
+                <input id="token" type="password" required autocomplete="current-password" class="flex-1 p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                <button class="px-5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl">Entrar</button>
+            </form>
+        </section>
+
+        <div id="mensagem" class="hidden p-3.5 rounded-2xl text-sm border"></div>
+
+        <div id="secPainel" class="hidden space-y-6">
+            <!-- Liberar acesso manual -->
+            <section class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 p-6">
+                <h2 class="font-extrabold text-lg mb-1">Liberar acesso manualmente</h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Para cortesias, testes ou vendas fora da Kiwify. A pessoa cria a senha na tela de login, em "Primeiro acesso", usando o e-mail e o CPF (ou código) informados aqui.</p>
+                <form onsubmit="liberar(event)" class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+                    <input name="email" type="email" required placeholder="E-mail" class="p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl">
+                    <input name="nome" placeholder="Nome (opcional)" class="p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl">
+                    <input name="cpf" required inputmode="numeric" placeholder="CPF ou código numérico" class="p-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl">
+                    <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl py-3">Liberar</button>
+                </form>
+            </section>
+
+            <!-- Lista -->
+            <section class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 p-6">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <h2 class="font-extrabold text-lg">Compradores <span id="total" class="text-sm font-semibold text-slate-500"></span></h2>
+                    <div class="flex gap-2 w-full sm:w-auto">
+                        <input id="busca" oninput="desenhar()" placeholder="Buscar e-mail ou nome" class="flex-1 sm:w-64 p-2.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl">
+                        <button onclick="carregar()" title="Atualizar" class="px-3 rounded-xl border border-slate-300 dark:border-slate-600"><i class="fa-solid fa-rotate"></i></button>
+                    </div>
+                </div>
+                <p id="origem" class="text-xs text-slate-500 mb-3"></p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="text-left text-xs uppercase text-slate-500 border-b border-slate-200 dark:border-slate-700">
+                            <tr><th class="py-2 pr-3">E-mail</th><th class="py-2 pr-3">Nome</th><th class="py-2 pr-3">Pedido</th><th class="py-2 pr-3">Último login</th><th class="py-2 pr-3">Status</th><th class="py-2">Ações</th></tr>
+                        </thead>
+                        <tbody id="linhas"></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        let token = '';
+        let usuarios = [];
+        try { token = sessionStorage.getItem('admin_token') || ''; } catch (e) {}
+
+        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        const data = s => s ? new Date(s).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' }) : '—';
+
+        function mensagem(texto, erro) {
+            const el = document.getElementById('mensagem');
+            el.className = 'p-3.5 rounded-2xl text-sm border ' + (erro ? 'bg-rose-50 dark:bg-rose-950/30 border-rose-300 dark:border-rose-800 text-rose-800 dark:text-rose-200' : 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200');
+            el.textContent = texto;
+            clearTimeout(mensagem.t); mensagem.t = setTimeout(() => el.classList.add('hidden'), 6000);
+        }
+        async function api(url, corpo) {
+            const r = await fetch(url, { method: corpo ? 'POST' : 'GET', headers: { 'Content-Type': 'application/json', 'x-admin-token': token }, body: corpo ? JSON.stringify(corpo) : undefined });
+            const dados = await r.json().catch(() => ({}));
+            if (r.status === 401 || r.status === 503) { sair(); throw new Error(dados.erro || 'Acesso negado.'); }
+            if (!r.ok) throw new Error(dados.erro || 'Erro ao processar.');
+            return dados;
+        }
+        function sair() {
+            token = ''; try { sessionStorage.removeItem('admin_token'); } catch (e) {}
+            document.getElementById('secLogin').classList.remove('hidden');
+            document.getElementById('secPainel').classList.add('hidden');
+        }
+        async function entrarAdmin(ev) {
+            ev.preventDefault();
+            token = document.getElementById('token').value;
+            await carregar(true);
+        }
+        async function carregar(guardar) {
+            try {
+                const dados = await api('/api/admin/usuarios');
+                if (guardar) { try { sessionStorage.setItem('admin_token', token); } catch (e) {} }
+                usuarios = dados.usuarios || [];
+                document.getElementById('origem').textContent = 'Dados em: ' + dados.armazenamento;
+                document.getElementById('secLogin').classList.add('hidden');
+                document.getElementById('secPainel').classList.remove('hidden');
+                desenhar();
+            } catch (e) { mensagem(e.message, true); }
+        }
+        function desenhar() {
+            const termo = document.getElementById('busca').value.trim().toLowerCase();
+            const lista = usuarios.filter(u => !termo || (u.email + ' ' + (u.nome || '')).toLowerCase().includes(termo));
+            document.getElementById('total').textContent = `(${usuarios.filter(u => u.status === 'ativo').length} ativos de ${usuarios.length})`;
+            document.getElementById('linhas').innerHTML = lista.map(u => `
+                <tr class="border-b border-slate-100 dark:border-slate-700/60">
+                    <td class="py-2.5 pr-3 font-medium break-all">${esc(u.email)}</td>
+                    <td class="py-2.5 pr-3">${esc(u.nome)}</td>
+                    <td class="py-2.5 pr-3 text-xs text-slate-500">${esc(u.pedido)}</td>
+                    <td class="py-2.5 pr-3 text-xs text-slate-500 whitespace-nowrap">${data(u.sessao_em)}</td>
+                    <td class="py-2.5 pr-3">${u.status === 'ativo'
+                        ? '<span class="text-xs font-bold px-2 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">Ativo</span>'
+                        : '<span class="text-xs font-bold px-2 py-1 rounded-full bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300">Bloqueado</span>'}</td>
+                    <td class="py-2.5 whitespace-nowrap space-x-1">
+                        <button data-email="${esc(u.email)}" data-acao="${u.status === 'ativo' ? 'bloqueado' : 'ativo'}" onclick="alterar(this)" class="text-xs font-bold px-2.5 py-1.5 rounded-lg ${u.status === 'ativo' ? 'bg-rose-600 hover:bg-rose-700' : 'bg-emerald-600 hover:bg-emerald-700'} text-white">${u.status === 'ativo' ? 'Bloquear' : 'Desbloquear'}</button>
+                        <button data-email="${esc(u.email)}" onclick="derrubar(this)" class="text-xs font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600">Encerrar sessão</button>
+                    </td>
+                </tr>`).join('') || '<tr><td colspan="6" class="py-6 text-center text-slate-500">Nenhum comprador encontrado.</td></tr>';
+        }
+        async function alterar(botao) {
+            const { email, acao } = botao.dataset;
+            if (acao === 'bloqueado' && !confirm(`Bloquear o acesso de ${email}?`)) return;
+            try { await api('/api/admin/status', { email, status: acao }); mensagem(acao === 'ativo' ? 'Acesso liberado.' : 'Acesso bloqueado.'); carregar(); }
+            catch (e) { mensagem(e.message, true); }
+        }
+        async function derrubar(botao) {
+            try { await api('/api/admin/derrubar-sessao', { email: botao.dataset.email }); mensagem('Sessão encerrada. A pessoa precisará entrar de novo.'); }
+            catch (e) { mensagem(e.message, true); }
+        }
+        async function liberar(ev) {
+            ev.preventDefault();
+            const f = ev.target;
+            try {
+                await api('/api/admin/usuarios', { email: f.email.value, nome: f.nome.value, cpf: f.cpf.value });
+                mensagem('Acesso liberado para ' + f.email.value + '.');
+                f.reset(); carregar();
+            } catch (e) { mensagem(e.message, true); }
+        }
+        if (token) carregar();
+    </script>
+</body>
+</html>

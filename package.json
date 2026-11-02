@@ -1,14 +1,13 @@
 {
   "name": "simulado-concursos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simulados para concursos com acesso protegido por login",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "cors": "^2.8.6",
-    "express": "^5.3.0"
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
   }
 }
