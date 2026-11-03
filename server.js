@@ -129,6 +129,11 @@ function lerCookies(req) {
 function cookieSessao(valor, maxAge) {
   return `sessao=${valor}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${maxAge}${COOKIE_SEGURO ? '; Secure' : ''}`;
 }
+// Marca de "já é aluno" (1 ano): quem já entrou neste navegador vai direto para o login em vez da página de vendas
+const UM_ANO = 365 * 24 * 60 * 60;
+function cookieAluno() {
+  return `aluno=1; Path=/; HttpOnly; SameSite=Lax; Max-Age=${UM_ANO}${COOKIE_SEGURO ? '; Secure' : ''}`;
+}
 function lerCorpo(req, limite = 1e6) {
   return new Promise((ok, falha) => {
     const partes = []; let tam = 0;
@@ -188,8 +193,11 @@ async function rotear(req, res) {
     const arquivo = rota === '/' ? 'index.html' : rota.slice(1);
     const u = await usuarioDaSessao(req);
     if (!u) {
-      // Visitante sem login vê a página de apresentação do produto
-      if (arquivo === 'index.html') return enviarArquivo(res, 'publico/inicio.html', true);
+      if (arquivo === 'index.html') {
+        // Aluno que já entrou neste navegador vai direto para o login; visitante novo vê a página de apresentação
+        if (lerCookies(req).aluno === '1') return redirecionar(res, '/entrar');
+        return enviarArquivo(res, 'publico/inicio.html', true);
+      }
       return json(res, 401, { erro: 'Faça login para acessar.' });
     }
     return enviarArquivo(res, arquivo, true);
@@ -208,7 +216,7 @@ async function rotear(req, res) {
     }
     if (u.status !== 'ativo') return json(res, 403, { erro: 'Seu acesso está bloqueado. Fale com o suporte.' });
     const cookie = await iniciarSessao(res, u);
-    return json(res, 200, { ok: true }, { 'Set-Cookie': cookie });
+    return json(res, 200, { ok: true }, { 'Set-Cookie': [cookie, cookieAluno()] });
   }
 
   // ---------- Primeiro acesso / esqueci a senha ----------
@@ -224,7 +232,7 @@ async function rotear(req, res) {
     if (u.status !== 'ativo') return json(res, 403, { erro: 'Seu acesso está bloqueado. Fale com o suporte.' });
     if (String(senha || '').length < 8) return json(res, 400, { erro: 'A senha precisa ter pelo menos 8 caracteres.' });
     const cookie = await iniciarSessao(res, u, { senha_hash: hashSenha(String(senha)) });
-    return json(res, 200, { ok: true }, { 'Set-Cookie': cookie });
+    return json(res, 200, { ok: true }, { 'Set-Cookie': [cookie, cookieAluno()] });
   }
 
   // ---------- Sessão e saída ----------
