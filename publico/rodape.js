@@ -27,6 +27,11 @@ var EMPRESA = {
 (function () {
     function contatoHTML(curto) {
         if (EMPRESA.email) return '<a href="mailto:' + EMPRESA.email + '" class="underline hover:text-slate-700 dark:hover:text-slate-200">' + EMPRESA.email + '</a>';
+        if (EMPRESA.whatsapp) {
+            var n = String(EMPRESA.whatsapp).replace(/\D/g, ''), loc = n.replace(/^55/, '');
+            var vis = loc.length === 11 ? '(' + loc.slice(0, 2) + ') ' + loc.slice(2, 7) + '-' + loc.slice(7) : loc;
+            return '<a href="https://wa.me/' + n + '" target="_blank" rel="noopener" class="underline hover:text-slate-700 dark:hover:text-slate-200">WhatsApp ' + vis + '</a>';
+        }
         if (EMPRESA.instagram) return '<a href="https://instagram.com/' + EMPRESA.instagram + '" target="_blank" rel="noopener" class="underline hover:text-slate-700 dark:hover:text-slate-200">@' + EMPRESA.instagram + '</a>';
         return curto ? 'pela Kiwify, no e-mail de confirmação da compra' : 'pelo canal de suporte da Kiwify, disponível no e-mail de confirmação da compra';
     }
