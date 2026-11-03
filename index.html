@@ -213,6 +213,13 @@
                     </button>
                 </div>
                 <p id="avisoCompartilhar" class="hidden -mt-5 mb-8 text-center text-sm font-semibold text-slate-600 dark:text-slate-300" role="status" aria-live="polite"></p>
+                <div id="pedidoOpiniao" class="hidden mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl border border-brand-100 dark:border-slate-700 bg-brand-50 dark:bg-slate-900/60 p-5">
+                    <div class="text-center sm:text-left">
+                        <p class="font-extrabold text-slate-900 dark:text-white">Está gostando dos simulados?</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Me conte o que achou ou avise se encontrar algum erro. Sua opinião ajuda a melhorar.</p>
+                    </div>
+                    <a id="linkOpiniao" href="#" target="_blank" rel="noopener" class="shrink-0 px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm">Mandar minha opinião</a>
+                </div>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                     <div class="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 text-center">
                         <p class="text-xs text-slate-500 dark:text-slate-400 uppercase font-bold">Aproveitamento</p>
@@ -786,6 +793,10 @@
             imagemResultado = null;
             $('avisoCompartilhar').classList.add('hidden');
             $('btnCompartilhar').classList.toggle('hidden', total === 0);
+            var E = window.EMPRESA || {};
+            var linkOp = E.whatsapp ? 'https://wa.me/' + String(E.whatsapp).replace(/\D/g, '') + '?text=' + encodeURIComponent('Oi! Fiz o simulado ' + examInfo.title + ' e queria dizer que ')
+                : (E.instagram ? 'https://ig.me/m/' + String(E.instagram).replace(/^@/, '') : '');
+            if (linkOp) { $('linkOpiniao').href = linkOp; $('pedidoOpiniao').classList.remove('hidden'); }
             // Gera a imagem já agora: no iPhone o compartilhamento precisa abrir logo após o toque
             gerarImagemResultado().then(function (blob) { imagemResultado = blob; }).catch(function () {});
         }

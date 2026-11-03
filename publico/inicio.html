@@ -52,7 +52,7 @@
                 </a>
                 <a href="#teste" class="text-center font-bold text-slate-300 hover:text-white underline underline-offset-4">Testar uma questão grátis</a>
             </div>
-            <p class="mt-5 text-sm text-slate-400">Pagamento único · Acesso vitalício · Compra segura pela Kiwify</p>
+            <p class="mt-5 text-sm text-slate-400">Pagamento único · Acesso vitalício · Garantia de 7 dias</p>
         </div>
 
         <!-- Celular -->
@@ -172,6 +172,29 @@
     </div>
 </section>
 
+<!-- ================= DEPOIMENTOS (aparece só com depoimentos reais em rodape.js) ================= -->
+<section id="depoimentos" class="hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-navy">O que dizem os alunos</h2>
+        <div id="listaDepoimentos" class="mt-10 grid md:grid-cols-3 gap-5"></div>
+    </div>
+</section>
+
+<!-- ================= QUEM FAZ ================= -->
+<section id="quemFaz">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <p class="text-brand-700 font-extrabold uppercase tracking-[0.18em] text-sm">Quem faz</p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-6 sm:items-start">
+            <div id="criadorFoto" class="w-24 h-24 shrink-0 rounded-full bg-brand-500 text-white flex items-center justify-center text-3xl font-black overflow-hidden"></div>
+            <div>
+                <p id="criadorTexto" class="text-lg sm:text-xl text-slate-700 leading-relaxed"></p>
+                <p class="mt-4 font-extrabold text-navy"><span id="criadorNome"></span> <span class="font-semibold text-slate-500">· <span data-empresa="nome">MG Tecnologia Educacional</span></span></p>
+                <a id="criadorContato" href="#" target="_blank" rel="noopener" class="hidden mt-4 inline-flex items-center gap-2 font-bold text-brand-700 underline underline-offset-4"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ================= PREÇO ================= -->
 <section id="preco" class="hero-bg text-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
@@ -190,7 +213,14 @@
                 <li class="flex gap-3"><svg class="w-6 h-6 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>Acesso liberado logo após a compra</li>
             </ul>
             <a href="#preco" class="js-comprar mt-8 flex justify-center items-center gap-2 bg-amber-400 hover:bg-amber-300 text-navy font-black text-lg px-8 py-4 rounded-full transition">Garantir meu acesso</a>
-            <p class="mt-4 text-xs text-center text-slate-500">Compra segura pela Kiwify. Se não gostar, você tem 7 dias para pedir o reembolso integral.</p>
+            <div class="mt-6 flex items-center gap-4 rounded-2xl bg-emerald-50 border border-emerald-200 p-4">
+                <svg class="w-11 h-11 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+                <div>
+                    <p class="font-black text-emerald-900">Garantia de 7 dias</p>
+                    <p class="text-sm text-emerald-800 leading-snug">Não gostou? Peça o reembolso integral pela Kiwify, sem precisar justificar.</p>
+                </div>
+            </div>
+            <p class="mt-4 text-xs text-center text-slate-500">Pagamento processado com segurança pela Kiwify.</p>
         </div>
     </div>
 </section>
@@ -235,6 +265,32 @@
         var link = (window.EMPRESA && EMPRESA.linkCompra) || '';
         if (!link) return;
         document.querySelectorAll('.js-comprar').forEach(function (a) { a.href = link; });
+    })();
+
+    // Prova social: criador, contato e depoimentos (tudo configurado em rodape.js)
+    (function () {
+        var E = window.EMPRESA || {};
+        var esc = function (t) { var d = document.createElement('div'); d.textContent = String(t == null ? '' : t); return d.innerHTML; };
+        var c = E.criador || {};
+        var foto = document.getElementById('criadorFoto');
+        if (c.foto) foto.innerHTML = '<img src="' + esc(c.foto) + '" alt="' + esc(c.nome) + '" class="w-full h-full object-cover">';
+        else foto.textContent = String(c.nome || 'MG').trim().slice(0, 1).toUpperCase();
+        document.getElementById('criadorTexto').textContent = c.texto || '';
+        document.getElementById('criadorNome').textContent = c.nome || '';
+        if (!c.texto) document.getElementById('quemFaz').classList.add('hidden');
+        var contato = document.getElementById('criadorContato');
+        if (E.whatsapp) { contato.href = 'https://wa.me/' + String(E.whatsapp).replace(/\D/g, ''); contato.textContent = 'Falar comigo no WhatsApp'; contato.classList.remove('hidden'); }
+        else if (E.instagram) { contato.href = 'https://instagram.com/' + String(E.instagram).replace(/^@/, ''); contato.textContent = 'Falar comigo no Instagram'; contato.classList.remove('hidden'); }
+
+        var deps = (E.depoimentos || []).filter(function (d) { return d && d.texto; });
+        if (deps.length) {
+            document.getElementById('listaDepoimentos').innerHTML = deps.map(function (d) {
+                return '<figure class="rounded-3xl bg-slate-50 border border-slate-200 p-6 flex flex-col">' +
+                    '<blockquote class="text-slate-700 leading-relaxed flex-grow">“' + esc(d.texto) + '”</blockquote>' +
+                    '<figcaption class="mt-5 font-extrabold text-navy">' + esc(d.nome) + (d.concurso ? '<span class="font-semibold text-slate-500"> · estudando para ' + esc(d.concurso) + '</span>' : '') + '</figcaption></figure>';
+            }).join('');
+            document.getElementById('depoimentos').classList.remove('hidden');
+        }
     })();
 
     // Questão de teste
