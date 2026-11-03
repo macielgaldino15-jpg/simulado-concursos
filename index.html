@@ -879,7 +879,8 @@
                 ctx.fillStyle = '#0b1324'; ctx.font = F(800, 46);
                 ctx.fillText(r.perc >= 60 ? 'Duvido você fazer mais!' : 'Bora treinar comigo?', M + 50, cy + 82);
                 ctx.font = F(600, 32);
-                ctx.fillText(location.host, M + 50, cy + 140);
+                var insta = (window.EMPRESA && EMPRESA.instagram) ? String(EMPRESA.instagram).replace(/^@/, '') : '';
+                ctx.fillText(insta ? 'Siga @' + insta + ' no Instagram' : '1.470 questões comentadas para treinar', M + 50, cy + 140);
 
                 return new Promise(function (ok, falha) { cv.toBlob(function (b) { b ? ok(b) : falha(new Error('imagem')); }, 'image/png'); });
             });
