@@ -208,7 +208,11 @@
                     <button onclick="restartApp()" class="px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-extrabold rounded-2xl shadow transition-all flex items-center space-x-2">
                         <i class="fa-solid fa-house"></i><span>Outro Concurso / Matéria</span>
                     </button>
+                    <button id="btnCompartilhar" onclick="compartilharResultado()" class="px-6 py-3.5 bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold rounded-2xl shadow transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-share-nodes"></i><span>Compartilhar resultado</span>
+                    </button>
                 </div>
+                <p id="avisoCompartilhar" class="hidden -mt-5 mb-8 text-center text-sm font-semibold text-slate-600 dark:text-slate-300" role="status" aria-live="polite"></p>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                     <div class="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 text-center">
                         <p class="text-xs text-slate-500 dark:text-slate-400 uppercase font-bold">Aproveitamento</p>
@@ -773,6 +777,149 @@
             renderChart(correctCount, wrongCount);
             filterReview('all');
             updateHistoryInfo();
+
+            ultimoResultado = {
+                titulo: examInfo.title, perc: percentage, acertos: correctCount, total: total,
+                tempo: $('resultTime').textContent,
+                materias: Object.keys(disciplineStats).map(function (n) { var st = disciplineStats[n]; return { nome: n, c: st.correct, t: st.total }; })
+            };
+            imagemResultado = null;
+            $('avisoCompartilhar').classList.add('hidden');
+            $('btnCompartilhar').classList.toggle('hidden', total === 0);
+            // Gera a imagem já agora: no iPhone o compartilhamento precisa abrir logo após o toque
+            gerarImagemResultado().then(function (blob) { imagemResultado = blob; }).catch(function () {});
+        }
+
+        // ======================= COMPARTILHAR RESULTADO =======================
+        var ultimoResultado = null;
+        var imagemResultado = null;
+
+        function quebrarTexto(ctx, texto, largura) {
+            var palavras = String(texto).split(' '), linhas = [], linha = '';
+            for (var i = 0; i < palavras.length; i++) {
+                var teste = linha ? linha + ' ' + palavras[i] : palavras[i];
+                if (ctx.measureText(teste).width > largura && linha) { linhas.push(linha); linha = palavras[i]; }
+                else linha = teste;
+            }
+            if (linha) linhas.push(linha);
+            return linhas;
+        }
+
+        function retanguloArredondado(ctx, x, y, w, h, r) {
+            ctx.beginPath();
+            ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.arcTo(x + w, y, x + w, y + r, r);
+            ctx.lineTo(x + w, y + h - r); ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+            ctx.lineTo(x + r, y + h); ctx.arcTo(x, y + h, x, y + h - r, r);
+            ctx.lineTo(x, y + r); ctx.arcTo(x, y, x + r, y, r);
+            ctx.closePath();
+        }
+
+        function gerarImagemResultado() {
+            var r = ultimoResultado;
+            var pronto = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+            return pronto.then(function () {
+                var W = 1080, H = 1920, M = 90;
+                var cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+                var ctx = cv.getContext('2d');
+                var F = function (peso, tam) { return peso + ' ' + tam + 'px Inter, Arial, sans-serif'; };
+
+                // Fundo
+                var g = ctx.createRadialGradient(W * 0.75, H * 0.3, 50, W * 0.75, H * 0.3, 1300);
+                g.addColorStop(0, '#12345a'); g.addColorStop(1, '#0b1324');
+                ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+
+                // Marca (topo, fora da área dos botões do story)
+                var y = 230;
+                ctx.fillStyle = '#0284c7'; retanguloArredondado(ctx, M, y, 76, 76, 20); ctx.fill();
+                ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 4.5; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+                ctx.beginPath(); ctx.moveTo(M + 38, y + 46); ctx.lineTo(M + 64, y + 32); ctx.lineTo(M + 38, y + 18); ctx.lineTo(M + 12, y + 32); ctx.closePath(); ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(M + 22, y + 38); ctx.lineTo(M + 22, y + 52); ctx.quadraticCurveTo(M + 38, y + 62, M + 54, y + 52); ctx.lineTo(M + 54, y + 38); ctx.stroke();
+                ctx.fillStyle = '#ffffff'; ctx.font = F(800, 38); ctx.textBaseline = 'middle';
+                ctx.fillText('Simulados Concursos', M + 100, y + 39);
+
+                // Título
+                y = 410; ctx.textBaseline = 'alphabetic';
+                ctx.fillStyle = '#38bdf8'; ctx.font = F(800, 30);
+                ctx.fillText('MEU RESULTADO NO SIMULADO', M, y);
+                ctx.fillStyle = '#ffffff'; ctx.font = F(800, 56);
+                var linhas = quebrarTexto(ctx, r.titulo, W - 2 * M).slice(0, 3);
+                linhas.forEach(function (l) { y += 70; ctx.fillText(l, M, y); });
+
+                // Nota
+                y += 250;
+                var cor = r.perc >= 70 ? '#34d399' : (r.perc >= 50 ? '#fbbf24' : '#38bdf8');
+                ctx.fillStyle = cor; ctx.font = F(800, 260);
+                ctx.fillText(r.perc + '%', M - 8, y);
+                y += 76;
+                ctx.fillStyle = '#e2e8f0'; ctx.font = F(600, 40);
+                ctx.fillText('Acertei ' + r.acertos + ' de ' + r.total + ' questões · ' + r.tempo, M, y);
+
+                // Matérias (até 6)
+                var mats = r.materias.slice().sort(function (a, b) { return b.t - a.t; }).slice(0, 6);
+                if (mats.length > 1) {
+                    y += 90;
+                    mats.forEach(function (m) {
+                        var p = m.t ? Math.round(m.c / m.t * 100) : 0;
+                        ctx.font = F(700, 32); ctx.fillStyle = '#ffffff';
+                        var nome = m.nome;
+                        while (ctx.measureText(nome).width > W - 2 * M - 160 && nome.length > 4) nome = nome.slice(0, -2);
+                        if (nome !== m.nome) nome = nome.replace(/\s+$/, '') + '…';
+                        ctx.fillText(nome, M, y);
+                        ctx.textAlign = 'right'; ctx.fillStyle = '#94a3b8'; ctx.fillText(p + '%', W - M, y); ctx.textAlign = 'left';
+                        y += 22;
+                        ctx.fillStyle = '#1e3a5f'; retanguloArredondado(ctx, M, y, W - 2 * M, 16, 8); ctx.fill();
+                        if (p > 0) { ctx.fillStyle = cor; retanguloArredondado(ctx, M, y, Math.max(16, (W - 2 * M) * p / 100), 16, 8); ctx.fill(); }
+                        y += 70;
+                    });
+                }
+
+                // Chamada (acima da área de resposta do story)
+                var cy = H - 250 - 190;
+                ctx.fillStyle = '#fbbf24'; retanguloArredondado(ctx, M, cy, W - 2 * M, 190, 40); ctx.fill();
+                ctx.fillStyle = '#0b1324'; ctx.font = F(800, 46);
+                ctx.fillText(r.perc >= 60 ? 'Duvido você fazer mais!' : 'Bora treinar comigo?', M + 50, cy + 82);
+                ctx.font = F(600, 32);
+                ctx.fillText(location.host, M + 50, cy + 140);
+
+                return new Promise(function (ok, falha) { cv.toBlob(function (b) { b ? ok(b) : falha(new Error('imagem')); }, 'image/png'); });
+            });
+        }
+
+        function avisarCompartilhar(msg) {
+            var el = $('avisoCompartilhar'); el.textContent = msg; el.classList.remove('hidden');
+        }
+
+        function compartilharResultado() {
+            if (!ultimoResultado) return;
+            var r = ultimoResultado;
+            var texto = 'Fiz ' + r.perc + '% no simulado ' + r.titulo + '. ' + (r.perc >= 60 ? 'Duvido você fazer mais!' : 'Bora treinar comigo?') + ' Treine também: ' + location.origin + '/conheca';
+            var usar = function (blob) {
+                var arquivo = null;
+                try { arquivo = new File([blob], 'meu-resultado.png', { type: 'image/png' }); } catch (e) {}
+                if (arquivo && navigator.canShare && navigator.canShare({ files: [arquivo] })) {
+                    return navigator.share({ files: [arquivo], text: texto }).catch(function (e) {
+                        if (e && e.name === 'AbortError') return;
+                        baixar(blob);
+                    });
+                }
+                baixar(blob);
+            };
+            var baixar = function (blob) {
+                var a = document.createElement('a');
+                a.href = URL.createObjectURL(blob); a.download = 'meu-resultado.png';
+                document.body.appendChild(a); a.click(); a.remove();
+                setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+                var copiado = navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(texto) : Promise.reject();
+                copiado.then(function () {
+                    avisarCompartilhar('Imagem baixada e texto copiado. Poste nos stories e cole o texto na legenda ou no WhatsApp.');
+                }, function () {
+                    avisarCompartilhar('Imagem baixada. Poste nos stories ou mande no WhatsApp.');
+                });
+            };
+            if (imagemResultado) return usar(imagemResultado);
+            avisarCompartilhar('Preparando a imagem...');
+            gerarImagemResultado().then(function (b) { imagemResultado = b; $('avisoCompartilhar').classList.add('hidden'); usar(b); })
+                .catch(function () { avisarCompartilhar('Não foi possível gerar a imagem neste navegador.'); });
         }
 
         function renderChart(correct, wrong) {
