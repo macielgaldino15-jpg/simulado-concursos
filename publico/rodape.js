@@ -10,6 +10,7 @@ var EMPRESA = {
     email: '',        // ex.: 'suporte@mgtecnologia.com.br' — enquanto vazio, o contato é pela Kiwify
     cnpj: '',         // ex.: '12.345.678/0001-90' — aparece no rodapé quando preenchido
     instagram: '',    // ex.: 'simuladosconcursos' (sem @)
+    linkCompra: 'https://pay.kiwify.com.br/7PTgs9c',   // link do checkout da Kiwify (ex.: 'https://pay.kiwify.com.br/XXXXXXX') — usado nos botões da página de apresentação
 };
 
 (function () {

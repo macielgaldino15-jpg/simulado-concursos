@@ -32,6 +32,7 @@ const PROTEGIDOS = new Set(['index.html', 'questoesDB.js', 'questoes_PRF.js', 'q
 const PUBLICOS = {
   '/entrar': 'publico/entrar.html', '/admin': 'publico/admin.html', '/bem-vindo': 'publico/bem-vindo.html',
   '/termos': 'publico/termos.html', '/privacidade': 'publico/privacidade.html', '/rodape.js': 'publico/rodape.js',
+  '/conheca': 'publico/inicio.html',
 };
 
 // ======================= ARMAZENAMENTO =======================
@@ -187,7 +188,8 @@ async function rotear(req, res) {
     const arquivo = rota === '/' ? 'index.html' : rota.slice(1);
     const u = await usuarioDaSessao(req);
     if (!u) {
-      if (arquivo === 'index.html') return redirecionar(res, '/entrar');
+      // Visitante sem login vê a página de apresentação do produto
+      if (arquivo === 'index.html') return enviarArquivo(res, 'publico/inicio.html', true);
       return json(res, 401, { erro: 'Faça login para acessar.' });
     }
     return enviarArquivo(res, arquivo, true);
