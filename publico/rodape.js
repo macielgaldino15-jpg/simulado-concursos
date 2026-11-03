@@ -11,7 +11,7 @@ var EMPRESA = {
     cnpj: '',         // ex.: '12.345.678/0001-90' — aparece no rodapé quando preenchido
     instagram: '',    // ex.: 'simuladosconcursos' (sem @)
     linkCompra: 'https://pay.kiwify.com.br/7PTgs9c',   // link do checkout da Kiwify (ex.: 'https://pay.kiwify.com.br/XXXXXXX') — usado nos botões da página de apresentação
-    whatsapp: '',     // só números, com DDD e 55 na frente (ex.: '5568999999999') — botão "Fale comigo" e pedido de opinião
+    whatsapp: '5568992147097',     // só números, com DDD e 55 na frente (ex.: '5568999999999') — botão "Fale comigo" e pedido de opinião
     // Seção "Quem faz" da página de vendas
     criador: {
         nome: 'Maciel',
