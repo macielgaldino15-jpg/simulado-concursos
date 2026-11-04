@@ -12,12 +12,6 @@ var EMPRESA = {
     instagram: '',    // ex.: 'simuladosconcursos' (sem @)
     linkCompra: 'https://pay.kiwify.com.br/7PTgs9c',   // link do checkout da Kiwify (ex.: 'https://pay.kiwify.com.br/XXXXXXX') — usado nos botões da página de apresentação
     whatsapp: '5568992147097',     // só números, com DDD e 55 na frente (ex.: '5568999999999') — botão "Fale comigo" e pedido de opinião
-    // Seção "Quem faz" da página de vendas
-    criador: {
-        nome: 'Maciel',
-        foto: '',     // endereço de uma foto sua (ex.: '/foto-maciel.jpg'); enquanto vazio, aparecem as iniciais
-        texto: 'Oi, eu sou o Maciel, de Rio Branco (AC). Criei o Simulados Concursos para quem quer treinar do jeito que a prova cobra: com tempo marcado, questões no estilo da banca e comentário em todas elas. Achou algum erro numa questão ou tem uma sugestão? Fale comigo que eu corrijo.',
-    },
     // Depoimentos REAIS de alunos, com autorização. A seção só aparece quando houver pelo menos um.
     // Exemplo: { nome: 'Karoline', concurso: 'PRF', texto: 'O que a pessoa escreveu, do jeito que ela escreveu.' },
     depoimentos: [

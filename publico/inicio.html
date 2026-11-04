@@ -180,21 +180,6 @@
     </div>
 </section>
 
-<!-- ================= QUEM FAZ ================= -->
-<section id="quemFaz">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <p class="text-brand-700 font-extrabold uppercase tracking-[0.18em] text-sm">Quem faz</p>
-        <div class="mt-6 flex flex-col sm:flex-row gap-6 sm:items-start">
-            <div id="criadorFoto" class="w-24 h-24 shrink-0 rounded-full bg-brand-500 text-white flex items-center justify-center text-3xl font-black overflow-hidden"></div>
-            <div>
-                <p id="criadorTexto" class="text-lg sm:text-xl text-slate-700 leading-relaxed"></p>
-                <p class="mt-4 font-extrabold text-navy"><span id="criadorNome"></span> <span class="font-semibold text-slate-500">· <span data-empresa="nome">MG Tecnologia Educacional</span></span></p>
-                <a id="criadorContato" href="#" target="_blank" rel="noopener" class="hidden mt-4 inline-flex items-center gap-2 font-bold text-brand-700 underline underline-offset-4"></a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ================= PREÇO ================= -->
 <section id="preco" class="hero-bg text-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
@@ -267,21 +252,10 @@
         document.querySelectorAll('.js-comprar').forEach(function (a) { a.href = link; });
     })();
 
-    // Prova social: criador, contato e depoimentos (tudo configurado em rodape.js)
+    // Depoimentos (configurados em rodape.js)
     (function () {
         var E = window.EMPRESA || {};
         var esc = function (t) { var d = document.createElement('div'); d.textContent = String(t == null ? '' : t); return d.innerHTML; };
-        var c = E.criador || {};
-        var foto = document.getElementById('criadorFoto');
-        if (c.foto) foto.innerHTML = '<img src="' + esc(c.foto) + '" alt="' + esc(c.nome) + '" class="w-full h-full object-cover">';
-        else foto.textContent = String(c.nome || 'MG').trim().slice(0, 1).toUpperCase();
-        document.getElementById('criadorTexto').textContent = c.texto || '';
-        document.getElementById('criadorNome').textContent = c.nome || '';
-        if (!c.texto) document.getElementById('quemFaz').classList.add('hidden');
-        var contato = document.getElementById('criadorContato');
-        if (E.whatsapp) { contato.href = 'https://wa.me/' + String(E.whatsapp).replace(/\D/g, ''); contato.textContent = 'Falar comigo no WhatsApp'; contato.classList.remove('hidden'); }
-        else if (E.instagram) { contato.href = 'https://instagram.com/' + String(E.instagram).replace(/^@/, ''); contato.textContent = 'Falar comigo no Instagram'; contato.classList.remove('hidden'); }
-
         var deps = (E.depoimentos || []).filter(function (d) { return d && d.texto; });
         if (deps.length) {
             document.getElementById('listaDepoimentos').innerHTML = deps.map(function (d) {
