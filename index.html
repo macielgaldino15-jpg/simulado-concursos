@@ -317,6 +317,7 @@
     <!-- Bancos de questões (caminho relativo). Para um concurso novo, crie questoes_XXX.js e adicione uma linha aqui. -->
     <script src="questoesDB.js"></script>
     <script src="questoes_PRF.js"></script>
+    <script src="questoes_PRF_ADM.js"></script>
     <script src="questoes_PC.js"></script>
     <script src="questoes_PM.js"></script>
     <script src="questoes_PETROBRAS.js"></script>
@@ -374,7 +375,7 @@
     <script>
         // ======= CONCURSOS =======
         // Ordem em que aparecem no seletor (os que não estiverem aqui entram no fim)
-        const ORDEM_CONCURSOS = ["CMRB_MEDIO", "CMRB_SUP", "PRF", "PC", "PM", "PETROBRAS"];
+        const ORDEM_CONCURSOS = ["CMRB_MEDIO", "CMRB_SUP", "PRF", "PRF_ADM", "PC", "PM", "PETROBRAS"];
         const LIMITE_PADRAO = 10; // questões por disciplina quando o concurso não define "estrutura"
 
         function getExam(key) { return window.CONCURSOS[key || currentExamKey]; }
@@ -960,7 +961,7 @@
                 ctx.fillText(r.perc >= 60 ? 'Duvido você fazer mais!' : 'Bora treinar comigo?', M + 50, cy + 82);
                 ctx.font = F(600, 32);
                 var insta = (window.EMPRESA && EMPRESA.instagram) ? String(EMPRESA.instagram).replace(/^@/, '') : '';
-                ctx.fillText(insta ? 'Siga @' + insta + ' no Instagram' : '2.362 questões comentadas para treinar', M + 50, cy + 140);
+                ctx.fillText(insta ? 'Siga @' + insta + ' no Instagram' : '3.263 questões comentadas para treinar', M + 50, cy + 140);
 
                 return new Promise(function (ok, falha) { cv.toBlob(function (b) { b ? ok(b) : falha(new Error('imagem')); }, 'image/png'); });
             });
@@ -1047,7 +1048,7 @@
                 situacao.innerHTML = aprovado
                     ? '<i class="fa-solid fa-circle-check mr-1"></i> Aprovado nos critérios do edital'
                     : '<i class="fa-solid fa-circle-xmark mr-1"></i> Seria eliminado: ' + escapeHTML(motivos.join('; '));
-                nota.textContent = 'Critérios de aprovação (' + ((exam.aprovacao && exam.aprovacao.fonte) || 'edital') + '): no mínimo 50% do total de pontos, 1 ponto em cada disciplina de Conhecimentos Gerais e 2 pontos em Conhecimentos Específicos. Simulação para treino; o resultado oficial depende da prova e da classificação.';
+                nota.textContent = 'Critérios de aprovação (' + ((exam.aprovacao && exam.aprovacao.fonte) || 'edital') + '): ' + ((exam.aprovacao && exam.aprovacao.descricao) || 'no mínimo 50% do total de pontos, 1 ponto em cada disciplina de Conhecimentos Gerais e 2 pontos em Conhecimentos Específicos') + '. Simulação para treino; o resultado oficial depende da prova e da classificação.';
             } else {
                 situacao.className = 'rounded-xl px-4 py-3 text-sm font-semibold bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
                 situacao.textContent = 'Treino por disciplina';
