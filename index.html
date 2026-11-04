@@ -239,6 +239,26 @@
                     </div>
                 </div>
 
+                <!-- Pontuação com os pesos do edital (concursos que definem "peso" na estrutura) -->
+                <div id="pontuacaoEdital" class="hidden mb-8 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 bg-slate-50 dark:bg-slate-900/60">
+                        <div class="shrink-0">
+                            <p class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400 whitespace-nowrap">Sua pontuação na prova objetiva</p>
+                            <p class="mt-1 text-3xl sm:text-4xl font-black text-slate-900 dark:text-white whitespace-nowrap"><span id="pontosObtidos">0,0</span> <span class="text-lg font-bold text-slate-500 dark:text-slate-400">de <span id="pontosMaximo">60,0</span> pontos</span></p>
+                        </div>
+                        <div id="situacaoEdital" class="rounded-xl px-4 py-3 text-sm font-bold sm:max-w-md"></div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs uppercase">
+                                <tr><th class="text-left px-4 py-2.5">Disciplina</th><th class="px-3 py-2.5">Acertos</th><th class="px-3 py-2.5">Peso</th><th class="text-right px-4 py-2.5">Pontos</th></tr>
+                            </thead>
+                            <tbody id="tabelaPontuacao" class="divide-y divide-slate-200 dark:divide-slate-700"></tbody>
+                        </table>
+                    </div>
+                    <p id="notaPontuacao" class="px-5 py-3 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700"></p>
+                </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div class="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 flex flex-col items-center justify-center">
                         <h4 class="text-xs font-bold uppercase text-slate-500 mb-4">Gráfico de Rendimento</h4>
@@ -302,20 +322,51 @@
     <script src="questoes_PETROBRAS.js"></script>
 
     <script>
-        // O banco da Câmara usa o formato antigo (window.bancoDeQuestoes); registra-o no mesmo padrão dos outros.
+        // O banco da Câmara (window.bancoDeQuestoes) alimenta dois simulados, conforme o Edital nº 01/2026 (IDIB):
+        // nível médio (Agente Legislativo) e nível superior (Analista Legislativo). Os dois compartilham o histórico "CMRB",
+        // então uma questão de Português vista em um não volta como inédita no outro.
         if (window.bancoDeQuestoes) {
-            registrarConcurso("CMRB", {
-                title: "Câmara Municipal de Rio Branco (AC)",
+            const B = window.bancoDeQuestoes;
+            const APROVACAO_CMRB = { percentualMinimo: 0.5, fonte: 'item 11.6 do edital' };
+            registrarConcurso("CMRB_MEDIO", {
+                title: "Câmara Municipal de Rio Branco (AC) — Nível Médio",
                 banca: "IDIB",
                 emoji: "🏛️",
-                tempo: 210,
+                tempo: 180,
+                historico: "CMRB",
+                aprovacao: APROVACAO_CMRB,
                 estrutura: [
-                    { nome: "Língua Portuguesa", limite: 10 },
-                    { nome: "Raciocínio Lógico", limite: 5 },
-                    { nome: "Ética no Serviço Público e Legislação", limite: 5 },
-                    { nome: "Conhecimentos Específicos", limite: 20 }
+                    { nome: "Língua Portuguesa", limite: 10, peso: 1, area: "Conhecimentos Gerais", minimo: 1 },
+                    { nome: "Raciocínio Lógico", limite: 5, peso: 1, area: "Conhecimentos Gerais", minimo: 1 },
+                    { nome: "Ética no Serviço Público e Legislação", limite: 5, peso: 1, area: "Conhecimentos Gerais", minimo: 1 },
+                    { nome: "Conhecimentos Específicos – Agente Legislativo", limite: 20, peso: 2, area: "Conhecimentos Específicos", minimo: 2 }
                 ],
-                questoes: window.bancoDeQuestoes
+                questoes: {
+                    "Língua Portuguesa": B["Língua Portuguesa"] || [],
+                    "Raciocínio Lógico": B["Raciocínio Lógico"] || [],
+                    "Ética no Serviço Público e Legislação": B["Ética no Serviço Público e Legislação"] || [],
+                    "Conhecimentos Específicos – Agente Legislativo": B["Conhecimentos Específicos – Agente Legislativo"] || []
+                }
+            });
+            registrarConcurso("CMRB_SUP", {
+                title: "Câmara Municipal de Rio Branco (AC) — Nível Superior",
+                banca: "IDIB",
+                emoji: "🏛️",
+                tempo: 240,
+                historico: "CMRB",
+                aprovacao: APROVACAO_CMRB,
+                estrutura: [
+                    { nome: "Língua Portuguesa", limite: 10, peso: 1, area: "Conhecimentos Gerais", minimo: 1 },
+                    { nome: "Noções de Informática", limite: 5, peso: 1, area: "Conhecimentos Gerais", minimo: 1 },
+                    { nome: "Ética no Serviço Público e Legislação", limite: 5, peso: 1, area: "Conhecimentos Gerais", minimo: 1 },
+                    { nome: "Conhecimentos Específicos", limite: 20, peso: 2, area: "Conhecimentos Específicos", minimo: 2 }
+                ],
+                questoes: {
+                    "Língua Portuguesa": B["Língua Portuguesa"] || [],
+                    "Noções de Informática": B["Noções de Informática"] || [],
+                    "Ética no Serviço Público e Legislação": B["Ética no Serviço Público e Legislação"] || [],
+                    "Conhecimentos Específicos": B["Conhecimentos Específicos"] || []
+                }
             });
         }
     </script>
@@ -323,7 +374,7 @@
     <script>
         // ======= CONCURSOS =======
         // Ordem em que aparecem no seletor (os que não estiverem aqui entram no fim)
-        const ORDEM_CONCURSOS = ["CMRB", "PRF", "PC", "PM", "PETROBRAS"];
+        const ORDEM_CONCURSOS = ["CMRB_MEDIO", "CMRB_SUP", "PRF", "PC", "PM", "PETROBRAS"];
         const LIMITE_PADRAO = 10; // questões por disciplina quando o concurso não define "estrutura"
 
         function getExam(key) { return window.CONCURSOS[key || currentExamKey]; }
@@ -355,6 +406,7 @@
         let feedbackMode = 'end';
         let chartInstance = null;
         let reviewFilter = 'all';
+        let modoProva = 'ALL';       // 'ALL' = prova completa; senão, o nome da disciplina
 
         // ======= UTILITÁRIOS =======
         function $(id) { return document.getElementById(id); }
@@ -383,7 +435,15 @@
             return list.filter(k => typeof k === 'string' && k)
                        .map(k => k.indexOf('::') >= 0 ? k : 'CMRB::' + k);
         }
-        function seenPrefix(key) { return (key || currentExamKey) + '::'; }
+        // Concursos que compartilham o mesmo banco (ex.: Câmara nível médio e superior) usam o mesmo prefixo de histórico
+        function seenPrefix(key) { const ex = getExam(key); return ((ex && ex.historico) || key || currentExamKey) + '::'; }
+        // A questão vista pertence a uma disciplina deste concurso? (chave "PREFIXO::Disciplina_id")
+        function seenDoConcurso(k, key) {
+            const prefixo = seenPrefix(key);
+            if (!k.startsWith(prefixo)) return false;
+            const resto = k.slice(prefixo.length);
+            return Object.prototype.hasOwnProperty.call(getBanco(key), resto.slice(0, resto.lastIndexOf('_')));
+        }
         function saveSeen(list) {
             try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); } catch (e) { /* armazenamento indisponível */ }
         }
@@ -501,7 +561,7 @@
                 return;
             }
             if (!getExam()) { info.textContent = ''; return; }
-            const vistas = getSeen().filter(k => k.startsWith(seenPrefix())).length;
+            const vistas = getSeen().filter(k => seenDoConcurso(k)).length;
             info.textContent = `Você já viu ${vistas} de ${contarQuestoes()} questões deste concurso.`;
         }
 
@@ -510,10 +570,12 @@
             if (!exam) return;
             showCustomConfirm({
                 title: 'Zerar histórico',
-                message: `As questões de "${exam.title}" voltarão a ser consideradas inéditas. Os outros concursos não são afetados. Deseja continuar?`,
+                message: exam.historico
+                    ? `As questões de "${exam.title}" voltarão a ser consideradas inéditas. Como as disciplinas em comum (Português e Ética) são compartilhadas com o outro nível da Câmara, elas também serão zeradas lá. Deseja continuar?`
+                    : `As questões de "${exam.title}" voltarão a ser consideradas inéditas. Os outros concursos não são afetados. Deseja continuar?`,
                 okText: 'Sim, zerar',
                 cancelText: 'Cancelar'
-            }, () => { saveSeen(getSeen().filter(k => !k.startsWith(seenPrefix()))); updateHistoryInfo(); });
+            }, () => { saveSeen(getSeen().filter(k => !seenDoConcurso(k))); updateHistoryInfo(); });
         }
 
         // ======= MONTAGEM DA PROVA =======
@@ -561,6 +623,7 @@
             }
 
             activeQuestions = selecionadas;
+            modoProva = discValue;
             currentIndex = 0;
             userAnswers = {};
             bookmarked = {};
@@ -784,10 +847,12 @@
             renderChart(correctCount, wrongCount);
             filterReview('all');
             updateHistoryInfo();
+            var pontuacao = renderPontuacaoEdital(examInfo, disciplineStats);
 
             ultimoResultado = {
                 titulo: examInfo.title, perc: percentage, acertos: correctCount, total: total,
                 tempo: $('resultTime').textContent,
+                pontos: pontuacao,
                 materias: Object.keys(disciplineStats).map(function (n) { var st = disciplineStats[n]; return { nome: n, c: st.correct, t: st.total }; })
             };
             imagemResultado = null;
@@ -864,6 +929,10 @@
                 y += 76;
                 ctx.fillStyle = '#e2e8f0'; ctx.font = F(600, 40);
                 ctx.fillText('Acertei ' + r.acertos + ' de ' + r.total + ' questões · ' + r.tempo, M, y);
+                if (r.pontos && r.pontos.maximo) {
+                    y += 58; ctx.fillStyle = '#fbbf24'; ctx.font = F(800, 40);
+                    ctx.fillText(formatarPontos(r.pontos.obtidos) + ' de ' + formatarPontos(r.pontos.maximo) + ' pontos', M, y);
+                }
 
                 // Matérias (até 6)
                 var mats = r.materias.slice().sort(function (a, b) { return b.t - a.t; }).slice(0, 6);
@@ -891,7 +960,7 @@
                 ctx.fillText(r.perc >= 60 ? 'Duvido você fazer mais!' : 'Bora treinar comigo?', M + 50, cy + 82);
                 ctx.font = F(600, 32);
                 var insta = (window.EMPRESA && EMPRESA.instagram) ? String(EMPRESA.instagram).replace(/^@/, '') : '';
-                ctx.fillText(insta ? 'Siga @' + insta + ' no Instagram' : '1.470 questões comentadas para treinar', M + 50, cy + 140);
+                ctx.fillText(insta ? 'Siga @' + insta + ' no Instagram' : '2.294 questões comentadas para treinar', M + 50, cy + 140);
 
                 return new Promise(function (ok, falha) { cv.toBlob(function (b) { b ? ok(b) : falha(new Error('imagem')); }, 'image/png'); });
             });
@@ -932,6 +1001,60 @@
             avisarCompartilhar('Preparando a imagem...');
             gerarImagemResultado().then(function (b) { imagemResultado = b; $('avisoCompartilhar').classList.add('hidden'); usar(b); })
                 .catch(function () { avisarCompartilhar('Não foi possível gerar a imagem neste navegador.'); });
+        }
+
+        // ======= PONTUAÇÃO DO EDITAL =======
+        function formatarPontos(n) { return n.toFixed(1).replace('.', ','); }
+
+        // Calcula e mostra a pontuação com os pesos do edital. Retorna { obtidos, maximo, aprovado } ou null.
+        function renderPontuacaoEdital(exam, stats) {
+            var caixa = $('pontuacaoEdital');
+            var estrutura = (exam && Array.isArray(exam.estrutura)) ? exam.estrutura.filter(function (b) { return b.peso; }) : [];
+            caixa.classList.add('hidden');
+            if (!estrutura.length) return null;
+
+            var blocos = modoProva === 'ALL' ? estrutura : estrutura.filter(function (b) { return b.nome === modoProva; });
+            if (!blocos.length) return null;
+
+            var obtidos = 0, maximo = 0, motivos = [], linhas = '', areaAtual = null;
+            blocos.forEach(function (b) {
+                var st = stats[b.nome] || { correct: 0, total: 0 };
+                var pts = st.correct * b.peso, max = st.total * b.peso;
+                obtidos += pts; maximo += max;
+                if (modoProva === 'ALL' && b.minimo && pts < b.minimo) motivos.push('menos de ' + formatarPontos(b.minimo) + ' ponto' + (b.minimo > 1 ? 's' : '') + ' em ' + b.nome);
+                if (b.area && b.area !== areaAtual) {
+                    areaAtual = b.area;
+                    linhas += '<tr class="bg-slate-50/60 dark:bg-slate-900/30"><td colspan="4" class="px-4 pt-3 pb-1 text-xs font-bold uppercase text-slate-500 dark:text-slate-400">' + escapeHTML(b.area) + '</td></tr>';
+                }
+                linhas += '<tr class="text-slate-700 dark:text-slate-200">' +
+                    '<td class="px-4 py-2.5 font-semibold">' + escapeHTML(b.nome) + '</td>' +
+                    '<td class="px-3 py-2.5 text-center">' + st.correct + '/' + st.total + '</td>' +
+                    '<td class="px-3 py-2.5 text-center">' + formatarPontos(b.peso) + '</td>' +
+                    '<td class="px-4 py-2.5 text-right font-bold">' + formatarPontos(pts) + ' <span class="font-medium text-slate-400">de ' + formatarPontos(max) + '</span></td></tr>';
+            });
+            $('tabelaPontuacao').innerHTML = linhas;
+            $('pontosObtidos').textContent = formatarPontos(obtidos);
+            $('pontosMaximo').textContent = formatarPontos(maximo);
+
+            var situacao = $('situacaoEdital'), nota = $('notaPontuacao'), aprovado = null;
+            if (modoProva === 'ALL') {
+                var minimoTotal = maximo * ((exam.aprovacao && exam.aprovacao.percentualMinimo) || 0.5);
+                if (obtidos < minimoTotal) motivos.unshift('menos de ' + formatarPontos(minimoTotal) + ' pontos no total');
+                aprovado = motivos.length === 0;
+                situacao.className = 'rounded-xl px-4 py-3 text-sm font-bold ' + (aprovado
+                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-900/50'
+                    : 'bg-rose-50 text-rose-800 border border-rose-200 dark:bg-rose-950/30 dark:text-rose-300 dark:border-rose-900/50');
+                situacao.innerHTML = aprovado
+                    ? '<i class="fa-solid fa-circle-check mr-1"></i> Aprovado nos critérios do edital'
+                    : '<i class="fa-solid fa-circle-xmark mr-1"></i> Seria eliminado: ' + escapeHTML(motivos.join('; '));
+                nota.textContent = 'Critérios de aprovação (' + ((exam.aprovacao && exam.aprovacao.fonte) || 'edital') + '): no mínimo 50% do total de pontos, 1 ponto em cada disciplina de Conhecimentos Gerais e 2 pontos em Conhecimentos Específicos. Simulação para treino; o resultado oficial depende da prova e da classificação.';
+            } else {
+                situacao.className = 'rounded-xl px-4 py-3 text-sm font-semibold bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
+                situacao.textContent = 'Treino por disciplina';
+                nota.textContent = 'Na prova objetiva, cada questão desta disciplina vale ' + formatarPontos(blocos[0].peso) + ' ponto' + (blocos[0].peso > 1 ? 's' : '') + '. Faça a Prova Completa para ver a pontuação total e o critério de aprovação.';
+            }
+            caixa.classList.remove('hidden');
+            return { obtidos: obtidos, maximo: maximo, aprovado: aprovado };
         }
 
         function renderChart(correct, wrong) {

@@ -1,4 +1,7 @@
-// Banco da Câmara Municipal de Rio Branco (AC). "correta": 0 = A, 1 = B, 2 = C, 3 = D, 4 = E.
+// Banco da Câmara Municipal de Rio Branco (AC) — usado pelos simulados de Nível Médio e Nível Superior.
+// Questões originais de treino (não são cópias de provas oficiais). "correta": 0 = A, 1 = B, 2 = C, 3 = D, 4 = E.
+// Questões novas por disciplina: Português 20001+, RL 21001+, Informática 22001+, Ética 23001+,
+// Específicos (Analista) 24001+, Específicos (Agente Legislativo) 25001+.
 window.bancoDeQuestoes = {
     "Língua Portuguesa": [
         {
@@ -1170,6 +1173,1956 @@ window.bancoDeQuestoes = {
             ],
             "correta": 1,
             "comentario": "A oração subordinada adverbial antecipada ('Quando o edital foi publicado,') deve vir obrigatoriamente separada por vírgula da oração principal."
+        },
+        {
+            "id": 20001,
+            "enunciado": "Assinale a alternativa em que o acento indicativo de crase está empregado corretamente:",
+            "opcoes": [
+                "A) O vereador começou à discursar após o intervalo.",
+                "B) Encaminhamos o ofício à Vossa Excelência.",
+                "C) O vereador votou à favor do projeto.",
+                "D) A sessão foi encerrada à duas horas da tarde.",
+                "E) O servidor entregou o requerimento à secretária da Mesa Diretora."
+            ],
+            "correta": 4,
+            "comentario": "Entregar algo \"a alguém\" (preposição) + \"a secretária\" (artigo) = à. Não há crase antes de verbo (a discursar), antes de pronome de tratamento (a Vossa Excelência) e na expressão \"a favor\"; com horas no plural, seria \"às duas horas\"."
+        },
+        {
+            "id": 20002,
+            "enunciado": "Em qual frase o uso do acento grave é OBRIGATÓRIO?",
+            "opcoes": [
+                "A) Ele saiu a cavalo pela estrada.",
+                "B) O documento foi enviado a todos os setores.",
+                "C) Ela voltou a estudar para o concurso.",
+                "D) Fiquei frente a frente com o presidente.",
+                "E) A reunião começará às 14 horas."
+            ],
+            "correta": 4,
+            "comentario": "Na indicação de horas determinadas ocorre crase (às 14 horas). Não há crase em expressões com palavras repetidas (frente a frente), antes de masculino (a cavalo), antes de pronome indefinido (a todos) e antes de verbo (a estudar)."
+        },
+        {
+            "id": 20003,
+            "enunciado": "Assinale a alternativa em que o acento grave é FACULTATIVO:",
+            "opcoes": [
+                "A) Fiz uma homenagem a minha mãe.",
+                "B) Chegou às oito horas em ponto.",
+                "C) Assisti a uma palestra sobre ética.",
+                "D) Fui à Bahia nas férias.",
+                "E) Refiro-me àquela proposta apresentada ontem."
+            ],
+            "correta": 0,
+            "comentario": "Antes de pronome possessivo feminino singular, o artigo é opcional, então a crase também é (a minha mãe / à minha mãe). Em \"à Bahia\" e \"às oito horas\" é obrigatória; antes de \"uma\" não há crase; em \"àquela\" é obrigatória (a + aquela)."
+        },
+        {
+            "id": 20004,
+            "enunciado": "Considerando a regra prática \"vou a, volto da, crase há; vou a, volto de, crase pra quê?\", está correta a frase:",
+            "opcoes": [
+                "A) Os vereadores viajaram à Rio Branco para a sessão.",
+                "B) O servidor foi à Curitiba em missão oficial.",
+                "C) Retornamos à Portugal no ano passado.",
+                "D) Ela irá à Manaus amanhã.",
+                "E) Os vereadores viajaram à Brasília dos anos 60 em um documentário."
+            ],
+            "correta": 4,
+            "comentario": "Diz-se \"volto de Rio Branco, de Curitiba, de Portugal, de Manaus\", sem artigo, logo sem crase. Mas, com especificação, a cidade aceita artigo: \"volto da Brasília dos anos 60\", por isso \"à Brasília dos anos 60\"."
+        },
+        {
+            "id": 20005,
+            "enunciado": "Assinale a alternativa que respeita a regência verbal da norma-padrão:",
+            "opcoes": [
+                "A) Os cidadãos assistiram à sessão solene no plenário.",
+                "B) Prefiro mais trabalhar no turno da manhã do que à tarde.",
+                "C) O servidor obedeceu o regimento interno.",
+                "D) Esqueci do prazo de entrega do relatório.",
+                "E) Os cidadãos assistiram a sessão solene no plenário."
+            ],
+            "correta": 0,
+            "comentario": "Assistir, no sentido de ver, exige a preposição \"a\" (assistir à sessão). Preferir não aceita \"mais... do que\" (prefiro X a Y), obedecer exige \"a\" (obedeceu ao regimento) e esquecer sem pronome não leva \"de\" (esqueci o prazo / esqueci-me do prazo)."
+        },
+        {
+            "id": 20006,
+            "enunciado": "O verbo \"implicar\", no sentido de \"acarretar\", tem a regência correta em:",
+            "opcoes": [
+                "A) A falta de quórum implica no adiamento da votação.",
+                "B) A falta de quórum implica com o adiamento da votação.",
+                "C) A falta de quórum implica ao adiamento da votação.",
+                "D) A falta de quórum implica para o adiamento da votação.",
+                "E) A falta de quórum implica o adiamento da votação."
+            ],
+            "correta": 4,
+            "comentario": "No sentido de acarretar, \"implicar\" é transitivo direto: implica algo, sem preposição. A forma \"implica em\" é comum na fala, mas não é a da norma-padrão."
+        },
+        {
+            "id": 20007,
+            "enunciado": "Assinale a frase em que o verbo \"aspirar\" está empregado de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) O servidor aspirou ao ar puro da manhã.",
+                "B) Os jovens aspiram em uma carreira pública.",
+                "C) Aspiramos pelo cargo com dedicação.",
+                "D) Muitos candidatos aspiram o cargo de analista legislativo.",
+                "E) Muitos candidatos aspiram ao cargo de analista legislativo."
+            ],
+            "correta": 4,
+            "comentario": "No sentido de desejar, almejar, \"aspirar\" exige a preposição \"a\" (aspirar ao cargo). No sentido de sorver, inspirar, é transitivo direto (aspirou o ar puro)."
+        },
+        {
+            "id": 20008,
+            "enunciado": "Em qual alternativa o pronome relativo está regido corretamente?",
+            "opcoes": [
+                "A) Este é o projeto que lhe falei ontem.",
+                "B) O cargo que aspiro exige nível superior.",
+                "C) Este é o projeto de que lhe falei ontem.",
+                "D) A lei que nos referimos foi revogada.",
+                "E) O prazo que discordamos foi mantido."
+            ],
+            "correta": 2,
+            "comentario": "Quem fala, fala DE algo; quem se refere, refere-se A algo; quem aspira, aspira A algo; quem discorda, discorda DE algo. A preposição exigida pelo verbo deve vir antes do pronome relativo: \"de que lhe falei\"."
+        },
+        {
+            "id": 20009,
+            "enunciado": "Assinale a alternativa correta quanto à regência nominal:",
+            "opcoes": [
+                "A) Estamos ansiosos com o resultado e a favor com a mudança.",
+                "B) Ele é residente à Rua Epaminondas Jácome.",
+                "C) Tenho preferência de manhã do que de tarde.",
+                "D) O relatório é favorável com a proposta.",
+                "E) O servidor demonstrou ser apto para a função."
+            ],
+            "correta": 4,
+            "comentario": "\"Apto para\" (ou \"apto a\") está correto. A norma pede \"favorável a\", \"residente na rua\" (e não \"à rua\"), \"preferência por X a Y\" e \"a favor de\"."
+        },
+        {
+            "id": 20010,
+            "enunciado": "Assinale a alternativa em que a concordância verbal está correta:",
+            "opcoes": [
+                "A) Houveram reclamações sobre o gabarito.",
+                "B) Faziam dois anos que o concurso não era realizado.",
+                "C) Devem haver vagas remanescentes no edital.",
+                "D) Haviam muitos candidatos na sala de prova.",
+                "E) Fazia dois anos que o concurso não era realizado."
+            ],
+            "correta": 4,
+            "comentario": "\"Fazer\" indicando tempo e \"haver\" no sentido de existir são impessoais e ficam na 3ª pessoa do singular, inclusive o verbo auxiliar que os acompanha: \"Fazia dois anos\", \"Havia muitos candidatos\", \"Deve haver vagas\", \"Houve reclamações\"."
+        },
+        {
+            "id": 20011,
+            "enunciado": "Assinale a frase com concordância verbal adequada à norma-padrão:",
+            "opcoes": [
+                "A) Existem dúvidas sobre o novo regimento.",
+                "B) Existe dúvidas sobre o novo regimento.",
+                "C) Sobrou poucas vagas para o cadastro reserva.",
+                "D) Chegou os ofícios da Prefeitura.",
+                "E) Falta muitos documentos no processo."
+            ],
+            "correta": 0,
+            "comentario": "Existir, faltar, sobrar e chegar são verbos pessoais e concordam com o sujeito, mesmo quando ele vem depois: existem dúvidas, faltam documentos, sobraram vagas, chegaram os ofícios."
+        },
+        {
+            "id": 20012,
+            "enunciado": "Assinale a alternativa em que a concordância com a partícula \"se\" está correta:",
+            "opcoes": [
+                "A) Vende-se imóveis apreendidos em leilão público.",
+                "B) Vendem-se imóveis apreendidos em leilão público.",
+                "C) Precisam-se de servidores qualificados.",
+                "D) Trata-se de questões complexas e tratam-se de casos urgentes.",
+                "E) Aluga-se salas comerciais no centro."
+            ],
+            "correta": 1,
+            "comentario": "Com verbo transitivo direto, o \"se\" é pronome apassivador e o verbo concorda com o sujeito (imóveis são vendidos → vendem-se imóveis). Com verbo que exige preposição, o \"se\" indetermina o sujeito e o verbo fica no singular (precisa-se de servidores, trata-se de casos)."
+        },
+        {
+            "id": 20013,
+            "enunciado": "Assinale a alternativa em que a concordância nominal está correta:",
+            "opcoes": [
+                "A) Segue anexo as cópias das atas.",
+                "B) Seguem anexas as cópias das atas.",
+                "C) É proibido a entrada de pessoas não autorizadas.",
+                "D) Foram necessário muitas reuniões.",
+                "E) Elas mesmo assinaram o documento."
+            ],
+            "correta": 1,
+            "comentario": "\"Anexo\" é adjetivo e concorda com o substantivo (as cópias seguem anexas). \"É proibida a entrada\" (com artigo, concorda); \"Elas mesmas\"; \"Foram necessárias muitas reuniões\"."
+        },
+        {
+            "id": 20014,
+            "enunciado": "Considere: \"É ____ paciência para revisar os autos\" e \"Paciência é ____\". As lacunas são preenchidas, respectivamente, por:",
+            "opcoes": [
+                "A) necessários — necessários",
+                "B) necessária — necessária",
+                "C) necessário — necessário",
+                "D) necessário — necessária",
+                "E) necessária — necessário"
+            ],
+            "correta": 2,
+            "comentario": "Sem artigo ou determinante antes do substantivo, expressões como \"é necessário\", \"é bom\", \"é proibido\" ficam invariáveis: \"É necessário paciência\", \"Paciência é necessário\". Com artigo, haveria concordância: \"É necessária a paciência\"."
+        },
+        {
+            "id": 20015,
+            "enunciado": "Assinale a frase correta quanto ao uso de \"meio\" e \"bastante\":",
+            "opcoes": [
+                "A) A servidora ficou meia cansada após bastante horas de sessão.",
+                "B) A servidora ficou meia cansada após bastantes horas de sessão.",
+                "C) A servidora ficou meio cansada após bastante horas de sessão.",
+                "D) A servidora ficou meio cansada após bastantes horas de sessão.",
+                "E) A servidora ficou meios cansada após bastantes horas de sessão."
+            ],
+            "correta": 3,
+            "comentario": "\"Meio\" como advérbio (= um pouco) é invariável: meio cansada. \"Bastante\" como adjetivo (= muitos) concorda: bastantes horas."
+        },
+        {
+            "id": 20016,
+            "enunciado": "Assinale a alternativa em que o verbo concorda corretamente com o sujeito composto:",
+            "opcoes": [
+                "A) O presidente e o relator assinaram o parecer.",
+                "B) Os relatores e o presidente assinou o parecer.",
+                "C) Eu e você vamos assinarem o parecer.",
+                "D) O presidente e o relator assinou o parecer.",
+                "E) Tu e ele assinou o parecer."
+            ],
+            "correta": 0,
+            "comentario": "Sujeito composto anteposto leva o verbo ao plural: \"O presidente e o relator assinaram\"."
+        },
+        {
+            "id": 20017,
+            "enunciado": "Assinale a alternativa em que a concordância com expressão partitiva está de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) A maioria dos vereadores votaram a favor e a minoria se absteram.",
+                "B) Cerca de dez servidores participou da capacitação.",
+                "C) Mais de um vereador votaram contra.",
+                "D) A maioria dos vereadores votou a favor do projeto.",
+                "E) Um dos que mais trabalha são eles."
+            ],
+            "correta": 3,
+            "comentario": "Com expressão partitiva (a maioria de, grande parte de) seguida de plural, a norma aceita o verbo no singular ou no plural; \"votou\" está correto. \"Mais de um\" pede singular, \"cerca de dez\" pede plural."
+        },
+        {
+            "id": 20018,
+            "enunciado": "Assinale a alternativa em que o verbo \"ser\" concorda corretamente:",
+            "opcoes": [
+                "A) Hoje são 15 de março.",
+                "B) Daqui a Brasília é três horas de voo.",
+                "C) Eram meio-dia e meia quando a sessão acabou.",
+                "D) Quem pagou as despesas foi os assessores.",
+                "E) Já era duas horas quando a sessão acabou."
+            ],
+            "correta": 0,
+            "comentario": "Na indicação de datas, o verbo \"ser\" concorda com o número de dias ou com a palavra \"dia\" subentendida: \"Hoje são 15 de março\" ou \"Hoje é dia 15\". Em horas e distâncias, concorda com o numeral: \"são três horas de voo\", \"era meio-dia e meia\". Com \"quem\", o verbo concorda com o predicativo: \"quem pagou foram os assessores\"."
+        },
+        {
+            "id": 20019,
+            "enunciado": "Assinale a alternativa que apresenta ERRO de regência:",
+            "opcoes": [
+                "A) O assessor informou aos vereadores que a sessão seria adiada.",
+                "B) O assessor informou os vereadores de que a sessão seria adiada.",
+                "C) O assessor informou aos vereadores de que a sessão seria adiada.",
+                "D) O assessor informou-os de que a sessão seria adiada.",
+                "E) O assessor informou-lhes que a sessão seria adiada."
+            ],
+            "correta": 2,
+            "comentario": "\"Informar\" admite duas construções: informar alguém DE algo ou informar algo A alguém. Não se pode usar preposição nos dois complementos ao mesmo tempo, como em \"informou aos vereadores de que\"."
+        },
+        {
+            "id": 20020,
+            "enunciado": "Assinale a frase em que o verbo \"visar\" está empregado com o sentido e a regência adequados:",
+            "opcoes": [
+                "A) O programa visa na redução das filas.",
+                "B) O atirador visou ao alvo central e acertou.",
+                "C) O gerente visou ao cheque antes do pagamento.",
+                "D) O programa visa à redução das filas no atendimento.",
+                "E) O programa visa para a redução das filas."
+            ],
+            "correta": 3,
+            "comentario": "No sentido de ter como objetivo, \"visar\" pede a preposição \"a\" (visa à redução). Nos sentidos de mirar e de pôr visto, é transitivo direto (visou o alvo, visou o cheque)."
+        },
+        {
+            "id": 20021,
+            "enunciado": "Assinale a alternativa correta quanto ao emprego de \"onde\" e \"aonde\":",
+            "opcoes": [
+                "A) Aonde fica o protocolo da Câmara?",
+                "B) Onde você vai com esses documentos?",
+                "C) O setor aonde trabalho é o arquivo.",
+                "D) Não sei aonde guardei a pasta.",
+                "E) Aonde você vai com esses documentos?"
+            ],
+            "correta": 4,
+            "comentario": "\"Aonde\" se usa com verbos de movimento que pedem a preposição \"a\" (ir a algum lugar). \"Onde\" indica lugar fixo: onde fica, onde trabalho, onde guardei."
+        },
+        {
+            "id": 20022,
+            "enunciado": "Assinale a opção em que a concordância do particípio está correta:",
+            "opcoes": [
+                "A) Ficam revogados as disposições em contrário.",
+                "B) Fica revogado as disposições em contrário.",
+                "C) Ficam revogada as disposições em contrário.",
+                "D) Ficam revogadas as disposições em contrário.",
+                "E) Fica revogada as disposições em contrário."
+            ],
+            "correta": 3,
+            "comentario": "O verbo e o particípio concordam com o sujeito \"as disposições\" (feminino plural): ficam revogadas."
+        },
+        {
+            "id": 20023,
+            "enunciado": "Assinale a frase escrita de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) Haja vistas os atrasos, o prazo foi prorrogado.",
+                "B) Haja visto os atrasos, o prazo foi prorrogado.",
+                "C) Hajam vista os atrasos, o prazo foi prorrogados.",
+                "D) Haja vista os atrasos, o prazo foi prorrogado.",
+                "E) Hajam vistos os atrasos, o prazo foi prorrogado."
+            ],
+            "correta": 3,
+            "comentario": "A expressão \"haja vista\" (= tendo em vista) é, em geral, invariável na norma-padrão: \"haja vista os atrasos\". A forma \"haja visto\" é erro comum."
+        },
+        {
+            "id": 20024,
+            "enunciado": "Na frase \"Os documentos chegaram, mas ainda não os conferimos\", o pronome \"os\" retoma:",
+            "opcoes": [
+                "A) o sujeito oculto \"nós\"",
+                "B) a conjunção \"mas\"",
+                "C) os documentos, funcionando como objeto direto de \"conferimos\"",
+                "D) o verbo \"chegaram\"",
+                "E) o advérbio \"ainda\""
+            ],
+            "correta": 2,
+            "comentario": "O pronome oblíquo \"os\" substitui \"os documentos\" e completa o verbo transitivo direto \"conferir\" (conferimos os documentos)."
+        },
+        {
+            "id": 20025,
+            "enunciado": "Assinale a alternativa em que o verbo \"chegar\" está empregado com a preposição adequada à norma-padrão:",
+            "opcoes": [
+                "A) O servidor chegou para o gabinete antes das oito horas.",
+                "B) O servidor chegou com o gabinete antes das oito horas.",
+                "C) O servidor chegou no gabinete antes das oito horas.",
+                "D) O servidor chegou ao gabinete antes das oito horas.",
+                "E) O servidor chegou em o gabinete antes das oito horas."
+            ],
+            "correta": 3,
+            "comentario": "Na norma-padrão, os verbos de movimento \"chegar\" e \"ir\" pedem a preposição \"a\": chegou ao gabinete. \"Chegar em\" é aceito na fala, mas não é a forma cobrada nas provas."
+        },
+        {
+            "id": 20026,
+            "enunciado": "Assinale a alternativa pontuada de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) Os vereadores aprovaram, por unanimidade o projeto de lei.",
+                "B) Os vereadores, aprovaram por unanimidade o projeto de lei.",
+                "C) Os vereadores aprovaram o projeto, de lei por unanimidade.",
+                "D) Os vereadores aprovaram por unanimidade, o projeto de lei.",
+                "E) Os vereadores aprovaram, por unanimidade, o projeto de lei."
+            ],
+            "correta": 4,
+            "comentario": "Não se separa o sujeito do verbo nem o verbo do complemento. O adjunto adverbial intercalado \"por unanimidade\" deve ficar entre duas vírgulas, e não com uma só."
+        },
+        {
+            "id": 20027,
+            "enunciado": "Em \"Rio Branco, capital do Acre, sediará o encontro de câmaras municipais\", as vírgulas isolam:",
+            "opcoes": [
+                "A) um adjunto adverbial de tempo",
+                "B) uma oração adjetiva restritiva",
+                "C) um aposto explicativo",
+                "D) um vocativo",
+                "E) o sujeito da oração"
+            ],
+            "correta": 2,
+            "comentario": "\"Capital do Acre\" explica o termo \"Rio Branco\": é um aposto explicativo, que deve vir entre vírgulas."
+        },
+        {
+            "id": 20028,
+            "enunciado": "Assinale a frase em que a vírgula marca corretamente um vocativo:",
+            "opcoes": [
+                "A) Solicito a palavra, pela, ordem.",
+                "B) Solicito, a palavra pela ordem senhor Presidente.",
+                "C) O Presidente, solicitou a palavra pela ordem.",
+                "D) Senhor Presidente, solicito a palavra pela ordem.",
+                "E) Senhor Presidente solicito, a palavra pela ordem."
+            ],
+            "correta": 3,
+            "comentario": "O vocativo é o termo usado para chamar o interlocutor e sempre se separa por vírgula: \"Senhor Presidente, solicito...\"."
+        },
+        {
+            "id": 20029,
+            "enunciado": "Considere: I. \"Os servidores que fizeram o curso receberam certificado.\" II. \"Os servidores, que fizeram o curso, receberam certificado.\" É correto afirmar que:",
+            "opcoes": [
+                "A) em I, todos os servidores fizeram o curso; em II, só parte deles",
+                "B) a frase I está incorreta, pois toda oração com \"que\" exige vírgula",
+                "C) as duas frases têm exatamente o mesmo sentido",
+                "D) em I, só parte dos servidores fez o curso; em II, todos os servidores fizeram o curso",
+                "E) a frase II está incorreta, pois oração adjetiva nunca leva vírgula"
+            ],
+            "correta": 3,
+            "comentario": "Sem vírgulas, a oração adjetiva é restritiva (limita o grupo: só os que fizeram o curso). Entre vírgulas, é explicativa (generaliza: todos fizeram o curso)."
+        },
+        {
+            "id": 20030,
+            "enunciado": "Assinale a alternativa em que o uso da vírgula antes de \"e\" está correto:",
+            "opcoes": [
+                "A) O servidor organizou, e arquivou os documentos.",
+                "B) O presidente abriu a sessão, e leu a pauta.",
+                "C) O presidente abriu a sessão, e os vereadores, em seguida, votaram a pauta.",
+                "D) Compramos papel, e canetas para o setor.",
+                "E) O vereador leu, e aprovou o parecer."
+            ],
+            "correta": 2,
+            "comentario": "Antes de \"e\" usa-se vírgula quando as orações têm sujeitos diferentes (o presidente / os vereadores). Com o mesmo sujeito ou em simples enumeração, a vírgula não é usada."
+        },
+        {
+            "id": 20031,
+            "enunciado": "Assinale a alternativa corretamente pontuada:",
+            "opcoes": [
+                "A) O prazo terminou; entretanto os documentos, não foram, entregues.",
+                "B) O prazo terminou, entretanto; os documentos não foram entregues.",
+                "C) O prazo, terminou; entretanto os documentos não foram entregues.",
+                "D) O prazo terminou; entretanto, os documentos não foram entregues.",
+                "E) O prazo terminou entretanto os documentos, não foram entregues."
+            ],
+            "correta": 3,
+            "comentario": "Conjunções adversativas deslocadas ou no início de oração após ponto e vírgula, como \"entretanto\", ficam isoladas por vírgula. Não se separa o sujeito do verbo."
+        },
+        {
+            "id": 20032,
+            "enunciado": "Os dois-pontos estão empregados corretamente em:",
+            "opcoes": [
+                "A) O servidor: entregou o relatório no prazo.",
+                "B) O presidente disse que: a sessão foi encerrada.",
+                "C) Entreguei o ofício ao: protocolo.",
+                "D) São: requisitos do cargo o nível médio e a idade mínima.",
+                "E) São requisitos do cargo: nível médio completo, idade mínima de 18 anos e quitação eleitoral."
+            ],
+            "correta": 4,
+            "comentario": "Os dois-pontos introduzem enumerações, explicações e citações. Não devem separar o sujeito do verbo nem o verbo de seu complemento."
+        },
+        {
+            "id": 20033,
+            "enunciado": "Assinale a alternativa em que todas as palavras estão acentuadas corretamente, de acordo com o Acordo Ortográfico vigente:",
+            "opcoes": [
+                "A) idéia, assembléia, heróico, vôo",
+                "B) idéia, assembleia, heróico, voo",
+                "C) ideia, assembléia, heroico, vôo",
+                "D) ideia, assembleia, heróico, vôo",
+                "E) ideia, assembleia, heroico, voo"
+            ],
+            "correta": 4,
+            "comentario": "O Acordo eliminou o acento dos ditongos abertos \"ei\" e \"oi\" nas paroxítonas (ideia, assembleia, heroico) e do \"oo\" (voo, enjoo)."
+        },
+        {
+            "id": 20034,
+            "enunciado": "Assinale a alternativa em que a forma verbal está acentuada corretamente:",
+            "opcoes": [
+                "A) Eles têm direito à licença e vêm amanhã ao setor.",
+                "B) Ele têm direito à licença e vêm amanhã.",
+                "C) Eles lêem o edital e crêem na aprovação.",
+                "D) Eles têem direito à licença e vêem o edital.",
+                "E) Eles tem direito à licença e vem amanhã ao setor."
+            ],
+            "correta": 0,
+            "comentario": "No plural, \"ter\" e \"vir\" recebem acento circunflexo: eles têm, eles vêm. O Acordo retirou o acento de \"leem\", \"creem\", \"veem\" e \"deem\"."
+        },
+        {
+            "id": 20035,
+            "enunciado": "A palavra \"pôde\" leva acento para:",
+            "opcoes": [
+                "A) indicar que é proparoxítona",
+                "B) atender à regra das oxítonas terminadas em \"e\"",
+                "C) diferenciar o pretérito perfeito (\"ontem ele pôde\") do presente (\"hoje ele pode\")",
+                "D) marcar um hiato",
+                "E) indicar o plural"
+            ],
+            "correta": 2,
+            "comentario": "\"Pôde\" mantém o acento diferencial, que distingue o passado (pôde) do presente (pode). O mesmo ocorre com \"pôr\" (verbo) e \"por\" (preposição)."
+        },
+        {
+            "id": 20036,
+            "enunciado": "São acentuadas pela mesma regra as palavras:",
+            "opcoes": [
+                "A) táxi, avô e baú",
+                "B) saúde, café e lápis",
+                "C) também, fácil e país",
+                "D) órgão, juízes e você",
+                "E) público, técnico e máquina"
+            ],
+            "correta": 4,
+            "comentario": "Público, técnico e máquina são proparoxítonas, e todas as proparoxítonas são acentuadas."
+        },
+        {
+            "id": 20037,
+            "enunciado": "Assinale a alternativa em que a palavra é acentuada por ser paroxítona terminada em \"l\":",
+            "opcoes": [
+                "A) cédula",
+                "B) país",
+                "C) fácil",
+                "D) café",
+                "E) saúde"
+            ],
+            "correta": 2,
+            "comentario": "\"Fácil\" é paroxítona terminada em \"l\". \"Café\" é oxítona terminada em \"e\", \"saúde\" e \"país\" têm hiato tônico e \"cédula\" é proparoxítona."
+        },
+        {
+            "id": 20038,
+            "enunciado": "A palavra \"juízes\" é acentuada, mas \"juiz\" não. Isso ocorre porque:",
+            "opcoes": [
+                "A) em \"juiz\" o \"i\" tônico do hiato é seguido de \"z\" na mesma sílaba",
+                "B) \"juiz\" é proparoxítona",
+                "C) o Acordo Ortográfico aboliu o acento dos hiatos",
+                "D) \"juízes\" é oxítona terminada em \"es\"",
+                "E) \"juiz\" tem ditongo decrescente"
+            ],
+            "correta": 0,
+            "comentario": "O \"i\" e o \"u\" tônicos de hiato são acentuados (ju-í-zes), exceto quando formam sílaba com consoante que não seja \"s\", como em ju-iz, ra-iz."
+        },
+        {
+            "id": 20039,
+            "enunciado": "Assinale a alternativa em que todas as palavras estão grafadas corretamente quanto ao hífen:",
+            "opcoes": [
+                "A) micro-ondas, antiinflamatório, auto-escola, contrarregra",
+                "B) microondas, antiinflamatório, auto-escola, contra-regra",
+                "C) microondas, anti-inflamatório, autoescola, contra-regra",
+                "D) micro-ondas, anti-inflamatório, autoescola, contrarregra",
+                "E) micro-ondas, anti-inflamatório, auto-escola, contra-regra"
+            ],
+            "correta": 3,
+            "comentario": "Usa-se hífen quando o prefixo termina com a mesma vogal que inicia a palavra seguinte (micro-ondas, anti-inflamatório). Com vogais diferentes, junta-se (autoescola). Antes de \"r\" ou \"s\", a consoante se dobra (contrarregra)."
+        },
+        {
+            "id": 20040,
+            "enunciado": "Assinale a grafia correta:",
+            "opcoes": [
+                "A) ex-presidente, vice-prefeito, pós-graduação",
+                "B) expresidente, viceprefeito, posgraduação",
+                "C) ex-presidente, viceprefeito, pós-graduação",
+                "D) ex presidente, vice prefeito, pós graduação",
+                "E) expresidente, vice-prefeito, pósgraduação"
+            ],
+            "correta": 0,
+            "comentario": "Os prefixos \"ex\" (no sentido de anterior), \"vice\" e \"pós\" (tônico) sempre exigem hífen."
+        },
+        {
+            "id": 20041,
+            "enunciado": "Complete corretamente: \"Não sei ____ o processo foi arquivado.\" / \"Ninguém explicou o ____ do arquivamento.\"",
+            "opcoes": [
+                "A) por quê — por que",
+                "B) por que — porquê",
+                "C) porque — porque",
+                "D) porquê — porque",
+                "E) porque — por quê"
+            ],
+            "correta": 1,
+            "comentario": "\"Por que\" separado e sem acento aparece em perguntas diretas ou indiretas (equivale a \"por qual motivo\"). \"Porquê\" junto e acentuado é substantivo, vem com artigo: \"o porquê\"."
+        },
+        {
+            "id": 20042,
+            "enunciado": "Assinale a alternativa em que \"mal\" e \"mau\" estão empregados corretamente:",
+            "opcoes": [
+                "A) O mau-estar dos servidores foi notado e mal-humor também.",
+                "B) O servidor foi mau atendido por um mal funcionário.",
+                "C) O servidor foi mal atendido por um mau funcionário.",
+                "D) O servidor foi mau atendido por um mau funcionário.",
+                "E) O servidor foi mal atendido por um mal funcionário."
+            ],
+            "correta": 2,
+            "comentario": "\"Mal\" é advérbio (oposto de bem): mal atendido. \"Mau\" é adjetivo (oposto de bom): mau funcionário."
+        },
+        {
+            "id": 20043,
+            "enunciado": "Complete: \"____ dois anos a Câmara não realiza concurso; daqui ____ três meses sai o edital.\"",
+            "opcoes": [
+                "A) À — há",
+                "B) A — há",
+                "C) Há — há",
+                "D) A — a",
+                "E) Há — a"
+            ],
+            "correta": 4,
+            "comentario": "\"Há\" (do verbo haver) indica tempo passado. \"A\" (preposição) indica tempo futuro ou distância: daqui a três meses."
+        },
+        {
+            "id": 20044,
+            "enunciado": "Assinale a frase em que \"senão\" está empregado corretamente:",
+            "opcoes": [
+                "A) Senão chover, a sessão será realizada.",
+                "B) Não havia outra saída senão adiar a votação.",
+                "C) Senão for possível, avise o setor.",
+                "D) Venha cedo, se não perderá o início e senão houver vagas, avise.",
+                "E) Senão houver quórum, a votação será adiada."
+            ],
+            "correta": 1,
+            "comentario": "\"Senão\" junto significa \"a não ser\", \"caso contrário\" ou \"mas sim\". Quando há ideia de condição (caso não), escreve-se separado: \"se não chover\", \"se não houver quórum\"."
+        },
+        {
+            "id": 20045,
+            "enunciado": "Assinale a alternativa grafada corretamente:",
+            "opcoes": [
+                "A) A cassação do mandato foi votada em sessão extraordinária.",
+                "B) A caçassão do mandato foi votada em sessão extraordinária.",
+                "C) A cassassão do mandato foi votada em sessão extraordinária.",
+                "D) A cassação do mandato foi votada em sessão estraordinária.",
+                "E) A caçação do mandato foi votada em sessão extraordinária."
+            ],
+            "correta": 0,
+            "comentario": "\"Cassação\" (de cassar, anular) se escreve com \"ss\" e \"ç\". \"Caçar\" (perseguir animais) é outra palavra. \"Extraordinária\" se escreve com \"x\"."
+        },
+        {
+            "id": 20046,
+            "enunciado": "Assinale a alternativa em que todas as palavras estão escritas corretamente:",
+            "opcoes": [
+                "A) exceção, excesso, ascenção, privilégio",
+                "B) exeção, exesso, ascenção, previlégio",
+                "C) excessão, excesso, ascensão, privilégio",
+                "D) exceção, exceço, ascensão, previlégio",
+                "E) exceção, excesso, ascensão, privilégio"
+            ],
+            "correta": 4,
+            "comentario": "A grafia correta é exceção, excesso, ascensão e privilégio."
+        },
+        {
+            "id": 20047,
+            "enunciado": "Assinale a frase em que \"a fim de\" está empregado corretamente:",
+            "opcoes": [
+                "A) O nosso trabalho é a fim ao do setor jurídico.",
+                "B) O servidor ligou para o protocolo a fim de confirmar o recebimento.",
+                "C) O servidor ligou para o protocolo afim de confirmar o recebimento.",
+                "D) Ele estava afim de terminar cedo e a fim com a equipe.",
+                "E) As duas áreas são a fim e trabalham juntas."
+            ],
+            "correta": 1,
+            "comentario": "\"A fim de\", separado, indica finalidade (= para). \"Afim\", junto, é adjetivo e significa semelhante, que tem afinidade: \"áreas afins\"."
+        },
+        {
+            "id": 20048,
+            "enunciado": "Assinale a alternativa correta quanto ao uso de \"acerca de\", \"a cerca de\" e \"há cerca de\":",
+            "opcoes": [
+                "A) O assessor falou a cerca do novo regimento; a sede fica acerca de dois quilômetros.",
+                "B) O assessor falou acerca do regimento; a sede fica há cerca de dois quilômetros do centro.",
+                "C) O assessor falou a cerca do regimento; a sede fica há cerca de dois quilômetros.",
+                "D) O assessor falou acerca do novo regimento; a sede fica a cerca de dois quilômetros do centro.",
+                "E) O assessor falou há cerca do novo regimento; a sede fica a cerca de dois quilômetros."
+            ],
+            "correta": 3,
+            "comentario": "\"Acerca de\" significa \"sobre, a respeito de\". \"A cerca de\" indica distância ou tempo futuro aproximado. \"Há cerca de\" indica tempo passado aproximado (\"há cerca de dez anos\")."
+        },
+        {
+            "id": 20049,
+            "enunciado": "Assinale a palavra que deve ser escrita com \"ç\":",
+            "opcoes": [
+                "A) impre__ão",
+                "B) pre__ão (de pressionar)",
+                "C) exce__ão",
+                "D) expan__ão",
+                "E) compreen__ão"
+            ],
+            "correta": 2,
+            "comentario": "Escreve-se exceção. As demais são pressão, impressão (com ss) e compreensão, expansão (com s)."
+        },
+        {
+            "id": 20050,
+            "enunciado": "Assinale a alternativa em que as palavras seguem corretamente o Acordo Ortográfico:",
+            "opcoes": [
+                "A) infra-estrutura, coautor, semi-árido, extraoficial",
+                "B) infra-estrutura, co-autor, semi-árido, extra-oficial",
+                "C) infraestrutura, co-autor, semiárido, extra-oficial",
+                "D) infraestrutura, coautor, semi-árido, extra-oficial",
+                "E) infraestrutura, coautor, semiárido, extraoficial"
+            ],
+            "correta": 4,
+            "comentario": "Quando o prefixo termina em vogal diferente da que inicia o segundo elemento, as palavras se juntam: infraestrutura, coautor, semiárido, extraoficial."
+        },
+        {
+            "id": 20051,
+            "enunciado": "Em \"O projeto foi aprovado, embora houvesse resistência da oposição\", a conjunção \"embora\" expressa ideia de:",
+            "opcoes": [
+                "A) causa",
+                "B) proporção",
+                "C) conclusão",
+                "D) finalidade",
+                "E) concessão"
+            ],
+            "correta": 4,
+            "comentario": "\"Embora\" introduz um fato contrário que não impede o principal: é conjunção concessiva, como \"ainda que\", \"mesmo que\", \"conquanto\"."
+        },
+        {
+            "id": 20052,
+            "enunciado": "Na frase \"Estudou bastante, portanto foi aprovado\", a conjunção \"portanto\" estabelece relação de:",
+            "opcoes": [
+                "A) condição",
+                "B) oposição",
+                "C) tempo",
+                "D) conclusão",
+                "E) concessão"
+            ],
+            "correta": 3,
+            "comentario": "\"Portanto\" é conjunção conclusiva, assim como \"logo\", \"por isso\", \"por conseguinte\"."
+        },
+        {
+            "id": 20053,
+            "enunciado": "A conjunção destacada tem valor de CONDIÇÃO em:",
+            "opcoes": [
+                "A) Havia quórum, mas a votação foi adiada.",
+                "B) À medida que chegavam, os vereadores assinavam a lista.",
+                "C) Como havia quórum, a votação foi realizada.",
+                "D) Caso haja quórum, a votação será realizada hoje.",
+                "E) Embora houvesse quórum, a votação foi adiada."
+            ],
+            "correta": 3,
+            "comentario": "\"Caso\" introduz condição. \"Como\" (no início) indica causa, \"embora\" concessão, \"mas\" oposição e \"à medida que\" proporção."
+        },
+        {
+            "id": 20054,
+            "enunciado": "Substituindo-se \"mas\" na frase \"O relatório estava pronto, mas não foi entregue\", sem alteração de sentido, pode-se usar:",
+            "opcoes": [
+                "A) porque",
+                "B) contudo",
+                "C) quando",
+                "D) portanto",
+                "E) conforme"
+            ],
+            "correta": 1,
+            "comentario": "\"Mas\", \"porém\", \"contudo\", \"todavia\", \"entretanto\" e \"no entanto\" são conjunções adversativas, que indicam oposição."
+        },
+        {
+            "id": 20055,
+            "enunciado": "Em \"Os servidores trabalham para que o atendimento seja mais rápido\", a locução conjuntiva \"para que\" indica:",
+            "opcoes": [
+                "A) consequência",
+                "B) comparação",
+                "C) finalidade",
+                "D) concessão",
+                "E) causa"
+            ],
+            "correta": 2,
+            "comentario": "\"Para que\" e \"a fim de que\" introduzem orações finais, que indicam o objetivo da ação principal."
+        },
+        {
+            "id": 20056,
+            "enunciado": "Na frase \"Falou tão alto que todos se assustaram\", a oração introduzida por \"que\" exprime:",
+            "opcoes": [
+                "A) causa",
+                "B) finalidade",
+                "C) condição",
+                "D) concessão",
+                "E) consequência"
+            ],
+            "correta": 4,
+            "comentario": "A estrutura \"tão... que\" introduz oração consecutiva: o susto é consequência de falar alto."
+        },
+        {
+            "id": 20057,
+            "enunciado": "Em \"O vereador cujo projeto foi aprovado deu entrevista\", o pronome \"cujo\":",
+            "opcoes": [
+                "A) é indefinido e indica quantidade",
+                "B) é demonstrativo e retoma \"vereador\"",
+                "C) deveria vir acompanhado do artigo: \"cujo o projeto\"",
+                "D) é relativo e indica posse, concordando com \"projeto\"",
+                "E) é interrogativo e introduz uma pergunta indireta"
+            ],
+            "correta": 3,
+            "comentario": "\"Cujo\" é pronome relativo que indica posse (o projeto do vereador) e concorda com o termo possuído. Nunca se usa artigo depois dele (\"cujo o\" é erro)."
+        },
+        {
+            "id": 20058,
+            "enunciado": "Assinale a alternativa em que o pronome demonstrativo está empregado de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) Essa sala em que estamos agora será reformada pelo setor aqui.",
+                "B) Esta sala em que estamos agora será reformada.",
+                "C) Nesta época, há cem anos, a cidade era pequena.",
+                "D) Aquela caneta que está na minha mão é sua.",
+                "E) Isto que você disse ontem lá na reunião me preocupou."
+            ],
+            "correta": 1,
+            "comentario": "\"Este/esta/isto\" se refere ao que está perto de quem fala (a sala onde estamos). \"Esse\" se refere ao que está perto do ouvinte ou ao que foi dito; \"aquele\", ao que está distante no espaço ou no tempo."
+        },
+        {
+            "id": 20059,
+            "enunciado": "Assinale a alternativa em que a colocação pronominal está de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) Jamais informaram-me o horário.",
+                "B) Não informaram-me o horário da sessão.",
+                "C) Não me informaram o horário da sessão.",
+                "D) Me informaram o horário da sessão ontem à noite, não?",
+                "E) Ninguém informou-me o horário da sessão."
+            ],
+            "correta": 2,
+            "comentario": "Palavras negativas (não, nunca, jamais, ninguém) atraem o pronome para antes do verbo (próclise). Iniciar frase com pronome oblíquo também não é aceito na norma-padrão."
+        },
+        {
+            "id": 20060,
+            "enunciado": "Na norma-padrão, NÃO se inicia frase com pronome oblíquo átono. Assim, está correta a forma:",
+            "opcoes": [
+                "A) Te entregaram o processo pela manhã.",
+                "B) Entregaram-me o processo pela manhã.",
+                "C) Me entregaram o processo pela manhã.",
+                "D) Nos entregaram o processo pela manhã.",
+                "E) Lhe entregaram o processo pela manhã."
+            ],
+            "correta": 1,
+            "comentario": "No início de frase, sem palavra atrativa, usa-se a ênclise: \"Entregaram-me o processo\"."
+        },
+        {
+            "id": 20061,
+            "enunciado": "Assinale a frase em que a mesóclise está empregada corretamente:",
+            "opcoes": [
+                "A) Fa-se-rá a leitura da ata.",
+                "B) Far-á-se a leitura da ata.",
+                "C) Se fará a leitura da ata no início da sessão, far-se.",
+                "D) Fará-se a leitura da ata no início da sessão.",
+                "E) Far-se-á a leitura da ata no início da sessão."
+            ],
+            "correta": 4,
+            "comentario": "Com verbo no futuro do presente ou do pretérito, sem palavra atrativa, usa-se a mesóclise: o pronome fica no meio do verbo (far-se-á, dir-se-ia)."
+        },
+        {
+            "id": 20062,
+            "enunciado": "Transpondo para a voz passiva analítica a frase \"A Mesa Diretora publicou o edital\", obtém-se:",
+            "opcoes": [
+                "A) O edital publicou-se.",
+                "B) O edital foi publicado pela Mesa Diretora.",
+                "C) A Mesa Diretora foi publicada pelo edital.",
+                "D) O edital foi publicando pela Mesa Diretora.",
+                "E) O edital tinha publicado a Mesa Diretora."
+            ],
+            "correta": 1,
+            "comentario": "Na passiva analítica, o objeto direto vira sujeito, o verbo fica com \"ser\" + particípio no mesmo tempo (publicou → foi publicado) e o antigo sujeito vira agente da passiva (pela Mesa Diretora)."
+        },
+        {
+            "id": 20063,
+            "enunciado": "A frase que está na voz passiva sintética é:",
+            "opcoes": [
+                "A) Precisa-se de novos servidores.",
+                "B) A banca publicou os resultados do concurso.",
+                "C) Os candidatos se cumprimentaram após o resultado.",
+                "D) Os resultados do concurso foram publicados.",
+                "E) Publicaram-se os resultados do concurso."
+            ],
+            "correta": 4,
+            "comentario": "A passiva sintética é formada por verbo transitivo direto + \"se\" (pronome apassivador): publicaram-se os resultados = os resultados foram publicados."
+        },
+        {
+            "id": 20064,
+            "enunciado": "Transpondo \"Os técnicos analisarão as propostas\" para a voz passiva, o verbo correto é:",
+            "opcoes": [
+                "A) serão analisadas",
+                "B) são analisadas",
+                "C) seriam analisadas",
+                "D) foram analisadas",
+                "E) serão analisados"
+            ],
+            "correta": 0,
+            "comentario": "O futuro do presente (analisarão) vira \"serão\" + particípio, que concorda com o novo sujeito \"as propostas\" (feminino plural): serão analisadas."
+        },
+        {
+            "id": 20065,
+            "enunciado": "Na frase \"O servidor chegou cedo\", a palavra \"cedo\" é classificada como:",
+            "opcoes": [
+                "A) adjetivo",
+                "B) substantivo",
+                "C) advérbio de tempo",
+                "D) conjunção",
+                "E) preposição"
+            ],
+            "correta": 2,
+            "comentario": "\"Cedo\" modifica o verbo \"chegou\" indicando circunstância de tempo: é advérbio."
+        },
+        {
+            "id": 20066,
+            "enunciado": "Em \"O documento foi entregue em mãos\", a palavra \"em\" é:",
+            "opcoes": [
+                "A) artigo",
+                "B) preposição",
+                "C) conjunção",
+                "D) pronome",
+                "E) advérbio"
+            ],
+            "correta": 1,
+            "comentario": "\"Em\" é preposição: liga palavras estabelecendo relação entre elas."
+        },
+        {
+            "id": 20067,
+            "enunciado": "Na frase \"O bom servidor atende bem o cidadão\", as palavras \"bom\" e \"bem\" são, respectivamente:",
+            "opcoes": [
+                "A) substantivo e adjetivo",
+                "B) adjetivo e adjetivo",
+                "C) advérbio e advérbio",
+                "D) adjetivo e advérbio",
+                "E) advérbio e adjetivo"
+            ],
+            "correta": 3,
+            "comentario": "\"Bom\" qualifica o substantivo \"servidor\" (adjetivo). \"Bem\" modifica o verbo \"atende\" (advérbio de modo)."
+        },
+        {
+            "id": 20068,
+            "enunciado": "Assinale a alternativa em que a palavra \"que\" é pronome relativo:",
+            "opcoes": [
+                "A) Ele falou tanto que ficou rouco.",
+                "B) Espero que o ofício chegue hoje.",
+                "C) Que beleza de plenário!",
+                "D) O ofício que chegou ontem já foi respondido.",
+                "E) Que dia é a sessão?"
+            ],
+            "correta": 3,
+            "comentario": "O pronome relativo retoma um termo anterior e pode ser trocado por \"o qual\": \"o ofício o qual chegou\". Nos outros casos, \"que\" é conjunção, pronome interrogativo, parte de estrutura consecutiva e intensificador."
+        },
+        {
+            "id": 20069,
+            "enunciado": "Assinale a alternativa em que a forma verbal está de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) Se o servidor vir o erro, deverá corrigi-lo.",
+                "B) Quando você ver o chefe, avise-o.",
+                "C) Se o servidor ver o erro, deverá corrigi-lo.",
+                "D) Se eles verem o edital, vão se inscrever.",
+                "E) Quando eu ver o resultado, aviso."
+            ],
+            "correta": 0,
+            "comentario": "O futuro do subjuntivo de \"ver\" é: quando eu vir, tu vires, ele vir, nós virmos, eles virem. \"Ver\" é o infinitivo."
+        },
+        {
+            "id": 20070,
+            "enunciado": "Assinale a frase em que o verbo \"intervir\" está conjugado corretamente:",
+            "opcoes": [
+                "A) Se o presidente intervir, a ordem volta.",
+                "B) O presidente intervinha-se na discussão ontem e interviu.",
+                "C) O presidente interveio na discussão para manter a ordem.",
+                "D) O presidente interviram na discussão.",
+                "E) O presidente interviu na discussão para manter a ordem."
+            ],
+            "correta": 2,
+            "comentario": "\"Intervir\" segue a conjugação de \"vir\": ele veio → ele interveio; se ele vier → se ele intervier."
+        },
+        {
+            "id": 20071,
+            "enunciado": "Assinale a forma correta do verbo \"manter\" no pretérito perfeito do indicativo:",
+            "opcoes": [
+                "A) Os vereadores manteram o veto do prefeito.",
+                "B) Os vereadores mantiveram o veto do prefeito.",
+                "C) Os vereadores manteveram o veto do prefeito.",
+                "D) Os vereadores mantiram o veto do prefeito.",
+                "E) Os vereadores mantêram o veto do prefeito."
+            ],
+            "correta": 1,
+            "comentario": "\"Manter\" segue \"ter\": eles tiveram → eles mantiveram. O mesmo vale para deter (detiveram), conter (contiveram) e obter (obtiveram)."
+        },
+        {
+            "id": 20072,
+            "enunciado": "Na frase \"Os vereadores propuseram novas emendas\", o verbo \"propor\":",
+            "opcoes": [
+                "A) deveria ser \"propuseram-se\" obrigatoriamente",
+                "B) está no presente do subjuntivo",
+                "C) está no futuro do presente",
+                "D) está corretamente conjugado no pretérito perfeito, seguindo o verbo \"pôr\"",
+                "E) deveria ser \"proporam\""
+            ],
+            "correta": 3,
+            "comentario": "\"Propor\" deriva de \"pôr\": eles puseram → eles propuseram. A forma \"proporam\" não existe na norma-padrão."
+        },
+        {
+            "id": 20073,
+            "enunciado": "Em \"Os candidatos aprovados serão convocados\", a palavra \"aprovados\" é:",
+            "opcoes": [
+                "A) um adjetivo (particípio) que caracteriza \"candidatos\"",
+                "B) um verbo no presente do indicativo",
+                "C) um advérbio de modo",
+                "D) uma conjunção",
+                "E) um substantivo abstrato"
+            ],
+            "correta": 0,
+            "comentario": "O particípio \"aprovados\" funciona como adjetivo, caracterizando o substantivo \"candidatos\" e concordando com ele."
+        },
+        {
+            "id": 20074,
+            "enunciado": "Assinale a alternativa em que o pronome oblíquo está empregado de acordo com a norma-padrão:",
+            "opcoes": [
+                "A) Ela trouxe o processo para mim analisar.",
+                "B) Entre mim e você não há divergência.",
+                "C) Entre eu e você não há divergência.",
+                "D) Isto é para mim fazer até amanhã.",
+                "E) O chefe pediu para mim fazer o relatório."
+            ],
+            "correta": 1,
+            "comentario": "Quando o pronome é sujeito de um verbo no infinitivo, usa-se o pronome reto: \"para eu revisar\", \"para eu fazer\". Depois de preposição, sem verbo, usa-se o oblíquo tônico: \"entre mim e você\"."
+        },
+        {
+            "id": 20075,
+            "enunciado": "A frase em que o numeral está empregado de acordo com a norma-padrão é:",
+            "opcoes": [
+                "A) O artigo 9º do regimento trata das comissões, e o artigo 10 trata da Mesa.",
+                "B) O artigo 9 do regimento trata das comissões, e o artigo 10 trata da Mesa.",
+                "C) O artigo nove do regimento trata das comissões, e o artigo décimo trata da Mesa.",
+                "D) O artigo 9º do regimento trata das comissões, e o artigo 10º trata da Mesa.",
+                "E) O artigo 9 do regimento trata das comissões, e o artigo 10º trata da Mesa."
+            ],
+            "correta": 0,
+            "comentario": "Na numeração de artigos, usa-se o ordinal até o nono (art. 9º) e o cardinal a partir do dez (art. 10)."
+        },
+        {
+            "id": 20076,
+            "enunciado": "Assinale a alternativa em que os parônimos estão empregados corretamente:",
+            "opcoes": [
+                "A) O plenário ratificou o acordo, e a assessoria retificou o erro de digitação.",
+                "B) O plenário ratificou o acordo, e a assessoria ratificou o erro de digitação para corrigir.",
+                "C) O plenário retificou o acordo para confirmá-lo.",
+                "D) O plenário retificou o acordo, e a assessoria ratificou o erro de digitação.",
+                "E) A assessoria ratificou o erro, corrigindo-o."
+            ],
+            "correta": 0,
+            "comentario": "\"Ratificar\" é confirmar; \"retificar\" é corrigir. Por isso se ratifica um acordo e se retifica um erro."
+        },
+        {
+            "id": 20077,
+            "enunciado": "Assinale a frase em que o par \"descrição/discrição\" está empregado corretamente:",
+            "opcoes": [
+                "A) O servidor agiu com descrição ao tratar do assunto sigiloso.",
+                "B) A descrição do servidor ao guardar o segredo foi elogiada.",
+                "C) Faça uma discrição detalhada do equipamento.",
+                "D) O servidor agiu com discrição ao tratar do assunto sigiloso.",
+                "E) A discrição do imóvel consta no laudo técnico."
+            ],
+            "correta": 3,
+            "comentario": "\"Discrição\" é reserva, prudência. \"Descrição\" é o ato de descrever."
+        },
+        {
+            "id": 20078,
+            "enunciado": "Assinale a alternativa em que \"emergir\" e \"imergir\" estão empregados corretamente:",
+            "opcoes": [
+                "A) O mergulhador imergiu no rio e emergiu minutos depois.",
+                "B) O submarino emergiu nas profundezas.",
+                "C) O mergulhador emergiu no rio e imergiu minutos depois para respirar.",
+                "D) A crise imergiu de repente nas notícias do dia.",
+                "E) O mergulhador imergiu da água para respirar."
+            ],
+            "correta": 0,
+            "comentario": "\"Imergir\" é afundar, mergulhar. \"Emergir\" é vir à tona, aparecer."
+        },
+        {
+            "id": 20079,
+            "enunciado": "Assinale a alternativa em que \"eminente\" e \"iminente\" estão empregados corretamente:",
+            "opcoes": [
+                "A) O iminente jurista alertou para o risco iminente de colapso.",
+                "B) O eminente jurista alertou para o risco iminente de colapso no sistema.",
+                "C) O eminente jurista alertou para o risco eminente de colapso.",
+                "D) O iminente jurista alertou para o risco eminente de colapso.",
+                "E) O risco era eminente porque o jurista era iminente."
+            ],
+            "correta": 1,
+            "comentario": "\"Eminente\" é ilustre, notável. \"Iminente\" é o que está prestes a acontecer."
+        },
+        {
+            "id": 20080,
+            "enunciado": "Assinale a alternativa em que \"infligir\" e \"infringir\" estão empregados corretamente:",
+            "opcoes": [
+                "A) Quem infligir o regimento poderá sofrer as penalidades que o órgão infligir.",
+                "B) Quem infringir o regimento poderá sofrer as penalidades que o órgão infligir.",
+                "C) Infligir a lei é o mesmo que respeitá-la.",
+                "D) Quem infringir o regimento poderá sofrer as penalidades que o órgão infringir.",
+                "E) Quem infligir o regimento poderá sofrer as penalidades que o órgão infringir."
+            ],
+            "correta": 1,
+            "comentario": "\"Infringir\" é violar, desrespeitar (infringir uma norma). \"Infligir\" é aplicar pena ou castigo."
+        },
+        {
+            "id": 20081,
+            "enunciado": "Na frase \"O orçamento sofreu um corte drástico\", a palavra \"drástico\" pode ser substituída, sem prejuízo de sentido, por:",
+            "opcoes": [
+                "A) severo",
+                "B) opcional",
+                "C) irrelevante",
+                "D) sutil",
+                "E) provisório"
+            ],
+            "correta": 0,
+            "comentario": "\"Drástico\" significa enérgico, severo, radical. \"Sutil\" e \"irrelevante\" têm sentido oposto."
+        },
+        {
+            "id": 20082,
+            "enunciado": "Assinale o par de antônimos:",
+            "opcoes": [
+                "A) célere — rápido",
+                "B) óbice — obstáculo",
+                "C) efêmero — duradouro",
+                "D) exíguo — escasso",
+                "E) anuir — consentir"
+            ],
+            "correta": 2,
+            "comentario": "\"Efêmero\" é passageiro, de curta duração, oposto de \"duradouro\". Os demais pares são sinônimos."
+        },
+        {
+            "id": 20083,
+            "enunciado": "Em \"O prazo para recurso é exíguo\", a palavra \"exíguo\" significa:",
+            "opcoes": [
+                "A) confuso, ambíguo",
+                "B) longo, extenso",
+                "C) curto, insuficiente",
+                "D) obrigatório, impositivo",
+                "E) ilegal, irregular"
+            ],
+            "correta": 2,
+            "comentario": "\"Exíguo\" significa pequeno, escasso, insuficiente."
+        },
+        {
+            "id": 20084,
+            "enunciado": "Na frase \"A notícia caiu como uma bomba no plenário\", há uma figura de linguagem chamada:",
+            "opcoes": [
+                "A) eufemismo",
+                "B) antítese",
+                "C) pleonasmo",
+                "D) metonímia",
+                "E) comparação"
+            ],
+            "correta": 4,
+            "comentario": "Há comparação explícita, marcada pelo conectivo \"como\": a notícia é comparada a uma bomba."
+        },
+        {
+            "id": 20085,
+            "enunciado": "Em \"Brasília decidiu cortar os repasses aos municípios\", a palavra \"Brasília\" representa o governo federal. Trata-se de:",
+            "opcoes": [
+                "A) hipérbole",
+                "B) ironia",
+                "C) comparação",
+                "D) onomatopeia",
+                "E) metonímia"
+            ],
+            "correta": 4,
+            "comentario": "Metonímia é a substituição de um termo por outro com o qual mantém relação de proximidade: o lugar (Brasília) pelo poder que ali se instala (o governo federal)."
+        },
+        {
+            "id": 20086,
+            "enunciado": "A frase \"Já disse isso um milhão de vezes\" exemplifica a figura de linguagem:",
+            "opcoes": [
+                "A) antítese",
+                "B) metonímia",
+                "C) hipérbole",
+                "D) eufemismo",
+                "E) prosopopeia"
+            ],
+            "correta": 2,
+            "comentario": "Hipérbole é o exagero intencional para dar ênfase."
+        },
+        {
+            "id": 20087,
+            "enunciado": "Em \"Ele nos deixou ontem\", no sentido de \"ele faleceu ontem\", há:",
+            "opcoes": [
+                "A) ironia",
+                "B) pleonasmo vicioso",
+                "C) catacrese",
+                "D) hipérbole",
+                "E) eufemismo"
+            ],
+            "correta": 4,
+            "comentario": "Eufemismo é o uso de expressão mais suave para falar de algo desagradável, como a morte."
+        },
+        {
+            "id": 20088,
+            "enunciado": "Assinale a alternativa que apresenta pleonasmo vicioso, que deve ser evitado na redação oficial:",
+            "opcoes": [
+                "A) Os vereadores vão encerrar a sessão.",
+                "B) Os vereadores vão subir para cima do palanque.",
+                "C) Os vereadores vão subir ao palanque.",
+                "D) Os vereadores vão discutir o projeto.",
+                "E) Os vereadores vão analisar a emenda."
+            ],
+            "correta": 1,
+            "comentario": "\"Subir para cima\" repete a ideia sem acrescentar sentido. Outros exemplos: \"elo de ligação\", \"há anos atrás\", \"encarar de frente\"."
+        },
+        {
+            "id": 20089,
+            "enunciado": "A palavra \"plenário\" está empregada em sentido FIGURADO em:",
+            "opcoes": [
+                "A) As cadeiras do plenário foram trocadas.",
+                "B) O plenário aprovou a proposta por maioria.",
+                "C) A decisão foi tomada no plenário da opinião pública, nas redes sociais.",
+                "D) O plenário da Câmara estava lotado.",
+                "E) O presidente chegou ao plenário às nove horas."
+            ],
+            "correta": 2,
+            "comentario": "Em sentido figurado, \"plenário\" não é o local ou o colegiado da Câmara, mas um espaço simbólico de debate (a opinião pública)."
+        },
+        {
+            "id": 20090,
+            "enunciado": "Em um texto publicitário com a frase \"Vote consciente! Informe-se antes de escolher seu candidato\", predomina a função da linguagem:",
+            "opcoes": [
+                "A) metalinguística",
+                "B) emotiva",
+                "C) referencial",
+                "D) apelativa (conativa)",
+                "E) fática"
+            ],
+            "correta": 3,
+            "comentario": "A função apelativa busca convencer ou orientar o receptor. É marcada por verbos no imperativo e vocativos."
+        },
+        {
+            "id": 20091,
+            "enunciado": "Um verbete de dicionário que explica o significado da palavra \"quórum\" apresenta predominantemente a função:",
+            "opcoes": [
+                "A) fática",
+                "B) emotiva",
+                "C) metalinguística",
+                "D) apelativa",
+                "E) poética"
+            ],
+            "correta": 2,
+            "comentario": "A função metalinguística aparece quando a linguagem fala da própria linguagem, como no dicionário ou na gramática."
+        },
+        {
+            "id": 20092,
+            "enunciado": "A notícia \"A Câmara aprovou ontem, por 15 votos a 2, o projeto que cria o programa de hortas comunitárias\" tem predomínio da função:",
+            "opcoes": [
+                "A) fática",
+                "B) apelativa",
+                "C) poética",
+                "D) emotiva",
+                "E) referencial"
+            ],
+            "correta": 4,
+            "comentario": "A função referencial (ou denotativa) informa de forma objetiva sobre um fato, foco do texto jornalístico."
+        },
+        {
+            "id": 20093,
+            "enunciado": "Expressões como \"Alô, está me ouvindo?\" e \"Bom dia, tudo bem?\" exemplificam a função da linguagem:",
+            "opcoes": [
+                "A) poética",
+                "B) conativa",
+                "C) referencial",
+                "D) metalinguística",
+                "E) fática"
+            ],
+            "correta": 4,
+            "comentario": "A função fática serve para abrir, manter ou testar o canal de comunicação."
+        },
+        {
+            "id": 20094,
+            "enunciado": "O texto que apresenta tese, argumentos e conclusão, buscando convencer o leitor sobre a importância da transparência pública, é do tipo:",
+            "opcoes": [
+                "A) narrativo",
+                "B) injuntivo",
+                "C) dissertativo-argumentativo",
+                "D) descritivo",
+                "E) dialogal"
+            ],
+            "correta": 2,
+            "comentario": "O texto argumentativo defende um ponto de vista com argumentos. Narrar é contar fatos; descrever é caracterizar; injunção é instruir."
+        },
+        {
+            "id": 20095,
+            "enunciado": "Um manual de instruções para preencher o requerimento de acesso à informação, com frases como \"Preencha o campo 1\" e \"Anexe o documento\", pertence à sequência:",
+            "opcoes": [
+                "A) narrativa",
+                "B) argumentativa",
+                "C) expositiva poética",
+                "D) descritiva",
+                "E) injuntiva"
+            ],
+            "correta": 4,
+            "comentario": "A sequência injuntiva orienta o leitor a fazer algo, usando verbos no imperativo ou infinitivo."
+        },
+        {
+            "id": 20096,
+            "enunciado": "O trecho \"A sala tinha paredes brancas, janelas amplas e uma longa mesa de madeira escura\" é predominantemente:",
+            "opcoes": [
+                "A) descritivo",
+                "B) argumentativo",
+                "C) injuntivo",
+                "D) narrativo",
+                "E) expositivo"
+            ],
+            "correta": 0,
+            "comentario": "A descrição caracteriza seres, objetos e lugares, com predomínio de adjetivos e verbos de estado."
+        },
+        {
+            "id": 20097,
+            "enunciado": "O gênero textual utilizado para registrar, de forma resumida e fiel, o que ocorreu em uma sessão ou reunião é a:",
+            "opcoes": [
+                "A) ata",
+                "B) carta pessoal",
+                "C) resenha",
+                "D) fábula",
+                "E) crônica"
+            ],
+            "correta": 0,
+            "comentario": "A ata registra os fatos, as deliberações e as presenças de uma reunião ou sessão, em linguagem objetiva."
+        },
+        {
+            "id": 20098,
+            "enunciado": "O texto que apresenta, de forma objetiva, um assunto para informar ou explicar, sem defender um ponto de vista, como um verbete de enciclopédia, é do tipo:",
+            "opcoes": [
+                "A) dialogal",
+                "B) expositivo",
+                "C) narrativo",
+                "D) argumentativo",
+                "E) injuntivo"
+            ],
+            "correta": 1,
+            "comentario": "O texto expositivo apresenta e explica informações. Diferente do argumentativo, não procura convencer."
+        },
+        {
+            "id": 20099,
+            "enunciado": "Na frase \"Recebemos o requerimento e o encaminhamos ao setor competente\", a palavra \"competente\" significa:",
+            "opcoes": [
+                "A) rápido",
+                "B) agradável",
+                "C) responsável legalmente pelo assunto",
+                "D) muito habilidoso",
+                "E) disponível"
+            ],
+            "correta": 2,
+            "comentario": "No contexto administrativo, \"setor competente\" é o que tem atribuição (competência) para tratar do assunto, e não necessariamente o mais habilidoso."
+        },
+        {
+            "id": 20100,
+            "enunciado": "Em \"O relator teve de acatar as sugestões da comissão\", o verbo \"acatar\" pode ser substituído, sem alteração de sentido, por:",
+            "opcoes": [
+                "A) ignorar",
+                "B) rejeitar",
+                "C) adiar",
+                "D) aceitar",
+                "E) discutir"
+            ],
+            "correta": 3,
+            "comentario": "\"Acatar\" significa aceitar, respeitar, obedecer."
+        },
+        {
+            "id": 20101,
+            "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" De acordo com o texto, a transparência é apresentada como:",
+            "opcoes": [
+                "A) uma tarefa exclusiva da imprensa",
+                "B) uma obrigação do poder público",
+                "C) algo dispensável quando há eleições",
+                "D) um privilégio reservado a especialistas",
+                "E) uma concessão facultativa dos governantes"
+            ],
+            "correta": 1,
+            "comentario": "O texto afirma que a transparência \"não é um favor (...), mas um dever\", ou seja, uma obrigação."
+        },
+        {
+            "id": 20102,
+            "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" A principal ideia defendida no texto é que:",
+            "opcoes": [
+                "A) o poder público deve publicar apenas planilhas técnicas",
+                "B) a informação pública, além de disponível, precisa ser compreensível para o cidadão",
+                "C) a linguagem técnica aproxima o cidadão das informações",
+                "D) basta publicar os dados para garantir a transparência",
+                "E) a sociedade não tem interesse em acompanhar gastos"
+            ],
+            "correta": 1,
+            "comentario": "O texto conclui que \"publicar dados não basta: é preciso que eles sejam compreensíveis\"."
+        },
+        {
+            "id": 20103,
+            "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" A expressão \"Ainda assim\", no início do terceiro período, introduz uma ideia de:",
+            "opcoes": [
+                "A) comparação entre gastos e contratos",
+                "B) causa da disponibilidade dos dados",
+                "C) ressalva em relação ao que foi dito antes",
+                "D) conclusão do raciocínio, sem oposição",
+                "E) tempo posterior à publicação"
+            ],
+            "correta": 2,
+            "comentario": "\"Ainda assim\" tem valor concessivo e adversativo: apesar dos benefícios de disponibilizar dados, há uma ressalva, que é a necessidade de compreensão."
+        },
+        {
+            "id": 20104,
+            "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" Os dois-pontos em \"publicar dados não basta: é preciso que eles sejam compreensíveis\" introduzem:",
+            "opcoes": [
+                "A) uma explicação do que foi afirmado antes",
+                "B) um vocativo",
+                "C) uma citação direta de outra pessoa",
+                "D) uma oração de finalidade",
+                "E) uma enumeração de gastos"
+            ],
+            "correta": 0,
+            "comentario": "Os dois-pontos anunciam o esclarecimento: por que publicar não basta? Porque os dados precisam ser compreensíveis."
+        },
+        {
+            "id": 20105,
+            "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" No último período, a expressão \"quem mais precisa da informação\" refere-se, no contexto, a:",
+            "opcoes": [
+                "A) vereadores da oposição",
+                "B) servidores especialistas em planilhas",
+                "C) empresas contratadas pelo poder público",
+                "D) órgãos de controle externo",
+                "E) cidadãos que dependem de informação clara para participar"
+            ],
+            "correta": 4,
+            "comentario": "O texto contrapõe a linguagem técnica ao cidadão comum, que é quem mais precisa da informação compreensível para acompanhar e cobrar."
+        },
+        {
+            "id": 20106,
+            "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" No segundo período, o pronome \"eles\", em \"é preciso que eles sejam compreensíveis\", retoma:",
+            "opcoes": [
+                "A) dados",
+                "B) cidadãos",
+                "C) poderes públicos",
+                "D) planilhas confusas",
+                "E) contratos e votações apenas"
+            ],
+            "correta": 0,
+            "comentario": "O pronome \"eles\" retoma \"dados\", termo imediatamente anterior (\"publicar dados não basta\")."
+        },
+        {
+            "id": 20107,
+            "enunciado": "Texto: \"O atendimento ao público vai além de responder perguntas. Um servidor atento percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda. Essa postura reduz retornos desnecessários e fortalece a confiança na instituição.\" Segundo o texto, um bom atendimento:",
+            "opcoes": [
+                "A) antecipa dúvidas e orienta o cidadão sobre os próximos passos",
+                "B) deve evitar indicar outros locais de ajuda",
+                "C) depende apenas da rapidez da resposta",
+                "D) limita-se a responder exatamente o que foi perguntado",
+                "E) aumenta a quantidade de retornos ao setor"
+            ],
+            "correta": 0,
+            "comentario": "O texto diz que o servidor atento \"percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda\"."
+        },
+        {
+            "id": 20108,
+            "enunciado": "Texto: \"O atendimento ao público vai além de responder perguntas. Um servidor atento percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda. Essa postura reduz retornos desnecessários e fortalece a confiança na instituição.\" A expressão \"Essa postura\", no último período, retoma:",
+            "opcoes": [
+                "A) a dúvida do cidadão",
+                "B) a instituição pública",
+                "C) os retornos desnecessários",
+                "D) as perguntas sem resposta",
+                "E) o comportamento atento do servidor descrito anteriormente"
+            ],
+            "correta": 4,
+            "comentario": "\"Essa postura\" é um mecanismo de coesão que resume o conjunto de atitudes descritas no período anterior."
+        },
+        {
+            "id": 20109,
+            "enunciado": "Texto: \"O atendimento ao público vai além de responder perguntas. Um servidor atento percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda. Essa postura reduz retornos desnecessários e fortalece a confiança na instituição.\" De acordo com o texto, uma consequência do bom atendimento é:",
+            "opcoes": [
+                "A) a dispensa de servidores no setor",
+                "B) o aumento do número de reclamações",
+                "C) o fim de todas as dúvidas do cidadão",
+                "D) a diminuição da necessidade de informação",
+                "E) a redução de retornos desnecessários e o aumento da confiança na instituição"
+            ],
+            "correta": 4,
+            "comentario": "O último período afirma que a postura \"reduz retornos desnecessários e fortalece a confiança na instituição\"."
+        },
+        {
+            "id": 20110,
+            "enunciado": "Assinale a alternativa que reescreve corretamente, sem alterar o sentido, a frase: \"Apesar de o prazo ser curto, a comissão concluiu o parecer.\"",
+            "opcoes": [
+                "A) O prazo era curto, portanto a comissão concluiu o parecer.",
+                "B) Como o prazo era curto, a comissão não concluiu o parecer.",
+                "C) Embora o prazo fosse curto, a comissão concluiu o parecer.",
+                "D) Se o prazo fosse curto, a comissão concluiria o parecer.",
+                "E) Porque o prazo era curto, a comissão concluiu o parecer."
+            ],
+            "correta": 2,
+            "comentario": "\"Apesar de\" e \"embora\" têm valor concessivo. As outras opções mudam a relação para causa, conclusão ou condição."
+        },
+        {
+            "id": 20111,
+            "enunciado": "Assinale a paráfrase adequada para: \"O servidor não apenas organizou os arquivos, como também treinou a equipe.\"",
+            "opcoes": [
+                "A) Além de organizar os arquivos, o servidor treinou a equipe.",
+                "B) Como organizou os arquivos, o servidor não precisou treinar a equipe.",
+                "C) O servidor só organizou os arquivos.",
+                "D) O servidor treinou a equipe em vez de organizar os arquivos.",
+                "E) O servidor organizou os arquivos, mas não treinou a equipe."
+            ],
+            "correta": 0,
+            "comentario": "A estrutura \"não apenas... como também\" indica adição, equivalente a \"além de\"."
+        },
+        {
+            "id": 20112,
+            "enunciado": "Assinale a frase que apresenta problema de COERÊNCIA:",
+            "opcoes": [
+                "A) Como a sessão foi cancelada, a votação ficou para a próxima semana.",
+                "B) Como a sessão foi cancelada, os vereadores votaram todos os projetos da pauta naquela sessão.",
+                "C) A sessão foi cancelada; por isso, a votação foi adiada.",
+                "D) Embora a sessão tenha sido cancelada, as comissões se reuniram.",
+                "E) A sessão foi cancelada porque não houve quórum."
+            ],
+            "correta": 1,
+            "comentario": "Se a sessão foi cancelada, não é possível que os projetos tenham sido votados nela. Há contradição entre causa e consequência."
+        },
+        {
+            "id": 20113,
+            "enunciado": "Em \"O vereador apresentou a emenda. A proposta, no entanto, foi rejeitada\", o termo \"A proposta\" exerce papel de coesão por:",
+            "opcoes": [
+                "A) repetição exata da palavra anterior",
+                "B) introdução de um novo assunto",
+                "C) uso de conjunção aditiva",
+                "D) substituição de \"emenda\" por uma expressão de sentido equivalente",
+                "E) elipse do verbo"
+            ],
+            "correta": 3,
+            "comentario": "\"A proposta\" retoma \"a emenda\" por meio de uma expressão de sentido próximo, evitando repetição. É coesão referencial por substituição."
+        },
+        {
+            "id": 20114,
+            "enunciado": "Na frase \"Os servidores chegaram cedo e (eles) organizaram a sala\", a omissão do pronome entre parênteses é um caso de coesão por:",
+            "opcoes": [
+                "A) antonímia",
+                "B) catáfora explícita",
+                "C) elipse",
+                "D) hiperonímia",
+                "E) repetição"
+            ],
+            "correta": 2,
+            "comentario": "Elipse é a omissão de um termo que pode ser facilmente identificado pelo contexto. O sujeito \"eles\" já está claro."
+        },
+        {
+            "id": 20115,
+            "enunciado": "Assinale a alternativa em que o termo destacado tem função de anunciar algo que ainda será dito (catáfora):",
+            "opcoes": [
+                "A) O ofício chegou, e o protocolo o registrou.",
+                "B) O presidente pediu apenas ISTO: silêncio durante a votação.",
+                "C) A ata foi lida. ELA foi aprovada.",
+                "D) O presidente pediu silêncio. ISSO garantiu a ordem.",
+                "E) Os vereadores votaram; ELES aprovaram o projeto."
+            ],
+            "correta": 1,
+            "comentario": "Na catáfora, o termo antecipa uma informação que vem depois (isto = silêncio durante a votação). Nos demais casos há anáfora, que retoma algo já dito."
+        },
+        {
+            "id": 20116,
+            "enunciado": "Assinale a alternativa em que a conjunção estabelece corretamente a relação de causa:",
+            "opcoes": [
+                "A) A votação foi adiada porque faltou quórum.",
+                "B) A votação foi adiada, embora faltasse quórum.",
+                "C) A votação foi adiada, portanto faltou quórum.",
+                "D) A votação foi adiada, mas faltou quórum.",
+                "E) A votação foi adiada para que faltasse quórum."
+            ],
+            "correta": 0,
+            "comentario": "A falta de quórum é a causa do adiamento, introduzida por \"porque\". As outras conjunções criam relações incoerentes com esse sentido."
+        },
+        {
+            "id": 20117,
+            "enunciado": "Leia: \"O cidadão tem direito à informação. ____, os órgãos públicos devem responder aos pedidos nos prazos legais.\" O conectivo que preenche a lacuna com sentido de conclusão é:",
+            "opcoes": [
+                "A) Embora",
+                "B) Contudo",
+                "C) Ainda que",
+                "D) Por isso",
+                "E) Caso"
+            ],
+            "correta": 3,
+            "comentario": "A segunda frase é consequência lógica da primeira. \"Por isso\" é conectivo conclusivo."
+        },
+        {
+            "id": 20118,
+            "enunciado": "O ditado \"Quem tem boca vai a Roma\" é usado para dizer que quem pergunta consegue chegar aonde quer. O sentido da frase é:",
+            "opcoes": [
+                "A) literal, pois fala de uma viagem real",
+                "B) científico, pois descreve um fato comprovado",
+                "C) figurado, pois não se refere literalmente a viajar a Roma",
+                "D) técnico, pois vem da linguagem jurídica",
+                "E) denotativo, pois é usado em dicionários"
+            ],
+            "correta": 2,
+            "comentario": "Provérbios usam linguagem conotativa: \"ir a Roma\" representa atingir um objetivo."
+        },
+        {
+            "id": 20119,
+            "enunciado": "Assinale a frase AMBÍGUA, que permite duas interpretações:",
+            "opcoes": [
+                "A) O prefeito recebeu o vereador no gabinete da Prefeitura.",
+                "B) O vereador falou com o prefeito em seu gabinete.",
+                "C) O vereador, em seu próprio gabinete, recebeu o prefeito.",
+                "D) O vereador falou com o prefeito no próprio gabinete do vereador.",
+                "E) O vereador falou com o prefeito no gabinete do prefeito."
+            ],
+            "correta": 1,
+            "comentario": "\"Em seu gabinete\" pode se referir ao gabinete do vereador ou ao do prefeito. As outras frases eliminam a ambiguidade."
+        },
+        {
+            "id": 20120,
+            "enunciado": "Assinale a alternativa que apresenta reescrita correta e de sentido equivalente a: \"Os documentos foram enviados ontem, e o recebimento foi confirmado hoje.\"",
+            "opcoes": [
+                "A) O recebimento foi confirmado ontem, antes do envio dos documentos.",
+                "B) Embora os documentos tenham sido enviados ontem, o recebimento não foi confirmado.",
+                "C) Os documentos não foram enviados, por isso não houve recebimento.",
+                "D) Enviados ontem os documentos, confirmou-se hoje o recebimento.",
+                "E) Os documentos serão enviados hoje e confirmados amanhã."
+            ],
+            "correta": 3,
+            "comentario": "A reescrita mantém os dois fatos e a ordem temporal (envio ontem, confirmação hoje), usando oração reduzida de particípio e voz passiva sintética."
+        },
+        {
+            "id": 20121,
+            "enunciado": "Na frase \"Os candidatos, que estudaram com antecedência, sentiram-se mais seguros\", a oração entre vírgulas:",
+            "opcoes": [
+                "A) restringe o grupo apenas aos que estudaram",
+                "B) é um vocativo",
+                "C) acrescenta uma explicação sobre todos os candidatos",
+                "D) contém um erro, pois nunca se usa vírgula antes de \"que\"",
+                "E) indica a causa de a prova ter sido adiada"
+            ],
+            "correta": 2,
+            "comentario": "Entre vírgulas, a oração adjetiva é explicativa e se refere a todo o grupo dos candidatos mencionados."
+        },
+        {
+            "id": 20122,
+            "enunciado": "Em \"Primeiro, o protocolo registra o documento; em seguida, o setor competente o analisa; por fim, o resultado é comunicado ao interessado\", os conectivos destacam a progressão:",
+            "opcoes": [
+                "A) de comparação entre o protocolo e o setor",
+                "B) de condição para o registro",
+                "C) temporal das etapas do procedimento",
+                "D) de causa e consequência entre os setores",
+                "E) de oposição entre as etapas"
+            ],
+            "correta": 2,
+            "comentario": "\"Primeiro\", \"em seguida\" e \"por fim\" organizam a sequência temporal do procedimento."
+        },
+        {
+            "id": 20123,
+            "enunciado": "Assinale a frase que apresenta inferência adequada a partir de: \"Desde que o sistema eletrônico foi implantado, o tempo médio de tramitação caiu pela metade.\"",
+            "opcoes": [
+                "A) A quantidade de processos caiu pela metade.",
+                "B) A tramitação ficou mais rápida após a implantação do sistema.",
+                "C) Todos os processos passaram a tramitar em um único dia.",
+                "D) O sistema eletrônico ainda não foi implantado.",
+                "E) O sistema eletrônico aumentou o tempo de tramitação."
+            ],
+            "correta": 1,
+            "comentario": "Se o tempo médio caiu pela metade, a tramitação ficou mais rápida. A frase não fala da quantidade de processos nem de um prazo de um dia."
+        },
+        {
+            "id": 20124,
+            "enunciado": "Na frase \"Muitos acreditam que a política é distante da vida comum; ela, porém, decide desde o preço do transporte até a vaga na creche\", o autor:",
+            "opcoes": [
+                "A) concorda que a política não interfere no cotidiano",
+                "B) contesta uma opinião comum, mostrando a presença da política no cotidiano",
+                "C) afirma que as creches são responsabilidade apenas das famílias",
+                "D) critica o aumento do preço do transporte",
+                "E) defende que o transporte não depende de decisões políticas"
+            ],
+            "correta": 1,
+            "comentario": "O conectivo \"porém\" introduz o contraponto do autor à opinião de que a política é distante, com exemplos concretos do dia a dia."
+        },
+        {
+            "id": 20125,
+            "enunciado": "Em \"O projeto, aliás, já havia sido discutido no ano anterior\", a palavra \"aliás\" introduz:",
+            "opcoes": [
+                "A) uma conclusão definitiva do texto",
+                "B) uma condição para a discussão",
+                "C) uma informação adicional que reforça ou complementa o que se diz",
+                "D) uma oposição ao que foi dito antes",
+                "E) uma finalidade do projeto"
+            ],
+            "correta": 2,
+            "comentario": "\"Aliás\" acrescenta uma observação complementar, muitas vezes com valor de retificação ou reforço."
+        },
+        {
+            "id": 20126,
+            "enunciado": "Na oração \"Chegaram os novos computadores da Câmara\", o sujeito é:",
+            "opcoes": [
+                "A) inexistente",
+                "B) a Câmara",
+                "C) os novos computadores da Câmara",
+                "D) oculto (eles)",
+                "E) indeterminado"
+            ],
+            "correta": 2,
+            "comentario": "O sujeito está posposto ao verbo: \"os novos computadores da Câmara chegaram\". Por isso o verbo está no plural."
+        },
+        {
+            "id": 20127,
+            "enunciado": "Na frase \"Ligaram para o protocolo durante a manhã\", o sujeito é classificado como:",
+            "opcoes": [
+                "A) oculto",
+                "B) indeterminado",
+                "C) composto",
+                "D) inexistente",
+                "E) simples"
+            ],
+            "correta": 1,
+            "comentario": "Com o verbo na 3ª pessoa do plural sem referência a quem praticou a ação, o sujeito é indeterminado."
+        },
+        {
+            "id": 20128,
+            "enunciado": "Em \"Choveu muito durante a sessão\", a oração é:",
+            "opcoes": [
+                "A) de sujeito composto",
+                "B) de sujeito indeterminado",
+                "C) de sujeito oculto",
+                "D) sem sujeito, pois o verbo indica fenômeno da natureza",
+                "E) de sujeito simples \"sessão\""
+            ],
+            "correta": 3,
+            "comentario": "Verbos que indicam fenômenos da natureza (chover, ventar, nevar) são impessoais: a oração não tem sujeito."
+        },
+        {
+            "id": 20129,
+            "enunciado": "Na frase \"O servidor entregou o relatório ao presidente\", os termos \"o relatório\" e \"ao presidente\" são, respectivamente:",
+            "opcoes": [
+                "A) objeto indireto e objeto direto",
+                "B) objeto direto e objeto indireto",
+                "C) adjunto adnominal e adjunto adverbial",
+                "D) sujeito e predicativo",
+                "E) complemento nominal e agente da passiva"
+            ],
+            "correta": 1,
+            "comentario": "Quem entrega, entrega algo (objeto direto: o relatório) a alguém (objeto indireto, com preposição: ao presidente)."
+        },
+        {
+            "id": 20130,
+            "enunciado": "Em \"O plenário ficou lotado\", a palavra \"lotado\" exerce a função de:",
+            "opcoes": [
+                "A) predicativo do sujeito",
+                "B) objeto direto",
+                "C) adjunto adverbial",
+                "D) aposto",
+                "E) agente da passiva"
+            ],
+            "correta": 0,
+            "comentario": "\"Ficar\" é verbo de ligação, e \"lotado\" atribui uma característica ao sujeito \"o plenário\": é predicativo do sujeito."
+        },
+        {
+            "id": 20131,
+            "enunciado": "Na frase \"O projeto foi aprovado pela comissão\", o termo \"pela comissão\" é:",
+            "opcoes": [
+                "A) objeto indireto",
+                "B) complemento nominal",
+                "C) adjunto adnominal",
+                "D) agente da passiva",
+                "E) sujeito"
+            ],
+            "correta": 3,
+            "comentario": "Em voz passiva analítica, quem pratica a ação é o agente da passiva, geralmente introduzido por \"por\" (pela) ou \"de\"."
+        },
+        {
+            "id": 20132,
+            "enunciado": "Em \"A obediência às normas é obrigatória\", o termo \"às normas\" é:",
+            "opcoes": [
+                "A) predicativo",
+                "B) complemento nominal",
+                "C) agente da passiva",
+                "D) objeto indireto",
+                "E) adjunto adnominal"
+            ],
+            "correta": 1,
+            "comentario": "\"Obediência\" é substantivo que exige complemento (obediência a algo). O termo preposicionado que completa um nome é complemento nominal."
+        },
+        {
+            "id": 20133,
+            "enunciado": "Em \"Os vereadores votaram ontem no plenário\", os termos \"ontem\" e \"no plenário\" são:",
+            "opcoes": [
+                "A) adjuntos adverbiais de tempo e de lugar",
+                "B) predicativos do sujeito",
+                "C) complementos nominais",
+                "D) objetos indiretos",
+                "E) apostos"
+            ],
+            "correta": 0,
+            "comentario": "Esses termos indicam as circunstâncias da ação: quando (ontem) e onde (no plenário). São adjuntos adverbiais."
+        },
+        {
+            "id": 20134,
+            "enunciado": "Na frase \"É importante que todos compareçam à audiência\", a oração \"que todos compareçam à audiência\" é:",
+            "opcoes": [
+                "A) subordinada adjetiva restritiva",
+                "B) coordenada explicativa",
+                "C) subordinada adverbial causal",
+                "D) subordinada substantiva subjetiva",
+                "E) subordinada substantiva objetiva direta"
+            ],
+            "correta": 3,
+            "comentario": "A oração funciona como sujeito de \"é importante\" (isso é importante). Por isso é substantiva subjetiva."
+        },
+        {
+            "id": 20135,
+            "enunciado": "Em \"O presidente informou que a sessão seria suspensa\", a oração destacada exerce função de:",
+            "opcoes": [
+                "A) aposto do sujeito",
+                "B) predicativo do objeto",
+                "C) objeto direto do verbo \"informou\"",
+                "D) sujeito do verbo \"informou\"",
+                "E) adjunto adverbial de tempo"
+            ],
+            "correta": 2,
+            "comentario": "Informou o quê? \"Que a sessão seria suspensa\". A oração completa o verbo como objeto direto: subordinada substantiva objetiva direta."
+        },
+        {
+            "id": 20136,
+            "enunciado": "Na frase \"Quando o presidente chegou, a sessão começou\", a oração \"Quando o presidente chegou\" é:",
+            "opcoes": [
+                "A) subordinada adverbial temporal",
+                "B) subordinada adjetiva explicativa",
+                "C) coordenada aditiva",
+                "D) subordinada substantiva subjetiva",
+                "E) subordinada adverbial causal"
+            ],
+            "correta": 0,
+            "comentario": "A oração indica o momento em que ocorreu a ação principal, introduzida pela conjunção temporal \"quando\"."
+        },
+        {
+            "id": 20137,
+            "enunciado": "Em \"O servidor estudou, mas não conseguiu a vaga\", as orações são:",
+            "opcoes": [
+                "A) coordenadas, sendo a segunda conclusiva",
+                "B) coordenadas, sendo a segunda adversativa",
+                "C) subordinadas substantivas",
+                "D) coordenadas assindéticas aditivas",
+                "E) subordinadas adverbiais concessivas"
+            ],
+            "correta": 1,
+            "comentario": "As orações são independentes sintaticamente (coordenadas). A segunda, iniciada por \"mas\", expressa oposição: coordenada sindética adversativa."
+        },
+        {
+            "id": 20138,
+            "enunciado": "Na frase \"Os vereadores debateram, votaram, aprovaram o projeto\", as orações estão ligadas:",
+            "opcoes": [
+                "A) por pronomes relativos",
+                "B) por conjunções subordinativas",
+                "C) por preposições",
+                "D) por conjunções adversativas",
+                "E) sem conectivos, sendo coordenadas assindéticas"
+            ],
+            "correta": 4,
+            "comentario": "As orações estão justapostas, separadas apenas por vírgulas, sem conjunção: são coordenadas assindéticas."
+        },
+        {
+            "id": 20139,
+            "enunciado": "Em \"Terminada a sessão, os vereadores saíram\", a oração \"Terminada a sessão\" é:",
+            "opcoes": [
+                "A) adjetiva explicativa desenvolvida",
+                "B) reduzida de infinitivo com valor final",
+                "C) coordenada aditiva",
+                "D) substantiva objetiva direta",
+                "E) reduzida de particípio com valor temporal"
+            ],
+            "correta": 4,
+            "comentario": "A oração tem verbo no particípio e não tem conectivo, equivalendo a \"Quando a sessão terminou\". É reduzida de particípio, com valor temporal."
+        },
+        {
+            "id": 20140,
+            "enunciado": "A palavra \"infelizmente\" é formada pelo processo de:",
+            "opcoes": [
+                "A) derivação prefixal e sufixal",
+                "B) derivação regressiva",
+                "C) composição por justaposição",
+                "D) composição por aglutinação",
+                "E) derivação imprópria"
+            ],
+            "correta": 0,
+            "comentario": "Infelizmente = in (prefixo) + feliz + mente (sufixo). Como a palavra também existe só com o sufixo (\"felizmente\") e só com o prefixo (\"infeliz\"), trata-se de derivação prefixal e sufixal."
+        },
+        {
+            "id": 20141,
+            "enunciado": "O substantivo \"a votação\" e o substantivo \"o debate\" (de \"debater\") são formados, respectivamente, por:",
+            "opcoes": [
+                "A) derivação sufixal e derivação regressiva",
+                "B) composição e derivação prefixal",
+                "C) derivação regressiva e derivação sufixal",
+                "D) derivação imprópria e composição",
+                "E) aglutinação e justaposição"
+            ],
+            "correta": 0,
+            "comentario": "\"Votação\" = votar + sufixo -ção (derivação sufixal). \"Debate\" vem de \"debater\" pela redução do verbo (derivação regressiva), como \"a ajuda\" (de ajudar)."
+        },
+        {
+            "id": 20142,
+            "enunciado": "A palavra \"planalto\" (plano + alto) é formada por:",
+            "opcoes": [
+                "A) composição por justaposição",
+                "B) derivação prefixal",
+                "C) derivação sufixal",
+                "D) composição por aglutinação",
+                "E) derivação parassintética"
+            ],
+            "correta": 3,
+            "comentario": "Na aglutinação, as palavras se unem e pelo menos uma perde elementos sonoros (plano + alto → planalto)."
+        },
+        {
+            "id": 20143,
+            "enunciado": "Em \"O não do presidente surpreendeu a todos\", a palavra \"não\" passou a funcionar como substantivo. Esse processo chama-se:",
+            "opcoes": [
+                "A) derivação imprópria",
+                "B) hibridismo",
+                "C) abreviação",
+                "D) composição por justaposição",
+                "E) derivação prefixal"
+            ],
+            "correta": 0,
+            "comentario": "A derivação imprópria muda a classe gramatical da palavra sem alterar sua forma: o advérbio \"não\", precedido de artigo, vira substantivo."
+        },
+        {
+            "id": 20144,
+            "enunciado": "Assinale a alternativa em que o termo destacado é adjunto adnominal:",
+            "opcoes": [
+                "A) O relator falou DO PARECER durante a sessão.",
+                "B) O relator gosta DE PARECERES curtos.",
+                "C) O relator precisa DE TEMPO para concluir.",
+                "D) O parecer DO RELATOR foi lido em plenário.",
+                "E) A leitura DO PARECER foi feita pelo relator."
+            ],
+            "correta": 3,
+            "comentario": "\"Do relator\" indica posse e é agente em relação a \"parecer\" (o relator fez o parecer): adjunto adnominal. \"Da leitura do parecer\" é complemento nominal (o parecer é lido). \"Falou do parecer\", \"gosta de\" e \"precisa de\" são objetos indiretos."
+        },
+        {
+            "id": 20145,
+            "enunciado": "Na frase \"Os servidores elegeram Maria presidente da comissão\", o termo \"presidente da comissão\" é:",
+            "opcoes": [
+                "A) objeto indireto",
+                "B) aposto explicativo",
+                "C) predicativo do sujeito",
+                "D) predicativo do objeto",
+                "E) adjunto adverbial"
+            ],
+            "correta": 3,
+            "comentario": "\"Presidente da comissão\" atribui uma qualidade ao objeto direto \"Maria\". É predicativo do objeto."
+        },
+        {
+            "id": 20146,
+            "enunciado": "Em \"A Câmara precisa de mais servidores\", o verbo \"precisar\" é:",
+            "opcoes": [
+                "A) transitivo direto",
+                "B) transitivo indireto",
+                "C) de ligação",
+                "D) transitivo direto e indireto",
+                "E) intransitivo"
+            ],
+            "correta": 1,
+            "comentario": "Quem precisa, precisa DE algo: o verbo exige complemento com preposição, sendo transitivo indireto."
+        },
+        {
+            "id": 20147,
+            "enunciado": "Na frase \"O prefeito morreu\", o verbo é classificado como:",
+            "opcoes": [
+                "A) transitivo indireto",
+                "B) intransitivo",
+                "C) transitivo direto",
+                "D) de ligação",
+                "E) bitransitivo"
+            ],
+            "correta": 1,
+            "comentario": "\"Morrer\" tem sentido completo e não precisa de complemento: é verbo intransitivo."
+        },
+        {
+            "id": 20148,
+            "enunciado": "Assinale a alternativa em que há oração subordinada adverbial CONFORMATIVA:",
+            "opcoes": [
+                "A) À medida que o regimento muda, a ata muda.",
+                "B) Embora o regimento determine, a ata não foi lida.",
+                "C) Se o regimento determinar, a ata será lida.",
+                "D) Conforme determina o regimento, a ata será lida no início da sessão.",
+                "E) Porque o regimento determina, a ata foi lida."
+            ],
+            "correta": 3,
+            "comentario": "A oração conformativa indica conformidade, acordo, com conectivos como \"conforme\", \"segundo\" e \"consoante\"."
+        },
+        {
+            "id": 20149,
+            "enunciado": "Na frase \"A proposta que o vereador apresentou foi arquivada\", a oração \"que o vereador apresentou\" é:",
+            "opcoes": [
+                "A) subordinada adjetiva restritiva",
+                "B) coordenada explicativa",
+                "C) subordinada substantiva objetiva direta",
+                "D) subordinada adjetiva explicativa",
+                "E) subordinada adverbial final"
+            ],
+            "correta": 0,
+            "comentario": "A oração, sem vírgulas, especifica de qual proposta se fala. Introduzida pelo pronome relativo \"que\", é adjetiva restritiva."
+        },
+        {
+            "id": 20150,
+            "enunciado": "O plural correto de \"cidadão\" e \"guarda-civil\" é:",
+            "opcoes": [
+                "A) cidadões e guarda-civis",
+                "B) cidadãos e guardas-civis",
+                "C) cidadões e guardas-civis",
+                "D) cidadães e guardas-civil",
+                "E) cidadãos e guarda-civis"
+            ],
+            "correta": 1,
+            "comentario": "\"Cidadão\" faz o plural em \"cidadãos\". Em \"guarda-civil\", substantivo + adjetivo, os dois elementos vão para o plural: \"guardas-civis\"."
         }
     ],
     "Raciocínio Lógico": [
@@ -1887,6 +3840,2816 @@ window.bancoDeQuestoes = {
             ],
             "correta": 2,
             "comentario": "Razão direta: dobrando o número de datilógrafos (de 5 para 10) e dobrando o número de relatórios (de 5 para 10), o tempo necessário permanece exatamente o mesmo (5 minutos)."
+        },
+        {
+            "id": 21001,
+            "enunciado": "A negação da proposição \"O servidor é pontual e o relatório está pronto\" é:",
+            "opcoes": [
+                "A) Se o servidor é pontual, então o relatório está pronto.",
+                "B) O servidor não é pontual e o relatório não está pronto.",
+                "C) O servidor é pontual ou o relatório está pronto.",
+                "D) O servidor não é pontual e o relatório está pronto.",
+                "E) O servidor não é pontual ou o relatório não está pronto."
+            ],
+            "correta": 4,
+            "comentario": "Pela Lei de De Morgan, a negação de \"p e q\" é \"não p ou não q\"."
+        },
+        {
+            "id": 21002,
+            "enunciado": "A negação de \"A sessão foi adiada ou o presidente faltou\" é:",
+            "opcoes": [
+                "A) A sessão não foi adiada e o presidente não faltou.",
+                "B) A sessão foi adiada ou o presidente não faltou.",
+                "C) Se a sessão não foi adiada, o presidente faltou.",
+                "D) A sessão foi adiada e o presidente faltou.",
+                "E) A sessão não foi adiada ou o presidente não faltou."
+            ],
+            "correta": 0,
+            "comentario": "Pela Lei de De Morgan, a negação de \"p ou q\" é \"não p e não q\"."
+        },
+        {
+            "id": 21003,
+            "enunciado": "A negação de \"Se chover, a audiência será cancelada\" é:",
+            "opcoes": [
+                "A) Chove e a audiência não é cancelada.",
+                "B) Se a audiência for cancelada, então choveu.",
+                "C) Não chove e a audiência é cancelada.",
+                "D) Se não chover, a audiência não será cancelada.",
+                "E) Não chove ou a audiência não é cancelada."
+            ],
+            "correta": 0,
+            "comentario": "A condicional \"se p, então q\" só é falsa quando p é verdadeira e q é falsa. Por isso sua negação é \"p e não q\"."
+        },
+        {
+            "id": 21004,
+            "enunciado": "Uma proposição equivalente a \"Se o servidor estuda, então ele é aprovado\" é:",
+            "opcoes": [
+                "A) Se o servidor é aprovado, então ele estuda.",
+                "B) Se o servidor não estuda, então ele não é aprovado.",
+                "C) Se o servidor não é aprovado, então ele não estuda.",
+                "D) O servidor estuda ou não é aprovado.",
+                "E) O servidor estuda e não é aprovado."
+            ],
+            "correta": 2,
+            "comentario": "A contrapositiva \"se não q, então não p\" é equivalente a \"se p, então q\". As recíprocas e inversas não são equivalentes."
+        },
+        {
+            "id": 21005,
+            "enunciado": "A proposição \"Se o projeto é aprovado, então a lei entra em vigor\" é equivalente a:",
+            "opcoes": [
+                "A) O projeto não é aprovado e a lei não entra em vigor.",
+                "B) O projeto não é aprovado ou a lei entra em vigor.",
+                "C) O projeto é aprovado ou a lei não entra em vigor.",
+                "D) O projeto é aprovado e a lei entra em vigor.",
+                "E) Se a lei entra em vigor, o projeto é aprovado."
+            ],
+            "correta": 1,
+            "comentario": "\"Se p, então q\" equivale a \"não p ou q\"."
+        },
+        {
+            "id": 21006,
+            "enunciado": "A negação de \"Todos os servidores participaram da capacitação\" é:",
+            "opcoes": [
+                "A) Somente um servidor participou da capacitação.",
+                "B) Pelo menos um servidor não participou da capacitação.",
+                "C) Todos os servidores não participaram da capacitação.",
+                "D) Alguns servidores participaram da capacitação.",
+                "E) Nenhum servidor participou da capacitação."
+            ],
+            "correta": 1,
+            "comentario": "Para negar \"todos são\", basta mostrar que existe ao menos um que não é: \"algum não é\" ou \"pelo menos um não é\"."
+        },
+        {
+            "id": 21007,
+            "enunciado": "A negação de \"Nenhum vereador faltou à sessão\" é:",
+            "opcoes": [
+                "A) Algum vereador faltou à sessão.",
+                "B) Algum vereador não faltou à sessão.",
+                "C) Todos os vereadores faltaram à sessão.",
+                "D) Nenhum vereador compareceu à sessão.",
+                "E) Todos os vereadores compareceram à sessão."
+            ],
+            "correta": 0,
+            "comentario": "A negação de \"nenhum é\" é \"algum é\" (pelo menos um é)."
+        },
+        {
+            "id": 21008,
+            "enunciado": "Sabe-se que a proposição \"p ou q\" é falsa. Então, necessariamente:",
+            "opcoes": [
+                "A) p e q são ambas falsas",
+                "B) p é falsa e q é verdadeira",
+                "C) p é verdadeira e q é falsa",
+                "D) p e q são ambas verdadeiras",
+                "E) não é possível saber o valor de p"
+            ],
+            "correta": 0,
+            "comentario": "A disjunção \"ou\" só é falsa quando as duas proposições são falsas."
+        },
+        {
+            "id": 21009,
+            "enunciado": "Considere p: \"O ofício foi enviado\" (verdadeira) e q: \"O ofício foi respondido\" (falsa). É VERDADEIRA a proposição:",
+            "opcoes": [
+                "A) p e q",
+                "B) p se e somente se q",
+                "C) não p",
+                "D) se p, então q",
+                "E) p ou q"
+            ],
+            "correta": 4,
+            "comentario": "Com p verdadeira e q falsa: \"p ou q\" é verdadeira; \"p e q\" é falsa; \"se p então q\" é falsa (V → F); a bicondicional é falsa (valores diferentes); \"não p\" é falsa."
+        },
+        {
+            "id": 21010,
+            "enunciado": "A condicional \"Se 2 + 2 = 5, então Rio Branco é a capital do Acre\" é:",
+            "opcoes": [
+                "A) uma sentença aberta, sem valor lógico",
+                "B) verdadeira apenas se o consequente for falso",
+                "C) verdadeira, pois o antecedente é falso",
+                "D) falsa, pois as duas partes não têm relação",
+                "E) falsa, pois 2 + 2 não é 5"
+            ],
+            "correta": 2,
+            "comentario": "A condicional só é falsa quando o antecedente é verdadeiro e o consequente é falso. Com antecedente falso, ela é sempre verdadeira."
+        },
+        {
+            "id": 21011,
+            "enunciado": "Considere as premissas: \"Se o servidor é estável, ele foi aprovado em concurso\" e \"João não foi aprovado em concurso\". Conclui-se que:",
+            "opcoes": [
+                "A) nada se pode concluir",
+                "B) João é servidor comissionado",
+                "C) João não é estável",
+                "D) João foi aprovado em concurso",
+                "E) João é estável"
+            ],
+            "correta": 2,
+            "comentario": "Se p → q e não q, então não p (modus tollens). João não foi aprovado, logo não é estável."
+        },
+        {
+            "id": 21012,
+            "enunciado": "Premissas: \"Se há quórum, a votação ocorre\" e \"Há quórum\". Conclui-se, de forma válida, que:",
+            "opcoes": [
+                "A) a votação não ocorre",
+                "B) a sessão é cancelada",
+                "C) nada se pode concluir",
+                "D) não há quórum",
+                "E) a votação ocorre"
+            ],
+            "correta": 4,
+            "comentario": "Pela regra do modus ponens: se p → q e p é verdadeira, então q é verdadeira."
+        },
+        {
+            "id": 21013,
+            "enunciado": "Premissas: \"Se o relatório está pronto, a reunião ocorre\" e \"A reunião ocorreu\". Assinale a conclusão correta:",
+            "opcoes": [
+                "A) A reunião não ocorreu.",
+                "B) Não é possível concluir, com certeza, se o relatório está pronto.",
+                "C) A reunião ocorreria de qualquer jeito.",
+                "D) O relatório não está pronto.",
+                "E) O relatório está pronto."
+            ],
+            "correta": 1,
+            "comentario": "Afirmar o consequente não garante o antecedente: a reunião pode ter ocorrido por outro motivo. Concluir que o relatório está pronto é uma falácia."
+        },
+        {
+            "id": 21014,
+            "enunciado": "Premissas: \"Todo analista legislativo é servidor público\" e \"Todo servidor público deve obedecer ao princípio da legalidade\". Conclui-se que:",
+            "opcoes": [
+                "A) todo analista legislativo deve obedecer ao princípio da legalidade",
+                "B) quem obedece à legalidade é analista",
+                "C) todo servidor público é analista legislativo",
+                "D) alguns analistas não são servidores públicos",
+                "E) nenhum servidor público é analista"
+            ],
+            "correta": 0,
+            "comentario": "Pela transitividade dos conjuntos: analistas ⊂ servidores ⊂ obrigados à legalidade. Logo, todo analista deve obedecer à legalidade."
+        },
+        {
+            "id": 21015,
+            "enunciado": "Premissas: \"Todos os agentes do setor fizeram o curso\" e \"Carlos fez o curso\". Pode-se concluir que:",
+            "opcoes": [
+                "A) Carlos é agente do setor",
+                "B) todos os que fizeram o curso são agentes",
+                "C) nenhum agente fez o curso",
+                "D) não é possível afirmar que Carlos é agente do setor",
+                "E) Carlos não é agente do setor"
+            ],
+            "correta": 3,
+            "comentario": "O conjunto dos que fizeram o curso pode ser maior que o dos agentes. Carlos pode estar nele sem ser agente."
+        },
+        {
+            "id": 21016,
+            "enunciado": "Uma tautologia é uma proposição composta que:",
+            "opcoes": [
+                "A) é verdadeira em apenas um caso",
+                "B) é sempre verdadeira, quaisquer que sejam os valores das proposições simples",
+                "C) não tem valor lógico definido",
+                "D) é sempre falsa",
+                "E) é verdadeira somente quando todas as simples são verdadeiras"
+            ],
+            "correta": 1,
+            "comentario": "Exemplo de tautologia: \"p ou não p\". A contradição é sempre falsa (\"p e não p\")."
+        },
+        {
+            "id": 21017,
+            "enunciado": "Assinale a alternativa que apresenta uma CONTRADIÇÃO (proposição sempre falsa):",
+            "opcoes": [
+                "A) Se a sessão foi realizada, então a sessão foi realizada.",
+                "B) A sessão foi realizada ou adiada.",
+                "C) A sessão foi realizada.",
+                "D) A sessão foi realizada ou a sessão não foi realizada.",
+                "E) A sessão foi realizada e a sessão não foi realizada."
+            ],
+            "correta": 4,
+            "comentario": "\"p e não p\" é sempre falsa, pois p e sua negação nunca são verdadeiras ao mesmo tempo."
+        },
+        {
+            "id": 21018,
+            "enunciado": "A bicondicional \"A lei é aprovada se e somente se tem maioria dos votos\" é verdadeira quando:",
+            "opcoes": [
+                "A) as duas têm valores diferentes",
+                "B) as duas proposições têm o mesmo valor lógico",
+                "C) apenas a primeira é verdadeira",
+                "D) a primeira é falsa e a segunda é verdadeira",
+                "E) apenas a segunda é verdadeira"
+            ],
+            "correta": 1,
+            "comentario": "A bicondicional é verdadeira quando ambas são verdadeiras ou ambas são falsas."
+        },
+        {
+            "id": 21019,
+            "enunciado": "Quantas linhas tem a tabela-verdade de uma proposição composta formada por 3 proposições simples distintas?",
+            "opcoes": [
+                "A) 16",
+                "B) 9",
+                "C) 6",
+                "D) 3",
+                "E) 8"
+            ],
+            "correta": 4,
+            "comentario": "O número de linhas é 2 elevado ao número de proposições simples: 2³ = 8."
+        },
+        {
+            "id": 21020,
+            "enunciado": "Qual das frases a seguir é uma PROPOSIÇÃO lógica (tem valor verdadeiro ou falso)?",
+            "opcoes": [
+                "A) Que belo plenário!",
+                "B) Rio Branco é a capital do Acre.",
+                "C) Que horas começa a sessão?",
+                "D) x + 3 = 10",
+                "E) Entregue o ofício hoje."
+            ],
+            "correta": 1,
+            "comentario": "Proposição é uma sentença declarativa à qual se pode atribuir verdadeiro ou falso. Perguntas, ordens e exclamações não são proposições; \"x + 3 = 10\" é sentença aberta, pois depende de x."
+        },
+        {
+            "id": 21021,
+            "enunciado": "Em um setor com 40 servidores, 25 fizeram curso de Excel, 18 fizeram curso de redação oficial e 8 fizeram os dois. Quantos servidores não fizeram nenhum dos dois cursos?",
+            "opcoes": [
+                "A) 7",
+                "B) 8",
+                "C) 3",
+                "D) 5",
+                "E) 13"
+            ],
+            "correta": 3,
+            "comentario": "Fizeram ao menos um curso: 25 + 18 − 8 = 35. Não fizeram nenhum: 40 − 35 = 5."
+        },
+        {
+            "id": 21022,
+            "enunciado": "Qual é o próximo termo da sequência 2, 6, 18, 54, ...?",
+            "opcoes": [
+                "A) 108",
+                "B) 216",
+                "C) 162",
+                "D) 72",
+                "E) 148"
+            ],
+            "correta": 2,
+            "comentario": "Cada termo é o anterior multiplicado por 3: 54 × 3 = 162."
+        },
+        {
+            "id": 21023,
+            "enunciado": "Na sequência 3, 7, 15, 31, ..., o próximo termo é:",
+            "opcoes": [
+                "A) 47",
+                "B) 64",
+                "C) 63",
+                "D) 62",
+                "E) 59"
+            ],
+            "correta": 2,
+            "comentario": "Cada termo é o dobro do anterior mais 1: 31 × 2 + 1 = 63."
+        },
+        {
+            "id": 21024,
+            "enunciado": "Considere a sequência 5, 8, 13, 20, 29, ... O próximo termo é:",
+            "opcoes": [
+                "A) 38",
+                "B) 42",
+                "C) 41",
+                "D) 40",
+                "E) 36"
+            ],
+            "correta": 3,
+            "comentario": "As diferenças entre os termos são 3, 5, 7 e 9, aumentando de 2 em 2. A próxima diferença é 11: 29 + 11 = 40."
+        },
+        {
+            "id": 21025,
+            "enunciado": "Na sequência de letras A, C, F, J, O, ..., considerando o alfabeto de 26 letras, a próxima letra é:",
+            "opcoes": [
+                "A) X",
+                "B) U",
+                "C) V",
+                "D) S",
+                "E) T"
+            ],
+            "correta": 1,
+            "comentario": "As posições são 1, 3, 6, 10, 15, com saltos de 2, 3, 4, 5. O próximo salto é 6: posição 21, que é a letra U."
+        },
+        {
+            "id": 21026,
+            "enunciado": "Hoje é terça-feira. Que dia da semana será daqui a 45 dias?",
+            "opcoes": [
+                "A) Quinta-feira",
+                "B) Quarta-feira",
+                "C) Sábado",
+                "D) Domingo",
+                "E) Sexta-feira"
+            ],
+            "correta": 4,
+            "comentario": "45 dias = 6 semanas completas (42 dias) + 3 dias. Três dias depois de terça-feira é sexta-feira."
+        },
+        {
+            "id": 21027,
+            "enunciado": "Três servidores digitalizam 120 documentos em 4 horas. Mantido o mesmo ritmo, quantos documentos 5 servidores digitalizam em 6 horas?",
+            "opcoes": [
+                "A) 300",
+                "B) 250",
+                "C) 360",
+                "D) 180",
+                "E) 200"
+            ],
+            "correta": 0,
+            "comentario": "Cada servidor digitaliza 120 ÷ (3 × 4) = 10 documentos por hora. Então 5 servidores em 6 horas fazem 5 × 6 × 10 = 300."
+        },
+        {
+            "id": 21028,
+            "enunciado": "Seis impressoras iguais imprimem um lote de convites em 10 minutos. Quantos minutos 4 dessas impressoras levariam para imprimir o mesmo lote?",
+            "opcoes": [
+                "A) 15",
+                "B) 20",
+                "C) 6,7",
+                "D) 24",
+                "E) 12"
+            ],
+            "correta": 0,
+            "comentario": "Menos impressoras levam mais tempo (proporção inversa): 6 × 10 = 4 × t, então t = 60 ÷ 4 = 15 minutos."
+        },
+        {
+            "id": 21029,
+            "enunciado": "Considere: \"Todos os vereadores são eleitores\" e \"Alguns eleitores são servidores públicos\". Com base apenas nessas afirmações, é correto concluir que:",
+            "opcoes": [
+                "A) nenhum vereador é servidor público",
+                "B) todo eleitor é vereador",
+                "C) algum vereador é servidor público",
+                "D) todo servidor público é eleitor",
+                "E) não se pode garantir que algum vereador seja servidor público"
+            ],
+            "correta": 4,
+            "comentario": "Os servidores que são eleitores podem estar fora do grupo dos vereadores. Nenhuma relação entre vereadores e servidores pode ser garantida."
+        },
+        {
+            "id": 21030,
+            "enunciado": "De 30 processos, 12 são urgentes e 14 tratam de licitação. Sabe-se que 5 processos são urgentes e de licitação. Quantos processos não são urgentes nem de licitação?",
+            "opcoes": [
+                "A) 11",
+                "B) 16",
+                "C) 21",
+                "D) 4",
+                "E) 9"
+            ],
+            "correta": 4,
+            "comentario": "São urgentes ou de licitação: 12 + 14 − 5 = 21. Os demais são 30 − 21 = 9."
+        },
+        {
+            "id": 21031,
+            "enunciado": "Ana tem o dobro da idade de Beto. Daqui a 10 anos, a soma das idades dos dois será 62 anos. Qual é a idade atual de Ana?",
+            "opcoes": [
+                "A) 38 anos",
+                "B) 24 anos",
+                "C) 31 anos",
+                "D) 28 anos",
+                "E) 14 anos"
+            ],
+            "correta": 3,
+            "comentario": "Com A = 2B: (2B + 10) + (B + 10) = 62, logo 3B = 42 e B = 14. Ana tem 2 × 14 = 28 anos."
+        },
+        {
+            "id": 21032,
+            "enunciado": "Um valor de R$ 3.000,00 teve aumento de 10% e, em seguida, desconto de 10% sobre o novo valor. O valor final é:",
+            "opcoes": [
+                "A) R$ 2.700,00",
+                "B) R$ 2.900,00",
+                "C) R$ 2.970,00",
+                "D) R$ 3.030,00",
+                "E) R$ 3.000,00"
+            ],
+            "correta": 2,
+            "comentario": "Após o aumento: 3.000 × 1,1 = 3.300. Após o desconto: 3.300 × 0,9 = 2.970. Aumentos e descontos de mesmo percentual não se anulam."
+        },
+        {
+            "id": 21033,
+            "enunciado": "Ana, Bruno e Carla trabalham, cada um, em um setor diferente: Protocolo, Arquivo e Finanças. Ana não trabalha no Arquivo nem em Finanças. Bruno não trabalha em Finanças. Bruno trabalha no:",
+            "opcoes": [
+                "A) Arquivo",
+                "B) não é possível determinar",
+                "C) Protocolo ou Finanças",
+                "D) Finanças",
+                "E) Protocolo"
+            ],
+            "correta": 0,
+            "comentario": "Ana só pode estar no Protocolo. Bruno não está em Finanças nem no Protocolo (ocupado), então está no Arquivo. Carla fica em Finanças."
+        },
+        {
+            "id": 21034,
+            "enunciado": "Ana diz: \"Bruno mente\". Bruno diz: \"Carla mente\". Carla diz: \"Ana e Bruno mentem\". Sabendo que cada um sempre mente ou sempre diz a verdade, quem diz a verdade?",
+            "opcoes": [
+                "A) Somente Ana",
+                "B) Ana e Carla",
+                "C) Somente Carla",
+                "D) Todos",
+                "E) Somente Bruno"
+            ],
+            "correta": 4,
+            "comentario": "Se Carla dissesse a verdade, Ana mentiria, logo Bruno diria a verdade, o que contradiz Carla. Então Carla mente, e Bruno (\"Carla mente\") diz a verdade. Assim, Ana mente."
+        },
+        {
+            "id": 21035,
+            "enunciado": "Em uma fila de atendimento, Pedro é o 8º contando da frente para trás e o 12º contando de trás para a frente. Quantas pessoas há na fila?",
+            "opcoes": [
+                "A) 21",
+                "B) 19",
+                "C) 20",
+                "D) 17",
+                "E) 18"
+            ],
+            "correta": 1,
+            "comentario": "Pedro foi contado nas duas contagens: 8 + 12 − 1 = 19 pessoas."
+        },
+        {
+            "id": 21036,
+            "enunciado": "Para numerar as páginas de um relatório da página 1 até a página 120, quantos algarismos são utilizados?",
+            "opcoes": [
+                "A) 240",
+                "B) 231",
+                "C) 252",
+                "D) 360",
+                "E) 273"
+            ],
+            "correta": 2,
+            "comentario": "Páginas 1 a 9: 9 algarismos. Páginas 10 a 99: 90 × 2 = 180. Páginas 100 a 120: 21 × 3 = 63. Total: 9 + 180 + 63 = 252."
+        },
+        {
+            "id": 21037,
+            "enunciado": "Se 1º de março de certo ano foi um domingo, então 1º de abril do mesmo ano foi (março tem 31 dias):",
+            "opcoes": [
+                "A) terça-feira",
+                "B) domingo",
+                "C) quinta-feira",
+                "D) sábado",
+                "E) quarta-feira"
+            ],
+            "correta": 4,
+            "comentario": "De 1º de março a 1º de abril passam 31 dias = 4 semanas + 3 dias. Três dias depois de domingo é quarta-feira."
+        },
+        {
+            "id": 21038,
+            "enunciado": "Qual é o próximo termo da sequência 1, 1, 2, 3, 5, 8, ...?",
+            "opcoes": [
+                "A) 11",
+                "B) 13",
+                "C) 16",
+                "D) 12",
+                "E) 14"
+            ],
+            "correta": 1,
+            "comentario": "Cada termo é a soma dos dois anteriores (sequência de Fibonacci): 5 + 8 = 13."
+        },
+        {
+            "id": 21039,
+            "enunciado": "Na sequência 1, 4, 9, 16, 25, ..., o próximo termo é:",
+            "opcoes": [
+                "A) 49",
+                "B) 34",
+                "C) 35",
+                "D) 36",
+                "E) 30"
+            ],
+            "correta": 3,
+            "comentario": "Os termos são os quadrados perfeitos: 1², 2², 3², 4², 5². O próximo é 6² = 36."
+        },
+        {
+            "id": 21040,
+            "enunciado": "Em uma comissão, todo membro titular é vereador, e nenhum vereador é servidor efetivo da Câmara. Logo:",
+            "opcoes": [
+                "A) algum membro titular é servidor efetivo",
+                "B) todo vereador é membro titular",
+                "C) algum servidor efetivo é vereador",
+                "D) nenhum membro titular é servidor efetivo da Câmara",
+                "E) todo servidor efetivo é membro titular"
+            ],
+            "correta": 3,
+            "comentario": "Os titulares estão dentro do conjunto dos vereadores, que não tem interseção com o dos servidores efetivos. Assim, nenhum titular é servidor efetivo."
+        },
+        {
+            "id": 21041,
+            "enunciado": "Em uma audiência pública com 25 pessoas, a razão entre homens e mulheres é de 3 para 2. Quantas mulheres participaram?",
+            "opcoes": [
+                "A) 5",
+                "B) 12",
+                "C) 8",
+                "D) 15",
+                "E) 10"
+            ],
+            "correta": 4,
+            "comentario": "A cada 5 pessoas, 2 são mulheres. Como 25 = 5 × 5, há 2 × 5 = 10 mulheres."
+        },
+        {
+            "id": 21042,
+            "enunciado": "Oito servidores concluem o inventário do arquivo em 15 dias. Com 12 servidores, no mesmo ritmo, o trabalho levaria:",
+            "opcoes": [
+                "A) 10 dias",
+                "B) 8 dias",
+                "C) 22,5 dias",
+                "D) 12 dias",
+                "E) 18 dias"
+            ],
+            "correta": 0,
+            "comentario": "Mais servidores, menos dias (proporção inversa): 8 × 15 = 12 × d, então d = 120 ÷ 12 = 10 dias."
+        },
+        {
+            "id": 21043,
+            "enunciado": "Um candidato tirou 6, 8 e 7 em três simulados. Que nota ele precisa no quarto simulado para que a média dos quatro seja 7,5?",
+            "opcoes": [
+                "A) 8,5",
+                "B) 10",
+                "C) 9",
+                "D) 9,5",
+                "E) 8"
+            ],
+            "correta": 2,
+            "comentario": "A soma necessária é 7,5 × 4 = 30. Já tem 6 + 8 + 7 = 21. Falta 30 − 21 = 9."
+        },
+        {
+            "id": 21044,
+            "enunciado": "Dos 240 processos de um setor, 25% foram arquivados. Quantos processos foram arquivados?",
+            "opcoes": [
+                "A) 96",
+                "B) 180",
+                "C) 60",
+                "D) 25",
+                "E) 48"
+            ],
+            "correta": 2,
+            "comentario": "25% de 240 = 240 ÷ 4 = 60."
+        },
+        {
+            "id": 21045,
+            "enunciado": "Um material de escritório custa R$ 80,00 e terá desconto de 15%. O preço com desconto será:",
+            "opcoes": [
+                "A) R$ 72,00",
+                "B) R$ 12,00",
+                "C) R$ 92,00",
+                "D) R$ 65,00",
+                "E) R$ 68,00"
+            ],
+            "correta": 4,
+            "comentario": "O desconto é 15% de 80 = 12. O preço final é 80 − 12 = 68."
+        },
+        {
+            "id": 21046,
+            "enunciado": "Um servidor tem 4 camisas e 3 calças para usar no trabalho. De quantas maneiras diferentes ele pode combinar uma camisa com uma calça?",
+            "opcoes": [
+                "A) 7",
+                "B) 24",
+                "C) 10",
+                "D) 12",
+                "E) 64"
+            ],
+            "correta": 3,
+            "comentario": "Pelo princípio multiplicativo: 4 × 3 = 12 combinações."
+        },
+        {
+            "id": 21047,
+            "enunciado": "De quantas maneiras é possível formar uma comissão de 3 membros escolhidos entre 5 vereadores, sem diferenciar funções?",
+            "opcoes": [
+                "A) 10",
+                "B) 15",
+                "C) 125",
+                "D) 60",
+                "E) 20"
+            ],
+            "correta": 0,
+            "comentario": "Como a ordem não importa, é uma combinação: C(5,3) = (5 × 4 × 3) ÷ (3 × 2 × 1) = 10."
+        },
+        {
+            "id": 21048,
+            "enunciado": "Uma senha de acesso é formada por 3 algarismos distintos, escolhidos de 0 a 9. Quantas senhas diferentes podem ser formadas?",
+            "opcoes": [
+                "A) 504",
+                "B) 120",
+                "C) 1.000",
+                "D) 720",
+                "E) 30"
+            ],
+            "correta": 3,
+            "comentario": "Há 10 opções para o 1º algarismo, 9 para o 2º e 8 para o 3º: 10 × 9 × 8 = 720."
+        },
+        {
+            "id": 21049,
+            "enunciado": "Qual é o próximo termo da sequência 100, 95, 85, 70, 50, ...?",
+            "opcoes": [
+                "A) 30",
+                "B) 15",
+                "C) 20",
+                "D) 25",
+                "E) 35"
+            ],
+            "correta": 3,
+            "comentario": "As diferenças são 5, 10, 15, 20, aumentando de 5 em 5. A próxima é 25: 50 − 25 = 25."
+        },
+        {
+            "id": 21050,
+            "enunciado": "Na sequência 2, 3, 5, 7, 11, 13, ..., o próximo termo é:",
+            "opcoes": [
+                "A) 19",
+                "B) 17",
+                "C) 21",
+                "D) 16",
+                "E) 15"
+            ],
+            "correta": 1,
+            "comentario": "A sequência é formada pelos números primos em ordem crescente. Depois de 13 vem 17 (15 não é primo)."
+        },
+        {
+            "id": 21051,
+            "enunciado": "Em um grupo de 100 candidatos, 60 estudaram Português, 50 estudaram Raciocínio Lógico e 20 estudaram as duas matérias. Quantos estudaram apenas Raciocínio Lógico?",
+            "opcoes": [
+                "A) 40",
+                "B) 50",
+                "C) 10",
+                "D) 30",
+                "E) 20"
+            ],
+            "correta": 3,
+            "comentario": "Dos 50 que estudaram Raciocínio Lógico, 20 também estudaram Português. Apenas Raciocínio Lógico: 50 − 20 = 30."
+        },
+        {
+            "id": 21052,
+            "enunciado": "Considere: \"Se Ana vai à reunião, Bia vai.\" e \"Se Bia vai, Caio não vai.\" Sabe-se que Caio foi à reunião. Conclui-se que:",
+            "opcoes": [
+                "A) nada se pode concluir sobre Ana",
+                "B) Bia foi e Ana foi",
+                "C) Bia foi e Ana não foi",
+                "D) Bia não foi e Ana não foi",
+                "E) Ana foi e Bia não foi"
+            ],
+            "correta": 3,
+            "comentario": "Caio foi, então a segunda condicional obriga que Bia não tenha ido (modus tollens). Se Bia não foi, pela primeira, Ana também não foi."
+        },
+        {
+            "id": 21053,
+            "enunciado": "A afirmação \"Não é verdade que o servidor faltou e chegou atrasado\" é equivalente a:",
+            "opcoes": [
+                "A) O servidor não faltou ou não chegou atrasado.",
+                "B) O servidor faltou e não chegou atrasado.",
+                "C) O servidor faltou ou chegou atrasado.",
+                "D) O servidor não faltou e não chegou atrasado.",
+                "E) Se o servidor faltou, ele chegou atrasado."
+            ],
+            "correta": 0,
+            "comentario": "Pela Lei de De Morgan: não (p e q) é equivalente a (não p) ou (não q)."
+        },
+        {
+            "id": 21054,
+            "enunciado": "A negação de \"Algum processo está atrasado\" é:",
+            "opcoes": [
+                "A) Todos os processos estão atrasados.",
+                "B) Nenhum processo está atrasado.",
+                "C) Algum processo não está atrasado.",
+                "D) Todo processo está em dia e algum está atrasado.",
+                "E) Pelo menos um processo está atrasado."
+            ],
+            "correta": 1,
+            "comentario": "A negação de \"algum é\" é \"nenhum é\"."
+        },
+        {
+            "id": 21055,
+            "enunciado": "Um relógio adianta 3 minutos por dia. Ele foi acertado ao meio-dia de uma segunda-feira. Ao meio-dia do sábado seguinte, estará adiantado em:",
+            "opcoes": [
+                "A) 18 minutos",
+                "B) 12 minutos",
+                "C) 21 minutos",
+                "D) 15 minutos",
+                "E) 9 minutos"
+            ],
+            "correta": 3,
+            "comentario": "De segunda ao meio-dia até sábado ao meio-dia passam 5 dias. 5 × 3 = 15 minutos."
+        },
+        {
+            "id": 21056,
+            "enunciado": "A soma das idades de um pai e de seu filho é 50 anos, e o pai tem 4 vezes a idade do filho. A idade do filho é:",
+            "opcoes": [
+                "A) 10 anos",
+                "B) 15 anos",
+                "C) 12 anos",
+                "D) 40 anos",
+                "E) 8 anos"
+            ],
+            "correta": 0,
+            "comentario": "Com P = 4F: 4F + F = 50, então F = 10. O pai tem 40 anos."
+        },
+        {
+            "id": 21057,
+            "enunciado": "Três canetas e dois cadernos custam R$ 26,00. Uma caneta e um caderno custam juntos R$ 10,00. Qual é o preço de um caderno?",
+            "opcoes": [
+                "A) R$ 3,00",
+                "B) R$ 6,00",
+                "C) R$ 4,00",
+                "D) R$ 8,00",
+                "E) R$ 5,00"
+            ],
+            "correta": 2,
+            "comentario": "Com c + k = 10, temos c = 10 − k. Então 3(10 − k) + 2k = 26 → 30 − k = 26 → k = 4. A caneta custa R$ 6,00."
+        },
+        {
+            "id": 21058,
+            "enunciado": "Em uma fila de atendimento, Ana foi atendida antes de Bruno, Bruno antes de Davi e Davi antes de Clara. Quem foi atendido por último?",
+            "opcoes": [
+                "A) Davi",
+                "B) Não é possível saber",
+                "C) Clara",
+                "D) Bruno",
+                "E) Ana"
+            ],
+            "correta": 2,
+            "comentario": "A ordem é Ana, Bruno, Davi, Clara. Clara foi a última."
+        },
+        {
+            "id": 21059,
+            "enunciado": "Sabe-se que é FALSA a afirmação \"Se o protocolo está aberto, então há atendimento\". Logo:",
+            "opcoes": [
+                "A) o protocolo está fechado e há atendimento",
+                "B) o protocolo está aberto e não há atendimento",
+                "C) o protocolo está fechado e não há atendimento",
+                "D) não é possível concluir nada",
+                "E) o protocolo está aberto e há atendimento"
+            ],
+            "correta": 1,
+            "comentario": "Uma condicional só é falsa quando o antecedente é verdadeiro e o consequente é falso."
+        },
+        {
+            "id": 21060,
+            "enunciado": "Na sequência de letras Z, X, V, T, ..., a próxima letra é:",
+            "opcoes": [
+                "A) P",
+                "B) Q",
+                "C) R",
+                "D) S",
+                "E) U"
+            ],
+            "correta": 2,
+            "comentario": "A sequência anda de trás para a frente no alfabeto, pulando uma letra: Z, (Y), X, (W), V, (U), T, (S), R."
+        }
+    ],
+    "Noções de Informática": [
+        {
+            "id": 22001,
+            "enunciado": "No Windows 11, o atalho de teclado que abre diretamente o Explorador de Arquivos é:",
+            "opcoes": [
+                "A) Windows + I",
+                "B) Windows + L",
+                "C) Windows + R",
+                "D) Windows + D",
+                "E) Windows + E"
+            ],
+            "correta": 4,
+            "comentario": "Windows + E abre o Explorador de Arquivos. Windows + D mostra a área de trabalho, Windows + L bloqueia a sessão, Windows + R abre o Executar e Windows + I abre as Configurações."
+        },
+        {
+            "id": 22002,
+            "enunciado": "Um servidor precisa se ausentar da mesa por alguns minutos e quer impedir que outra pessoa use o computador sem encerrar os programas abertos. No Windows 11, o atalho mais adequado é:",
+            "opcoes": [
+                "A) Windows + L",
+                "B) Windows + D",
+                "C) Ctrl + Alt + Tab",
+                "D) Ctrl + Shift + Esc",
+                "E) Alt + F4"
+            ],
+            "correta": 0,
+            "comentario": "Windows + L bloqueia a sessão: os programas continuam abertos e é preciso senha, PIN ou biometria para voltar. Alt + F4 fecha a janela ativa e Ctrl + Shift + Esc abre o Gerenciador de Tarefas."
+        },
+        {
+            "id": 22003,
+            "enunciado": "No Windows 11, o recurso acionado por Windows + V permite:",
+            "opcoes": [
+                "A) colar apenas o último texto copiado, sem formatação",
+                "B) abrir a Ferramenta de Captura para recortar parte da tela",
+                "C) alternar entre as áreas de trabalho virtuais",
+                "D) abrir o painel de emojis e símbolos",
+                "E) acessar o histórico da área de transferência, com vários itens copiados anteriormente"
+            ],
+            "correta": 4,
+            "comentario": "Windows + V abre o histórico da área de transferência, que guarda vários itens copiados (textos e imagens) quando o recurso está ativado. A Ferramenta de Captura usa Windows + Shift + S e os emojis usam Windows + ponto."
+        },
+        {
+            "id": 22004,
+            "enunciado": "Para capturar apenas uma região da tela e copiá-la para a área de transferência no Windows 11, o usuário pode usar o atalho:",
+            "opcoes": [
+                "A) Windows + Shift + S",
+                "B) Ctrl + Shift + C",
+                "C) Alt + Print Screen + E",
+                "D) Windows + Shift + E",
+                "E) Windows + C"
+            ],
+            "correta": 0,
+            "comentario": "Windows + Shift + S aciona a Ferramenta de Captura no modo de recorte, permitindo selecionar uma região, uma janela ou a tela inteira."
+        },
+        {
+            "id": 22005,
+            "enunciado": "Um programa travou e não responde no Windows 11. A forma mais direta de abrir o Gerenciador de Tarefas para encerrá-lo é pressionar:",
+            "opcoes": [
+                "A) Shift + F10",
+                "B) Ctrl + Esc",
+                "C) Ctrl + Alt + Esc",
+                "D) Ctrl + Shift + Esc",
+                "E) Windows + Tab"
+            ],
+            "correta": 3,
+            "comentario": "Ctrl + Shift + Esc abre o Gerenciador de Tarefas diretamente, onde é possível finalizar o processo travado. Windows + Tab abre a Visão de Tarefas."
+        },
+        {
+            "id": 22006,
+            "enunciado": "No Explorador de Arquivos do Windows 11, ao selecionar um arquivo e pressionar Shift + Delete, o arquivo será:",
+            "opcoes": [
+                "A) compactado em um arquivo .zip",
+                "B) enviado para a Lixeira, de onde poderá ser restaurado",
+                "C) excluído permanentemente, sem passar pela Lixeira, após confirmação",
+                "D) copiado para a área de transferência",
+                "E) movido para a pasta Documentos"
+            ],
+            "correta": 2,
+            "comentario": "Shift + Delete exclui o item sem enviá-lo à Lixeira. Por isso, ele não pode ser restaurado pela Lixeira; o Windows pede confirmação antes."
+        },
+        {
+            "id": 22007,
+            "enunciado": "Para renomear rapidamente um arquivo selecionado no Explorador de Arquivos, utiliza-se a tecla:",
+            "opcoes": [
+                "A) F11",
+                "B) F1",
+                "C) F2",
+                "D) F5",
+                "E) F4"
+            ],
+            "correta": 2,
+            "comentario": "F2 coloca o nome do item em modo de edição. F5 atualiza a exibição, F1 abre a ajuda e F11 alterna a tela cheia."
+        },
+        {
+            "id": 22008,
+            "enunciado": "No Windows 11, o recurso \"Layouts de Ajuste\" (Snap Layouts), que organiza janelas lado a lado em grades predefinidas, pode ser aberto pelo atalho:",
+            "opcoes": [
+                "A) Windows + U",
+                "B) Windows + Z",
+                "C) Windows + K",
+                "D) Windows + G",
+                "E) Windows + Y"
+            ],
+            "correta": 1,
+            "comentario": "Windows + Z exibe os layouts de ajuste para a janela ativa. O mesmo menu aparece ao passar o mouse sobre o botão de maximizar."
+        },
+        {
+            "id": 22009,
+            "enunciado": "Desde suas atualizações recentes, o Explorador de Arquivos do Windows 11 permite abrir várias pastas na mesma janela por meio de:",
+            "opcoes": [
+                "A) abas, de forma semelhante a um navegador de internet",
+                "B) atalhos criados na Lixeira",
+                "C) janelas flutuantes do Painel de Controle",
+                "D) áreas de trabalho virtuais vinculadas a cada pasta",
+                "E) perfis de usuário diferentes"
+            ],
+            "correta": 0,
+            "comentario": "O Explorador de Arquivos do Windows 11 ganhou abas: Ctrl + T abre uma nova aba e é possível alternar entre pastas sem abrir várias janelas."
+        },
+        {
+            "id": 22010,
+            "enunciado": "No Windows 11, para conferir e instalar atualizações de segurança do sistema, o usuário deve acessar, em Configurações, a seção:",
+            "opcoes": [
+                "A) Windows Update",
+                "B) Acessibilidade",
+                "C) Aplicativos > Inicialização",
+                "D) Personalização",
+                "E) Bluetooth e dispositivos"
+            ],
+            "correta": 0,
+            "comentario": "A seção Windows Update reúne a busca, o download e o histórico de atualizações do sistema. Manter o sistema atualizado corrige falhas de segurança."
+        },
+        {
+            "id": 22011,
+            "enunciado": "O aplicativo nativo do Windows 11 que reúne a proteção antivírus (Microsoft Defender), o firewall e o controle de aplicativos é:",
+            "opcoes": [
+                "A) Gerenciador de Dispositivos",
+                "B) Painel de Widgets",
+                "C) Microsoft Store",
+                "D) Limpeza de Disco",
+                "E) Segurança do Windows"
+            ],
+            "correta": 4,
+            "comentario": "O aplicativo Segurança do Windows centraliza o Microsoft Defender Antivírus, o firewall, a proteção da conta e outras proteções do sistema."
+        },
+        {
+            "id": 22012,
+            "enunciado": "Um arquivo apagado com a tecla Delete, em um disco interno do computador, normalmente:",
+            "opcoes": [
+                "A) é movido para a pasta Downloads",
+                "B) vai para a Lixeira e pode ser restaurado ao local original",
+                "C) é apagado definitivamente na mesma hora",
+                "D) é enviado automaticamente para o OneDrive",
+                "E) fica oculto na mesma pasta"
+            ],
+            "correta": 1,
+            "comentario": "Com a tecla Delete, o item vai para a Lixeira, de onde pode ser restaurado ao local original enquanto a Lixeira não for esvaziada."
+        },
+        {
+            "id": 22013,
+            "enunciado": "No Windows 11, a combinação Windows + Tab abre a Visão de Tarefas, que permite:",
+            "opcoes": [
+                "A) projetar a tela em um segundo monitor",
+                "B) bloquear a tela imediatamente",
+                "C) ver as janelas abertas e gerenciar as áreas de trabalho virtuais",
+                "D) abrir o histórico da área de transferência",
+                "E) abrir o menu de contexto do botão Iniciar"
+            ],
+            "correta": 2,
+            "comentario": "A Visão de Tarefas mostra as janelas abertas e permite criar, alternar e fechar áreas de trabalho virtuais. O menu de contexto do Iniciar abre com Windows + X."
+        },
+        {
+            "id": 22014,
+            "enunciado": "Ao conectar o notebook a um projetor em uma sessão da Câmara, o servidor quer escolher entre duplicar ou estender a tela. No Windows 11, o atalho para isso é:",
+            "opcoes": [
+                "A) Windows + S",
+                "B) Windows + H",
+                "C) Windows + O",
+                "D) Windows + M",
+                "E) Windows + P"
+            ],
+            "correta": 4,
+            "comentario": "Windows + P abre as opções de projeção: somente tela do computador, duplicar, estender ou somente segunda tela."
+        },
+        {
+            "id": 22015,
+            "enunciado": "Sobre a extensão de arquivos no Windows, é correto afirmar que:",
+            "opcoes": [
+                "A) toda extensão tem exatamente duas letras",
+                "B) arquivos sem extensão não podem ser copiados",
+                "C) ela indica o tipo do arquivo e o programa padrão usado para abri-lo, como .docx, .xlsx e .pdf",
+                "D) a extensão define o tamanho máximo do arquivo",
+                "E) ela é obrigatória apenas para pastas"
+            ],
+            "correta": 2,
+            "comentario": "A extensão (sufixo após o ponto) identifica o formato do arquivo e o aplicativo associado. Pastas não têm extensão e o número de letras varia (.pdf, .docx, .jpeg)."
+        },
+        {
+            "id": 22016,
+            "enunciado": "Assinale a alternativa que apresenta apenas periféricos de entrada:",
+            "opcoes": [
+                "A) impressora, microfone e fone de ouvido",
+                "B) teclado, mouse e scanner",
+                "C) monitor, impressora e caixa de som",
+                "D) teclado, monitor e projetor",
+                "E) caixa de som, scanner e projetor"
+            ],
+            "correta": 1,
+            "comentario": "Periféricos de entrada enviam dados ao computador: teclado, mouse, scanner, microfone e webcam. Monitor, impressora, caixa de som e projetor são periféricos de saída."
+        },
+        {
+            "id": 22017,
+            "enunciado": "A impressora multifuncional, capaz de imprimir, digitalizar e copiar documentos, é classificada como periférico:",
+            "opcoes": [
+                "A) de entrada e saída",
+                "B) apenas de saída",
+                "C) apenas de entrada",
+                "D) de armazenamento volátil",
+                "E) de processamento"
+            ],
+            "correta": 0,
+            "comentario": "Ao digitalizar, ela envia dados ao computador (entrada); ao imprimir, recebe dados dele (saída). Por isso é um periférico de entrada e saída."
+        },
+        {
+            "id": 22018,
+            "enunciado": "O monitor com tela sensível ao toque (touchscreen) é considerado um dispositivo:",
+            "opcoes": [
+                "A) somente de entrada, porque substitui o mouse",
+                "B) de armazenamento, porque guarda os toques",
+                "C) de entrada e de saída, pois exibe informações e também recebe comandos pelo toque",
+                "D) de processamento, porque substitui a CPU",
+                "E) somente de saída, porque apenas exibe imagens"
+            ],
+            "correta": 2,
+            "comentario": "A tela touchscreen exibe imagens (saída) e capta os toques do usuário (entrada)."
+        },
+        {
+            "id": 22019,
+            "enunciado": "A porta mais utilizada atualmente para conectar teclado, mouse, pendrive e impressora ao computador é a:",
+            "opcoes": [
+                "A) HDMI de áudio",
+                "B) USB",
+                "C) RJ-11",
+                "D) PS/2 de vídeo",
+                "E) VGA"
+            ],
+            "correta": 1,
+            "comentario": "A porta USB é o padrão para a maioria dos periféricos. VGA e HDMI são usadas para vídeo e RJ-11 é o conector de linha telefônica."
+        },
+        {
+            "id": 22020,
+            "enunciado": "Para conectar o computador a um monitor ou televisão transmitindo vídeo e áudio digitais por um único cabo, utiliza-se normalmente a interface:",
+            "opcoes": [
+                "A) PS/2",
+                "B) RJ-45",
+                "C) VGA",
+                "D) P2 de microfone",
+                "E) HDMI"
+            ],
+            "correta": 4,
+            "comentario": "O HDMI transmite vídeo e áudio digitais no mesmo cabo. O VGA é analógico e só leva vídeo; o RJ-45 é o conector de rede cabeada."
+        },
+        {
+            "id": 22021,
+            "enunciado": "O cabo de rede com conector RJ-45 é utilizado para:",
+            "opcoes": [
+                "A) ligar o monitor à placa de vídeo",
+                "B) carregar a bateria do notebook",
+                "C) conectar o computador a uma rede local cabeada (Ethernet)",
+                "D) ligar o teclado sem fio",
+                "E) conectar fones de ouvido"
+            ],
+            "correta": 2,
+            "comentario": "O conector RJ-45 é o padrão das redes Ethernet cabeadas, ligando o computador ao roteador ou ao switch."
+        },
+        {
+            "id": 22022,
+            "enunciado": "Uma webcam usada em reuniões por videoconferência é um periférico de:",
+            "opcoes": [
+                "A) processamento",
+                "B) impressão",
+                "C) armazenamento",
+                "D) saída",
+                "E) entrada"
+            ],
+            "correta": 4,
+            "comentario": "A webcam capta imagens e as envia ao computador, por isso é periférico de entrada."
+        },
+        {
+            "id": 22023,
+            "enunciado": "No Windows 11, a ferramenta \"Configurações rápidas\", que permite ligar ou desligar Wi-Fi, Bluetooth e ajustar o volume, pode ser aberta com:",
+            "opcoes": [
+                "A) Windows + A",
+                "B) Windows + J",
+                "C) Windows + Q",
+                "D) Windows + B",
+                "E) Windows + F"
+            ],
+            "correta": 0,
+            "comentario": "No Windows 11, Windows + A abre as Configurações rápidas, com atalhos para Wi-Fi, Bluetooth, volume, brilho e outros ajustes."
+        },
+        {
+            "id": 22024,
+            "enunciado": "O menu de \"Link Rápido\", com acesso a Gerenciador de Dispositivos, Gerenciamento de Disco e Terminal, é aberto no Windows 11 pelo atalho:",
+            "opcoes": [
+                "A) Windows + N",
+                "B) Windows + X",
+                "C) Alt + X",
+                "D) Windows + W",
+                "E) Ctrl + X"
+            ],
+            "correta": 1,
+            "comentario": "Windows + X (ou o clique com o botão direito no botão Iniciar) abre o menu de Link Rápido com ferramentas administrativas."
+        },
+        {
+            "id": 22025,
+            "enunciado": "O OneDrive, integrado ao Windows 11, é um serviço de:",
+            "opcoes": [
+                "A) compactação de arquivos",
+                "B) gerenciamento de impressoras",
+                "C) edição de imagens",
+                "D) antivírus em tempo real",
+                "E) armazenamento e sincronização de arquivos na nuvem"
+            ],
+            "correta": 4,
+            "comentario": "O OneDrive guarda arquivos na nuvem da Microsoft e os sincroniza entre dispositivos, além de permitir compartilhamento com outras pessoas."
+        },
+        {
+            "id": 22026,
+            "enunciado": "Ao arrastar um arquivo com o mouse de uma pasta para outra no MESMO disco, sem pressionar nenhuma tecla, o Windows, por padrão:",
+            "opcoes": [
+                "A) compacta o arquivo",
+                "B) cria um atalho para o arquivo",
+                "C) copia o arquivo",
+                "D) exclui o arquivo",
+                "E) move o arquivo"
+            ],
+            "correta": 4,
+            "comentario": "No mesmo disco, arrastar move o item. Para outro disco, o padrão é copiar. Segurar Ctrl força a cópia e segurar Shift força a movimentação."
+        },
+        {
+            "id": 22027,
+            "enunciado": "Em comparação com o disco rígido (HD) tradicional, o SSD (Solid State Drive):",
+            "opcoes": [
+                "A) grava os dados em discos magnéticos giratórios",
+                "B) é mais lento, porém mais resistente a quedas",
+                "C) não possui partes mecânicas móveis e oferece leitura e gravação mais rápidas",
+                "D) é uma memória volátil, que perde os dados ao desligar",
+                "E) só pode ser lido, nunca gravado"
+            ],
+            "correta": 2,
+            "comentario": "O SSD usa memória flash, sem pratos nem cabeçotes móveis. É mais rápido, silencioso e resistente a impactos que o HD, que grava os dados em discos magnéticos giratórios."
+        },
+        {
+            "id": 22028,
+            "enunciado": "A memória RAM do computador é caracterizada por ser:",
+            "opcoes": [
+                "A) permanente, guardando os arquivos do usuário depois de desligar",
+                "B) volátil, perdendo seu conteúdo quando o computador é desligado",
+                "C) um dispositivo de armazenamento óptico",
+                "D) somente de leitura, gravada pelo fabricante",
+                "E) um periférico de entrada"
+            ],
+            "correta": 1,
+            "comentario": "A RAM guarda temporariamente os programas e dados em uso. Por ser volátil, perde o conteúdo ao desligar; por isso os arquivos devem ser salvos em HD, SSD ou nuvem."
+        },
+        {
+            "id": 22029,
+            "enunciado": "Um servidor digita um ofício e, antes de salvar, ocorre uma queda de energia. O texto não salvo se perde porque, até então, estava apenas:",
+            "opcoes": [
+                "A) na memória RAM",
+                "B) na memória ROM",
+                "C) no disco SSD",
+                "D) no OneDrive",
+                "E) no pendrive"
+            ],
+            "correta": 0,
+            "comentario": "Enquanto não é salvo, o documento fica na RAM, que é volátil. Salvar grava o arquivo em memória permanente, como HD, SSD, pendrive ou nuvem."
+        },
+        {
+            "id": 22030,
+            "enunciado": "Quantos bits formam um byte?",
+            "opcoes": [
+                "A) 10",
+                "B) 8",
+                "C) 4",
+                "D) 16",
+                "E) 2"
+            ],
+            "correta": 1,
+            "comentario": "Um byte é formado por 8 bits. O bit é a menor unidade de informação (0 ou 1)."
+        },
+        {
+            "id": 22031,
+            "enunciado": "Assinale a sequência de unidades de armazenamento em ordem CRESCENTE de capacidade:",
+            "opcoes": [
+                "A) kilobyte, megabyte, gigabyte, terabyte",
+                "B) gigabyte, terabyte, megabyte, kilobyte",
+                "C) megabyte, kilobyte, terabyte, gigabyte",
+                "D) terabyte, gigabyte, megabyte, kilobyte",
+                "E) kilobyte, gigabyte, megabyte, terabyte"
+            ],
+            "correta": 0,
+            "comentario": "A ordem crescente é KB < MB < GB < TB. Cada unidade equivale a 1.024 vezes a anterior no sistema binário."
+        },
+        {
+            "id": 22032,
+            "enunciado": "Um pendrive de 64 GB e um HD externo de 1 TB são exemplos de dispositivos de armazenamento:",
+            "opcoes": [
+                "A) secundário (permanente), que mantêm os dados sem energia",
+                "B) primário volátil, como a RAM",
+                "C) de entrada, como o teclado",
+                "D) de processamento, como a CPU",
+                "E) exclusivamente de leitura, como a ROM"
+            ],
+            "correta": 0,
+            "comentario": "Pendrives, HDs, SSDs e cartões de memória são armazenamento secundário: guardam os dados de forma permanente, mesmo desligados."
+        },
+        {
+            "id": 22033,
+            "enunciado": "DVD e Blu-ray são mídias de armazenamento do tipo:",
+            "opcoes": [
+                "A) em nuvem",
+                "B) óptico, lidas e gravadas por laser",
+                "C) magnético, como o disquete",
+                "D) volátil, como a RAM",
+                "E) flash, como o pendrive"
+            ],
+            "correta": 1,
+            "comentario": "CDs, DVDs e Blu-rays são mídias ópticas: um feixe de laser lê ou grava os dados na superfície do disco."
+        },
+        {
+            "id": 22034,
+            "enunciado": "O pendrive e o cartão de memória SD utilizam memória do tipo:",
+            "opcoes": [
+                "A) magnética de fita",
+                "B) óptica",
+                "C) cache do processador",
+                "D) flash",
+                "E) RAM volátil"
+            ],
+            "correta": 3,
+            "comentario": "Pendrives, cartões SD e SSDs usam memória flash, que é não volátil e regravável eletronicamente."
+        },
+        {
+            "id": 22035,
+            "enunciado": "Considere 1 GB = 1.024 MB. Quantos arquivos de 256 MB cabem, no máximo, em um pendrive com 2 GB livres?",
+            "opcoes": [
+                "A) 16",
+                "B) 4",
+                "C) 10",
+                "D) 8",
+                "E) 6"
+            ],
+            "correta": 3,
+            "comentario": "2 GB = 2 × 1.024 = 2.048 MB. Dividindo 2.048 por 256, cabem 8 arquivos."
+        },
+        {
+            "id": 22036,
+            "enunciado": "Guardar documentos no OneDrive ou no Google Drive em vez de apenas no computador traz como principal vantagem:",
+            "opcoes": [
+                "A) aumentar a memória RAM do computador",
+                "B) acessar os arquivos de outros dispositivos e manter uma cópia fora do equipamento local",
+                "C) dispensar o uso de senha para acessar os arquivos",
+                "D) eliminar a necessidade de conexão com a internet",
+                "E) impedir qualquer alteração nos documentos"
+            ],
+            "correta": 1,
+            "comentario": "O armazenamento em nuvem permite acesso de qualquer lugar e serve como cópia externa. Ainda exige senha (de preferência com dois fatores) e, em geral, internet para sincronizar."
+        },
+        {
+            "id": 22037,
+            "enunciado": "A impressora que utiliza toner e um cilindro fotossensível, indicada para grande volume de impressões com texto nítido, é a impressora:",
+            "opcoes": [
+                "A) matricial",
+                "B) a laser",
+                "C) plotter de recorte",
+                "D) jato de tinta",
+                "E) térmica"
+            ],
+            "correta": 1,
+            "comentario": "A impressora a laser usa toner (pó) fixado no papel por calor. É rápida e econômica para grandes volumes. A jato de tinta usa cartuchos de tinta líquida."
+        },
+        {
+            "id": 22038,
+            "enunciado": "A impressora matricial ainda é usada em algumas repartições porque:",
+            "opcoes": [
+                "A) imprime sem qualquer ruído",
+                "B) usa toner colorido de alta resolução",
+                "C) imprime por impacto, permitindo emitir várias vias com papel carbonado ou formulário contínuo",
+                "D) não precisa de nenhum suprimento de tinta ou fita",
+                "E) é a que oferece a melhor qualidade fotográfica"
+            ],
+            "correta": 2,
+            "comentario": "A matricial imprime por impacto de agulhas sobre uma fita. Por isso consegue imprimir várias vias de uma só vez, com papel carbonado ou formulário contínuo."
+        },
+        {
+            "id": 22039,
+            "enunciado": "Os cupons e senhas de atendimento impressos em papel sensível ao calor são produzidos por impressoras:",
+            "opcoes": [
+                "A) matriciais de 24 agulhas",
+                "B) a laser",
+                "C) 3D",
+                "D) jato de tinta",
+                "E) térmicas"
+            ],
+            "correta": 4,
+            "comentario": "A impressora térmica aquece um papel especial termossensível, sem tinta. É comum em caixas, senhas de atendimento e etiquetas."
+        },
+        {
+            "id": 22040,
+            "enunciado": "Na especificação de uma impressora, a sigla \"ppm\" indica:",
+            "opcoes": [
+                "A) o consumo de energia em watts",
+                "B) a quantidade de páginas impressas por minuto",
+                "C) a resolução em pontos por polegada",
+                "D) o número de pixels por milímetro",
+                "E) a capacidade da bandeja de papel"
+            ],
+            "correta": 1,
+            "comentario": "ppm significa páginas por minuto e mede a velocidade. A resolução é medida em dpi (pontos por polegada)."
+        },
+        {
+            "id": 22041,
+            "enunciado": "No Windows 11, para adicionar uma nova impressora ou defini-la como padrão, o usuário deve acessar, em Configurações:",
+            "opcoes": [
+                "A) Rede e internet > VPN",
+                "B) Personalização > Temas",
+                "C) Bluetooth e dispositivos > Impressoras e scanners",
+                "D) Contas > Opções de entrada",
+                "E) Sistema > Armazenamento"
+            ],
+            "correta": 2,
+            "comentario": "Em Configurações > Bluetooth e dispositivos > Impressoras e scanners é possível adicionar impressoras, ver a fila e escolher a impressora padrão."
+        },
+        {
+            "id": 22042,
+            "enunciado": "Um documento enviado para impressão não sai e outros documentos ficam aguardando. Para cancelar o trabalho travado, o usuário deve:",
+            "opcoes": [
+                "A) trocar o cabo do monitor",
+                "B) desinstalar o Microsoft Word",
+                "C) formatar o computador",
+                "D) abrir a fila de impressão da impressora e cancelar o documento que está bloqueando",
+                "E) esvaziar a Lixeira do Windows"
+            ],
+            "correta": 3,
+            "comentario": "A fila de impressão mostra os documentos pendentes. Cancelar o trabalho travado costuma liberar os demais."
+        },
+        {
+            "id": 22043,
+            "enunciado": "O programa que permite ao sistema operacional se comunicar corretamente com uma impressora ou outro dispositivo é chamado de:",
+            "opcoes": [
+                "A) plugin de e-mail",
+                "B) firmware de BIOS",
+                "C) compactador",
+                "D) navegador",
+                "E) driver"
+            ],
+            "correta": 4,
+            "comentario": "O driver é o software que \"traduz\" os comandos do sistema para o dispositivo. Sem o driver correto, a impressora pode não funcionar ou funcionar com recursos limitados."
+        },
+        {
+            "id": 22044,
+            "enunciado": "A opção de impressão \"frente e verso\" (duplex) serve para:",
+            "opcoes": [
+                "A) imprimir duas cópias idênticas",
+                "B) imprimir nos dois lados da folha, economizando papel",
+                "C) reduzir duas páginas para uma única face",
+                "D) imprimir em preto e branco e em cores ao mesmo tempo",
+                "E) imprimir apenas as páginas pares"
+            ],
+            "correta": 1,
+            "comentario": "O duplex imprime nos dois lados do papel, manualmente ou automaticamente, dependendo da impressora."
+        },
+        {
+            "id": 22045,
+            "enunciado": "Na janela de impressão do Word, para imprimir apenas as páginas 2, 5 e de 8 a 10, o usuário deve informar no campo de páginas:",
+            "opcoes": [
+                "A) 2:5:8:10",
+                "B) 2+5+8>10",
+                "C) 2-5-8-10",
+                "D) 2/5/8-10",
+                "E) 2,5,8-10"
+            ],
+            "correta": 4,
+            "comentario": "Páginas avulsas são separadas por vírgula (versões mais antigas em português também aceitam ponto e vírgula) e os intervalos usam hífen: 8-10 imprime as páginas 8, 9 e 10."
+        },
+        {
+            "id": 22046,
+            "enunciado": "Compartilhar uma impressora na rede da Câmara permite que:",
+            "opcoes": [
+                "A) a impressora imprima sem papel",
+                "B) vários computadores conectados à rede enviem documentos para a mesma impressora",
+                "C) os documentos sejam impressos sem driver",
+                "D) cada computador tenha seu próprio toner",
+                "E) a impressora funcione como roteador de internet"
+            ],
+            "correta": 1,
+            "comentario": "A impressora de rede (ou compartilhada) recebe trabalhos de vários computadores, otimizando equipamentos e suprimentos."
+        },
+        {
+            "id": 22047,
+            "enunciado": "A resolução de impressão, que influencia a nitidez do resultado, é medida em:",
+            "opcoes": [
+                "A) dpi (pontos por polegada)",
+                "B) ppm (páginas por minuto)",
+                "C) Mbps (megabits por segundo)",
+                "D) GHz (gigahertz)",
+                "E) rpm (rotações por minuto)"
+            ],
+            "correta": 0,
+            "comentario": "Quanto maior o dpi, mais pontos por polegada e maior o detalhe da impressão. ppm mede velocidade."
+        },
+        {
+            "id": 22048,
+            "enunciado": "O processador (CPU) do computador tem como função principal:",
+            "opcoes": [
+                "A) exibir as imagens na tela",
+                "B) armazenar permanentemente os arquivos do usuário",
+                "C) conectar o computador à rede elétrica",
+                "D) imprimir os documentos",
+                "E) executar as instruções dos programas e processar os dados"
+            ],
+            "correta": 4,
+            "comentario": "A CPU interpreta e executa as instruções dos programas. O armazenamento permanente fica no HD/SSD e a exibição, no monitor."
+        },
+        {
+            "id": 22049,
+            "enunciado": "Um notebook tem 8 GB de RAM e 512 GB de SSD. Sobre esses números, é correto afirmar:",
+            "opcoes": [
+                "A) quanto maior o SSD, maior a memória volátil",
+                "B) os 8 GB são a memória de trabalho usada pelos programas abertos e os 512 GB são o espaço para guardar arquivos",
+                "C) a RAM e o SSD são a mesma coisa, com nomes diferentes",
+                "D) os 512 GB indicam a velocidade do processador",
+                "E) os 8 GB são o espaço de armazenamento permanente"
+            ],
+            "correta": 1,
+            "comentario": "A RAM (8 GB) é a memória temporária para os programas em execução. O SSD (512 GB) é o armazenamento permanente de arquivos e do sistema."
+        },
+        {
+            "id": 22050,
+            "enunciado": "Antes de remover um pendrive do computador, o procedimento recomendado é:",
+            "opcoes": [
+                "A) esvaziar a Lixeira do pendrive",
+                "B) reiniciar o roteador",
+                "C) desligar o monitor",
+                "D) formatar o pendrive",
+                "E) usar a opção de ejetar ou remover o hardware com segurança, para evitar perda de dados"
+            ],
+            "correta": 4,
+            "comentario": "Ejetar com segurança garante que todas as gravações terminaram. Remover durante uma gravação pode corromper arquivos."
+        },
+        {
+            "id": 22051,
+            "enunciado": "A memória ROM do computador:",
+            "opcoes": [
+                "A) é um tipo de impressora",
+                "B) é a memória usada pelos navegadores para guardar o histórico",
+                "C) perde o conteúdo ao desligar, como a RAM",
+                "D) é onde ficam os documentos do usuário",
+                "E) é não volátil e guarda instruções básicas de inicialização gravadas pelo fabricante"
+            ],
+            "correta": 4,
+            "comentario": "A ROM (memória somente de leitura) é não volátil e contém o firmware de inicialização do equipamento."
+        },
+        {
+            "id": 22052,
+            "enunciado": "Um servidor precisa enviar a outro órgão um arquivo de 3 GB. Considerando as alternativas, a forma mais viável é:",
+            "opcoes": [
+                "A) anexá-lo diretamente a um e-mail comum, que aceita qualquer tamanho",
+                "B) gravá-lo em um CD comum de 700 MB",
+                "C) imprimi-lo e digitalizá-lo novamente",
+                "D) compartilhar o arquivo por um link de armazenamento em nuvem",
+                "E) enviá-lo como mensagem de texto SMS"
+            ],
+            "correta": 3,
+            "comentario": "Os provedores de e-mail limitam o tamanho dos anexos (geralmente a algumas dezenas de MB) e um CD comum tem cerca de 700 MB. O link da nuvem resolve o envio de arquivos grandes."
+        },
+        {
+            "id": 22053,
+            "enunciado": "No Microsoft Word em português, o atalho para aplicar NEGRITO ao texto selecionado é:",
+            "opcoes": [
+                "A) Ctrl + I",
+                "B) Ctrl + N",
+                "C) Ctrl + G",
+                "D) Ctrl + B",
+                "E) Ctrl + S"
+            ],
+            "correta": 1,
+            "comentario": "Na versão em português, Ctrl + N aplica negrito, Ctrl + I aplica itálico e Ctrl + S aplica sublinhado. Ctrl + B salva o documento."
+        },
+        {
+            "id": 22054,
+            "enunciado": "No Word em português, o atalho Ctrl + B executa o comando:",
+            "opcoes": [
+                "A) Localizar",
+                "B) Negrito",
+                "C) Imprimir",
+                "D) Salvar",
+                "E) Abrir"
+            ],
+            "correta": 3,
+            "comentario": "Ctrl + B é o atalho de Salvar no Office em português (equivale ao Ctrl + S da versão em inglês)."
+        },
+        {
+            "id": 22055,
+            "enunciado": "No Word em português, para SUBLINHAR o texto selecionado, utiliza-se:",
+            "opcoes": [
+                "A) Ctrl + E",
+                "B) Ctrl + S",
+                "C) Ctrl + L",
+                "D) Ctrl + U",
+                "E) Ctrl + N"
+            ],
+            "correta": 1,
+            "comentario": "Ctrl + S aplica sublinhado. Ctrl + U abre Substituir, Ctrl + L abre Localizar e Ctrl + E centraliza."
+        },
+        {
+            "id": 22056,
+            "enunciado": "Para centralizar um parágrafo no Word em português, o atalho é:",
+            "opcoes": [
+                "A) Ctrl + T",
+                "B) Ctrl + C",
+                "C) Ctrl + E",
+                "D) Ctrl + Q",
+                "E) Ctrl + J"
+            ],
+            "correta": 2,
+            "comentario": "Ctrl + E centraliza, Ctrl + J justifica e Ctrl + Q alinha à esquerda. Ctrl + C copia e Ctrl + T seleciona todo o documento."
+        },
+        {
+            "id": 22057,
+            "enunciado": "Um servidor quer trocar todas as ocorrências de \"Secretaria\" por \"Diretoria\" em um documento extenso do Word. A ferramenta adequada é:",
+            "opcoes": [
+                "A) Quebra de Página",
+                "B) Controlar Alterações",
+                "C) Contar Palavras",
+                "D) Pincel de Formatação",
+                "E) Substituir (Ctrl + U), na guia Página Inicial"
+            ],
+            "correta": 4,
+            "comentario": "A ferramenta Substituir procura um termo e o troca por outro, uma vez ou em todas as ocorrências. No Word em português, o atalho é Ctrl + U."
+        },
+        {
+            "id": 22058,
+            "enunciado": "No Word, o recurso que permite copiar apenas a FORMATAÇÃO de um trecho (fonte, cor, tamanho) e aplicá-la em outro é o:",
+            "opcoes": [
+                "A) Sumário",
+                "B) Pincel de Formatação",
+                "C) Marca d'água",
+                "D) Hiperlink",
+                "E) Copiar e Colar Especial com vínculo"
+            ],
+            "correta": 1,
+            "comentario": "O Pincel de Formatação, na guia Página Inicial, copia a formatação do trecho selecionado e a aplica ao próximo trecho clicado ou selecionado."
+        },
+        {
+            "id": 22059,
+            "enunciado": "Para iniciar uma nova página no Word a partir da posição do cursor, sem pressionar Enter várias vezes, o usuário deve inserir:",
+            "opcoes": [
+                "A) uma marca d'água",
+                "B) uma nota de rodapé",
+                "C) um recuo especial de primeira linha",
+                "D) uma quebra de página (Ctrl + Enter)",
+                "E) um espaçamento duplo entre linhas"
+            ],
+            "correta": 3,
+            "comentario": "A quebra de página (Ctrl + Enter ou Inserir > Quebra de Página) empurra o texto seguinte para a próxima página de forma estável."
+        },
+        {
+            "id": 22060,
+            "enunciado": "Na elaboração de um relatório no Word, o servidor quer gerar um SUMÁRIO automático. Para isso, os títulos das seções devem estar formatados com:",
+            "opcoes": [
+                "A) texto em caixa alta",
+                "B) cor de destaque amarela",
+                "C) marcadores numerados",
+                "D) estilos de Título (Título 1, Título 2...)",
+                "E) fonte em negrito e tamanho maior, apenas"
+            ],
+            "correta": 3,
+            "comentario": "O sumário automático (guia Referências) é montado a partir dos estilos de título. Negrito ou tamanho maior, sozinhos, não são reconhecidos como títulos."
+        },
+        {
+            "id": 22061,
+            "enunciado": "No Word, o recurso que registra todas as inclusões e exclusões feitas por cada revisor, permitindo aceitá-las ou rejeitá-las depois, é:",
+            "opcoes": [
+                "A) Pincel de Formatação, na guia Página Inicial",
+                "B) Quebras, na guia Layout",
+                "C) Marca d'água, na guia Design",
+                "D) Mala Direta, na guia Correspondências",
+                "E) Controlar Alterações, na guia Revisão"
+            ],
+            "correta": 4,
+            "comentario": "Com Controlar Alterações ativado, o Word marca cada mudança e o autor de cada uma. Na mesma guia Revisão é possível aceitar ou rejeitar as alterações."
+        },
+        {
+            "id": 22062,
+            "enunciado": "A Câmara precisa enviar o mesmo convite a 200 pessoas, cada um com o nome e o endereço do destinatário, a partir de uma planilha. O recurso do Word mais adequado é:",
+            "opcoes": [
+                "A) Controlar Alterações",
+                "B) Sumário",
+                "C) Hifenização",
+                "D) Mala Direta, na guia Correspondências",
+                "E) Quebra de seção"
+            ],
+            "correta": 3,
+            "comentario": "A Mala Direta combina um documento-modelo com uma lista de dados (como uma planilha do Excel), gerando um documento personalizado para cada destinatário."
+        },
+        {
+            "id": 22063,
+            "enunciado": "No Word, para que apenas uma página do documento fique em orientação paisagem e as demais continuem em retrato, deve-se:",
+            "opcoes": [
+                "A) mudar o tamanho da fonte da página",
+                "B) inserir uma quebra de página e mudar a orientação do documento inteiro",
+                "C) inserir uma tabela com largura maior que a página",
+                "D) aplicar uma marca d'água na página",
+                "E) inserir quebras de seção antes e depois da página e alterar a orientação só dessa seção"
+            ],
+            "correta": 4,
+            "comentario": "Configurações de página, como orientação e margens, valem por seção. Quebras de seção isolam a página para que só ela fique em paisagem."
+        },
+        {
+            "id": 22064,
+            "enunciado": "Para salvar um documento do Word em formato que preserve a aparência e possa ser aberto em qualquer computador, sem edição fácil, o usuário pode usar:",
+            "opcoes": [
+                "A) Salvar como ou Exportar no formato PDF",
+                "B) Salvar como no formato .xlsx",
+                "C) Imprimir em papel e digitalizar em .bmp",
+                "D) Salvar como modelo .dotx",
+                "E) Salvar como no formato .txt"
+            ],
+            "correta": 0,
+            "comentario": "O Word salva ou exporta diretamente em PDF, formato que preserva o layout em qualquer dispositivo. O .txt perde toda a formatação."
+        },
+        {
+            "id": 22065,
+            "enunciado": "A extensão padrão de um documento criado no Word 2024 é:",
+            "opcoes": [
+                "A) .docx",
+                "B) .xlsx",
+                "C) .csv",
+                "D) .pptx",
+                "E) .odt"
+            ],
+            "correta": 0,
+            "comentario": "Word salva em .docx por padrão. Excel usa .xlsx e PowerPoint usa .pptx."
+        },
+        {
+            "id": 22066,
+            "enunciado": "No Word, a tecla de atalho para iniciar a verificação de ortografia e gramática é:",
+            "opcoes": [
+                "A) F12",
+                "B) F9",
+                "C) F5",
+                "D) F7",
+                "E) F2"
+            ],
+            "correta": 3,
+            "comentario": "F7 inicia a revisão de ortografia e gramática (guia Revisão > Editor). F12 abre Salvar como."
+        },
+        {
+            "id": 22067,
+            "enunciado": "No Word, a tecla F12 abre a janela:",
+            "opcoes": [
+                "A) Salvar como",
+                "B) Abrir",
+                "C) Localizar",
+                "D) Ortografia e Gramática",
+                "E) Imprimir"
+            ],
+            "correta": 0,
+            "comentario": "F12 abre a caixa Salvar como, útil para salvar uma cópia com outro nome, local ou formato."
+        },
+        {
+            "id": 22068,
+            "enunciado": "Para alternar o texto selecionado entre maiúsculas, minúsculas e primeira letra maiúscula no Word, utiliza-se:",
+            "opcoes": [
+                "A) Ctrl + Shift + M",
+                "B) Ctrl + F3",
+                "C) Shift + F3",
+                "D) Shift + F7",
+                "E) Alt + F3"
+            ],
+            "correta": 2,
+            "comentario": "Shift + F3 alterna entre todas minúsculas, todas maiúsculas e iniciais maiúsculas no texto selecionado."
+        },
+        {
+            "id": 22069,
+            "enunciado": "No Word, os campos de cabeçalho e rodapé são úteis para:",
+            "opcoes": [
+                "A) contar as palavras do texto",
+                "B) corrigir automaticamente erros de ortografia",
+                "C) repetir em todas as páginas informações como o brasão da Câmara, o número da página e o nome do documento",
+                "D) proteger o arquivo com senha",
+                "E) converter o documento em planilha"
+            ],
+            "correta": 2,
+            "comentario": "O conteúdo de cabeçalho e rodapé aparece em todas as páginas (ou nas páginas de cada seção), como logotipos, numeração e títulos."
+        },
+        {
+            "id": 22070,
+            "enunciado": "Um servidor quer saber quantas palavras tem o parecer que está redigindo no Word. Essa informação aparece na barra de status e na opção:",
+            "opcoes": [
+                "A) Hifenização, na guia Layout",
+                "B) Marca d'água, na guia Design",
+                "C) Sumário, na guia Referências",
+                "D) Margens, na guia Layout",
+                "E) Contar Palavras, na guia Revisão"
+            ],
+            "correta": 4,
+            "comentario": "A guia Revisão tem o recurso Contar Palavras, que mostra palavras, caracteres, parágrafos e linhas. A barra de status também exibe o total de palavras."
+        },
+        {
+            "id": 22071,
+            "enunciado": "No PowerPoint, a tecla F5 serve para:",
+            "opcoes": [
+                "A) iniciar a apresentação a partir do primeiro slide",
+                "B) abrir o modo de classificação de slides",
+                "C) iniciar a apresentação a partir do slide atual",
+                "D) salvar a apresentação",
+                "E) inserir um novo slide"
+            ],
+            "correta": 0,
+            "comentario": "F5 inicia a apresentação do começo. Shift + F5 inicia a partir do slide atual."
+        },
+        {
+            "id": 22072,
+            "enunciado": "No PowerPoint, para iniciar a apresentação a partir do slide que está selecionado, o atalho é:",
+            "opcoes": [
+                "A) Alt + F5",
+                "B) F5",
+                "C) Ctrl + F5",
+                "D) Shift + F5",
+                "E) F7"
+            ],
+            "correta": 3,
+            "comentario": "Shift + F5 começa a apresentação pelo slide atual. F5 começa pelo primeiro slide."
+        },
+        {
+            "id": 22073,
+            "enunciado": "No PowerPoint, a diferença entre TRANSIÇÃO e ANIMAÇÃO é que:",
+            "opcoes": [
+                "A) a animação só funciona em vídeos",
+                "B) a transição só pode ser usada no primeiro slide",
+                "C) a transição é o efeito na passagem de um slide para outro; a animação é o efeito aplicado a objetos dentro do slide",
+                "D) ambas são o mesmo recurso, em guias diferentes",
+                "E) a transição é aplicada a textos e a animação, a slides inteiros"
+            ],
+            "correta": 2,
+            "comentario": "Transições (guia Transições) ocorrem entre slides. Animações (guia Animações) fazem textos, imagens e formas entrarem, saírem ou se moverem no slide."
+        },
+        {
+            "id": 22074,
+            "enunciado": "Para alterar o logotipo e a fonte padrão de TODOS os slides de uma apresentação de uma só vez, o recurso adequado do PowerPoint é:",
+            "opcoes": [
+                "A) o Pincel de Formatação em cada slide",
+                "B) o Slide Mestre",
+                "C) a guia Transições",
+                "D) a Classificação de Slides",
+                "E) o modo de exibição de Anotações"
+            ],
+            "correta": 1,
+            "comentario": "O Slide Mestre (guia Exibir) controla o layout, as fontes, as cores e os elementos fixos de todos os slides. Alterar o mestre atualiza a apresentação inteira."
+        },
+        {
+            "id": 22075,
+            "enunciado": "O Modo de Exibição do Apresentador, no PowerPoint, permite ao orador:",
+            "opcoes": [
+                "A) impedir que os slides sejam impressos",
+                "B) ver suas anotações, o próximo slide e o tempo decorrido, enquanto o público vê apenas o slide atual",
+                "C) exibir a apresentação somente em preto e branco",
+                "D) editar o Slide Mestre durante a apresentação",
+                "E) converter a apresentação em documento do Word"
+            ],
+            "correta": 1,
+            "comentario": "Com dois monitores (ou projetor), o Modo do Apresentador mostra ao orador anotações, próximo slide e cronômetro, enquanto a tela do público exibe só o slide."
+        },
+        {
+            "id": 22076,
+            "enunciado": "A extensão padrão de uma apresentação criada no PowerPoint 2024 é:",
+            "opcoes": [
+                "A) .pptx",
+                "B) .docx",
+                "C) .xlsx",
+                "D) .ppsm",
+                "E) .pdf"
+            ],
+            "correta": 0,
+            "comentario": "O PowerPoint salva em .pptx por padrão. Também pode exportar para PDF ou vídeo."
+        },
+        {
+            "id": 22077,
+            "enunciado": "O modo de exibição Classificação de Slides, no PowerPoint, é mais útil para:",
+            "opcoes": [
+                "A) editar o texto de cada caixa",
+                "B) escrever as anotações do orador",
+                "C) criar gráficos a partir de planilhas",
+                "D) visualizar miniaturas de todos os slides e reorganizar sua ordem arrastando-os",
+                "E) gravar narração em áudio"
+            ],
+            "correta": 3,
+            "comentario": "A Classificação de Slides mostra todos os slides em miniatura, facilitando reordenar, duplicar ou excluir slides."
+        },
+        {
+            "id": 22078,
+            "enunciado": "Durante uma apresentação de slides, a tecla que encerra a exibição e volta ao modo de edição é:",
+            "opcoes": [
+                "A) Esc",
+                "B) Page Down",
+                "C) Seta para a direita",
+                "D) Enter",
+                "E) Barra de espaço"
+            ],
+            "correta": 0,
+            "comentario": "Esc encerra a apresentação. Enter, barra de espaço, seta para a direita e Page Down avançam os slides."
+        },
+        {
+            "id": 22079,
+            "enunciado": "No Excel, as células A1 a A4 contêm 4, 6, 8 e 10. O resultado de =MÉDIA(A1:A4) é:",
+            "opcoes": [
+                "A) 8",
+                "B) 6",
+                "C) 28",
+                "D) 7",
+                "E) 10"
+            ],
+            "correta": 3,
+            "comentario": "A média é a soma dividida pela quantidade: (4 + 6 + 8 + 10) ÷ 4 = 28 ÷ 4 = 7."
+        },
+        {
+            "id": 22080,
+            "enunciado": "No Excel, a fórmula =2+3*4 retorna:",
+            "opcoes": [
+                "A) 20",
+                "B) 24",
+                "C) 14",
+                "D) 11",
+                "E) 9"
+            ],
+            "correta": 2,
+            "comentario": "A multiplicação é feita antes da soma: 3 × 4 = 12 e 2 + 12 = 14. Para somar primeiro, seria preciso escrever =(2+3)*4, que dá 20."
+        },
+        {
+            "id": 22081,
+            "enunciado": "No Excel, o resultado da fórmula =(10-4)/2^2 é:",
+            "opcoes": [
+                "A) 3",
+                "B) 36",
+                "C) 9",
+                "D) 1,5",
+                "E) 0,75"
+            ],
+            "correta": 3,
+            "comentario": "Primeiro os parênteses (10 − 4 = 6), depois a potência (2^2 = 4) e por fim a divisão: 6 ÷ 4 = 1,5."
+        },
+        {
+            "id": 22082,
+            "enunciado": "A célula C1 contém a fórmula =A1+B1. Ao copiá-la para a célula C2, ela passa a ser:",
+            "opcoes": [
+                "A) =A2+B2",
+                "B) =A1+B1",
+                "C) =A1+B2",
+                "D) =B1+C1",
+                "E) =$A$1+$B$1"
+            ],
+            "correta": 0,
+            "comentario": "Referências relativas se ajustam ao destino. Copiando uma linha para baixo, A1 vira A2 e B1 vira B2."
+        },
+        {
+            "id": 22083,
+            "enunciado": "A célula D2 contém =B2*$F$1. Ao copiá-la para D3, a fórmula passa a ser:",
+            "opcoes": [
+                "A) =B3*F2",
+                "B) =B3*$F$1",
+                "C) =B2*$F$1",
+                "D) =B3*$F$2",
+                "E) =C3*$G$1"
+            ],
+            "correta": 1,
+            "comentario": "B2 é relativa e vira B3. $F$1 é absoluta (cifrão na coluna e na linha) e não muda."
+        },
+        {
+            "id": 22084,
+            "enunciado": "A célula B5 contém =$A5*2. Copiando-a para C6, a fórmula resultante será:",
+            "opcoes": [
+                "A) =$A5*2",
+                "B) =$B6*2",
+                "C) =$A6*2",
+                "D) =$A$6*2",
+                "E) =B6*2"
+            ],
+            "correta": 2,
+            "comentario": "Em $A5 a coluna está fixa e a linha é relativa. Descendo uma linha, 5 vira 6; mudando de coluna, o A continua por causa do cifrão."
+        },
+        {
+            "id": 22085,
+            "enunciado": "Na célula E2, a fórmula =SE(D2>=7;\"Aprovado\";\"Reprovado\") retornará \"Reprovado\" quando D2 for:",
+            "opcoes": [
+                "A) 10",
+                "B) 7",
+                "C) 7,5",
+                "D) 6,9",
+                "E) 8"
+            ],
+            "correta": 3,
+            "comentario": "A função SE testa D2 >= 7. Somente 6,9 é menor que 7 e cai no valor falso, \"Reprovado\". O valor 7 satisfaz o teste por causa do sinal \"maior ou igual\"."
+        },
+        {
+            "id": 22086,
+            "enunciado": "Para contar quantas células do intervalo A2:A50 estão preenchidas com qualquer tipo de conteúdo (textos ou números), utiliza-se:",
+            "opcoes": [
+                "A) =SOMA(A2:A50)",
+                "B) =MÁXIMO(A2:A50)",
+                "C) =CONT.NÚM(A2:A50)",
+                "D) =CONT.VALORES(A2:A50)",
+                "E) =CONTAR.VAZIO(A2:A50)"
+            ],
+            "correta": 3,
+            "comentario": "CONT.VALORES conta as células não vazias. CONT.NÚM conta só as que têm números e CONTAR.VAZIO conta as vazias."
+        },
+        {
+            "id": 22087,
+            "enunciado": "Uma planilha registra, na coluna B, a situação de cada processo (\"Arquivado\", \"Em análise\" etc.). Para contar quantos estão \"Arquivado\", a fórmula correta é:",
+            "opcoes": [
+                "A) =CONT.SE(B2:B100;\"Arquivado\")",
+                "B) =SOMA(B2:B100;\"Arquivado\")",
+                "C) =CONT.NÚM(B2:B100;\"Arquivado\")",
+                "D) =MÉDIA(B2:B100;\"Arquivado\")",
+                "E) =SE(B2:B100=\"Arquivado\")"
+            ],
+            "correta": 0,
+            "comentario": "CONT.SE conta as células de um intervalo que atendem a um critério. No Excel em português, os argumentos são separados por ponto e vírgula."
+        },
+        {
+            "id": 22088,
+            "enunciado": "Na coluna A estão os setores e na coluna C os gastos. Para somar apenas os gastos do setor \"Protocolo\", usa-se:",
+            "opcoes": [
+                "A) =SOMASE(A2:A40;\"Protocolo\";C2:C40)",
+                "B) =CONT.SE(C2:C40;\"Protocolo\")",
+                "C) =SOMA(A2:A40;\"Protocolo\")",
+                "D) =SE(A2:A40=\"Protocolo\";C2:C40)",
+                "E) =MÉDIASE(C2:C40;\"Protocolo\")"
+            ],
+            "correta": 0,
+            "comentario": "SOMASE tem a estrutura (intervalo do critério; critério; intervalo a somar). Assim soma só os gastos cujas linhas têm \"Protocolo\" na coluna A."
+        },
+        {
+            "id": 22089,
+            "enunciado": "Para buscar, em uma tabela de servidores, o cargo correspondente a uma matrícula digitada, procurando a matrícula na primeira coluna da tabela, é adequada a função:",
+            "opcoes": [
+                "A) HOJE",
+                "B) CONCATENAR",
+                "C) PROCV",
+                "D) CONT.SE",
+                "E) ARRED"
+            ],
+            "correta": 2,
+            "comentario": "PROCV procura um valor na primeira coluna de uma tabela e retorna o dado de outra coluna da mesma linha. No Excel 2024 também existe a função PROCX, mais flexível."
+        },
+        {
+            "id": 22090,
+            "enunciado": "A função do Excel que retorna a data atual, atualizada sempre que a planilha é recalculada, é:",
+            "opcoes": [
+                "A) =DIA()",
+                "B) =ANO()",
+                "C) =AGORA(1)",
+                "D) =HOJE()",
+                "E) =DATA()"
+            ],
+            "correta": 3,
+            "comentario": "HOJE() retorna a data atual. AGORA() retorna data e hora. DATA, DIA e ANO exigem argumentos."
+        },
+        {
+            "id": 22091,
+            "enunciado": "Ao digitar uma fórmula que divide um valor por uma célula vazia ou com zero, o Excel exibe o erro:",
+            "opcoes": [
+                "A) #N/D",
+                "B) #####",
+                "C) #DIV/0!",
+                "D) #REF!",
+                "E) #NOME?"
+            ],
+            "correta": 2,
+            "comentario": "#DIV/0! indica divisão por zero. #NOME? aparece com nome de função errado, #REF! com referência inválida e #N/D quando a busca não encontra o valor."
+        },
+        {
+            "id": 22092,
+            "enunciado": "Ao digitar =SOMAR(A1:A5) em uma célula do Excel em português, aparece o erro #NOME?. Isso ocorre porque:",
+            "opcoes": [
+                "A) as células estão vazias",
+                "B) a fórmula divide por zero",
+                "C) a coluna é muito estreita",
+                "D) o nome da função está escrito incorretamente; o correto é SOMA",
+                "E) o intervalo tem mais de quatro células"
+            ],
+            "correta": 3,
+            "comentario": "#NOME? indica que o Excel não reconheceu o nome usado na fórmula. A função correta é SOMA."
+        },
+        {
+            "id": 22093,
+            "enunciado": "Uma célula exibe \"#####\" no lugar de uma data. A causa mais comum é:",
+            "opcoes": [
+                "A) a coluna é estreita demais para mostrar o conteúdo",
+                "B) o arquivo está corrompido",
+                "C) a célula foi excluída",
+                "D) a planilha está protegida por senha",
+                "E) a fórmula tem um nome de função inválido"
+            ],
+            "correta": 0,
+            "comentario": "As cerquilhas aparecem quando o valor (número ou data) não cabe na largura da coluna. Basta alargá-la."
+        },
+        {
+            "id": 22094,
+            "enunciado": "No Excel, para juntar o texto de A2 (nome) e de B2 (sobrenome) com um espaço entre eles, pode-se usar:",
+            "opcoes": [
+                "A) =A2;\" \";B2",
+                "B) =A2+\" \"+B2",
+                "C) =SOMA(A2;B2)",
+                "D) =A2*B2",
+                "E) =A2&\" \"&B2"
+            ],
+            "correta": 4,
+            "comentario": "O operador & concatena textos. Também é possível usar CONCATENAR ou CONCAT. O sinal + é para soma numérica."
+        },
+        {
+            "id": 22095,
+            "enunciado": "Para manter a linha de títulos visível enquanto se rola uma planilha extensa para baixo, utiliza-se:",
+            "opcoes": [
+                "A) Mesclar e Centralizar, na guia Página Inicial",
+                "B) Quebrar Texto Automaticamente",
+                "C) Congelar Painéis, na guia Exibir",
+                "D) Proteger Planilha, na guia Revisão",
+                "E) Filtro, na guia Dados"
+            ],
+            "correta": 2,
+            "comentario": "Congelar Painéis fixa linhas e/ou colunas na tela durante a rolagem. O Filtro esconde linhas conforme critérios."
+        },
+        {
+            "id": 22096,
+            "enunciado": "Na planilha de controle de processos, o servidor quer exibir apenas as linhas de um determinado mês, sem apagar as demais. O recurso adequado é:",
+            "opcoes": [
+                "A) a exclusão das outras linhas",
+                "B) Congelar Painéis",
+                "C) o Filtro (AutoFiltro), na guia Dados",
+                "D) Mesclar células",
+                "E) Formatação de moeda"
+            ],
+            "correta": 2,
+            "comentario": "O Filtro oculta temporariamente as linhas que não atendem ao critério. Ao limpar o filtro, todas voltam a aparecer."
+        },
+        {
+            "id": 22097,
+            "enunciado": "O recurso do Excel que destaca automaticamente em vermelho os prazos vencidos de uma planilha é a:",
+            "opcoes": [
+                "A) Formatação Condicional",
+                "B) Validação de Dados",
+                "C) Classificação em ordem alfabética",
+                "D) Proteção de Planilha",
+                "E) Tabela Dinâmica"
+            ],
+            "correta": 0,
+            "comentario": "A Formatação Condicional aplica cores, ícones ou estilos às células que atendem a uma regra, como datas anteriores a hoje."
+        },
+        {
+            "id": 22098,
+            "enunciado": "Para impedir que o usuário digite em uma célula algo diferente das opções \"Sim\" e \"Não\", oferecendo uma lista suspensa, utiliza-se:",
+            "opcoes": [
+                "A) Validação de Dados, na guia Dados",
+                "B) Localizar e Selecionar",
+                "C) Formatação Condicional",
+                "D) Mesclar e Centralizar",
+                "E) Congelar Painéis"
+            ],
+            "correta": 0,
+            "comentario": "A Validação de Dados restringe o que pode ser digitado e pode exibir uma lista suspensa de opções permitidas."
+        },
+        {
+            "id": 22099,
+            "enunciado": "No Excel, as células A1:A5 contêm 12, 7, 25, 3 e 18. O resultado de =MÁXIMO(A1:A5)-MÍNIMO(A1:A5) é:",
+            "opcoes": [
+                "A) 15",
+                "B) 65",
+                "C) 25",
+                "D) 3",
+                "E) 22"
+            ],
+            "correta": 4,
+            "comentario": "O maior valor é 25 e o menor é 3. A diferença é 25 − 3 = 22."
+        },
+        {
+            "id": 22100,
+            "enunciado": "No Excel em português, a fórmula =ARRED(7,456;1) retorna:",
+            "opcoes": [
+                "A) 7",
+                "B) 7,5",
+                "C) 7,46",
+                "D) 8",
+                "E) 7,4"
+            ],
+            "correta": 1,
+            "comentario": "ARRED arredonda para o número de casas indicado. Com uma casa decimal, 7,456 vira 7,5 (o 5 da segunda casa arredonda para cima)."
+        },
+        {
+            "id": 22101,
+            "enunciado": "Uma planilha tem 120 processos, dos quais 30 foram arquivados. Para exibir esse percentual, o servidor digitou =30/120 e aplicou o formato de porcentagem. O valor exibido será:",
+            "opcoes": [
+                "A) 4%",
+                "B) 0,25%",
+                "C) 40%",
+                "D) 25%",
+                "E) 30%"
+            ],
+            "correta": 3,
+            "comentario": "30 ÷ 120 = 0,25. Com formato de porcentagem, o Excel mostra 25%."
+        },
+        {
+            "id": 22102,
+            "enunciado": "Para resumir uma planilha extensa, agrupando valores por setor e por mês de forma interativa, o recurso mais indicado é:",
+            "opcoes": [
+                "A) Tabela Dinâmica",
+                "B) Hiperlink",
+                "C) Quebra de página",
+                "D) Pincel de Formatação",
+                "E) Mesclar e Centralizar"
+            ],
+            "correta": 0,
+            "comentario": "A Tabela Dinâmica (guia Inserir) resume e cruza grandes volumes de dados, permitindo reorganizar linhas, colunas e totais com poucos cliques."
+        },
+        {
+            "id": 22103,
+            "enunciado": "A extensão padrão de uma pasta de trabalho do Excel 2024, sem macros, é:",
+            "opcoes": [
+                "A) .pptx",
+                "B) .xlsx",
+                "C) .xlsm",
+                "D) .docx",
+                "E) .csv"
+            ],
+            "correta": 1,
+            "comentario": "O formato padrão é .xlsx. O .xlsm guarda pastas com macros e o .csv é um formato de texto simples sem fórmulas nem formatação."
+        },
+        {
+            "id": 22104,
+            "enunciado": "No Excel, a célula A1 contém 200 e B1 contém 15%. Para calcular o valor de A1 acrescido de 15%, a fórmula correta é:",
+            "opcoes": [
+                "A) =A1+15",
+                "B) =A1/(1+B1)",
+                "C) =A1+B1",
+                "D) =A1*(1+B1)",
+                "E) =A1*B1"
+            ],
+            "correta": 3,
+            "comentario": "Acrescentar 15% é multiplicar por 1,15: 200 × 1,15 = 230. A1 + B1 somaria apenas 0,15, e A1 × B1 daria só o acréscimo (30)."
+        },
+        {
+            "id": 22105,
+            "enunciado": "Ao acessar um site, o usuário percebe que o endereço começa com \"https://\" e há um cadeado na barra do navegador. Isso indica que:",
+            "opcoes": [
+                "A) o site está livre de qualquer golpe ou vírus",
+                "B) a comunicação entre o navegador e o site é criptografada",
+                "C) o acesso dispensa senha",
+                "D) o site é oficial do governo, com certeza",
+                "E) a página não usa cookies"
+            ],
+            "correta": 1,
+            "comentario": "O HTTPS cifra os dados trocados com o site. Isso protege contra interceptação, mas não garante que o site seja legítimo: golpistas também usam HTTPS."
+        },
+        {
+            "id": 22106,
+            "enunciado": "O serviço da internet que traduz nomes de domínio, como camara.gov.br, para o endereço IP do servidor é o:",
+            "opcoes": [
+                "A) USB",
+                "B) DNS",
+                "C) HTML",
+                "D) FTP",
+                "E) SMTP"
+            ],
+            "correta": 1,
+            "comentario": "O DNS (Sistema de Nomes de Domínio) converte nomes fáceis de lembrar em endereços IP. SMTP envia e-mails, FTP transfere arquivos e HTML é a linguagem das páginas."
+        },
+        {
+            "id": 22107,
+            "enunciado": "Na navegação anônima (janela InPrivate do Edge ou anônima do Chrome):",
+            "opcoes": [
+                "A) os sites deixam de saber o endereço IP do usuário",
+                "B) o usuário fica invisível para o provedor de internet e para a rede da empresa",
+                "C) o navegador não guarda localmente o histórico, os cookies e os dados digitados após fechar a janela",
+                "D) o computador fica protegido contra vírus",
+                "E) os downloads feitos são apagados automaticamente do computador"
+            ],
+            "correta": 2,
+            "comentario": "O modo anônimo só evita que o histórico, os cookies e os formulários fiquem salvos no computador. A rede, o provedor e os sites ainda veem o acesso, e os arquivos baixados permanecem."
+        },
+        {
+            "id": 22108,
+            "enunciado": "No Google Chrome, o atalho para abrir uma nova janela anônima é:",
+            "opcoes": [
+                "A) Ctrl + H",
+                "B) Ctrl + N",
+                "C) Ctrl + Shift + Del",
+                "D) Ctrl + Shift + N",
+                "E) Ctrl + Shift + T"
+            ],
+            "correta": 3,
+            "comentario": "Ctrl + Shift + N abre a janela anônima no Chrome. No Edge e no Firefox, o atalho é Ctrl + Shift + P."
+        },
+        {
+            "id": 22109,
+            "enunciado": "Nos principais navegadores, o atalho Ctrl + Shift + T serve para:",
+            "opcoes": [
+                "A) fechar todas as abas",
+                "B) abrir uma nova aba em branco",
+                "C) reabrir a última aba fechada",
+                "D) traduzir a página",
+                "E) abrir o gerenciador de tarefas do navegador"
+            ],
+            "correta": 2,
+            "comentario": "Ctrl + Shift + T reabre a aba fechada mais recentemente. Ctrl + T abre uma nova aba e Ctrl + W fecha a aba atual."
+        },
+        {
+            "id": 22110,
+            "enunciado": "Nos navegadores, o atalho que adiciona a página atual aos favoritos é:",
+            "opcoes": [
+                "A) Ctrl + F",
+                "B) Ctrl + P",
+                "C) Ctrl + J",
+                "D) Ctrl + D",
+                "E) Ctrl + H"
+            ],
+            "correta": 3,
+            "comentario": "Ctrl + D salva a página nos favoritos. Ctrl + F localiza na página, Ctrl + J abre downloads, Ctrl + H abre o histórico e Ctrl + P imprime."
+        },
+        {
+            "id": 22111,
+            "enunciado": "Para procurar uma palavra dentro do texto da página aberta no navegador, utiliza-se:",
+            "opcoes": [
+                "A) Ctrl + L",
+                "B) Ctrl + D",
+                "C) Ctrl + F",
+                "D) Ctrl + U",
+                "E) F5"
+            ],
+            "correta": 2,
+            "comentario": "Ctrl + F abre a busca na página atual. Ctrl + L seleciona a barra de endereço e F5 recarrega a página."
+        },
+        {
+            "id": 22112,
+            "enunciado": "Em um buscador como o Google, para encontrar páginas que contenham exatamente a expressão Lei de Acesso à Informação, na mesma ordem, deve-se:",
+            "opcoes": [
+                "A) colocar um sinal de menos antes da expressão",
+                "B) digitar a expressão entre aspas",
+                "C) digitar a expressão entre parênteses",
+                "D) separar as palavras por vírgulas",
+                "E) escrever a expressão toda em maiúsculas"
+            ],
+            "correta": 1,
+            "comentario": "As aspas fazem o buscador procurar a frase exata. O sinal de menos exclui termos e as maiúsculas não mudam o resultado."
+        },
+        {
+            "id": 22113,
+            "enunciado": "No Google, a pesquisa \"relatório de gestão site:gov.br\" retorna:",
+            "opcoes": [
+                "A) somente imagens",
+                "B) resultados de qualquer site, exceto gov.br",
+                "C) somente arquivos em PDF",
+                "D) apenas notícias publicadas hoje",
+                "E) resultados apenas de páginas sob o domínio gov.br"
+            ],
+            "correta": 4,
+            "comentario": "O operador site: restringe a busca a um domínio. Para tipos de arquivo usa-se filetype:, por exemplo filetype:pdf."
+        },
+        {
+            "id": 22114,
+            "enunciado": "Os cookies armazenados pelo navegador são:",
+            "opcoes": [
+                "A) pequenos arquivos com informações de navegação, como preferências e sessões de login",
+                "B) programas que bloqueiam anúncios",
+                "C) vírus que se instalam ao abrir qualquer site",
+                "D) senhas do Wi-Fi do computador",
+                "E) cópias completas das páginas visitadas para uso sem internet"
+            ],
+            "correta": 0,
+            "comentario": "Cookies guardam dados como itens de carrinho, preferências e sessão ativa. Podem ser apagados nas configurações do navegador."
+        },
+        {
+            "id": 22115,
+            "enunciado": "Ao enviar um e-mail, o campo \"Cco\" (cópia oculta) é usado para:",
+            "opcoes": [
+                "A) marcar a mensagem como urgente",
+                "B) agendar o envio para outro horário",
+                "C) criptografar o anexo",
+                "D) enviar uma cópia apenas ao remetente",
+                "E) enviar a mensagem a destinatários que não aparecem para os demais"
+            ],
+            "correta": 4,
+            "comentario": "Quem está em Cco recebe a mensagem, mas seu endereço não é exibido aos outros destinatários. É útil em envios para muitas pessoas, protegendo os endereços."
+        },
+        {
+            "id": 22116,
+            "enunciado": "A Câmara vai enviar um comunicado por e-mail a 300 cidadãos cadastrados. Para proteger os endereços de cada um, a prática correta é colocar os destinatários no campo:",
+            "opcoes": [
+                "A) Responder para",
+                "B) Assunto",
+                "C) Para",
+                "D) Cco",
+                "E) Cc"
+            ],
+            "correta": 3,
+            "comentario": "Com todos em Cco, nenhum destinatário vê o e-mail dos demais. Isso evita expor dados pessoais e está de acordo com a proteção de dados."
+        },
+        {
+            "id": 22117,
+            "enunciado": "Ao receber um e-mail com outros três destinatários, a opção \"Responder a todos\" envia a resposta:",
+            "opcoes": [
+                "A) somente ao remetente",
+                "B) a todos os contatos da agenda",
+                "C) ao remetente e também aos destinatários em Cco",
+                "D) apenas aos que estavam em cópia oculta",
+                "E) ao remetente e a todos os destinatários visíveis da mensagem original"
+            ],
+            "correta": 4,
+            "comentario": "\"Responder\" vai só para o remetente. \"Responder a todos\" inclui também quem estava em Para e Cc. Quem estava em Cco não é incluído, porque não aparece na mensagem."
+        },
+        {
+            "id": 22118,
+            "enunciado": "Para repassar a um colega um e-mail recebido, junto com seus anexos, a opção adequada é:",
+            "opcoes": [
+                "A) Encaminhar",
+                "B) Marcar como lido",
+                "C) Arquivar",
+                "D) Responder",
+                "E) Mover para Lixo eletrônico"
+            ],
+            "correta": 0,
+            "comentario": "Encaminhar envia a mensagem original, com os anexos, a um novo destinatário. Responder normalmente não inclui os anexos."
+        },
+        {
+            "id": 22119,
+            "enunciado": "O protocolo utilizado para o ENVIO de mensagens de correio eletrônico é o:",
+            "opcoes": [
+                "A) DNS",
+                "B) SMTP",
+                "C) POP3",
+                "D) IMAP",
+                "E) HTTP"
+            ],
+            "correta": 1,
+            "comentario": "O SMTP envia mensagens. POP3 e IMAP são usados para receber; o IMAP mantém as mensagens sincronizadas no servidor."
+        },
+        {
+            "id": 22120,
+            "enunciado": "Um servidor quer ler seus e-mails no computador e no celular, mantendo as mensagens e pastas sincronizadas nos dois. O protocolo mais adequado para o recebimento é:",
+            "opcoes": [
+                "A) FTP",
+                "B) IMAP",
+                "C) POP3 com exclusão no servidor",
+                "D) DHCP",
+                "E) SMTP"
+            ],
+            "correta": 1,
+            "comentario": "O IMAP mantém as mensagens no servidor e sincroniza leituras e pastas entre dispositivos. O POP3 costuma baixar as mensagens para um único aparelho."
+        },
+        {
+            "id": 22121,
+            "enunciado": "No endereço de e-mail protocolo@cmrb.ac.leg.br, a parte que vem depois do @ identifica:",
+            "opcoes": [
+                "A) o domínio do provedor ou da instituição",
+                "B) o nome do usuário",
+                "C) a pasta de destino",
+                "D) o assunto da mensagem",
+                "E) a senha da conta"
+            ],
+            "correta": 0,
+            "comentario": "Antes do @ fica o nome da caixa (usuário) e depois o domínio, que identifica a organização ou o provedor responsável."
+        },
+        {
+            "id": 22122,
+            "enunciado": "Mensagens não solicitadas, enviadas em massa, geralmente com propaganda, são chamadas de:",
+            "opcoes": [
+                "A) backup",
+                "B) firewall",
+                "C) cookie",
+                "D) plugin",
+                "E) spam"
+            ],
+            "correta": 4,
+            "comentario": "Spam é a mensagem não solicitada enviada em massa. Os provedores costumam desviá-las para a pasta Lixo eletrônico."
+        },
+        {
+            "id": 22123,
+            "enunciado": "Ao anexar um arquivo de planilha a um e-mail, o servidor deve observar que:",
+            "opcoes": [
+                "A) o anexo dispensa revisão quanto a dados pessoais",
+                "B) os anexos não podem ser abertos pelo destinatário",
+                "C) há limite de tamanho para anexos, e arquivos grandes devem ser compartilhados por link",
+                "D) só é possível anexar arquivos de texto",
+                "E) o anexo é enviado sem o conteúdo original"
+            ],
+            "correta": 2,
+            "comentario": "Os provedores limitam o tamanho dos anexos. Além disso, antes de enviar deve-se conferir se o arquivo contém dados pessoais que não deveriam ser compartilhados."
+        },
+        {
+            "id": 22124,
+            "enunciado": "Uma assinatura automática configurada no e-mail institucional serve para:",
+            "opcoes": [
+                "A) certificar juridicamente o conteúdo, como assinatura digital",
+                "B) impedir que a mensagem seja encaminhada",
+                "C) confirmar que o destinatário leu a mensagem",
+                "D) incluir automaticamente nome, cargo, setor e contato ao fim das mensagens",
+                "E) criptografar os anexos"
+            ],
+            "correta": 3,
+            "comentario": "A assinatura de e-mail é só um texto padrão no fim da mensagem. Não tem valor de assinatura digital com certificado."
+        },
+        {
+            "id": 22125,
+            "enunciado": "O navegador padrão que já vem instalado no Windows 11 é o:",
+            "opcoes": [
+                "A) Mozilla Thunderbird",
+                "B) Internet Explorer 6",
+                "C) Microsoft Outlook",
+                "D) Microsoft Edge",
+                "E) Windows Media Player"
+            ],
+            "correta": 3,
+            "comentario": "O Microsoft Edge é o navegador nativo do Windows 11. Outlook e Thunderbird são programas de e-mail."
+        },
+        {
+            "id": 22126,
+            "enunciado": "Limpar o cache do navegador pode ajudar quando:",
+            "opcoes": [
+                "A) um site atualizado continua aparecendo com conteúdo antigo ou com erro de carregamento",
+                "B) o teclado não responde",
+                "C) a impressora não imprime",
+                "D) o computador está sem energia",
+                "E) o e-mail não tem assunto"
+            ],
+            "correta": 0,
+            "comentario": "O cache guarda cópias de partes dos sites para carregá-los mais rápido. Se ficar desatualizado, pode exibir versões antigas; limpá-lo força o download novo."
+        },
+        {
+            "id": 22127,
+            "enunciado": "A sigla URL refere-se:",
+            "opcoes": [
+                "A) ao programa que bloqueia vírus",
+                "B) ao cabo de conexão com a rede",
+                "C) ao endereço de um recurso na internet, como https://www.exemplo.gov.br/pagina",
+                "D) ao nome do usuário do e-mail",
+                "E) à velocidade da conexão"
+            ],
+            "correta": 2,
+            "comentario": "URL (Localizador Uniforme de Recursos) é o endereço que identifica uma página ou arquivo na internet."
+        },
+        {
+            "id": 22128,
+            "enunciado": "No navegador, ao baixar um arquivo, ele normalmente é salvo, por padrão, na pasta:",
+            "opcoes": [
+                "A) Windows",
+                "B) Lixeira",
+                "C) Área de transferência",
+                "D) Arquivos de Programas",
+                "E) Downloads"
+            ],
+            "correta": 4,
+            "comentario": "A pasta Downloads é o destino padrão dos arquivos baixados. O local pode ser alterado nas configurações do navegador."
+        },
+        {
+            "id": 22129,
+            "enunciado": "Uma rede Wi-Fi pública, como a de uma praça ou rodoviária, exige cuidado porque:",
+            "opcoes": [
+                "A) outras pessoas na mesma rede podem tentar interceptar dados, por isso deve-se evitar acessar sistemas sensíveis sem proteção",
+                "B) ela sempre instala vírus no aparelho",
+                "C) ela apaga os arquivos do celular",
+                "D) ela bloqueia o acesso a e-mails",
+                "E) ela impede o uso de HTTPS"
+            ],
+            "correta": 0,
+            "comentario": "Redes abertas são compartilhadas por desconhecidos. Para serviços sensíveis, prefira a rede móvel, uma VPN ou, no mínimo, sites com HTTPS."
+        },
+        {
+            "id": 22130,
+            "enunciado": "Um plugin ou extensão de navegador é:",
+            "opcoes": [
+                "A) o endereço IP do computador",
+                "B) um tipo de cabo de rede",
+                "C) um complemento que adiciona funções ao navegador e deve ser instalado apenas de fontes confiáveis",
+                "D) o histórico de navegação",
+                "E) uma senha armazenada"
+            ],
+            "correta": 2,
+            "comentario": "Extensões adicionam recursos, como bloqueio de anúncios ou tradução. Extensões de origem duvidosa podem coletar dados ou instalar códigos maliciosos."
+        },
+        {
+            "id": 22131,
+            "enunciado": "Um servidor recebe um e-mail que imita o banco, com logotipo oficial, pedindo que clique em um link para \"atualizar seus dados\" em até 24 horas. Trata-se de:",
+            "opcoes": [
+                "A) phishing, golpe que usa mensagens falsas para roubar dados",
+                "B) atualização legítima do sistema",
+                "C) firewall",
+                "D) backup incremental",
+                "E) spam inofensivo de propaganda"
+            ],
+            "correta": 0,
+            "comentario": "Phishing usa mensagens que imitam instituições conhecidas, com senso de urgência, para levar a vítima a informar dados ou senhas em páginas falsas."
+        },
+        {
+            "id": 22132,
+            "enunciado": "Diante de uma mensagem suspeita pedindo a senha do sistema da Câmara, a atitude correta do servidor é:",
+            "opcoes": [
+                "A) clicar no link para verificar se é verdadeiro",
+                "B) não clicar nos links, não informar dados e comunicar o fato à equipe de TI",
+                "C) responder pedindo mais informações",
+                "D) informar a senha, desde que troque depois",
+                "E) encaminhar a mensagem a todos os colegas"
+            ],
+            "correta": 1,
+            "comentario": "Nenhum setor legítimo pede senha por e-mail. O correto é não interagir, reportar à TI e apagar a mensagem."
+        },
+        {
+            "id": 22133,
+            "enunciado": "Golpes de phishing aplicados por SMS ou aplicativos de mensagem, com links falsos de entrega ou cobrança, são chamados de:",
+            "opcoes": [
+                "A) cookie",
+                "B) firewall",
+                "C) smishing",
+                "D) backup",
+                "E) spoofing de DNS"
+            ],
+            "correta": 2,
+            "comentario": "Smishing é o phishing por SMS (SMS + phishing). Quando o golpe é feito por ligação telefônica, chama-se vishing."
+        },
+        {
+            "id": 22134,
+            "enunciado": "A autenticação em dois fatores (2FA) aumenta a segurança de uma conta porque:",
+            "opcoes": [
+                "A) troca a senha automaticamente todos os dias",
+                "B) impede o uso da conta em outro país",
+                "C) exige, além da senha, uma segunda prova de identidade, como um código no celular",
+                "D) dispensa o uso de senha",
+                "E) criptografa o disco do computador"
+            ],
+            "correta": 2,
+            "comentario": "Com 2FA, quem descobrir a senha ainda precisa do segundo fator (código, aplicativo autenticador, biometria ou chave física)."
+        },
+        {
+            "id": 22135,
+            "enunciado": "Assinale a senha mais segura entre as opções:",
+            "opcoes": [
+                "A) MariaSilva",
+                "B) C@m4ra-Rb!2026#Sessao",
+                "C) 12345678",
+                "D) riobranco",
+                "E) camara2026"
+            ],
+            "correta": 1,
+            "comentario": "Senhas fortes são longas e misturam letras maiúsculas, minúsculas, números e símbolos, sem usar sequências ou nomes fáceis de adivinhar."
+        },
+        {
+            "id": 22136,
+            "enunciado": "Uma boa prática no uso de senhas é:",
+            "opcoes": [
+                "A) repetir a mesma senha em todos os sistemas para não esquecer",
+                "B) anotar a senha em um papel colado no monitor",
+                "C) usar senhas diferentes para cada serviço, com apoio de um gerenciador de senhas",
+                "D) usar a data de nascimento como senha",
+                "E) compartilhar a senha com o colega de setor"
+            ],
+            "correta": 2,
+            "comentario": "Senhas únicas evitam que o vazamento de um serviço comprometa os outros. O gerenciador de senhas guarda tudo de forma criptografada."
+        },
+        {
+            "id": 22137,
+            "enunciado": "O programa malicioso que criptografa os arquivos do computador e exige pagamento para liberá-los é o:",
+            "opcoes": [
+                "A) adware",
+                "B) worm",
+                "C) spyware",
+                "D) ransomware",
+                "E) keylogger"
+            ],
+            "correta": 3,
+            "comentario": "Ransomware \"sequestra\" os dados com criptografia e pede resgate. A melhor defesa é ter cópias de segurança atualizadas e fora da máquina."
+        },
+        {
+            "id": 22138,
+            "enunciado": "O tipo de malware que se propaga sozinho pela rede, explorando falhas, sem precisar ser anexado a outro arquivo, é o:",
+            "opcoes": [
+                "A) cookie",
+                "B) cavalo de troia",
+                "C) vírus de macro",
+                "D) adware",
+                "E) worm"
+            ],
+            "correta": 4,
+            "comentario": "O worm (verme) se replica automaticamente pela rede. O vírus depende de um arquivo hospedeiro e de ser executado."
+        },
+        {
+            "id": 22139,
+            "enunciado": "O cavalo de troia (trojan) caracteriza-se por:",
+            "opcoes": [
+                "A) ser um antivírus gratuito",
+                "B) ser um tipo de backup em nuvem",
+                "C) parecer um programa útil ou legítimo, mas executar ações maliciosas escondidas",
+                "D) se espalhar apenas por pendrive, sem ser instalado",
+                "E) bloquear anúncios em sites"
+            ],
+            "correta": 2,
+            "comentario": "O trojan se disfarça de programa legítimo (jogo, atualização, ferramenta) e, ao ser instalado, abre portas para o atacante ou rouba dados."
+        },
+        {
+            "id": 22140,
+            "enunciado": "O malware que registra tudo o que é digitado no teclado, para capturar senhas, é chamado de:",
+            "opcoes": [
+                "A) firewall",
+                "B) ransomware",
+                "C) sniffer de impressora",
+                "D) adware",
+                "E) keylogger"
+            ],
+            "correta": 4,
+            "comentario": "O keylogger grava as teclas pressionadas e envia ao atacante, permitindo roubar senhas e dados."
+        },
+        {
+            "id": 22141,
+            "enunciado": "A principal função de um firewall é:",
+            "opcoes": [
+                "A) corrigir erros de ortografia em e-mails",
+                "B) controlar o tráfego de rede, bloqueando conexões não autorizadas",
+                "C) acelerar a internet",
+                "D) fazer cópias de segurança automáticas",
+                "E) remover vírus de arquivos infectados"
+            ],
+            "correta": 1,
+            "comentario": "O firewall filtra as conexões que entram e saem conforme regras. A remoção de vírus é função do antivírus."
+        },
+        {
+            "id": 22142,
+            "enunciado": "Sobre os tipos de backup, o backup INCREMENTAL copia:",
+            "opcoes": [
+                "A) apenas arquivos apagados",
+                "B) apenas os arquivos alterados desde o último backup completo",
+                "C) somente os arquivos de sistema",
+                "D) todos os arquivos, sempre",
+                "E) apenas os arquivos alterados desde o último backup, de qualquer tipo"
+            ],
+            "correta": 4,
+            "comentario": "O incremental copia o que mudou desde o último backup (completo ou incremental). O diferencial copia tudo o que mudou desde o último backup completo."
+        },
+        {
+            "id": 22143,
+            "enunciado": "Na recuperação de dados, para restaurar um backup DIFERENCIAL é necessário:",
+            "opcoes": [
+                "A) apenas o último diferencial",
+                "B) somente o primeiro backup completo e todos os incrementais",
+                "C) nenhum backup completo",
+                "D) todos os backups diferenciais feitos desde o início",
+                "E) o último backup completo e o último backup diferencial"
+            ],
+            "correta": 4,
+            "comentario": "Como o diferencial acumula tudo o que mudou desde o último completo, bastam o completo e o diferencial mais recente."
+        },
+        {
+            "id": 22144,
+            "enunciado": "A regra de backup conhecida como 3-2-1 recomenda:",
+            "opcoes": [
+                "A) três cópias dos dados, em dois tipos de mídia diferentes, com uma cópia fora do local",
+                "B) três backups por dia, durante dois dias, uma vez por semana",
+                "C) três senhas, dois usuários e um administrador",
+                "D) guardar só uma cópia, em três pastas do mesmo disco",
+                "E) três antivírus, dois firewalls e um roteador"
+            ],
+            "correta": 0,
+            "comentario": "A regra 3-2-1 reduz o risco de perder dados: se um equipamento falhar ou o prédio sofrer um incidente, ainda há cópia em outra mídia e em outro lugar."
+        },
+        {
+            "id": 22145,
+            "enunciado": "Manter o sistema operacional e os programas atualizados é uma medida de segurança porque:",
+            "opcoes": [
+                "A) as atualizações corrigem falhas que poderiam ser exploradas por atacantes",
+                "B) impede o uso de pendrives",
+                "C) aumenta o espaço do disco",
+                "D) dispensa o uso de senhas",
+                "E) apaga automaticamente os vírus existentes"
+            ],
+            "correta": 0,
+            "comentario": "Muitas atualizações são correções de segurança. Sistemas desatualizados ficam expostos a ataques que exploram falhas já conhecidas."
+        },
+        {
+            "id": 22146,
+            "enunciado": "Engenharia social, no contexto da segurança da informação, é:",
+            "opcoes": [
+                "A) o desenvolvimento de redes sociais institucionais",
+                "B) a instalação de antivírus em rede",
+                "C) a criptografia de discos rígidos",
+                "D) a manipulação de pessoas para que revelem informações ou executem ações que comprometam a segurança",
+                "E) a configuração de firewalls corporativos"
+            ],
+            "correta": 3,
+            "comentario": "A engenharia social explora a confiança e a pressa das pessoas, por exemplo com ligações fingindo ser do suporte técnico pedindo senhas."
+        },
+        {
+            "id": 22147,
+            "enunciado": "Um pendrive encontrado no estacionamento da Câmara deve ser:",
+            "opcoes": [
+                "A) conectado ao computador do setor para descobrir o dono",
+                "B) deixado em qualquer computador para quem quiser usar",
+                "C) usado para guardar backups",
+                "D) entregue à equipe de TI, sem ser conectado a nenhum computador",
+                "E) formatado no computador pessoal do servidor"
+            ],
+            "correta": 3,
+            "comentario": "Dispositivos desconhecidos podem conter malware que executa assim que são conectados. O procedimento seguro é entregá-los à TI."
+        },
+        {
+            "id": 22148,
+            "enunciado": "No ambiente de trabalho, a LGPD considera DADO PESSOAL SENSÍVEL, entre outros, a informação sobre:",
+            "opcoes": [
+                "A) o endereço da sede da Câmara",
+                "B) o nome do setor de lotação",
+                "C) saúde do servidor ou do cidadão, como um atestado médico",
+                "D) o número de um projeto de lei",
+                "E) o horário de funcionamento do protocolo"
+            ],
+            "correta": 2,
+            "comentario": "Pelo art. 5º, II, da LGPD, são sensíveis dados sobre origem racial ou étnica, convicção religiosa, opinião política, filiação sindical, saúde, vida sexual, genéticos e biométricos. Exigem cuidado redobrado."
+        },
+        {
+            "id": 22149,
+            "enunciado": "Ao deixar a estação de trabalho com processos que contêm CPF e endereço de cidadãos abertos na tela, a conduta adequada do servidor é:",
+            "opcoes": [
+                "A) deixar a tela aberta, pois o setor é interno",
+                "B) enviar os dados para o e-mail pessoal",
+                "C) imprimir os dados para consultar depois",
+                "D) bloquear o computador e não deixar documentos com dados pessoais expostos na mesa",
+                "E) compartilhar a senha com quem ficar no setor"
+            ],
+            "correta": 3,
+            "comentario": "Proteger dados pessoais inclui medidas simples: bloquear a tela (Windows + L), adotar a política de mesa limpa e não levar dados para contas pessoais."
+        },
+        {
+            "id": 22150,
+            "enunciado": "Um servidor percebe que enviou, por engano, uma planilha com dados pessoais de cidadãos para um destinatário externo. Segundo as boas práticas de proteção de dados, ele deve:",
+            "opcoes": [
+                "A) comunicar imediatamente o ocorrido ao encarregado de dados ou à chefia, para as providências de incidente",
+                "B) enviar a planilha a outros destinatários para \"diluir\" o erro",
+                "C) esperar o destinatário reclamar",
+                "D) trocar o nome do arquivo e reenviar",
+                "E) apagar o e-mail da caixa de enviados e não contar a ninguém"
+            ],
+            "correta": 0,
+            "comentario": "Vazamentos são incidentes de segurança. A LGPD prevê a comunicação de incidentes relevantes à ANPD e aos titulares, e o órgão precisa ser avisado rápido para agir."
+        },
+        {
+            "id": 22151,
+            "enunciado": "Ferramentas de inteligência artificial generativa, como chatbots que escrevem textos, podem apresentar \"alucinações\". Isso significa que elas podem:",
+            "opcoes": [
+                "A) travar o computador ao serem usadas",
+                "B) apagar arquivos sem autorização",
+                "C) funcionar apenas sem internet",
+                "D) traduzir textos somente para o inglês",
+                "E) produzir informações falsas ou inventadas com aparência convincente"
+            ],
+            "correta": 4,
+            "comentario": "Modelos generativos preveem texto plausível, não verificam fatos. Podem inventar leis, números e referências. Por isso todo conteúdo deve ser conferido."
+        },
+        {
+            "id": 22152,
+            "enunciado": "No uso de ferramentas de IA generativa no trabalho, a conduta adequada é:",
+            "opcoes": [
+                "A) copiar o texto gerado diretamente para documentos oficiais",
+                "B) enviar à ferramenta a lista completa de servidores com CPF",
+                "C) confiar nas citações de leis geradas, sem conferir",
+                "D) não inserir dados pessoais ou sigilosos e revisar o resultado antes de usá-lo",
+                "E) usar a IA para assinar documentos em nome do servidor"
+            ],
+            "correta": 3,
+            "comentario": "O uso responsável exige supervisão humana, verificação das informações e proteção de dados: o que é digitado pode ser armazenado pelo provedor da ferramenta."
+        },
+        {
+            "id": 22153,
+            "enunciado": "O texto que o usuário escreve para orientar uma ferramenta de IA generativa sobre o que ela deve produzir é chamado de:",
+            "opcoes": [
+                "A) cookie",
+                "B) prompt",
+                "C) backup",
+                "D) driver",
+                "E) firewall"
+            ],
+            "correta": 1,
+            "comentario": "O prompt é a instrução dada à IA. Prompts claros, com contexto e formato desejado, geram resultados melhores, que ainda assim precisam ser revisados."
+        },
+        {
+            "id": 22154,
+            "enunciado": "Um limite importante das ferramentas de IA generativa é que elas:",
+            "opcoes": [
+                "A) dispensam revisão humana em documentos oficiais",
+                "B) conhecem todos os fatos atualizados do dia",
+                "C) sempre citam fontes verdadeiras",
+                "D) garantem neutralidade total nas respostas",
+                "E) podem reproduzir vieses presentes nos dados com que foram treinadas"
+            ],
+            "correta": 4,
+            "comentario": "Os modelos aprendem com grandes volumes de textos, que podem conter preconceitos e erros. Além disso, podem ter informações desatualizadas."
+        },
+        {
+            "id": 22155,
+            "enunciado": "Ao usar uma IA generativa para resumir um parecer, o servidor deve ter em mente que a responsabilidade pelo conteúdo final é:",
+            "opcoes": [
+                "A) do fabricante do computador",
+                "B) do cidadão que pediu a informação",
+                "C) de ninguém, pois o texto foi gerado automaticamente",
+                "D) do servidor que revisou e utilizou o texto",
+                "E) exclusivamente da empresa que criou a ferramenta"
+            ],
+            "correta": 3,
+            "comentario": "A IA é uma ferramenta de apoio. Quem usa o resultado em um documento responde por ele, por isso a revisão humana é indispensável."
+        },
+        {
+            "id": 22156,
+            "enunciado": "Para proteger o acesso ao celular funcional com aplicativos institucionais, é recomendado:",
+            "opcoes": [
+                "A) instalar aplicativos de qualquer site",
+                "B) desativar o bloqueio de tela para agilizar o uso",
+                "C) usar bloqueio de tela com PIN, senha ou biometria e manter o sistema atualizado",
+                "D) usar a mesma senha do e-mail pessoal",
+                "E) emprestar o aparelho desbloqueado a terceiros"
+            ],
+            "correta": 2,
+            "comentario": "Bloqueio de tela, atualizações e instalação apenas pelas lojas oficiais reduzem o risco de acesso indevido e de malware."
         }
     ],
     "Ética no Serviço Público e Legislação": [
@@ -2604,6 +7367,1410 @@ window.bancoDeQuestoes = {
             ],
             "correta": 2,
             "comentario": "A urbanidade, o respeito e o zelo profissional são deveres fundamentais explícitos no Código de Ética Profissional do Servidor Público (Decreto nº 1.171/94)."
+        },
+        {
+            "id": 23001,
+            "enunciado": "Segundo a LGPD (Lei nº 13.709/2018), considera-se \"dado pessoal\":",
+            "opcoes": [
+                "A) qualquer informação sobre pessoa jurídica de direito privado",
+                "B) apenas o nome e o CPF de uma pessoa",
+                "C) somente as informações publicadas em redes sociais",
+                "D) apenas os dados armazenados em meio digital",
+                "E) a informação relacionada a pessoa natural identificada ou identificável"
+            ],
+            "correta": 4,
+            "comentario": "Pelo art. 5º, I, dado pessoal é a informação relacionada a pessoa natural identificada ou identificável. A lei vale para dados em meio físico ou digital."
+        },
+        {
+            "id": 23002,
+            "enunciado": "De acordo com a LGPD, é exemplo de dado pessoal SENSÍVEL:",
+            "opcoes": [
+                "A) o endereço residencial",
+                "B) a filiação a sindicato",
+                "C) o e-mail institucional",
+                "D) a data de admissão no cargo",
+                "E) o número de telefone"
+            ],
+            "correta": 1,
+            "comentario": "O art. 5º, II, lista como sensíveis os dados sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, saúde, vida sexual, genéticos ou biométricos."
+        },
+        {
+            "id": 23003,
+            "enunciado": "Na LGPD, a pessoa natural a quem se referem os dados pessoais objeto de tratamento é denominada:",
+            "opcoes": [
+                "A) agente de tratamento",
+                "B) operador",
+                "C) controlador",
+                "D) titular",
+                "E) encarregado"
+            ],
+            "correta": 3,
+            "comentario": "Pelo art. 5º, V, titular é a pessoa natural a quem se referem os dados pessoais."
+        },
+        {
+            "id": 23004,
+            "enunciado": "Segundo a LGPD, a quem competem as DECISÕES referentes ao tratamento de dados pessoais?",
+            "opcoes": [
+                "A) Ao encarregado",
+                "B) Ao titular",
+                "C) Ao operador",
+                "D) Ao controlador",
+                "E) À empresa de tecnologia contratada"
+            ],
+            "correta": 3,
+            "comentario": "O controlador (art. 5º, VI) é quem decide sobre o tratamento. O operador (art. 5º, VII) realiza o tratamento em nome do controlador."
+        },
+        {
+            "id": 23005,
+            "enunciado": "Uma empresa contratada pela Câmara para hospedar o sistema de protocolo e processar dados conforme as instruções do órgão atua, nos termos da LGPD, como:",
+            "opcoes": [
+                "A) encarregada",
+                "B) controladora",
+                "C) autoridade nacional",
+                "D) titular",
+                "E) operadora"
+            ],
+            "correta": 4,
+            "comentario": "Quem trata dados em nome do controlador, seguindo suas instruções, é o operador (art. 5º, VII). A Câmara, que decide sobre o tratamento, é a controladora."
+        },
+        {
+            "id": 23006,
+            "enunciado": "Na LGPD, a pessoa indicada pelo controlador para atuar como canal de comunicação entre o controlador, os titulares e a Autoridade Nacional de Proteção de Dados (ANPD) é o:",
+            "opcoes": [
+                "A) auditor externo",
+                "B) operador",
+                "C) titular",
+                "D) controlador conjunto",
+                "E) encarregado"
+            ],
+            "correta": 4,
+            "comentario": "O art. 5º, VIII, define o encarregado (também conhecido como DPO) como esse canal de comunicação."
+        },
+        {
+            "id": 23007,
+            "enunciado": "Para a LGPD, \"tratamento\" de dados pessoais abrange:",
+            "opcoes": [
+                "A) apenas a venda de dados a terceiros",
+                "B) apenas o armazenamento em computadores",
+                "C) toda operação realizada com dados pessoais, como coleta, acesso, armazenamento, compartilhamento e eliminação",
+                "D) somente a coleta inicial dos dados",
+                "E) somente o envio de dados para fora do país"
+            ],
+            "correta": 2,
+            "comentario": "O art. 5º, X, define tratamento de forma ampla: coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, entre outras operações."
+        },
+        {
+            "id": 23008,
+            "enunciado": "O princípio da LGPD que limita o tratamento ao mínimo necessário para a realização de suas finalidades, com dados pertinentes, proporcionais e não excessivos, é o princípio da:",
+            "opcoes": [
+                "A) transparência",
+                "B) qualidade dos dados",
+                "C) livre acesso",
+                "D) necessidade",
+                "E) responsabilização"
+            ],
+            "correta": 3,
+            "comentario": "O art. 6º, III, define o princípio da necessidade: tratar apenas os dados indispensáveis para a finalidade."
+        },
+        {
+            "id": 23009,
+            "enunciado": "O princípio da LGPD que exige que o tratamento seja feito para propósitos legítimos, específicos, explícitos e informados ao titular é o da:",
+            "opcoes": [
+                "A) segurança",
+                "B) finalidade",
+                "C) prevenção",
+                "D) adequação técnica",
+                "E) não discriminação"
+            ],
+            "correta": 1,
+            "comentario": "O art. 6º, I, trata do princípio da finalidade. O da adequação (inciso II) exige compatibilidade do tratamento com as finalidades informadas."
+        },
+        {
+            "id": 23010,
+            "enunciado": "Garantir aos titulares a consulta facilitada e gratuita sobre a forma, a duração do tratamento e a integralidade de seus dados corresponde ao princípio do(a):",
+            "opcoes": [
+                "A) finalidade",
+                "B) segurança",
+                "C) prevenção",
+                "D) livre acesso",
+                "E) necessidade"
+            ],
+            "correta": 3,
+            "comentario": "O art. 6º, IV, define o princípio do livre acesso."
+        },
+        {
+            "id": 23011,
+            "enunciado": "A LGPD veda o tratamento de dados para fins discriminatórios ilícitos ou abusivos. Trata-se do princípio da:",
+            "opcoes": [
+                "A) responsabilização e prestação de contas",
+                "B) não discriminação",
+                "C) transparência",
+                "D) qualidade dos dados",
+                "E) adequação"
+            ],
+            "correta": 1,
+            "comentario": "O art. 6º, IX, estabelece o princípio da não discriminação."
+        },
+        {
+            "id": 23012,
+            "enunciado": "Segundo a LGPD, o consentimento do titular deve ser uma manifestação:",
+            "opcoes": [
+                "A) tácita, presumida pelo silêncio do titular",
+                "B) obrigatória para qualquer tratamento feito pelo poder público",
+                "C) feita exclusivamente em cartório",
+                "D) válida por tempo indeterminado e irrevogável",
+                "E) livre, informada e inequívoca, para uma finalidade determinada"
+            ],
+            "correta": 4,
+            "comentario": "O art. 5º, XII, define consentimento como manifestação livre, informada e inequívoca. O consentimento pode ser revogado a qualquer momento (art. 8º, § 5º)."
+        },
+        {
+            "id": 23013,
+            "enunciado": "Sobre o tratamento de dados pessoais pelo poder público, a LGPD estabelece que:",
+            "opcoes": [
+                "A) é sempre proibido, salvo autorização judicial",
+                "B) só pode ser feito por empresas privadas contratadas",
+                "C) depende sempre de consentimento escrito de cada cidadão",
+                "D) é permitido para a execução de políticas públicas e o cumprimento de atribuições legais, sem depender, nesses casos, do consentimento do titular",
+                "E) dispensa qualquer transparência sobre as finalidades"
+            ],
+            "correta": 3,
+            "comentario": "Os arts. 7º, III, e 23 permitem o tratamento pelo poder público para atender sua finalidade pública e executar competências legais, devendo o órgão informar as hipóteses de tratamento e indicar um encarregado."
+        },
+        {
+            "id": 23014,
+            "enunciado": "Constitui direito do titular de dados pessoais, previsto no art. 18 da LGPD:",
+            "opcoes": [
+                "A) receber indenização automática por qualquer tratamento",
+                "B) exigir que o órgão público apague dados de processos judiciais em andamento",
+                "C) impedir qualquer órgão de guardar seus dados para obrigação legal",
+                "D) obter a correção de dados incompletos, inexatos ou desatualizados",
+                "E) escolher o servidor que vai tratar seus dados"
+            ],
+            "correta": 3,
+            "comentario": "Entre os direitos do art. 18 estão: confirmação e acesso aos dados, correção, anonimização ou eliminação de dados desnecessários, portabilidade, informação sobre compartilhamento e revogação do consentimento."
+        },
+        {
+            "id": 23015,
+            "enunciado": "A LGPD NÃO se aplica ao tratamento de dados pessoais realizado:",
+            "opcoes": [
+                "A) por órgão público para executar política pública",
+                "B) por empresas privadas para vender produtos",
+                "C) por pessoa natural para fins exclusivamente particulares e não econômicos",
+                "D) por hospitais privados para atendimento de pacientes",
+                "E) por bancos para concessão de crédito"
+            ],
+            "correta": 2,
+            "comentario": "O art. 4º exclui, entre outros, o tratamento feito por pessoa natural para fins exclusivamente particulares e não econômicos e o feito para fins exclusivamente jornalísticos, artísticos ou de segurança pública."
+        },
+        {
+            "id": 23016,
+            "enunciado": "Dado anonimizado, segundo a LGPD, é aquele que:",
+            "opcoes": [
+                "A) foi publicado sem o nome do autor",
+                "B) não permite identificar o titular, considerando meios técnicos razoáveis",
+                "C) foi criptografado com senha",
+                "D) está guardado em papel",
+                "E) pertence a pessoa já falecida"
+            ],
+            "correta": 1,
+            "comentario": "Pelo art. 5º, III, dado anonimizado é o que não pode ser associado ao titular, considerados os meios técnicos razoáveis disponíveis. Em regra, não é considerado dado pessoal (art. 12)."
+        },
+        {
+            "id": 23017,
+            "enunciado": "O órgão responsável por zelar pela proteção de dados pessoais, fiscalizar e aplicar sanções previstas na LGPD é a:",
+            "opcoes": [
+                "A) Polícia Federal",
+                "B) Autoridade Nacional de Proteção de Dados (ANPD)",
+                "C) Agência Nacional de Telecomunicações (Anatel)",
+                "D) Defensoria Pública da União",
+                "E) Controladoria-Geral da União (CGU)"
+            ],
+            "correta": 1,
+            "comentario": "A ANPD é a autoridade responsável por zelar, implementar e fiscalizar o cumprimento da LGPD em todo o território nacional."
+        },
+        {
+            "id": 23018,
+            "enunciado": "Ocorrido um incidente de segurança que possa acarretar risco ou dano relevante aos titulares, a LGPD determina que o controlador:",
+            "opcoes": [
+                "A) comunique apenas à imprensa",
+                "B) apague todos os dados para evitar provas",
+                "C) aguarde reclamação formal dos titulares para agir",
+                "D) mantenha sigilo absoluto sobre o ocorrido",
+                "E) comunique o incidente à ANPD e ao titular"
+            ],
+            "correta": 4,
+            "comentario": "O art. 48 obriga o controlador a comunicar à ANPD e ao titular a ocorrência de incidente de segurança que possa acarretar risco ou dano relevante."
+        },
+        {
+            "id": 23019,
+            "enunciado": "O tratamento de dados pessoais de crianças, segundo a LGPD, deve ser realizado:",
+            "opcoes": [
+                "A) com consentimento da própria criança, a partir dos 7 anos",
+                "B) somente com autorização judicial",
+                "C) em seu melhor interesse, com consentimento específico de pelo menos um dos pais ou do responsável legal, nas hipóteses que o exigem",
+                "D) apenas por instituições de ensino",
+                "E) livremente, pois crianças não são titulares de dados"
+            ],
+            "correta": 2,
+            "comentario": "O art. 14 exige que o tratamento de dados de crianças seja feito em seu melhor interesse, com consentimento específico e em destaque de pelo menos um dos pais ou responsável legal."
+        },
+        {
+            "id": 23020,
+            "enunciado": "O princípio da LGPD que exige a adoção de medidas técnicas e administrativas aptas a proteger os dados de acessos não autorizados e de situações acidentais ou ilícitas é o da:",
+            "opcoes": [
+                "A) adequação",
+                "B) livre acesso",
+                "C) segurança",
+                "D) transparência",
+                "E) finalidade"
+            ],
+            "correta": 2,
+            "comentario": "O art. 6º, VII, trata do princípio da segurança. O da prevenção (inciso VIII) foca em medidas para evitar danos."
+        },
+        {
+            "id": 23021,
+            "enunciado": "A LGPD protege os dados pessoais com o objetivo de assegurar os direitos fundamentais de:",
+            "opcoes": [
+                "A) sigilo absoluto de todos os atos públicos",
+                "B) liberdade, privacidade e livre desenvolvimento da personalidade da pessoa natural",
+                "C) segurança nacional exclusivamente",
+                "D) livre comércio de bancos de dados",
+                "E) propriedade industrial das empresas"
+            ],
+            "correta": 1,
+            "comentario": "O art. 1º declara que a lei tem o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural."
+        },
+        {
+            "id": 23022,
+            "enunciado": "Um servidor que, sem necessidade para o serviço, consulta o cadastro de um cidadão por curiosidade pessoal, viola principalmente o princípio da LGPD da:",
+            "opcoes": [
+                "A) publicidade dos atos administrativos",
+                "B) portabilidade, pois não transferiu os dados",
+                "C) finalidade, pois o uso não corresponde ao propósito legítimo do tratamento",
+                "D) livre iniciativa",
+                "E) qualidade dos dados, pois os dados estavam corretos"
+            ],
+            "correta": 2,
+            "comentario": "Os dados só podem ser usados para as finalidades legítimas que justificaram o tratamento. O acesso por curiosidade desvia a finalidade e pode gerar responsabilização."
+        },
+        {
+            "id": 23023,
+            "enunciado": "Segundo a Lei de Acesso à Informação (Lei nº 12.527/2011), uma das diretrizes da lei é:",
+            "opcoes": [
+                "A) a exigência de justificativa para todo pedido de informação",
+                "B) a divulgação de informações apenas mediante requerimento",
+                "C) o sigilo como regra e a publicidade como exceção",
+                "D) a observância da publicidade como preceito geral e do sigilo como exceção",
+                "E) a restrição do acesso a cidadãos com nível superior"
+            ],
+            "correta": 3,
+            "comentario": "O art. 3º, I, da LAI fixa como diretriz a publicidade como preceito geral e o sigilo como exceção."
+        },
+        {
+            "id": 23024,
+            "enunciado": "A Lei de Acesso à Informação aplica-se:",
+            "opcoes": [
+                "A) aos órgãos dos Poderes Executivo, Legislativo e Judiciário de todos os entes, inclusive às Câmaras Municipais",
+                "B) somente aos ministérios e às agências reguladoras",
+                "C) apenas às empresas privadas que recebem recursos públicos",
+                "D) somente aos órgãos que tenham site na internet",
+                "E) apenas aos órgãos do Poder Executivo federal"
+            ],
+            "correta": 0,
+            "comentario": "O art. 1º, parágrafo único, subordina à LAI os órgãos públicos de todos os Poderes, de todos os entes federativos, incluindo os Legislativos e as Cortes de Contas."
+        },
+        {
+            "id": 23025,
+            "enunciado": "Na LAI, a divulgação de informações de interesse coletivo pelos órgãos públicos, por iniciativa própria e independentemente de requerimento, é chamada de:",
+            "opcoes": [
+                "A) recurso administrativo",
+                "B) transparência ativa",
+                "C) classificação de sigilo",
+                "D) transparência passiva",
+                "E) tratamento de dados"
+            ],
+            "correta": 1,
+            "comentario": "Transparência ativa é a divulgação espontânea (art. 8º). Transparência passiva é a resposta a pedidos de acesso feitos pelos cidadãos (arts. 10 a 14)."
+        },
+        {
+            "id": 23026,
+            "enunciado": "Um cidadão protocola na Câmara um pedido de cópia dos contratos de manutenção predial. Esse atendimento é exemplo de:",
+            "opcoes": [
+                "A) classificação de informação como reservada",
+                "B) tratamento sigiloso de dados",
+                "C) transparência ativa",
+                "D) publicidade institucional",
+                "E) transparência passiva"
+            ],
+            "correta": 4,
+            "comentario": "Quando a informação é fornecida em resposta a um pedido do cidadão, trata-se de transparência passiva."
+        },
+        {
+            "id": 23027,
+            "enunciado": "De acordo com a LAI, para pedir acesso a uma informação, o interessado:",
+            "opcoes": [
+                "A) deve identificar-se e especificar a informação, sendo proibido exigir os motivos do pedido",
+                "B) deve justificar por que deseja a informação",
+                "C) precisa comprovar residência no município",
+                "D) precisa pagar taxa prévia de análise",
+                "E) deve ser representado por advogado"
+            ],
+            "correta": 0,
+            "comentario": "O art. 10 exige identificação do requerente e especificação da informação. O § 3º veda quaisquer exigências relativas aos motivos determinantes da solicitação."
+        },
+        {
+            "id": 23028,
+            "enunciado": "Não sendo possível conceder o acesso imediato à informação, o órgão deve responder ao pedido no prazo de até:",
+            "opcoes": [
+                "A) 60 dias, prorrogáveis indefinidamente",
+                "B) 10 dias, improrrogáveis",
+                "C) 30 dias, prorrogável por mais 30 dias",
+                "D) 20 dias, prorrogável por mais 10 dias mediante justificativa expressa",
+                "E) 5 dias, prorrogável por mais 5 dias"
+            ],
+            "correta": 3,
+            "comentario": "O art. 11, § 1º, fixa o prazo de até 20 dias, e o § 2º permite prorrogação por mais 10 dias, com justificativa e ciência do requerente."
+        },
+        {
+            "id": 23029,
+            "enunciado": "Quanto aos custos, a LAI determina que o serviço de busca e fornecimento da informação é:",
+            "opcoes": [
+                "A) sempre cobrado, conforme tabela de cada órgão",
+                "B) gratuito, salvo a cobrança do custo de reprodução de documentos, da qual fica isento quem declarar insuficiência econômica",
+                "C) gratuito apenas para servidores públicos",
+                "D) gratuito somente para pedidos feitos pela internet",
+                "E) cobrado em dobro quando o pedido é urgente"
+            ],
+            "correta": 1,
+            "comentario": "O art. 12 prevê a gratuidade do serviço de busca, podendo ser cobrado apenas o custo de reprodução, com isenção para quem declarar não ter condições de pagar."
+        },
+        {
+            "id": 23030,
+            "enunciado": "Negado o acesso à informação, o requerente pode interpor recurso no prazo de:",
+            "opcoes": [
+                "A) 5 dias úteis da publicação no Diário Oficial",
+                "B) 30 dias corridos",
+                "C) 10 dias a contar da ciência da decisão",
+                "D) 15 dias da data do pedido",
+                "E) 48 horas"
+            ],
+            "correta": 2,
+            "comentario": "O art. 15 garante recurso no prazo de 10 dias da ciência, dirigido à autoridade hierarquicamente superior à que proferiu a decisão, que deve se manifestar em 5 dias."
+        },
+        {
+            "id": 23031,
+            "enunciado": "Pela LAI, a informação classificada como ULTRASSECRETA tem prazo máximo de restrição de acesso de:",
+            "opcoes": [
+                "A) 50 anos",
+                "B) 25 anos",
+                "C) 15 anos",
+                "D) 5 anos",
+                "E) 100 anos"
+            ],
+            "correta": 1,
+            "comentario": "O art. 24 fixa os prazos máximos: ultrassecreta, 25 anos; secreta, 15 anos; reservada, 5 anos."
+        },
+        {
+            "id": 23032,
+            "enunciado": "Segundo a LAI, a informação classificada como RESERVADA terá restrição de acesso pelo prazo máximo de:",
+            "opcoes": [
+                "A) 2 anos",
+                "B) 10 anos",
+                "C) 15 anos",
+                "D) 5 anos",
+                "E) 25 anos"
+            ],
+            "correta": 3,
+            "comentario": "O prazo máximo para a informação reservada é de 5 anos (art. 24, § 1º, III)."
+        },
+        {
+            "id": 23033,
+            "enunciado": "As informações pessoais relativas à intimidade, à vida privada, à honra e à imagem, segundo a LAI, terão acesso restrito pelo prazo máximo de:",
+            "opcoes": [
+                "A) 100 anos, independentemente de classificação de sigilo",
+                "B) apenas enquanto a pessoa estiver viva",
+                "C) 15 anos, como as secretas",
+                "D) 25 anos, como as ultrassecretas",
+                "E) 5 anos, como as reservadas"
+            ],
+            "correta": 0,
+            "comentario": "O art. 31, § 1º, I, restringe o acesso a essas informações pessoais pelo prazo máximo de 100 anos a contar de sua produção, independentemente de classificação."
+        },
+        {
+            "id": 23034,
+            "enunciado": "A LAI determina a criação, nos órgãos públicos, de um Serviço de Informações ao Cidadão (SIC), com a função de:",
+            "opcoes": [
+                "A) aplicar multas aos cidadãos que fizerem pedidos repetidos",
+                "B) substituir a ouvidoria e a corregedoria",
+                "C) atender e orientar o público, informar sobre a tramitação de documentos e protocolizar pedidos de acesso",
+                "D) julgar os recursos contra negativa de acesso em última instância",
+                "E) classificar todas as informações como sigilosas"
+            ],
+            "correta": 2,
+            "comentario": "O art. 9º, I, prevê o SIC para atender e orientar o público, informar sobre a tramitação de documentos e protocolizar requerimentos de acesso."
+        },
+        {
+            "id": 23035,
+            "enunciado": "Segundo a LAI, a divulgação obrigatória de informações pela internet, em sítios oficiais, é DISPENSADA:",
+            "opcoes": [
+                "A) para todas as Câmaras Municipais",
+                "B) para os municípios com população de até 10.000 habitantes, mantida a divulgação em tempo real das informações orçamentárias e financeiras",
+                "C) para os órgãos do Poder Judiciário",
+                "D) para os municípios com mais de 100.000 habitantes",
+                "E) para os órgãos que tenham ouvidoria"
+            ],
+            "correta": 1,
+            "comentario": "O art. 8º, § 4º, dispensa da divulgação obrigatória na internet os municípios com até 10.000 habitantes, mas mantém a obrigação de divulgar em tempo real as informações orçamentárias e financeiras."
+        },
+        {
+            "id": 23036,
+            "enunciado": "Constitui conduta ilícita que enseja responsabilidade do agente público, segundo a LAI:",
+            "opcoes": [
+                "A) orientar o cidadão sobre onde encontrar a informação",
+                "B) responder o pedido dentro do prazo legal",
+                "C) informar que o dado está classificado e indicar o fundamento",
+                "D) pedir a prorrogação do prazo com justificativa",
+                "E) recusar-se a fornecer informação requerida, retardar deliberadamente seu fornecimento ou fornecê-la de forma intencionalmente incorreta"
+            ],
+            "correta": 4,
+            "comentario": "O art. 32, I, lista como conduta ilícita recusar, retardar deliberadamente ou fornecer intencionalmente de forma incorreta, incompleta ou imprecisa a informação."
+        },
+        {
+            "id": 23037,
+            "enunciado": "Segundo a LAI, quando a informação solicitada estiver disponível ao público em formato impresso, eletrônico ou em outro meio de acesso universal, o órgão:",
+            "opcoes": [
+                "A) deve exigir que o cidadão comprove o motivo do pedido",
+                "B) deve classificá-la como reservada",
+                "C) deve negar o pedido sem justificativa",
+                "D) pode informar ao requerente o lugar e a forma de acessá-la, desonerando-se da obrigação de fornecê-la diretamente",
+                "E) deve cobrar taxa pelo fornecimento"
+            ],
+            "correta": 3,
+            "comentario": "O art. 11, § 6º, permite ao órgão indicar o local e a forma de consultar a informação já disponível, salvo se o requerente declarar não dispor de meios para isso."
+        },
+        {
+            "id": 23038,
+            "enunciado": "Na LAI, a qualidade da informação que foi produzida, expedida, recebida ou modificada por determinado indivíduo, equipamento ou sistema é a:",
+            "opcoes": [
+                "A) primariedade",
+                "B) disponibilidade",
+                "C) autenticidade",
+                "D) confidencialidade",
+                "E) integridade"
+            ],
+            "correta": 2,
+            "comentario": "O art. 4º define: disponibilidade (pode ser conhecida e usada), autenticidade (origem identificada), integridade (não modificada) e primariedade (coletada na fonte, com máximo detalhamento)."
+        },
+        {
+            "id": 23039,
+            "enunciado": "Na LAI, a informação \"não modificada, inclusive quanto à origem, trânsito e destino\" possui a qualidade da:",
+            "opcoes": [
+                "A) integridade",
+                "B) publicidade",
+                "C) primariedade",
+                "D) disponibilidade",
+                "E) autenticidade"
+            ],
+            "correta": 0,
+            "comentario": "Pelo art. 4º, VIII, integridade é a qualidade da informação não modificada, inclusive quanto à origem, trânsito e destino."
+        },
+        {
+            "id": 23040,
+            "enunciado": "Na transparência ativa, a LAI determina como conteúdo mínimo de divulgação, entre outros:",
+            "opcoes": [
+                "A) informações classificadas como secretas",
+                "B) dados pessoais de saúde dos servidores",
+                "C) senhas dos sistemas internos",
+                "D) endereços residenciais dos vereadores",
+                "E) registros de despesas, informações sobre licitações e contratos, e respostas a perguntas frequentes da sociedade"
+            ],
+            "correta": 4,
+            "comentario": "O art. 8º, § 1º, inclui registros de competências e estrutura, repasses, despesas, licitações e contratos, dados de programas e obras e respostas a perguntas frequentes."
+        },
+        {
+            "id": 23041,
+            "enunciado": "Os sítios oficiais na internet usados para a transparência ativa devem, segundo a LAI:",
+            "opcoes": [
+                "A) conter ferramenta de pesquisa, permitir a gravação de relatórios em formatos abertos e adotar medidas de acessibilidade",
+                "B) restringir a consulta ao horário de expediente",
+                "C) disponibilizar dados apenas em imagens escaneadas",
+                "D) ser acessados somente dentro do prédio do órgão",
+                "E) exigir cadastro com CPF para qualquer consulta"
+            ],
+            "correta": 0,
+            "comentario": "O art. 8º, § 3º, exige ferramenta de pesquisa, relatórios em formatos eletrônicos abertos e legíveis por máquina, atualização e acessibilidade para pessoas com deficiência."
+        },
+        {
+            "id": 23042,
+            "enunciado": "A negativa de acesso a uma informação deve ser, segundo a LAI:",
+            "opcoes": [
+                "A) fundamentada, com indicação das razões, e acompanhada de informação sobre a possibilidade de recurso",
+                "B) justificada somente se o cidadão pagar taxa",
+                "C) definitiva, sem possibilidade de recurso",
+                "D) comunicada apenas ao Ministério Público",
+                "E) verbal e sem registro"
+            ],
+            "correta": 0,
+            "comentario": "O art. 11, § 1º, II e § 4º, exige que o requerente seja informado das razões da negativa e da possibilidade de recurso, com prazos e condições."
+        },
+        {
+            "id": 23043,
+            "enunciado": "Assinale a alternativa que traz um objetivo da Lei de Acesso à Informação:",
+            "opcoes": [
+                "A) garantir sigilo sobre os gastos públicos",
+                "B) substituir os tribunais de contas",
+                "C) fomentar o desenvolvimento da cultura de transparência e o controle social da administração pública",
+                "D) reduzir o número de servidores nas ouvidorias",
+                "E) impedir que a imprensa publique dados oficiais"
+            ],
+            "correta": 2,
+            "comentario": "O art. 3º, IV e V, coloca entre as diretrizes o desenvolvimento da cultura de transparência e o controle social da administração pública."
+        },
+        {
+            "id": 23044,
+            "enunciado": "A Lei nº 14.129/2021, conhecida como Lei do Governo Digital, dispõe sobre princípios, regras e instrumentos para o aumento da eficiência da administração pública, especialmente por meio da:",
+            "opcoes": [
+                "A) extinção do atendimento presencial em todos os órgãos",
+                "B) desburocratização, da inovação, da transformação digital e da participação do cidadão",
+                "C) centralização de todos os serviços em um único município",
+                "D) privatização dos serviços públicos digitais",
+                "E) substituição dos servidores por sistemas automáticos"
+            ],
+            "correta": 1,
+            "comentario": "O art. 1º da Lei nº 14.129/2021 indica esses eixos: desburocratização, inovação, transformação digital e participação do cidadão."
+        },
+        {
+            "id": 23045,
+            "enunciado": "Quanto ao alcance, a Lei nº 14.129/2021 aplica-se aos Estados, ao Distrito Federal e aos Municípios:",
+            "opcoes": [
+                "A) apenas em relação aos serviços de saúde",
+                "B) de forma automática e obrigatória, desde a publicação",
+                "C) somente aos municípios com mais de um milhão de habitantes",
+                "D) apenas quando autorizados pelo Tribunal de Contas da União",
+                "E) que adotarem seus comandos por meio de atos normativos próprios"
+            ],
+            "correta": 4,
+            "comentario": "O art. 2º aplica a lei diretamente à administração federal e, quanto aos demais entes, àqueles que adotarem os seus comandos por meio de atos normativos próprios."
+        },
+        {
+            "id": 23046,
+            "enunciado": "É princípio ou diretriz do Governo Digital, nos termos da Lei nº 14.129/2021:",
+            "opcoes": [
+                "A) o uso de linguagem clara e compreensível a qualquer cidadão",
+                "B) o sigilo como regra na prestação de serviços",
+                "C) a exigência de prova de fato já comprovado por documento válido",
+                "D) a exigência de reconhecimento de firma em todos os requerimentos",
+                "E) a obrigatoriedade de comparecimento presencial para qualquer serviço"
+            ],
+            "correta": 0,
+            "comentario": "O art. 3º inclui a linguagem clara, a desburocratização e a vedação de exigir prova de fato já comprovado pela apresentação de documento ou informação válida."
+        },
+        {
+            "id": 23047,
+            "enunciado": "A Lei do Governo Digital estabelece, entre seus princípios, a presunção de:",
+            "opcoes": [
+                "A) má-fé do cidadão até prova em contrário",
+                "B) irregularidade de documentos digitais",
+                "C) culpa do servidor em caso de atraso",
+                "D) veracidade de qualquer informação publicada em redes sociais",
+                "E) boa-fé do usuário dos serviços públicos"
+            ],
+            "correta": 4,
+            "comentario": "O art. 3º da Lei nº 14.129/2021 prevê, entre seus princípios, a presunção de boa-fé do usuário dos serviços públicos."
+        },
+        {
+            "id": 23048,
+            "enunciado": "Em relação ao atendimento presencial, a Lei nº 14.129/2021 prevê:",
+            "opcoes": [
+                "A) a permanência da possibilidade de atendimento presencial, de acordo com as características, a relevância e o público-alvo do serviço",
+                "B) o atendimento presencial somente com agendamento judicial",
+                "C) o atendimento presencial apenas para servidores",
+                "D) a cobrança de taxa extra para atendimento presencial",
+                "E) a extinção imediata de todo atendimento presencial"
+            ],
+            "correta": 0,
+            "comentario": "A lei incentiva o digital, mas o art. 3º garante a permanência do atendimento presencial conforme a natureza do serviço e o público atendido."
+        },
+        {
+            "id": 23049,
+            "enunciado": "A Lei do Governo Digital define \"autosserviço\" como:",
+            "opcoes": [
+                "A) o atendimento feito pelo próprio servidor em sua residência",
+                "B) a autorização para o servidor prestar serviços particulares",
+                "C) a prestação de serviço sem qualquer controle do órgão",
+                "D) o acesso pelo cidadão a serviço público prestado por meio digital, sem necessidade de mediação humana",
+                "E) o pagamento de serviços públicos por aplicativos privados"
+            ],
+            "correta": 3,
+            "comentario": "O art. 4º define autosserviço como o acesso a serviço público digital sem mediação humana."
+        },
+        {
+            "id": 23050,
+            "enunciado": "Segundo a Lei nº 14.129/2021, \"dados abertos\" são dados acessíveis ao público, em meio digital, estruturados em formato aberto, processáveis por máquina e:",
+            "opcoes": [
+                "A) restritos a pesquisadores credenciados",
+                "B) disponibilizados sob licença aberta que permita sua livre utilização, limitando-se a exigir o crédito da autoria ou da fonte",
+                "C) disponíveis somente mediante pagamento",
+                "D) acessíveis apenas aos servidores do órgão",
+                "E) publicados exclusivamente em formato de imagem"
+            ],
+            "correta": 1,
+            "comentario": "O art. 4º define dados abertos com essas características, incluindo a licença aberta para livre utilização, consumo ou cruzamento."
+        },
+        {
+            "id": 23051,
+            "enunciado": "A capacidade de diferentes sistemas e órgãos trocarem e utilizarem informações entre si de forma eficiente, prevista na Lei do Governo Digital, é chamada de:",
+            "opcoes": [
+                "A) interoperabilidade",
+                "B) descentralização administrativa",
+                "C) transparência passiva",
+                "D) portabilidade de cargos",
+                "E) autotutela"
+            ],
+            "correta": 0,
+            "comentario": "A interoperabilidade permite o compartilhamento de dados entre órgãos, evitando que o cidadão tenha de apresentar várias vezes o mesmo documento."
+        },
+        {
+            "id": 23052,
+            "enunciado": "Pela Lei do Governo Digital, um órgão que exige do cidadão a apresentação de uma certidão que ele próprio pode obter em outro órgão público, por compartilhamento de dados, contraria a diretriz de:",
+            "opcoes": [
+                "A) segurança nacional",
+                "B) publicidade dos atos administrativos",
+                "C) autonomia municipal",
+                "D) simplificação e eliminação de exigências desnecessárias, com compartilhamento de dados entre órgãos",
+                "E) separação dos Poderes"
+            ],
+            "correta": 3,
+            "comentario": "A lei estimula a atuação integrada e o compartilhamento de dados para que o cidadão não precise buscar documentos que o próprio poder público já possui."
+        },
+        {
+            "id": 23053,
+            "enunciado": "Em segurança da informação, o pilar que garante que a informação seja acessada apenas por pessoas autorizadas é a:",
+            "opcoes": [
+                "A) interoperabilidade",
+                "B) disponibilidade",
+                "C) confidencialidade",
+                "D) integridade",
+                "E) irretratabilidade"
+            ],
+            "correta": 2,
+            "comentario": "Os pilares clássicos são confidencialidade (acesso só por autorizados), integridade (informação não alterada indevidamente) e disponibilidade (acessível quando necessário)."
+        },
+        {
+            "id": 23054,
+            "enunciado": "O sistema de protocolo da Câmara ficou fora do ar durante um dia inteiro, impedindo o registro de documentos. Foi comprometido, principalmente, o pilar da segurança da informação denominado:",
+            "opcoes": [
+                "A) anonimização",
+                "B) confidencialidade",
+                "C) disponibilidade",
+                "D) autenticidade",
+                "E) integridade"
+            ],
+            "correta": 2,
+            "comentario": "A disponibilidade garante que a informação e os sistemas estejam acessíveis aos usuários autorizados quando necessário."
+        },
+        {
+            "id": 23055,
+            "enunciado": "Uma ata que foi alterada sem autorização depois de assinada teve comprometida, principalmente, a sua:",
+            "opcoes": [
+                "A) publicidade",
+                "B) disponibilidade",
+                "C) confidencialidade",
+                "D) acessibilidade",
+                "E) integridade"
+            ],
+            "correta": 4,
+            "comentario": "A integridade garante que a informação não seja modificada de forma indevida ou não autorizada."
+        },
+        {
+            "id": 23056,
+            "enunciado": "No uso de ferramentas de inteligência artificial pela administração pública, a \"supervisão humana\" significa que:",
+            "opcoes": [
+                "A) os servidores não precisam conhecer o funcionamento da ferramenta",
+                "B) a IA substitui a assinatura da autoridade competente",
+                "C) decisões que afetam direitos devem ser acompanhadas, revisadas e assumidas por pessoas responsáveis",
+                "D) os sistemas de IA podem decidir sozinhos qualquer processo",
+                "E) basta que o resultado seja rápido para ser válido"
+            ],
+            "correta": 2,
+            "comentario": "A IA deve apoiar, não substituir, o juízo humano. O agente público continua responsável pelas decisões e deve poder revisá-las e explicá-las."
+        },
+        {
+            "id": 23057,
+            "enunciado": "O uso transparente de inteligência artificial no serviço público implica:",
+            "opcoes": [
+                "A) usar IA apenas em segredo, para evitar críticas",
+                "B) publicar senhas dos sistemas de IA",
+                "C) informar quando e para que a ferramenta é usada e permitir compreender os critérios que influenciaram o resultado",
+                "D) impedir que o cidadão questione o resultado",
+                "E) ocultar do cidadão que a resposta foi gerada por IA"
+            ],
+            "correta": 2,
+            "comentario": "Transparência envolve informar o uso da IA, sua finalidade e os critérios relevantes, permitindo controle e contestação."
+        },
+        {
+            "id": 23058,
+            "enunciado": "Um risco ético relevante no uso de sistemas de IA pela administração pública é:",
+            "opcoes": [
+                "A) a reprodução de vieses dos dados de treinamento, que pode gerar tratamento discriminatório",
+                "B) a redução automática de custos sem qualquer risco",
+                "C) a eliminação de todos os erros humanos",
+                "D) a dispensa de proteção de dados",
+                "E) a garantia de imparcialidade absoluta"
+            ],
+            "correta": 0,
+            "comentario": "Se os dados de treinamento contêm distorções, o sistema pode reproduzi-las, violando a impessoalidade e o princípio da não discriminação."
+        },
+        {
+            "id": 23059,
+            "enunciado": "Antes de inserir em uma ferramenta pública de IA generativa o texto de um processo com dados de cidadãos, o servidor deve:",
+            "opcoes": [
+                "A) pedir à ferramenta que guarde os dados em sigilo",
+                "B) inserir o processo completo para obter um resultado melhor",
+                "C) publicar o processo nas redes sociais para consulta",
+                "D) verificar se o uso é autorizado e retirar ou anonimizar os dados pessoais",
+                "E) enviar os dados para o e-mail pessoal antes"
+            ],
+            "correta": 3,
+            "comentario": "O uso responsável de IA respeita a LGPD: dados pessoais só podem ser tratados para finalidade legítima e com segurança, o que pode não ocorrer em ferramentas externas."
+        },
+        {
+            "id": 23060,
+            "enunciado": "A finalidade, no uso de IA e de tecnologias digitais no serviço público, exige que:",
+            "opcoes": [
+                "A) a ferramenta seja usada sem registro de sua utilização",
+                "B) os dados coletados sejam reaproveitados livremente para outros fins",
+                "C) qualquer uso seja permitido desde que gere economia",
+                "D) o servidor use a ferramenta para fins pessoais no expediente",
+                "E) a ferramenta seja utilizada para propósitos legítimos e compatíveis com as atribuições do órgão"
+            ],
+            "correta": 4,
+            "comentario": "Assim como na LGPD, o uso de tecnologias deve ter propósito legítimo, específico e ligado ao interesse público."
+        },
+        {
+            "id": 23061,
+            "enunciado": "Na Lei do Governo Digital, os espaços abertos à participação e à colaboração da sociedade para o desenvolvimento de ideias, ferramentas e métodos inovadores para a gestão pública são os:",
+            "opcoes": [
+                "A) conselhos tutelares",
+                "B) tribunais administrativos",
+                "C) gabinetes parlamentares",
+                "D) cartórios digitais",
+                "E) laboratórios de inovação"
+            ],
+            "correta": 4,
+            "comentario": "A Lei nº 14.129/2021 prevê os laboratórios de inovação como espaços de colaboração entre governo e sociedade para inovar na gestão pública."
+        },
+        {
+            "id": 23062,
+            "enunciado": "Assinale a conduta adequada ao uso ético e seguro de tecnologias digitais por um servidor público:",
+            "opcoes": [
+                "A) salvar processos com dados pessoais em pendrive particular sem proteção",
+                "B) compartilhar a senha do sistema com estagiários para agilizar o trabalho",
+                "C) enviar documentos internos por aplicativo pessoal sem autorização",
+                "D) utilizar apenas sistemas e contas institucionais autorizados para tratar documentos do órgão",
+                "E) desativar o antivírus para instalar programas não homologados"
+            ],
+            "correta": 3,
+            "comentario": "Usar ferramentas autorizadas, não compartilhar credenciais e proteger os dados são medidas básicas de segurança da informação no serviço público."
+        },
+        {
+            "id": 23063,
+            "enunciado": "A acessibilidade digital nos serviços públicos significa:",
+            "opcoes": [
+                "A) permitir acesso apenas a quem tem computador de última geração",
+                "B) garantir que pessoas com deficiência, idosos e pessoas com pouca familiaridade com tecnologia consigam usar os serviços digitais",
+                "C) limitar o acesso a horários comerciais",
+                "D) usar linguagem técnica para garantir precisão",
+                "E) oferecer os serviços somente em língua estrangeira"
+            ],
+            "correta": 1,
+            "comentario": "Acessibilidade digital inclui recursos como leitores de tela, contraste adequado, linguagem simples e compatibilidade com dispositivos móveis."
+        },
+        {
+            "id": 23064,
+            "enunciado": "A \"plataforma única de acesso às informações e aos serviços públicos\", prevista entre as diretrizes da Lei do Governo Digital, busca:",
+            "opcoes": [
+                "A) facilitar o acesso do cidadão, reunindo serviços e informações em um mesmo ambiente digital",
+                "B) restringir o acesso de cidadãos de outros estados",
+                "C) substituir a necessidade de publicação dos atos oficiais",
+                "D) impedir o atendimento por telefone",
+                "E) obrigar o cidadão a criar uma conta para cada órgão"
+            ],
+            "correta": 0,
+            "comentario": "O art. 3º prevê a disponibilização em plataforma única do acesso às informações e aos serviços públicos, simplificando a vida do cidadão."
+        },
+        {
+            "id": 23065,
+            "enunciado": "O registro de todas as ações realizadas pelos usuários em um sistema, permitindo identificar quem acessou ou alterou determinada informação, contribui para:",
+            "opcoes": [
+                "A) a eliminação de dados pessoais",
+                "B) o anonimato dos servidores",
+                "C) o aumento do espaço de armazenamento",
+                "D) a rastreabilidade e a responsabilização dos agentes",
+                "E) a dispensa de senhas"
+            ],
+            "correta": 3,
+            "comentario": "Os registros de auditoria (logs) permitem apurar responsabilidades e detectar acessos indevidos, reforçando a segurança e a prestação de contas."
+        },
+        {
+            "id": 23066,
+            "enunciado": "Sobre a distinção entre ética e moral, é correto afirmar que:",
+            "opcoes": [
+                "A) ética e moral são sinônimos perfeitos, sem qualquer distinção conceitual",
+                "B) a ética se limita às leis escritas, e a moral às decisões judiciais",
+                "C) a moral é uma ciência, e a ética é apenas um costume regional",
+                "D) a moral é universal e imutável, e a ética muda a cada geração",
+                "E) a moral é o conjunto de normas e costumes de um grupo, e a ética é a reflexão crítica sobre essas normas e valores"
+            ],
+            "correta": 4,
+            "comentario": "Em geral, a moral se refere às regras e costumes praticados por uma sociedade em certo tempo; a ética é a reflexão teórica que analisa e fundamenta esses comportamentos."
+        },
+        {
+            "id": 23067,
+            "enunciado": "A afirmação \"o que é considerado correto pode variar entre sociedades e épocas\" aplica-se mais diretamente ao conceito de:",
+            "opcoes": [
+                "A) moral",
+                "B) impessoalidade",
+                "C) legalidade estrita",
+                "D) ética como reflexão universal",
+                "E) probidade administrativa"
+            ],
+            "correta": 0,
+            "comentario": "A moral é cultural e histórica: costumes e normas de conduta mudam conforme o tempo e o grupo social."
+        },
+        {
+            "id": 23068,
+            "enunciado": "No serviço público, a INTEGRIDADE do servidor se manifesta quando ele:",
+            "opcoes": [
+                "A) cumpre as regras apenas quando há fiscalização",
+                "B) favorece conhecidos em casos duvidosos",
+                "C) aceita presentes de quem tem interesse em decisões do setor",
+                "D) oculta erros para preservar a imagem do órgão",
+                "E) age com coerência entre valores, palavras e atos, mesmo quando ninguém o observa"
+            ],
+            "correta": 4,
+            "comentario": "Integridade é a conduta coerente e honesta, guiada por princípios, independentemente de controle externo."
+        },
+        {
+            "id": 23069,
+            "enunciado": "O DECORO, no exercício da função pública, refere-se:",
+            "opcoes": [
+                "A) à conduta compatível com a dignidade do cargo, com respeito, compostura e decência",
+                "B) à decoração do ambiente de trabalho",
+                "C) à rapidez no atendimento",
+                "D) ao conhecimento técnico das leis",
+                "E) ao uso obrigatório de terno e gravata"
+            ],
+            "correta": 0,
+            "comentario": "Decoro é o comportamento adequado à dignidade da função, com postura respeitosa no trato com o público e com os colegas."
+        },
+        {
+            "id": 23070,
+            "enunciado": "O ZELO, como valor do servidor público, significa:",
+            "opcoes": [
+                "A) rigidez excessiva no atendimento",
+                "B) obediência cega a qualquer ordem",
+                "C) busca de vantagem pessoal no cargo",
+                "D) ciúme profissional em relação aos colegas",
+                "E) cuidado e diligência com o serviço, os bens públicos e os interesses dos cidadãos"
+            ],
+            "correta": 4,
+            "comentario": "Zelo é o cuidado atento com o trabalho e com o patrimônio público, evitando desperdício e descuido."
+        },
+        {
+            "id": 23071,
+            "enunciado": "Do ponto de vista ético, a VIRTUDE pode ser entendida como:",
+            "opcoes": [
+                "A) uma regra jurídica com sanção prevista em lei",
+                "B) uma habilidade técnica específica do cargo",
+                "C) a disposição constante para agir bem, cultivada pela prática",
+                "D) o cumprimento das metas de produtividade",
+                "E) um benefício concedido pela chefia"
+            ],
+            "correta": 2,
+            "comentario": "Na tradição ética, a virtude é um hábito de agir de forma correta, desenvolvido e fortalecido pela prática."
+        },
+        {
+            "id": 23072,
+            "enunciado": "Um servidor recebe de uma empresa que participa de licitação na Câmara um convite para viagem com todas as despesas pagas. A conduta ética é:",
+            "opcoes": [
+                "A) aceitar e não comentar com ninguém",
+                "B) aceitar, pois não houve pedido em troca",
+                "C) aceitar e repassar o convite a um colega",
+                "D) recusar, pois a vantagem pode comprometer a imparcialidade e a confiança pública",
+                "E) aceitar, desde que viaje nas férias"
+            ],
+            "correta": 3,
+            "comentario": "Aceitar vantagens de quem tem interesse em decisões do órgão cria conflito de interesses e fere a moralidade e a impessoalidade."
+        },
+        {
+            "id": 23073,
+            "enunciado": "Conflito de interesses, no serviço público, ocorre quando:",
+            "opcoes": [
+                "A) o servidor tem opinião política diferente do chefe",
+                "B) interesses particulares do agente podem comprometer o interesse público ou influenciar o desempenho de sua função",
+                "C) o cidadão reclama do atendimento",
+                "D) dois setores discordam sobre um prazo",
+                "E) dois servidores disputam a mesma vaga de estacionamento"
+            ],
+            "correta": 1,
+            "comentario": "Há conflito de interesses quando interesses privados do agente (próprios ou de parentes e amigos) se chocam com o dever de agir pelo interesse público."
+        },
+        {
+            "id": 23074,
+            "enunciado": "O servidor público, em uma sociedade democrática, deve compreender que:",
+            "opcoes": [
+                "A) exerce sua função a serviço da coletividade, e não em benefício próprio ou de grupos",
+                "B) pode deixar de cumprir a lei quando achar justo",
+                "C) deve atender primeiro os cidadãos de sua preferência",
+                "D) o cargo lhe pertence e pode ser usado para interesses pessoais",
+                "E) sua função é proteger apenas os interesses da chefia"
+            ],
+            "correta": 0,
+            "comentario": "Na democracia, o poder emana do povo e a função pública existe para servir ao interesse coletivo, com respeito a todos os cidadãos."
+        },
+        {
+            "id": 23075,
+            "enunciado": "A relação entre ética e cidadania no serviço público envolve:",
+            "opcoes": [
+                "A) atender com prioridade quem tem cargo ou influência",
+                "B) restringir informações para evitar questionamentos",
+                "C) priorizar a conveniência do servidor sobre o atendimento",
+                "D) reconhecer o cidadão como titular de direitos e tratá-lo com respeito, cortesia e igualdade",
+                "E) tratar o cidadão como alguém que pede favores"
+            ],
+            "correta": 3,
+            "comentario": "O cidadão não pede favor: exerce direitos. O atendimento ético é respeitoso, igualitário e orientado ao interesse público."
+        },
+        {
+            "id": 23076,
+            "enunciado": "Um servidor percebe que um colega está desviando material de escritório. Do ponto de vista ético e legal, a atitude adequada é:",
+            "opcoes": [
+                "A) exigir parte do material para guardar segredo",
+                "B) comunicar o fato à autoridade competente pelos canais adequados",
+                "C) ignorar para não se indispor com o colega",
+                "D) fazer o mesmo, já que outros também fazem",
+                "E) divulgar o fato nas redes sociais"
+            ],
+            "correta": 1,
+            "comentario": "O servidor tem o dever de levar ao conhecimento da autoridade competente as irregularidades de que tiver ciência, preservando o patrimônio público."
+        },
+        {
+            "id": 23077,
+            "enunciado": "Ética e legalidade não se confundem. Isso significa que:",
+            "opcoes": [
+                "A) a ética só existe quando está escrita em lei",
+                "B) tudo o que é legal é automaticamente ético",
+                "C) a lei nunca se baseia em valores morais",
+                "D) uma conduta pode ser legal e, ainda assim, ser questionável do ponto de vista ético",
+                "E) o servidor pode descumprir a lei sempre que a considerar antiética"
+            ],
+            "correta": 3,
+            "comentario": "A lei estabelece o mínimo obrigatório; a ética exige mais, como honestidade, respeito e boa-fé. Por isso a moralidade é princípio autônomo da administração."
+        },
+        {
+            "id": 23078,
+            "enunciado": "Um servidor utiliza o carro oficial para levar os filhos à escola nos dias de chuva. Essa conduta é:",
+            "opcoes": [
+                "A) irrelevante, pois o veículo estaria parado",
+                "B) permitida, se o servidor for chefe do setor",
+                "C) inadequada, pois usa bem público para fins particulares",
+                "D) adequada, desde que o combustível seja reposto depois",
+                "E) aceitável, por se tratar de situação excepcional"
+            ],
+            "correta": 2,
+            "comentario": "Bens públicos devem ser usados apenas para o serviço. O uso particular fere a moralidade e o zelo com o patrimônio público, podendo configurar improbidade."
+        },
+        {
+            "id": 23079,
+            "enunciado": "A HONESTIDADE no exercício da função pública está ligada principalmente:",
+            "opcoes": [
+                "A) à verdade, à lisura e ao respeito ao patrimônio e ao interesse público",
+                "B) à obediência a qualquer ordem superior",
+                "C) à simpatia no atendimento",
+                "D) à quantidade de cursos realizados",
+                "E) à rapidez em concluir as tarefas"
+            ],
+            "correta": 0,
+            "comentario": "Honestidade é agir com verdade e lisura, sem fraudes, enganos ou apropriação do que é público."
+        },
+        {
+            "id": 23080,
+            "enunciado": "O atendimento ético ao cidadão exige que o servidor:",
+            "opcoes": [
+                "A) responda apenas o que for perguntado de forma literal, sem orientar",
+                "B) priorize os atendimentos de pessoas conhecidas",
+                "C) trate todos com cortesia e sem discriminação, prestando informações claras e corretas",
+                "D) altere a ordem da fila conforme sua conveniência",
+                "E) deixe de atender quem chega perto do fim do expediente"
+            ],
+            "correta": 2,
+            "comentario": "Cortesia, igualdade de tratamento e informação clara são deveres do servidor no atendimento ao público."
+        },
+        {
+            "id": 23081,
+            "enunciado": "A afirmação \"a função pública deve ser tida como exercício profissional e, portanto, se integra na vida particular de cada servidor\" expressa a ideia de que:",
+            "opcoes": [
+                "A) o servidor pode usar o cargo em assuntos pessoais",
+                "B) a vida particular do servidor deve ser fiscalizada pela chefia",
+                "C) o servidor não tem vida privada",
+                "D) o servidor deve trabalhar 24 horas por dia",
+                "E) a conduta do servidor fora do trabalho também pode refletir na imagem e na confiança da instituição"
+            ],
+            "correta": 4,
+            "comentario": "Essa ideia, presente no Código de Ética do Servidor Público Civil Federal, mostra que a reputação e as atitudes do servidor afetam a credibilidade do serviço público."
+        },
+        {
+            "id": 23082,
+            "enunciado": "O nepotismo, prática de nomear parentes para cargos em comissão, é vedado porque ofende principalmente os princípios da:",
+            "opcoes": [
+                "A) legalidade tributária e da anterioridade",
+                "B) impessoalidade e da moralidade",
+                "C) segurança jurídica e da irretroatividade",
+                "D) autonomia municipal e da soberania",
+                "E) publicidade e da eficiência apenas"
+            ],
+            "correta": 1,
+            "comentario": "A Súmula Vinculante nº 13 do STF veda o nepotismo por violar a impessoalidade e a moralidade administrativas."
+        },
+        {
+            "id": 23083,
+            "enunciado": "Um servidor que divulga a um amigo informações privilegiadas sobre um edital ainda não publicado age de forma:",
+            "opcoes": [
+                "A) aceitável, desde que avise outros amigos também",
+                "B) adequada, se o amigo for bom candidato",
+                "C) antiética e ilícita, pois usa a função para favorecer terceiro e quebra o dever de sigilo",
+                "D) correta, pois a informação seria pública depois",
+                "E) neutra, pois não recebeu dinheiro"
+            ],
+            "correta": 2,
+            "comentario": "Antecipar informações privilegiadas quebra a igualdade entre os interessados e o dever de sigilo funcional, violando a impessoalidade e a moralidade."
+        },
+        {
+            "id": 23084,
+            "enunciado": "Sobre a responsabilidade ética do servidor diante de uma ordem superior manifestamente ilegal, é correto afirmar que ele:",
+            "opcoes": [
+                "A) deve cumpri-la sempre, pois a responsabilidade é só do chefe",
+                "B) pode cumpri-la se estiver com pressa",
+                "C) deve cumpri-la e comentar com os colegas",
+                "D) não deve cumpri-la e deve representar contra a ilegalidade",
+                "E) deve pedir demissão imediatamente"
+            ],
+            "correta": 3,
+            "comentario": "O dever de obediência não alcança ordens manifestamente ilegais. O servidor deve recusar-se a cumpri-las e comunicar a irregularidade."
+        },
+        {
+            "id": 23085,
+            "enunciado": "A ética no serviço público contribui para a democracia porque:",
+            "opcoes": [
+                "A) fortalece a confiança da sociedade nas instituições e no uso correto dos recursos públicos",
+                "B) impede a participação popular",
+                "C) substitui a necessidade de leis",
+                "D) dispensa a fiscalização pelos órgãos de controle",
+                "E) garante que todas as decisões agradem a maioria"
+            ],
+            "correta": 0,
+            "comentario": "Condutas éticas aumentam a credibilidade do Estado e estimulam a participação e o controle social."
+        },
+        {
+            "id": 23086,
+            "enunciado": "Na relação entre colegas de trabalho, a postura ética inclui:",
+            "opcoes": [
+                "A) exclusão de colegas com opiniões diferentes",
+                "B) competição desleal para obter promoções",
+                "C) respeito, colaboração e repúdio a qualquer forma de assédio ou discriminação",
+                "D) divulgação de falhas dos colegas ao público",
+                "E) omissão diante de assédio para evitar conflitos"
+            ],
+            "correta": 2,
+            "comentario": "O ambiente de trabalho ético exige respeito mútuo, cooperação e combate ao assédio moral, ao assédio sexual e à discriminação."
+        },
+        {
+            "id": 23087,
+            "enunciado": "Um servidor erra ao lançar uma informação no sistema e percebe o equívoco no dia seguinte. A atitude ética é:",
+            "opcoes": [
+                "A) apagar os registros do sistema",
+                "B) ignorar, pois o prejuízo é pequeno",
+                "C) esperar que ninguém perceba",
+                "D) comunicar e corrigir o erro o quanto antes, pelos meios formais",
+                "E) culpar um colega pelo erro"
+            ],
+            "correta": 3,
+            "comentario": "Assumir e corrigir erros mostra honestidade e responsabilidade, além de evitar prejuízos ao cidadão e ao órgão."
+        },
+        {
+            "id": 23088,
+            "enunciado": "O art. 37, caput, da Constituição Federal estabelece que a administração pública direta e indireta obedecerá aos princípios de:",
+            "opcoes": [
+                "A) legalidade, imparcialidade, moralidade, publicidade e economicidade",
+                "B) legalidade, impessoalidade, moralidade, proporcionalidade e efetividade",
+                "C) liberdade, igualdade, moralidade, publicidade e eficiência",
+                "D) legitimidade, impessoalidade, motivação, publicidade e eficácia",
+                "E) legalidade, impessoalidade, moralidade, publicidade e eficiência"
+            ],
+            "correta": 4,
+            "comentario": "O art. 37 traz os princípios expressos conhecidos pela sigla LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência."
+        },
+        {
+            "id": 23089,
+            "enunciado": "Pelo princípio da legalidade, aplicado à administração pública, o agente público:",
+            "opcoes": [
+                "A) deve seguir apenas os costumes do setor",
+                "B) só pode fazer o que a lei permite ou autoriza",
+                "C) pode agir conforme sua conveniência pessoal",
+                "D) pode fazer tudo o que a lei não proíbe",
+                "E) está dispensado de seguir a lei quando houver urgência"
+            ],
+            "correta": 1,
+            "comentario": "O particular pode fazer tudo o que a lei não proíbe; a administração só pode agir quando e como a lei autoriza."
+        },
+        {
+            "id": 23090,
+            "enunciado": "O princípio da impessoalidade veda que a publicidade dos atos e programas de governo contenha:",
+            "opcoes": [
+                "A) informações sobre os gastos públicos",
+                "B) dados de contato dos órgãos públicos",
+                "C) nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores",
+                "D) o brasão oficial do município",
+                "E) resultados de obras concluídas"
+            ],
+            "correta": 2,
+            "comentario": "O art. 37, § 1º, determina que a publicidade oficial tenha caráter educativo, informativo ou de orientação social, sem promoção pessoal."
+        },
+        {
+            "id": 23091,
+            "enunciado": "Uma placa de obra pública com a frase \"Mais uma conquista do vereador Fulano\" fere principalmente o princípio da:",
+            "opcoes": [
+                "A) legalidade tributária",
+                "B) continuidade do serviço público",
+                "C) publicidade, por excesso de transparência",
+                "D) eficiência",
+                "E) impessoalidade"
+            ],
+            "correta": 4,
+            "comentario": "A obra é da administração, não de uma autoridade. Atribuí-la a uma pessoa caracteriza promoção pessoal, vedada pela impessoalidade."
+        },
+        {
+            "id": 23092,
+            "enunciado": "O princípio da moralidade administrativa exige do agente público:",
+            "opcoes": [
+                "A) conduta honesta, leal e de boa-fé, além do simples cumprimento formal da lei",
+                "B) obediência às opiniões religiosas da maioria",
+                "C) sigilo sobre todos os atos do órgão",
+                "D) apenas o cumprimento literal da lei",
+                "E) rapidez acima de qualquer outro valor"
+            ],
+            "correta": 0,
+            "comentario": "A moralidade impõe padrões éticos de probidade e boa-fé. Um ato pode ser formalmente legal e, ainda assim, imoral."
+        },
+        {
+            "id": 23093,
+            "enunciado": "O princípio da publicidade significa que:",
+            "opcoes": [
+                "A) os atos da administração devem ser divulgados, como regra, para conhecimento e controle da sociedade",
+                "B) o sigilo é a regra nos atos administrativos",
+                "C) todas as informações, inclusive pessoais, devem ser divulgadas sem restrição",
+                "D) os atos só valem se publicados em jornais privados",
+                "E) a administração deve investir em propaganda das autoridades"
+            ],
+            "correta": 0,
+            "comentario": "A publicidade garante transparência e permite o controle social. O sigilo é exceção, admitido para proteger a intimidade ou a segurança da sociedade e do Estado."
+        },
+        {
+            "id": 23094,
+            "enunciado": "O princípio da eficiência, incluído no art. 37 pela Emenda Constitucional nº 19/1998, exige:",
+            "opcoes": [
+                "A) que o serviço público gere lucro",
+                "B) que o resultado seja alcançado a qualquer custo, inclusive com ilegalidade",
+                "C) atuação com qualidade, presteza e melhor aproveitamento dos recursos públicos",
+                "D) a dispensa dos controles internos para ganhar tempo",
+                "E) a redução do número de servidores em qualquer situação"
+            ],
+            "correta": 2,
+            "comentario": "Eficiência é fazer bem, com qualidade, rapidez e economia de recursos, sempre dentro da legalidade."
+        },
+        {
+            "id": 23095,
+            "enunciado": "Um servidor atende primeiro os cidadãos que são seus conhecidos, furando a ordem da fila. A conduta viola principalmente o princípio da:",
+            "opcoes": [
+                "A) impessoalidade",
+                "B) publicidade",
+                "C) eficiência",
+                "D) continuidade",
+                "E) autotutela"
+            ],
+            "correta": 0,
+            "comentario": "A impessoalidade exige tratamento igual a todos, sem favorecimentos ou perseguições."
+        },
+        {
+            "id": 23096,
+            "enunciado": "A realização de concurso público para o provimento de cargos efetivos concretiza, principalmente, os princípios da:",
+            "opcoes": [
+                "A) eficiência e do lucro",
+                "B) impessoalidade e da moralidade, ao garantir igualdade de oportunidades",
+                "C) legalidade tributária e da anterioridade",
+                "D) autonomia e da hierarquia",
+                "E) publicidade e da soberania"
+            ],
+            "correta": 1,
+            "comentario": "O concurso permite que qualquer interessado concorra em igualdade de condições, afastando escolhas pessoais."
+        },
+        {
+            "id": 23097,
+            "enunciado": "A publicação, no portal da transparência, dos salários e gastos da Câmara Municipal é aplicação direta do princípio da:",
+            "opcoes": [
+                "A) supremacia do interesse privado",
+                "B) impessoalidade, apenas",
+                "C) legalidade penal",
+                "D) hierarquia",
+                "E) publicidade"
+            ],
+            "correta": 4,
+            "comentario": "A divulgação de gastos e remunerações dá transparência à gestão e permite o controle social."
+        },
+        {
+            "id": 23098,
+            "enunciado": "Uma autoridade pratica um ato que obedece à forma prevista em lei, mas com o objetivo de prejudicar um desafeto. Esse ato viola, principalmente:",
+            "opcoes": [
+                "A) apenas a eficiência",
+                "B) a moralidade e a impessoalidade, por desvio de finalidade",
+                "C) apenas a publicidade",
+                "D) a autonomia municipal",
+                "E) a irredutibilidade de vencimentos"
+            ],
+            "correta": 1,
+            "comentario": "O ato tem aparência legal, mas busca fim pessoal. Há desvio de finalidade, que ofende a impessoalidade e a moralidade."
+        },
+        {
+            "id": 23099,
+            "enunciado": "A aplicação dos princípios éticos na administração pública exige que o servidor:",
+            "opcoes": [
+                "A) cumpra apenas as tarefas que considerar agradáveis",
+                "B) mantenha em segredo os critérios de suas decisões",
+                "C) adote decisões conforme a pressão de grupos",
+                "D) oriente suas decisões pelo interesse público, com transparência e respeito às normas",
+                "E) priorize os interesses da chefia acima da lei"
+            ],
+            "correta": 3,
+            "comentario": "Os princípios da administração dão base à conduta ética: legalidade, imparcialidade, honestidade, transparência e bom uso dos recursos."
+        },
+        {
+            "id": 23100,
+            "enunciado": "A afirmação \"o ato administrativo deve sempre atender ao interesse público, e não ao interesse pessoal do agente\" relaciona-se diretamente ao princípio da:",
+            "opcoes": [
+                "A) impessoalidade (finalidade)",
+                "B) publicidade",
+                "C) eficiência",
+                "D) legalidade tributária",
+                "E) motivação dos atos jurisdicionais"
+            ],
+            "correta": 0,
+            "comentario": "A impessoalidade também é entendida como princípio da finalidade: todo ato deve buscar o interesse público previsto em lei."
+        },
+        {
+            "id": 23101,
+            "enunciado": "Na Câmara, a demora injustificada de meses para responder a simples requerimentos administrativos ofende, principalmente, o princípio da:",
+            "opcoes": [
+                "A) legalidade penal",
+                "B) publicidade",
+                "C) moralidade",
+                "D) eficiência",
+                "E) impessoalidade"
+            ],
+            "correta": 3,
+            "comentario": "A eficiência exige presteza e qualidade na prestação dos serviços. A morosidade injustificada a contraria."
+        },
+        {
+            "id": 23102,
+            "enunciado": "Sobre o princípio da publicidade, é correto afirmar que:",
+            "opcoes": [
+                "A) admite restrições quando o sigilo for imprescindível à segurança da sociedade e do Estado ou para proteger a intimidade",
+                "B) é absoluto e não admite qualquer exceção",
+                "C) dispensa a publicação dos atos normativos",
+                "D) só se aplica ao Poder Executivo",
+                "E) é cumprido com a divulgação apenas em redes sociais pessoais"
+            ],
+            "correta": 0,
+            "comentario": "A Constituição admite exceções à publicidade, como o sigilo para proteger a intimidade (art. 5º, X) e a segurança da sociedade e do Estado (art. 5º, XXXIII)."
+        },
+        {
+            "id": 23103,
+            "enunciado": "O princípio da legalidade NÃO é respeitado quando um servidor:",
+            "opcoes": [
+                "A) aplica uma sanção prevista em lei após processo",
+                "B) concede um benefício sem previsão em lei, por considerá-lo justo",
+                "C) segue o procedimento previsto no regimento",
+                "D) recusa um pedido que a lei proíbe",
+                "E) cumpre o prazo legal para responder um pedido"
+            ],
+            "correta": 1,
+            "comentario": "A administração só pode agir com base em lei. Conceder vantagem sem previsão legal, mesmo com boa intenção, viola a legalidade."
+        },
+        {
+            "id": 23104,
+            "enunciado": "Assinale a alternativa que associa corretamente o princípio à situação:",
+            "opcoes": [
+                "A) Legalidade — criação de taxa por portaria, sem lei",
+                "B) Impessoalidade — contratação de parentes do presidente",
+                "C) Publicidade — sigilo sobre os contratos firmados pela Câmara",
+                "D) Moralidade — uso de veículo oficial para passeio da família",
+                "E) Eficiência — informatização do protocolo para reduzir o tempo de tramitação dos documentos"
+            ],
+            "correta": 4,
+            "comentario": "Modernizar processos para atender melhor e mais rápido é aplicação da eficiência. As demais associações descrevem violações dos princípios citados."
+        },
+        {
+            "id": 23105,
+            "enunciado": "A probidade administrativa está diretamente ligada ao princípio da:",
+            "opcoes": [
+                "A) especialidade",
+                "B) eficiência",
+                "C) moralidade",
+                "D) publicidade",
+                "E) continuidade"
+            ],
+            "correta": 2,
+            "comentario": "Probidade é honestidade no trato da coisa pública. Os atos de improbidade são a forma mais grave de violação da moralidade administrativa (art. 37, § 4º, da Constituição)."
+        },
+        {
+            "id": 23106,
+            "enunciado": "Os princípios do art. 37 da Constituição aplicam-se:",
+            "opcoes": [
+                "A) apenas ao Poder Executivo federal",
+                "B) somente aos servidores efetivos, e não aos comissionados",
+                "C) à administração direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios",
+                "D) somente às empresas privadas concessionárias",
+                "E) apenas aos órgãos que prestam serviços de saúde"
+            ],
+            "correta": 2,
+            "comentario": "O caput do art. 37 abrange todos os Poderes e todos os entes, incluindo o Poder Legislativo municipal e seus agentes."
+        },
+        {
+            "id": 23107,
+            "enunciado": "A exigência de que os atos administrativos indiquem os fatos e os fundamentos jurídicos que os justificam (motivação) favorece, principalmente:",
+            "opcoes": [
+                "A) a dispensa da publicação",
+                "B) o controle da legalidade e da moralidade pelos cidadãos e órgãos de controle",
+                "C) o sigilo dos atos administrativos",
+                "D) a promoção pessoal da autoridade",
+                "E) a demora na tomada de decisões"
+            ],
+            "correta": 1,
+            "comentario": "A motivação permite verificar se o ato atendeu à lei e ao interesse público, facilitando o controle e a defesa do interessado."
+        },
+        {
+            "id": 23108,
+            "enunciado": "Um servidor que trabalha corretamente, cumpre prazos, evita desperdícios e busca melhorar o atendimento está aplicando, de forma mais direta, o princípio da:",
+            "opcoes": [
+                "A) hierarquia militar",
+                "B) eficiência",
+                "C) legalidade penal",
+                "D) publicidade",
+                "E) territorialidade"
+            ],
+            "correta": 1,
+            "comentario": "Eficiência é desempenhar as funções com rapidez, qualidade, economia e foco em resultados para a sociedade."
         }
     ],
     "Conhecimentos Específicos": [
@@ -4166,6 +10333,4558 @@ window.bancoDeQuestoes = {
             ],
             "correta": 1,
             "comentario": "O encerramento das sessões legislativas ordinárias marca períodos de balanço e recesso parlamentar regulamentar, mantendo o foco republicano no interesse público."
+        },
+        {
+            "id": 24001,
+            "enunciado": "Segundo a Lei Complementar nº 95/1998, a lei será estruturada em três partes básicas:",
+            "opcoes": [
+                "A) parte geral, parte especial e disposições transitórias, obrigatoriamente",
+                "B) introdução, desenvolvimento e conclusão",
+                "C) preâmbulo, justificativa e assinatura",
+                "D) ementa, artigos e anexos",
+                "E) parte preliminar, parte normativa e parte final"
+            ],
+            "correta": 4,
+            "comentario": "O art. 3º da LC nº 95/1998 divide a lei em parte preliminar, parte normativa e parte final."
+        },
+        {
+            "id": 24002,
+            "enunciado": "A parte preliminar da lei, segundo a LC nº 95/1998, compreende:",
+            "opcoes": [
+                "A) as normas de conteúdo substantivo",
+                "B) a epígrafe, a ementa, o preâmbulo, o enunciado do objeto e a indicação do âmbito de aplicação",
+                "C) as cláusulas de vigência e de revogação",
+                "D) as disposições transitórias e os anexos",
+                "E) a justificativa do autor e o parecer das comissões"
+            ],
+            "correta": 1,
+            "comentario": "Pelo art. 3º, I, a parte preliminar reúne epígrafe, ementa, preâmbulo, objeto e âmbito de aplicação. Vigência e revogação ficam na parte final."
+        },
+        {
+            "id": 24003,
+            "enunciado": "A epígrafe da lei, nos termos da LC nº 95/1998:",
+            "opcoes": [
+                "A) é a cláusula que determina a entrada em vigor",
+                "B) indica o órgão competente e a base legal do ato",
+                "C) é grafada em maiúsculas e formada pelo título da espécie normativa, pelo número e pelo ano de promulgação",
+                "D) é a lista das leis revogadas",
+                "E) resume o objeto da lei em forma de título"
+            ],
+            "correta": 2,
+            "comentario": "O art. 4º define a epígrafe, por exemplo: \"LEI Nº 2.500, DE 10 DE MARÇO DE 2026\". O resumo do objeto é a ementa (art. 5º)."
+        },
+        {
+            "id": 24004,
+            "enunciado": "A parte da lei que explicita, de modo conciso e sob a forma de título, o seu objeto é a:",
+            "opcoes": [
+                "A) justificativa",
+                "B) ementa",
+                "C) epígrafe",
+                "D) preâmbulo",
+                "E) cláusula de vigência"
+            ],
+            "correta": 1,
+            "comentario": "O art. 5º da LC nº 95/1998 define a ementa, grafada com caracteres que a realcem."
+        },
+        {
+            "id": 24005,
+            "enunciado": "Segundo a LC nº 95/1998, o preâmbulo da lei:",
+            "opcoes": [
+                "A) resume o objeto da lei",
+                "B) indica o órgão ou a instituição competente para a prática do ato e sua base legal",
+                "C) traz a numeração da lei",
+                "D) define o prazo de vacância",
+                "E) enumera as leis revogadas"
+            ],
+            "correta": 1,
+            "comentario": "O art. 6º determina que o preâmbulo indique a autoridade competente e o fundamento legal do ato."
+        },
+        {
+            "id": 24006,
+            "enunciado": "De acordo com a LC nº 95/1998, excetuadas as codificações, cada lei tratará:",
+            "opcoes": [
+                "A) de matérias diversas, se aprovada por maioria absoluta",
+                "B) de no máximo três objetos relacionados",
+                "C) de um único objeto, sem conter matéria estranha a ele ou a ele não vinculada por afinidade, pertinência ou conexão",
+                "D) de quantos assuntos forem necessários, a critério do autor",
+                "E) de assuntos de diferentes Poderes, desde que urgentes"
+            ],
+            "correta": 2,
+            "comentario": "O art. 7º, I e II, proíbe as chamadas \"caudas\" ou \"jabutis\": a lei deve ter objeto único e não pode conter matéria estranha."
+        },
+        {
+            "id": 24007,
+            "enunciado": "A cláusula \"entra em vigor na data de sua publicação\", segundo a LC nº 95/1998, deve ser reservada para:",
+            "opcoes": [
+                "A) os códigos",
+                "B) todas as leis, obrigatoriamente",
+                "C) as leis que criam tributos",
+                "D) as leis complementares apenas",
+                "E) as leis de pequena repercussão"
+            ],
+            "correta": 4,
+            "comentario": "O art. 8º exige prazo razoável para que a lei seja amplamente conhecida, reservando a vigência imediata para leis de pequena repercussão."
+        },
+        {
+            "id": 24008,
+            "enunciado": "Segundo a LC nº 95/1998, as leis que estabeleçam período de vacância devem utilizar a cláusula:",
+            "opcoes": [
+                "A) \"esta lei entra em vigor no prazo que o regulamento fixar\"",
+                "B) \"esta lei entra em vigor quando for conveniente\"",
+                "C) \"esta lei entra em vigor em data incerta\"",
+                "D) \"revogam-se as disposições em contrário\"",
+                "E) \"esta lei entra em vigor após decorridos (número de) dias de sua publicação oficial\""
+            ],
+            "correta": 4,
+            "comentario": "O art. 8º, § 2º, padroniza a cláusula de vigência para leis com vacância."
+        },
+        {
+            "id": 24009,
+            "enunciado": "Uma lei publicada em 1º de março estabelece que \"entra em vigor após decorridos 30 dias de sua publicação oficial\". Conforme a regra de contagem da LC nº 95/1998, que inclui a data da publicação e o último dia do prazo, a lei entra em vigor em:",
+            "opcoes": [
+                "A) 2 de abril",
+                "B) 31 de março",
+                "C) 1º de abril",
+                "D) 29 de março",
+                "E) 30 de março"
+            ],
+            "correta": 1,
+            "comentario": "Contando 1º de março como o primeiro dia, o 30º dia é 30 de março. A lei entra em vigor no dia seguinte à consumação integral do prazo: 31 de março (art. 8º, § 1º)."
+        },
+        {
+            "id": 24010,
+            "enunciado": "Quanto à cláusula de revogação, a LC nº 95/1998 determina que ela:",
+            "opcoes": [
+                "A) é proibida em leis municipais",
+                "B) deve ser sempre \"revogam-se as disposições em contrário\"",
+                "C) deve enumerar expressamente as leis ou disposições legais revogadas",
+                "D) só pode ser usada em códigos",
+                "E) deve ficar na parte preliminar"
+            ],
+            "correta": 2,
+            "comentario": "O art. 9º exige a indicação expressa do que é revogado. A fórmula genérica \"revogam-se as disposições em contrário\" deve ser evitada."
+        },
+        {
+            "id": 24011,
+            "enunciado": "Segundo a LC nº 95/1998, a unidade básica de articulação da lei é o:",
+            "opcoes": [
+                "A) inciso",
+                "B) parágrafo",
+                "C) item",
+                "D) artigo",
+                "E) capítulo"
+            ],
+            "correta": 3,
+            "comentario": "O art. 10, I, define o artigo como unidade básica, indicado pela abreviatura \"Art.\"."
+        },
+        {
+            "id": 24012,
+            "enunciado": "Na numeração dos artigos, a LC nº 95/1998 determina o uso de:",
+            "opcoes": [
+                "A) numeração cardinal em todos os artigos",
+                "B) algarismos romanos até o décimo",
+                "C) numeração ordinal até o nono e cardinal a partir do décimo",
+                "D) numeração ordinal em todos os artigos",
+                "E) letras maiúsculas para artigos acrescidos sempre"
+            ],
+            "correta": 2,
+            "comentario": "O art. 10, I, prevê \"Art. 1º\" a \"Art. 9º\" (ordinal) e, a partir de \"Art. 10\", numeração cardinal."
+        },
+        {
+            "id": 24013,
+            "enunciado": "Segundo a LC nº 95/1998, os incisos, as alíneas e os itens são representados, respectivamente, por:",
+            "opcoes": [
+                "A) algarismos romanos, algarismos arábicos e letras minúsculas",
+                "B) algarismos arábicos, letras maiúsculas e algarismos romanos",
+                "C) letras maiúsculas, algarismos arábicos e letras minúsculas",
+                "D) algarismos romanos, letras minúsculas e algarismos arábicos",
+                "E) letras minúsculas, algarismos romanos e algarismos arábicos"
+            ],
+            "correta": 3,
+            "comentario": "O art. 10, IV, define: incisos em algarismos romanos (I, II), alíneas em letras minúsculas (a, b) e itens em algarismos arábicos (1, 2)."
+        },
+        {
+            "id": 24014,
+            "enunciado": "Quando o artigo tiver apenas um parágrafo, a LC nº 95/1998 determina o uso da expressão:",
+            "opcoes": [
+                "A) \"§ 1º\"",
+                "B) \"Inciso único\"",
+                "C) \"Parágrafo único\", por extenso",
+                "D) \"§ único\"",
+                "E) \"Parágrafo 1º\""
+            ],
+            "correta": 2,
+            "comentario": "O art. 10, III, prevê o sinal \"§\" com numeração e, havendo apenas um, a expressão \"Parágrafo único\" por extenso."
+        },
+        {
+            "id": 24015,
+            "enunciado": "Na estrutura da lei, segundo a LC nº 95/1998, os artigos desdobram-se em:",
+            "opcoes": [
+                "A) incisos apenas, sem outros desdobramentos",
+                "B) itens; os itens, em alíneas; as alíneas, em artigos",
+                "C) parágrafos ou incisos; os parágrafos, em incisos; os incisos, em alíneas; e as alíneas, em itens",
+                "D) alíneas; as alíneas, em incisos; os incisos, em parágrafos",
+                "E) capítulos; os capítulos, em seções; as seções, em artigos"
+            ],
+            "correta": 2,
+            "comentario": "O art. 10, II, define a hierarquia de desdobramento: artigo → parágrafos ou incisos → incisos → alíneas → itens."
+        },
+        {
+            "id": 24016,
+            "enunciado": "Segundo a LC nº 95/1998, o agrupamento de artigos poderá constituir Subseções; o de Subseções, a Seção; e o de Seções:",
+            "opcoes": [
+                "A) a Parte",
+                "B) o Capítulo",
+                "C) o Livro",
+                "D) o Inciso",
+                "E) o Título"
+            ],
+            "correta": 1,
+            "comentario": "O art. 10, V, prevê a escala: Subseção, Seção, Capítulo, Título, Livro e Parte."
+        },
+        {
+            "id": 24017,
+            "enunciado": "Para obter CLAREZA, a LC nº 95/1998 recomenda, entre outras práticas:",
+            "opcoes": [
+                "A) usar frases longas com várias intercalações",
+                "B) usar sinônimos para evitar repetição de termos técnicos",
+                "C) usar frases curtas e concisas, na ordem direta, e dar preferência ao tempo presente ou ao futuro simples do presente",
+                "D) variar livremente os tempos verbais",
+                "E) empregar neologismos e preciosismos"
+            ],
+            "correta": 2,
+            "comentario": "O art. 11, I, lista as regras de clareza, incluindo frases curtas, ordem direta e uniformidade do tempo verbal."
+        },
+        {
+            "id": 24018,
+            "enunciado": "Para obter PRECISÃO, a LC nº 95/1998 determina que se:",
+            "opcoes": [
+                "A) expresse a ideia, quando repetida no texto, por meio das mesmas palavras, evitando o emprego de sinonímia com propósito meramente estilístico",
+                "B) grafe todos os números em algarismos, inclusive percentuais",
+                "C) use sinônimos para enriquecer o texto",
+                "D) empregue expressões como \"o artigo anterior\" em vez de indicar o dispositivo",
+                "E) use siglas pouco conhecidas sem explicação"
+            ],
+            "correta": 0,
+            "comentario": "O art. 11, II, exige repetição dos mesmos termos, indicação expressa dos dispositivos remetidos e explicação das siglas na primeira referência."
+        },
+        {
+            "id": 24019,
+            "enunciado": "Na alteração de uma lei, segundo a LC nº 95/1998, para acrescentar um novo artigo entre os arts. 5º e 6º, deve-se:",
+            "opcoes": [
+                "A) utilizar o número do artigo anterior seguido de letra maiúscula, como \"Art. 5º-A\"",
+                "B) renumerar todos os artigos seguintes",
+                "C) aproveitar o número de um artigo revogado",
+                "D) criar o \"Art. 5º e meio\"",
+                "E) publicar uma nova lei sem relação com a anterior"
+            ],
+            "correta": 0,
+            "comentario": "O art. 12, III, \"b\", proíbe a renumeração e determina o uso de letras maiúsculas após o número do artigo anterior."
+        },
+        {
+            "id": 24020,
+            "enunciado": "Segundo a LC nº 95/1998, o número de um dispositivo revogado ou vetado:",
+            "opcoes": [
+                "A) pode ser excluído da lei, renumerando-se os demais",
+                "B) não pode ser reaproveitado, devendo a lei manter a indicação \"revogado\" ou \"vetado\"",
+                "C) deve ser substituído por letra minúscula",
+                "D) deve ser reaproveitado no próximo acréscimo",
+                "E) só pode ser reaproveitado após dez anos"
+            ],
+            "correta": 1,
+            "comentario": "O art. 12, III, \"c\", veda o aproveitamento do número de dispositivo revogado, vetado ou declarado inconstitucional."
+        },
+        {
+            "id": 24021,
+            "enunciado": "Na alteração de lei por substituição de redação de um artigo, a LC nº 95/1998 prevê a identificação do artigo modificado com:",
+            "opcoes": [
+                "A) as letras \"NR\" maiúsculas, entre parênteses, ao seu final",
+                "B) a data da alteração entre colchetes",
+                "C) um asterisco antes do número",
+                "D) a palavra \"alterado\" em negrito",
+                "E) a sigla \"ART\" após o texto"
+            ],
+            "correta": 0,
+            "comentario": "O art. 12, III, \"d\", determina a indicação \"(NR)\" (nova redação) uma única vez ao final do artigo alterado."
+        },
+        {
+            "id": 24022,
+            "enunciado": "Na ordem lógica do texto legal, a LC nº 95/1998 orienta que os aspectos complementares à norma do caput e as exceções à regra sejam expressos por meio de:",
+            "opcoes": [
+                "A) parágrafos",
+                "B) epígrafes",
+                "C) itens",
+                "D) ementas",
+                "E) alíneas"
+            ],
+            "correta": 0,
+            "comentario": "O art. 11, III, \"c\", determina que os parágrafos tragam os aspectos complementares e as exceções. Discriminações e enumerações ficam nos incisos, alíneas e itens."
+        },
+        {
+            "id": 24023,
+            "enunciado": "No setor público, governança pode ser entendida como o conjunto de mecanismos de:",
+            "opcoes": [
+                "A) execução operacional das tarefas diárias de cada servidor",
+                "B) arrecadação de tributos pelo Poder Legislativo",
+                "C) propaganda institucional das autoridades",
+                "D) liderança, estratégia e controle postos em prática para avaliar, direcionar e monitorar a gestão, com vistas à prestação de serviços de interesse da sociedade",
+                "E) contratação de empresas privadas para administrar o órgão"
+            ],
+            "correta": 3,
+            "comentario": "Essa é a definição adotada pelo Decreto federal nº 9.203/2017 e pelo TCU: governança é avaliar, direcionar e monitorar; a gestão é quem executa."
+        },
+        {
+            "id": 24024,
+            "enunciado": "Na distinção entre governança e gestão, é correto afirmar que:",
+            "opcoes": [
+                "A) a governança avalia, direciona e monitora; a gestão planeja, executa e controla as operações",
+                "B) a gestão define a estratégia e a governança executa as tarefas",
+                "C) a governança cuida apenas da folha de pagamento",
+                "D) governança e gestão são exatamente a mesma coisa",
+                "E) a gestão é exercida exclusivamente por órgãos externos"
+            ],
+            "correta": 0,
+            "comentario": "A governança orienta e supervisiona; a gestão transforma as diretrizes em ações e resultados."
+        },
+        {
+            "id": 24025,
+            "enunciado": "São princípios da governança pública previstos no Decreto federal nº 9.203/2017:",
+            "opcoes": [
+                "A) pessoalidade, conveniência e oportunidade",
+                "B) lucratividade, competitividade e marketing",
+                "C) discricionariedade ilimitada e autonomia sem controle",
+                "D) sigilo, hierarquia rígida, centralização e informalidade",
+                "E) capacidade de resposta, integridade, confiabilidade, melhoria regulatória, prestação de contas e responsabilidade, e transparência"
+            ],
+            "correta": 4,
+            "comentario": "O art. 3º do Decreto nº 9.203/2017 lista esses seis princípios, referência usual para a governança no setor público."
+        },
+        {
+            "id": 24026,
+            "enunciado": "A gestão de riscos no setor público tem como finalidade principal:",
+            "opcoes": [
+                "A) substituir a auditoria interna",
+                "B) justificar o descumprimento de leis",
+                "C) transferir todas as responsabilidades para os servidores",
+                "D) eliminar totalmente qualquer risco das atividades",
+                "E) identificar, avaliar e tratar eventos que possam afetar o alcance dos objetivos da organização"
+            ],
+            "correta": 4,
+            "comentario": "Gerir riscos é lidar com incertezas de forma estruturada, para aumentar a chance de cumprir os objetivos. Riscos não são eliminados por completo, mas tratados."
+        },
+        {
+            "id": 24027,
+            "enunciado": "Na avaliação de riscos, o nível de risco costuma ser estimado pela combinação de:",
+            "opcoes": [
+                "A) tamanho do prédio e número de salas",
+                "B) opinião da imprensa e das redes sociais",
+                "C) probabilidade de ocorrência e impacto",
+                "D) número de artigos da lei e quantidade de emendas",
+                "E) custo do servidor e tempo de serviço"
+            ],
+            "correta": 2,
+            "comentario": "A matriz de riscos cruza a probabilidade de o evento acontecer com o impacto que ele teria sobre os objetivos."
+        },
+        {
+            "id": 24028,
+            "enunciado": "Uma Câmara decide contratar seguro contra incêndio para seus equipamentos. Diante do risco, a resposta adotada foi:",
+            "opcoes": [
+                "A) transferir (compartilhar) o risco",
+                "B) ignorar o risco",
+                "C) aceitar o risco",
+                "D) aumentar o risco",
+                "E) evitar o risco"
+            ],
+            "correta": 0,
+            "comentario": "As respostas a riscos incluem evitar, mitigar (reduzir), transferir (compartilhar, como no seguro) e aceitar."
+        },
+        {
+            "id": 24029,
+            "enunciado": "Implantar backups diários e um gerador de energia para reduzir a chance e as consequências de paralisação dos sistemas é exemplo de resposta ao risco do tipo:",
+            "opcoes": [
+                "A) transferir para terceiros",
+                "B) aceitar",
+                "C) mitigar (reduzir)",
+                "D) ignorar",
+                "E) evitar, abandonando a atividade"
+            ],
+            "correta": 2,
+            "comentario": "Mitigar é adotar controles que diminuem a probabilidade ou o impacto do evento."
+        },
+        {
+            "id": 24030,
+            "enunciado": "Os controles internos, no setor público, são:",
+            "opcoes": [
+                "A) atividades de fiscalização da população sobre os servidores",
+                "B) procedimentos dispensáveis em órgãos pequenos",
+                "C) atribuição exclusiva do Tribunal de Contas",
+                "D) auditorias feitas apenas por empresas privadas",
+                "E) processos e medidas adotados pela gestão para dar razoável segurança ao alcance dos objetivos e ao cumprimento das normas"
+            ],
+            "correta": 4,
+            "comentario": "O controle interno é responsabilidade da própria organização e envolve procedimentos como segregação de funções, autorizações, conferências e registros."
+        },
+        {
+            "id": 24031,
+            "enunciado": "A segregação de funções, como medida de controle interno, consiste em:",
+            "opcoes": [
+                "A) distribuir os servidores entre turnos",
+                "B) separar os servidores por idade",
+                "C) separar entre pessoas diferentes atividades como autorizar, executar, registrar e fiscalizar uma mesma operação",
+                "D) dividir o prédio em alas",
+                "E) permitir que o mesmo servidor autorize, pague e fiscalize a despesa"
+            ],
+            "correta": 2,
+            "comentario": "A segregação reduz o risco de erros e fraudes, pois ninguém controla sozinho todas as etapas de uma operação sensível."
+        },
+        {
+            "id": 24032,
+            "enunciado": "Na estrutura de referência de controle interno conhecida como COSO, são componentes do controle interno:",
+            "opcoes": [
+                "A) missão, visão, valores, metas e prêmios",
+                "B) ambiente de controle, avaliação de riscos, atividades de controle, informação e comunicação, e monitoramento",
+                "C) eficiência, eficácia, efetividade, economicidade e equidade",
+                "D) iniciativa, discussão, votação, sanção e promulgação",
+                "E) planejamento, orçamento, licitação, contrato e pagamento"
+            ],
+            "correta": 1,
+            "comentario": "O COSO organiza o controle interno em cinco componentes integrados, que devem funcionar em conjunto."
+        },
+        {
+            "id": 24033,
+            "enunciado": "No Modelo das Três Linhas, a atividade de auditoria interna, que fornece avaliação independente sobre governança, riscos e controles, corresponde à:",
+            "opcoes": [
+                "A) terceira linha",
+                "B) linha política",
+                "C) primeira linha",
+                "D) segunda linha",
+                "E) linha de frente operacional"
+            ],
+            "correta": 0,
+            "comentario": "A primeira linha é a gestão operacional; a segunda, as funções de apoio em riscos e conformidade; a terceira, a auditoria interna, com independência."
+        },
+        {
+            "id": 24034,
+            "enunciado": "Um programa de integridade em um órgão público tem como objetivo principal:",
+            "opcoes": [
+                "A) aumentar a arrecadação do órgão",
+                "B) prevenir, detectar e remediar fraudes, corrupção e desvios éticos",
+                "C) substituir o processo administrativo disciplinar",
+                "D) punir os cidadãos que reclamam",
+                "E) eliminar a necessidade de controle externo"
+            ],
+            "correta": 1,
+            "comentario": "O programa de integridade reúne medidas como código de conduta, canais de denúncia, gestão de conflitos de interesse e treinamento."
+        },
+        {
+            "id": 24035,
+            "enunciado": "Um canal de denúncias, como parte do programa de integridade, deve garantir principalmente:",
+            "opcoes": [
+                "A) o arquivamento automático das denúncias anônimas",
+                "B) a cobrança de taxa para registrar a denúncia",
+                "C) o julgamento imediato do denunciado, sem defesa",
+                "D) a proteção da identidade do denunciante e a vedação a retaliações",
+                "E) a divulgação pública do nome do denunciante"
+            ],
+            "correta": 3,
+            "comentario": "Sigilo e proteção contra retaliação incentivam as denúncias de boa-fé e fortalecem a integridade."
+        },
+        {
+            "id": 24036,
+            "enunciado": "Accountability, no contexto da administração pública, refere-se:",
+            "opcoes": [
+                "A) ao direito de o gestor não justificar suas decisões",
+                "B) à contabilidade privada das empresas contratadas",
+                "C) ao sigilo dos atos de gestão",
+                "D) à obrigação de os agentes prestarem contas de seus atos e se responsabilizarem por eles perante a sociedade e os órgãos de controle",
+                "E) ao lucro obtido pelos serviços públicos"
+            ],
+            "correta": 3,
+            "comentario": "Accountability combina transparência, prestação de contas e responsabilização."
+        },
+        {
+            "id": 24037,
+            "enunciado": "A transparência ATIVA, prevista na Lei nº 12.527/2011, ocorre quando o órgão:",
+            "opcoes": [
+                "A) divulga informações de interesse coletivo por iniciativa própria, independentemente de requerimento",
+                "B) classifica informações como sigilosas",
+                "C) aplica sanções a quem pede informações",
+                "D) responde a um pedido feito pelo cidadão",
+                "E) julga recursos contra negativas de acesso"
+            ],
+            "correta": 0,
+            "comentario": "Transparência ativa é a publicação espontânea, como no portal da transparência. A passiva responde aos pedidos dos cidadãos."
+        },
+        {
+            "id": 24038,
+            "enunciado": "A disponibilização dos dados de despesas da Câmara em formato aberto, que possa ser lido por computadores e reutilizado pela sociedade, favorece:",
+            "opcoes": [
+                "A) a substituição do Tribunal de Contas",
+                "B) a dispensa da prestação de contas",
+                "C) o aumento do sigilo das informações",
+                "D) o controle social e a reutilização dos dados para análises independentes",
+                "E) a restrição do acesso aos especialistas"
+            ],
+            "correta": 3,
+            "comentario": "Dados abertos e legíveis por máquina permitem que cidadãos, imprensa e pesquisadores analisem a gestão pública com facilidade."
+        },
+        {
+            "id": 24039,
+            "enunciado": "O mapeamento de riscos de um processo de compras identificou o risco de \"direcionamento do edital a uma empresa\". Um controle adequado para mitigá-lo é:",
+            "opcoes": [
+                "A) permitir que a empresa interessada redija o edital",
+                "B) exigir pesquisa de preços ampla, revisão do termo de referência por outra área e publicidade do edital",
+                "C) dispensar a publicação do edital",
+                "D) eliminar a análise jurídica",
+                "E) reduzir o prazo de divulgação ao mínimo possível"
+            ],
+            "correta": 1,
+            "comentario": "Controles como revisão independente, pesquisa de mercado e ampla publicidade reduzem a chance de direcionamento."
+        },
+        {
+            "id": 24040,
+            "enunciado": "O apetite a risco de uma organização pública pode ser definido como:",
+            "opcoes": [
+                "A) o desejo dos servidores de correr riscos pessoais",
+                "B) a lista de riscos já ocorridos",
+                "C) o nível de risco que a organização está disposta a aceitar na busca de seus objetivos",
+                "D) o número de auditorias realizadas por ano",
+                "E) a quantidade de recursos destinada a seguros"
+            ],
+            "correta": 2,
+            "comentario": "O apetite a risco orienta quais riscos podem ser aceitos e quais precisam de tratamento."
+        },
+        {
+            "id": 24041,
+            "enunciado": "Em matéria de integridade pública, a gestão de conflitos de interesse envolve, entre outras medidas:",
+            "opcoes": [
+                "A) dispensar regras para cargos em comissão",
+                "B) impedir qualquer servidor de ter vida privada",
+                "C) permitir que o agente decida sobre contratos de empresas de sua família",
+                "D) exigir declarações de interesses e afastar o agente de decisões em que tenha interesse particular",
+                "E) esconder relações pessoais dos agentes com fornecedores"
+            ],
+            "correta": 3,
+            "comentario": "Identificar e afastar situações de conflito protege a imparcialidade das decisões públicas."
+        },
+        {
+            "id": 24042,
+            "enunciado": "A prestação de contas e a transparência no Poder Legislativo municipal contribuem para:",
+            "opcoes": [
+                "A) impedir a fiscalização do Executivo",
+                "B) dispensar o controle do Tribunal de Contas",
+                "C) diminuir a publicidade das votações",
+                "D) aumentar a confiança da sociedade e permitir o controle social sobre a gestão",
+                "E) reduzir a participação popular"
+            ],
+            "correta": 3,
+            "comentario": "A transparência é condição para que o cidadão fiscalize e participe, reforçando a legitimidade das instituições."
+        },
+        {
+            "id": 24043,
+            "enunciado": "O monitoramento, como componente dos controles internos, consiste em:",
+            "opcoes": [
+                "A) divulgar dados pessoais",
+                "B) vigiar a vida particular dos servidores",
+                "C) avaliar continuamente se os controles estão funcionando e corrigir as falhas identificadas",
+                "D) eliminar os registros antigos",
+                "E) criar novos cargos de chefia"
+            ],
+            "correta": 2,
+            "comentario": "O monitoramento verifica a eficácia dos controles ao longo do tempo, por meio de acompanhamento contínuo e avaliações específicas."
+        },
+        {
+            "id": 24044,
+            "enunciado": "Segundo o art. 23 da LGPD, o tratamento de dados pessoais pelas pessoas jurídicas de direito público deverá ser realizado:",
+            "opcoes": [
+                "A) apenas para fins comerciais autorizados pelo gestor",
+                "B) para o atendimento de sua finalidade pública, na persecução do interesse público, com o objetivo de executar as competências legais ou cumprir as atribuições legais do serviço público",
+                "C) somente mediante consentimento expresso de cada titular",
+                "D) livremente, sem qualquer limite, por se tratar de órgão público",
+                "E) somente após autorização judicial"
+            ],
+            "correta": 1,
+            "comentario": "O art. 23 estabelece que o poder público trata dados para cumprir suas finalidades e competências legais, devendo informar as hipóteses de tratamento."
+        },
+        {
+            "id": 24045,
+            "enunciado": "Para o tratamento de dados pessoais pelo poder público, o art. 23 da LGPD exige, entre outras condições:",
+            "opcoes": [
+                "A) que o órgão venda os dados para custear o serviço",
+                "B) que os dados sejam excluídos em 24 horas",
+                "C) que o órgão mantenha sigilo sobre todas as finalidades",
+                "D) que sejam informadas as hipóteses em que o órgão realiza o tratamento e que seja indicado um encarregado",
+                "E) que nenhum servidor tenha acesso aos dados"
+            ],
+            "correta": 3,
+            "comentario": "O art. 23 exige transparência sobre o tratamento (previsão legal, finalidade, procedimentos) e a indicação de encarregado quando o órgão realizar operações de tratamento."
+        },
+        {
+            "id": 24046,
+            "enunciado": "Segundo a LGPD, o uso compartilhado de dados pessoais pelo poder público:",
+            "opcoes": [
+                "A) é sempre proibido, mesmo entre órgãos públicos",
+                "B) é livre, sem qualquer finalidade definida",
+                "C) só é permitido para fins de propaganda institucional",
+                "D) depende sempre de autorização do Congresso Nacional",
+                "E) deve atender a finalidades específicas de execução de políticas públicas e atribuição legal, respeitados os princípios da lei"
+            ],
+            "correta": 4,
+            "comentario": "O art. 26 permite o uso compartilhado de dados para execução de políticas públicas e atribuição legal, observados os princípios do art. 6º."
+        },
+        {
+            "id": 24047,
+            "enunciado": "Em regra, a LGPD veda ao poder público transferir a entidades privadas dados pessoais constantes de bases de dados a que tenha acesso. Constitui exceção prevista na lei:",
+            "opcoes": [
+                "A) o interesse comercial de empresas parceiras",
+                "B) a venda de dados para campanhas publicitárias",
+                "C) a vontade do gestor do órgão",
+                "D) o pedido verbal de qualquer empresa privada",
+                "E) a execução descentralizada de atividade pública que exija a transferência, exclusivamente para esse fim específico e determinado"
+            ],
+            "correta": 4,
+            "comentario": "O art. 26, § 1º, admite exceções, como a execução descentralizada de atividade pública, casos em que os dados forem acessíveis publicamente ou quando houver previsão legal ou respaldo em contratos e convênios."
+        },
+        {
+            "id": 24048,
+            "enunciado": "O documento que descreve os processos de tratamento de dados pessoais que podem gerar riscos às liberdades civis e aos direitos fundamentais, com medidas e salvaguardas de mitigação, é o:",
+            "opcoes": [
+                "A) relatório de impacto à proteção de dados pessoais",
+                "B) parecer de comissão",
+                "C) balanço patrimonial",
+                "D) termo de posse",
+                "E) plano plurianual"
+            ],
+            "correta": 0,
+            "comentario": "O relatório de impacto (art. 5º, XVII) pode ser solicitado pela ANPD, inclusive aos órgãos públicos (art. 32)."
+        },
+        {
+            "id": 24049,
+            "enunciado": "Quanto às sanções administrativas previstas na LGPD, é correto afirmar que, para órgãos e entidades públicas:",
+            "opcoes": [
+                "A) aplicam-se sanções como advertência, publicização da infração, bloqueio e eliminação dos dados, mas não as multas",
+                "B) aplicam-se apenas multas, sem advertência",
+                "C) nenhuma sanção da LGPD é aplicável",
+                "D) aplicam-se apenas sanções criminais",
+                "E) aplica-se a pena de prisão do gestor"
+            ],
+            "correta": 0,
+            "comentario": "O art. 52, § 3º, permite aplicar aos órgãos públicos as sanções do art. 52, exceto as multas, sem prejuízo das penalidades previstas em outras leis, como as do estatuto do servidor e da improbidade."
+        },
+        {
+            "id": 24050,
+            "enunciado": "No contexto da inteligência artificial, o \"aprendizado de máquina\" (machine learning) é:",
+            "opcoes": [
+                "A) a digitação automática de textos ditados",
+                "B) a manutenção física de computadores",
+                "C) um tipo de cabo de rede de alta velocidade",
+                "D) um curso de informática para servidores",
+                "E) um ramo da IA em que sistemas aprendem padrões a partir de dados, sem serem programados explicitamente para cada regra"
+            ],
+            "correta": 4,
+            "comentario": "No machine learning, o sistema ajusta seus parâmetros com base em exemplos (dados), aprendendo a fazer previsões ou classificações."
+        },
+        {
+            "id": 24051,
+            "enunciado": "A IA generativa distingue-se de outros sistemas de IA por:",
+            "opcoes": [
+                "A) produzir conteúdos novos, como textos, imagens ou áudios, a partir de instruções (prompts)",
+                "B) apenas classificar dados em categorias predefinidas",
+                "C) funcionar sem qualquer dado de treinamento",
+                "D) substituir integralmente a decisão humana",
+                "E) garantir respostas sempre verdadeiras"
+            ],
+            "correta": 0,
+            "comentario": "Modelos generativos criam conteúdo novo com base em padrões aprendidos. Podem errar e gerar informações falsas."
+        },
+        {
+            "id": 24052,
+            "enunciado": "Um sistema de IA usado para triar pedidos de benefícios que, por ter sido treinado com dados históricos distorcidos, passa a prejudicar determinado grupo social, apresenta o problema de:",
+            "opcoes": [
+                "A) excesso de transparência",
+                "B) anonimização de dados",
+                "C) acessibilidade digital",
+                "D) viés algorítmico, com risco de discriminação",
+                "E) interoperabilidade de sistemas"
+            ],
+            "correta": 3,
+            "comentario": "O viés algorítmico reproduz desigualdades presentes nos dados. Por isso, sistemas de IA no setor público exigem avaliação, supervisão humana e auditoria."
+        },
+        {
+            "id": 24053,
+            "enunciado": "O uso ético de IA na administração pública exige que decisões automatizadas que afetem direitos:",
+            "opcoes": [
+                "A) sejam definitivas e sem possibilidade de revisão",
+                "B) sejam tomadas sem registro",
+                "C) sejam mantidas em segredo para evitar recursos",
+                "D) dispensem motivação",
+                "E) possam ser explicadas, revisadas por pessoas e contestadas pelos interessados"
+            ],
+            "correta": 4,
+            "comentario": "Explicabilidade, supervisão humana e possibilidade de revisão garantem o devido processo e a responsabilização. A LGPD (art. 20) prevê o direito de solicitar revisão de decisões automatizadas."
+        },
+        {
+            "id": 24054,
+            "enunciado": "Segundo a LGPD, o titular tem direito a solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses. Esse direito está relacionado:",
+            "opcoes": [
+                "A) à transparência e ao controle humano sobre decisões automatizadas",
+                "B) ao sigilo dos critérios de decisão",
+                "C) à obrigação de usar IA em todas as decisões",
+                "D) à proibição de qualquer uso de computadores no serviço público",
+                "E) ao direito de propriedade intelectual dos algoritmos"
+            ],
+            "correta": 0,
+            "comentario": "O art. 20 da LGPD garante o pedido de revisão e o direito de receber informações claras sobre os critérios e procedimentos usados, observados os segredos comercial e industrial."
+        },
+        {
+            "id": 24055,
+            "enunciado": "Dados abertos governamentais devem ser publicados preferencialmente em formatos que:",
+            "opcoes": [
+                "A) sejam alterados a cada consulta",
+                "B) sejam legíveis por máquina, não proprietários e acompanhados de descrição (metadados)",
+                "C) estejam apenas em imagens escaneadas",
+                "D) só possam ser abertos por um programa pago",
+                "E) exijam senha individual para leitura"
+            ],
+            "correta": 1,
+            "comentario": "Formatos como CSV e JSON, com metadados, permitem que qualquer pessoa reutilize e analise os dados."
+        },
+        {
+            "id": 24056,
+            "enunciado": "A interoperabilidade entre sistemas públicos traz como principal benefício ao cidadão:",
+            "opcoes": [
+                "A) exigir atendimento presencial em todos os casos",
+                "B) aumentar o número de formulários a preencher",
+                "C) restringir os serviços digitais",
+                "D) impedir o compartilhamento de dados entre órgãos",
+                "E) evitar que ele precise apresentar repetidamente documentos e informações que o poder público já possui"
+            ],
+            "correta": 4,
+            "comentario": "Com sistemas que \"conversam\" entre si, o órgão consulta a informação diretamente na fonte, simplificando a vida do cidadão."
+        },
+        {
+            "id": 24057,
+            "enunciado": "A acessibilidade digital nos sites e sistemas da Câmara é garantida, por exemplo, quando:",
+            "opcoes": [
+                "A) há textos alternativos em imagens, contraste adequado e compatibilidade com leitores de tela",
+                "B) o site só funciona em um navegador específico",
+                "C) os formulários exigem uso do mouse para tudo",
+                "D) os vídeos não têm legendas",
+                "E) as informações são publicadas apenas em imagens sem descrição"
+            ],
+            "correta": 0,
+            "comentario": "A acessibilidade permite que pessoas com deficiência acessem os serviços. A Lei Brasileira de Inclusão (Lei nº 13.146/2015) torna obrigatória a acessibilidade dos sítios mantidos pelo poder público."
+        },
+        {
+            "id": 24058,
+            "enunciado": "Na segurança da informação aplicada ao uso de IA no setor público, uma medida recomendada é:",
+            "opcoes": [
+                "A) utilizar ferramentas aprovadas pelo órgão e evitar inserir dados pessoais ou sigilosos em serviços externos",
+                "B) compartilhar senhas dos sistemas com a ferramenta de IA",
+                "C) usar qualquer ferramenta disponível na internet",
+                "D) enviar bases completas de cidadãos para testes",
+                "E) desativar os registros de uso para preservar a privacidade do servidor"
+            ],
+            "correta": 0,
+            "comentario": "Ferramentas homologadas, minimização de dados e registro de uso reduzem riscos de vazamento e permitem a responsabilização."
+        },
+        {
+            "id": 24059,
+            "enunciado": "A anonimização de dados, antes de sua publicação como dados abertos, tem como finalidade:",
+            "opcoes": [
+                "A) aumentar o volume de dados pessoais publicados",
+                "B) tornar os dados ilegíveis por máquina",
+                "C) substituir a necessidade de base legal",
+                "D) impedir qualquer uso dos dados pela sociedade",
+                "E) permitir a divulgação de informações úteis sem identificar os titulares"
+            ],
+            "correta": 4,
+            "comentario": "Dados anonimizados de forma adequada não identificam as pessoas e, em regra, deixam de ser dados pessoais (art. 12 da LGPD)."
+        },
+        {
+            "id": 24060,
+            "enunciado": "O encarregado pelo tratamento de dados pessoais em um órgão público tem como atribuições, entre outras:",
+            "opcoes": [
+                "A) autorizar a venda de dados pessoais",
+                "B) aceitar reclamações dos titulares, prestar esclarecimentos, receber comunicações da ANPD e orientar os servidores sobre as práticas de proteção de dados",
+                "C) substituir o chefe do Poder",
+                "D) julgar os processos disciplinares do órgão",
+                "E) aprovar o orçamento anual"
+            ],
+            "correta": 1,
+            "comentario": "O art. 41, § 2º, da LGPD lista as atividades do encarregado, que atua como canal entre controlador, titulares e ANPD."
+        },
+        {
+            "id": 24061,
+            "enunciado": "Ao avaliar a adoção de um chatbot com IA para responder dúvidas dos cidadãos no portal da Câmara, a gestão deve considerar, entre outros pontos:",
+            "opcoes": [
+                "A) apenas o custo mais baixo, sem outros critérios",
+                "B) a eliminação de todos os canais de atendimento humano",
+                "C) a coleta máxima de dados dos usuários",
+                "D) a ocultação de que as respostas são automatizadas",
+                "E) a precisão das respostas, a indicação clara de que se trata de atendimento automatizado e a possibilidade de atendimento humano"
+            ],
+            "correta": 4,
+            "comentario": "O uso responsável de IA exige transparência, qualidade das respostas, proteção de dados e alternativa de atendimento humano."
+        },
+        {
+            "id": 24062,
+            "enunciado": "A transparência algorítmica, no setor público, busca:",
+            "opcoes": [
+                "A) tornar compreensíveis os critérios e a lógica dos sistemas automatizados usados em decisões públicas",
+                "B) publicar as senhas dos sistemas",
+                "C) impedir o uso de tecnologia",
+                "D) divulgar dados pessoais dos usuários",
+                "E) tornar os sistemas mais lentos"
+            ],
+            "correta": 0,
+            "comentario": "Explicar como os sistemas funcionam permite controle social, auditoria e correção de erros e vieses."
+        },
+        {
+            "id": 24063,
+            "enunciado": "O princípio da responsabilização e prestação de contas da LGPD exige do órgão controlador:",
+            "opcoes": [
+                "A) apenas afirmar que cumpre a lei, sem provas",
+                "B) manter em sigilo as medidas de segurança adotadas perante a ANPD",
+                "C) transferir toda a responsabilidade aos titulares",
+                "D) dispensar registros das operações",
+                "E) demonstrar a adoção de medidas eficazes e capazes de comprovar o cumprimento das normas de proteção de dados"
+            ],
+            "correta": 4,
+            "comentario": "O art. 6º, X, exige que o agente comprove a eficácia das medidas adotadas, e o art. 37 impõe o registro das operações de tratamento."
+        },
+        {
+            "id": 24064,
+            "enunciado": "No planejamento estratégico, a declaração que expressa a razão de existir da organização, o que ela faz e para quem, é a:",
+            "opcoes": [
+                "A) meta",
+                "B) missão",
+                "C) indicador de desempenho",
+                "D) visão",
+                "E) análise SWOT"
+            ],
+            "correta": 1,
+            "comentario": "A missão define o propósito da organização. A visão descreve aonde ela quer chegar no futuro."
+        },
+        {
+            "id": 24065,
+            "enunciado": "A declaração que descreve a situação futura desejada pela organização, em um horizonte de tempo, é a:",
+            "opcoes": [
+                "A) missão",
+                "B) cadeia de valor",
+                "C) visão",
+                "D) política de pessoal",
+                "E) meta operacional diária"
+            ],
+            "correta": 2,
+            "comentario": "A visão indica o estado futuro desejado e orienta os objetivos estratégicos."
+        },
+        {
+            "id": 24066,
+            "enunciado": "Na análise SWOT, os fatores INTERNOS da organização são:",
+            "opcoes": [
+                "A) forças e fraquezas",
+                "B) apenas as ameaças",
+                "C) oportunidades e ameaças",
+                "D) fraquezas e ameaças",
+                "E) forças e oportunidades"
+            ],
+            "correta": 0,
+            "comentario": "Forças (Strengths) e fraquezas (Weaknesses) são internas. Oportunidades (Opportunities) e ameaças (Threats) vêm do ambiente externo."
+        },
+        {
+            "id": 24067,
+            "enunciado": "A aprovação de uma nova lei federal que amplia os repasses aos municípios, beneficiando projetos da Câmara, representa, na análise SWOT, uma:",
+            "opcoes": [
+                "A) fraqueza",
+                "B) oportunidade",
+                "C) missão",
+                "D) ameaça",
+                "E) força"
+            ],
+            "correta": 1,
+            "comentario": "É um fator externo favorável, portanto uma oportunidade."
+        },
+        {
+            "id": 24068,
+            "enunciado": "O ciclo PDCA, ferramenta de melhoria contínua, é composto pelas etapas:",
+            "opcoes": [
+                "A) propor, discutir, corrigir e aprovar",
+                "B) planejar, executar, verificar e agir",
+                "C) planejar, delegar, cobrar e avaliar",
+                "D) prever, desenvolver, controlar e auditar",
+                "E) pesquisar, decidir, contratar e arquivar"
+            ],
+            "correta": 1,
+            "comentario": "PDCA significa Plan (planejar), Do (executar), Check (verificar) e Act (agir, corrigindo e padronizando)."
+        },
+        {
+            "id": 24069,
+            "enunciado": "Na avaliação de desempenho na gestão pública, EFICIÊNCIA refere-se a:",
+            "opcoes": [
+                "A) cumprir a lei sem qualquer análise de custo",
+                "B) atingir as metas, independentemente do custo",
+                "C) gerar impacto positivo na vida da população",
+                "D) aumentar o número de servidores",
+                "E) fazer mais e melhor com os recursos disponíveis, relacionando produtos e insumos"
+            ],
+            "correta": 4,
+            "comentario": "Eficiência relaciona resultados e recursos (produtividade). Eficácia é atingir as metas. Efetividade é gerar o impacto social desejado."
+        },
+        {
+            "id": 24070,
+            "enunciado": "Um programa de capacitação atingiu a meta de treinar 300 servidores no ano. Esse resultado mede, principalmente, a:",
+            "opcoes": [
+                "A) eficácia",
+                "B) efetividade",
+                "C) economicidade",
+                "D) eficiência",
+                "E) equidade"
+            ],
+            "correta": 0,
+            "comentario": "Eficácia é o grau de alcance da meta planejada (300 servidores treinados)."
+        },
+        {
+            "id": 24071,
+            "enunciado": "Após um programa de alfabetização, verificou-se aumento real da escolaridade e da renda da população atendida. Esse resultado expressa a:",
+            "opcoes": [
+                "A) legalidade",
+                "B) economicidade",
+                "C) eficiência",
+                "D) eficácia apenas",
+                "E) efetividade"
+            ],
+            "correta": 4,
+            "comentario": "Efetividade mede o impacto e a transformação gerados na realidade social."
+        },
+        {
+            "id": 24072,
+            "enunciado": "Um bom indicador de desempenho deve ser, entre outras características:",
+            "opcoes": [
+                "A) baseado em dados sigilosos e impossíveis de verificar",
+                "B) vago e subjetivo, para permitir várias interpretações",
+                "C) calculado apenas uma vez a cada década",
+                "D) definido depois que os resultados aparecem",
+                "E) mensurável, relevante, confiável e de fácil compreensão"
+            ],
+            "correta": 4,
+            "comentario": "Indicadores precisam medir de forma clara e confiável aquilo que importa para a gestão e para a sociedade."
+        },
+        {
+            "id": 24073,
+            "enunciado": "A gestão por processos tem como característica:",
+            "opcoes": [
+                "A) enxergar a organização como um conjunto de atividades encadeadas que geram valor para o usuário, atravessando os setores",
+                "B) focar apenas na hierarquia de cada departamento isolado",
+                "C) organizar o trabalho somente por ordem alfabética",
+                "D) eliminar todos os controles da organização",
+                "E) impedir a padronização de rotinas"
+            ],
+            "correta": 0,
+            "comentario": "A gestão por processos analisa o fluxo de trabalho de ponta a ponta, do pedido à entrega, buscando eliminar etapas sem valor."
+        },
+        {
+            "id": 24074,
+            "enunciado": "O mapeamento de processos com a notação BPMN é utilizado para:",
+            "opcoes": [
+                "A) calcular a folha de pagamento",
+                "B) representar graficamente as atividades, os eventos, as decisões e os responsáveis de um processo",
+                "C) elaborar a lei orçamentária",
+                "D) fazer a contabilidade patrimonial",
+                "E) organizar o arquivo permanente"
+            ],
+            "correta": 1,
+            "comentario": "O BPMN (Business Process Model and Notation) é uma notação padronizada para desenhar processos, com raias que mostram os responsáveis."
+        },
+        {
+            "id": 24075,
+            "enunciado": "Na gestão de projetos, as restrições clássicas que devem ser equilibradas, conhecidas como \"restrição tripla\", são:",
+            "opcoes": [
+                "A) missão, visão e valores",
+                "B) escopo, prazo e custo",
+                "C) iniciativa, votação e sanção",
+                "D) receita, despesa e dívida",
+                "E) forças, fraquezas e ameaças"
+            ],
+            "correta": 1,
+            "comentario": "Alterar o escopo, o prazo ou o custo de um projeto afeta os demais, e o equilíbrio entre eles influencia a qualidade."
+        },
+        {
+            "id": 24076,
+            "enunciado": "A principal diferença entre projeto e processo (ou operação contínua) é que o projeto:",
+            "opcoes": [
+                "A) é sempre executado por uma única pessoa",
+                "B) dispensa planejamento",
+                "C) é temporário, com início e fim definidos, e gera um resultado único",
+                "D) se repete indefinidamente, sem prazo",
+                "E) não tem objetivos definidos"
+            ],
+            "correta": 2,
+            "comentario": "Projetos são esforços temporários para criar um produto ou resultado exclusivo. Processos são atividades rotineiras e contínuas."
+        },
+        {
+            "id": 24077,
+            "enunciado": "O documento que formaliza o início de um projeto, define seus objetivos e nomeia o gerente responsável é o:",
+            "opcoes": [
+                "A) ata de sessão plenária",
+                "B) relatório de encerramento",
+                "C) termo de posse do servidor",
+                "D) termo de abertura do projeto",
+                "E) parecer da comissão de finanças"
+            ],
+            "correta": 3,
+            "comentario": "O termo de abertura (project charter) autoriza formalmente o projeto e dá autoridade ao gerente."
+        },
+        {
+            "id": 24078,
+            "enunciado": "No Balanced Scorecard (BSC) adaptado ao setor público, a perspectiva que costuma ficar no topo do mapa estratégico é a:",
+            "opcoes": [
+                "A) da concorrência",
+                "B) da sociedade (cidadão)",
+                "C) dos fornecedores",
+                "D) financeira, voltada ao lucro",
+                "E) dos acionistas"
+            ],
+            "correta": 1,
+            "comentario": "Nas organizações públicas, o foco final é gerar valor para a sociedade. Por isso a perspectiva do cidadão ocupa o topo do mapa estratégico."
+        },
+        {
+            "id": 24079,
+            "enunciado": "Na gestão de pessoas no setor público, a gestão por competências busca:",
+            "opcoes": [
+                "A) eliminar a capacitação",
+                "B) avaliar os servidores apenas pela antiguidade",
+                "C) promover servidores por indicação política",
+                "D) substituir o concurso público",
+                "E) identificar os conhecimentos, as habilidades e as atitudes necessários e desenvolver os servidores para alcançar os objetivos institucionais"
+            ],
+            "correta": 4,
+            "comentario": "O modelo de competências (conhecimentos, habilidades e atitudes) orienta seleção interna, capacitação e avaliação de desempenho."
+        },
+        {
+            "id": 24080,
+            "enunciado": "A avaliação de desempenho dos servidores, quando bem estruturada, serve principalmente para:",
+            "opcoes": [
+                "A) definir o subsídio dos vereadores",
+                "B) punir servidores sem processo",
+                "C) reduzir a transparência da gestão",
+                "D) acompanhar resultados, identificar necessidades de capacitação e subsidiar decisões sobre desenvolvimento na carreira",
+                "E) substituir o estágio probatório por sorteio"
+            ],
+            "correta": 3,
+            "comentario": "A avaliação é ferramenta de desenvolvimento e gestão, com critérios objetivos e retorno ao servidor."
+        },
+        {
+            "id": 24081,
+            "enunciado": "A comunicação institucional de uma Câmara Municipal deve ter caráter:",
+            "opcoes": [
+                "A) educativo, informativo ou de orientação social, sem promoção pessoal de autoridades",
+                "B) eleitoral, divulgando os vereadores da situação",
+                "C) sigiloso, restrito aos servidores",
+                "D) informal, sem compromisso com a precisão",
+                "E) publicitário, com foco em propaganda pessoal"
+            ],
+            "correta": 0,
+            "comentario": "O art. 37, § 1º, da Constituição define o caráter da publicidade oficial e proíbe nomes, símbolos ou imagens que caracterizem promoção pessoal."
+        },
+        {
+            "id": 24082,
+            "enunciado": "A cadeia de valor de uma organização pública representa:",
+            "opcoes": [
+                "A) o calendário de sessões",
+                "B) a lista de fornecedores cadastrados",
+                "C) a escala de férias dos servidores",
+                "D) o conjunto dos macroprocessos finalísticos, de gestão e de suporte que geram resultados para a sociedade",
+                "E) o organograma de cargos comissionados"
+            ],
+            "correta": 3,
+            "comentario": "A cadeia de valor mostra como os macroprocessos da organização se articulam para entregar valor ao cidadão."
+        },
+        {
+            "id": 24083,
+            "enunciado": "Na Câmara, os macroprocessos de legislar e fiscalizar são considerados processos:",
+            "opcoes": [
+                "A) finalísticos, pois estão ligados diretamente à missão institucional",
+                "B) secundários e dispensáveis",
+                "C) de suporte, como compras e manutenção",
+                "D) de gestão de pessoas apenas",
+                "E) terceirizados por natureza"
+            ],
+            "correta": 0,
+            "comentario": "Processos finalísticos entregam o produto principal da organização. Os de suporte (compras, TI, pessoal) dão as condições para isso."
+        },
+        {
+            "id": 24084,
+            "enunciado": "Um gestor deseja reduzir o tempo médio de resposta aos requerimentos da Câmara de 30 para 15 dias até dezembro. Essa definição corresponde a uma:",
+            "opcoes": [
+                "A) visão de longo prazo",
+                "B) missão institucional",
+                "C) ameaça externa",
+                "D) competência individual",
+                "E) meta, por ser quantificada e ter prazo definido"
+            ],
+            "correta": 4,
+            "comentario": "Uma meta traduz o objetivo em valor mensurável e prazo, permitindo acompanhar o desempenho por indicadores."
+        },
+        {
+            "id": 24085,
+            "enunciado": "Segundo o art. 165 da Constituição Federal, os instrumentos de planejamento e orçamento, de iniciativa do Poder Executivo, são:",
+            "opcoes": [
+                "A) o balanço patrimonial, o RREO e o RGF",
+                "B) o plano plurianual, a lei orgânica e a resolução orçamentária",
+                "C) o regimento interno, a lei orgânica e o plano diretor",
+                "D) o plano plurianual, a lei de diretrizes orçamentárias e a lei orçamentária anual",
+                "E) a lei de licitações, a LRF e a LAI"
+            ],
+            "correta": 3,
+            "comentario": "O art. 165 prevê o PPA, a LDO e a LOA, todos de iniciativa do chefe do Poder Executivo."
+        },
+        {
+            "id": 24086,
+            "enunciado": "O plano plurianual (PPA) estabelece, de forma regionalizada:",
+            "opcoes": [
+                "A) as metas fiscais de cada bimestre",
+                "B) a lista dos servidores a serem nomeados",
+                "C) as diretrizes, os objetivos e as metas da administração para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada",
+                "D) apenas a previsão de receitas do exercício seguinte",
+                "E) somente as despesas com pessoal"
+            ],
+            "correta": 2,
+            "comentario": "O art. 165, § 1º, define o conteúdo do PPA, instrumento de planejamento de médio prazo (quatro anos)."
+        },
+        {
+            "id": 24087,
+            "enunciado": "No modelo constitucional, o PPA tem vigência de quatro anos, iniciando-se:",
+            "opcoes": [
+                "A) no primeiro dia do mandato e terminando no último",
+                "B) no segundo ano do mandato do chefe do Executivo e terminando no primeiro ano do mandato seguinte",
+                "C) a cada ano, com duração de doze meses",
+                "D) no último ano do mandato, por oito anos",
+                "E) apenas em anos eleitorais"
+            ],
+            "correta": 1,
+            "comentario": "O PPA começa no segundo ano do mandato e vai até o primeiro ano do mandato seguinte, garantindo continuidade do planejamento."
+        },
+        {
+            "id": 24088,
+            "enunciado": "Compete à lei de diretrizes orçamentárias (LDO), segundo a Constituição Federal:",
+            "opcoes": [
+                "A) definir a estrutura do regimento interno",
+                "B) aprovar as contas do Prefeito",
+                "C) fixar o subsídio dos Vereadores para a próxima legislatura",
+                "D) compreender as metas e prioridades da administração e orientar a elaboração da lei orçamentária anual",
+                "E) substituir o plano plurianual em anos eleitorais"
+            ],
+            "correta": 3,
+            "comentario": "O art. 165, § 2º, atribui à LDO as metas e prioridades, a orientação da LOA e a disposição sobre alterações na legislação tributária, entre outros pontos."
+        },
+        {
+            "id": 24089,
+            "enunciado": "Segundo a LRF, integrará o projeto de LDO o Anexo de Metas Fiscais, em que serão estabelecidas metas anuais relativas a:",
+            "opcoes": [
+                "A) número de sessões ordinárias",
+                "B) receitas, despesas, resultados nominal e primário e montante da dívida pública",
+                "C) quantidade de servidores aposentados",
+                "D) número de leis a serem aprovadas",
+                "E) salário de cada Vereador"
+            ],
+            "correta": 1,
+            "comentario": "O art. 4º, § 1º, da LRF prevê o Anexo de Metas Fiscais para o exercício e os dois seguintes."
+        },
+        {
+            "id": 24090,
+            "enunciado": "A lei orçamentária anual (LOA), segundo a Constituição Federal, compreende:",
+            "opcoes": [
+                "A) o orçamento da Câmara e o do Tribunal de Contas",
+                "B) apenas o orçamento fiscal",
+                "C) o orçamento fiscal e o plano plurianual",
+                "D) o orçamento fiscal, o orçamento de investimento das empresas estatais e o orçamento da seguridade social",
+                "E) o orçamento de investimento e a LDO"
+            ],
+            "correta": 3,
+            "comentario": "O art. 165, § 5º, define os três orçamentos que compõem a LOA."
+        },
+        {
+            "id": 24091,
+            "enunciado": "O princípio orçamentário segundo o qual a LOA não conterá dispositivo estranho à previsão da receita e à fixação da despesa é o da:",
+            "opcoes": [
+                "A) universalidade",
+                "B) não vinculação",
+                "C) exclusividade",
+                "D) unidade",
+                "E) anualidade"
+            ],
+            "correta": 2,
+            "comentario": "O art. 165, § 8º, consagra a exclusividade, admitindo apenas autorização para créditos suplementares e operações de crédito."
+        },
+        {
+            "id": 24092,
+            "enunciado": "O princípio orçamentário que exige que a LOA contenha todas as receitas e todas as despesas do ente é o da:",
+            "opcoes": [
+                "A) especificação",
+                "B) exclusividade",
+                "C) anualidade",
+                "D) universalidade",
+                "E) publicidade"
+            ],
+            "correta": 3,
+            "comentario": "Pela universalidade, nenhuma receita ou despesa pode ficar fora do orçamento."
+        },
+        {
+            "id": 24093,
+            "enunciado": "Na execução da despesa pública, segundo a Lei nº 4.320/1964, a sequência correta dos estágios é:",
+            "opcoes": [
+                "A) pagamento, empenho e liquidação",
+                "B) empenho, liquidação e pagamento",
+                "C) licitação, pagamento e empenho",
+                "D) liquidação, pagamento e empenho",
+                "E) empenho, pagamento e liquidação"
+            ],
+            "correta": 1,
+            "comentario": "O empenho reserva a dotação, a liquidação verifica o direito do credor (entrega do bem ou serviço) e, por fim, ocorre o pagamento."
+        },
+        {
+            "id": 24094,
+            "enunciado": "Na Lei nº 4.320/1964, a liquidação da despesa consiste em:",
+            "opcoes": [
+                "A) verificar o direito adquirido pelo credor, com base nos documentos que comprovem o respectivo crédito",
+                "B) reservar a dotação orçamentária",
+                "C) entregar o dinheiro ao credor",
+                "D) publicar o edital de licitação",
+                "E) aprovar o orçamento"
+            ],
+            "correta": 0,
+            "comentario": "A liquidação confere se o bem foi entregue ou o serviço prestado, antes do pagamento (art. 63 da Lei nº 4.320/1964)."
+        },
+        {
+            "id": 24095,
+            "enunciado": "Segundo a LRF, a despesa total com pessoal dos Municípios não poderá exceder, em cada período de apuração:",
+            "opcoes": [
+                "A) 54% da receita corrente líquida",
+                "B) 6% da receita corrente líquida",
+                "C) 70% da receita corrente líquida",
+                "D) 60% da receita corrente líquida",
+                "E) 50% da receita corrente líquida"
+            ],
+            "correta": 3,
+            "comentario": "O art. 19, III, fixa o limite de 60% da RCL para os Municípios."
+        },
+        {
+            "id": 24096,
+            "enunciado": "Na esfera municipal, a LRF reparte o limite de despesa com pessoal da seguinte forma:",
+            "opcoes": [
+                "A) 6% para o Legislativo, incluído o Tribunal de Contas do Município quando houver, e 54% para o Executivo",
+                "B) 6% para o Executivo e 54% para o Legislativo",
+                "C) 3% para o Legislativo e 57% para o Executivo",
+                "D) 30% para cada Poder",
+                "E) 10% para o Legislativo e 50% para o Executivo"
+            ],
+            "correta": 0,
+            "comentario": "O art. 20, III, da LRF estabelece 6% para o Legislativo municipal e 54% para o Executivo."
+        },
+        {
+            "id": 24097,
+            "enunciado": "Um Município tem receita corrente líquida de R$ 500 milhões. Pela LRF, o limite máximo de despesa com pessoal da Câmara Municipal é de:",
+            "opcoes": [
+                "A) R$ 54 milhões",
+                "B) R$ 35 milhões",
+                "C) R$ 27 milhões",
+                "D) R$ 300 milhões",
+                "E) R$ 30 milhões"
+            ],
+            "correta": 4,
+            "comentario": "O limite do Legislativo municipal é 6% da RCL: 6% × 500 milhões = 30 milhões."
+        },
+        {
+            "id": 24098,
+            "enunciado": "Ainda com RCL de R$ 500 milhões, o limite PRUDENCIAL da despesa com pessoal da Câmara, que corresponde a 95% do limite máximo, é de:",
+            "opcoes": [
+                "A) R$ 28,5 milhões",
+                "B) R$ 30 milhões",
+                "C) R$ 25 milhões",
+                "D) R$ 29,5 milhões",
+                "E) R$ 27 milhões"
+            ],
+            "correta": 0,
+            "comentario": "95% de 30 milhões = 28,5 milhões. Ao ultrapassá-lo, o Poder fica sujeito às vedações do art. 22, parágrafo único, da LRF."
+        },
+        {
+            "id": 24099,
+            "enunciado": "Segundo a LRF, os Tribunais de Contas alertarão os Poderes quando constatarem que a despesa com pessoal ultrapassou:",
+            "opcoes": [
+                "A) 75% do limite",
+                "B) 100% do limite",
+                "C) 110% do limite",
+                "D) 50% do limite",
+                "E) 90% do limite"
+            ],
+            "correta": 4,
+            "comentario": "O art. 59, § 1º, II, prevê o alerta ao atingir 90% do limite. O limite prudencial é de 95% (art. 22)."
+        },
+        {
+            "id": 24100,
+            "enunciado": "Ultrapassado o limite de despesa com pessoal, a LRF determina que o percentual excedente seja eliminado:",
+            "opcoes": [
+                "A) no prazo do mandato seguinte",
+                "B) em até cinco anos",
+                "C) no mesmo mês da apuração",
+                "D) nos dois quadrimestres seguintes, sendo pelo menos um terço no primeiro",
+                "E) somente após decisão judicial"
+            ],
+            "correta": 3,
+            "comentario": "O art. 23 da LRF prevê a recondução em dois quadrimestres, com pelo menos um terço no primeiro."
+        },
+        {
+            "id": 24101,
+            "enunciado": "Segundo o art. 42 da LRF, é vedado ao titular de Poder, nos últimos dois quadrimestres do seu mandato:",
+            "opcoes": [
+                "A) publicar relatórios fiscais",
+                "B) executar o orçamento aprovado",
+                "C) realizar qualquer despesa, inclusive as obrigatórias",
+                "D) pagar salários dos servidores",
+                "E) contrair obrigação de despesa que não possa ser cumprida integralmente dentro dele, ou que tenha parcelas a serem pagas no exercício seguinte sem suficiente disponibilidade de caixa"
+            ],
+            "correta": 4,
+            "comentario": "O art. 42 evita que o gestor deixe dívidas sem caixa para o sucessor."
+        },
+        {
+            "id": 24102,
+            "enunciado": "O Relatório de Gestão Fiscal (RGF), previsto na LRF, deve ser emitido:",
+            "opcoes": [
+                "A) somente quando houver irregularidade",
+                "B) pelo Tribunal de Contas, a cada bimestre",
+                "C) pelo Ministério Público, a cada mês",
+                "D) apenas pelo Prefeito, uma vez por ano",
+                "E) ao final de cada quadrimestre, pelos titulares dos Poderes, inclusive pelo Presidente da Câmara Municipal"
+            ],
+            "correta": 4,
+            "comentario": "Os arts. 54 e 55 exigem o RGF quadrimestral de cada Poder. Municípios com menos de 50 mil habitantes podem optar pela divulgação semestral (art. 63)."
+        },
+        {
+            "id": 24103,
+            "enunciado": "O Relatório Resumido da Execução Orçamentária (RREO), segundo a LRF, é publicado:",
+            "opcoes": [
+                "A) até trinta dias após o encerramento de cada bimestre",
+                "B) apenas ao final do mandato",
+                "C) anualmente, junto com a LOA",
+                "D) somente quando solicitado pelo Tribunal de Contas",
+                "E) a cada quadrimestre, pela Câmara"
+            ],
+            "correta": 0,
+            "comentario": "O art. 165, § 3º, da Constituição e o art. 52 da LRF determinam a publicação do RREO até trinta dias após cada bimestre."
+        },
+        {
+            "id": 24104,
+            "enunciado": "Segundo a LRF, a transparência da gestão fiscal será assegurada também mediante:",
+            "opcoes": [
+                "A) incentivo à participação popular e realização de audiências públicas durante a elaboração e a discussão dos planos, da LDO e dos orçamentos",
+                "B) publicação somente em jornais impressos privados",
+                "C) proibição de consulta pela internet",
+                "D) divulgação apenas para os servidores",
+                "E) sigilo dos relatórios até o fim do mandato"
+            ],
+            "correta": 0,
+            "comentario": "O art. 48, § 1º, I, da LRF prevê a participação popular e as audiências públicas no processo orçamentário."
+        },
+        {
+            "id": 24105,
+            "enunciado": "Segundo a LRF, considera-se despesa obrigatória de caráter continuado a despesa corrente derivada de lei, medida provisória ou ato administrativo normativo que fixe para o ente a obrigação legal de sua execução por um período superior a:",
+            "opcoes": [
+                "A) três meses",
+                "B) dez anos",
+                "C) quatro exercícios",
+                "D) dois exercícios",
+                "E) um exercício"
+            ],
+            "correta": 3,
+            "comentario": "O art. 17 da LRF define a despesa obrigatória de caráter continuado e exige estimativa de impacto e demonstração da origem dos recursos."
+        },
+        {
+            "id": 24106,
+            "enunciado": "A distribuição de competências entre órgãos de uma mesma pessoa jurídica, com hierarquia entre eles, denomina-se:",
+            "opcoes": [
+                "A) privatização",
+                "B) delegação legislativa",
+                "C) desconcentração",
+                "D) concessão",
+                "E) descentralização"
+            ],
+            "correta": 2,
+            "comentario": "Na desconcentração, a atividade é distribuída dentro da mesma pessoa jurídica, entre órgãos sem personalidade própria. Na descentralização, é transferida a outra pessoa."
+        },
+        {
+            "id": 24107,
+            "enunciado": "A criação de uma autarquia municipal para prestar determinado serviço público é exemplo de:",
+            "opcoes": [
+                "A) delegação de função legislativa",
+                "B) concentração hierárquica",
+                "C) descentralização administrativa",
+                "D) centralização política",
+                "E) desconcentração administrativa"
+            ],
+            "correta": 2,
+            "comentario": "Na descentralização, a atividade é atribuída a outra pessoa jurídica, como autarquias, fundações, empresas públicas e sociedades de economia mista."
+        },
+        {
+            "id": 24108,
+            "enunciado": "Integram a administração pública INDIRETA:",
+            "opcoes": [
+                "A) partidos políticos e sindicatos",
+                "B) autarquias, fundações públicas, empresas públicas e sociedades de economia mista",
+                "C) ministérios, secretarias e departamentos",
+                "D) Câmara Municipal e Prefeitura",
+                "E) organizações não governamentais"
+            ],
+            "correta": 1,
+            "comentario": "A administração indireta é formada por entidades com personalidade jurídica própria. Secretarias e departamentos são órgãos da administração direta."
+        },
+        {
+            "id": 24109,
+            "enunciado": "Segundo a Constituição Federal, somente por lei específica poderá ser criada autarquia e autorizada a instituição de:",
+            "opcoes": [
+                "A) empresa pública, de sociedade de economia mista e de fundação",
+                "B) consórcio entre particulares",
+                "C) secretaria municipal",
+                "D) cargo em comissão",
+                "E) comissão parlamentar de inquérito"
+            ],
+            "correta": 0,
+            "comentario": "O art. 37, XIX, prevê que a lei cria a autarquia e autoriza a instituição das demais entidades, cabendo à lei complementar definir as áreas de atuação das fundações."
+        },
+        {
+            "id": 24110,
+            "enunciado": "O poder administrativo que permite à administração distribuir e escalonar funções, dar ordens, fiscalizar, delegar e avocar atribuições é o poder:",
+            "opcoes": [
+                "A) vinculado",
+                "B) disciplinar",
+                "C) regulamentar",
+                "D) hierárquico",
+                "E) de polícia"
+            ],
+            "correta": 3,
+            "comentario": "O poder hierárquico organiza a estrutura interna e as relações de subordinação."
+        },
+        {
+            "id": 24111,
+            "enunciado": "O poder que permite à administração apurar infrações e aplicar penalidades aos servidores e a quem esteja sujeito à disciplina administrativa é o poder:",
+            "opcoes": [
+                "A) hierárquico, exclusivamente",
+                "B) discricionário puro",
+                "C) de polícia",
+                "D) regulamentar",
+                "E) disciplinar"
+            ],
+            "correta": 4,
+            "comentario": "O poder disciplinar alcança servidores e particulares com vínculo especial com a administração, como contratados."
+        },
+        {
+            "id": 24112,
+            "enunciado": "O poder de polícia, no Direito Administrativo, é a atividade da administração que:",
+            "opcoes": [
+                "A) organiza as eleições",
+                "B) elabora as leis",
+                "C) limita ou disciplina direitos, interesses ou liberdades individuais em benefício do interesse público",
+                "D) investiga crimes e prende suspeitos",
+                "E) julga ações judiciais"
+            ],
+            "correta": 2,
+            "comentario": "O poder de polícia administrativa condiciona o uso da propriedade e da liberdade, como na fiscalização sanitária ou no alvará de funcionamento."
+        },
+        {
+            "id": 24113,
+            "enunciado": "São requisitos (elementos) do ato administrativo:",
+            "opcoes": [
+                "A) presunção de legitimidade, imperatividade e autoexecutoriedade",
+                "B) conveniência, oportunidade e interesse privado",
+                "C) legalidade, impessoalidade, moralidade, publicidade e eficiência",
+                "D) iniciativa, discussão, votação e sanção",
+                "E) competência, finalidade, forma, motivo e objeto"
+            ],
+            "correta": 4,
+            "comentario": "Os cinco elementos clássicos são competência (sujeito), finalidade, forma, motivo e objeto."
+        },
+        {
+            "id": 24114,
+            "enunciado": "São atributos do ato administrativo:",
+            "opcoes": [
+                "A) conveniência e oportunidade, apenas",
+                "B) gratuidade e informalidade",
+                "C) irrevogabilidade absoluta e sigilo",
+                "D) presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade",
+                "E) competência, finalidade, forma, motivo e objeto"
+            ],
+            "correta": 3,
+            "comentario": "Atributos são características que distinguem o ato administrativo dos atos privados. Requisitos (elementos) são os componentes necessários à sua validade."
+        },
+        {
+            "id": 24115,
+            "enunciado": "O atributo do ato administrativo que permite à administração executá-lo diretamente, sem necessidade de autorização prévia do Poder Judiciário, é a:",
+            "opcoes": [
+                "A) imperatividade",
+                "B) motivação",
+                "C) autoexecutoriedade",
+                "D) tipicidade",
+                "E) presunção de legitimidade"
+            ],
+            "correta": 2,
+            "comentario": "Pela autoexecutoriedade, a administração pode, nos casos previstos em lei ou de urgência, executar o ato por seus próprios meios, como na interdição de estabelecimento."
+        },
+        {
+            "id": 24116,
+            "enunciado": "Nos atos discricionários, a lei confere à administração margem de escolha quanto à:",
+            "opcoes": [
+                "A) competência, que pode ser escolhida livremente",
+                "B) possibilidade de descumprir a lei",
+                "C) conveniência e oportunidade, relacionadas ao motivo e ao objeto, dentro dos limites legais",
+                "D) forma, sempre livre",
+                "E) finalidade, que pode ser pessoal"
+            ],
+            "correta": 2,
+            "comentario": "A discricionariedade recai sobre o mérito (motivo e objeto). Competência, finalidade e forma são sempre vinculadas."
+        },
+        {
+            "id": 24117,
+            "enunciado": "A ANULAÇÃO do ato administrativo ocorre quando:",
+            "opcoes": [
+                "A) muda o chefe do Poder",
+                "B) o ato é publicado com atraso",
+                "C) o servidor que praticou o ato se aposenta",
+                "D) há ilegalidade, podendo ser feita pela própria administração ou pelo Poder Judiciário, em regra com efeitos retroativos",
+                "E) o ato válido deixa de ser conveniente, com efeitos apenas futuros"
+            ],
+            "correta": 3,
+            "comentario": "A anulação recai sobre atos ilegais e produz, em regra, efeitos ex tunc (retroativos). A revogação atinge atos válidos por conveniência e oportunidade, com efeitos ex nunc."
+        },
+        {
+            "id": 24118,
+            "enunciado": "A REVOGAÇÃO do ato administrativo:",
+            "opcoes": [
+                "A) recai sobre atos ilegais, com efeitos retroativos",
+                "B) é obrigatória sempre que houver mudança de governo",
+                "C) é feita pelo Poder Judiciário em qualquer caso",
+                "D) é feita pela própria administração, por razões de conveniência e oportunidade, em relação a atos válidos, com efeitos para o futuro",
+                "E) pode atingir direitos adquiridos sem limites"
+            ],
+            "correta": 3,
+            "comentario": "Só a administração pode revogar seus atos, por motivo de mérito. O Judiciário, no exercício da função jurisdicional, apenas anula atos ilegais."
+        },
+        {
+            "id": 24119,
+            "enunciado": "Segundo a Súmula nº 473 do STF, a administração:",
+            "opcoes": [
+                "A) pode anular seus próprios atos quando eivados de vícios que os tornem ilegais, ou revogá-los por conveniência ou oportunidade, respeitados os direitos adquiridos",
+                "B) nunca pode rever seus próprios atos",
+                "C) só pode anular atos com autorização judicial",
+                "D) pode revogar atos ilegais e anular atos convenientes",
+                "E) deve manter todos os atos, mesmo ilegais"
+            ],
+            "correta": 0,
+            "comentario": "A Súmula 473 consagra o princípio da autotutela, ressalvando sempre a apreciação judicial."
+        },
+        {
+            "id": 24120,
+            "enunciado": "Segundo a Lei nº 9.784/1999, o direito da administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em:",
+            "opcoes": [
+                "A) vinte anos, como no Código Civil",
+                "B) um ano, em qualquer caso",
+                "C) dez anos, salvo boa-fé",
+                "D) nunca, pois a ilegalidade não convalida",
+                "E) cinco anos, contados da data em que foram praticados, salvo comprovada má-fé"
+            ],
+            "correta": 4,
+            "comentario": "O art. 54 da Lei nº 9.784/1999 fixa o prazo decadencial de cinco anos, protegendo a segurança jurídica, exceto se houver má-fé."
+        },
+        {
+            "id": 24121,
+            "enunciado": "O vício de competência em um ato praticado por servidor sem atribuição para tanto pode, quando não se tratar de competência exclusiva, ser corrigido por meio da:",
+            "opcoes": [
+                "A) publicação em jornal",
+                "B) repetição do ato pelo mesmo servidor",
+                "C) convalidação (ratificação) pela autoridade competente",
+                "D) revogação obrigatória",
+                "E) anulação pelo Tribunal de Contas"
+            ],
+            "correta": 2,
+            "comentario": "Vícios sanáveis, como o de competência não exclusiva e o de forma não essencial, podem ser convalidados quando não acarretarem lesão ao interesse público nem prejuízo a terceiros (art. 55 da Lei nº 9.784/1999)."
+        },
+        {
+            "id": 24122,
+            "enunciado": "A delegação de competência, segundo a Lei nº 9.784/1999, NÃO pode ter por objeto:",
+            "opcoes": [
+                "A) a edição de atos de caráter normativo, a decisão de recursos administrativos e as matérias de competência exclusiva",
+                "B) atividades de atendimento ao público",
+                "C) a assinatura de ofícios de rotina",
+                "D) a organização de arquivos",
+                "E) atos de mero expediente"
+            ],
+            "correta": 0,
+            "comentario": "O art. 13 da Lei nº 9.784/1999 proíbe delegar atos normativos, decisão de recursos e matérias de competência exclusiva do órgão ou autoridade."
+        },
+        {
+            "id": 24123,
+            "enunciado": "A avocação, no Direito Administrativo, consiste em:",
+            "opcoes": [
+                "A) renunciar à competência definitivamente",
+                "B) o superior hierárquico chamar para si, temporariamente e em caráter excepcional, competência atribuída a órgão subordinado",
+                "C) delegar competência exclusiva",
+                "D) anular atos do subordinado",
+                "E) transferir a competência a outra pessoa jurídica"
+            ],
+            "correta": 1,
+            "comentario": "O art. 15 da Lei nº 9.784/1999 admite a avocação temporária, em caráter excepcional e por motivos relevantes devidamente justificados."
+        },
+        {
+            "id": 24124,
+            "enunciado": "O desvio de finalidade ocorre quando o agente:",
+            "opcoes": [
+                "A) pratica o ato sem a forma exigida",
+                "B) pratica o ato com a assinatura ilegível",
+                "C) demora para praticar o ato",
+                "D) pratica o ato visando a fim diverso daquele previsto, explícita ou implicitamente, na regra de competência",
+                "E) pratica o ato fora do horário de expediente"
+            ],
+            "correta": 3,
+            "comentario": "No desvio de finalidade, o ato busca interesse pessoal ou fim diverso do previsto em lei, mesmo que pareça formalmente correto. É vício insanável."
+        },
+        {
+            "id": 24125,
+            "enunciado": "A teoria dos motivos determinantes estabelece que:",
+            "opcoes": [
+                "A) apenas atos vinculados precisam de motivo",
+                "B) motivos falsos não afetam a validade do ato",
+                "C) o motivo pode ser alterado depois, livremente",
+                "D) a validade do ato fica vinculada aos motivos indicados como seu fundamento; se forem falsos ou inexistentes, o ato é nulo",
+                "E) a administração nunca precisa indicar motivos"
+            ],
+            "correta": 3,
+            "comentario": "Uma vez declarados, os motivos passam a condicionar a validade do ato, mesmo nos atos discricionários."
+        },
+        {
+            "id": 24126,
+            "enunciado": "A exoneração de um servidor ocupante de cargo em comissão, por ser de livre exoneração, é ato:",
+            "opcoes": [
+                "A) nulo por natureza",
+                "B) vinculado, que exige processo administrativo disciplinar",
+                "C) discricionário, que dispensa motivação, mas, se motivado, vincula-se aos motivos declarados",
+                "D) que só pode ocorrer ao fim do mandato",
+                "E) que depende de autorização judicial"
+            ],
+            "correta": 2,
+            "comentario": "O cargo em comissão é de livre nomeação e exoneração. Se a autoridade indicar um motivo, porém, aplica-se a teoria dos motivos determinantes."
+        },
+        {
+            "id": 24127,
+            "enunciado": "Os agentes políticos, como os Vereadores, distinguem-se dos servidores públicos por:",
+            "opcoes": [
+                "A) não estarem sujeitos a qualquer responsabilização",
+                "B) exercerem funções de direção política do Estado, em geral por mandato eletivo, com regime próprio previsto na Constituição",
+                "C) adquirirem estabilidade após três anos",
+                "D) serem contratados pela CLT",
+                "E) ingressarem por concurso público de provas e títulos"
+            ],
+            "correta": 1,
+            "comentario": "Agentes políticos exercem funções de governo e legislação, com atribuições e prerrogativas definidas na Constituição, diferentemente dos servidores de carreira."
+        },
+        {
+            "id": 24128,
+            "enunciado": "Com as alterações da Lei nº 14.230/2021, a Lei de Improbidade Administrativa (Lei nº 8.429/1992) passou a exigir, para a configuração do ato de improbidade:",
+            "opcoes": [
+                "A) somente o dano ao erário, independentemente de dolo",
+                "B) a conduta dolosa do agente",
+                "C) a reclamação formal de um cidadão",
+                "D) a condenação criminal prévia",
+                "E) apenas a culpa leve"
+            ],
+            "correta": 1,
+            "comentario": "Após a Lei nº 14.230/2021, só há improbidade com dolo, entendido como a vontade livre e consciente de alcançar o resultado ilícito. Não existe mais improbidade culposa."
+        },
+        {
+            "id": 24129,
+            "enunciado": "A Lei nº 8.429/1992 classifica os atos de improbidade administrativa em três categorias:",
+            "opcoes": [
+                "A) civis, penais e eleitorais",
+                "B) dolosos, culposos e preterdolosos",
+                "C) leves, médios e graves",
+                "D) internos, externos e sociais",
+                "E) os que importam enriquecimento ilícito, os que causam prejuízo ao erário e os que atentam contra os princípios da administração pública"
+            ],
+            "correta": 4,
+            "comentario": "Os arts. 9º, 10 e 11 tratam, respectivamente, do enriquecimento ilícito, do prejuízo ao erário e da violação aos princípios."
+        },
+        {
+            "id": 24130,
+            "enunciado": "Um servidor que recebe dinheiro de empresa para facilitar a aprovação de sua proposta em uma licitação pratica ato de improbidade que:",
+            "opcoes": [
+                "A) apenas atenta contra os princípios, sem outras consequências",
+                "B) causa somente dano moral ao particular",
+                "C) importa enriquecimento ilícito",
+                "D) é apenas falta disciplinar leve",
+                "E) não configura improbidade"
+            ],
+            "correta": 2,
+            "comentario": "Receber vantagem econômica indevida em razão do cargo é hipótese típica de enriquecimento ilícito (art. 9º)."
+        },
+        {
+            "id": 24131,
+            "enunciado": "A Constituição Federal prevê que os atos de improbidade administrativa importarão:",
+            "opcoes": [
+                "A) prisão imediata, sem processo",
+                "B) a suspensão dos direitos políticos, a perda da função pública, a indisponibilidade dos bens e o ressarcimento ao erário, sem prejuízo da ação penal cabível",
+                "C) perda da nacionalidade",
+                "D) apenas multa administrativa",
+                "E) somente advertência por escrito"
+            ],
+            "correta": 1,
+            "comentario": "O art. 37, § 4º, da Constituição lista essas consequências, na forma e gradação previstas em lei."
+        },
+        {
+            "id": 24132,
+            "enunciado": "Segundo a Constituição Federal, as pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos respondem pelos danos que seus agentes, nessa qualidade, causarem a terceiros:",
+            "opcoes": [
+                "A) somente quando o agente for servidor efetivo",
+                "B) apenas se comprovada a culpa do agente",
+                "C) de forma subsidiária, após o agente",
+                "D) apenas mediante autorização do chefe do Poder",
+                "E) de forma objetiva, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa"
+            ],
+            "correta": 4,
+            "comentario": "O art. 37, § 6º, adota a responsabilidade objetiva (teoria do risco administrativo). O agente responde em ação regressiva se agiu com dolo ou culpa."
+        },
+        {
+            "id": 24133,
+            "enunciado": "Na teoria do risco administrativo, adotada pela Constituição, a responsabilidade do Estado pode ser excluída ou atenuada quando houver:",
+            "opcoes": [
+                "A) dano a pessoa jurídica",
+                "B) reclamação tardia da vítima, sempre",
+                "C) dano causado em horário de expediente",
+                "D) culpa exclusiva da vítima, caso fortuito ou força maior, ou fato exclusivo de terceiro",
+                "E) qualquer dano causado por servidor efetivo"
+            ],
+            "correta": 3,
+            "comentario": "O risco administrativo admite excludentes. Já o risco integral, que não admite excludentes, é aplicado apenas em casos excepcionais."
+        },
+        {
+            "id": 24134,
+            "enunciado": "O controle que a própria administração exerce sobre seus atos, anulando os ilegais e revogando os inconvenientes, chama-se:",
+            "opcoes": [
+                "A) autotutela",
+                "B) controle social",
+                "C) controle parlamentar",
+                "D) controle judicial",
+                "E) tutela administrativa"
+            ],
+            "correta": 0,
+            "comentario": "A autotutela permite rever os próprios atos (Súmula 473 do STF e art. 53 da Lei nº 9.784/1999)."
+        },
+        {
+            "id": 24135,
+            "enunciado": "O controle que a Câmara Municipal exerce sobre os atos do Poder Executivo, com auxílio do Tribunal de Contas, é classificado como:",
+            "opcoes": [
+                "A) controle hierárquico",
+                "B) autotutela",
+                "C) controle interno",
+                "D) controle prévio judicial",
+                "E) controle externo"
+            ],
+            "correta": 4,
+            "comentario": "É externo porque é exercido por um Poder sobre outro. O controle interno é feito pela própria estrutura do Poder fiscalizado."
+        },
+        {
+            "id": 24136,
+            "enunciado": "O controle exercido pelo Poder Judiciário sobre os atos administrativos:",
+            "opcoes": [
+                "A) é proibido em relação a atos discricionários, em qualquer aspecto",
+                "B) permite ao juiz revogar atos por discordar do mérito",
+                "C) abrange a legalidade e a legitimidade, mas não pode substituir o juízo de conveniência e oportunidade da administração",
+                "D) é exercido apenas de ofício, sem provocação",
+                "E) só ocorre se a administração autorizar"
+            ],
+            "correta": 2,
+            "comentario": "O Judiciário controla legalidade, inclusive a razoabilidade e os limites da discricionariedade, mas não substitui a escolha legítima do administrador."
+        },
+        {
+            "id": 24137,
+            "enunciado": "A Lei nº 9.784/1999, que regula o processo administrativo no âmbito federal, determina que a administração obedeça, entre outros, aos princípios da:",
+            "opcoes": [
+                "A) oralidade, gratuidade e irrecorribilidade",
+                "B) sigilo, celeridade a qualquer custo e informalidade absoluta",
+                "C) hierarquia, disciplina e obediência militar",
+                "D) pessoalidade, conveniência e lucratividade",
+                "E) legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público e eficiência"
+            ],
+            "correta": 4,
+            "comentario": "O art. 2º da Lei nº 9.784/1999 lista esses princípios. A lei serve de referência também para Estados e Municípios sem norma própria, conforme entendimento do STJ."
+        },
+        {
+            "id": 24138,
+            "enunciado": "Segundo a Lei nº 9.784/1999, concluída a instrução do processo, a administração tem o prazo de até:",
+            "opcoes": [
+                "A) sessenta dias, prorrogáveis livremente",
+                "B) cinco dias, improrrogáveis",
+                "C) dez dias úteis, prorrogáveis por mais dez",
+                "D) um ano, sem prorrogação",
+                "E) trinta dias para decidir, salvo prorrogação por igual período expressamente motivada"
+            ],
+            "correta": 4,
+            "comentario": "O art. 49 fixa trinta dias para a decisão após a instrução, prorrogáveis por igual período com motivação."
+        },
+        {
+            "id": 24139,
+            "enunciado": "Na Lei nº 9.784/1999, o prazo para interposição de recurso administrativo, salvo disposição legal específica, é de:",
+            "opcoes": [
+                "A) cinco dias úteis",
+                "B) trinta dias",
+                "C) dez dias, contados da ciência ou divulgação oficial da decisão",
+                "D) quinze dias corridos",
+                "E) quarenta e oito horas"
+            ],
+            "correta": 2,
+            "comentario": "O art. 59 fixa dez dias para o recurso. O recurso deve ser decidido em até trinta dias."
+        },
+        {
+            "id": 24140,
+            "enunciado": "Segundo a Lei nº 9.784/1999, o recurso administrativo será dirigido:",
+            "opcoes": [
+                "A) ao Tribunal de Contas",
+                "B) à autoridade que proferiu a decisão, a qual, se não a reconsiderar no prazo de cinco dias, o encaminhará à autoridade superior",
+                "C) diretamente ao Poder Judiciário",
+                "D) sempre ao chefe do Poder, sem passar pela autoridade que decidiu",
+                "E) ao Ministério Público"
+            ],
+            "correta": 1,
+            "comentario": "O art. 56, § 1º, permite a reconsideração pela própria autoridade em cinco dias antes do envio à instância superior."
+        },
+        {
+            "id": 24141,
+            "enunciado": "Pela Lei nº 9.784/1999, salvo disposição legal diversa, o recurso administrativo tramitará, no máximo, por:",
+            "opcoes": [
+                "A) duas instâncias",
+                "B) três instâncias administrativas",
+                "C) quantas instâncias houver na hierarquia",
+                "D) uma instância",
+                "E) cinco instâncias"
+            ],
+            "correta": 1,
+            "comentario": "O art. 57 limita a tramitação do recurso a três instâncias administrativas."
+        },
+        {
+            "id": 24142,
+            "enunciado": "Na Lei nº 9.784/1999, é IMPEDIDO de atuar em processo administrativo o servidor ou autoridade que:",
+            "opcoes": [
+                "A) tenha interesse direto ou indireto na matéria",
+                "B) tenha mais tempo de serviço que o interessado",
+                "C) more na mesma cidade que o interessado",
+                "D) tenha amizade com o interessado, apenas",
+                "E) seja do mesmo setor que o interessado"
+            ],
+            "correta": 0,
+            "comentario": "O art. 18 prevê impedimento para quem tem interesse na matéria, participou como perito, testemunha ou representante, ou litiga com o interessado. Amizade íntima ou inimizade notória geram suspeição (art. 20)."
+        },
+        {
+            "id": 24143,
+            "enunciado": "Segundo a Lei nº 9.784/1999, os atos administrativos deverão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando, entre outros casos:",
+            "opcoes": [
+                "A) sejam assinados pelo chefe do Poder, apenas",
+                "B) tratem de qualquer assunto de rotina, como bom-dia ao público",
+                "C) sejam praticados aos sábados",
+                "D) envolvam apenas informações públicas",
+                "E) neguem, limitem ou afetem direitos ou interesses, imponham deveres ou sanções, ou decidam recursos administrativos"
+            ],
+            "correta": 4,
+            "comentario": "O art. 50 enumera as hipóteses em que a motivação é obrigatória, sempre de forma explícita, clara e congruente."
+        },
+        {
+            "id": 24144,
+            "enunciado": "O controle exercido pelos cidadãos e pela sociedade organizada sobre a gestão pública, por meio de audiências, conselhos, denúncias e acompanhamento dos portais de transparência, é chamado de:",
+            "opcoes": [
+                "A) controle interno",
+                "B) autotutela",
+                "C) controle social",
+                "D) tutela administrativa",
+                "E) controle hierárquico"
+            ],
+            "correta": 2,
+            "comentario": "O controle social complementa os controles institucionais e depende de transparência e de acesso à informação."
+        },
+        {
+            "id": 24145,
+            "enunciado": "Na Lei nº 9.784/1999, o interessado poderá, na fase de instrução e antes da tomada da decisão:",
+            "opcoes": [
+                "A) escolher o servidor que decidirá",
+                "B) juntar documentos e pareceres, requerer diligências e perícias e aduzir alegações referentes à matéria",
+                "C) impedir a produção de provas pela administração",
+                "D) substituir a autoridade julgadora",
+                "E) exigir decisão sem instrução"
+            ],
+            "correta": 1,
+            "comentario": "O art. 38 garante ao interessado participar ativamente da instrução, concretizando o contraditório e a ampla defesa."
+        },
+        {
+            "id": 24146,
+            "enunciado": "A ação de ressarcimento ao erário decorrente de ato de improbidade doloso é, segundo entendimento do STF:",
+            "opcoes": [
+                "A) imprescritível",
+                "B) inexistente no direito brasileiro",
+                "C) prescrita em um ano",
+                "D) prescrita em cinco anos",
+                "E) prescrita em oito anos, sempre"
+            ],
+            "correta": 0,
+            "comentario": "O STF (Tema 897) fixou que são imprescritíveis as ações de ressarcimento ao erário fundadas em ato doloso tipificado na Lei de Improbidade."
+        },
+        {
+            "id": 24147,
+            "enunciado": "O princípio da segurança jurídica, previsto na Lei nº 9.784/1999, impede:",
+            "opcoes": [
+                "A) a motivação dos atos",
+                "B) a anulação de atos ilegais em qualquer prazo",
+                "C) a publicação dos atos administrativos",
+                "D) a aplicação retroativa de nova interpretação a fatos já ocorridos",
+                "E) qualquer mudança de entendimento da administração"
+            ],
+            "correta": 3,
+            "comentario": "O art. 2º, parágrafo único, XIII, veda a aplicação retroativa de nova interpretação, protegendo a confiança e a estabilidade das relações."
+        },
+        {
+            "id": 24148,
+            "enunciado": "O controle de legalidade exercido pelo ente central sobre as entidades da administração indireta, nos limites da lei, é chamado de:",
+            "opcoes": [
+                "A) autotutela",
+                "B) controle social",
+                "C) tutela administrativa (ou supervisão ministerial)",
+                "D) controle hierárquico pleno",
+                "E) controle jurisdicional"
+            ],
+            "correta": 2,
+            "comentario": "Não há hierarquia entre o ente e suas entidades descentralizadas, mas vinculação. O controle finalístico exercido é chamado de tutela ou supervisão."
+        },
+        {
+            "id": 24149,
+            "enunciado": "São critérios de julgamento previstos na Lei nº 14.133/2021, entre outros:",
+            "opcoes": [
+                "A) menor prazo, maior capital social e maior número de funcionários",
+                "B) preferência por empresas locais, sorteio e antiguidade",
+                "C) indicação política e maior lucro",
+                "D) menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance e maior retorno econômico",
+                "E) menor preço apenas"
+            ],
+            "correta": 3,
+            "comentario": "O art. 33 da Lei nº 14.133/2021 lista os critérios de julgamento das propostas."
+        },
+        {
+            "id": 24150,
+            "enunciado": "A modalidade de licitação prevista na Lei nº 14.133/2021 para contratações em que a administração realiza diálogos com licitantes previamente selecionados, a fim de desenvolver alternativas capazes de atender às suas necessidades, é o:",
+            "opcoes": [
+                "A) diálogo competitivo",
+                "B) leilão",
+                "C) convite",
+                "D) pregão",
+                "E) concurso"
+            ],
+            "correta": 0,
+            "comentario": "O diálogo competitivo é indicado para objetos inovadores ou complexos, em que a administração não consegue definir sozinha a melhor solução."
+        },
+        {
+            "id": 24151,
+            "enunciado": "Na Lei nº 14.133/2021, o documento que caracteriza o interesse público envolvido e a melhor solução para a necessidade, servindo de base ao anteprojeto, ao termo de referência ou ao projeto básico, é o:",
+            "opcoes": [
+                "A) contrato administrativo",
+                "B) relatório de gestão fiscal",
+                "C) estudo técnico preliminar",
+                "D) atestado de capacidade técnica",
+                "E) termo de recebimento definitivo"
+            ],
+            "correta": 2,
+            "comentario": "O estudo técnico preliminar (art. 6º, XX, e art. 18, § 1º) é a primeira etapa do planejamento da contratação."
+        },
+        {
+            "id": 24152,
+            "enunciado": "São exemplos de cláusulas exorbitantes, que conferem prerrogativas à administração nos contratos administrativos:",
+            "opcoes": [
+                "A) exigir que o contratado trabalhe sem pagamento",
+                "B) dispensar a motivação dos atos",
+                "C) alterar e extinguir unilateralmente o contrato, fiscalizar sua execução e aplicar sanções",
+                "D) alterar o objeto do contrato sem limites",
+                "E) renunciar ao equilíbrio econômico-financeiro do contratado"
+            ],
+            "correta": 2,
+            "comentario": "O art. 104 da Lei nº 14.133/2021 prevê essas prerrogativas, que devem respeitar os direitos do contratado, como o equilíbrio econômico-financeiro."
+        },
+        {
+            "id": 24153,
+            "enunciado": "Nas alterações unilaterais quantitativas, a Lei nº 14.133/2021 obriga o contratado a aceitar, nas mesmas condições contratuais, acréscimos ou supressões de até:",
+            "opcoes": [
+                "A) 10% em qualquer caso",
+                "B) 25% do valor inicial atualizado do contrato, e, no caso de reforma de edifício ou equipamento, até 50% para os acréscimos",
+                "C) 100% do valor, desde que haja dotação",
+                "D) 50% em qualquer caso, inclusive supressões",
+                "E) 75% do valor do contrato"
+            ],
+            "correta": 1,
+            "comentario": "O art. 125 fixa o limite de 25% e, para reforma de edifício ou de equipamento, 50% para os acréscimos."
+        },
+        {
+            "id": 24154,
+            "enunciado": "Um contrato de R$ 400.000,00 para fornecimento de material precisa ser ampliado. Pela regra geral de 25% da Lei nº 14.133/2021, o acréscimo máximo que o contratado é obrigado a aceitar é de:",
+            "opcoes": [
+                "A) R$ 125.000,00",
+                "B) R$ 200.000,00",
+                "C) R$ 100.000,00",
+                "D) R$ 40.000,00",
+                "E) R$ 80.000,00"
+            ],
+            "correta": 2,
+            "comentario": "25% de R$ 400.000,00 = R$ 100.000,00."
+        },
+        {
+            "id": 24155,
+            "enunciado": "Segundo a Lei nº 14.133/2021, os contratos de serviços e fornecimentos contínuos poderão ser celebrados por prazo de até:",
+            "opcoes": [
+                "A) um ano, sem prorrogação",
+                "B) cinco anos, admitida a prorrogação sucessiva até o limite de dez anos, observadas as condições legais",
+                "C) vinte anos, em qualquer caso",
+                "D) prazo indeterminado",
+                "E) dois anos, prorrogáveis por mais dois"
+            ],
+            "correta": 1,
+            "comentario": "Os arts. 106 e 107 permitem contratos contínuos de até cinco anos, prorrogáveis até dez, se a autoridade atestar que as condições continuam vantajosas."
+        },
+        {
+            "id": 24156,
+            "enunciado": "São sanções administrativas aplicáveis aos licitantes e contratados, segundo a Lei nº 14.133/2021:",
+            "opcoes": [
+                "A) prisão, multa e confisco de bens",
+                "B) advertência, suspensão de direitos políticos e cassação",
+                "C) apenas multa e advertência",
+                "D) advertência, multa, impedimento de licitar e contratar e declaração de inidoneidade para licitar ou contratar",
+                "E) demissão, exoneração e disponibilidade"
+            ],
+            "correta": 3,
+            "comentario": "O art. 156 lista essas quatro sanções, aplicadas conforme a gravidade, com contraditório e ampla defesa."
+        },
+        {
+            "id": 24157,
+            "enunciado": "Na Lei nº 14.133/2021, a sanção de impedimento de licitar e contratar, aplicada ao responsável por determinadas infrações, tem prazo máximo de:",
+            "opcoes": [
+                "A) dez anos",
+                "B) três anos",
+                "C) seis anos",
+                "D) seis meses",
+                "E) um ano"
+            ],
+            "correta": 1,
+            "comentario": "O art. 156, § 4º, limita o impedimento a três anos. A declaração de inidoneidade tem prazo mínimo de três e máximo de seis anos (§ 5º)."
+        },
+        {
+            "id": 24158,
+            "enunciado": "É hipótese de inexigibilidade de licitação, segundo o art. 74 da Lei nº 14.133/2021:",
+            "opcoes": [
+                "A) a contratação em situação de emergência",
+                "B) a contratação de qualquer empresa local",
+                "C) a contratação de profissional do setor artístico consagrado pela crítica especializada ou pela opinião pública, diretamente ou por empresário exclusivo",
+                "D) a aquisição de bens comuns por pregão",
+                "E) a compra de material de escritório de baixo valor"
+            ],
+            "correta": 2,
+            "comentario": "O art. 74 trata da inviabilidade de competição: fornecedor exclusivo, artista consagrado, serviços técnicos especializados de notória especialização, credenciamento e certos imóveis."
+        },
+        {
+            "id": 24159,
+            "enunciado": "A contratação direta em situação de emergência ou calamidade pública, segundo a Lei nº 14.133/2021, é caso de:",
+            "opcoes": [
+                "A) pregão eletrônico obrigatório",
+                "B) modalidade concurso",
+                "C) inexigibilidade, sem prazo",
+                "D) leilão de bens",
+                "E) dispensa de licitação, com prazo máximo de um ano e vedada a prorrogação"
+            ],
+            "correta": 4,
+            "comentario": "O art. 75, VIII, prevê a dispensa para emergência ou calamidade, por no máximo um ano, sem prorrogação e vedada a recontratação da mesma empresa nessa hipótese."
+        },
+        {
+            "id": 24160,
+            "enunciado": "O sistema de registro de preços (SRP), previsto na Lei nº 14.133/2021, é indicado quando:",
+            "opcoes": [
+                "A) há necessidade de contratações frequentes ou não é possível definir previamente o quantitativo a ser demandado",
+                "B) se pretende vender bens inservíveis",
+                "C) o objeto é inviável de competição",
+                "D) a administração precisa contratar uma única obra de grande porte",
+                "E) não há qualquer planejamento das compras"
+            ],
+            "correta": 0,
+            "comentario": "No SRP, a ata de registro de preços permite contratar conforme a necessidade, sem obrigação de adquirir toda a quantidade registrada."
+        },
+        {
+            "id": 24161,
+            "enunciado": "O equilíbrio econômico-financeiro do contrato administrativo significa que:",
+            "opcoes": [
+                "A) o preço nunca pode ser alterado",
+                "B) o contratado deve ter lucro garantido em qualquer situação",
+                "C) a relação entre os encargos do contratado e a remuneração pactuada deve ser mantida ao longo da execução",
+                "D) a administração pode reduzir o pagamento livremente",
+                "E) o contrato dispensa reajuste em qualquer prazo"
+            ],
+            "correta": 2,
+            "comentario": "Quando fatos imprevisíveis ou alterações unilaterais desequilibram o contrato, cabe revisão para restabelecer a equação inicial."
+        },
+        {
+            "id": 24162,
+            "enunciado": "Na Lei nº 14.133/2021, a garantia contratual exigida do contratado pode ser prestada, à escolha dele, por:",
+            "opcoes": [
+                "A) imóvel residencial do servidor responsável",
+                "B) apenas cheque pré-datado",
+                "C) caução em dinheiro ou em títulos da dívida pública, seguro-garantia ou fiança bancária, entre outras modalidades previstas",
+                "D) declaração de bens do contratado",
+                "E) nota promissória do sócio"
+            ],
+            "correta": 2,
+            "comentario": "O art. 96, § 1º, prevê as modalidades de garantia, cabendo ao contratado a escolha."
+        },
+        {
+            "id": 24163,
+            "enunciado": "O recebimento do objeto do contrato, segundo a Lei nº 14.133/2021, ocorre, em regra:",
+            "opcoes": [
+                "A) pelo próprio contratado",
+                "B) somente após o pagamento integral",
+                "C) sem qualquer verificação técnica",
+                "D) provisoriamente, pelo responsável pelo acompanhamento, e definitivamente, por servidor ou comissão designada, após verificação do cumprimento das exigências",
+                "E) apenas no momento da assinatura do contrato"
+            ],
+            "correta": 3,
+            "comentario": "O art. 140 prevê o recebimento provisório e o definitivo, que comprova a adequação do objeto ao contrato."
+        },
+        {
+            "id": 24164,
+            "enunciado": "Na Lei nº 14.133/2021, o princípio da segregação de funções exige que:",
+            "opcoes": [
+                "A) os servidores sejam separados por concurso",
+                "B) o mesmo servidor conduza a licitação, fiscalize o contrato e atesta o pagamento",
+                "C) cada órgão contrate apenas uma empresa por ano",
+                "D) as funções mais suscetíveis a riscos não sejam atribuídas à mesma pessoa, para reduzir a possibilidade de erros e fraudes",
+                "E) o pregoeiro seja sempre o chefe do Poder"
+            ],
+            "correta": 3,
+            "comentario": "O art. 5º inclui a segregação de funções entre os princípios, e o art. 7º, § 1º, veda a designação do mesmo agente para funções suscetíveis a riscos."
+        },
+        {
+            "id": 24165,
+            "enunciado": "O termo de referência, na Lei nº 14.133/2021, é o documento necessário para a contratação de:",
+            "opcoes": [
+                "A) leilão de bens imóveis apenas",
+                "B) bens e serviços, contendo, entre outros, a definição do objeto, os quantitativos, o prazo e os critérios de medição e pagamento",
+                "C) serviços jurídicos de advogados públicos",
+                "D) servidores efetivos",
+                "E) obras de engenharia de grande porte, exclusivamente"
+            ],
+            "correta": 1,
+            "comentario": "O termo de referência (art. 6º, XXIII) é usado em bens e serviços. Para obras e serviços de engenharia, utiliza-se o projeto básico."
+        },
+        {
+            "id": 24166,
+            "enunciado": "A extinção do contrato administrativo por ato unilateral da administração, segundo a Lei nº 14.133/2021, deve ser:",
+            "opcoes": [
+                "A) formalmente motivada nos autos do processo, assegurados o contraditório e a ampla defesa",
+                "B) feita sem qualquer justificativa",
+                "C) decidida pelo próprio contratado",
+                "D) verbal e sem registro",
+                "E) comunicada apenas ao Tribunal de Contas"
+            ],
+            "correta": 0,
+            "comentario": "O art. 137 exige motivação formal nos autos e garantia de contraditório e ampla defesa na extinção do contrato."
+        },
+        {
+            "id": 24167,
+            "enunciado": "A publicação do edital e do contrato no Portal Nacional de Contratações Públicas (PNCP), segundo a Lei nº 14.133/2021, é:",
+            "opcoes": [
+                "A) substituída pela publicação em rede social",
+                "B) facultativa, a critério do gestor",
+                "C) exigida apenas para contratos acima de R$ 10 milhões",
+                "D) condição indispensável para a eficácia do contrato e de seus aditamentos",
+                "E) proibida para contratos municipais"
+            ],
+            "correta": 3,
+            "comentario": "O art. 94 estabelece que a divulgação no PNCP é condição indispensável para a eficácia do contrato, dentro dos prazos previstos."
+        },
+        {
+            "id": 24168,
+            "enunciado": "A matriz de riscos, cláusula prevista na Lei nº 14.133/2021, serve para:",
+            "opcoes": [
+                "A) transferir todos os riscos à administração",
+                "B) definir a alocação de riscos e responsabilidades entre contratante e contratado, caracterizando o equilíbrio econômico-financeiro",
+                "C) eliminar todos os riscos do contrato",
+                "D) substituir o termo de referência",
+                "E) impedir qualquer revisão de preços"
+            ],
+            "correta": 1,
+            "comentario": "A matriz de riscos (art. 6º, XXVII) distribui previamente os riscos do contrato, reduzindo conflitos sobre revisões."
+        },
+        {
+            "id": 24169,
+            "enunciado": "Na fase recursal da licitação, segundo a Lei nº 14.133/2021, o prazo para interposição de recurso contra o julgamento das propostas ou a habilitação é de:",
+            "opcoes": [
+                "A) cinco dias úteis",
+                "B) dez dias corridos",
+                "C) vinte e quatro horas",
+                "D) trinta dias",
+                "E) três dias úteis, contados da intimação ou da lavratura da ata"
+            ],
+            "correta": 4,
+            "comentario": "O art. 165, I, da Lei nº 14.133/2021 fixa o prazo de três dias úteis para o recurso."
+        },
+        {
+            "id": 24170,
+            "enunciado": "O agente público responsável pela condução do pregão, na Lei nº 14.133/2021, é chamado de:",
+            "opcoes": [
+                "A) gestor de riscos",
+                "B) auditor interno",
+                "C) fiscal do contrato",
+                "D) pregoeiro",
+                "E) leiloeiro"
+            ],
+            "correta": 3,
+            "comentario": "No pregão, o agente de contratação é designado pregoeiro (art. 8º, § 5º)."
+        }
+    ],
+    "Conhecimentos Específicos – Agente Legislativo": [
+        {
+            "id": 25001,
+            "enunciado": "Segundo a Constituição Federal, o Município será regido por lei orgânica, votada em dois turnos, com interstício mínimo de:",
+            "opcoes": [
+                "A) trinta dias, e aprovada por três quintos, com sanção do Governador",
+                "B) quinze dias, e aprovada por unanimidade, promulgada pelo Tribunal de Contas",
+                "C) dez dias, e aprovada por maioria absoluta, com sanção do Prefeito",
+                "D) cinco dias, e aprovada por maioria simples, com sanção do Prefeito",
+                "E) dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará"
+            ],
+            "correta": 4,
+            "comentario": "O art. 29, caput, da Constituição exige dois turnos, interstício mínimo de dez dias e aprovação por dois terços dos membros da Câmara, que promulga a lei orgânica (sem sanção do Prefeito)."
+        },
+        {
+            "id": 25002,
+            "enunciado": "Pela Constituição Federal, os Vereadores são invioláveis por suas opiniões, palavras e votos:",
+            "opcoes": [
+                "A) em qualquer lugar do território nacional, a qualquer tempo",
+                "B) somente quando autorizados pela Mesa Diretora",
+                "C) no exercício do mandato e na circunscrição do Município",
+                "D) apenas durante as sessões solenes",
+                "E) em qualquer circunstância, inclusive fora do mandato"
+            ],
+            "correta": 2,
+            "comentario": "O art. 29, VIII, garante a imunidade material dos Vereadores, limitada ao exercício do mandato e à circunscrição do Município."
+        },
+        {
+            "id": 25003,
+            "enunciado": "A duração do mandato dos Vereadores, conforme a Constituição Federal, é de:",
+            "opcoes": [
+                "A) cinco anos",
+                "B) quatro anos",
+                "C) dois anos",
+                "D) seis anos",
+                "E) oito anos"
+            ],
+            "correta": 1,
+            "comentario": "O art. 29, I, prevê eleição de Prefeito, Vice-Prefeito e Vereadores para mandato de quatro anos."
+        },
+        {
+            "id": 25004,
+            "enunciado": "A idade mínima exigida pela Constituição Federal como condição de elegibilidade para o cargo de Vereador é:",
+            "opcoes": [
+                "A) 25 anos",
+                "B) 21 anos",
+                "C) 16 anos",
+                "D) 30 anos",
+                "E) 18 anos"
+            ],
+            "correta": 4,
+            "comentario": "O art. 14, § 3º, VI, \"d\", fixa 18 anos para Vereador. Para Prefeito e Vice-Prefeito, a idade mínima é 21 anos."
+        },
+        {
+            "id": 25005,
+            "enunciado": "Segundo a Constituição Federal, o subsídio dos Vereadores é fixado:",
+            "opcoes": [
+                "A) pelos próprios Vereadores, para a mesma legislatura",
+                "B) pelo Tribunal de Contas, conforme a arrecadação",
+                "C) pelas respectivas Câmaras Municipais, em cada legislatura para a subsequente",
+                "D) pela Assembleia Legislativa do Estado",
+                "E) pelo Prefeito, por decreto, a cada ano"
+            ],
+            "correta": 2,
+            "comentario": "O art. 29, VI, determina que o subsídio seja fixado pela Câmara em uma legislatura para valer na seguinte, evitando que o Vereador fixe o próprio subsídio do mandato em curso."
+        },
+        {
+            "id": 25006,
+            "enunciado": "A fiscalização do Município, segundo o art. 31 da Constituição Federal, será exercida:",
+            "opcoes": [
+                "A) exclusivamente pelo Tribunal de Justiça do Estado",
+                "B) pelo Governador do Estado, com auxílio da Polícia Civil",
+                "C) apenas pelo Prefeito, mediante controle interno",
+                "D) pelo Poder Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Poder Executivo Municipal",
+                "E) somente pelo Ministério Público"
+            ],
+            "correta": 3,
+            "comentario": "O art. 31, caput, atribui à Câmara o controle externo e ao Executivo os sistemas de controle interno."
+        },
+        {
+            "id": 25007,
+            "enunciado": "O controle externo da Câmara Municipal será exercido:",
+            "opcoes": [
+                "A) com o auxílio dos Tribunais de Contas dos Estados ou do Município, ou dos Conselhos ou Tribunais de Contas dos Municípios, onde houver",
+                "B) com o auxílio da Polícia Federal",
+                "C) pelo Tribunal Superior Eleitoral",
+                "D) sem qualquer auxílio técnico externo",
+                "E) exclusivamente pelo Poder Judiciário"
+            ],
+            "correta": 0,
+            "comentario": "O art. 31, § 1º, prevê o auxílio dos Tribunais de Contas no controle externo exercido pela Câmara."
+        },
+        {
+            "id": 25008,
+            "enunciado": "O parecer prévio emitido pelo órgão competente sobre as contas que o Prefeito deve anualmente prestar só deixará de prevalecer por decisão de:",
+            "opcoes": [
+                "A) três quintos dos membros da Câmara",
+                "B) dois terços dos membros da Câmara Municipal",
+                "C) unanimidade dos Vereadores",
+                "D) maioria absoluta dos membros da Câmara",
+                "E) maioria simples dos Vereadores presentes"
+            ],
+            "correta": 1,
+            "comentario": "O art. 31, § 2º, exige o voto de dois terços dos membros da Câmara para rejeitar o parecer prévio do Tribunal de Contas."
+        },
+        {
+            "id": 25009,
+            "enunciado": "Segundo a Constituição Federal, as contas dos Municípios ficarão, durante sessenta dias, anualmente, à disposição de:",
+            "opcoes": [
+                "A) apenas dos partidos políticos",
+                "B) somente do Ministério Público",
+                "C) qualquer contribuinte, para exame e apreciação, que poderá questionar-lhes a legitimidade",
+                "D) apenas dos Vereadores da oposição",
+                "E) exclusivamente dos servidores da Câmara"
+            ],
+            "correta": 2,
+            "comentario": "O art. 31, § 3º, garante a qualquer contribuinte o exame das contas por sessenta dias por ano, podendo questionar sua legitimidade."
+        },
+        {
+            "id": 25010,
+            "enunciado": "Quanto à criação de órgãos de contas, a Constituição Federal:",
+            "opcoes": [
+                "A) veda a criação de Tribunais, Conselhos ou órgãos de Contas Municipais",
+                "B) autoriza o Prefeito a criar o Conselho de Contas por decreto",
+                "C) determina que cada Vereador indique um conselheiro de contas",
+                "D) permite que a Câmara crie um Tribunal de Contas por resolução",
+                "E) obriga todo Município a criar seu Tribunal de Contas"
+            ],
+            "correta": 0,
+            "comentario": "O art. 31, § 4º, proíbe a criação de novos Tribunais, Conselhos ou órgãos de Contas Municipais. Os já existentes antes de 1988 foram mantidos."
+        },
+        {
+            "id": 25011,
+            "enunciado": "A Constituição Federal assegura a iniciativa popular de projetos de lei de interesse específico do Município, da cidade ou de bairros, mediante manifestação de, pelo menos:",
+            "opcoes": [
+                "A) cinco por cento do eleitorado",
+                "B) metade mais um dos eleitores",
+                "C) vinte por cento dos eleitores do bairro",
+                "D) dez por cento da população",
+                "E) um por cento do eleitorado"
+            ],
+            "correta": 0,
+            "comentario": "O art. 29, XIII, exige a manifestação de pelo menos 5% do eleitorado para a iniciativa popular municipal."
+        },
+        {
+            "id": 25012,
+            "enunciado": "Segundo a Constituição Federal, a Câmara Municipal não gastará mais de setenta por cento de sua receita com:",
+            "opcoes": [
+                "A) publicidade institucional",
+                "B) folha de pagamento, incluído o gasto com o subsídio de seus Vereadores",
+                "C) diárias e passagens",
+                "D) aquisição de material de consumo",
+                "E) obras de construção da sede"
+            ],
+            "correta": 1,
+            "comentario": "O art. 29-A, § 1º, limita a 70% da receita da Câmara o gasto com folha de pagamento, incluídos os subsídios dos Vereadores."
+        },
+        {
+            "id": 25013,
+            "enunciado": "Segundo o art. 29-A, § 3º, da Constituição, constitui crime de responsabilidade do Presidente da Câmara Municipal:",
+            "opcoes": [
+                "A) a rejeição de veto do Prefeito",
+                "B) a instalação de comissão parlamentar de inquérito",
+                "C) a convocação de sessão extraordinária",
+                "D) a nomeação de servidores aprovados em concurso",
+                "E) o desrespeito ao limite de gastos da Câmara com folha de pagamento"
+            ],
+            "correta": 4,
+            "comentario": "O § 3º do art. 29-A considera crime de responsabilidade do Presidente da Câmara o desrespeito ao § 1º, que limita a 70% o gasto com folha de pagamento."
+        },
+        {
+            "id": 25014,
+            "enunciado": "Na estrutura federativa brasileira, o Poder Legislativo do Município é exercido:",
+            "opcoes": [
+                "A) pela Câmara Municipal, composta de Vereadores",
+                "B) pelo Tribunal de Contas do Estado",
+                "C) pelo Prefeito e pelos Secretários Municipais",
+                "D) pela Assembleia Legislativa",
+                "E) pelo Senado Federal"
+            ],
+            "correta": 0,
+            "comentario": "Nos Municípios, o Legislativo é exercido pela Câmara Municipal e o Executivo pelo Prefeito. Não há Judiciário municipal."
+        },
+        {
+            "id": 25015,
+            "enunciado": "Compete aos Municípios, segundo o art. 30 da Constituição Federal:",
+            "opcoes": [
+                "A) emitir moeda",
+                "B) legislar sobre direito eleitoral",
+                "C) legislar sobre assuntos de interesse local",
+                "D) organizar as Forças Armadas",
+                "E) legislar sobre direito penal"
+            ],
+            "correta": 2,
+            "comentario": "O art. 30, I, atribui ao Município a competência para legislar sobre assuntos de interesse local. Direito penal e eleitoral são competência privativa da União (art. 22)."
+        },
+        {
+            "id": 25016,
+            "enunciado": "É competência do Município, conforme o art. 30 da Constituição Federal:",
+            "opcoes": [
+                "A) julgar crimes cometidos no Município",
+                "B) legislar sobre trânsito e transporte de forma privativa",
+                "C) organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o transporte coletivo",
+                "D) manter a Polícia Federal",
+                "E) autorizar a exploração de jazidas minerais"
+            ],
+            "correta": 2,
+            "comentario": "O art. 30, V, inclui entre as competências municipais os serviços públicos de interesse local, como o transporte coletivo, que tem caráter essencial."
+        },
+        {
+            "id": 25017,
+            "enunciado": "Segundo a Constituição Federal, o número de Vereadores de um Município com até 15.000 habitantes é de, no máximo:",
+            "opcoes": [
+                "A) 13",
+                "B) 7",
+                "C) 11",
+                "D) 9",
+                "E) 15"
+            ],
+            "correta": 3,
+            "comentario": "O art. 29, IV, \"a\", fixa o limite máximo de 9 Vereadores para Municípios de até 15.000 habitantes. O número máximo cresce conforme a população."
+        },
+        {
+            "id": 25018,
+            "enunciado": "A independência e a harmonia entre os Poderes, no Município, significa que:",
+            "opcoes": [
+                "A) a Câmara deve obedecer às ordens do Prefeito",
+                "B) Câmara e Prefeitura exercem funções próprias, com controles recíprocos previstos na Constituição e na lei orgânica",
+                "C) o Prefeito pode dissolver a Câmara",
+                "D) os Vereadores podem exercer funções de Secretário sem se licenciar",
+                "E) a Câmara pode julgar processos judiciais"
+            ],
+            "correta": 1,
+            "comentario": "Cada Poder tem atribuições próprias (legislar e fiscalizar, de um lado; administrar e executar, de outro), com mecanismos de controle mútuo, como o veto e a fiscalização das contas."
+        },
+        {
+            "id": 25019,
+            "enunciado": "Entre as funções típicas da Câmara Municipal estão:",
+            "opcoes": [
+                "A) executar obras e prestar serviços públicos",
+                "B) julgar crimes comuns",
+                "C) legislar e fiscalizar os atos do Poder Executivo",
+                "D) administrar escolas e postos de saúde",
+                "E) arrecadar tributos estaduais"
+            ],
+            "correta": 2,
+            "comentario": "As funções típicas do Legislativo são legislar e fiscalizar. A Câmara também exerce funções atípicas, como administrar seus próprios serviços e julgar o Prefeito por infrações político-administrativas."
+        },
+        {
+            "id": 25020,
+            "enunciado": "Quando a Câmara Municipal organiza seus próprios serviços, nomeia servidores e realiza licitações para suas compras, exerce função:",
+            "opcoes": [
+                "A) jurisdicional típica",
+                "B) executiva típica, que é exclusiva dela",
+                "C) legislativa típica",
+                "D) administrativa, de forma atípica",
+                "E) fiscalizadora típica"
+            ],
+            "correta": 3,
+            "comentario": "Administrar seus serviços internos é uma função atípica do Legislativo, ao lado das funções típicas de legislar e fiscalizar."
+        },
+        {
+            "id": 25021,
+            "enunciado": "Segundo a Constituição Federal, os Vereadores, no exercício do mandato, estão sujeitos a proibições e incompatibilidades:",
+            "opcoes": [
+                "A) definidas exclusivamente pelo Prefeito",
+                "B) idênticas às dos juízes de direito",
+                "C) que dispensam regulamentação na lei orgânica",
+                "D) que só valem nos anos eleitorais",
+                "E) similares, no que couber, às previstas para os membros do Congresso Nacional e, na Constituição do Estado, para os membros da Assembleia Legislativa"
+            ],
+            "correta": 4,
+            "comentario": "O art. 29, IX, determina que as proibições e incompatibilidades dos Vereadores sejam similares, no que couber, às dos parlamentares federais e estaduais."
+        },
+        {
+            "id": 25022,
+            "enunciado": "Ao julgar as contas anuais prestadas pelo Prefeito, após o parecer prévio do Tribunal de Contas, a Câmara Municipal exerce sua função:",
+            "opcoes": [
+                "A) jurisdicional, como um tribunal judiciário",
+                "B) executiva, substituindo o Prefeito",
+                "C) administrativa interna, sem efeitos externos",
+                "D) fiscalizadora, por meio do controle externo",
+                "E) legislativa, pois aprova uma lei de contas"
+            ],
+            "correta": 3,
+            "comentario": "O julgamento das contas do Prefeito é a expressão mais clara do controle externo exercido pela Câmara, com o auxílio técnico do Tribunal de Contas (art. 31 da Constituição)."
+        },
+        {
+            "id": 25023,
+            "enunciado": "O processo legislativo ordinário, seguindo o modelo da Constituição Federal aplicado aos Municípios, compreende, em ordem, as fases de:",
+            "opcoes": [
+                "A) iniciativa, discussão e votação, sanção ou veto, promulgação e publicação",
+                "B) publicação, iniciativa, votação, sanção e discussão",
+                "C) votação, iniciativa, publicação, discussão e veto",
+                "D) promulgação, publicação, iniciativa, veto e votação",
+                "E) sanção, discussão, iniciativa, votação e promulgação"
+            ],
+            "correta": 0,
+            "comentario": "O projeto nasce com a iniciativa, é discutido e votado, segue para sanção ou veto do chefe do Executivo e, depois, é promulgado e publicado."
+        },
+        {
+            "id": 25024,
+            "enunciado": "A sanção de um projeto de lei aprovado pela Câmara Municipal é ato de competência:",
+            "opcoes": [
+                "A) do Presidente da Câmara",
+                "B) da Comissão de Constituição e Justiça",
+                "C) do Tribunal de Contas",
+                "D) do Vereador autor do projeto",
+                "E) do Prefeito"
+            ],
+            "correta": 4,
+            "comentario": "A sanção (concordância) ou o veto (discordância) cabem ao chefe do Executivo, que no Município é o Prefeito."
+        },
+        {
+            "id": 25025,
+            "enunciado": "No modelo constitucional, quando o chefe do Executivo deixa transcorrer o prazo sem se manifestar sobre o projeto de lei aprovado, ocorre:",
+            "opcoes": [
+                "A) a nulidade do projeto",
+                "B) o arquivamento automático do projeto",
+                "C) a sanção tácita",
+                "D) o veto tácito",
+                "E) a devolução do projeto à comissão"
+            ],
+            "correta": 2,
+            "comentario": "Pela Constituição (art. 66, § 3º), o silêncio do chefe do Executivo no prazo importa sanção. Não existe veto tácito: o veto precisa ser expresso e motivado."
+        },
+        {
+            "id": 25026,
+            "enunciado": "O veto do chefe do Executivo a um projeto de lei, segundo o modelo da Constituição Federal, pode ter como fundamento:",
+            "opcoes": [
+                "A) apenas a falta de verbas",
+                "B) a opinião dos Secretários Municipais",
+                "C) apenas a ausência de parecer de comissão",
+                "D) somente a vontade pessoal, sem necessidade de motivação",
+                "E) a inconstitucionalidade (veto jurídico) ou a contrariedade ao interesse público (veto político)"
+            ],
+            "correta": 4,
+            "comentario": "O veto pode ser jurídico (o projeto é inconstitucional) ou político (contrário ao interesse público) e deve ser motivado."
+        },
+        {
+            "id": 25027,
+            "enunciado": "Após o veto, o projeto volta ao Legislativo, que pode mantê-lo ou rejeitá-lo. Se o veto for rejeitado, o projeto:",
+            "opcoes": [
+                "A) é arquivado definitivamente",
+                "B) é enviado ao Tribunal de Justiça para decisão",
+                "C) perde a validade e precisa ser reapresentado",
+                "D) volta para nova votação em dois turnos",
+                "E) é enviado para promulgação, transformando-se em lei"
+            ],
+            "correta": 4,
+            "comentario": "Derrubado o veto, o projeto segue para promulgação. Se o chefe do Executivo não promulgar no prazo, a promulgação cabe ao Presidente do Legislativo."
+        },
+        {
+            "id": 25028,
+            "enunciado": "A proposição utilizada pela Câmara para regular matérias de sua competência privativa e de efeitos internos, como alterações em seu regimento, é, em regra, o:",
+            "opcoes": [
+                "A) projeto de lei ordinária",
+                "B) projeto de resolução",
+                "C) requerimento de informação",
+                "D) projeto de lei complementar",
+                "E) decreto do Prefeito"
+            ],
+            "correta": 1,
+            "comentario": "As resoluções tratam de assuntos internos (interna corporis) do Legislativo e não vão à sanção do Prefeito."
+        },
+        {
+            "id": 25029,
+            "enunciado": "A proposição pela qual o Vereador sugere ao Poder Executivo a adoção de uma providência, como a reforma de uma praça, denomina-se:",
+            "opcoes": [
+                "A) moção",
+                "B) veto",
+                "C) indicação",
+                "D) parecer",
+                "E) emenda"
+            ],
+            "correta": 2,
+            "comentario": "A indicação é a sugestão do Vereador a outro Poder para a adoção de medida de interesse público. Ela não obriga o Executivo."
+        },
+        {
+            "id": 25030,
+            "enunciado": "A manifestação da Câmara de aplauso, apoio, protesto ou repúdio sobre determinado assunto é feita por meio de:",
+            "opcoes": [
+                "A) moção",
+                "B) projeto de lei",
+                "C) indicação",
+                "D) requerimento de urgência",
+                "E) emenda"
+            ],
+            "correta": 0,
+            "comentario": "A moção expressa posicionamento da Casa (congratulação, pesar, apoio, protesto, repúdio) sobre fato ou acontecimento."
+        },
+        {
+            "id": 25031,
+            "enunciado": "A emenda que retira parte do texto de um projeto, sem acrescentar nada, é chamada de emenda:",
+            "opcoes": [
+                "A) substitutiva",
+                "B) aditiva",
+                "C) modificativa",
+                "D) supressiva",
+                "E) aglutinativa"
+            ],
+            "correta": 3,
+            "comentario": "Emenda supressiva suprime; aditiva acrescenta; modificativa altera sem mudar substancialmente; substitutiva substitui parte ou o todo; aglutinativa funde emendas."
+        },
+        {
+            "id": 25032,
+            "enunciado": "Uma proposição que substitui integralmente o texto de um projeto, apresentando nova redação para toda a matéria, é conhecida como:",
+            "opcoes": [
+                "A) emenda supressiva",
+                "B) indicação",
+                "C) requerimento",
+                "D) substitutivo",
+                "E) moção"
+            ],
+            "correta": 3,
+            "comentario": "O substitutivo é a emenda que altera o projeto como um todo, oferecendo novo texto completo sobre a mesma matéria."
+        },
+        {
+            "id": 25033,
+            "enunciado": "Considerando uma Câmara com 17 Vereadores, a maioria ABSOLUTA corresponde a:",
+            "opcoes": [
+                "A) 9 Vereadores",
+                "B) 8 Vereadores",
+                "C) 10 Vereadores",
+                "D) metade dos presentes",
+                "E) 12 Vereadores"
+            ],
+            "correta": 0,
+            "comentario": "Maioria absoluta é o primeiro número inteiro acima da metade do total de membros: metade de 17 é 8,5, então são necessários 9 votos."
+        },
+        {
+            "id": 25034,
+            "enunciado": "Em uma Câmara com 21 Vereadores, a aprovação por dois terços dos membros exige, no mínimo:",
+            "opcoes": [
+                "A) 15 votos",
+                "B) 14 votos",
+                "C) 16 votos",
+                "D) 11 votos",
+                "E) 13 votos"
+            ],
+            "correta": 1,
+            "comentario": "Dois terços de 21 = 14. Como o cálculo é feito sobre o total de membros, são necessários 14 votos."
+        },
+        {
+            "id": 25035,
+            "enunciado": "Uma votação por maioria SIMPLES (ou relativa) exige:",
+            "opcoes": [
+                "A) a unanimidade dos presentes",
+                "B) o voto favorável da maioria dos Vereadores presentes, estando presente a maioria absoluta dos membros",
+                "C) o voto de dois terços dos membros",
+                "D) o voto de todos os membros da Mesa",
+                "E) o voto de mais da metade de todos os membros da Câmara"
+            ],
+            "correta": 1,
+            "comentario": "Na maioria simples, conta-se a maioria dos presentes, desde que haja quórum para deliberar (presença da maioria absoluta dos membros)."
+        },
+        {
+            "id": 25036,
+            "enunciado": "O órgão diretor dos trabalhos legislativos e dos serviços administrativos da Câmara, normalmente composto por Presidente, Vice-Presidente e Secretários, é a:",
+            "opcoes": [
+                "A) Comissão de Finanças",
+                "B) Corregedoria do Tribunal de Contas",
+                "C) Mesa Diretora",
+                "D) Ouvidoria",
+                "E) Procuradoria-Geral do Município"
+            ],
+            "correta": 2,
+            "comentario": "A Mesa Diretora dirige os trabalhos legislativos e a administração da Casa. Sua composição e competências estão no regimento interno."
+        },
+        {
+            "id": 25037,
+            "enunciado": "Nas Casas Legislativas, as comissões permanentes têm como função principal:",
+            "opcoes": [
+                "A) executar as obras públicas",
+                "B) nomear os Secretários Municipais",
+                "C) julgar processos judiciais",
+                "D) analisar e emitir parecer sobre as proposições de sua área antes da deliberação do Plenário",
+                "E) sancionar os projetos aprovados"
+            ],
+            "correta": 3,
+            "comentario": "As comissões fazem o exame técnico das matérias (constitucionalidade, mérito, finanças) e emitem pareceres que orientam o Plenário."
+        },
+        {
+            "id": 25038,
+            "enunciado": "Seguindo o modelo do art. 58, § 3º, da Constituição Federal, uma Comissão Parlamentar de Inquérito (CPI) é criada mediante requerimento de:",
+            "opcoes": [
+                "A) metade mais um dos membros, para investigar qualquer assunto, sem prazo",
+                "B) qualquer cidadão, por abaixo-assinado simples",
+                "C) um Vereador, sem necessidade de fato determinado",
+                "D) dois terços dos membros, apenas com autorização do Prefeito",
+                "E) um terço dos membros, para apuração de fato determinado e por prazo certo"
+            ],
+            "correta": 4,
+            "comentario": "A CPI exige requerimento de um terço dos membros, fato determinado e prazo certo. Suas conclusões, se for o caso, são enviadas ao Ministério Público."
+        },
+        {
+            "id": 25039,
+            "enunciado": "A parte da sessão destinada à discussão e votação das proposições incluídas na pauta é denominada:",
+            "opcoes": [
+                "A) Explicação Pessoal",
+                "B) Tribuna Livre",
+                "C) Ordem do Dia",
+                "D) Leitura da ata",
+                "E) Pequeno Expediente"
+            ],
+            "correta": 2,
+            "comentario": "Na Ordem do Dia, as matérias pautadas são discutidas e votadas. O Expediente é usado para leitura de documentos e pronunciamentos."
+        },
+        {
+            "id": 25040,
+            "enunciado": "As sessões convocadas fora dos dias e horários normais de funcionamento, para tratar de matéria específica e urgente, são as sessões:",
+            "opcoes": [
+                "A) extraordinárias",
+                "B) ordinárias",
+                "C) preparatórias de posse",
+                "D) de comissão",
+                "E) solenes"
+            ],
+            "correta": 0,
+            "comentario": "Sessões extraordinárias são convocadas para matérias determinadas, fora do calendário ordinário."
+        },
+        {
+            "id": 25041,
+            "enunciado": "As sessões realizadas para homenagens, comemorações ou entrega de títulos honoríficos são chamadas de sessões:",
+            "opcoes": [
+                "A) solenes",
+                "B) secretas",
+                "C) ordinárias",
+                "D) deliberativas de urgência",
+                "E) extraordinárias"
+            ],
+            "correta": 0,
+            "comentario": "As sessões solenes têm caráter festivo ou comemorativo e, em regra, não deliberam sobre proposições."
+        },
+        {
+            "id": 25042,
+            "enunciado": "O número mínimo de Vereadores presentes para que a Câmara possa deliberar validamente denomina-se:",
+            "opcoes": [
+                "A) expediente",
+                "B) interstício",
+                "C) quórum",
+                "D) pauta",
+                "E) legislatura"
+            ],
+            "correta": 2,
+            "comentario": "Quórum é o número mínimo de presentes exigido para abrir a sessão ou para votar determinada matéria."
+        },
+        {
+            "id": 25043,
+            "enunciado": "O período de quatro anos correspondente ao mandato dos Vereadores é chamado de:",
+            "opcoes": [
+                "A) legislatura",
+                "B) sessão legislativa",
+                "C) expediente",
+                "D) interstício",
+                "E) sessão ordinária"
+            ],
+            "correta": 0,
+            "comentario": "Legislatura é o período de quatro anos do mandato. A sessão legislativa é o período anual de funcionamento da Câmara."
+        },
+        {
+            "id": 25044,
+            "enunciado": "O documento que registra o resumo dos trabalhos de uma sessão, incluindo presenças, matérias discutidas e resultados das votações, é a:",
+            "opcoes": [
+                "A) moção",
+                "B) ata",
+                "C) pauta",
+                "D) indicação",
+                "E) certidão"
+            ],
+            "correta": 1,
+            "comentario": "A ata é o registro fiel e resumido da sessão. Depois de lida e aprovada, é assinada conforme o regimento."
+        },
+        {
+            "id": 25045,
+            "enunciado": "O documento que relaciona antecipadamente as matérias que serão discutidas e votadas em uma sessão é a:",
+            "opcoes": [
+                "A) ata",
+                "B) portaria",
+                "C) certidão",
+                "D) pauta",
+                "E) moção"
+            ],
+            "correta": 3,
+            "comentario": "A pauta (ou Ordem do Dia publicada) informa previamente quais proposições serão apreciadas, garantindo publicidade e organização."
+        },
+        {
+            "id": 25046,
+            "enunciado": "São atributos da redação oficial, segundo o Manual de Redação da Presidência da República:",
+            "opcoes": [
+                "A) criatividade, informalidade, uso de gírias e opiniões pessoais",
+                "B) uso livre de abreviações e expressões coloquiais",
+                "C) clareza, precisão, objetividade, concisão, coesão, impessoalidade, formalidade e uso da norma-padrão",
+                "D) subjetividade, emotividade e regionalismos",
+                "E) linguagem técnica rebuscada e frases longas"
+            ],
+            "correta": 2,
+            "comentario": "O Manual define a redação oficial pela clareza, precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização, e uso da norma-padrão."
+        },
+        {
+            "id": 25047,
+            "enunciado": "A IMPESSOALIDADE na redação oficial significa que:",
+            "opcoes": [
+                "A) o documento dispensa assinatura",
+                "B) o texto não deve ter destinatário definido",
+                "C) é proibido o uso de pronomes de tratamento",
+                "D) o texto é emitido em nome do serviço público, sem impressões pessoais do redator",
+                "E) o redator deve usar a primeira pessoa e expressar opiniões"
+            ],
+            "correta": 3,
+            "comentario": "A comunicação oficial é feita em nome do órgão e trata de assuntos de interesse público, por isso evita marcas pessoais do redator."
+        },
+        {
+            "id": 25048,
+            "enunciado": "A CONCISÃO, como atributo da redação oficial, consiste em:",
+            "opcoes": [
+                "A) omitir o assunto do documento",
+                "B) transmitir o máximo de informações com o mínimo de palavras, sem prejudicar o sentido",
+                "C) escrever textos curtos mesmo que fiquem incompletos",
+                "D) usar o maior número possível de sinônimos",
+                "E) usar apenas siglas"
+            ],
+            "correta": 1,
+            "comentario": "Concisão é eliminar palavras inúteis e repetições, mantendo a informação completa e clara."
+        },
+        {
+            "id": 25049,
+            "enunciado": "Segundo a 3ª edição do Manual de Redação da Presidência da República, os antigos expedientes ofício, aviso e memorando foram unificados no chamado:",
+            "opcoes": [
+                "A) padrão carta, com o nome \"carta oficial\"",
+                "B) padrão aviso, usado entre ministros",
+                "C) padrão ofício, passando todos a ser denominados \"ofício\"",
+                "D) padrão e-mail, que substituiu todos os documentos",
+                "E) padrão memorando, com o nome \"memorando\""
+            ],
+            "correta": 2,
+            "comentario": "A 3ª edição do Manual (2018) eliminou a distinção entre aviso, memorando e ofício, adotando apenas o ofício, com a mesma diagramação."
+        },
+        {
+            "id": 25050,
+            "enunciado": "No padrão ofício, a identificação do expediente deve conter:",
+            "opcoes": [
+                "A) apenas o nome do destinatário",
+                "B) o nome do documento, o número, o ano e a sigla do órgão que o expede, como \"OFÍCIO Nº 123/2026/SG\"",
+                "C) somente a data, sem numeração",
+                "D) a palavra \"Urgente\" em todos os casos",
+                "E) o nome completo do redator e seu CPF"
+            ],
+            "correta": 1,
+            "comentario": "A identificação traz o tipo de documento, seu número, o ano de emissão e a sigla do órgão. Exemplo: OFÍCIO Nº 652/2018/SAA/SE/MT."
+        },
+        {
+            "id": 25051,
+            "enunciado": "De acordo com o Manual de Redação, a forma correta de indicar o local e a data em um ofício é:",
+            "opcoes": [
+                "A) Rio Branco, 5 de novembro de 2026.",
+                "B) Rio Branco - 05/11/26",
+                "C) Rio Branco, novembro, 5, 2026.",
+                "D) Rio Branco, 05 de Novembro de 2026",
+                "E) Em Rio Branco aos cinco dias de novembro"
+            ],
+            "correta": 0,
+            "comentario": "O Manual orienta o nome da cidade, vírgula, o dia sem zero à esquerda, o mês em letra minúscula, o ano e ponto final."
+        },
+        {
+            "id": 25052,
+            "enunciado": "Segundo o Manual de Redação, o fecho \"Respeitosamente\" deve ser empregado em comunicações dirigidas a:",
+            "opcoes": [
+                "A) qualquer cidadão, sem distinção",
+                "B) empresas privadas apenas",
+                "C) autoridades da mesma hierarquia ou de hierarquia inferior",
+                "D) autoridades de hierarquia superior à do remetente",
+                "E) colegas do mesmo setor apenas"
+            ],
+            "correta": 3,
+            "comentario": "O Manual prevê dois fechos: \"Respeitosamente\", para autoridades superiores, e \"Atenciosamente\", para autoridades de mesma hierarquia ou inferior."
+        },
+        {
+            "id": 25053,
+            "enunciado": "Na redação oficial, os pronomes de tratamento, como \"Vossa Excelência\", exigem a concordância do verbo e dos pronomes na:",
+            "opcoes": [
+                "A) terceira pessoa",
+                "B) primeira pessoa do plural",
+                "C) segunda pessoa do singular",
+                "D) primeira pessoa do singular",
+                "E) segunda pessoa do plural"
+            ],
+            "correta": 0,
+            "comentario": "Embora se refiram ao interlocutor, os pronomes de tratamento levam verbos e pronomes para a terceira pessoa: \"Vossa Excelência sabe que seu projeto...\""
+        },
+        {
+            "id": 25054,
+            "enunciado": "Está correta, quanto ao uso do pronome de tratamento, a frase dirigida diretamente a um Vereador:",
+            "opcoes": [
+                "A) Informamos que Vossa Excelência poderás retirar tua credencial.",
+                "B) Informamos que Vossas Excelência poderá retirar suas credenciais.",
+                "C) Informamos que Vossa Excelência podereis retirar vossa credencial no protocolo.",
+                "D) Informamos que Vossa Excelência poderá retirar sua credencial no protocolo.",
+                "E) Informamos que Sua Excelência, a quem nos dirigimos, poderá retirar vossa credencial."
+            ],
+            "correta": 3,
+            "comentario": "Ao falar diretamente com a autoridade, usa-se \"Vossa Excelência\" com verbo e pronomes na terceira pessoa (\"poderá\", \"sua\"). \"Sua Excelência\" é usado quando se fala sobre a autoridade, a outra pessoa."
+        },
+        {
+            "id": 25055,
+            "enunciado": "Ao se referir a uma autoridade em um texto dirigido a outra pessoa (falando SOBRE ela), usa-se:",
+            "opcoes": [
+                "A) Vossa Excelência",
+                "B) Vossa Senhoria",
+                "C) Vossa Magnificência",
+                "D) Sua Excelência",
+                "E) Tua Excelência"
+            ],
+            "correta": 3,
+            "comentario": "\"Vossa\" é usado para falar COM a pessoa; \"Sua\" é usado para falar SOBRE ela."
+        },
+        {
+            "id": 25056,
+            "enunciado": "O Manual de Redação recomenda que o texto do ofício que encaminha documentos inicie, por exemplo, com:",
+            "opcoes": [
+                "A) uma referência ao expediente ou ao assunto que motivou a comunicação, seguida do encaminhamento",
+                "B) a opinião pessoal do redator sobre o documento",
+                "C) uma lista de todos os servidores do setor",
+                "D) a transcrição integral do regimento interno",
+                "E) uma saudação informal, como \"Olá, tudo bem?\""
+            ],
+            "correta": 0,
+            "comentario": "No ofício de encaminhamento, o primeiro parágrafo deve informar o expediente a que se refere (se houver) e o que está sendo encaminhado, de forma objetiva."
+        },
+        {
+            "id": 25057,
+            "enunciado": "Na redação oficial, o campo \"Assunto\" do ofício deve:",
+            "opcoes": [
+                "A) conter a assinatura do remetente",
+                "B) trazer o fecho do documento",
+                "C) ficar em branco, para ser preenchido pelo destinatário",
+                "D) resumir o teor do documento de forma objetiva",
+                "E) repetir o nome do destinatário"
+            ],
+            "correta": 3,
+            "comentario": "O assunto é um resumo breve do conteúdo, que facilita a identificação e o arquivamento do documento."
+        },
+        {
+            "id": 25058,
+            "enunciado": "O documento oficial pelo qual uma autoridade atesta a existência de um fato registrado em livros, arquivos ou processos da repartição é a:",
+            "opcoes": [
+                "A) certidão",
+                "B) moção",
+                "C) circular",
+                "D) ata de comissão",
+                "E) indicação"
+            ],
+            "correta": 0,
+            "comentario": "A certidão reproduz ou atesta, com fé pública, informações constantes de registros do órgão."
+        },
+        {
+            "id": 25059,
+            "enunciado": "O documento pelo qual uma pessoa solicita a uma autoridade algo a que tem ou julga ter direito é o:",
+            "opcoes": [
+                "A) ofício circular",
+                "B) edital",
+                "C) parecer",
+                "D) atestado médico",
+                "E) requerimento"
+            ],
+            "correta": 4,
+            "comentario": "O requerimento é o pedido formal feito pelo interessado à autoridade competente."
+        },
+        {
+            "id": 25060,
+            "enunciado": "Assinale a frase adequada à redação oficial:",
+            "opcoes": [
+                "A) Precisamos muito das informações, galera.",
+                "B) Acho que seria legal vocês mandarem as informações.",
+                "C) Solicitamos o envio das informações até o dia 20 de novembro.",
+                "D) Por gentileza, se puderem, quem sabe enviem as informações algum dia.",
+                "E) Mandem logo as informações, por favor, pois estamos superatrasados!"
+            ],
+            "correta": 2,
+            "comentario": "A redação oficial é formal, objetiva e impessoal. Gírias, exageros e opiniões pessoais devem ser evitados."
+        },
+        {
+            "id": 25061,
+            "enunciado": "O Manual de Redação recomenda que, nas comunicações oficiais, os parágrafos do texto sejam:",
+            "opcoes": [
+                "A) redigidos em linguagem informal",
+                "B) separados por asteriscos",
+                "C) escritos em letras maiúsculas",
+                "D) iniciados sempre com vocativo",
+                "E) numerados, exceto nos casos em que haja apenas um parágrafo ou no fecho"
+            ],
+            "correta": 4,
+            "comentario": "No padrão ofício, os parágrafos do texto são numerados, salvo quando houver um só parágrafo. O vocativo e o fecho não são numerados."
+        },
+        {
+            "id": 25062,
+            "enunciado": "Para garantir CLAREZA na redação de um ofício, o redator deve:",
+            "opcoes": [
+                "A) escrever frases longas com várias orações intercaladas",
+                "B) usar palavras de sentido conhecido, frases em ordem direta e evitar jargões técnicos desnecessários",
+                "C) empregar regionalismos para aproximar o leitor",
+                "D) usar siglas sem explicar seu significado",
+                "E) usar o maior número possível de termos técnicos e estrangeiros"
+            ],
+            "correta": 1,
+            "comentario": "A clareza permite a compreensão imediata do texto pelo destinatário, exigindo vocabulário comum, ordem direta e explicação de siglas na primeira ocorrência."
+        },
+        {
+            "id": 25063,
+            "enunciado": "Segundo o Manual de Redação, ao empregar uma sigla pela primeira vez em um texto oficial, o redator deve:",
+            "opcoes": [
+                "A) colocar a sigla entre aspas, sem o nome",
+                "B) escrever a sigla em letras minúsculas",
+                "C) escrever o nome por extenso seguido da sigla, como \"Lei de Acesso à Informação (LAI)\"",
+                "D) usar apenas a sigla, pois todos a conhecem",
+                "E) evitar totalmente o uso de siglas"
+            ],
+            "correta": 2,
+            "comentario": "Na primeira menção, usa-se o nome completo seguido da sigla entre parênteses. Depois, a sigla pode ser usada sozinha."
+        },
+        {
+            "id": 25064,
+            "enunciado": "O vocativo adequado em ofício dirigido ao Presidente da Câmara Municipal é:",
+            "opcoes": [
+                "A) Olá, Presidente!",
+                "B) Senhor Presidente,",
+                "C) Ilmo. Sr. Dr. Presidente,",
+                "D) Excelentíssimo Digníssimo Senhor,",
+                "E) Caro amigo Presidente,"
+            ],
+            "correta": 1,
+            "comentario": "O Manual recomenda o vocativo \"Senhor\" ou \"Senhora\" seguido do cargo e de vírgula, como \"Senhor Presidente,\". Abreviações como \"Ilmo.\" e \"Digníssimo\" foram abolidas."
+        },
+        {
+            "id": 25065,
+            "enunciado": "O despacho, em um processo administrativo, é:",
+            "opcoes": [
+                "A) a manifestação da autoridade que dá andamento ao processo, como encaminhar, deferir ou indeferir um pedido",
+                "B) o pedido inicial do cidadão",
+                "C) a certidão de nascimento do interessado",
+                "D) o registro da sessão plenária",
+                "E) a publicação de uma lei"
+            ],
+            "correta": 0,
+            "comentario": "O despacho é a decisão ou orientação da autoridade no processo, determinando providências ou decidindo sobre o pedido."
+        },
+        {
+            "id": 25066,
+            "enunciado": "O ofício circular é utilizado quando:",
+            "opcoes": [
+                "A) a mesma comunicação é dirigida a vários destinatários ao mesmo tempo",
+                "B) o documento é dirigido a um único cidadão",
+                "C) se pretende registrar a ata da sessão",
+                "D) se deseja homenagear uma personalidade",
+                "E) o documento tem caráter sigiloso e pessoal"
+            ],
+            "correta": 0,
+            "comentario": "O ofício circular leva o mesmo conteúdo a vários destinatários, como todas as secretarias ou todos os gabinetes."
+        },
+        {
+            "id": 25067,
+            "enunciado": "Na redação oficial, a PADRONIZAÇÃO dos documentos tem como finalidade:",
+            "opcoes": [
+                "A) dispensar a assinatura",
+                "B) tornar os documentos mais longos",
+                "C) facilitar a identificação, a leitura e o arquivamento das comunicações",
+                "D) impedir a leitura por cidadãos",
+                "E) permitir o uso de linguagem informal"
+            ],
+            "correta": 2,
+            "comentario": "Seguir um padrão de diagramação e estrutura torna as comunicações uniformes e facilita a gestão documental."
+        },
+        {
+            "id": 25068,
+            "enunciado": "No padrão ofício, o bloco de assinatura deve conter:",
+            "opcoes": [
+                "A) apenas a rubrica, sem nome",
+                "B) o nome do destinatário",
+                "C) a palavra \"Assinado\" em letras maiúsculas",
+                "D) o nome do signatário e o cargo que ocupa",
+                "E) o CPF e o endereço residencial do signatário"
+            ],
+            "correta": 3,
+            "comentario": "Abaixo da assinatura vêm o nome e o cargo da autoridade que expede o documento, permitindo identificar o responsável."
+        },
+        {
+            "id": 25069,
+            "enunciado": "Segundo a Lei nº 8.159/1991, é dever do Poder Público:",
+            "opcoes": [
+                "A) guardar somente os documentos digitais",
+                "B) manter em sigilo todos os documentos públicos",
+                "C) transferir seus arquivos para empresas privadas",
+                "D) a gestão documental e a proteção especial a documentos de arquivos, como instrumento de apoio à administração, à cultura e ao desenvolvimento científico",
+                "E) eliminar todos os documentos com mais de cinco anos"
+            ],
+            "correta": 3,
+            "comentario": "O art. 1º da Lei nº 8.159/1991 atribui ao Poder Público a gestão documental e a proteção especial aos documentos de arquivo, também como elementos de prova e informação."
+        },
+        {
+            "id": 25070,
+            "enunciado": "A Lei nº 8.159/1991 considera \"arquivos\" os conjuntos de documentos produzidos e recebidos por órgãos públicos e entidades privadas em decorrência do exercício de atividades específicas:",
+            "opcoes": [
+                "A) desde que tenham mais de dez anos",
+                "B) qualquer que seja o suporte da informação ou a natureza dos documentos",
+                "C) apenas quando produzidos pelo Poder Executivo",
+                "D) apenas quando registrados em papel",
+                "E) somente se tiverem valor histórico"
+            ],
+            "correta": 1,
+            "comentario": "O art. 2º define arquivos independentemente do suporte: papel, meio digital, fotografia, áudio ou vídeo."
+        },
+        {
+            "id": 25071,
+            "enunciado": "A Lei nº 8.159/1991 define GESTÃO DE DOCUMENTOS como o conjunto de procedimentos e operações técnicas referentes à:",
+            "opcoes": [
+                "A) produção, tramitação, uso, avaliação e arquivamento em fase corrente e intermediária, visando à eliminação ou ao recolhimento para guarda permanente",
+                "B) restauração de documentos danificados",
+                "C) apenas digitalização dos documentos antigos",
+                "D) venda de documentos sem valor",
+                "E) divulgação de documentos em redes sociais"
+            ],
+            "correta": 0,
+            "comentario": "O art. 3º define gestão de documentos abrangendo todo o ciclo, da produção à destinação final."
+        },
+        {
+            "id": 25072,
+            "enunciado": "Segundo a Lei nº 8.159/1991, os documentos públicos são identificados como:",
+            "opcoes": [
+                "A) físicos, digitais e híbridos",
+                "B) sigilosos, ostensivos e públicos",
+                "C) primários, secundários e terciários",
+                "D) ativos, passivos e mortos",
+                "E) correntes, intermediários e permanentes"
+            ],
+            "correta": 4,
+            "comentario": "O art. 8º classifica os documentos públicos em correntes, intermediários e permanentes, base da chamada teoria das três idades."
+        },
+        {
+            "id": 25073,
+            "enunciado": "Os documentos em curso ou que, mesmo sem movimentação, constituam objeto de consultas frequentes são classificados como:",
+            "opcoes": [
+                "A) permanentes",
+                "B) eliminados",
+                "C) históricos",
+                "D) intermediários",
+                "E) correntes"
+            ],
+            "correta": 4,
+            "comentario": "Pelo art. 8º, § 1º, documentos correntes são os que estão em uso ou são consultados com frequência, ficando perto de quem os utiliza."
+        },
+        {
+            "id": 25074,
+            "enunciado": "Os documentos que, não sendo de uso corrente, aguardam, por razões de interesse administrativo, a eliminação ou o recolhimento para guarda permanente são os:",
+            "opcoes": [
+                "A) intermediários",
+                "B) ostensivos",
+                "C) correntes",
+                "D) permanentes",
+                "E) sigilosos"
+            ],
+            "correta": 0,
+            "comentario": "O art. 8º, § 2º, define os documentos intermediários, que ficam guardados até cumprirem seu prazo, conforme a tabela de temporalidade."
+        },
+        {
+            "id": 25075,
+            "enunciado": "Os documentos de valor histórico, probatório e informativo que devem ser definitivamente preservados são os:",
+            "opcoes": [
+                "A) temporários",
+                "B) intermediários",
+                "C) eliminatórios",
+                "D) correntes",
+                "E) permanentes"
+            ],
+            "correta": 4,
+            "comentario": "O art. 8º, § 3º, define os documentos permanentes, que nunca podem ser eliminados."
+        },
+        {
+            "id": 25076,
+            "enunciado": "Segundo a Lei nº 8.159/1991, os documentos de valor permanente são:",
+            "opcoes": [
+                "A) de propriedade particular de quem os produziu",
+                "B) vendáveis após 50 anos",
+                "C) inalienáveis e imprescritíveis",
+                "D) sigilosos por natureza",
+                "E) elimináveis por decisão do chefe do setor"
+            ],
+            "correta": 2,
+            "comentario": "O art. 10 declara que os documentos de valor permanente são inalienáveis (não podem ser vendidos ou cedidos) e imprescritíveis."
+        },
+        {
+            "id": 25077,
+            "enunciado": "A eliminação de documentos produzidos por instituições públicas, segundo a Lei nº 8.159/1991:",
+            "opcoes": [
+                "A) depende apenas de decisão do setor que produziu o documento",
+                "B) só pode ocorrer por ordem judicial",
+                "C) é proibida em qualquer caso",
+                "D) pode ser feita livremente por qualquer servidor",
+                "E) depende de autorização da instituição arquivística pública, na sua esfera de competência"
+            ],
+            "correta": 4,
+            "comentario": "O art. 9º condiciona a eliminação à autorização da instituição arquivística pública competente, observando os prazos da tabela de temporalidade."
+        },
+        {
+            "id": 25078,
+            "enunciado": "O instrumento de gestão documental que define os prazos de guarda dos documentos nas fases corrente e intermediária e sua destinação final (eliminação ou guarda permanente) é a:",
+            "opcoes": [
+                "A) lista de presença",
+                "B) agenda institucional",
+                "C) planilha de custos",
+                "D) tabela de temporalidade",
+                "E) ata de reunião"
+            ],
+            "correta": 3,
+            "comentario": "A tabela de temporalidade, elaborada com base na avaliação documental, indica quanto tempo cada tipo de documento deve ser guardado e qual seu destino."
+        },
+        {
+            "id": 25079,
+            "enunciado": "A passagem de documentos do arquivo corrente para o arquivo intermediário é chamada de:",
+            "opcoes": [
+                "A) autuação",
+                "B) expedição",
+                "C) transferência",
+                "D) eliminação",
+                "E) recolhimento"
+            ],
+            "correta": 2,
+            "comentario": "Transferência é a passagem da fase corrente para a intermediária. Recolhimento é a passagem para o arquivo permanente."
+        },
+        {
+            "id": 25080,
+            "enunciado": "A entrada de documentos no arquivo permanente, para guarda definitiva, denomina-se:",
+            "opcoes": [
+                "A) transferência",
+                "B) empréstimo",
+                "C) arquivamento corrente",
+                "D) distribuição",
+                "E) recolhimento"
+            ],
+            "correta": 4,
+            "comentario": "O recolhimento leva ao arquivo permanente os documentos de valor histórico, probatório ou informativo."
+        },
+        {
+            "id": 25081,
+            "enunciado": "O setor de protocolo é responsável, entre outras atividades, por:",
+            "opcoes": [
+                "A) elaborar as leis municipais",
+                "B) receber, registrar, classificar, distribuir, controlar a tramitação e expedir documentos",
+                "C) julgar os recursos administrativos",
+                "D) eliminar documentos sem autorização",
+                "E) aprovar os pareceres das comissões"
+            ],
+            "correta": 1,
+            "comentario": "O protocolo controla a entrada, o registro, a distribuição, a movimentação e a saída dos documentos da instituição."
+        },
+        {
+            "id": 25082,
+            "enunciado": "A autuação de um documento, no protocolo, corresponde a:",
+            "opcoes": [
+                "A) transformá-lo em processo, com capa, numeração e registro próprios",
+                "B) arquivá-lo definitivamente",
+                "C) devolvê-lo ao remetente",
+                "D) eliminá-lo após o uso",
+                "E) digitalizá-lo sem registro"
+            ],
+            "correta": 0,
+            "comentario": "Autuar é formar o processo: o documento recebe capa, número único e passa a ter tramitação controlada."
+        },
+        {
+            "id": 25083,
+            "enunciado": "O método de arquivamento que ordena os documentos pelos nomes de pessoas ou instituições, seguindo a ordem do alfabeto, é o método:",
+            "opcoes": [
+                "A) geográfico",
+                "B) cronológico",
+                "C) alfabético",
+                "D) numérico simples",
+                "E) ideográfico numérico"
+            ],
+            "correta": 2,
+            "comentario": "No método alfabético, a ordenação é feita pelo nome do titular ou da instituição."
+        },
+        {
+            "id": 25084,
+            "enunciado": "O método de arquivamento que organiza os documentos por assunto é chamado de:",
+            "opcoes": [
+                "A) numérico cronológico",
+                "B) ideográfico",
+                "C) dígito-terminal",
+                "D) alfabético onomástico",
+                "E) geográfico"
+            ],
+            "correta": 1,
+            "comentario": "O método ideográfico ordena os documentos por assuntos, que podem ser organizados alfabética ou numericamente."
+        },
+        {
+            "id": 25085,
+            "enunciado": "Para organizar correspondências recebidas de vários municípios do Acre, ordenando-as pelo nome do município, o método mais adequado é o:",
+            "opcoes": [
+                "A) geográfico",
+                "B) numérico simples",
+                "C) cronológico",
+                "D) ideográfico",
+                "E) dígito-terminal"
+            ],
+            "correta": 0,
+            "comentario": "O método geográfico usa como critério o local de procedência ou destino (estado, cidade, país)."
+        },
+        {
+            "id": 25086,
+            "enunciado": "A avaliação de documentos, na gestão documental, consiste em:",
+            "opcoes": [
+                "A) dar nota à qualidade da redação",
+                "B) analisar os documentos para definir seus prazos de guarda e sua destinação final",
+                "C) calcular o custo de impressão",
+                "D) verificar a ortografia do texto",
+                "E) decidir quais servidores podem ser promovidos"
+            ],
+            "correta": 1,
+            "comentario": "A avaliação identifica os valores dos documentos (administrativo, legal, histórico) e define quanto tempo guardá-los e se serão eliminados ou preservados."
+        },
+        {
+            "id": 25087,
+            "enunciado": "Segundo a Lei nº 8.159/1991, aquele que desfigurar ou destruir documentos de valor permanente ou considerado de interesse público e social:",
+            "opcoes": [
+                "A) deve apenas pagar o custo do papel",
+                "B) só responde se for servidor efetivo",
+                "C) não sofre qualquer sanção",
+                "D) recebe apenas advertência verbal",
+                "E) será responsabilizado penal, civil e administrativamente, na forma da legislação em vigor"
+            ],
+            "correta": 4,
+            "comentario": "O art. 25 prevê a responsabilização penal, civil e administrativa de quem destruir ou desfigurar documentos de valor permanente."
+        },
+        {
+            "id": 25088,
+            "enunciado": "O órgão vinculado ao Arquivo Nacional que define a política nacional de arquivos públicos e privados é o:",
+            "opcoes": [
+                "A) Conselho Nacional de Justiça (CNJ)",
+                "B) Tribunal de Contas da União (TCU)",
+                "C) Conselho Nacional do Ministério Público",
+                "D) Conselho Nacional de Arquivos (CONARQ)",
+                "E) Instituto Nacional do Seguro Social (INSS)"
+            ],
+            "correta": 3,
+            "comentario": "O art. 26 da Lei nº 8.159/1991 cria o CONARQ, órgão vinculado ao Arquivo Nacional, responsável pela política nacional de arquivos."
+        },
+        {
+            "id": 25089,
+            "enunciado": "Ao receber um documento no protocolo, o primeiro procedimento a ser adotado, em regra, é:",
+            "opcoes": [
+                "A) publicá-lo no Diário Oficial",
+                "B) conferir e registrar o documento, atribuindo-lhe número e data de entrada",
+                "C) arquivá-lo definitivamente",
+                "D) eliminá-lo se estiver repetido",
+                "E) enviá-lo ao arquivo permanente"
+            ],
+            "correta": 1,
+            "comentario": "O recebimento começa com a conferência (se está completo e endereçado corretamente) e o registro, que permite o controle da tramitação."
+        },
+        {
+            "id": 25090,
+            "enunciado": "A digitalização de documentos em papel:",
+            "opcoes": [
+                "A) é proibida pela legislação arquivística",
+                "B) substitui a necessidade de classificação",
+                "C) permite eliminar imediatamente todos os originais",
+                "D) facilita o acesso e a consulta, mas não autoriza, por si só, a eliminação dos originais sem observar as regras de gestão documental",
+                "E) dispensa a tabela de temporalidade"
+            ],
+            "correta": 3,
+            "comentario": "A digitalização melhora o acesso, mas a destinação dos originais deve seguir a tabela de temporalidade e a autorização da instituição arquivística."
+        },
+        {
+            "id": 25091,
+            "enunciado": "A teoria das três idades dos documentos relaciona-se ao(à):",
+            "opcoes": [
+                "A) idade dos servidores que trabalham no arquivo",
+                "B) número de cópias de cada documento",
+                "C) tempo de duração de cada legislatura",
+                "D) quantidade de assinaturas exigidas",
+                "E) ciclo de vida dos documentos, em fases corrente, intermediária e permanente"
+            ],
+            "correta": 4,
+            "comentario": "A teoria das três idades organiza os documentos conforme a frequência de uso e o valor, desde a produção até a destinação final."
+        },
+        {
+            "id": 25092,
+            "enunciado": "Um cidadão chega ao Serviço de Informação ao Cidadão (SIC) da Câmara querendo saber quanto foi gasto com diárias no último ano. O servidor deve:",
+            "opcoes": [
+                "A) registrar o pedido de acesso, informar o número de protocolo e o prazo legal de resposta",
+                "B) negar o pedido, pois diárias são informações sigilosas",
+                "C) pedir que o cidadão volte com um advogado",
+                "D) exigir que o cidadão explique por que deseja a informação",
+                "E) orientar o cidadão a procurar a imprensa"
+            ],
+            "correta": 0,
+            "comentario": "O SIC deve protocolar o pedido, informar o prazo (até 20 dias, prorrogável por 10) e não pode exigir justificativa do requerente."
+        },
+        {
+            "id": 25093,
+            "enunciado": "Na rotina do SIC, quando a informação pedida já está publicada no portal da transparência, o servidor pode:",
+            "opcoes": [
+                "A) arquivar o pedido sem resposta",
+                "B) indicar ao requerente, por escrito, o local e a forma de acessá-la",
+                "C) cobrar taxa pela indicação",
+                "D) exigir que o cidadão compareça presencialmente",
+                "E) recusar-se a responder"
+            ],
+            "correta": 1,
+            "comentario": "A LAI (art. 11, § 6º) permite indicar onde e como acessar a informação já disponível, salvo se o requerente declarar não ter meios para isso."
+        },
+        {
+            "id": 25094,
+            "enunciado": "O prazo para responder a um pedido de acesso à informação que não pode ser atendido de imediato é de até 20 dias. Esse prazo pode ser prorrogado:",
+            "opcoes": [
+                "A) apenas com autorização do Prefeito",
+                "B) por mais 20 dias, sem necessidade de justificativa",
+                "C) por 60 dias, se a Câmara estiver em recesso",
+                "D) por mais 10 dias, mediante justificativa expressa, com ciência do requerente",
+                "E) indefinidamente, até que a informação fique pronta"
+            ],
+            "correta": 3,
+            "comentario": "O art. 11, § 2º, da LAI permite uma única prorrogação de 10 dias, com justificativa e comunicação ao requerente."
+        },
+        {
+            "id": 25095,
+            "enunciado": "Durante o atendimento presencial, a técnica de \"escuta ativa\" consiste em:",
+            "opcoes": [
+                "A) repetir sempre a mesma resposta padrão",
+                "B) olhar o celular enquanto o cidadão explica o problema",
+                "C) ouvir o cidadão com atenção, sem interrompê-lo, e confirmar o entendimento antes de responder",
+                "D) encaminhar o cidadão a outro setor sem ouvi-lo",
+                "E) responder antes que o cidadão termine de falar, para ganhar tempo"
+            ],
+            "correta": 2,
+            "comentario": "A escuta ativa demonstra respeito e evita mal-entendidos: o servidor ouve, faz perguntas e confirma o que entendeu."
+        },
+        {
+            "id": 25096,
+            "enunciado": "No atendimento telefônico de um setor da Câmara, a conduta adequada ao atender uma ligação é:",
+            "opcoes": [
+                "A) pedir que o cidadão ligue mais tarde, sem verificar o assunto",
+                "B) atender com \"Alô, quem fala?\"",
+                "C) deixar o telefone tocar até que o cidadão desista",
+                "D) transferir a ligação sem informar o motivo",
+                "E) identificar o setor e o próprio nome, cumprimentar e perguntar como pode ajudar"
+            ],
+            "correta": 4,
+            "comentario": "A identificação do setor e do atendente transmite profissionalismo e dá segurança ao cidadão sobre com quem está falando."
+        },
+        {
+            "id": 25097,
+            "enunciado": "Quando o servidor não sabe responder a uma dúvida do cidadão, a atitude mais adequada é:",
+            "opcoes": [
+                "A) inventar uma resposta para não parecer despreparado",
+                "B) encerrar o atendimento sem explicação",
+                "C) dizer que o assunto não é problema dele",
+                "D) pedir que o cidadão procure a informação na internet",
+                "E) informar que vai verificar ou encaminhar ao setor competente, orientando o cidadão sobre o próximo passo"
+            ],
+            "correta": 4,
+            "comentario": "Ser honesto e encaminhar corretamente evita informações erradas e mostra compromisso com a solução do problema do cidadão."
+        },
+        {
+            "id": 25098,
+            "enunciado": "Segundo a Lei nº 10.048/2000, têm direito a atendimento prioritário, entre outros:",
+            "opcoes": [
+                "A) apenas pessoas acompanhadas de advogado",
+                "B) pessoas com deficiência, idosos com idade igual ou superior a 60 anos, gestantes, lactantes e pessoas com crianças de colo",
+                "C) apenas pessoas com mais de 80 anos",
+                "D) qualquer pessoa que chegue com pressa",
+                "E) somente servidores públicos"
+            ],
+            "correta": 1,
+            "comentario": "A Lei nº 10.048/2000 garante atendimento prioritário a pessoas com deficiência, idosos (60 anos ou mais), gestantes, lactantes, pessoas com crianças de colo e obesos, entre outros grupos previstos."
+        },
+        {
+            "id": 25099,
+            "enunciado": "Segundo o Estatuto da Pessoa Idosa, entre as pessoas idosas, a prioridade especial no atendimento é assegurada às maiores de:",
+            "opcoes": [
+                "A) 80 anos, que têm preferência em relação aos demais idosos",
+                "B) 60 anos, sem distinção entre eles",
+                "C) 65 anos, apenas em bancos",
+                "D) 75 anos, apenas em órgãos federais",
+                "E) 70 anos, apenas em serviços de saúde"
+            ],
+            "correta": 0,
+            "comentario": "O Estatuto da Pessoa Idosa (art. 3º, § 2º) assegura prioridade especial aos maiores de 80 anos, atendendo-se suas necessidades sempre preferencialmente em relação aos demais idosos."
+        },
+        {
+            "id": 25100,
+            "enunciado": "Um cidadão irritado eleva o tom de voz no balcão de atendimento. A conduta mais adequada do servidor é:",
+            "opcoes": [
+                "A) chamar outros cidadãos para testemunhar contra ele",
+                "B) encerrar o atendimento imediatamente",
+                "C) manter a calma, ouvir, demonstrar disposição para ajudar e buscar uma solução dentro das normas",
+                "D) ignorar o cidadão até que ele se acalme sozinho",
+                "E) responder no mesmo tom para impor respeito"
+            ],
+            "correta": 2,
+            "comentario": "O equilíbrio emocional é essencial no atendimento: ouvir, manter a cortesia e focar na solução costuma reduzir o conflito."
+        },
+        {
+            "id": 25101,
+            "enunciado": "No atendimento a distância, como por e-mail, a resposta ao cidadão deve:",
+            "opcoes": [
+                "A) ser clara, objetiva, cordial e conter as orientações necessárias para resolver a demanda",
+                "B) ser enviada apenas quando o cidadão insistir",
+                "C) conter dados pessoais de outros cidadãos como exemplo",
+                "D) usar abreviações e linguagem informal para ganhar tempo",
+                "E) remeter sempre a outro setor, sem explicação"
+            ],
+            "correta": 0,
+            "comentario": "O atendimento por e-mail segue os mesmos princípios do presencial: clareza, cortesia, correção da informação e respeito à privacidade."
+        },
+        {
+            "id": 25102,
+            "enunciado": "Durante o atendimento, um cidadão pede informações sobre o endereço e o telefone pessoal de um vereador. O servidor deve:",
+            "opcoes": [
+                "A) fornecer o endereço residencial, pois vereador é pessoa pública",
+                "B) passar o número de celular particular do vereador",
+                "C) negar qualquer informação sobre o vereador, inclusive o gabinete",
+                "D) pedir os dados pessoais do cidadão para enviar ao vereador sem autorização",
+                "E) informar os canais institucionais de contato, sem divulgar dados pessoais do vereador"
+            ],
+            "correta": 4,
+            "comentario": "Os canais institucionais (gabinete, e-mail e telefone oficiais) são públicos. Dados pessoais, como endereço residencial, são protegidos pela LGPD."
+        },
+        {
+            "id": 25103,
+            "enunciado": "Ao recolher cópias de documentos pessoais de cidadãos no atendimento, o servidor deve observar que:",
+            "opcoes": [
+                "A) os documentos podem ficar sobre o balcão ao alcance de todos",
+                "B) os dados podem ser repassados a empresas parceiras",
+                "C) as cópias podem ser descartadas no lixo comum, inteiras",
+                "D) as cópias podem ser usadas como rascunho depois",
+                "E) esses dados só podem ser usados para a finalidade do pedido e devem ser guardados com segurança"
+            ],
+            "correta": 4,
+            "comentario": "Pela LGPD, os dados devem ser tratados apenas para a finalidade informada, com medidas de segurança, inclusive no descarte (fragmentação)."
+        },
+        {
+            "id": 25104,
+            "enunciado": "A transparência passiva, realizada pelo SIC, distingue-se da transparência ativa porque:",
+            "opcoes": [
+                "A) trata apenas de informações sigilosas",
+                "B) depende de solicitação do cidadão",
+                "C) dispensa prazo de resposta",
+                "D) é feita por iniciativa própria do órgão",
+                "E) só existe no Poder Executivo"
+            ],
+            "correta": 1,
+            "comentario": "Na transparência passiva, o órgão responde a pedidos. Na ativa, divulga informações espontaneamente, como no portal da transparência."
+        },
+        {
+            "id": 25105,
+            "enunciado": "Para que um pedido de acesso à informação seja protocolado, o cidadão:",
+            "opcoes": [
+                "A) precisa pagar uma taxa de protocolo",
+                "B) deve se identificar e especificar a informação desejada",
+                "C) deve ter mais de 21 anos",
+                "D) precisa apresentar justificativa por escrito",
+                "E) deve comprovar que é eleitor do município"
+            ],
+            "correta": 1,
+            "comentario": "A LAI exige apenas identificação e especificação da informação. É proibido exigir os motivos do pedido."
+        },
+        {
+            "id": 25106,
+            "enunciado": "Um servidor do SIC recebe um pedido de acesso que trata de informação de outro órgão público. A conduta correta é:",
+            "opcoes": [
+                "A) cobrar taxa de encaminhamento",
+                "B) responder com informações aproximadas",
+                "C) arquivar o pedido sem resposta",
+                "D) exigir que o cidadão faça novo pedido presencialmente",
+                "E) informar ao requerente qual órgão detém a informação ou, se souber, remeter o pedido a esse órgão, cientificando o interessado"
+            ],
+            "correta": 4,
+            "comentario": "Pela LAI (art. 11, § 1º, III), quando o órgão não possui a informação, deve indicar quem a detém ou remeter o pedido, comunicando o requerente."
+        },
+        {
+            "id": 25107,
+            "enunciado": "Na rotina de atendimento, o encaminhamento de uma demanda ao setor responsável deve ser:",
+            "opcoes": [
+                "A) feito apenas verbalmente, sem registro",
+                "B) feito sem informar o cidadão",
+                "C) registrado, para que o cidadão possa acompanhar o andamento e o setor possa ser cobrado pelo prazo",
+                "D) evitado, para não sobrecarregar outros setores",
+                "E) condicionado à aprovação da imprensa"
+            ],
+            "correta": 2,
+            "comentario": "O registro dá rastreabilidade: permite saber onde está a demanda, quem é o responsável e se os prazos estão sendo cumpridos."
+        },
+        {
+            "id": 25108,
+            "enunciado": "A linguagem simples no atendimento ao cidadão consiste em:",
+            "opcoes": [
+                "A) responder apenas com números de artigos de lei",
+                "B) evitar qualquer explicação",
+                "C) usar o máximo de termos jurídicos para demonstrar conhecimento",
+                "D) usar palavras comuns, frases curtas e explicar termos técnicos quando forem necessários",
+                "E) falar de forma infantilizada"
+            ],
+            "correta": 3,
+            "comentario": "A linguagem simples aproxima o cidadão do serviço público e reduz erros e retornos."
+        },
+        {
+            "id": 25109,
+            "enunciado": "Um cidadão com deficiência auditiva procura atendimento. Em atenção à acessibilidade, o órgão deve:",
+            "opcoes": [
+                "A) pedir que ele volte acompanhado de familiar",
+                "B) falar mais alto até ser compreendido",
+                "C) oferecer meios adequados de comunicação, como intérprete de Libras ou atendimento por escrito",
+                "D) recusar o atendimento por falta de intérprete",
+                "E) atendê-lo por último"
+            ],
+            "correta": 2,
+            "comentario": "A acessibilidade na comunicação é direito da pessoa com deficiência (Lei nº 13.146/2015). O órgão deve buscar formas de garantir o atendimento."
+        },
+        {
+            "id": 25110,
+            "enunciado": "O registro das manifestações do cidadão, como reclamações, sugestões e elogios sobre os serviços da Câmara, é atribuição típica da:",
+            "opcoes": [
+                "A) Comissão de Finanças",
+                "B) tesouraria",
+                "C) assessoria de imprensa",
+                "D) ouvidoria",
+                "E) Mesa Diretora, em sessão solene"
+            ],
+            "correta": 3,
+            "comentario": "A ouvidoria recebe, registra e encaminha manifestações dos cidadãos, contribuindo para a melhoria dos serviços."
+        },
+        {
+            "id": 25111,
+            "enunciado": "No atendimento ao público, o sigilo profissional exige que o servidor:",
+            "opcoes": [
+                "A) não divulgue informações pessoais ou sigilosas de que tomou conhecimento em razão do cargo",
+                "B) comente os casos nas redes sociais sem citar nomes completos",
+                "C) divulgue quando o cidadão for pessoa pública",
+                "D) conte os casos interessantes a familiares",
+                "E) divulgue apenas para os colegas de setor"
+            ],
+            "correta": 0,
+            "comentario": "O servidor deve guardar sigilo sobre assuntos da repartição e dados pessoais que conhece por causa da função."
+        },
+        {
+            "id": 25112,
+            "enunciado": "Ao atender um pedido de cópia de documento que contém, junto com informações públicas, dados pessoais de terceiros, o servidor deve:",
+            "opcoes": [
+                "A) negar todo o documento",
+                "B) exigir autorização judicial para qualquer cópia",
+                "C) fornecer a parte pública, ocultando os dados pessoais protegidos (tarja), conforme orientação do órgão",
+                "D) fornecer apenas mediante pagamento de taxa extra",
+                "E) fornecer o documento integral, sem qualquer cuidado"
+            ],
+            "correta": 2,
+            "comentario": "A LAI garante o acesso à parte não sigilosa do documento (art. 7º, § 2º), ocultando-se a parte protegida, como dados pessoais."
+        },
+        {
+            "id": 25113,
+            "enunciado": "O atendimento ao público com qualidade busca, principalmente:",
+            "opcoes": [
+                "A) priorizar a conveniência do servidor",
+                "B) aumentar a burocracia para garantir controle",
+                "C) resolver a demanda do cidadão com cortesia, correção e no menor tempo possível",
+                "D) evitar qualquer contato com o público",
+                "E) reduzir o número de cidadãos atendidos"
+            ],
+            "correta": 2,
+            "comentario": "A qualidade no atendimento combina cortesia, informação correta, agilidade e foco na solução do problema."
+        },
+        {
+            "id": 25114,
+            "enunciado": "O gráfico que representa a estrutura formal de uma organização, mostrando seus órgãos, as relações de hierarquia e as linhas de autoridade, é o:",
+            "opcoes": [
+                "A) cronograma",
+                "B) fluxograma",
+                "C) gráfico de dispersão",
+                "D) organograma",
+                "E) histograma"
+            ],
+            "correta": 3,
+            "comentario": "O organograma mostra a estrutura hierárquica (quem está subordinado a quem). O fluxograma mostra a sequência de um processo e o cronograma, o tempo das atividades."
+        },
+        {
+            "id": 25115,
+            "enunciado": "Para representar graficamente a sequência de etapas do trâmite de um requerimento, desde o protocolo até a resposta ao cidadão, utiliza-se o:",
+            "opcoes": [
+                "A) organograma",
+                "B) fluxograma",
+                "C) cronograma",
+                "D) mapa de calor",
+                "E) gráfico de pizza"
+            ],
+            "correta": 1,
+            "comentario": "O fluxograma representa as etapas, as decisões e o caminho percorrido em um processo de trabalho."
+        },
+        {
+            "id": 25116,
+            "enunciado": "Em um fluxograma, o símbolo em forma de losango é usado para representar:",
+            "opcoes": [
+                "A) uma atividade comum",
+                "B) um documento impresso",
+                "C) o início e o fim do processo",
+                "D) uma decisão, com caminhos alternativos (por exemplo, \"sim\" ou \"não\")",
+                "E) o arquivamento definitivo"
+            ],
+            "correta": 3,
+            "comentario": "Na simbologia básica, o losango indica decisão; o retângulo, atividade; e a forma oval (ou retângulo arredondado), início e fim."
+        },
+        {
+            "id": 25117,
+            "enunciado": "Em um fluxograma, a forma oval (ou retângulo com cantos arredondados) indica, normalmente:",
+            "opcoes": [
+                "A) um banco de dados",
+                "B) um atraso",
+                "C) uma decisão",
+                "D) o início ou o fim do processo",
+                "E) uma conexão entre páginas"
+            ],
+            "correta": 3,
+            "comentario": "O terminador (oval) marca onde o processo começa e onde termina."
+        },
+        {
+            "id": 25118,
+            "enunciado": "O instrumento que relaciona as atividades de um projeto às datas previstas para sua execução é o:",
+            "opcoes": [
+                "A) termo de posse",
+                "B) fluxograma",
+                "C) cronograma",
+                "D) organograma",
+                "E) regimento"
+            ],
+            "correta": 2,
+            "comentario": "O cronograma distribui as atividades no tempo, permitindo acompanhar prazos e atrasos."
+        },
+        {
+            "id": 25119,
+            "enunciado": "O gráfico de Gantt é muito utilizado para:",
+            "opcoes": [
+                "A) medir a satisfação do cidadão",
+                "B) calcular a folha de pagamento",
+                "C) mostrar a hierarquia de cargos",
+                "D) representar decisões de um processo",
+                "E) representar cronogramas, com barras que mostram a duração de cada atividade ao longo do tempo"
+            ],
+            "correta": 4,
+            "comentario": "No gráfico de Gantt, cada atividade é uma barra horizontal posicionada nas datas de início e término."
+        },
+        {
+            "id": 25120,
+            "enunciado": "Em um organograma tradicional, os órgãos de assessoria (como a assessoria jurídica da Presidência) costumam ser representados:",
+            "opcoes": [
+                "A) por linhas laterais ligadas ao órgão assessorado, sem subordinação hierárquica sobre os demais setores",
+                "B) fora do organograma",
+                "C) no nível mais baixo da estrutura",
+                "D) como setores de linha com subordinados diretos",
+                "E) acima da Presidência"
+            ],
+            "correta": 0,
+            "comentario": "A assessoria (staff) presta apoio técnico e não tem autoridade de comando sobre os setores de linha. Por isso aparece em ligação lateral."
+        },
+        {
+            "id": 25121,
+            "enunciado": "Segundo a regra geral da Lei nº 9.784/1999, os prazos do processo administrativo começam a correr a partir da data da cientificação oficial:",
+            "opcoes": [
+                "A) contando-se apenas os dias úteis, sempre",
+                "B) incluindo-se o dia do começo e o do vencimento",
+                "C) incluindo-se o dia do começo e excluindo-se o do vencimento",
+                "D) excluindo-se da contagem o dia do começo e incluindo-se o do vencimento",
+                "E) apenas a partir do primeiro dia do mês seguinte"
+            ],
+            "correta": 3,
+            "comentario": "O art. 66 da Lei nº 9.784/1999 exclui o dia do começo e inclui o dia do vencimento."
+        },
+        {
+            "id": 25122,
+            "enunciado": "Um interessado foi notificado na quinta-feira, dia 5, para apresentar documentos no prazo de 3 dias, contados de forma contínua. Não há expediente aos sábados e domingos. Pela regra geral da Lei nº 9.784/1999, o prazo termina:",
+            "opcoes": [
+                "A) na sexta-feira, dia 6",
+                "B) na terça-feira, dia 10",
+                "C) no sábado, dia 7",
+                "D) na segunda-feira, dia 9",
+                "E) no domingo, dia 8"
+            ],
+            "correta": 3,
+            "comentario": "Exclui-se o dia 5: os dias 6, 7 e 8 completam o prazo, que venceria no domingo. Como não há expediente, o prazo é prorrogado para o primeiro dia útil seguinte, segunda-feira, dia 9."
+        },
+        {
+            "id": 25123,
+            "enunciado": "Pela Lei nº 9.784/1999, os prazos fixados em meses ou anos contam-se:",
+            "opcoes": [
+                "A) de data a data",
+                "B) a partir do primeiro dia útil do mês",
+                "C) em dobro para a administração",
+                "D) sempre em dias úteis",
+                "E) excluindo os feriados municipais"
+            ],
+            "correta": 0,
+            "comentario": "O art. 66, § 3º, determina a contagem de data a data. Se no mês do vencimento não houver o dia equivalente, o prazo termina no último dia do mês."
+        },
+        {
+            "id": 25124,
+            "enunciado": "O controle de prazos administrativos e legislativos em uma planilha é mais eficiente quando:",
+            "opcoes": [
+                "A) não se registra quem é o responsável",
+                "B) as datas são registradas sem padrão",
+                "C) os processos são anotados apenas em papéis avulsos",
+                "D) cada processo tem data de entrada, prazo, data de vencimento calculada e situação atualizada",
+                "E) a planilha é atualizada uma vez por ano"
+            ],
+            "correta": 3,
+            "comentario": "Uma planilha estruturada permite filtrar, ordenar e destacar prazos próximos do vencimento, evitando perdas de prazo."
+        },
+        {
+            "id": 25125,
+            "enunciado": "Em uma planilha de controle de processos, a coluna C contém as datas de vencimento. Para destacar automaticamente em vermelho os prazos já vencidos, o recurso adequado é:",
+            "opcoes": [
+                "A) o recurso de congelar painéis",
+                "B) a mesclagem das células da coluna",
+                "C) a inserção de comentários em cada célula",
+                "D) a proteção da planilha com senha",
+                "E) a formatação condicional com a regra \"data menor que HOJE()\""
+            ],
+            "correta": 4,
+            "comentario": "A formatação condicional aplica cores conforme uma regra. Comparar a data com a função HOJE() identifica os vencidos."
+        },
+        {
+            "id": 25126,
+            "enunciado": "Uma planilha registra os gastos mensais com material de expediente: janeiro R$ 1.200, fevereiro R$ 900 e março R$ 1.500. A média mensal de gasto no trimestre é:",
+            "opcoes": [
+                "A) R$ 1.300,00",
+                "B) R$ 1.100,00",
+                "C) R$ 900,00",
+                "D) R$ 3.600,00",
+                "E) R$ 1.200,00"
+            ],
+            "correta": 4,
+            "comentario": "Soma: 1.200 + 900 + 1.500 = 3.600. Média: 3.600 ÷ 3 = 1.200."
+        },
+        {
+            "id": 25127,
+            "enunciado": "O setor recebeu 80 requerimentos no mês, dos quais 60 foram respondidos dentro do prazo. O percentual de respostas no prazo foi de:",
+            "opcoes": [
+                "A) 60%",
+                "B) 133%",
+                "C) 80%",
+                "D) 75%",
+                "E) 25%"
+            ],
+            "correta": 3,
+            "comentario": "60 ÷ 80 = 0,75, ou seja, 75%."
+        },
+        {
+            "id": 25128,
+            "enunciado": "Na rotina de expedição de documentos, antes de enviar um ofício, o servidor deve conferir:",
+            "opcoes": [
+                "A) apenas a cor do papel",
+                "B) somente se o envelope está fechado",
+                "C) se o destinatário é conhecido pessoalmente",
+                "D) a opinião dos colegas sobre o conteúdo",
+                "E) a assinatura, o endereçamento, os anexos indicados e o registro de saída"
+            ],
+            "correta": 4,
+            "comentario": "A conferência na expedição evita extravios e retrabalho: verifica-se se o documento está completo, assinado, corretamente endereçado e registrado."
+        },
+        {
+            "id": 25129,
+            "enunciado": "A triagem de documentos recebidos no protocolo consiste em:",
+            "opcoes": [
+                "A) eliminar documentos sem valor sem autorização",
+                "B) separar e classificar os documentos conforme o tipo, a urgência e o setor de destino",
+                "C) arquivar todos os documentos no arquivo permanente",
+                "D) devolver todos os documentos ao remetente",
+                "E) responder aos documentos no próprio protocolo"
+            ],
+            "correta": 1,
+            "comentario": "A triagem organiza o fluxo: identifica o assunto, a prioridade e o destino de cada documento antes da distribuição."
+        },
+        {
+            "id": 25130,
+            "enunciado": "O registro de entrada e saída de documentos, com número, data, origem, destino e assunto, tem como principal finalidade:",
+            "opcoes": [
+                "A) substituir a assinatura das autoridades",
+                "B) permitir o controle e a localização dos documentos a qualquer momento",
+                "C) dispensar a tabela de temporalidade",
+                "D) aumentar o volume de papel no setor",
+                "E) impedir o acesso do cidadão aos documentos"
+            ],
+            "correta": 1,
+            "comentario": "O registro garante a rastreabilidade: é possível saber onde está cada documento e há quanto tempo."
+        },
+        {
+            "id": 25131,
+            "enunciado": "Em uma reunião de trabalho, o documento que lista os assuntos que serão tratados, na ordem prevista, é chamado de:",
+            "opcoes": [
+                "A) ata",
+                "B) certidão",
+                "C) requerimento",
+                "D) ofício circular",
+                "E) pauta"
+            ],
+            "correta": 4,
+            "comentario": "A pauta organiza previamente a reunião. A ata registra o que efetivamente foi tratado e decidido."
+        },
+        {
+            "id": 25132,
+            "enunciado": "Ao organizar a agenda de um gabinete, uma boa prática é:",
+            "opcoes": [
+                "A) confirmar os compromissos somente depois que acontecerem",
+                "B) registrar compromissos com data, horário, local, participantes e assunto, confirmando-os com antecedência",
+                "C) não informar o local dos compromissos",
+                "D) anotar apenas o nome do visitante",
+                "E) marcar vários compromissos no mesmo horário"
+            ],
+            "correta": 1,
+            "comentario": "Uma agenda completa e confirmada evita conflitos de horário e garante a preparação adequada para cada compromisso."
+        },
+        {
+            "id": 25133,
+            "enunciado": "Uma reunião está marcada para as 9h e deve durar 2h30min. Se começar com 20 minutos de atraso e cumprir a duração prevista, terminará às:",
+            "opcoes": [
+                "A) 11h30min",
+                "B) 11h20min",
+                "C) 12h10min",
+                "D) 11h10min",
+                "E) 11h50min"
+            ],
+            "correta": 4,
+            "comentario": "Início real: 9h20min. Somando 2h30min: 9h20min + 2h30min = 11h50min."
+        },
+        {
+            "id": 25134,
+            "enunciado": "Na rotina de escritório, a \"política de mesa limpa\" recomenda que:",
+            "opcoes": [
+                "A) os documentos fiquem espalhados para facilitar o acesso dos colegas",
+                "B) documentos sigilosos ou com dados pessoais não fiquem expostos sobre a mesa quando o servidor se ausentar",
+                "C) todos os papéis sejam jogados fora no fim do dia",
+                "D) o servidor não use papel no trabalho",
+                "E) a mesa seja limpa apenas uma vez por mês"
+            ],
+            "correta": 1,
+            "comentario": "A mesa limpa protege informações: documentos são guardados e a tela do computador é bloqueada quando o servidor se ausenta."
+        },
+        {
+            "id": 25135,
+            "enunciado": "Ao receber 120 processos para análise, com meta de concluir 15 por dia útil, o setor precisará de quantos dias úteis para terminar?",
+            "opcoes": [
+                "A) 10",
+                "B) 8",
+                "C) 6",
+                "D) 15",
+                "E) 12"
+            ],
+            "correta": 1,
+            "comentario": "120 ÷ 15 = 8 dias úteis."
+        },
+        {
+            "id": 25136,
+            "enunciado": "A descrição formal das etapas, responsáveis e regras de um procedimento administrativo, usada para padronizar o trabalho, é o:",
+            "opcoes": [
+                "A) manual de procedimentos (ou procedimento operacional padrão)",
+                "B) regimento eleitoral",
+                "C) diário oficial",
+                "D) certificado de conclusão",
+                "E) organograma"
+            ],
+            "correta": 0,
+            "comentario": "O manual de procedimentos padroniza a execução das tarefas, reduz erros e facilita o treinamento de novos servidores."
+        },
+        {
+            "id": 25137,
+            "enunciado": "São modalidades de licitação previstas na Lei nº 14.133/2021:",
+            "opcoes": [
+                "A) pregão, concurso, convite, dispensa e inexigibilidade",
+                "B) convite, tomada de preços, concorrência, concurso e leilão",
+                "C) pregão, concorrência, concurso, leilão e diálogo competitivo",
+                "D) pregão, convite, tomada de preços, leilão e consulta",
+                "E) concorrência, cotação, convite, pregão e licitação direta"
+            ],
+            "correta": 2,
+            "comentario": "O art. 28 da Lei nº 14.133/2021 prevê cinco modalidades. Convite e tomada de preços deixaram de existir, e dispensa e inexigibilidade são casos de contratação direta, não modalidades."
+        },
+        {
+            "id": 25138,
+            "enunciado": "Na Lei nº 14.133/2021, a modalidade de licitação obrigatória para aquisição de bens e serviços comuns, cujo critério de julgamento pode ser o de menor preço ou o de maior desconto, é o:",
+            "opcoes": [
+                "A) concurso",
+                "B) pregão",
+                "C) diálogo competitivo",
+                "D) leilão",
+                "E) convite"
+            ],
+            "correta": 1,
+            "comentario": "O pregão é a modalidade para bens e serviços comuns, julgados por menor preço ou maior desconto."
+        },
+        {
+            "id": 25139,
+            "enunciado": "A modalidade de licitação usada para a escolha de trabalho técnico, científico ou artístico, com concessão de prêmio ou remuneração ao vencedor, é o:",
+            "opcoes": [
+                "A) pregão",
+                "B) diálogo competitivo",
+                "C) concorrência",
+                "D) leilão",
+                "E) concurso"
+            ],
+            "correta": 4,
+            "comentario": "O concurso escolhe trabalhos técnicos, científicos ou artísticos, com prêmio ou remuneração ao vencedor, conforme as definições do art. 6º da lei."
+        },
+        {
+            "id": 25140,
+            "enunciado": "O leilão, na Lei nº 14.133/2021, é a modalidade utilizada para:",
+            "opcoes": [
+                "A) a alienação de bens imóveis ou de bens móveis inservíveis ou legalmente apreendidos, a quem oferecer o maior lance",
+                "B) a contratação de serviços de limpeza",
+                "C) a compra de material de expediente",
+                "D) a contratação de obras de grande porte",
+                "E) a escolha de trabalhos artísticos"
+            ],
+            "correta": 0,
+            "comentario": "O leilão serve para vender bens da administração, vencendo quem oferecer o maior lance."
+        },
+        {
+            "id": 25141,
+            "enunciado": "Segundo a Lei nº 14.133/2021, o portal oficial destinado à divulgação centralizada e obrigatória dos atos exigidos pela lei, como editais e contratos, é o:",
+            "opcoes": [
+                "A) Portal do Tribunal Superior Eleitoral",
+                "B) Portal da Câmara dos Deputados",
+                "C) Portal Nacional de Contratações Públicas (PNCP)",
+                "D) Sistema de Informações do INSS",
+                "E) Diário Oficial do Município, exclusivamente"
+            ],
+            "correta": 2,
+            "comentario": "O art. 174 cria o PNCP, sítio eletrônico oficial para divulgação centralizada dos atos das contratações públicas."
+        },
+        {
+            "id": 25142,
+            "enunciado": "Na Lei nº 14.133/2021, a fase preparatória da licitação é caracterizada pelo:",
+            "opcoes": [
+                "A) pagamento do contratado",
+                "B) aplicação de sanções ao contratado",
+                "C) julgamento das propostas",
+                "D) planejamento, incluindo a descrição da necessidade, o estudo técnico preliminar e o termo de referência ou projeto básico",
+                "E) recebimento definitivo do objeto"
+            ],
+            "correta": 3,
+            "comentario": "O art. 18 determina que a fase preparatória seja marcada pelo planejamento, com documentos como o estudo técnico preliminar e o termo de referência."
+        },
+        {
+            "id": 25143,
+            "enunciado": "Segundo a Lei nº 14.133/2021, a regra geral é que a fase de habilitação ocorra:",
+            "opcoes": [
+                "A) antes da publicação do edital",
+                "B) antes da fase preparatória",
+                "C) apenas quando houver recurso",
+                "D) somente após a assinatura do contrato",
+                "E) depois da fase de julgamento das propostas"
+            ],
+            "correta": 4,
+            "comentario": "O art. 17 coloca a habilitação depois do julgamento, como regra. A inversão é possível, mediante ato motivado e previsão no edital."
+        },
+        {
+            "id": 25144,
+            "enunciado": "O agente público designado para tomar decisões, acompanhar o trâmite da licitação e conduzir o certame, segundo a Lei nº 14.133/2021, é o:",
+            "opcoes": [
+                "A) procurador do licitante",
+                "B) agente de contratação",
+                "C) auditor do Tribunal de Contas",
+                "D) fiscal do contrato",
+                "E) ordenador de despesas, obrigatoriamente"
+            ],
+            "correta": 1,
+            "comentario": "O art. 8º prevê o agente de contratação, designado entre servidores efetivos ou empregados públicos dos quadros permanentes, preferencialmente."
+        },
+        {
+            "id": 25145,
+            "enunciado": "Na contratação direta por INEXIGIBILIDADE de licitação, prevista na Lei nº 14.133/2021, o que justifica a ausência de licitação é:",
+            "opcoes": [
+                "A) a preferência por empresas locais",
+                "B) a urgência criada por falta de planejamento",
+                "C) a vontade do gestor",
+                "D) a inviabilidade de competição, como no caso de fornecedor exclusivo",
+                "E) o baixo valor da contratação, apenas"
+            ],
+            "correta": 3,
+            "comentario": "A inexigibilidade (art. 74) ocorre quando a competição é inviável. A dispensa (art. 75) ocorre quando a licitação seria possível, mas a lei permite não fazê-la, como em contratações de pequeno valor."
+        },
+        {
+            "id": 25146,
+            "enunciado": "Na instrução de uma minuta de contrato administrativo, o servidor deve verificar se o documento contém, entre outros elementos:",
+            "opcoes": [
+                "A) a lista de todos os licitantes derrotados",
+                "B) a opinião do servidor sobre a empresa",
+                "C) somente a data da sessão de licitação",
+                "D) o objeto, o preço e as condições de pagamento, o prazo de vigência e as obrigações das partes",
+                "E) apenas o nome da empresa e a assinatura do gestor"
+            ],
+            "correta": 3,
+            "comentario": "A Lei nº 14.133/2021 (art. 92) lista cláusulas necessárias do contrato, como objeto, regime de execução, preço, condições de pagamento, prazos e obrigações."
+        },
+        {
+            "id": 25147,
+            "enunciado": "O servidor designado para acompanhar e fiscalizar a execução de um contrato, anotando ocorrências e determinando correções, é o:",
+            "opcoes": [
+                "A) fiscal do contrato",
+                "B) agente de contratação, obrigatoriamente",
+                "C) licitante",
+                "D) pregoeiro",
+                "E) leiloeiro"
+            ],
+            "correta": 0,
+            "comentario": "O art. 117 da Lei nº 14.133/2021 exige que a execução do contrato seja acompanhada e fiscalizada por fiscal designado pela administração."
+        },
+        {
+            "id": 25148,
+            "enunciado": "Um princípio expresso na Lei nº 14.133/2021 que exige que a administração e os licitantes sigam as regras previstas no edital é o da:",
+            "opcoes": [
+                "A) sigilo absoluto do procedimento",
+                "B) escolha pessoal do vencedor",
+                "C) preferência por amigos do gestor",
+                "D) livre negociação de cláusulas após o resultado",
+                "E) vinculação ao edital"
+            ],
+            "correta": 4,
+            "comentario": "O art. 5º inclui a vinculação ao edital entre os princípios: as regras publicadas obrigam a administração e os participantes."
+        },
+        {
+            "id": 25149,
+            "enunciado": "Segundo a Constituição Federal, a investidura em cargo ou emprego público depende, em regra, de:",
+            "opcoes": [
+                "A) aprovação prévia em concurso público de provas ou de provas e títulos",
+                "B) apresentação de currículo e carta de recomendação",
+                "C) indicação de vereador",
+                "D) entrevista com o chefe do setor",
+                "E) sorteio entre os inscritos"
+            ],
+            "correta": 0,
+            "comentario": "O art. 37, II, exige concurso público, ressalvadas as nomeações para cargos em comissão declarados em lei de livre nomeação e exoneração."
+        },
+        {
+            "id": 25150,
+            "enunciado": "Os cargos em comissão, segundo o art. 37, V, da Constituição Federal, destinam-se apenas às atribuições de:",
+            "opcoes": [
+                "A) direção, chefia e assessoramento",
+                "B) atividades técnicas permanentes de qualquer natureza",
+                "C) execução de obras",
+                "D) atendimento ao público em geral",
+                "E) serviços de limpeza e vigilância"
+            ],
+            "correta": 0,
+            "comentario": "Os cargos em comissão só podem existir para funções de direção, chefia e assessoramento."
+        },
+        {
+            "id": 25151,
+            "enunciado": "Segundo a Constituição Federal, o servidor nomeado para cargo de provimento efetivo em virtude de concurso público torna-se estável após:",
+            "opcoes": [
+                "A) cinco anos de efetivo exercício",
+                "B) três anos de efetivo exercício",
+                "C) a posse, imediatamente",
+                "D) dois anos de efetivo exercício",
+                "E) um ano de efetivo exercício"
+            ],
+            "correta": 1,
+            "comentario": "O art. 41 da Constituição prevê a estabilidade após três anos de efetivo exercício, com avaliação especial de desempenho por comissão."
+        },
+        {
+            "id": 25152,
+            "enunciado": "O servidor público estável só perderá o cargo, conforme a Constituição Federal:",
+            "opcoes": [
+                "A) por simples reclamação de um cidadão",
+                "B) por decisão pessoal do chefe imediato",
+                "C) por ter opinião política diferente da maioria",
+                "D) por mudança de governo",
+                "E) em virtude de sentença judicial transitada em julgado, mediante processo administrativo com ampla defesa ou mediante avaliação periódica de desempenho, na forma de lei complementar"
+            ],
+            "correta": 4,
+            "comentario": "O art. 41, § 1º, lista essas três hipóteses de perda do cargo pelo servidor estável, sempre com garantias de defesa."
+        },
+        {
+            "id": 25153,
+            "enunciado": "Em regra, a Constituição Federal VEDA a acumulação remunerada de cargos públicos. É exceção permitida, havendo compatibilidade de horários:",
+            "opcoes": [
+                "A) a de dois cargos de professor",
+                "B) a de dois cargos administrativos quaisquer",
+                "C) a de um cargo de vereador com dois cargos técnicos",
+                "D) a de qualquer cargo com qualquer emprego público",
+                "E) a de três cargos de professor"
+            ],
+            "correta": 0,
+            "comentario": "O art. 37, XVI, permite, com compatibilidade de horários, dois cargos de professor; um de professor com outro técnico ou científico; ou dois de profissionais de saúde com profissões regulamentadas."
+        },
+        {
+            "id": 25154,
+            "enunciado": "O princípio constitucional que garante ao servidor acusado em processo administrativo disciplinar o direito de se defender e de conhecer as provas contra ele é o:",
+            "opcoes": [
+                "A) da anterioridade tributária",
+                "B) da irretroatividade da lei mais benéfica",
+                "C) do contraditório e da ampla defesa",
+                "D) da soberania popular",
+                "E) da livre iniciativa"
+            ],
+            "correta": 2,
+            "comentario": "O art. 5º, LV, da Constituição assegura aos litigantes, em processo judicial ou administrativo, o contraditório e a ampla defesa."
+        },
+        {
+            "id": 25155,
+            "enunciado": "O servidor público que, no exercício da função, causa dano a terceiro: a administração responde perante a vítima e pode, depois, cobrar do servidor por meio de ação regressiva quando houver:",
+            "opcoes": [
+                "A) qualquer dano, independentemente de culpa",
+                "B) reclamação na ouvidoria",
+                "C) dolo ou culpa do servidor",
+                "D) apenas condenação criminal",
+                "E) pedido da vítima"
+            ],
+            "correta": 2,
+            "comentario": "O art. 37, § 6º, prevê a responsabilidade objetiva do Estado e o direito de regresso contra o agente responsável nos casos de dolo ou culpa."
+        },
+        {
+            "id": 25156,
+            "enunciado": "Segundo a Constituição Federal, é garantido ao servidor público civil:",
+            "opcoes": [
+                "A) o direito de usar bens públicos para fins particulares",
+                "B) o direito à livre associação sindical",
+                "C) o direito de acumular quaisquer cargos",
+                "D) a estabilidade imediata na posse",
+                "E) a dispensa de concurso para cargos efetivos"
+            ],
+            "correta": 1,
+            "comentario": "O art. 37, VI, garante ao servidor público civil o direito à livre associação sindical."
+        },
+        {
+            "id": 25157,
+            "enunciado": "O regime jurídico estatutário, aplicado aos servidores efetivos dos órgãos públicos, caracteriza-se por:",
+            "opcoes": [
+                "A) permitir a demissão sem qualquer processo",
+                "B) ter direitos, deveres, proibições e regime disciplinar definidos em lei própria do ente",
+                "C) ser regido exclusivamente pela CLT",
+                "D) depender de contrato individual negociado com o servidor",
+                "E) dispensar concurso público"
+            ],
+            "correta": 1,
+            "comentario": "No regime estatutário, a relação do servidor com o órgão é definida por lei (o estatuto), e não por contrato de trabalho."
+        },
+        {
+            "id": 25158,
+            "enunciado": "A sindicância e o processo administrativo disciplinar (PAD) são instrumentos destinados a:",
+            "opcoes": [
+                "A) avaliar o desempenho para promoção",
+                "B) selecionar novos servidores",
+                "C) elaborar o orçamento do órgão",
+                "D) apurar irregularidades praticadas por servidores, assegurando o contraditório e a ampla defesa",
+                "E) conceder férias e licenças"
+            ],
+            "correta": 3,
+            "comentario": "Sindicância e PAD apuram responsabilidades funcionais. As penalidades mais graves exigem PAD, com garantia de defesa."
+        },
+        {
+            "id": 25159,
+            "enunciado": "Na gestão documental, documentos em papel com dados pessoais que atingiram o prazo de eliminação, conforme a tabela de temporalidade e com a devida autorização, devem ser descartados:",
+            "opcoes": [
+                "A) entregues a qualquer interessado",
+                "B) em caixas abertas no corredor",
+                "C) no lixo comum, inteiros",
+                "D) doados como papel de rascunho",
+                "E) por fragmentação ou outro meio que impeça a leitura e a reconstituição"
+            ],
+            "correta": 4,
+            "comentario": "O descarte seguro protege os dados pessoais (princípio da segurança da LGPD) e evita vazamentos."
+        },
+        {
+            "id": 25160,
+            "enunciado": "Ao digitalizar processos que contêm dados pessoais, o setor deve:",
+            "opcoes": [
+                "A) armazenar os arquivos em sistemas institucionais com controle de acesso",
+                "B) salvar os arquivos em pendrives pessoais",
+                "C) publicar os arquivos na internet para facilitar a consulta",
+                "D) enviar as cópias para o e-mail particular dos servidores",
+                "E) deixar as pastas digitais sem senha para todos da rede"
+            ],
+            "correta": 0,
+            "comentario": "A segurança da informação exige que os documentos digitais fiquem em ambiente controlado, acessível apenas a quem precisa deles para o trabalho."
+        },
+        {
+            "id": 25161,
+            "enunciado": "Um servidor recebe um pedido, por telefone, de alguém que se diz advogado e solicita o CPF e o endereço de um cidadão que protocolou um requerimento. O servidor deve:",
+            "opcoes": [
+                "A) pedir o número do cartão de crédito do solicitante para confirmar a identidade",
+                "B) fornecer os dados, pois o solicitante é advogado",
+                "C) não fornecer os dados por telefone e orientar o solicitante a fazer pedido formal, que será analisado conforme a lei",
+                "D) fornecer apenas o CPF",
+                "E) divulgar os dados e avisar o cidadão depois"
+            ],
+            "correta": 2,
+            "comentario": "Dados pessoais não podem ser repassados sem base legal e sem verificação. Pedidos devem ser formais e analisados pelo setor competente."
+        },
+        {
+            "id": 25162,
+            "enunciado": "Na rotina de protocolo, o princípio da necessidade da LGPD orienta o servidor a:",
+            "opcoes": [
+                "A) guardar os dados para sempre, mesmo sem utilidade",
+                "B) coletar do cidadão apenas os dados indispensáveis para registrar e atender o pedido",
+                "C) exigir cópias de documentos que não têm relação com o pedido",
+                "D) coletar o máximo de dados possível, para uso futuro",
+                "E) pedir sempre informações de saúde e religião"
+            ],
+            "correta": 1,
+            "comentario": "O princípio da necessidade limita o tratamento ao mínimo necessário para a finalidade."
+        },
+        {
+            "id": 25163,
+            "enunciado": "Ao publicar no portal da Câmara a lista de pessoas atendidas em uma audiência pública, o setor deve:",
+            "opcoes": [
+                "A) divulgar o endereço residencial de cada participante",
+                "B) publicar a lista sem qualquer critério",
+                "C) publicar todos os dados de cadastro, inclusive telefone",
+                "D) incluir fotos dos documentos de identidade",
+                "E) divulgar apenas o necessário para a finalidade, evitando expor dados como CPF completo e endereço"
+            ],
+            "correta": 4,
+            "comentario": "A publicidade dos atos deve ser conciliada com a proteção de dados: divulga-se o que é necessário, preservando dados pessoais desnecessários."
+        },
+        {
+            "id": 25164,
+            "enunciado": "Uma ferramenta de inteligência artificial generativa pode ser usada nas rotinas administrativas para:",
+            "opcoes": [
+                "A) guardar senhas dos sistemas da Câmara",
+                "B) substituir o registro formal de protocolo",
+                "C) decidir sozinha pedidos de cidadãos",
+                "D) auxiliar na redação de rascunhos e resumos, que devem ser revisados pelo servidor",
+                "E) assinar documentos oficiais em nome da autoridade"
+            ],
+            "correta": 3,
+            "comentario": "A IA pode apoiar tarefas de texto, mas a decisão, a revisão e a responsabilidade são sempre do servidor."
+        },
+        {
+            "id": 25165,
+            "enunciado": "Antes de usar um texto produzido por IA generativa em um ofício, o servidor deve conferir, principalmente:",
+            "opcoes": [
+                "A) se as informações, os números e as citações de leis estão corretos e se o texto segue a redação oficial",
+                "B) somente se a fonte usada é bonita",
+                "C) nada, pois a IA não comete erros",
+                "D) apenas se o texto tem o tamanho adequado",
+                "E) apenas se o texto tem muitas palavras difíceis"
+            ],
+            "correta": 0,
+            "comentario": "Ferramentas de IA podem inventar informações (\"alucinar\"). A revisão humana garante a correção e a adequação ao padrão oficial."
+        },
+        {
+            "id": 25166,
+            "enunciado": "Não é recomendado inserir em ferramentas públicas de IA generativa:",
+            "opcoes": [
+                "A) um texto público já divulgado no portal",
+                "B) dados pessoais de cidadãos e informações sigilosas do órgão",
+                "C) um pedido para melhorar a clareza de um texto genérico",
+                "D) um pedido de sugestão de títulos para um evento",
+                "E) uma pergunta sobre regras gerais de pontuação"
+            ],
+            "correta": 1,
+            "comentario": "O conteúdo enviado a ferramentas externas pode ser armazenado por terceiros. Dados pessoais e sigilosos devem ficar fora."
+        },
+        {
+            "id": 25167,
+            "enunciado": "No Word, para gerar automaticamente vários ofícios iguais, cada um com o nome e o endereço de um vereador retirados de uma planilha, o servidor deve usar:",
+            "opcoes": [
+                "A) o Pincel de Formatação",
+                "B) o Controle de Alterações",
+                "C) a Mala Direta",
+                "D) a Quebra de seção",
+                "E) o Sumário automático"
+            ],
+            "correta": 2,
+            "comentario": "A Mala Direta combina um documento-modelo com uma lista de dados, gerando documentos personalizados automaticamente."
+        },
+        {
+            "id": 25168,
+            "enunciado": "Em uma planilha de controle de protocolos, a coluna B traz a situação (\"Pendente\" ou \"Concluído\"). Para contar quantos estão pendentes, usa-se:",
+            "opcoes": [
+                "A) =MÉDIA(B2:B200;\"Pendente\")",
+                "B) =CONT.NÚM(B2:B200)",
+                "C) =SOMA(B2:B200)",
+                "D) =MÁXIMO(B2:B200)",
+                "E) =CONT.SE(B2:B200;\"Pendente\")"
+            ],
+            "correta": 4,
+            "comentario": "CONT.SE conta as células de um intervalo que atendem ao critério informado."
+        },
+        {
+            "id": 25169,
+            "enunciado": "Para enviar a vários setores um mesmo comunicado por e-mail sem expor a lista completa de destinatários externos, o servidor deve usar o campo:",
+            "opcoes": [
+                "A) Assunto",
+                "B) Cco (cópia oculta)",
+                "C) Anexo",
+                "D) Cc, com todos os endereços",
+                "E) Para, com todos os endereços"
+            ],
+            "correta": 1,
+            "comentario": "Em Cco, cada destinatário recebe a mensagem sem ver os outros endereços, protegendo dados pessoais."
+        },
+        {
+            "id": 25170,
+            "enunciado": "Ao receber um e-mail com anexo inesperado, de remetente desconhecido, com o título \"Intimação urgente – abra agora\", o servidor deve:",
+            "opcoes": [
+                "A) responder pedindo mais informações",
+                "B) encaminhar para todos os colegas",
+                "C) abrir o anexo para verificar a intimação",
+                "D) baixar o anexo no computador pessoal",
+                "E) não abrir o anexo e comunicar a equipe de TI"
+            ],
+            "correta": 4,
+            "comentario": "Mensagens urgentes e inesperadas com anexos são típicas de phishing e podem conter malware."
+        },
+        {
+            "id": 25171,
+            "enunciado": "Um servidor precisa transformar um ofício elaborado no Word em um arquivo que preserve a formatação e possa ser enviado ao destinatário sem risco de alteração acidental. Ele deve:",
+            "opcoes": [
+                "A) salvar como planilha .xlsx",
+                "B) copiar o texto no corpo do e-mail sem formatação",
+                "C) salvar ou exportar o documento em PDF",
+                "D) salvar em formato .txt",
+                "E) imprimir e tirar foto com o celular"
+            ],
+            "correta": 2,
+            "comentario": "O PDF preserva o layout em qualquer computador e é o formato usual para o envio de documentos oficiais."
+        },
+        {
+            "id": 25172,
+            "enunciado": "O uso de autenticação em dois fatores nos sistemas da Câmara contribui para:",
+            "opcoes": [
+                "A) eliminar a necessidade de antivírus",
+                "B) permitir que a senha seja compartilhada",
+                "C) dificultar o acesso indevido mesmo que a senha do servidor seja descoberta",
+                "D) acelerar a internet do órgão",
+                "E) dispensar o uso de senhas"
+            ],
+            "correta": 2,
+            "comentario": "O segundo fator (código no celular, aplicativo ou biometria) impede o acesso apenas com a senha."
+        },
+        {
+            "id": 25173,
+            "enunciado": "Fazer cópias de segurança (backup) periódicas das planilhas de controle de prazos do setor serve para:",
+            "opcoes": [
+                "A) permitir a recuperação dos dados em caso de falha, exclusão acidental ou ataque",
+                "B) evitar o uso de senhas",
+                "C) aumentar o tamanho das planilhas",
+                "D) impedir que outros setores vejam as planilhas",
+                "E) substituir a tabela de temporalidade"
+            ],
+            "correta": 0,
+            "comentario": "O backup garante a continuidade do trabalho se os arquivos originais forem perdidos ou corrompidos, inclusive por ransomware."
+        },
+        {
+            "id": 25174,
+            "enunciado": "No Excel, para impedir que colegas alterem por engano as fórmulas de uma planilha compartilhada, pode-se usar o recurso:",
+            "opcoes": [
+                "A) Congelar Painéis",
+                "B) Proteger Planilha, na guia Revisão",
+                "C) Inserir Gráfico",
+                "D) Classificar de A a Z",
+                "E) Mesclar e Centralizar"
+            ],
+            "correta": 1,
+            "comentario": "Proteger Planilha impede alterações em células bloqueadas, permitindo liberar apenas as células de preenchimento."
+        },
+        {
+            "id": 25175,
+            "enunciado": "Ao compartilhar com outro setor uma pasta na nuvem com documentos da Câmara, a prática mais segura é:",
+            "opcoes": [
+                "A) dar permissão de edição a todos os contatos do e-mail",
+                "B) compartilhar a senha da conta do setor",
+                "C) publicar o link nas redes sociais",
+                "D) conceder acesso apenas às pessoas que precisam, com permissão adequada (leitura ou edição)",
+                "E) gerar um link público acessível a qualquer pessoa na internet"
+            ],
+            "correta": 3,
+            "comentario": "O compartilhamento deve seguir o princípio do menor privilégio: cada pessoa recebe apenas o acesso necessário."
+        },
+        {
+            "id": 25176,
+            "enunciado": "Para organizar arquivos digitais de forma que sejam encontrados facilmente, uma boa prática é:",
+            "opcoes": [
+                "A) salvar tudo na área de trabalho com nomes como \"documento1\"",
+                "B) guardar todos os arquivos em uma única pasta sem nome",
+                "C) adotar uma estrutura de pastas por assunto ou ano e nomes padronizados, como \"2026_Oficio_015_Secretaria\"",
+                "D) apagar os arquivos após a impressão",
+                "E) usar nomes diferentes para cada versão sem critério"
+            ],
+            "correta": 2,
+            "comentario": "Pastas organizadas e nomes padronizados facilitam a busca, a gestão documental e o trabalho em equipe."
+        },
+        {
+            "id": 25177,
+            "enunciado": "O tratamento de dados pessoais pelos servidores da Câmara no atendimento é permitido porque:",
+            "opcoes": [
+                "A) é necessário ao cumprimento das atribuições legais e à execução de políticas públicas, observados os princípios da LGPD",
+                "B) a LGPD não se aplica ao Poder Legislativo",
+                "C) qualquer uso é permitido dentro do prédio",
+                "D) os dados passam a pertencer ao servidor que os recebeu",
+                "E) o cidadão perde seus direitos ao fazer um pedido"
+            ],
+            "correta": 0,
+            "comentario": "O poder público pode tratar dados para cumprir suas atribuições legais (art. 23 da LGPD), mas sempre com finalidade, necessidade, segurança e transparência."
+        },
+        {
+            "id": 25178,
+            "enunciado": "Ao identificar que um sistema mostra a qualquer servidor os dados completos de todos os cidadãos atendidos, inclusive de outros setores, o servidor deve:",
+            "opcoes": [
+                "A) ignorar, pois não foi ele quem criou o sistema",
+                "B) aproveitar para consultar dados de conhecidos",
+                "C) divulgar o problema nas redes sociais antes de comunicar o órgão",
+                "D) comunicar a situação ao responsável pela TI ou pelo tratamento de dados, para ajuste dos acessos",
+                "E) copiar os dados para uma planilha pessoal"
+            ],
+            "correta": 3,
+            "comentario": "Acessos excessivos violam a segurança e a necessidade. Comunicar o problema permite corrigir as permissões e evitar incidentes."
+        },
+        {
+            "id": 25179,
+            "enunciado": "Na rotina administrativa, o uso responsável de ferramentas digitais inclui:",
+            "opcoes": [
+                "A) desativar o antivírus quando ele deixar o computador lento",
+                "B) usar a mesma senha em todos os sistemas",
+                "C) deixar a sessão aberta para os colegas usarem",
+                "D) utilizar contas institucionais, manter sistemas atualizados e bloquear o computador ao se ausentar",
+                "E) instalar programas de fontes desconhecidas para agilizar o trabalho"
+            ],
+            "correta": 3,
+            "comentario": "Essas práticas reduzem riscos de acesso indevido, malware e vazamento de dados."
+        },
+        {
+            "id": 25180,
+            "enunciado": "No PowerPoint, para preparar a apresentação de um relatório na reunião da Mesa e consultar anotações durante a fala sem que o público as veja, o servidor deve usar:",
+            "opcoes": [
+                "A) a guia Transições",
+                "B) a impressão das anotações para o público",
+                "C) o Modo de Exibição do Apresentador",
+                "D) a Classificação de Slides",
+                "E) o Slide Mestre"
+            ],
+            "correta": 2,
+            "comentario": "O Modo do Apresentador mostra ao orador as anotações e o próximo slide, enquanto o público vê apenas o slide atual."
         }
     ]
 };
