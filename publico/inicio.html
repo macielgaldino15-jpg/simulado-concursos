@@ -261,6 +261,14 @@
     // Botões de compra: usam o link de checkout definido em rodape.js (EMPRESA.linkCompra)
     (function () {
         var link = (window.EMPRESA && EMPRESA.linkCompra) || '';
+        // Repassa as UTMs do anúncio para o checkout, para a Kiwify mostrar de onde veio cada venda
+        try {
+            var origem = new URLSearchParams(location.search), utm = [];
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src'].forEach(function (k) {
+                if (origem.get(k)) utm.push(k + '=' + encodeURIComponent(origem.get(k)));
+            });
+            if (link && utm.length) link += (link.indexOf('?') < 0 ? '?' : '&') + utm.join('&');
+        } catch (e) {}
         if (!link) return;
         document.querySelectorAll('.js-comprar').forEach(function (a) {
             a.href = link;
