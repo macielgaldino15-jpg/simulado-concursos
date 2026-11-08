@@ -341,7 +341,8 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
 
   // ---------- Quiz ----------
   var st = { step: 0, picked: null, score: 0, done: false };
-  var L = ['A', 'B', 'C', 'D'];
+  var quizIniciado = false;
+  var L =['A', 'B', 'C', 'D'];
   function render() {
     var el = $('quiz');
     if (st.done) {
@@ -372,7 +373,13 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
     html += '<button type="button" class="next" id="prox"' + (ans ? '' : ' disabled') + '>' + (st.step < 2 ? 'Próxima questão' : 'Ver meu resultado') + '</button></div>';
     el.innerHTML = html;
     el.querySelectorAll('.opt').forEach(function (b) {
-      b.onclick = function () { if (st.picked !== null) return; var i = +b.dataset.i; st.picked = i; if (i === Q[st.step].c) st.score++; render(); };
+      b.onclick = function () {
+        if (st.picked !== null) return;
+        var i = +b.dataset.i; st.picked = i; if (i === Q[st.step].c) st.score++;
+        // Pixel: quiz iniciado = respondeu a 1ª pergunta (uma vez por visita)
+        if (st.step === 0 && !quizIniciado) { quizIniciado = true; if (window.fbq) fbq('trackCustom', 'QuizIniciado'); }
+        render();
+      };
     });
     $('prox').onclick = function () { if (st.step < 2) { st.step++; st.picked = null; } else st.done = true; render(); };
   }
