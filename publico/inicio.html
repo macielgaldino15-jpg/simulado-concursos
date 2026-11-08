@@ -1,319 +1,398 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulados Concursos — 3.263 questões comentadas no formato da prova</title>
-    <meta name="description" content="Simulados para PRF, Petrobras, Câmara de Rio Branco e Polícia Civil, com cronômetro, gabarito comentado e desempenho por matéria. Pagamento único de R$ 29,90 e acesso vitalício.">
-    <meta property="og:title" content="Simulados Concursos — 3.263 questões comentadas">
-    <meta property="og:description" content="Treine com a prova no formato do edital. Pagamento único, acesso vitalício.">
-    <meta name="theme-color" content="#0b1324">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = { theme: { extend: { colors: { navy: '#0b1324', brand: { 400: '#38bdf8', 500: '#0284c7', 700: '#0369a1' } }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
-        .hero-bg { background: radial-gradient(ellipse at 78% 35%, #12345a 0%, #0b1324 58%); }
-        .opcao { transition: border-color .15s, background-color .15s; }
-        .opcao:not([disabled]):hover { border-color: #0284c7; background: #f0f7ff; }
-        details > summary { list-style: none; cursor: pointer; }
-        details > summary::-webkit-details-marker { display: none; }
-        details[open] .seta { transform: rotate(180deg); }
-        .seta { transition: transform .2s; }
-    </style>
-    <!-- Meta Pixel (anúncios do Instagram/Facebook) -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1160768672955431');
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL' });
-    </script>
-    <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1160768672955431&amp;ev=PageView&amp;noscript=1"></noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado Câmara de Rio Branco — no formato do edital IDIB</title>
+<meta name="description" content="Simulados no formato do edital IDIB da Câmara de Rio Branco, Nível Médio e Superior, com nota pelos pesos do edital. 1.212 questões comentadas + PRF, Petrobras e Polícia Civil. R$ 29,90, pagamento único.">
+<meta property="og:title" content="Se a prova fosse hoje, você passaria?">
+<meta property="og:description" content="Simulados no formato do edital, com gabarito comentado. Pagamento único de R$ 29,90 e acesso vitalício.">
+<meta name="theme-color" content="#0A1830">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F6FA;color:#0F172A;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#1E5FC2}a:hover{color:#164A99}
+h1,h2,h3{margin:0}
+.sg{font-family:'Space Grotesk',sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px;margin:0 auto;padding:0 20px}
+.sec{padding:72px 0}
+.h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,4vw,40px);line-height:1.1;letter-spacing:-.01em}
+.muted{color:#475569}
+.btn-y{display:flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;background:#F5B800;color:#1A1300!important;font-weight:700;text-decoration:none;border:none;cursor:pointer;font-family:Inter,sans-serif}
+.btn-y:hover{background:#FFC61A}
+/* topo */
+header{background:#0A1830;border-bottom:1px solid #1B2C4A}
+header .wrap{padding-top:14px;padding-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.logo i{width:34px;height:34px;border-radius:9px;background:#1E6FD9;display:flex;align-items:center;justify-content:center}
+.logo span{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;line-height:1.1}
+.aluno{color:#DCE5F2!important;font-size:14px;font-weight:600;text-decoration:none;border:1px solid #33476B;border-radius:10px;padding:10px 14px;white-space:nowrap}
+/* hero */
+.hero{background-color:#0A1830;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px;min-height:calc(100vh - 63px);min-height:calc(100svh - 63px);display:flex;align-items:center;padding:40px 0}
+.hero .narrow{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center;width:100%}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,184,0,.12);border:1px solid rgba(245,184,0,.45);color:#F5B800;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:#F5B800;animation:blink 1.4s ease-in-out infinite}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(36px,7vw,66px);line-height:1.03;letter-spacing:-.02em;color:#fff}
+.hero h1 em{font-style:normal;color:#F5B800}
+.hero p{margin:0;font-size:17px;line-height:1.5;color:#C3CFE2;max-width:540px}
+.pulse{min-height:66px;padding:0 32px;border-radius:999px;font-size:19px;margin-top:6px;animation:pulse 1.6s ease-in-out infinite;box-shadow:0 0 0 0 rgba(245,184,0,.7)}
+@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(245,184,0,.7)}50%{transform:scale(1.05);box-shadow:0 0 0 18px rgba(245,184,0,0)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(245,184,0,0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hint{font-size:14px;color:#9FB0CB}
+/* quiz */
+#teste{background:#0F2140;padding:24px 0;min-height:100vh;min-height:100svh;display:flex;align-items:center}
+#teste[hidden]{display:none}
+#teste.reveal{animation:reveal .5s ease-out both}
+@keyframes reveal{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.card{max-width:560px;margin:0 auto;background:#fff;border-radius:20px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:20px}
+.qsub{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1E5FC2}
+.qn{font-size:13px;font-weight:600;color:#475569;white-space:nowrap}
+.bar{height:6px;background:#E6EBF3;border-radius:999px;overflow:hidden;margin-top:12px}
+.bar div{height:6px;background:#1E6FD9;border-radius:999px;transition:width .3s}
+.qtext{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;line-height:1.32;margin:16px 0 14px;min-height:72px;display:flex;align-items:center}
+.opt{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:10px 14px;border-radius:12px;border:1.5px solid #D5DDE8;background:#fff;color:#0F172A;text-align:left;font-family:Inter,sans-serif;font-size:15px;line-height:1.3;cursor:pointer;margin-bottom:8px}
+.opt b{min-width:22px}.opt span{flex:1}.opt i{font-style:normal;font-weight:700;min-width:14px}
+.opt.ok{background:#ECFDF3;border-color:#15803D;color:#14532D}
+.opt.bad{background:#FEF2F2;border-color:#B91C1C;color:#7F1D1D}
+.opt.off{color:#64748B;border-color:#E2E8F0}
+.why{background:#F1F5FB;border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.45;color:#334155;margin-top:6px}
+.why strong{color:#0F172A}
+.next{width:100%;min-height:50px;border:none;border-radius:12px;background:#0A1830;color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:700;cursor:pointer;margin-top:10px}
+.next:disabled{background:#E6EBF3;color:#64748B;cursor:default}
+.res{text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center;padding:18px 4px}
+.res .sc{font-family:'Space Grotesk',sans-serif;font-size:72px;font-weight:700;line-height:1}
+.res .t{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;line-height:1.3;margin:0}
+.res p{margin:0;font-size:15px;line-height:1.55;color:#475569}
+.linkbtn{background:none;border:none;color:#475569;font-family:Inter,sans-serif;font-size:14px;text-decoration:underline;cursor:pointer;min-height:44px}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.box{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.box .n{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#C2410C}
+.box h3{font-size:18px}.box p{margin:0;font-size:15px;line-height:1.55;color:#475569}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;text-align:center}
+.num{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:20px 12px;min-height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.num b{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,7vw,38px);line-height:1;white-space:nowrap}
+.num span{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#475569}
+.step i{width:44px;height:44px;border-radius:12px;background:#1E6FD9;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;font-style:normal}
+.step{display:flex;flex-direction:column;gap:10px}.step h3{font-size:19px}.step p{margin:0;font-size:15px;line-height:1.55;color:#475569}
+.dark{background:#0A1830}
+.sim{background:#12223F;border:1px solid #22375C;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.sim.dest{border:2px solid #F5B800;background:#15284A}
+.sim .h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.sim h3{font-size:19px;color:#fff}.sim .q{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;color:#F5B800;white-space:nowrap}
+.sim p{margin:0;font-size:14px;line-height:1.55;color:#B4C2D8}
+.tagb{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:6px;padding:4px 8px;background:#F5B800;color:#1A1300}
+.tagb.b{background:#22375C;color:#C3CFE2}
+/* oferta */
+#oferta{padding:48px 0}
+.offer{max-width:560px;margin:0 auto;background:#fff;border:2px solid #0A1830;border-radius:22px;padding:24px 20px;display:flex;flex-direction:column;gap:14px;text-align:center}
+.chk{display:flex;gap:10px;align-items:flex-start;text-align:left;font-size:15px;line-height:1.35}
+.chk svg{flex:none;margin-top:2px}
+.gar{background:#F1F5FB;border-radius:14px;padding:12px;display:flex;gap:10px;align-items:center;text-align:left;font-size:13px;line-height:1.4;color:#334155}
+details{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:18px 20px}
+details summary{cursor:pointer;list-style:none;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:12px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:'+';font-weight:700;color:#1E5FC2}
+details[open] summary::after{content:'–'}
+details p{margin:10px 0 0;font-size:15px;line-height:1.55;color:#475569}
+/* depoimentos (só aparecem com depoimentos reais em rodape.js) */
+#depoimentos[hidden]{display:none}
+.dep{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:22px;margin:0}
+.dep blockquote{margin:0;line-height:1.6;color:#334155}.dep figcaption{margin-top:12px;font-weight:700}
+/* rodapé (preenchido por rodape.js) */
+#rodape{background:#F4F6FA;border-top:1px solid #E2E8F0;padding:24px 20px;text-align:center;font-size:12px;color:#64748B;line-height:1.5}
+#rodape p{margin:0 0 6px}#rodape a{color:#475569}
+#rodape p:nth-child(2),#rodape p:nth-child(3){display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px}
+@media (prefers-reduced-motion:reduce){.pulse,.badge .dot,#teste.reveal{animation:none}html{scroll-behavior:auto}}
+</style>
+<!-- Meta Pixel (anúncios do Instagram/Facebook) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1160768672955431');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL' });
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1160768672955431&amp;ev=PageView&amp;noscript=1"></noscript>
 </head>
-<body class="bg-white text-slate-800 min-h-screen flex flex-col">
+<body>
 
-<!-- ================= TOPO + HERO ================= -->
-<div class="hero-bg text-white">
-    <header class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between gap-3">
-        <a href="/" class="flex items-center gap-2.5 sm:gap-3 min-w-0">
-            <span class="shrink-0 w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
-            </span>
-            <span class="font-extrabold tracking-tight text-base sm:text-lg whitespace-nowrap">Simulados Concursos</span>
-        </a>
-        <a href="/entrar" class="whitespace-nowrap text-sm font-bold px-3 sm:px-4 py-2 rounded-xl border border-slate-600 hover:border-slate-300 transition">Já sou aluno</a>
-    </header>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/conheca" aria-label="Simulados Concursos">
+      <i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></i>
+      <span>Simulados Concursos</span>
+    </a>
+    <a class="aluno" href="/entrar">Já sou aluno</a>
+  </div>
+</header>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-16 sm:pt-14 sm:pb-24 grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
-        <div>
-            <p class="text-brand-400 font-extrabold uppercase tracking-[0.18em] text-xs sm:text-sm">PRF · Petrobras · Câmara de Rio Branco · Polícia Civil</p>
-            <h1 class="mt-4 text-4xl sm:text-6xl font-black tracking-tight leading-[1.02]">Treine com a prova no formato do edital.</h1>
-            <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-xl">São <b class="text-white">3.263 questões comentadas</b>, com cronômetro, gabarito explicado e relatório de desempenho por matéria. Você descobre onde está errando antes do dia da prova.</p>
-            <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
-                <a href="#preco" class="js-comprar inline-flex justify-center items-center gap-2 bg-amber-400 hover:bg-amber-300 text-navy font-black text-lg px-8 py-4 rounded-full transition">
-                    Quero acessar por R$ 29,90
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </a>
-                <a href="#teste" class="text-center font-bold text-slate-300 hover:text-white underline underline-offset-4">Testar uma questão grátis</a>
-            </div>
-            <p class="mt-5 text-sm text-slate-400">Pagamento único · Acesso vitalício · Garantia de 7 dias</p>
-        </div>
-
-        <!-- Celular -->
-        <div class="flex justify-center lg:justify-end" aria-hidden="true">
-            <div class="w-[280px] sm:w-[300px] rounded-[46px] bg-slate-950 p-3 rotate-3 shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
-                <div class="rounded-[36px] bg-slate-50 text-navy overflow-hidden">
-                    <div class="bg-brand-500 text-white px-5 pt-7 pb-4 flex justify-between items-center text-sm font-extrabold">
-                        <span>Simulado PRF</span>
-                        <span class="flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>3:42:18</span>
-                    </div>
-                    <div class="h-1.5 bg-slate-200"><div class="h-1.5 w-[38%] bg-amber-400"></div></div>
-                    <div class="p-5 space-y-2">
-                        <p class="text-[11px] font-extrabold uppercase tracking-wider text-brand-700">Questão 23 de 60</p>
-                        <p class="text-[15px] font-bold leading-snug">Um condutor de 72 anos deve renovar o exame de aptidão física e mental a cada:</p>
-                        <div class="border-2 border-slate-200 rounded-xl px-3 py-2 text-sm font-semibold">A) 10 anos</div>
-                        <div class="border-2 border-emerald-700 bg-emerald-50 text-emerald-900 rounded-xl px-3 py-2 text-sm font-extrabold flex justify-between">B) 3 anos <span>✓</span></div>
-                        <div class="border-2 border-slate-200 rounded-xl px-3 py-2 text-sm font-semibold">C) 2 anos</div>
-                        <div class="border-2 border-slate-200 rounded-xl px-3 py-2 text-sm font-semibold">D) 1 ano</div>
-                        <div class="border-2 border-slate-200 rounded-xl px-3 py-2 text-sm font-semibold">E) 5 anos</div>
-                        <div class="bg-slate-100 rounded-xl p-3 text-xs leading-relaxed text-slate-600"><b class="text-navy">Comentário:</b> a partir dos 70 anos, a renovação é a cada 3 anos (art. 147, §2º, do CTB).</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- ================= NÚMEROS ================= -->
-<section class="border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div><p class="text-4xl font-black text-navy">3.263</p><p class="mt-1 text-sm font-semibold text-slate-500">questões no banco</p></div>
-        <div><p class="text-4xl font-black text-navy">100%</p><p class="mt-1 text-sm font-semibold text-slate-500">com comentário</p></div>
-        <div><p class="text-4xl font-black text-navy">5</p><p class="mt-1 text-sm font-semibold text-slate-500">concursos</p></div>
-        <div><p class="text-3xl sm:text-4xl font-black text-navy whitespace-nowrap">R$ 29,90</p><p class="mt-1 text-sm font-semibold text-slate-500">uma vez só, para sempre</p></div>
-    </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="narrow">
+    <span class="badge" id="badge"><span class="dot"></span><span id="badgeTxt">Câmara de Rio Branco · prova dia 22/11</span></span>
+    <h1 id="h1">Se a prova da Câmara fosse hoje, você <em>passaria?</em></h1>
+    <p id="sub">Responda 3 questões no estilo do IDIB e descubra em 60 segundos onde você está perdendo pontos.</p>
+    <a href="#teste" id="comecar" class="btn-y pulse">Responder as 3 perguntas
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
+    </a>
+    <span class="hint">60 segundos · sem cadastro</span>
+  </div>
 </section>
 
-<!-- ================= TESTE GRÁTIS ================= -->
-<section id="teste" class="bg-slate-50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <p class="text-brand-700 font-extrabold uppercase tracking-[0.18em] text-sm text-center">Teste agora</p>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight text-navy text-center">Você acertaria esta?</h2>
-        <p class="mt-3 text-slate-600 text-center">Uma questão no estilo do simulado da PRF. Escolha uma alternativa.</p>
-
-        <div class="mt-10 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
-            <div class="flex items-center justify-between gap-4 text-xs font-extrabold uppercase tracking-wider">
-                <span class="text-brand-700">Legislação de Trânsito</span>
-                <span class="text-slate-400">PRF · Cebraspe</span>
-            </div>
-            <p class="mt-4 text-lg sm:text-xl font-bold text-navy leading-snug">Conduzir motocicleta com o farol apagado durante o dia é infração de natureza:</p>
-            <div id="opcoes" class="mt-6 space-y-3">
-                <button class="opcao w-full text-left border-2 border-slate-200 rounded-2xl px-4 py-3.5 font-semibold flex gap-3" data-i="0"><span class="font-black">A)</span> Gravíssima, com suspensão do direito de dirigir</button>
-                <button class="opcao w-full text-left border-2 border-slate-200 rounded-2xl px-4 py-3.5 font-semibold flex gap-3" data-i="1"><span class="font-black">B)</span> Grave</button>
-                <button class="opcao w-full text-left border-2 border-slate-200 rounded-2xl px-4 py-3.5 font-semibold flex gap-3" data-i="2"><span class="font-black">C)</span> Média</button>
-                <button class="opcao w-full text-left border-2 border-slate-200 rounded-2xl px-4 py-3.5 font-semibold flex gap-3" data-i="3"><span class="font-black">D)</span> Leve</button>
-            </div>
-            <div id="resultado" class="hidden mt-6 rounded-2xl p-5" role="status" aria-live="polite">
-                <p id="veredito" class="font-black text-lg"></p>
-                <p class="mt-2 text-slate-700 leading-relaxed"><b>Comentário:</b> até abril de 2021, a conduta era gravíssima, com suspensão. A Lei 14.071/2020 revogou o inciso IV do art. 244 do CTB, e hoje ela se enquadra no art. 250 do CTB: infração <b>média</b>, com 4 pontos na CNH. Muito material ainda ensina a regra antiga.</p>
-                <a href="#preco" class="js-comprar mt-5 inline-flex items-center gap-2 bg-navy text-white font-bold px-6 py-3 rounded-full hover:bg-slate-800 transition">Quero as outras 3.262 questões</a>
-            </div>
-        </div>
-    </div>
+<!-- QUIZ -->
+<section id="teste" hidden>
+  <div class="wrap" style="width:100%">
+    <div class="card" id="quiz" aria-live="polite"></div>
+  </div>
 </section>
 
-<!-- ================= CONCURSOS ================= -->
-<section>
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-navy">Cinco simulados em um só acesso</h2>
-        <p class="mt-3 text-slate-600 max-w-2xl">Cada simulado segue a divisão de matérias do edital. Você pode fazer a prova completa ou treinar uma disciplina por vez.</p>
-        <div class="mt-10 grid sm:grid-cols-2 gap-5">
-            <article class="rounded-3xl bg-navy text-white p-7">
-                <div class="flex items-baseline justify-between gap-4"><h3 class="text-xl font-extrabold">Polícia Rodoviária Federal</h3><span class="text-amber-400 font-black text-2xl">550</span></div>
-                <p class="mt-3 text-slate-300 text-sm leading-relaxed">10 disciplinas, com Legislação de Trânsito atualizada pela Lei 14.071/2020. Prova completa com 60 questões distribuídas no peso do edital.</p>
-                <p class="mt-4 text-xs font-semibold text-slate-400">Trânsito · Português · Constitucional · Raciocínio Lógico · Informática · Penal · Administrativo · Física · Processo Penal · Direitos Humanos</p>
-            </article>
-            <article class="rounded-3xl bg-slate-100 p-7">
-                <div class="flex items-baseline justify-between gap-4"><h3 class="text-xl font-extrabold text-navy">PRF – Agente Administrativo</h3><span class="text-brand-700 font-black text-2xl">901</span></div>
-                <p class="mt-3 text-slate-600 text-sm leading-relaxed">No formato do edital FUNCAB: 60 questões em 3h30 e pontuação com os pesos da prova (90 pontos). Legislação atualizada, com a Lei 14.133/2021 no lugar da 8.666. Dá para fazer 15 provas completas sem repetir questão.</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Português e Redação Oficial · Ética · Raciocínio Lógico · Constitucional · Administrativo · Administração · Arquivologia · Informática · Legislação da PRF</p>
-            </article>
-            <article class="rounded-3xl bg-slate-100 p-7">
-                <div class="flex items-baseline justify-between gap-4"><h3 class="text-xl font-extrabold text-navy">Petrobras</h3><span class="text-brand-700 font-black text-2xl">500</span></div>
-                <p class="mt-3 text-slate-600 text-sm leading-relaxed">100 de Português, 100 de Matemática e 300 de Conhecimentos Específicos, com Operação e Manutenção.</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Refino · Bombas e compressores · Instrumentação · NR-13, NR-20 e NR-33 · Corrosão · Segurança de processo</p>
-            </article>
-            <article class="rounded-3xl bg-slate-100 p-7">
-                <div class="flex items-baseline justify-between gap-4"><h3 class="text-xl font-extrabold text-navy">Câmara Municipal de Rio Branco</h3><span class="text-brand-700 font-black text-2xl">1.212</span></div>
-                <p class="mt-3 text-slate-600 text-sm leading-relaxed">Dois simulados no formato do edital IDIB 2026: Nível Médio (Agente Legislativo) e Nível Superior (Analista Legislativo). No final, você vê sua pontuação com os pesos da prova e se passaria pelo critério de aprovação.</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Português · Raciocínio Lógico · Noções de Informática · Ética e Legislação · Específicos de Agente e de Analista · Estatuto dos Servidores (Lei 1.794/2009)</p>
-            </article>
-            <article class="rounded-3xl bg-slate-100 p-7">
-                <div class="flex items-baseline justify-between gap-4"><h3 class="text-xl font-extrabold text-navy">Polícia Civil</h3><span class="text-brand-700 font-black text-2xl">100</span></div>
-                <p class="mt-3 text-slate-600 text-sm leading-relaxed">As matérias que mais caem nas provas de carreira policial.</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Português · Penal · Processo Penal · Constitucional · Administrativo · Informática</p>
-            </article>
-        </div>
+<!-- DOR -->
+<section class="sec">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+    <div style="max-width:720px;display:flex;flex-direction:column;gap:14px">
+      <h2 class="h2">Você estuda há meses. Mas sabe exatamente onde está errando?</h2>
+      <p class="muted" style="margin:0;font-size:18px;line-height:1.6">A maioria só descobre no dia da prova. Quem é aprovado descobre antes — e corrige a tempo.</p>
     </div>
+    <div class="grid">
+      <div class="box"><span class="n">01</span><h3>Lê muita teoria, treina pouco</h3><p>Entender o conteúdo não é o mesmo que acertar a questão no tempo da prova.</p></div>
+      <div class="box"><span class="n">02</span><h3>Não conhece o formato</h3><p id="dor2">40 questões, pesos 1 e 2 e pontuação mínima por disciplina: o critério de aprovação da Câmara pega desprevenido quem nunca simulou.</p></div>
+      <div class="box"><span class="n">03</span><h3>Estuda tudo por igual</h3><p>Sem saber sua nota por matéria, você gasta horas onde já vai bem e esquece onde perde pontos.</p></div>
+    </div>
+  </div>
 </section>
 
-<!-- ================= COMO FUNCIONA ================= -->
-<section class="bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-navy">Como funciona</h2>
-        <div class="mt-10 grid md:grid-cols-3 gap-8">
-            <div>
-                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-black text-xl">1</span>
-                <h3 class="mt-4 text-lg font-extrabold text-navy">Escolha o concurso</h3>
-                <p class="mt-2 text-slate-600 leading-relaxed">Faça a prova completa ou escolha uma disciplina. Defina se quer ver o gabarito na hora ou só no final.</p>
-            </div>
-            <div>
-                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-black text-xl">2</span>
-                <h3 class="mt-4 text-lg font-extrabold text-navy">Resolva com cronômetro</h3>
-                <p class="mt-2 text-slate-600 leading-relaxed">O tempo corre como no dia da prova. As questões que você já viu ficam guardadas, e as próximas tentativas trazem questões novas.</p>
-            </div>
-            <div>
-                <span class="w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-black text-xl">3</span>
-                <h3 class="mt-4 text-lg font-extrabold text-navy">Veja onde precisa melhorar</h3>
-                <p class="mt-2 text-slate-600 leading-relaxed">No final, revise cada questão com o comentário e veja o gráfico de acertos por matéria.</p>
-            </div>
-        </div>
-    </div>
+<!-- NÚMEROS -->
+<section style="padding:8px 0 56px">
+  <div class="wrap nums" id="nums">
+    <div class="num"><b>1.212</b><span>questões da Câmara</span></div>
+    <div class="num"><b>100%</b><span>comentadas</span></div>
+    <div class="num"><b>2</b><span>níveis: médio e superior</span></div>
+    <div class="num"><b style="color:#1E5FC2">R$ 29,90</b><span>pagamento único</span></div>
+  </div>
 </section>
 
-<!-- ================= DEPOIMENTOS (aparece só com depoimentos reais em rodape.js) ================= -->
-<section id="depoimentos" class="hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-navy">O que dizem os alunos</h2>
-        <div id="listaDepoimentos" class="mt-10 grid md:grid-cols-3 gap-5"></div>
+<!-- COMO FUNCIONA -->
+<section class="sec" style="padding-top:24px">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+    <h2 class="h2">Como funciona</h2>
+    <div class="grid">
+      <div class="step"><i>1</i><h3 id="passo1t">Escolha seu nível</h3><p id="passo1p">Nível Médio ou Superior. Faça a prova completa ou treine uma disciplina por vez, na divisão do edital.</p></div>
+      <div class="step"><i>2</i><h3>Resolva com cronômetro</h3><p>Treine sob o mesmo tempo da prova real e acostume a cabeça ao ritmo do dia.</p></div>
+      <div class="step"><i>3</i><h3>Veja onde está errando</h3><p id="passo3p">Gabarito comentado em cada questão, desempenho por matéria e, no final, sua nota com os pesos do edital.</p></div>
     </div>
+  </div>
 </section>
 
-<!-- ================= PREÇO ================= -->
-<section id="preco" class="hero-bg text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-            <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">Menos que uma apostila. Sem mensalidade.</h2>
-            <p class="mt-5 text-lg text-slate-300 leading-relaxed max-w-lg">Você paga uma vez e estuda pelo tempo que precisar, no celular ou no computador.</p>
-        </div>
-        <div class="bg-white text-navy rounded-3xl p-7 sm:p-9 shadow-2xl">
-            <p class="text-sm font-bold text-slate-500">Acesso completo · todos os simulados</p>
-            <p class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-black text-brand-700">R$</span><span class="text-6xl font-black tracking-tight">29,90</span></p>
-            <p class="mt-1 text-sm font-semibold text-slate-500">Pagamento único · acesso vitalício</p>
-            <ul class="mt-7 space-y-3 font-semibold">
-                <li class="flex gap-3"><svg class="w-6 h-6 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>3.263 questões com comentário</li>
-                <li class="flex gap-3"><svg class="w-6 h-6 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>PRF, Petrobras, Câmara de Rio Branco e Polícia Civil</li>
-                <li class="flex gap-3"><svg class="w-6 h-6 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>Cronômetro e desempenho por matéria</li>
-                <li class="flex gap-3"><svg class="w-6 h-6 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>Acesso liberado logo após a compra</li>
-            </ul>
-            <a href="#preco" class="js-comprar mt-8 flex justify-center items-center gap-2 bg-amber-400 hover:bg-amber-300 text-navy font-black text-lg px-8 py-4 rounded-full transition">Garantir meu acesso</a>
-            <div class="mt-6 flex items-center gap-4 rounded-2xl bg-emerald-50 border border-emerald-200 p-4">
-                <svg class="w-11 h-11 shrink-0 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8.5 12l2.5 2.5 4.5-5"/></svg>
-                <div>
-                    <p class="font-black text-emerald-900">Garantia de 7 dias</p>
-                    <p class="text-sm text-emerald-800 leading-snug">Não gostou? Peça o reembolso integral pela Kiwify, sem precisar justificar.</p>
-                </div>
-            </div>
-            <p class="mt-4 text-xs text-center text-slate-500">Pagamento processado com segurança pela Kiwify.</p>
-        </div>
+<!-- SIMULADOS -->
+<section class="sec dark">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:28px">
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:680px">
+      <h2 class="h2" style="color:#fff" id="simT">Câmara de Rio Branco + 4 simulados de bônus</h2>
+      <p style="margin:0;font-size:17px;line-height:1.55;color:#C3CFE2">Cada um segue o formato e a divisão de matérias do edital.</p>
     </div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px" id="sims"></div>
+  </div>
 </section>
 
-<!-- ================= PERGUNTAS ================= -->
-<section>
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-navy">Perguntas frequentes</h2>
-        <div class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
-            <details class="py-5">
-                <summary class="flex justify-between items-center gap-4 font-bold text-navy text-lg">Como recebo o acesso?<svg class="seta w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></summary>
-                <p class="mt-3 text-slate-600 leading-relaxed">Assim que o pagamento é aprovado, seu e-mail é liberado. Entre no site, toque em "Já sou aluno", depois em "Primeiro acesso", e crie sua senha usando o e-mail e o CPF da compra.</p>
-            </details>
-            <details class="py-5">
-                <summary class="flex justify-between items-center gap-4 font-bold text-navy text-lg">O acesso é vitalício mesmo?<svg class="seta w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></summary>
-                <p class="mt-3 text-slate-600 leading-relaxed">Sim. Não há mensalidade nem data de expiração: o acesso vale enquanto a plataforma estiver no ar, incluindo as questões que forem adicionadas depois.</p>
-            </details>
-            <details class="py-5">
-                <summary class="flex justify-between items-center gap-4 font-bold text-navy text-lg">Funciona no celular?<svg class="seta w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></summary>
-                <p class="mt-3 text-slate-600 leading-relaxed">Sim, no navegador do celular, do tablet ou do computador. Não precisa instalar nada.</p>
-            </details>
-            <details class="py-5">
-                <summary class="flex justify-between items-center gap-4 font-bold text-navy text-lg">Posso dividir a conta com alguém?<svg class="seta w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></summary>
-                <p class="mt-3 text-slate-600 leading-relaxed">Não. O acesso é pessoal e fica ativo em um aparelho por vez. Se a conta for aberta em outro aparelho, a sessão anterior é encerrada.</p>
-            </details>
-            <details class="py-5">
-                <summary class="flex justify-between items-center gap-4 font-bold text-navy text-lg">E se eu não gostar?<svg class="seta w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></summary>
-                <p class="mt-3 text-slate-600 leading-relaxed">Você tem 7 dias a partir da compra para pedir o reembolso integral pela Kiwify, sem precisar justificar.</p>
-            </details>
-        </div>
-        <div class="mt-12 text-center">
-            <a href="#preco" class="js-comprar inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-navy font-black text-lg px-8 py-4 rounded-full transition">Quero acessar por R$ 29,90</a>
-        </div>
+<!-- DEPOIMENTOS (somente reais, configurados em rodape.js) -->
+<section class="sec" id="depoimentos" hidden>
+  <div class="wrap" style="display:flex;flex-direction:column;gap:24px">
+    <h2 class="h2">Quem já está treinando</h2>
+    <div class="grid" id="listaDepoimentos"></div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta">
+  <div class="wrap">
+    <div class="offer">
+      <span class="qsub" style="font-size:13px">Acesso completo</span>
+      <h2 class="sg" style="font-size:clamp(22px,4vw,30px);line-height:1.15" id="ofT">Menos que uma apostila. Câmara de Rio Branco + 4 concursos de bônus.</h2>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:2px">
+        <span class="muted" style="font-size:14px">pagamento único de</span>
+        <span class="sg" style="font-size:52px;font-weight:700;line-height:1">R$ 29,90</span>
+        <span class="muted" style="font-size:14px">sem mensalidade · acesso vitalício</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:9px" id="ofList"></div>
+      <a href="#" class="btn-y js-comprar" style="min-height:56px;font-size:18px">Quero acessar agora</a>
+      <div class="gar">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E5FC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span><strong style="color:#0F172A">Garantia de 7 dias.</strong> Não gostou? Devolvemos seus R$ 29,90.</span>
+      </div>
+      <span class="muted" style="font-size:12px">Pagamento seguro pela Kiwify · Pix, cartão ou boleto · acesso liberado após a confirmação</span>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:24px 0 72px">
+  <div class="narrow" style="display:flex;flex-direction:column;gap:12px" id="faq">
+    <h2 class="sg" style="margin:0 0 8px;font-size:clamp(26px,4vw,34px)">Perguntas frequentes</h2>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="sec dark">
+  <div class="narrow" style="display:flex;flex-direction:column;gap:18px;text-align:center;align-items:center">
+    <h2 class="h2" style="color:#fff;font-size:clamp(28px,4.5vw,44px)">Você vai descobrir seus erros de qualquer jeito. Melhor que seja antes da prova.</h2>
+    <p style="margin:0;font-size:17px;line-height:1.55;color:#C3CFE2">R$ 29,90 uma vez só · acesso vitalício · garantia de 7 dias</p>
+    <a href="#" class="btn-y js-comprar" style="min-height:58px;padding:0 28px;font-size:18px">Começar meu simulado</a>
+  </div>
 </section>
 
 <footer id="rodape"></footer>
 <script src="/rodape.js"></script>
 <script>
-    // Botões de compra: usam o link de checkout definido em rodape.js (EMPRESA.linkCompra)
-    (function () {
-        var link = (window.EMPRESA && EMPRESA.linkCompra) || '';
-        // Repassa as UTMs do anúncio para o checkout, para a Kiwify mostrar de onde veio cada venda
-        try {
-            var origem = new URLSearchParams(location.search), utm = [];
-            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src'].forEach(function (k) {
-                if (origem.get(k)) utm.push(k + '=' + encodeURIComponent(origem.get(k)));
-            });
-            if (link && utm.length) link += (link.indexOf('?') < 0 ? '?' : '&') + utm.join('&');
-        } catch (e) {}
-        if (!link) return;
-        document.querySelectorAll('.js-comprar').forEach(function (a) {
-            a.href = link;
-            // Clique em comprar vira evento no Pixel (o checkout da Kiwify envia InitiateCheckout e Purchase)
-            a.addEventListener('click', function () { if (window.fbq) fbq('track', 'AddToCart', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL' }); });
-        });
-    })();
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (t) { var d = document.createElement('div'); d.textContent = String(t == null ? '' : t); return d.innerHTML; };
+  var params = new URLSearchParams(location.search);
 
-    // Depoimentos (configurados em rodape.js)
-    (function () {
-        var E = window.EMPRESA || {};
-        var esc = function (t) { var d = document.createElement('div'); d.textContent = String(t == null ? '' : t); return d.innerHTML; };
-        var deps = (E.depoimentos || []).filter(function (d) { return d && d.texto; });
-        if (deps.length) {
-            document.getElementById('listaDepoimentos').innerHTML = deps.map(function (d) {
-                return '<figure class="rounded-3xl bg-slate-50 border border-slate-200 p-6 flex flex-col">' +
-                    '<blockquote class="text-slate-700 leading-relaxed flex-grow">“' + esc(d.texto) + '”</blockquote>' +
-                    '<figcaption class="mt-5 font-extrabold text-navy">' + esc(d.nome) + (d.concurso ? '<span class="font-semibold text-slate-500"> · estudando para ' + esc(d.concurso) + '</span>' : '') + '</figcaption></figure>';
-            }).join('');
-            document.getElementById('depoimentos').classList.remove('hidden');
-        }
-    })();
+  // ---------- Versão da página: Câmara (até a prova) ou geral ----------
+  var PROVA = new Date('2026-11-22T08:00:00-05:00');            // prova da Câmara (horário de Rio Branco)
+  var FIM_CAMARA = new Date('2026-11-23T00:00:00-05:00');       // depois disso a página volta à versão geral
+  var modo = params.get('modo');
+  var camara = modo === 'camara' || (modo !== 'geral' && (params.get('utm_campaign') === 'cmrb' || Date.now() < FIM_CAMARA));
 
-    // Questão de teste
-    (function () {
-        var CORRETA = 2;
-        var botoes = document.querySelectorAll('#opcoes .opcao');
-        botoes.forEach(function (b) {
-            b.addEventListener('click', function () {
-                var i = +b.dataset.i;
-                botoes.forEach(function (o) {
-                    o.disabled = true;
-                    var n = +o.dataset.i;
-                    if (n === CORRETA) o.className += ' border-emerald-600 bg-emerald-50 text-emerald-900';
-                    else if (n === i) o.className += ' border-red-500 bg-red-50 text-red-900';
-                    else o.className += ' opacity-60';
-                });
-                var acertou = i === CORRETA;
-                var r = document.getElementById('resultado');
-                r.className = 'mt-6 rounded-2xl p-5 ' + (acertou ? 'bg-emerald-50 border border-emerald-200' : 'bg-amber-50 border border-amber-200');
-                document.getElementById('veredito').textContent = acertou ? 'Acertou! A resposta é C, média.' : 'Essa pega muita gente. A resposta certa é C, média.';
-                document.getElementById('veredito').className = 'font-black text-lg ' + (acertou ? 'text-emerald-800' : 'text-amber-900');
-            });
-        });
-    })();
+  var CHECK = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+
+  var SIMS = {
+    cmrb: ['Câmara de Rio Branco', '1.212', 'Edital IDIB 2026, Nível Médio e Superior: 40 questões com pesos 1 e 2. No final, você vê sua nota em pontos e se passaria pelo critério de aprovação. Inclui o Estatuto dos Servidores (Lei 1.794/2009).'],
+    prf: ['PRF – Policial', '550', '10 disciplinas, com Legislação de Trânsito atualizada pela Lei 14.071/2020. Prova completa com 60 questões.'],
+    adm: ['PRF – Agente Administrativo', '901', 'Formato FUNCAB: 60 questões em 3h30, com pesos. Dá para fazer 15 provas completas sem repetir questão.'],
+    pet: ['Petrobras', '500', '100 de Português, 100 de Matemática e 300 de Conhecimentos Específicos. Prova completa com 60 questões.'],
+    pc: ['Polícia Civil', '100', 'Prova completa com 100 questões: Português, Direito Penal, Processual Penal, Constitucional, Administrativo e Informática.']
+  };
+  function card(k, tag) {
+    var s = SIMS[k];
+    return '<div class="sim' + (tag === 'principal' ? ' dest' : '') + '">' +
+      (tag ? '<span class="tagb' + (tag === 'bônus' ? ' b' : '') + '">' + tag + '</span>' : '') +
+      '<div class="h"><h3>' + s[0] + '</h3><span class="q">' + s[1] + '</span></div><p>' + s[2] + '</p></div>';
+  }
+
+  var Q_CAMARA = [
+    { s: 'Estatuto dos Servidores · Lei 1.794/2009', t: 'O servidor que toma posse, mas não entra em exercício no prazo previsto, será:', o: ['mantido no cargo, sem remuneração', 'demitido por abandono de cargo', 'exonerado do cargo', 'colocado em disponibilidade'], c: 2, w: 'Demissão é punição e exige processo disciplinar. Quem toma posse e não entra em exercício é exonerado de ofício (art. 20, § 2º).' },
+    { s: 'Língua Portuguesa', t: 'Em qual frase o uso da crase está correto?', o: ['Fui à pé até a Câmara.', 'Entreguei o relatório à diretora.', 'Ele começou à estudar cedo.', 'Refiro-me à você.'], c: 1, w: 'Crase é a preposição "a" + o artigo "a". Não ocorre antes de verbo, de "você" nem em "a pé".' },
+    { s: 'Raciocínio Lógico', t: 'A negação de "Se o processo foi protocolado, então o prazo começou a correr" é:', o: ['Se o processo não foi protocolado, o prazo não começou a correr.', 'O processo foi protocolado e o prazo não começou a correr.', 'O processo não foi protocolado e o prazo começou a correr.', 'Se o prazo começou a correr, o processo foi protocolado.'], c: 1, w: 'A negação de "Se A, então B" é "A e não B": mantém a primeira parte e nega a segunda.' }
+  ];
+  var Q_GERAL = [
+    { s: 'Legislação de Trânsito', t: 'Um condutor de 72 anos deve renovar o exame de aptidão física e mental a cada:', o: ['10 anos', '5 anos', '3 anos', '1 ano'], c: 2, w: 'A partir dos 70 anos, a renovação é a cada 3 anos (art. 147, § 2º, do CTB).' },
+    { s: 'Língua Portuguesa', t: 'Em qual frase o uso da crase está correto?', o: ['Fui à pé até o posto.', 'Entreguei o relatório à delegada.', 'Ele começou à estudar.', 'Refiro-me à você.'], c: 1, w: 'Crase é a preposição "a" + o artigo "a". Não ocorre antes de verbo, de "você" nem em "a pé".' },
+    { s: 'Direito Constitucional', t: 'Qual remédio constitucional protege a liberdade de locomoção?', o: ['Mandado de segurança', 'Habeas data', 'Habeas corpus', 'Ação popular'], c: 2, w: 'O habeas corpus protege o direito de ir e vir (art. 5º, LXVIII, da Constituição).' }
+  ];
+
+  var FAQ_COMUM = [
+    ['Pago todo mês?', 'Não. É um pagamento único de R$ 29,90 e o acesso é vitalício.'],
+    ['Como recebo o acesso?', 'Logo após a aprovação do pagamento, você entra no site, escolhe "Primeiro acesso" e cria sua senha com o mesmo e-mail e CPF da compra. Cartão e Pix liberam em minutos; boleto, após a confirmação do banco.'],
+    ['Funciona no celular?', 'Sim. Funciona no celular e no computador, direto no navegador, sem instalar nada.'],
+    ['E se eu não gostar?', 'Você tem 7 dias de garantia para pedir o reembolso integral.'],
+    ['As questões são da prova oficial?', 'Não. São questões de treino, elaboradas no estilo de cada banca e no formato do edital, todas com gabarito comentado.']
+  ];
+
+  var Q, faq;
+  if (camara) {
+    var dias = Math.ceil((PROVA - Date.now()) / 86400000);
+    $('badgeTxt').textContent = 'Câmara de Rio Branco · prova dia 22/11' + (dias > 1 ? ' · faltam ' + dias + ' dias' : dias === 1 ? ' · é amanhã' : '');
+    Q = Q_CAMARA;
+    $('sims').innerHTML = card('cmrb', 'principal') + card('prf', 'bônus') + card('adm', 'bônus') + card('pet', 'bônus') + card('pc', 'bônus');
+    $('ofList').innerHTML = [
+      '1.212 questões da Câmara de Rio Branco, Nível Médio e Superior',
+      'Nota com os pesos do edital IDIB e o critério de aprovação',
+      'Estatuto dos Servidores (Lei 1.794/2009) incluído',
+      'Todas as questões com gabarito comentado',
+      'Bônus: PRF, PRF Agente Adm., Petrobras e Polícia Civil (3.263 questões no total)'
+    ].map(function (t) { return '<div class="chk">' + CHECK + '<span>' + t + '</span></div>'; }).join('');
+    faq = [['Serve para Nível Médio e Superior?', 'Sim. Há um simulado para cada nível, cada um com as disciplinas, a quantidade de questões e os pesos do edital IDIB da Câmara de Rio Branco.']].concat(FAQ_COMUM);
+    faq.splice(3, 0, ['Tenho acesso aos outros concursos?', 'Sim. O mesmo acesso libera também os simulados de PRF Policial, PRF Agente Administrativo, Petrobras e Polícia Civil.']);
+  } else {
+    $('badge').style.display = 'none';
+    $('h1').innerHTML = 'Se a prova fosse hoje, você <em>passaria?</em>';
+    $('sub').textContent = 'Descubra em 60 segundos onde você está perdendo pontos.';
+    $('dor2').textContent = 'Quantidade de questões, pesos e divisão de matérias pegam desprevenido quem nunca simulou.';
+    $('nums').innerHTML = '<div class="num"><b>3.263</b><span>questões</span></div><div class="num"><b>100%</b><span>comentadas</span></div><div class="num"><b>5</b><span>concursos</span></div><div class="num"><b style="color:#1E5FC2">R$ 29,90</b><span>pagamento único</span></div>';
+    $('passo1t').textContent = 'Escolha seu concurso';
+    $('passo1p').textContent = 'Faça a prova completa ou treine uma disciplina por vez, seguindo a divisão do edital.';
+    $('passo3p').textContent = 'Gabarito comentado em cada questão e relatório de desempenho por matéria.';
+    $('simT').textContent = '5 simulados em um só acesso';
+    $('sims').innerHTML = card('prf') + card('adm') + card('pet') + card('cmrb') + card('pc');
+    $('ofT').textContent = 'Menos que uma apostila. Para todos os 5 concursos.';
+    $('ofList').innerHTML = ['3.263 questões, todas com gabarito comentado', 'Simulados no formato do edital, com cronômetro', 'Relatório de desempenho por matéria', 'Treino completo ou por disciplina']
+      .map(function (t) { return '<div class="chk">' + CHECK + '<span>' + t + '</span></div>'; }).join('');
+    Q = Q_GERAL;
+    faq = [['Tenho acesso a todos os 5 simulados?', 'Sim. Um acesso libera todos os concursos e todas as questões.']].concat(FAQ_COMUM);
+    document.title = 'Simulados Concursos — 3.263 questões comentadas no formato da prova';
+  }
+  $('faq').insertAdjacentHTML('beforeend', faq.map(function (f) { return '<details><summary>' + f[0] + '</summary><p>' + f[1] + '</p></details>'; }).join(''));
+
+  // ---------- Quiz ----------
+  var st = { step: 0, picked: null, score: 0, done: false };
+  var L = ['A', 'B', 'C', 'D'];
+  function render() {
+    var el = $('quiz');
+    if (st.done) {
+      var t, x;
+      if (st.score === 3) { t = 'Mandou bem. Mas 3 questões não são uma prova.'; x = 'Na prova real o cansaço e o relógio pesam. Faça uma prova completa, com cronômetro, e veja seu desempenho matéria por matéria.'; }
+      else if (st.score > 0) { t = 'Você errou ' + (3 - st.score) + ' de 3. Agora imagine isso numa prova inteira.'; x = 'Cada erro aqui é um ponto que você perderia no dia. O simulado completo mostra exatamente em quais matérias isso está acontecendo.'; }
+      else { t = 'Melhor descobrir agora do que no dia da prova.'; x = 'Ninguém nasce pronto. Treinando no formato do edital, com gabarito comentado, você corrige cada lacuna antes que ela custe sua vaga.'; }
+      el.innerHTML = '<div class="res"><span class="qsub">Seu resultado</span><div class="sc">' + st.score + '/3</div><p class="t">' + t + '</p><p>' + x + '</p>' +
+        '<a href="#oferta" class="btn-y" style="width:100%;min-height:56px;font-size:17px;margin-top:6px">Liberar acesso por R$&nbsp;29,90</a>' +
+        '<button type="button" class="linkbtn" id="refazer">Refazer o teste</button></div>';
+      $('refazer').onclick = function () { st = { step: 0, picked: null, score: 0, done: false }; render(); };
+      if (window.fbq) fbq('trackCustom', 'QuizConcluido', { acertos: st.score });
+      return;
+    }
+    var q = Q[st.step], ans = st.picked !== null;
+    var html = '<div class="qtop"><span class="qsub">' + esc(q.s) + '</span><span class="qn">' + (st.step + 1) + ' de 3</span></div>' +
+      '<div class="bar"><div style="width:' + ((st.step + (ans ? 1 : 0)) / 3 * 100) + '%"></div></div>' +
+      '<p class="qtext">' + esc(q.t) + '</p>';
+    q.o.forEach(function (o, i) {
+      var cls = 'opt', mk = '';
+      if (ans) { if (i === q.c) { cls += ' ok'; mk = '✓'; } else if (i === st.picked) { cls += ' bad'; mk = '✕'; } else cls += ' off'; }
+      html += '<button type="button" class="' + cls + '" data-i="' + i + '"' + (ans ? ' disabled' : '') + '><b>' + L[i] + ')</b><span>' + esc(o) + '</span><i>' + mk + '</i></button>';
+    });
+    if (ans) html += '<div class="why"><strong>' + (st.picked === q.c ? 'Correto!' : 'Resposta: ' + L[q.c] + '.') + '</strong> ' + esc(q.w) + '</div>';
+    html += '<button type="button" class="next" id="prox"' + (ans ? '' : ' disabled') + '>' + (ans ? (st.step < 2 ? 'Próxima questão' : 'Ver meu resultado') : 'Escolha uma alternativa') + '</button>';
+    el.innerHTML = html;
+    el.querySelectorAll('.opt').forEach(function (b) {
+      b.onclick = function () { if (st.picked !== null) return; var i = +b.dataset.i; st.picked = i; if (i === Q[st.step].c) st.score++; render(); };
+    });
+    $('prox').onclick = function () { if (st.step < 2) { st.step++; st.picked = null; } else st.done = true; render(); $('teste').scrollIntoView({ block: 'start' }); };
+  }
+  $('comecar').addEventListener('click', function (e) {
+    e.preventDefault();
+    var s = $('teste');
+    if (s.hidden) { s.hidden = false; s.classList.add('reveal'); render(); }
+    s.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ---------- Botões de compra: link da Kiwify (rodape.js) + UTMs do anúncio ----------
+  var link = (window.EMPRESA && EMPRESA.linkCompra) || '';
+  try {
+    var utm = [];
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src'].forEach(function (k) {
+      if (params.get(k)) utm.push(k + '=' + encodeURIComponent(params.get(k)));
+    });
+    if (link && utm.length) link += (link.indexOf('?') < 0 ? '?' : '&') + utm.join('&');
+  } catch (e) {}
+  document.querySelectorAll('.js-comprar').forEach(function (a) {
+    if (link) a.href = link;
+    a.addEventListener('click', function () { if (window.fbq) fbq('track', 'AddToCart', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL' }); });
+  });
+
+  // ---------- Depoimentos reais (rodape.js) ----------
+  var deps = ((window.EMPRESA && EMPRESA.depoimentos) || []).filter(function (d) { return d && d.texto; });
+  if (deps.length) {
+    $('listaDepoimentos').innerHTML = deps.map(function (d) {
+      return '<figure class="dep"><blockquote>“' + esc(d.texto) + '”</blockquote><figcaption>' + esc(d.nome) + (d.concurso ? ' <span class="muted" style="font-weight:500">· ' + esc(d.concurso) + '</span>' : '') + '</figcaption></figure>';
+    }).join('');
+    $('depoimentos').hidden = false;
+  }
+})();
 </script>
 </body>
 </html>

@@ -45,7 +45,7 @@ window.bancoDeQuestoes = {
         },
         {
             "id": 4,
-            "enunciado": "Assinale a alternativa em que o uso do acento indicativo de crase está incorreto:",
+            "enunciado": "Assinale a alternativa em que há erro no emprego (ou na falta) do acento indicativo de crase:",
             "opcoes": [
                 "A) Entreguei o documento à diretora do departamento.",
                 "B) À medida que estudamos, mais aprendemos.",
@@ -54,7 +54,7 @@ window.bancoDeQuestoes = {
                 "E) Fomos a Bahia nas férias de janeiro."
             ],
             "correta": 4,
-            "comentario": "Quem vai a Bahia e volta da Bahia usa crase ('à Bahia'). No entanto, se o nome não vier especificado, o correto é 'a Bahia' sem crase (quem vai a, volta da = crase há; quem vai a, volta de = crase pra quê? Fomos *a* Bahia, volto *de* Bahia, logo sem crase. *Nota:* se fosse 'à Bahia' com artigo feminino determinado, exigiria crase, mas o correto gramatical sem modificador é 'a')."
+            "comentario": "Bahia admite artigo (vou à Bahia, volto da Bahia), então o correto é \"Fomos à Bahia\": falta a crase em E. As demais estão corretas: \"à diretora\" (preposição + artigo), \"à medida que\" (locução feminina), \"a distância\" (distância não especificada) e \"face a face\" (palavras repetidas)."
         },
         {
             "id": 5,
