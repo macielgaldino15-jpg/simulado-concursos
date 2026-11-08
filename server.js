@@ -188,6 +188,13 @@ async function rotear(req, res) {
   }
   if (metodo === 'GET' && rota === '/saude') return json(res, 200, { ok: true });
 
+  // ---------- Link curto da bio do Instagram ----------
+  // Aluno (logado ou que já entrou neste navegador) vai para o simulado/login; visitante vai para a página de vendas, marcado como vindo da bio
+  if (metodo === 'GET' && (rota === '/bio' || rota === '/bio/')) {
+    if (lerCookies(req).aluno === '1' || await usuarioDaSessao(req)) return redirecionar(res, '/');
+    return redirecionar(res, '/conheca?utm_source=instagram&utm_medium=bio&utm_campaign=bio');
+  }
+
   // ---------- Simulado e bancos de questões (somente logado) ----------
   if (metodo === 'GET' && (rota === '/' || PROTEGIDOS.has(rota.slice(1)))) {
     const arquivo = rota === '/' ? 'index.html' : rota.slice(1);
