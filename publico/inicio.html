@@ -54,17 +54,22 @@ header .wrap{padding-top:14px;padding-bottom:14px;display:flex;justify-content:s
 .qn{font-size:13px;font-weight:600;color:#475569;white-space:nowrap}
 .bar{height:6px;background:#E6EBF3;border-radius:999px;overflow:hidden;margin-top:12px}
 .bar div{height:6px;background:#1E6FD9;border-radius:999px;transition:width .3s}
-.qtext{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;line-height:1.32;margin:16px 0 14px;min-height:72px;display:flex;align-items:center}
-.opt{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:10px 14px;border-radius:12px;border:1.5px solid #D5DDE8;background:#fff;color:#0F172A;text-align:left;font-family:Inter,sans-serif;font-size:15px;line-height:1.3;cursor:pointer;margin-bottom:8px}
-.opt b{min-width:22px}.opt span{flex:1}.opt i{font-style:normal;font-weight:700;min-width:14px}
+.qbody{height:600px;display:flex;flex-direction:column}
+.qtext{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;line-height:1.3;margin:14px 0 12px;height:92px;flex:none;display:flex;align-items:center;overflow:hidden}
+.opt{display:flex;align-items:center;gap:10px;width:100%;height:54px;flex:none;padding:0 14px;border-radius:12px;border:1.5px solid #D5DDE8;background:#fff;color:#0F172A;text-align:left;font-family:Inter,sans-serif;font-size:15px;line-height:1.3;cursor:pointer;margin-bottom:8px}
+.opt b{min-width:22px}.opt span{flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.opt i{font-style:normal;font-weight:700;min-width:14px}
 .opt.ok{background:#ECFDF3;border-color:#15803D;color:#14532D}
 .opt.bad{background:#FEF2F2;border-color:#B91C1C;color:#7F1D1D}
 .opt.off{color:#64748B;border-color:#E2E8F0}
-.why{background:#F1F5FB;border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.45;color:#334155;margin-top:6px}
+.fb{height:132px;flex:none;margin-top:2px}
+.why{height:100%;overflow:hidden;background:#F1F5FB;border-radius:12px;padding:11px 14px;font-size:13.5px;line-height:1.42;color:#334155}
+.wait{height:100%;border:1.5px dashed #D5DDE8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#64748B}
 .why strong{color:#0F172A}
-.next{width:100%;min-height:50px;border:none;border-radius:12px;background:#0A1830;color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:700;cursor:pointer;margin-top:10px}
+.next{width:100%;height:52px;flex:none;border:none;border-radius:12px;background:#0A1830;color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:700;cursor:pointer;margin-top:auto}
 .next:disabled{background:#E6EBF3;color:#64748B;cursor:default}
-.res{text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center;padding:18px 4px}
+.res{height:600px;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:flex-end;padding:0 4px}
+.res .top{flex:1;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center}
+.res .acao{width:100%;height:52px;flex:none;font-size:17px}
 .res .sc{font-family:'Space Grotesk',sans-serif;font-size:72px;font-weight:700;line-height:1}
 .res .t{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;line-height:1.3;margin:0}
 .res p{margin:0;font-size:15px;line-height:1.55;color:#475569}
@@ -276,9 +281,9 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
   }
 
   var Q_CAMARA = [
-    { s: 'Estatuto dos Servidores · Lei 1.794/2009', t: 'O servidor que toma posse, mas não entra em exercício no prazo previsto, será:', o: ['mantido no cargo, sem remuneração', 'demitido por abandono de cargo', 'exonerado do cargo', 'colocado em disponibilidade'], c: 2, w: 'Demissão é punição e exige processo disciplinar. Quem toma posse e não entra em exercício é exonerado de ofício (art. 20, § 2º).' },
+    { s: 'Estatuto dos Servidores · Lei 1.794/2009', t: 'O servidor que toma posse, mas não entra em exercício no prazo previsto, será:', o: ['mantido no cargo, sem remuneração', 'demitido por abandono de cargo', 'exonerado do cargo', 'colocado em disponibilidade'], c: 2, w: 'Demissão é punição e exige processo. Quem toma posse e não entra em exercício é exonerado de ofício (art. 20, § 2º).' },
     { s: 'Língua Portuguesa', t: 'Em qual frase o uso da crase está correto?', o: ['Fui à pé até a Câmara.', 'Entreguei o relatório à diretora.', 'Ele começou à estudar cedo.', 'Refiro-me à você.'], c: 1, w: 'Crase é a preposição "a" + o artigo "a". Não ocorre antes de verbo, de "você" nem em "a pé".' },
-    { s: 'Raciocínio Lógico', t: 'A negação de "Se o processo foi protocolado, então o prazo começou a correr" é:', o: ['Se o processo não foi protocolado, o prazo não começou a correr.', 'O processo foi protocolado e o prazo não começou a correr.', 'O processo não foi protocolado e o prazo começou a correr.', 'Se o prazo começou a correr, o processo foi protocolado.'], c: 1, w: 'A negação de "Se A, então B" é "A e não B": mantém a primeira parte e nega a segunda.' }
+    { s: 'Raciocínio Lógico', t: 'A negação de "Se chove, então a sessão é adiada" é:', o: ['Se não chove, a sessão não é adiada.', 'Chove e a sessão não é adiada.', 'Não chove e a sessão é adiada.', 'Se a sessão é adiada, então chove.'], c: 1, w: 'A negação de "Se A, então B" é "A e não B": mantém a primeira parte e nega a segunda.' }
   ];
   var Q_GERAL = [
     { s: 'Legislação de Trânsito', t: 'Um condutor de 72 anos deve renovar o exame de aptidão física e mental a cada:', o: ['10 anos', '5 anos', '3 anos', '1 ano'], c: 2, w: 'A partir dos 70 anos, a renovação é a cada 3 anos (art. 147, § 2º, do CTB).' },
@@ -339,15 +344,15 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
       if (st.score === 3) { t = 'Mandou bem. Mas 3 questões não são uma prova.'; x = 'Na prova real o cansaço e o relógio pesam. Faça uma prova completa, com cronômetro, e veja seu desempenho matéria por matéria.'; }
       else if (st.score > 0) { t = 'Você errou ' + (3 - st.score) + ' de 3. Agora imagine isso numa prova inteira.'; x = 'Cada erro aqui é um ponto que você perderia no dia. O simulado completo mostra exatamente em quais matérias isso está acontecendo.'; }
       else { t = 'Melhor descobrir agora do que no dia da prova.'; x = 'Ninguém nasce pronto. Treinando no formato do edital, com gabarito comentado, você corrige cada lacuna antes que ela custe sua vaga.'; }
-      el.innerHTML = '<div class="res"><span class="qsub">Seu resultado</span><div class="sc">' + st.score + '/3</div><p class="t">' + t + '</p><p>' + x + '</p>' +
-        '<a href="#oferta" class="btn-y" style="width:100%;min-height:56px;font-size:17px;margin-top:6px">Liberar acesso por R$&nbsp;29,90</a>' +
-        '<button type="button" class="linkbtn" id="refazer">Refazer o teste</button></div>';
+      el.innerHTML = '<div class="res"><div class="top"><span class="qsub">Seu resultado</span><div class="sc">' + st.score + '/3</div><p class="t">' + t + '</p><p>' + x + '</p>' +
+        '<button type="button" class="linkbtn" id="refazer">Refazer o teste</button></div>' +
+        '<a href="#oferta" class="btn-y acao">Liberar acesso por R$&nbsp;29,90</a></div>';
       $('refazer').onclick = function () { st = { step: 0, picked: null, score: 0, done: false }; render(); };
       if (window.fbq) fbq('trackCustom', 'QuizConcluido', { acertos: st.score });
       return;
     }
     var q = Q[st.step], ans = st.picked !== null;
-    var html = '<div class="qtop"><span class="qsub">' + esc(q.s) + '</span><span class="qn">' + (st.step + 1) + ' de 3</span></div>' +
+    var html = '<div class="qbody"><div class="qtop"><span class="qsub">' + esc(q.s) + '</span><span class="qn">' + (st.step + 1) + ' de 3</span></div>' +
       '<div class="bar"><div style="width:' + ((st.step + (ans ? 1 : 0)) / 3 * 100) + '%"></div></div>' +
       '<p class="qtext">' + esc(q.t) + '</p>';
     q.o.forEach(function (o, i) {
@@ -355,13 +360,13 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
       if (ans) { if (i === q.c) { cls += ' ok'; mk = '✓'; } else if (i === st.picked) { cls += ' bad'; mk = '✕'; } else cls += ' off'; }
       html += '<button type="button" class="' + cls + '" data-i="' + i + '"' + (ans ? ' disabled' : '') + '><b>' + L[i] + ')</b><span>' + esc(o) + '</span><i>' + mk + '</i></button>';
     });
-    if (ans) html += '<div class="why"><strong>' + (st.picked === q.c ? 'Correto!' : 'Resposta: ' + L[q.c] + '.') + '</strong> ' + esc(q.w) + '</div>';
-    html += '<button type="button" class="next" id="prox"' + (ans ? '' : ' disabled') + '>' + (ans ? (st.step < 2 ? 'Próxima questão' : 'Ver meu resultado') : 'Escolha uma alternativa') + '</button>';
+    html += '<div class="fb">' + (ans ? '<div class="why"><strong>' + (st.picked === q.c ? 'Correto!' : 'Resposta: ' + L[q.c] + '.') + '</strong> ' + esc(q.w) + '</div>' : '<div class="wait">Escolha uma alternativa</div>') + '</div>';
+    html += '<button type="button" class="next" id="prox"' + (ans ? '' : ' disabled') + '>' + (st.step < 2 ? 'Próxima questão' : 'Ver meu resultado') + '</button></div>';
     el.innerHTML = html;
     el.querySelectorAll('.opt').forEach(function (b) {
       b.onclick = function () { if (st.picked !== null) return; var i = +b.dataset.i; st.picked = i; if (i === Q[st.step].c) st.score++; render(); };
     });
-    $('prox').onclick = function () { if (st.step < 2) { st.step++; st.picked = null; } else st.done = true; render(); $('teste').scrollIntoView({ block: 'start' }); };
+    $('prox').onclick = function () { if (st.step < 2) { st.step++; st.picked = null; } else st.done = true; render(); };
   }
   $('comecar').addEventListener('click', function (e) {
     e.preventDefault();
