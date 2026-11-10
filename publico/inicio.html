@@ -116,7 +116,7 @@ details summary::-webkit-details-marker{display:none}
 details summary::after{content:'+';font-weight:700;color:#1E5FC2}
 details[open] summary::after{content:'–'}
 details p{margin:10px 0 0;font-size:15px;line-height:1.55;color:#475569}
-/* depoimentos (só aparecem com depoimentos reais em rodape.js) */
+/* depoimentos (só aparecem com depoimentos reais: lista de rodape.js + aprovados no /admin) */
 #depoimentos[hidden]{display:none}
 .dep{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:22px;margin:0}
 .dep blockquote{margin:0;line-height:1.6;color:#334155}.dep figcaption{margin-top:12px;font-weight:700}
@@ -218,7 +218,7 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
   </div>
 </section>
 
-<!-- DEPOIMENTOS (somente reais, configurados em rodape.js) -->
+<!-- DEPOIMENTOS (somente reais: lista de rodape.js + aprovados no /admin) -->
 <section class="sec" id="depoimentos" hidden>
   <div class="wrap" style="display:flex;flex-direction:column;gap:24px">
     <h2 class="h2">Quem já está treinando</h2>
@@ -414,13 +414,23 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
     a.addEventListener('click', function () { if (window.fbq) fbq('track', 'AddToCart', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL', posicao: a.dataset.pos || 'outro' }); });
   });
 
-  // ---------- Depoimentos reais (rodape.js) ----------
+  // ---------- Depoimentos reais ----------
+  // Duas fontes: a lista manual de rodape.js e os aprovados na página /admin (alunos que autorizaram a publicação).
   var deps = ((window.EMPRESA && EMPRESA.depoimentos) || []).filter(function (d) { return d && d.texto; });
-  if (deps.length) {
-    $('listaDepoimentos').innerHTML = deps.map(function (d) {
-      return '<figure class="dep"><blockquote>“' + esc(d.texto) + '”</blockquote><figcaption>' + esc(d.nome) + (d.concurso ? ' <span class="muted" style="font-weight:500">· ' + esc(d.concurso) + '</span>' : '') + '</figcaption></figure>';
+  function desenharDepoimentos(lista) {
+    if (!lista.length) return;
+    $('listaDepoimentos').innerHTML = lista.map(function (d) {
+      var detalhe = [d.cidade, d.concurso].filter(Boolean).map(esc).join(' · ');
+      return '<figure class="dep"><blockquote>“' + esc(d.texto) + '”</blockquote><figcaption>' + esc(d.nome) + (detalhe ? ' <span class="muted" style="font-weight:500">· ' + detalhe + '</span>' : '') + '</figcaption></figure>';
     }).join('');
     $('depoimentos').hidden = false;
+  }
+  desenharDepoimentos(deps);
+  if (window.fetch) {
+    fetch('/api/depoimentos').then(function (r) { return r.ok ? r.json() : null; }).then(function (dados) {
+      var aprovados = ((dados && dados.depoimentos) || []).filter(function (d) { return d && d.texto && d.nome; });
+      if (aprovados.length) desenharDepoimentos(deps.concat(aprovados));
+    }).catch(function () {});
   }
 })();
 </script>

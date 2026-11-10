@@ -67,6 +67,14 @@
                     </table>
                 </div>
             </section>
+
+            <!-- Opiniões dos alunos -->
+            <section class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 p-6">
+                <h2 class="font-extrabold text-lg mb-1">Opiniões dos alunos <span id="totalOpinioes" class="text-sm font-semibold text-slate-500"></span></h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Respostas do card da tela de resultado. Só dá para aprovar quem marcou "Autorizo publicar no site". No site aparecem apenas o primeiro nome, a cidade, o concurso e o comentário.</p>
+                <p id="erroOpinioes" class="hidden text-sm text-rose-600 dark:text-rose-400 mb-3"></p>
+                <div id="opinioes" class="space-y-3"></div>
+            </section>
         </div>
     </main>
     <footer id="rodape"></footer>
@@ -113,6 +121,53 @@
                 document.getElementById('secLogin').classList.add('hidden');
                 document.getElementById('secPainel').classList.remove('hidden');
                 desenhar();
+                carregarOpinioes();
+            } catch (e) { mensagem(e.message, true); }
+        }
+        // ---------- Opiniões dos alunos ----------
+        let opinioes = [];
+        async function carregarOpinioes() {
+            const erro = document.getElementById('erroOpinioes');
+            try {
+                opinioes = (await api('/api/admin/depoimentos')).depoimentos || [];
+                erro.classList.add('hidden');
+            } catch (e) {
+                opinioes = [];
+                erro.textContent = 'Não foi possível carregar as opiniões. Se a tabela "depoimentos" ainda não foi criada no Supabase, rode o arquivo supabase.sql (SQL Editor > New query > Run).';
+                erro.classList.remove('hidden');
+            }
+            desenharOpinioes();
+        }
+        function desenharOpinioes() {
+            const media = opinioes.length ? (opinioes.reduce((s, d) => s + Number(d.nota || 0), 0) / opinioes.length).toFixed(1).replace('.', ',') : '';
+            document.getElementById('totalOpinioes').textContent = opinioes.length ? `(${opinioes.length} · nota média ${media} · ${opinioes.filter(d => d.aprovado).length} no site)` : '';
+            const selo = (texto, cor) => `<span class="text-xs font-bold px-2 py-1 rounded-full ${cor}">${texto}</span>`;
+            document.getElementById('opinioes').innerHTML = opinioes.map(d => {
+                const estrelas = '★'.repeat(d.nota) + '☆'.repeat(5 - d.nota);
+                const estado = d.aprovado ? selo('No site', 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300')
+                    : d.autoriza ? selo('Autorizou publicar', 'bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300')
+                    : selo('Não autorizou publicar', 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300');
+                const publicavel = d.autoriza && d.texto && d.nome;
+                const botao = d.aprovado
+                    ? `<button data-email="${esc(d.email)}" data-aprovar="0" onclick="aprovar(this)" class="text-xs font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600">Tirar do site</button>`
+                    : publicavel ? `<button data-email="${esc(d.email)}" data-aprovar="1" onclick="aprovar(this)" class="text-xs font-bold px-2.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white">Aprovar para publicar</button>` : '';
+                return `
+                <article class="rounded-2xl border border-slate-200 dark:border-slate-700 p-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <p class="text-amber-500 text-lg leading-none" aria-label="Nota ${d.nota} de 5">${estrelas}</p>
+                        <div class="flex flex-wrap items-center gap-2">${estado}${botao}</div>
+                    </div>
+                    <p class="mt-3 ${d.texto ? '' : 'text-slate-500 italic'}">${d.texto ? esc(d.texto) : 'Sem comentário.'}</p>
+                    <p class="mt-3 text-xs text-slate-500 dark:text-slate-400 break-all">${[d.nome, d.cidade, d.concurso].filter(Boolean).map(esc).join(' · ') || '—'}<br>${esc(d.email)} · ${data(d.criado_em)}</p>
+                </article>`;
+            }).join('') || '<p class="py-4 text-center text-sm text-slate-500">Nenhuma opinião recebida ainda.</p>';
+        }
+        async function aprovar(botao) {
+            const aprovado = botao.dataset.aprovar === '1';
+            try {
+                await api('/api/admin/depoimentos/aprovar', { email: botao.dataset.email, aprovado });
+                mensagem(aprovado ? 'Depoimento aprovado. Ele aparece no site em até 1 minuto.' : 'Depoimento retirado do site.');
+                carregarOpinioes();
             } catch (e) { mensagem(e.message, true); }
         }
         function desenhar() {

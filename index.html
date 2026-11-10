@@ -213,6 +213,51 @@
                     </button>
                 </div>
                 <p id="avisoCompartilhar" class="hidden -mt-5 mb-8 text-center text-sm font-semibold text-slate-600 dark:text-slate-300" role="status" aria-live="polite"></p>
+                <!-- Feedback do aluno: aparece uma única vez por conta (o servidor guarda a resposta ou o "agora não") -->
+                <div id="cardFeedback" class="hidden mb-8 rounded-2xl border border-brand-100 dark:border-slate-700 bg-brand-50 dark:bg-slate-900/60 p-5">
+                    <form id="formFeedback" onsubmit="enviarFeedback(event)" novalidate>
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div class="text-center sm:text-left">
+                                <p class="font-extrabold text-slate-900 dark:text-white">O que você achou do simulado?</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-300">Dê uma nota de 1 a 5. Leva menos de um minuto e me ajuda a melhorar.</p>
+                            </div>
+                            <div class="shrink-0 flex flex-col items-center gap-1">
+                                <div id="fbEstrelas" role="radiogroup" aria-label="Nota de 1 a 5" class="flex gap-0.5">
+                            <button type="button" role="radio" aria-checked="false" aria-label="Nota 1 de 5" data-nota="1" onclick="escolherNota(1)" class="fb-estrela w-11 h-11 rounded-xl text-2xl text-slate-300 dark:text-slate-600 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition-colors"><i class="fa-solid fa-star"></i></button>
+                            <button type="button" role="radio" aria-checked="false" aria-label="Nota 2 de 5" data-nota="2" onclick="escolherNota(2)" class="fb-estrela w-11 h-11 rounded-xl text-2xl text-slate-300 dark:text-slate-600 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition-colors"><i class="fa-solid fa-star"></i></button>
+                            <button type="button" role="radio" aria-checked="false" aria-label="Nota 3 de 5" data-nota="3" onclick="escolherNota(3)" class="fb-estrela w-11 h-11 rounded-xl text-2xl text-slate-300 dark:text-slate-600 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition-colors"><i class="fa-solid fa-star"></i></button>
+                            <button type="button" role="radio" aria-checked="false" aria-label="Nota 4 de 5" data-nota="4" onclick="escolherNota(4)" class="fb-estrela w-11 h-11 rounded-xl text-2xl text-slate-300 dark:text-slate-600 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition-colors"><i class="fa-solid fa-star"></i></button>
+                            <button type="button" role="radio" aria-checked="false" aria-label="Nota 5 de 5" data-nota="5" onclick="escolherNota(5)" class="fb-estrela w-11 h-11 rounded-xl text-2xl text-slate-300 dark:text-slate-600 hover:text-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition-colors"><i class="fa-solid fa-star"></i></button>
+                                </div>
+                                <button type="button" id="fbAgoraNao" onclick="dispensarFeedback()" class="text-xs text-slate-500 dark:text-slate-400 underline hover:text-slate-700 dark:hover:text-slate-200">Agora não</button>
+                            </div>
+                        </div>
+                        <div id="fbDetalhes" class="hidden mt-5 pt-5 border-t border-brand-100 dark:border-slate-700 space-y-4">
+                            <div>
+                                <label for="fbTexto" class="block text-sm font-bold text-slate-700 dark:text-slate-200 mb-1">Quer contar o motivo? <span class="font-normal text-slate-500 dark:text-slate-400">(opcional)</span></label>
+                                <textarea id="fbTexto" rows="3" maxlength="400" placeholder="O que ajudou, o que faltou, o que pode melhorar…" class="w-full p-3 text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none"></textarea>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label for="fbNome" class="block text-sm font-bold text-slate-700 dark:text-slate-200 mb-1">Primeiro nome</label>
+                                    <input id="fbNome" maxlength="30" autocomplete="given-name" class="w-full p-3 text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="fbCidade" class="block text-sm font-bold text-slate-700 dark:text-slate-200 mb-1">Cidade</label>
+                                    <input id="fbCidade" maxlength="60" autocomplete="address-level2" placeholder="Ex.: Rio Branco/AC" class="w-full p-3 text-sm bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Concurso: <strong id="fbConcurso" class="text-slate-900 dark:text-white"></strong></p>
+                            <label class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-200 cursor-pointer">
+                                <input id="fbAutoriza" type="checkbox" class="mt-0.5 w-5 h-5 shrink-0 rounded accent-sky-600">
+                                <span><strong>Autorizo publicar no site</strong> o meu comentário, com meu primeiro nome, cidade e concurso. Sem marcar, sua opinião fica só comigo. Seu e-mail e sobrenome nunca aparecem.</span>
+                            </label>
+                            <p id="fbErro" class="hidden text-sm font-semibold text-rose-600 dark:text-rose-400" role="alert"></p>
+                            <button id="fbEnviar" type="submit" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 disabled:opacity-60 text-white font-bold text-sm">Enviar opinião</button>
+                        </div>
+                    </form>
+                    <p id="fbObrigado" class="hidden text-center font-bold text-slate-900 dark:text-white" role="status"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i>Recebido. Obrigado pela opinião!</p>
+                </div>
                 <div id="pedidoOpiniao" class="hidden mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl border border-brand-100 dark:border-slate-700 bg-brand-50 dark:bg-slate-900/60 p-5">
                     <div class="text-center sm:text-left">
                         <p class="font-extrabold text-slate-900 dark:text-white">Está gostando dos simulados?</p>
@@ -862,9 +907,75 @@
             var E = window.EMPRESA || {};
             var linkOp = E.whatsapp ? 'https://wa.me/' + String(E.whatsapp).replace(/\D/g, '') + '?text=' + encodeURIComponent('Oi! Fiz o simulado ' + examInfo.title + ' e queria dizer que ')
                 : (E.instagram ? 'https://ig.me/m/' + String(E.instagram).replace(/^@/, '') : '');
-            if (linkOp) { $('linkOpiniao').href = linkOp; $('pedidoOpiniao').classList.remove('hidden'); }
+            prepararFeedback(examInfo.title, linkOp);
             // Gera a imagem já agora: no iPhone o compartilhamento precisa abrir logo após o toque
             gerarImagemResultado().then(function (blob) { imagemResultado = blob; }).catch(function () {});
+        }
+
+        // ======================= FEEDBACK (uma vez por aluno) =======================
+        // O card de nota aparece só enquanto o aluno não respondeu nem tocou em "Agora não" (o servidor guarda isso).
+        // Depois disso, a tela de resultado volta a mostrar o convite de opinião pelo WhatsApp.
+        let fbNota = 0, linkOpiniaoAtual = '';
+        function mostrarPedidoWhats() {
+            if (linkOpiniaoAtual) { $('linkOpiniao').href = linkOpiniaoAtual; $('pedidoOpiniao').classList.remove('hidden'); }
+        }
+        function escolherNota(n) {
+            fbNota = n;
+            document.querySelectorAll('.fb-estrela').forEach(function (b) {
+                var acesa = Number(b.dataset.nota) <= n;
+                b.setAttribute('aria-checked', String(Number(b.dataset.nota) === n));
+                b.classList.toggle('text-amber-400', acesa);
+                b.classList.toggle('text-slate-300', !acesa);
+                b.classList.toggle('dark:text-slate-600', !acesa);
+            });
+            if (n) { $('fbDetalhes').classList.remove('hidden'); $('fbAgoraNao').classList.add('hidden'); }
+        }
+        async function prepararFeedback(concurso, linkWhats) {
+            linkOpiniaoAtual = linkWhats;
+            $('pedidoOpiniao').classList.add('hidden');
+            $('cardFeedback').classList.add('hidden');
+            var estado = null;
+            try {
+                var r = await fetch('/api/feedback', { credentials: 'same-origin', cache: 'no-store' });
+                if (r.ok) estado = await r.json();
+            } catch (e) { /* sem internet: segue com o convite do WhatsApp */ }
+            if (!estado || !estado.pendente) return mostrarPedidoWhats();
+            escolherNota(0);
+            $('formFeedback').reset();
+            $('formFeedback').classList.remove('hidden');
+            $('fbDetalhes').classList.add('hidden');
+            $('fbAgoraNao').classList.remove('hidden');
+            $('fbObrigado').classList.add('hidden');
+            $('fbErro').classList.add('hidden');
+            $('fbNome').value = estado.nome || '';
+            $('fbConcurso').textContent = concurso;
+            $('cardFeedback').classList.remove('hidden');
+        }
+        function erroFeedback(texto) { $('fbErro').textContent = texto; $('fbErro').classList.remove('hidden'); }
+        async function enviarFeedback(ev) {
+            ev.preventDefault();
+            var dados = {
+                nota: fbNota, texto: $('fbTexto').value.trim(), nome: $('fbNome').value.trim(), cidade: $('fbCidade').value.trim(),
+                concurso: $('fbConcurso').textContent, autoriza: $('fbAutoriza').checked
+            };
+            if (!dados.nota) return erroFeedback('Escolha uma nota de 1 a 5.');
+            if (dados.autoriza && (!dados.texto || !dados.nome || !dados.cidade)) return erroFeedback('Para autorizar a publicação, preencha o comentário, o primeiro nome e a cidade.');
+            $('fbErro').classList.add('hidden');
+            $('fbEnviar').disabled = true;
+            try {
+                var r = await fetch('/api/feedback', { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(dados) });
+                if (r.status === 401) { location.href = '/entrar?motivo=sessao'; return; }
+                if (!r.ok && r.status !== 409) { var corpo = await r.json().catch(function () { return {}; }); throw new Error(corpo.erro || ''); }
+                $('formFeedback').classList.add('hidden');
+                $('fbObrigado').classList.remove('hidden');
+            } catch (e) {
+                erroFeedback(e.message || 'Não foi possível enviar agora. Confira a internet e tente de novo.');
+            } finally { $('fbEnviar').disabled = false; }
+        }
+        function dispensarFeedback() {
+            $('cardFeedback').classList.add('hidden');
+            mostrarPedidoWhats();
+            fetch('/api/feedback/dispensar', { method: 'POST', credentials: 'same-origin' }).catch(function () {});
         }
 
         // ======================= COMPARTILHAR RESULTADO =======================

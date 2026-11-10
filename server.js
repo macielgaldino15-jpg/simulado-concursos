@@ -26,6 +26,7 @@ const KIWIFY_PRODUTO = process.env.KIWIFY_PRODUTO_ID || '';
 const ADMIN_TOKEN = process.env.ADMIN_TOKEN || '';
 const COOKIE_SEGURO = process.env.COOKIE_SECURE ? process.env.COOKIE_SECURE === '1' : !!process.env.RENDER;
 const SESSAO_DIAS = 30;
+const MAX_DEPOIMENTOS_SITE = 30; // quantos depoimentos aprovados a página de apresentação mostra
 
 // Páginas e arquivos que só quem está logado pode baixar
 const PROTEGIDOS = new Set(['index.html', 'questoesDB.js', 'questoes_PRF.js', 'questoes_PRF_ADM.js', 'questoes_PC.js', 'questoes_PM.js', 'questoes_PETROBRAS.js']);
@@ -38,10 +39,14 @@ const PUBLICOS = {
 // ======================= ARMAZENAMENTO =======================
 // Tabela "usuarios": email, nome, cpf, pedido, status ('ativo' | 'bloqueado'),
 // senha_hash, sessao_hash, sessao_em, criado_em, atualizado_em
+// Tabela "depoimentos" (uma linha por aluno, chave: email): nota, texto, nome, cidade, concurso,
+// autoriza, autorizado_em, aprovado, aprovado_em, criado_em, atualizado_em
+// (linha com nota nula = o aluno fechou o card sem responder; serve só para não perguntar de novo)
 const armazenamento = SUPABASE_URL && SUPABASE_KEY ? criarSupabase() : criarArquivoLocal();
 
 function criarSupabase() {
   const base = `${SUPABASE_URL}/rest/v1/usuarios`;
+  const baseDep = `${SUPABASE_URL}/rest/v1/depoimentos`;
   const cab = { apikey: SUPABASE_KEY, 'Content-Type': 'application/json' };
   if (SUPABASE_KEY.startsWith('eyJ')) cab.Authorization = `Bearer ${SUPABASE_KEY}`; // chaves antigas (JWT)
   async function req(url, opcoes = {}) {
@@ -64,6 +69,19 @@ function criarSupabase() {
       return linhas[0] || null;
     },
     async listar() { return req(`${base}?select=email,nome,status,pedido,criado_em,sessao_em&order=criado_em.desc&limit=1000`); },
+    depoimentos: {
+      async buscar(email) { return (await req(`${baseDep}?email=eq.${encodeURIComponent(email)}&select=*`))[0] || null; },
+      async salvar(d) {
+        const linhas = await req(baseDep, { method: 'POST', headers: { Prefer: 'resolution=merge-duplicates,return=representation' }, body: JSON.stringify({ ...d, atualizado_em: new Date().toISOString() }) });
+        return linhas[0];
+      },
+      async atualizar(email, campos) {
+        const linhas = await req(`${baseDep}?email=eq.${encodeURIComponent(email)}`, { method: 'PATCH', headers: { Prefer: 'return=representation' }, body: JSON.stringify({ ...campos, atualizado_em: new Date().toISOString() }) });
+        return linhas[0] || null;
+      },
+      async listar() { return req(`${baseDep}?nota=not.is.null&select=*&order=criado_em.desc&limit=1000`); },
+      async aprovados() { return req(`${baseDep}?aprovado=is.true&autoriza=is.true&select=nome,cidade,concurso,texto&order=aprovado_em.desc&limit=${MAX_DEPOIMENTOS_SITE}`); },
+    },
   };
 }
 
@@ -71,6 +89,10 @@ function criarArquivoLocal() {
   const arq = path.join(RAIZ, '.dados-locais.json');
   const ler = () => { try { return JSON.parse(fs.readFileSync(arq, 'utf8')); } catch { return {}; } };
   const gravar = d => fs.writeFileSync(arq, JSON.stringify(d, null, 2));
+  // Depoimentos ficam em outro arquivo local (também fora do Git), para não misturar com os usuários
+  const arqDep = path.join(RAIZ, '.depoimentos-locais.json');
+  const lerDep = () => { try { return JSON.parse(fs.readFileSync(arqDep, 'utf8')); } catch { return {}; } };
+  const gravarDep = d => fs.writeFileSync(arqDep, JSON.stringify(d, null, 2));
   return {
     nome: 'arquivo local (.dados-locais.json) — use somente para testes',
     async buscar(email) { return ler()[email] || null; },
@@ -87,6 +109,26 @@ function criarArquivoLocal() {
     async listar() {
       return Object.values(ler()).sort((a, b) => String(b.criado_em).localeCompare(String(a.criado_em)))
         .map(({ email, nome, status, pedido, criado_em, sessao_em }) => ({ email, nome, status, pedido, criado_em, sessao_em }));
+    },
+    depoimentos: {
+      async buscar(email) { return lerDep()[email] || null; },
+      async salvar(d) {
+        const t = lerDep(); const agora = new Date().toISOString();
+        t[d.email] = { criado_em: agora, autoriza: false, aprovado: false, ...(t[d.email] || {}), ...d, atualizado_em: agora };
+        gravarDep(t); return t[d.email];
+      },
+      async atualizar(email, campos) {
+        const t = lerDep(); if (!t[email]) return null;
+        t[email] = { ...t[email], ...campos, atualizado_em: new Date().toISOString() }; gravarDep(t); return t[email];
+      },
+      async listar() {
+        return Object.values(lerDep()).filter(d => d.nota != null).sort((a, b) => String(b.criado_em).localeCompare(String(a.criado_em)));
+      },
+      async aprovados() {
+        return Object.values(lerDep()).filter(d => d.aprovado && d.autoriza)
+          .sort((a, b) => String(b.aprovado_em).localeCompare(String(a.aprovado_em))).slice(0, MAX_DEPOIMENTOS_SITE)
+          .map(({ nome, cidade, concurso, texto }) => ({ nome, cidade, concurso, texto }));
+      },
     },
   };
 }
@@ -175,6 +217,33 @@ function adminAutorizado(req) {
   return iguais(sha256(String(req.headers['x-admin-token'] || '')), sha256(ADMIN_TOKEN));
 }
 
+// ======================= FEEDBACK E DEPOIMENTOS =======================
+// Limpa um texto digitado pelo aluno: sem caracteres de controle, espaços repetidos e com tamanho máximo
+function limpar(valor, max) {
+  return String(valor ?? '').replace(/[\u0000-\u001f\u007f]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max);
+}
+// Só o primeiro nome vai para o site (LGPD): "maria clara souza" vira "Maria"
+function primeiroNome(valor) {
+  const p = limpar(valor, 80).split(' ')[0].slice(0, 30);
+  return p ? p[0].toLocaleUpperCase('pt-BR') + p.slice(1) : '';
+}
+// Lista pública (aprovados) fica 1 minuto em memória para não consultar o banco a cada visita
+let cacheAprovados = { em: 0, lista: [] };
+async function depoimentosAprovados() {
+  if (Date.now() - cacheAprovados.em < 60000) return cacheAprovados.lista;
+  try {
+    const lista = (await armazenamento.depoimentos.aprovados())
+      .map(d => ({ nome: d.nome || '', cidade: d.cidade || '', concurso: d.concurso || '', texto: d.texto || '' }))
+      .filter(d => d.nome && d.texto);
+    cacheAprovados = { em: Date.now(), lista };
+  } catch (erro) {
+    // Ex.: tabela ainda não criada no Supabase — a página de apresentação segue funcionando sem a seção
+    console.error('[depoimentos]', erro.message);
+    cacheAprovados = { em: Date.now(), lista: [] };
+  }
+  return cacheAprovados.lista;
+}
+
 // ======================= ROTAS =======================
 async function rotear(req, res) {
   const url = new URL(req.url, 'http://local');
@@ -254,6 +323,40 @@ async function rotear(req, res) {
     return json(res, 200, { ok: true }, { 'Set-Cookie': cookieSessao('', 0) });
   }
 
+  // ---------- Depoimentos aprovados (público: só primeiro nome, cidade, concurso e texto) ----------
+  if (metodo === 'GET' && rota === '/api/depoimentos') return json(res, 200, { depoimentos: await depoimentosAprovados() });
+
+  // ---------- Feedback do aluno (uma vez por conta) ----------
+  if (rota === '/api/feedback' || rota === '/api/feedback/dispensar') {
+    const u = await usuarioDaSessao(req);
+    if (!u) return json(res, 401, { erro: 'Sessão encerrada' });
+    let atual;
+    try { atual = await armazenamento.depoimentos.buscar(u.email); }
+    catch (erro) {
+      // Tabela ainda não criada: não mostra o card nem quebra a tela de resultado
+      console.error('[feedback]', erro.message);
+      return metodo === 'GET' ? json(res, 200, { pendente: false }) : json(res, 503, { erro: 'Não foi possível salvar agora. Tente mais tarde.' });
+    }
+    // Pendente = nunca respondeu nem fechou o card
+    if (metodo === 'GET' && rota === '/api/feedback') return json(res, 200, { pendente: !atual, nome: primeiroNome(u.nome) });
+    if (metodo === 'POST' && rota === '/api/feedback/dispensar') {
+      if (!atual) await armazenamento.depoimentos.salvar({ email: u.email });
+      return json(res, 200, { ok: true });
+    }
+    if (metodo === 'POST' && rota === '/api/feedback') {
+      if (atual && atual.nota != null) return json(res, 409, { erro: 'Você já enviou sua opinião. Obrigado!' });
+      const c = await lerJson(req);
+      const nota = Number(c.nota);
+      if (!Number.isInteger(nota) || nota < 1 || nota > 5) return json(res, 400, { erro: 'Escolha uma nota de 1 a 5.' });
+      const texto = limpar(c.texto, 400), nome = primeiroNome(c.nome), cidade = limpar(c.cidade, 60), concurso = limpar(c.concurso, 120);
+      const autoriza = c.autoriza === true;
+      if (autoriza && (!texto || !nome || !cidade)) return json(res, 400, { erro: 'Para autorizar a publicação, preencha o comentário, o primeiro nome e a cidade.' });
+      const agora = new Date().toISOString();
+      await armazenamento.depoimentos.salvar({ email: u.email, nota, texto, nome, cidade, concurso, autoriza, autorizado_em: autoriza ? agora : null, aprovado: false, aprovado_em: null });
+      return json(res, 200, { ok: true });
+    }
+  }
+
   // ---------- Webhook da Kiwify ----------
   if (metodo === 'POST' && rota === '/webhook/kiwify') {
     if (!KIWIFY_TOKEN) return json(res, 503, { erro: 'KIWIFY_WEBHOOK_TOKEN não configurado' });
@@ -307,6 +410,18 @@ async function rotear(req, res) {
       if (!['ativo', 'bloqueado'].includes(status)) return json(res, 400, { erro: 'Status inválido.' });
       const u = await armazenamento.atualizar(normEmail(email), { status, ...(status === 'bloqueado' ? { sessao_hash: null } : {}) });
       return u ? json(res, 200, { ok: true }) : json(res, 404, { erro: 'Usuário não encontrado.' });
+    }
+    if (metodo === 'GET' && rota === '/api/admin/depoimentos') return json(res, 200, { depoimentos: await armazenamento.depoimentos.listar() });
+    if (metodo === 'POST' && rota === '/api/admin/depoimentos/aprovar') {
+      const { email, aprovado } = await lerJson(req);
+      const d = await armazenamento.depoimentos.buscar(normEmail(email));
+      if (!d || d.nota == null) return json(res, 404, { erro: 'Resposta não encontrada.' });
+      // LGPD: só vai para o site quem marcou a autorização (e escreveu algo para publicar)
+      if (aprovado === true && !d.autoriza) return json(res, 400, { erro: 'Este aluno não autorizou a publicação.' });
+      if (aprovado === true && (!d.texto || !d.nome)) return json(res, 400, { erro: 'Resposta sem comentário ou sem nome não pode ser publicada.' });
+      await armazenamento.depoimentos.atualizar(d.email, { aprovado: aprovado === true, aprovado_em: aprovado === true ? new Date().toISOString() : null });
+      cacheAprovados.em = 0;
+      return json(res, 200, { ok: true });
     }
     if (metodo === 'POST' && rota === '/api/admin/derrubar-sessao') {
       const { email } = await lerJson(req);
