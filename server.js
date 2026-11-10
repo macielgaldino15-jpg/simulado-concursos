@@ -80,7 +80,7 @@ function criarSupabase() {
         return linhas[0] || null;
       },
       async listar() { return req(`${baseDep}?nota=not.is.null&select=*&order=criado_em.desc&limit=1000`); },
-      async aprovados() { return req(`${baseDep}?aprovado=is.true&autoriza=is.true&select=nome,cidade,concurso,texto&order=aprovado_em.desc&limit=${MAX_DEPOIMENTOS_SITE}`); },
+      async aprovados() { return req(`${baseDep}?aprovado=is.true&autoriza=is.true&select=nome,cidade,concurso,texto,criado_em&order=aprovado_em.desc&limit=${MAX_DEPOIMENTOS_SITE}`); },
     },
   };
 }
@@ -127,7 +127,7 @@ function criarArquivoLocal() {
       async aprovados() {
         return Object.values(lerDep()).filter(d => d.aprovado && d.autoriza)
           .sort((a, b) => String(b.aprovado_em).localeCompare(String(a.aprovado_em))).slice(0, MAX_DEPOIMENTOS_SITE)
-          .map(({ nome, cidade, concurso, texto }) => ({ nome, cidade, concurso, texto }));
+          .map(({ nome, cidade, concurso, texto, criado_em }) => ({ nome, cidade, concurso, texto, criado_em }));
       },
     },
   };
@@ -227,13 +227,23 @@ function primeiroNome(valor) {
   const p = limpar(valor, 80).split(' ')[0].slice(0, 30);
   return p ? p[0].toLocaleUpperCase('pt-BR') + p.slice(1) : '';
 }
+// Data e hora em que o aluno enviou a opinião, no horário do Acre (aparecem no card da página de apresentação)
+function dataHora(iso) {
+  const d = new Date(iso);
+  if (!iso || isNaN(d)) return {};
+  const fuso = { timeZone: 'America/Rio_Branco' };
+  return {
+    data: d.toLocaleDateString('pt-BR', { ...fuso, day: '2-digit', month: '2-digit', year: 'numeric' }),
+    hora: d.toLocaleTimeString('pt-BR', { ...fuso, hour: '2-digit', minute: '2-digit', hour12: false }),
+  };
+}
 // Lista pública (aprovados) fica 1 minuto em memória para não consultar o banco a cada visita
 let cacheAprovados = { em: 0, lista: [] };
 async function depoimentosAprovados() {
   if (Date.now() - cacheAprovados.em < 60000) return cacheAprovados.lista;
   try {
     const lista = (await armazenamento.depoimentos.aprovados())
-      .map(d => ({ nome: d.nome || '', cidade: d.cidade || '', concurso: d.concurso || '', texto: d.texto || '' }))
+      .map(d => ({ nome: d.nome || '', cidade: d.cidade || '', concurso: d.concurso || '', texto: d.texto || '', ...dataHora(d.criado_em) }))
       .filter(d => d.nome && d.texto);
     cacheAprovados = { em: Date.now(), lista };
   } catch (erro) {
@@ -323,7 +333,7 @@ async function rotear(req, res) {
     return json(res, 200, { ok: true }, { 'Set-Cookie': cookieSessao('', 0) });
   }
 
-  // ---------- Depoimentos aprovados (público: só primeiro nome, cidade, concurso e texto) ----------
+  // ---------- Depoimentos aprovados (público: só primeiro nome, cidade, concurso, texto e data/hora do envio) ----------
   if (metodo === 'GET' && rota === '/api/depoimentos') return json(res, 200, { depoimentos: await depoimentosAprovados() });
 
   // ---------- Feedback do aluno (uma vez por conta) ----------
