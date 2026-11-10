@@ -13,8 +13,12 @@ var EMPRESA = {
     linkCompra: 'https://pay.kiwify.com.br/7PTgs9c',   // link do checkout da Kiwify (ex.: 'https://pay.kiwify.com.br/XXXXXXX') — usado nos botões da página de apresentação
     whatsapp: '5568992147097',     // só números, com DDD e 55 na frente (ex.: '5568999999999') — botão "Fale comigo" e pedido de opinião
     // Depoimentos REAIS de alunos, com autorização. A seção só aparece quando houver pelo menos um.
-    // Exemplo: { nome: 'Karoline', concurso: 'PRF', texto: 'O que a pessoa escreveu, do jeito que ela escreveu.' },
+    // Exemplo: { nome: 'Karoline', cidade: 'Rio Branco/AC', concurso: 'PRF', texto: 'O que a pessoa escreveu, do jeito que ela escreveu.' },
+    // "cidade" e "concurso" são opcionais. Só inclua o que a pessoa autorizou mostrar.
     depoimentos: [
+        // Autorizados pelo WhatsApp em 09/11/2026 (primeiro nome e cidade)
+        { nome: 'Suely', cidade: 'Rio Branco/AC', texto: 'Gostei muito e com certeza vou querer muitos.' },
+        { nome: 'Jose', cidade: 'Rio Branco/AC', texto: 'Muito bom. Gostei mesmo da plataforma de simulados' },
     ],
 };
 
