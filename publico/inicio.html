@@ -29,6 +29,67 @@ h1,h2,h3{margin:0}
 .buy-top .parc{background:#fff;color:#0A1830;border-radius:10px;padding:8px 12px;white-space:nowrap}
 .buy-top .parc small{font-size:11px;font-weight:600;color:#475569}
 .buy-top .parc b{font-family:'Space Grotesk',sans-serif;font-size:19px}
+/* prévia: quiz aberto no topo */
+.hero{align-items:flex-start;padding:26px 0 36px}
+.hero .narrow{gap:16px}
+.hero .card{width:100%;text-align:left;margin-top:2px}
+.hero .card p{color:#0F172A;max-width:none;font-size:inherit}
+.hero .card .qtext{font-size:17px}
+.hero .card .res p.t{font-size:19px}
+.go{font-size:15px;color:#DCE5F2;font-weight:500}
+.go b{color:#F5B800}
+.go .arr{display:inline-block;animation:bob 1.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@media (max-width:600px){
+  .hero h1{font-size:31px}
+  .hero p#sub{display:none}
+  .hero .qbody,.hero .res{height:560px}
+}
+/* barra fixa */
+.stickybuy{position:fixed;left:10px;right:10px;bottom:10px;z-index:80;display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px 10px 10px 16px;border-radius:16px;background:rgba(10,24,48,.96);border:1px solid #2A3E63;box-shadow:0 16px 40px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .3s ease}
+.stickybuy.on{transform:none}
+.stickybuy .sb-p{display:flex;flex-direction:column;line-height:1.15;color:#fff}
+.stickybuy small{font-size:11px;color:#9FB0CB}
+.stickybuy b{font-family:'Space Grotesk',sans-serif;font-size:18px}
+.stickybuy .btn-y{min-height:48px;padding:0 18px;font-size:16px;white-space:nowrap}
+.stickybuy{display:flex}
+/* ===== Botões de compra chamativos (estilo da landing nova, cores do site) ===== */
+.btn-y.hot{position:relative;overflow:hidden;isolation:isolate;background:#F5B800;
+  box-shadow:0 5px 0 #B98500,0 18px 30px -12px rgba(245,184,0,.7);transition:transform .15s ease,box-shadow .15s ease,background .15s}
+.btn-y.hot::after{content:"";position:absolute;top:0;left:-60%;width:38%;height:100%;z-index:-1;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:shine 4.5s 1.5s ease-in-out infinite}
+.btn-y.hot:hover{background:#FFC61A;transform:translateY(-2px)}
+.btn-y.hot:active{transform:translateY(4px);box-shadow:0 1px 0 #B98500,0 8px 16px -10px rgba(245,184,0,.7);transition-duration:.06s}
+.btn-y.bob{animation:bob 3.2s ease-in-out infinite}
+@keyframes shine{0%{left:-60%}20%,100%{left:130%}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -8px}}
+/* plaquinha de preço que gira: 6x de R$ 5,61 <-> Pix R$ 29,90 */
+.chip3d{display:inline-grid;perspective:500px;animation:chipPulse 2.4s 1.2s ease-in-out infinite;flex:none}
+.chip3d .flip{display:grid;transform-style:preserve-3d;animation:flip 7s 1.8s cubic-bezier(.7,0,.3,1) infinite}
+.chip3d .face{grid-area:1/1;display:inline-flex;align-items:baseline;justify-content:center;gap:5px;padding:11px 14px;border-radius:12px;
+  font:700 19px/1 'Space Grotesk',sans-serif;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background:linear-gradient(160deg,#16294D,#0A1830);color:#F5B800;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 3px 0 #050C18}
+.chip3d .face small{font:500 12px Inter,sans-serif;color:#C3CFE2}
+.chip3d .f2{transform:rotateX(180deg);background:linear-gradient(160deg,#0F5132,#0A2E1E);color:#7CF0A8}
+.chip3d .f2 small{color:#BDEFD0}
+.chip3d.sm .face{font-size:18px;padding:8px 11px;box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.stickybuy .sb-p{gap:4px}
+.res2{height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 6px}
+.res2 .ring{width:132px;height:132px;margin:0 auto 16px;position:relative}
+.res2 .ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.res2 .ring b{position:absolute;inset:0;display:grid;place-items:center;font:700 36px 'Space Grotesk',sans-serif;color:#0F172A}
+.res2 h3{font:700 24px/1.2 'Space Grotesk',sans-serif;color:#0F172A;margin:0 0 8px}
+.hero .card .res2 p{color:#475569;font-size:15.5px;line-height:1.5;margin:0 0 22px}
+.res2 .acao2{width:100%;min-height:60px;font-size:17px}
+.res2 .linkbtn{margin-top:14px}
+
+@keyframes flip{0%,42%{transform:rotateX(0deg)}50%,92%{transform:rotateX(180deg)}100%{transform:rotateX(360deg)}}
+@keyframes chipPulse{0%,100%{scale:1}50%{scale:1.06}}
+@media (prefers-reduced-motion:reduce){.btn-y.hot,.btn-y.hot::after,.chip3d,.chip3d .flip{animation:none}}
+
+@media (min-width:761px){.stickybuy{left:50%;right:auto;width:520px;margin-left:-260px}}
+body{padding-bottom:84px}
+
 
 /* topo */
 header{background:#0A1830;border-bottom:1px solid #1B2C4A}
@@ -153,22 +214,11 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
     <span class="badge" id="badge"><span class="dot"></span><span id="badgeTxt">Câmara de Rio Branco · prova dia 22/11</span></span>
     <h1 id="h1">Se a prova da Câmara fosse hoje, você <em>passaria?</em></h1>
     <p id="sub">Responda 3 questões no estilo do IDIB e descubra em 60 segundos onde você está perdendo pontos.</p>
-    <a href="#teste" id="comecar" class="btn-y pulse">Responder as 3 perguntas
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
-    </a>
-    <span class="hint">60 segundos · sem cadastro</span>
-    <a href="#" class="js-comprar buy-top" data-pos="topo">Já quero acessar
-      <span class="parc"><small>6x de</small> <b>R$ 5,61</b></span></a>
-    <span class="hint" style="margin-top:-12px">ou R$ 29,90 à vista no Pix · no cartão, total de R$ 33,66</span>
-  </div>
-</section>
-
-<!-- QUIZ -->
-<section id="teste" hidden>
-  <div class="wrap" style="width:100%">
+    <div class="go"><span class="arr">👇</span> Comece agora: <b>1ª questão</b> · sem cadastro</div>
     <div class="card" id="quiz" aria-live="polite"></div>
   </div>
 </section>
+
 
 <!-- DOR -->
 <section class="sec">
@@ -236,10 +286,10 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
         <span class="muted" style="font-size:14px">acesso vitalício por</span>
         <span style="display:flex;align-items:baseline;gap:8px"><span class="muted" style="font-size:18px;font-weight:600">6x de</span><span class="sg" style="font-size:58px;font-weight:700;line-height:1">R$ 5,61</span></span>
         <span style="font-size:15px;color:#0F172A;font-weight:600">ou R$ 29,90 à vista no Pix</span>
-        <span class="muted" style="font-size:13px">parcelado no cartão: total de R$ 33,66 · sem mensalidade</span>
+        <span class="muted" style="font-size:13px">pagamento único · sem mensalidade</span>
       </div>
       <div style="display:flex;flex-direction:column;gap:9px" id="ofList"></div>
-      <a href="#" class="btn-y js-comprar" data-pos="oferta" style="min-height:56px;font-size:18px">Quero acessar agora</a>
+      <a href="#" class="btn-y js-comprar hot bob" data-pos="oferta" style="min-height:64px;font-size:18px;justify-content:space-between;padding:0 10px 0 22px" aria-label="Quero acessar: 6x de R$ 5,61 ou R$ 29,90 no Pix">Quero acessar <span class="chip3d" aria-hidden="true"><span class="flip"><span class="face f1"><small>6x de</small>R$ 5,61</span><span class="face f2"><small>Pix</small>R$ 29,90</span></span></span></a>
       <div class="gar">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E5FC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         <span><strong style="color:#0F172A">Garantia de 7 dias.</strong> Não gostou? Devolvemos seus R$ 29,90.</span>
@@ -257,15 +307,21 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
 </section>
 
 <!-- CTA FINAL -->
-<section class="sec dark">
+<section class="sec dark" id="final">
   <div class="narrow" style="display:flex;flex-direction:column;gap:18px;text-align:center;align-items:center">
     <h2 class="h2" style="color:#fff;font-size:clamp(28px,4.5vw,44px)">Você vai descobrir seus erros de qualquer jeito. Melhor que seja antes da prova.</h2>
     <p style="margin:0;font-size:17px;line-height:1.55;color:#C3CFE2">R$ 29,90 à vista ou 6x de R$ 5,61 · acesso vitalício · garantia de 7 dias</p>
-    <a href="#" class="btn-y js-comprar" data-pos="final" style="min-height:58px;padding:0 28px;font-size:18px">Começar meu simulado</a>
+    <a href="#" class="btn-y js-comprar hot bob" data-pos="final" style="min-height:64px;padding:0 10px 0 24px;font-size:18px;gap:16px;width:100%;max-width:420px;justify-content:space-between" aria-label="Começar agora: 6x de R$ 5,61 ou R$ 29,90 no Pix">Começar agora <span class="chip3d" aria-hidden="true"><span class="flip"><span class="face f1"><small>6x de</small>R$ 5,61</span><span class="face f2"><small>Pix</small>R$ 29,90</span></span></span></a>
   </div>
 </section>
 
 <footer id="rodape"></footer>
+
+<!-- BARRA FIXA DE COMPRA (celular) -->
+<div class="stickybuy" id="stickybuy" aria-hidden="true">
+  <div class="sb-p"><small>Acesso completo</small><span class="chip3d sm" aria-hidden="true"><span class="flip"><span class="face f1"><small>6x de</small>R$ 5,61</span><span class="face f2"><small>Pix</small>R$ 29,90</span></span></span></div>
+  <a href="#" class="btn-y js-comprar hot" data-pos="barra" tabindex="-1">Quero acessar</a>
+</div>
 <script src="/rodape.js"></script>
 <script>
 (function () {
@@ -356,17 +412,22 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
   function render() {
     var el = $('quiz');
     if (st.done) {
-      var t = st.score === 3 ? 'Mandou bem! Mas 3 questões não são uma prova.'
-            : st.score > 0 ? 'Você errou ' + (3 - st.score) + ' de 3. Imagine numa prova inteira.'
-            : 'Melhor descobrir agora do que no dia da prova.';
-      var det = camara ? '1.212 da Câmara de Rio Branco (Médio e Superior) + bônus de PRF, Petrobras e Polícia Civil'
-            : 'PRF, PRF Agente Adm., Petrobras, Câmara de Rio Branco e Polícia Civil';
-      el.innerHTML = '<div class="res"><div class="top">' +
-        '<span class="qsub">Seu resultado</span><div class="sc" style="font-size:56px">' + st.score + '/3</div><p class="t" style="font-size:19px">' + t + '</p>' +
-        '<div class="mais"><span class="lbl">Ainda faltam</span><b>3.263</b><span class="q">questões comentadas para você treinar</span><span class="det">' + det + '</span></div>' +
-        '<button type="button" class="linkbtn" id="refazer">Refazer o teste</button></div>' +
-        '<a href="#oferta" class="btn-y acao">Liberar mais 3.263 questões</a></div>';
+      var C = 2 * Math.PI * 56, pct = st.score / 3;
+      var dia = camara ? ' antes da prova do dia 22' : ' antes da sua prova';
+      var msg = st.score === 3 ? ['Mandou bem!', 'Você acertou as 3. Agora teste esse ritmo numa prova completa' + (camara ? ' de 40 questões, com os pesos do edital.' : ', no formato do edital.')]
+              : st.score === 2 ? ['Quase lá', 'Um erro em 3 questões' + (camara ? ', numa prova de 40,' : '') + ' pode ser a diferença entre a vaga e o cadastro reserva.']
+              : ['Ainda dá tempo de corrigir', 'Treine com questões no formato ' + (camara ? 'do IDIB' : 'da banca') + ' e gabarito comentado' + dia + '.'];
+      var cor = st.score === 3 ? '#15803D' : st.score === 2 ? '#1E6FD9' : '#C2410C';
+      el.innerHTML = '<div class="res2">' +
+        '<div class="ring"><svg viewBox="0 0 132 132" aria-hidden="true"><circle cx="66" cy="66" r="56" fill="none" stroke="#E3E7F0" stroke-width="12"/>' +
+        '<circle id="arc" cx="66" cy="66" r="56" fill="none" stroke="' + cor + '" stroke-width="12" stroke-linecap="round" stroke-dasharray="' + C + '" stroke-dashoffset="' + C + '" style="transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1)"/></svg>' +
+        '<b>' + st.score + '/3</b></div>' +
+        '<h3>' + msg[0] + '</h3><p>' + msg[1] + '</p>' +
+        '<a href="#" class="btn-y js-comprar hot bob acao2" data-pos="resultado">Treinar com as ' + (camara ? '1.212' : '3.263') + ' questões</a>' +
+        '<button type="button" class="linkbtn" id="refazer">Refazer o teste</button></div>';
+      requestAnimationFrame(function () { requestAnimationFrame(function () { var a = $('arc'); if (a) a.style.strokeDashoffset = C * (1 - pct); }); });
       $('refazer').onclick = function () { st = { step: 0, picked: null, score: 0, done: false }; render(); };
+      ligaCompra(el);
       if (window.fbq) fbq('trackCustom', 'QuizConcluido', { acertos: st.score });
       return;
     }
@@ -393,12 +454,7 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
     });
     $('prox').onclick = function () { if (st.step < 2) { st.step++; st.picked = null; } else st.done = true; render(); };
   }
-  $('comecar').addEventListener('click', function (e) {
-    e.preventDefault();
-    var s = $('teste');
-    if (s.hidden) { s.hidden = false; s.classList.add('reveal'); render(); }
-    s.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+  render(); // quiz já aberto no topo
 
   // ---------- Botões de compra: link da Kiwify (rodape.js) + UTMs do anúncio ----------
   var link = (window.EMPRESA && EMPRESA.linkCompra) || '';
@@ -409,10 +465,30 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
     });
     if (link && utm.length) link += (link.indexOf('?') < 0 ? '?' : '&') + utm.join('&');
   } catch (e) {}
-  document.querySelectorAll('.js-comprar').forEach(function (a) {
-    if (link) a.href = link;
-    a.addEventListener('click', function () { if (window.fbq) fbq('track', 'AddToCart', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL', posicao: a.dataset.pos || 'outro' }); });
-  });
+  function ligaCompra(raiz) {
+    (raiz || document).querySelectorAll('.js-comprar').forEach(function (a) {
+      if (a.dataset.ok) return; a.dataset.ok = '1';
+      if (link) a.href = link;
+      a.addEventListener('click', function () { if (window.fbq) fbq('track', 'AddToCart', { content_name: 'Simulados Concursos', value: 29.90, currency: 'BRL', posicao: a.dataset.pos || 'outro' }); });
+    });
+  }
+  ligaCompra();
+
+  // ---------- Barra fixa: aparece quando o fim do quiz entra na tela; some na oferta, no CTA final e no rodapé ----------
+  (function () {
+    var bar = $('stickybuy'), quiz = $('quiz'); if (!bar || !quiz) return;
+    var bloq = [$('oferta'), $('final'), $('rodape')];
+    function naTela(el) { if (!el) return false; var r = el.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; }
+    function upd() {
+      var passou = quiz.getBoundingClientRect().bottom <= innerHeight - (bar.offsetHeight + 24); // nunca cobre o quiz
+      var on = passou && !bloq.some(naTela);
+      if (bar.classList.contains('on') !== on) {
+        bar.classList.toggle('on', on); bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+        bar.querySelector('a').tabIndex = on ? 0 : -1;
+      }
+    }
+    addEventListener('scroll', upd, { passive: true }); addEventListener('resize', upd); upd();
+  })();
 
   // ---------- Depoimentos reais ----------
   // Duas fontes: a lista manual de rodape.js e os aprovados na página /admin (alunos que autorizaram a publicação).
