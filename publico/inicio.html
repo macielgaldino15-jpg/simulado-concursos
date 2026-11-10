@@ -183,15 +183,30 @@ details p{margin:10px 0 0;font-size:15px;line-height:1.55;color:#475569}
 .dep-topo .qsub{font-size:13px}
 .dep-topo p{margin:0;font-size:17px;line-height:1.55;color:#475569}
 .dep-lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
-/* cada depoimento parece uma conversa: barra do contato em cima e a mensagem em um balão */
-.dep{display:flex;flex-direction:column;margin:0;border-radius:16px;overflow:hidden;border:1px solid #D9DEE4;box-shadow:0 10px 30px rgba(10,24,48,.08);background-color:#EFEAE2;background-image:radial-gradient(rgba(17,27,33,.06) 1px,transparent 1px);background-size:18px 18px}
-.dep figcaption{order:-1;display:flex;align-items:center;gap:12px;background:#075E54;padding:12px 16px}
-.dep .ini{width:40px;height:40px;flex:none;border-radius:50%;background:#DFE5E7;color:#54656F;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px}
-.dep .quem{display:flex;flex-direction:column;gap:1px;min-width:0}
-.dep .quem b{font-size:16px;line-height:1.3;color:#fff;font-weight:600}
-.dep .quem span{font-size:13px;line-height:1.35;color:rgba(255,255,255,.78)}
-.dep blockquote{position:relative;align-self:flex-start;max-width:86%;margin:20px 16px 26px 24px;background:#fff;border-radius:0 10px 10px 10px;padding:9px 14px 10px;font-size:16.5px;line-height:1.45;color:#111B21;box-shadow:0 1px 1px rgba(11,20,26,.14)}
-.dep blockquote::before{content:'';position:absolute;top:0;left:-8px;border-style:solid;border-width:0 8px 11px 0;border-color:transparent #fff transparent transparent}
+/* card padrão (opiniões enviadas pelo card do site) */
+.dep{display:flex;flex-direction:column;gap:18px;margin:0;background:#fff;border:1px solid #E2E8F0;border-top:3px solid #1E6FD9;border-radius:16px;padding:26px 26px 22px;box-shadow:0 10px 30px rgba(10,24,48,.06)}
+.dep>svg{width:30px;height:30px;color:#1E6FD9;flex:none}
+.dep blockquote{margin:0;flex:1;font-size:18px;line-height:1.55;font-weight:500;color:#0F172A}
+.dep figcaption{display:flex;align-items:center;gap:12px;padding-top:18px;border-top:1px solid #E2E8F0}
+.dep .ini{width:42px;height:42px;flex:none;border-radius:50%;background:#0A1830;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px}
+.dep .quem{display:flex;flex-direction:column;gap:2px;min-width:0}
+.dep .quem b{font-size:15px;line-height:1.3}
+.dep .quem span{font-size:13px;line-height:1.35;color:#64748B}
+/* card de conversa: só para mensagens que chegaram mesmo pelo WhatsApp (whatsapp: true em rodape.js) */
+.dep.wa{gap:0;padding:0;border:1px solid #D1D7DB;border-radius:14px;overflow:hidden;background:#EFEAE2;box-shadow:0 10px 30px rgba(10,24,48,.08);font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}
+.dep.wa figcaption{order:-1;gap:10px;padding:10px 12px;border:0;background:#008069;color:#fff}
+.dep.wa figcaption svg{flex:none}
+.dep.wa .volta{width:22px;height:22px}
+.dep.wa .foto{width:40px;height:40px;border-radius:50%;background:#DFE5E7;color:#fff}
+.dep.wa .quem{flex:1}
+.dep.wa .quem b{font-size:16.5px;font-weight:500;color:#fff}
+.dep.wa .quem span{font-size:13px;color:rgba(255,255,255,.82)}
+.dep.wa .menu{width:22px;height:22px}
+.dep.wa .conv{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:12px 16px 22px 20px}
+.dep.wa .dia{align-self:center;background:#fff;color:#54656F;font-size:12.5px;line-height:1;padding:7px 12px;border-radius:7.5px;box-shadow:0 1px .5px rgba(11,20,26,.13)}
+.dep.wa blockquote{position:relative;flex:none;max-width:88%;margin:0;background:#fff;border-radius:0 7.5px 7.5px 7.5px;padding:6px 8px 8px 10px;font-size:15.5px;line-height:1.38;font-weight:400;color:#111B21;box-shadow:0 1px .5px rgba(11,20,26,.13)}
+.dep.wa blockquote::before{content:'';position:absolute;top:0;left:-8px;border-style:solid;border-width:0 8px 12px 0;border-color:transparent #fff transparent transparent}
+.dep.wa .hora{float:right;margin:9px 0 -5px 14px;font-size:11px;line-height:15px;color:#667781}
 /* rodapé (preenchido por rodape.js) */
 #rodape{background:#F4F6FA;border-top:1px solid #E2E8F0;padding:24px 20px;text-align:center;font-size:12px;color:#64748B;line-height:1.5}
 #rodape p{margin:0 0 6px}#rodape a{color:#475569}
@@ -510,12 +525,22 @@ fbq('track', 'ViewContent', { content_name: 'Simulados Concursos', value: 29.90,
   var deps = ((window.EMPRESA && EMPRESA.depoimentos) || []).filter(function (d) { return d && d.texto; });
   function desenharDepoimentos(lista) {
     if (!lista.length) return;
+    var aspas = '<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M4 20c0-6.6 3.6-11.5 10-13l1 2.6C11.6 11 10 13.3 9.8 16H14v10H4v-6zm14 0c0-6.6 3.6-11.5 10-13l1 2.6c-3.4 1.4-5 3.7-5.2 6.400H28v10H18v-6z"/></svg>';
+    var volta = '<svg class="volta" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8z"/></svg>';
+    var foto = '<svg class="foto" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true"><circle cx="20" cy="15.500" r="6.500"/><path d="M7 36c0-7 5.800-11 13-11s13 4 13 11v4H7z"/></svg>';
+    var menu = '<svg class="menu" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>';
     $('listaDepoimentos').innerHTML = lista.map(function (d) {
       var detalhe = [d.cidade, d.concurso].filter(Boolean).map(esc).join(' · ');
+      var quem = '<span class="quem"><b>' + esc(d.nome) + '</b>' + (detalhe ? '<span>' + detalhe + '</span>' : '') + '</span>';
+      // Mensagem recebida pelo WhatsApp: mostra como conversa, com a data e a hora reais da mensagem
+      if (d.whatsapp) {
+        return '<figure class="dep wa"><div class="conv">' + (d.data ? '<span class="dia">' + esc(d.data) + '</span>' : '') +
+          '<blockquote>' + esc(d.texto) + (d.hora ? '<span class="hora">' + esc(d.hora) + '</span>' : '') + '</blockquote></div>' +
+          '<figcaption>' + volta + foto + quem + menu + '</figcaption></figure>';
+      }
       var inicial = esc(String(d.nome || '').trim().charAt(0).toUpperCase());
-      return '<figure class="dep"><blockquote>' + esc(d.texto) + '</blockquote>' +
-        '<figcaption><span class="ini" aria-hidden="true">' + inicial + '</span>' +
-        '<span class="quem"><b>' + esc(d.nome) + '</b>' + (detalhe ? '<span>' + detalhe + '</span>' : '') + '</span></figcaption></figure>';
+      return '<figure class="dep">' + aspas + '<blockquote>' + esc(d.texto) + '</blockquote>' +
+        '<figcaption><span class="ini" aria-hidden="true">' + inicial + '</span>' + quem + '</figcaption></figure>';
     }).join('');
     $('depoimentos').hidden = false;
   }

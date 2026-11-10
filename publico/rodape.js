@@ -15,10 +15,11 @@ var EMPRESA = {
     // Depoimentos REAIS de alunos, com autorização. A seção só aparece quando houver pelo menos um.
     // Exemplo: { nome: 'Karoline', cidade: 'Rio Branco/AC', concurso: 'PRF', texto: 'O que a pessoa escreveu, do jeito que ela escreveu.' },
     // "cidade" e "concurso" são opcionais. Só inclua o que a pessoa autorizou mostrar.
+    // Para mensagem recebida pelo WhatsApp, use whatsapp: true com a data e a hora REAIS da mensagem: o card aparece como conversa.
     depoimentos: [
         // Autorizados pelo WhatsApp em 09/11/2026 (primeiro nome e cidade)
-        { nome: 'Suely', cidade: 'Rio Branco/AC', texto: 'Gostei muito e com certeza vou querer muitos.' },
-        { nome: 'Jose', cidade: 'Rio Branco/AC', texto: 'Muito bom. Gostei mesmo da plataforma de simulados' },
+        { nome: 'Suely', cidade: 'Rio Branco/AC', texto: 'Gostei muito e com certeza vou querer muitos.', whatsapp: true, data: '09/11/2026', hora: '21:09' },
+        { nome: 'Jose', cidade: 'Rio Branco/AC', texto: 'Muito bom. Gostei mesmo da plataforma de simulados', whatsapp: true, data: '09/11/2026', hora: '21:31' },
     ],
 };
 
