@@ -3383,7 +3383,7 @@ window.bancoDeQuestoes = {
                 "D) 6 meias",
                 "E) 7 meias"
             ],
-            "correta": 1,
+            "correta": 0,
             "comentario": "Princípio das Gavetas de Dirichlet: temos 3 cores de meias. Na pior das hipóteses, retiramos 3 meias de cores distintas (uma branca, uma preta, uma azul). A 4ª meia retirada obrigatoriamente formará par com uma das três anteriores."
         },
         {
@@ -4580,7 +4580,7 @@ window.bancoDeQuestoes = {
                 "E) R$ 5,00"
             ],
             "correta": 2,
-            "comentario": "Com c + k = 10, temos c = 10 − k. Então 3(10 − k) + 2k = 26 → 30 − k = 26 → k = 4. A caneta custa R$ 6,00."
+            "comentario": "Com c + k = 10, temos c = 10 − k. Então 3(10 − k) + 2k = 26 → 30 − k = 26 → k = 4. Logo, o caderno custa R$ 4,00 (e a caneta, R$ 6,00)."
         },
         {
             "id": 21058,
