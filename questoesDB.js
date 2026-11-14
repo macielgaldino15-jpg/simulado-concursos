@@ -608,12 +608,12 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) os beija-flores",
                 "B) os recém-nascidos",
-                "C) os terças-feiras",
-                "D) os pés-de-moleque",
+                "C) as terças-feiras",
+                "D) os pés de moleque",
                 "E) os salvas-vidas"
             ],
-            "correta": 2,
-            "comentario": "Em 'terça-feira', ambos os elementos formam substantivo composto ligado por preposição oculta/implícita ou numeral e substantivo, mas a regra de 'terça-feira' flexiona apenas o segundo elemento (terças-feiras? Não, o primeiro elemento numérico/substantivo varia: terças-feiras? Atenção: 'terças-feiras' é o correto, mas vamos analisar a estrutura: numeral e substantivo variam ambos? Não, em terças-feiras ambos variam. O erro clássico em provas costuma estar em guarda-civil ou outro, mas 'terças-feiras' varia ambos)."
+            "correta": 4,
+            "comentario": "Em 'salva-vidas', o primeiro elemento é verbo (salvar), e verbo não vai para o plural: o certo é 'os salva-vidas'. As demais estão corretas: 'beija-flores' (verbo + substantivo: varia só o substantivo), 'recém-nascidos' (advérbio + adjetivo: varia só o adjetivo), 'terças-feiras' (numeral + substantivo: variam os dois) e 'pés de moleque' (com preposição: varia só o primeiro)."
         },
         {
             "id": 48,
@@ -649,10 +649,10 @@ window.bancoDeQuestoes = {
                 "B) 'Embora o salário fosse baixo, aceitou o cargo.' (Concessiva -> Conquanto)",
                 "C) 'Se precisares de ajuda, avisa-me.' (Condicional -> Caso)",
                 "D) 'O candidato trabalhou conforme o regimento exigia.' (Conformativa -> Consoante)",
-                "E) 'Como a vaga era disputada, estudou com afinco.' (Causal -> Visto que)"
+                "E) 'Como a vaga era disputada, estudou com afinco.' (Causal -> Embora)"
             ],
             "correta": 4,
-            "comentario": "Neste bloco de equivalências, as conjunções mantêm a mesma classe semântica correspondente."
+            "comentario": "De A a D, a troca mantém a relação lógica: 'de sorte que' também é consecutiva, 'conquanto' também é concessiva, 'caso' também é condicional e 'consoante' também é conformativa. Em E, 'como' (no início do período) é causal; trocá-lo por 'embora' transforma a causa em concessão (oposição), o que altera profundamente a relação lógica."
         },
         {
             "id": 51,
@@ -3188,7 +3188,7 @@ window.bancoDeQuestoes = {
                 "D) Artur é o Agente e Carlos é o Técnico.",
                 "E) Carlos é o Agente e Bernardo é o Técnico."
             ],
-            "correta": 3,
+            "correta": 0,
             "comentario": "Como Bernardo é o Assessor (regra 3), sobram Técnico e Agente para Artur e Carlos. Como o Técnico é amigo de Carlos (regra 2), Carlos não pode ser o Técnico, logo Carlos é o Agente. Consequentemente, Artur é o Técnico."
         },
         {
@@ -3273,14 +3273,14 @@ window.bancoDeQuestoes = {
             "id": 1012,
             "enunciado": "Se todo cidadão brasileiro é livre e alguns cidadãos brasileiros são contribuintes, então, logicamente, é correto concluir que:",
             "opcoes": [
-                "A) Todos os contribuintes são livres.",
+                "A) Algum contribuinte é livre.",
                 "B) Nenhum contribuinte é livre.",
                 "C) Algum indivíduo livre não é contribuinte.",
                 "D) Todos os livres são contribuintes.",
                 "E) Nenhum cidadão livre paga impostos."
             ],
             "correta": 0,
-            "comentario": "Silogismo categórico: se todo cidadão brasileiro é livre, e os contribuintes estão contidos no conjunto dos cidadãos brasileiros, logo todo contribuinte é necessariamente livre."
+            "comentario": "Os cidadãos brasileiros que são contribuintes também são livres, pois todo cidadão brasileiro é livre. Logo, existe pelo menos um contribuinte livre: 'algum contribuinte é livre'. Não dá para afirmar que todos os contribuintes são livres, porque pode haver contribuintes que não são cidadãos brasileiros."
         },
         {
             "id": 1013,
@@ -3310,7 +3310,7 @@ window.bancoDeQuestoes = {
         },
         {
             "id": 1015,
-            "enunciado": "Numa sala com 40 servidores, 25 leigos em direito administrativo, 18 leigos em informática e 8 servidores dominam ambas as matérias (direito e informática). Quantos servidores dessa sala não dominam nenhuma dessas duas matérias?",
+            "enunciado": "Numa sala com 40 servidores, 25 dominam direito administrativo, 18 dominam informática e 8 dominam ambas as matérias. Quantos servidores dessa sala não dominam nenhuma dessas duas matérias?",
             "opcoes": [
                 "A) 3 servidores",
                 "B) 7 servidores",
@@ -3319,7 +3319,7 @@ window.bancoDeQuestoes = {
                 "E) 11 servidores"
             ],
             "correta": 2,
-            "comentario": "Princípio da Inclusão-Exclusão: Total no conjunto união = Apenas Direito (25-8=17) + Apenas Informática (18-8=10) + Ambos (8) = 35. Total geral (40) - 35 = 5 servidores que não dominam nenhuma."
+            "comentario": "Inclusão-exclusão: dominam pelo menos uma matéria 25 + 18 − 8 = 35 servidores. Logo, 40 − 35 = 5 servidores não dominam nenhuma das duas."
         },
         {
             "id": 1016,
@@ -3396,8 +3396,8 @@ window.bancoDeQuestoes = {
                 "D) Quarta-feira.",
                 "E) Sexta-feira."
             ],
-            "correta": 1,
-            "comentario": "Outubro tem 31 dias. De 10 de outubro até 10 de novembro passam-se 31 dias. Dividindo 31 por 7, o resto é 3 (31 = 4*7 + 3). Somando 3 dias à terça-feira: quarta, quinta, sexta? Espera: 10 de out a 31 de out faltam 21 dias + 10 de nov = 31 dias. 31 mod 7 = 3. Terça + 3 dias = Quarta (1), Quinta (2), Sexta (3)? Vamos conferir: Terça + 3 = Sexta-feira."
+            "correta": 4,
+            "comentario": "Outubro tem 31 dias, então de 10 de outubro a 10 de novembro passam-se 31 dias. Como 31 = 4 × 7 + 3, avançam-se 4 semanas completas e mais 3 dias. Terça-feira + 3 dias = sexta-feira."
         },
         {
             "id": 1022,
@@ -3407,7 +3407,7 @@ window.bancoDeQuestoes = {
                 "B) Se não trabalho, então não ganho salário.",
                 "C) Se ganho salário, então trabalho.",
                 "D) Trabalho e não ganho salário.",
-                "E) Não trabalho ou ganho salário."
+                "E) Não trabalho e ganho salário."
             ],
             "correta": 0,
             "comentario": "Equivalência por contraposição: inverte e nega ambos os lados de P -> Q, obtendo ~Q -> ~P ('Se não ganho salário, então não trabalho')."
@@ -3533,14 +3533,14 @@ window.bancoDeQuestoes = {
             "id": 1032,
             "enunciado": "Assinale a alternativa que apresenta uma equivalência lógica para a proposição 'O fiscal esteve na repartição ou o processo foi concluído':",
             "opcoes": [
-                "A) Se o processo não foi concluído, o fiscal esteve na repartição.",
+                "A) Se o processo foi concluído, o fiscal esteve na repartição.",
                 "B) O fiscal esteve na repartição e o processo foi concluído.",
                 "C) Se o fiscal esteve na repartição, o processo foi concluído.",
                 "D) O fiscal não esteve na repartição e o processo não foi concluído.",
                 "E) Se o fiscal não esteve na repartição, o processo foi concluído."
             ],
             "correta": 4,
-            "comentario": "Equivalência da disjunção (P ou Q) usando condicional (Implicação material): Transforma-se em (~P -> Q) ('Se não o primeiro, então o segundo')."
+            "comentario": "A disjunção 'P ou Q' equivale à condicional 'Se não P, então Q': 'Se o fiscal não esteve na repartição, o processo foi concluído'. Se nenhuma das duas partes for verdadeira, ambas as frases são falsas; nos demais casos, ambas são verdadeiras."
         },
         {
             "id": 1033,
@@ -3627,7 +3627,7 @@ window.bancoDeQuestoes = {
                 "A) Se os candidatos não estudam, o edital não foi publicado.",
                 "B) Se os candidatos estudam, o edital foi publicado.",
                 "C) O edital foi publicado e os candidatos não estudam.",
-                "D) O edital não foi publicado ou os candidatos estudam.",
+                "D) O edital não foi publicado e os candidatos estudam.",
                 "E) Se o edital não é publicado, os candidatos não estudam."
             ],
             "correta": 0,
@@ -3716,7 +3716,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Assinale a alternativa que apresenta uma implicação lógica equivalente a 'Se o servidor é competente, ele é promovido':",
             "opcoes": [
                 "A) Se ele é promovido, ele é competente.",
-                "B) O servidor não é competente ou é promovido.",
+                "B) O servidor é competente ou não é promovido.",
                 "C) Se ele não é promovido, ele não é competente.",
                 "D) O servidor é competente e não é promovido.",
                 "E) Se ele não é competente, ele não é promovido."
@@ -3734,8 +3734,8 @@ window.bancoDeQuestoes = {
                 "D) 720",
                 "E) 70"
             ],
-            "correta": 2,
-            "comentario": "Permutação com repetição: A palavra CÂMARA tem 6 letras, com a letra 'A' repetida 3 vezes. P(6; 3) = 6! / 3! = (720) / 6 = 120? Espera: 720 / 6 = 120 anagramas. Vamos verificar as repetições: A repete 3 vezes. 6! = 720; 3! = 6. 720 / 6 = 120. (Se houver outra letra, ex: M repete 1, C=1, R=1. Total 120)."
+            "correta": 0,
+            "comentario": "Permutação com repetição: CÂMARA tem 6 letras (o acento não cria letra diferente) e a letra A aparece 3 vezes. P = 6! / 3! = 720 / 6 = 120 anagramas."
         },
         {
             "id": 1048,
@@ -6807,7 +6807,7 @@ window.bancoDeQuestoes = {
                 "E) Dois cargos privativos de médico com dois cargos de enfermeiro."
             ],
             "correta": 1,
-            "comentario": "A Constituição Federal veda a acumulação remunerada de cargos públicos, exceto, quando houver compatibilidade de horários, a de dois cargos de professor."
+            "comentario": "A Constituição (art. 37, XVI) veda a acumulação remunerada de cargos públicos, exceto, havendo compatibilidade de horários: a) dois cargos de professor; b) um cargo de professor com outro técnico ou científico; c) dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas. As demais alternativas extrapolam essas exceções."
         },
         {
             "id": 10013,
