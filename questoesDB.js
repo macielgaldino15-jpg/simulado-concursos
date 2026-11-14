@@ -4654,7 +4654,7 @@ window.bancoDeQuestoes = {
             "enunciado": "No Windows 11, o recurso acionado por Windows + V permite:",
             "opcoes": [
                 "A) colar apenas o último texto copiado, sem formatação",
-                "B) abrir a Ferramenta de Captura para recortar parte da tela",
+                "B) abrir a Ferramenta de Captura para recortar uma parte da tela e salvar a imagem em arquivo",
                 "C) alternar entre as áreas de trabalho virtuais",
                 "D) abrir o painel de emojis e símbolos",
                 "E) acessar o histórico da área de transferência, com vários itens copiados anteriormente"
@@ -4692,11 +4692,11 @@ window.bancoDeQuestoes = {
             "id": 22006,
             "enunciado": "No Explorador de Arquivos do Windows 11, ao selecionar um arquivo e pressionar Shift + Delete, o arquivo será:",
             "opcoes": [
-                "A) compactado em um arquivo .zip",
-                "B) enviado para a Lixeira, de onde poderá ser restaurado",
+                "A) compactado em um arquivo .zip, na mesma pasta em que está o arquivo original",
+                "B) enviado para a Lixeira, de onde poderá ser restaurado ao local de origem",
                 "C) excluído permanentemente, sem passar pela Lixeira, após confirmação",
-                "D) copiado para a área de transferência",
-                "E) movido para a pasta Documentos"
+                "D) copiado para a área de transferência, para ser colado em outra pasta",
+                "E) movido para a pasta Documentos, mantendo o mesmo nome e a extensão"
             ],
             "correta": 2,
             "comentario": "Shift + Delete exclui o item sem enviá-lo à Lixeira. Por isso, ele não pode ser restaurado pela Lixeira; o Windows pede confirmação antes."
@@ -4732,10 +4732,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Desde suas atualizações recentes, o Explorador de Arquivos do Windows 11 permite abrir várias pastas na mesma janela por meio de:",
             "opcoes": [
                 "A) abas, de forma semelhante a um navegador de internet",
-                "B) atalhos criados na Lixeira",
-                "C) janelas flutuantes do Painel de Controle",
-                "D) áreas de trabalho virtuais vinculadas a cada pasta",
-                "E) perfis de usuário diferentes"
+                "B) atalhos criados na Lixeira, que abrem cada pasta em uma janela",
+                "C) janelas flutuantes do Painel de Controle, uma para cada pasta",
+                "D) áreas de trabalho virtuais vinculadas a cada pasta aberta",
+                "E) perfis de usuário diferentes, cada um com sua própria pasta"
             ],
             "correta": 0,
             "comentario": "O Explorador de Arquivos do Windows 11 ganhou abas: Ctrl + T abre uma nova aba e é possível alternar entre pastas sem abrir várias janelas."
@@ -4770,10 +4770,10 @@ window.bancoDeQuestoes = {
             "id": 22012,
             "enunciado": "Um arquivo apagado com a tecla Delete, em um disco interno do computador, normalmente:",
             "opcoes": [
-                "A) é movido para a pasta Downloads",
+                "A) é movido para a pasta Downloads, onde permanece por trinta dias",
                 "B) vai para a Lixeira e pode ser restaurado ao local original",
-                "C) é apagado definitivamente na mesma hora",
-                "D) é enviado automaticamente para o OneDrive",
+                "C) é apagado definitivamente na mesma hora, sem possibilidade de recuperação",
+                "D) é enviado automaticamente para o OneDrive, como cópia de segurança",
                 "E) fica oculto na mesma pasta"
             ],
             "correta": 1,
@@ -4783,10 +4783,10 @@ window.bancoDeQuestoes = {
             "id": 22013,
             "enunciado": "No Windows 11, a combinação Windows + Tab abre a Visão de Tarefas, que permite:",
             "opcoes": [
-                "A) projetar a tela em um segundo monitor",
+                "A) projetar a tela em um segundo monitor ou em um projetor conectado",
                 "B) bloquear a tela imediatamente",
                 "C) ver as janelas abertas e gerenciar as áreas de trabalho virtuais",
-                "D) abrir o histórico da área de transferência",
+                "D) abrir o histórico da área de transferência com os itens copiados",
                 "E) abrir o menu de contexto do botão Iniciar"
             ],
             "correta": 2,
@@ -4810,9 +4810,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Sobre a extensão de arquivos no Windows, é correto afirmar que:",
             "opcoes": [
                 "A) toda extensão tem exatamente duas letras",
-                "B) arquivos sem extensão não podem ser copiados",
-                "C) ela indica o tipo do arquivo e o programa padrão usado para abri-lo, como .docx, .xlsx e .pdf",
-                "D) a extensão define o tamanho máximo do arquivo",
+                "B) arquivos sem extensão não podem ser copiados nem movidos para outras pastas do computador",
+                "C) ela indica o tipo do arquivo e o programa padrão para abri-lo, como .docx e .pdf",
+                "D) a extensão define o tamanho máximo que o arquivo pode ocupar no disco do computador",
                 "E) ela é obrigatória apenas para pastas"
             ],
             "correta": 2,
@@ -4848,11 +4848,11 @@ window.bancoDeQuestoes = {
             "id": 22018,
             "enunciado": "O monitor com tela sensível ao toque (touchscreen) é considerado um dispositivo:",
             "opcoes": [
-                "A) somente de entrada, porque substitui o mouse",
+                "A) somente de entrada, porque substitui o mouse e o teclado na interação com o sistema operacional",
                 "B) de armazenamento, porque guarda os toques",
                 "C) de entrada e de saída, pois exibe informações e também recebe comandos pelo toque",
                 "D) de processamento, porque substitui a CPU",
-                "E) somente de saída, porque apenas exibe imagens"
+                "E) somente de saída, porque apenas exibe imagens, sendo o toque captado pela placa de vídeo"
             ],
             "correta": 2,
             "comentario": "A tela touchscreen exibe imagens (saída) e capta os toques do usuário (entrada)."
@@ -4887,8 +4887,8 @@ window.bancoDeQuestoes = {
             "id": 22021,
             "enunciado": "O cabo de rede com conector RJ-45 é utilizado para:",
             "opcoes": [
-                "A) ligar o monitor à placa de vídeo",
-                "B) carregar a bateria do notebook",
+                "A) ligar o monitor à placa de vídeo, transmitindo imagem em alta definição",
+                "B) carregar a bateria do notebook e transferir arquivos ao mesmo tempo",
                 "C) conectar o computador a uma rede local cabeada (Ethernet)",
                 "D) ligar o teclado sem fio",
                 "E) conectar fones de ouvido"
@@ -4939,10 +4939,10 @@ window.bancoDeQuestoes = {
             "id": 22025,
             "enunciado": "O OneDrive, integrado ao Windows 11, é um serviço de:",
             "opcoes": [
-                "A) compactação de arquivos",
-                "B) gerenciamento de impressoras",
-                "C) edição de imagens",
-                "D) antivírus em tempo real",
+                "A) compactação de arquivos para reduzir o espaço ocupado no disco",
+                "B) gerenciamento das impressoras conectadas à rede do órgão",
+                "C) edição de imagens e vídeos integrada ao aplicativo Fotos",
+                "D) antivírus em tempo real que protege os arquivos do computador",
                 "E) armazenamento e sincronização de arquivos na nuvem"
             ],
             "correta": 4,
@@ -4965,10 +4965,10 @@ window.bancoDeQuestoes = {
             "id": 22027,
             "enunciado": "Em comparação com o disco rígido (HD) tradicional, o SSD (Solid State Drive):",
             "opcoes": [
-                "A) grava os dados em discos magnéticos giratórios",
+                "A) grava os dados em discos magnéticos giratórios, lidos por uma cabeça de leitura",
                 "B) é mais lento, porém mais resistente a quedas",
                 "C) não possui partes mecânicas móveis e oferece leitura e gravação mais rápidas",
-                "D) é uma memória volátil, que perde os dados ao desligar",
+                "D) é uma memória volátil, que perde os dados armazenados quando o computador é desligado",
                 "E) só pode ser lido, nunca gravado"
             ],
             "correta": 2,
@@ -5031,10 +5031,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Um pendrive de 64 GB e um HD externo de 1 TB são exemplos de dispositivos de armazenamento:",
             "opcoes": [
                 "A) secundário (permanente), que mantêm os dados sem energia",
-                "B) primário volátil, como a RAM",
+                "B) primário volátil, como a memória RAM usada pelos programas",
                 "C) de entrada, como o teclado",
                 "D) de processamento, como a CPU",
-                "E) exclusivamente de leitura, como a ROM"
+                "E) exclusivamente de leitura, como a memória ROM do computador"
             ],
             "correta": 0,
             "comentario": "Pendrives, HDs, SSDs e cartões de memória são armazenamento secundário: guardam os dados de forma permanente, mesmo desligados."
@@ -5043,11 +5043,11 @@ window.bancoDeQuestoes = {
             "id": 22033,
             "enunciado": "DVD e Blu-ray são mídias de armazenamento do tipo:",
             "opcoes": [
-                "A) em nuvem",
+                "A) em nuvem, acessadas apenas pela internet",
                 "B) óptico, lidas e gravadas por laser",
-                "C) magnético, como o disquete",
-                "D) volátil, como a RAM",
-                "E) flash, como o pendrive"
+                "C) magnético, como o disquete e o HD tradicional",
+                "D) volátil, como a memória RAM do computador",
+                "E) flash, como o pendrive e os cartões de memória"
             ],
             "correta": 1,
             "comentario": "CDs, DVDs e Blu-rays são mídias ópticas: um feixe de laser lê ou grava os dados na superfície do disco."
@@ -5084,8 +5084,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) aumentar a memória RAM do computador",
                 "B) acessar os arquivos de outros dispositivos e manter uma cópia fora do equipamento local",
-                "C) dispensar o uso de senha para acessar os arquivos",
-                "D) eliminar a necessidade de conexão com a internet",
+                "C) dispensar o uso de senha para acessar os arquivos, já que a nuvem é protegida pelo provedor",
+                "D) eliminar a necessidade de conexão com a internet para abrir e editar os documentos guardados",
                 "E) impedir qualquer alteração nos documentos"
             ],
             "correta": 1,
@@ -5108,11 +5108,11 @@ window.bancoDeQuestoes = {
             "id": 22038,
             "enunciado": "A impressora matricial ainda é usada em algumas repartições porque:",
             "opcoes": [
-                "A) imprime sem qualquer ruído",
-                "B) usa toner colorido de alta resolução",
-                "C) imprime por impacto, permitindo emitir várias vias com papel carbonado ou formulário contínuo",
-                "D) não precisa de nenhum suprimento de tinta ou fita",
-                "E) é a que oferece a melhor qualidade fotográfica"
+                "A) imprime sem qualquer ruído, o que a torna ideal para ambientes de atendimento",
+                "B) usa toner colorido de alta resolução, com custo por página menor que o da laser",
+                "C) imprime por impacto, permitindo emitir várias vias com papel carbonado",
+                "D) não precisa de nenhum suprimento de tinta ou fita, o que reduz os custos do setor",
+                "E) é a que oferece a melhor qualidade fotográfica entre todos os tipos de impressora"
             ],
             "correta": 2,
             "comentario": "A matricial imprime por impacto de agulhas sobre uma fita. Por isso consegue imprimir várias vias de uma só vez, com papel carbonado ou formulário contínuo."
@@ -5134,10 +5134,10 @@ window.bancoDeQuestoes = {
             "id": 22040,
             "enunciado": "Na especificação de uma impressora, a sigla \"ppm\" indica:",
             "opcoes": [
-                "A) o consumo de energia em watts",
+                "A) o consumo de energia em watts durante a impressão",
                 "B) a quantidade de páginas impressas por minuto",
-                "C) a resolução em pontos por polegada",
-                "D) o número de pixels por milímetro",
+                "C) a resolução de impressão em pontos por polegada",
+                "D) o número de pixels por milímetro na página impressa",
                 "E) a capacidade da bandeja de papel"
             ],
             "correta": 1,
@@ -5147,11 +5147,11 @@ window.bancoDeQuestoes = {
             "id": 22041,
             "enunciado": "No Windows 11, para adicionar uma nova impressora ou defini-la como padrão, o usuário deve acessar, em Configurações:",
             "opcoes": [
-                "A) Rede e internet > VPN",
-                "B) Personalização > Temas",
+                "A) Rede e internet > Compartilhamento de impressoras e arquivos",
+                "B) Personalização > Temas > Dispositivos de impressão",
                 "C) Bluetooth e dispositivos > Impressoras e scanners",
                 "D) Contas > Opções de entrada",
-                "E) Sistema > Armazenamento"
+                "E) Sistema > Dispositivos > Impressoras e periféricos"
             ],
             "correta": 2,
             "comentario": "Em Configurações > Bluetooth e dispositivos > Impressoras e scanners é possível adicionar impressoras, ver a fila e escolher a impressora padrão."
@@ -5160,11 +5160,11 @@ window.bancoDeQuestoes = {
             "id": 22042,
             "enunciado": "Um documento enviado para impressão não sai e outros documentos ficam aguardando. Para cancelar o trabalho travado, o usuário deve:",
             "opcoes": [
-                "A) trocar o cabo do monitor",
-                "B) desinstalar o Microsoft Word",
+                "A) reiniciar apenas o monitor, para que a impressora receba novamente o documento enviado",
+                "B) desinstalar o Microsoft Word e reinstalá-lo, para limpar os documentos que ficaram pendentes",
                 "C) formatar o computador",
                 "D) abrir a fila de impressão da impressora e cancelar o documento que está bloqueando",
-                "E) esvaziar a Lixeira do Windows"
+                "E) esvaziar a Lixeira do Windows, onde ficam armazenados os documentos aguardando impressão"
             ],
             "correta": 3,
             "comentario": "A fila de impressão mostra os documentos pendentes. Cancelar o trabalho travado costuma liberar os demais."
@@ -5212,11 +5212,11 @@ window.bancoDeQuestoes = {
             "id": 22046,
             "enunciado": "Compartilhar uma impressora na rede da Câmara permite que:",
             "opcoes": [
-                "A) a impressora imprima sem papel",
+                "A) a impressora imprima sem papel, usando o modo de economia de suprimentos do driver",
                 "B) vários computadores conectados à rede enviem documentos para a mesma impressora",
-                "C) os documentos sejam impressos sem driver",
+                "C) os documentos sejam impressos sem driver, já que a rede faz a conversão automática",
                 "D) cada computador tenha seu próprio toner",
-                "E) a impressora funcione como roteador de internet"
+                "E) a impressora funcione como roteador, distribuindo a internet para os computadores"
             ],
             "correta": 1,
             "comentario": "A impressora de rede (ou compartilhada) recebe trabalhos de vários computadores, otimizando equipamentos e suprimentos."
@@ -5239,8 +5239,8 @@ window.bancoDeQuestoes = {
             "enunciado": "O processador (CPU) do computador tem como função principal:",
             "opcoes": [
                 "A) exibir as imagens na tela",
-                "B) armazenar permanentemente os arquivos do usuário",
-                "C) conectar o computador à rede elétrica",
+                "B) armazenar permanentemente os arquivos e programas do usuário",
+                "C) conectar o computador à rede elétrica e controlar o consumo de energia",
                 "D) imprimir os documentos",
                 "E) executar as instruções dos programas e processar os dados"
             ],
@@ -5252,10 +5252,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Um notebook tem 8 GB de RAM e 512 GB de SSD. Sobre esses números, é correto afirmar:",
             "opcoes": [
                 "A) quanto maior o SSD, maior a memória volátil",
-                "B) os 8 GB são a memória de trabalho usada pelos programas abertos e os 512 GB são o espaço para guardar arquivos",
-                "C) a RAM e o SSD são a mesma coisa, com nomes diferentes",
+                "B) os 8 GB são a memória de trabalho dos programas abertos e os 512 GB, o espaço para guardar arquivos",
+                "C) a RAM e o SSD são a mesma coisa, com nomes diferentes, e os dois números devem ser somados para saber a capacidade",
                 "D) os 512 GB indicam a velocidade do processador",
-                "E) os 8 GB são o espaço de armazenamento permanente"
+                "E) os 8 GB são o espaço de armazenamento permanente e os 512 GB, a memória usada pelos programas abertos"
             ],
             "correta": 1,
             "comentario": "A RAM (8 GB) é a memória temporária para os programas em execução. O SSD (512 GB) é o armazenamento permanente de arquivos e do sistema."
@@ -5267,7 +5267,7 @@ window.bancoDeQuestoes = {
                 "A) esvaziar a Lixeira do pendrive",
                 "B) reiniciar o roteador",
                 "C) desligar o monitor",
-                "D) formatar o pendrive",
+                "D) formatar o pendrive pelo Explorador de Arquivos, para garantir que os dados foram gravados",
                 "E) usar a opção de ejetar ou remover o hardware com segurança, para evitar perda de dados"
             ],
             "correta": 4,
@@ -5277,10 +5277,10 @@ window.bancoDeQuestoes = {
             "id": 22051,
             "enunciado": "A memória ROM do computador:",
             "opcoes": [
-                "A) é um tipo de impressora",
-                "B) é a memória usada pelos navegadores para guardar o histórico",
-                "C) perde o conteúdo ao desligar, como a RAM",
-                "D) é onde ficam os documentos do usuário",
+                "A) é um tipo de memória de impressora, usada para guardar os documentos na fila de impressão",
+                "B) é a memória usada pelos navegadores para guardar o histórico e os cookies dos sites visitados",
+                "C) perde o conteúdo ao desligar, como a RAM, por isso precisa ser recarregada a cada inicialização",
+                "D) é onde ficam os documentos, as fotos e os programas instalados pelo usuário no computador",
                 "E) é não volátil e guarda instruções básicas de inicialização gravadas pelo fabricante"
             ],
             "correta": 4,
@@ -5355,10 +5355,10 @@ window.bancoDeQuestoes = {
             "id": 22057,
             "enunciado": "Um servidor quer trocar todas as ocorrências de \"Secretaria\" por \"Diretoria\" em um documento extenso do Word. A ferramenta adequada é:",
             "opcoes": [
-                "A) Quebra de Página",
-                "B) Controlar Alterações",
+                "A) Localizar (Ctrl + L), na guia Página Inicial, apenas",
+                "B) Controlar Alterações (Ctrl + Shift + E), na guia Revisão",
                 "C) Contar Palavras",
-                "D) Pincel de Formatação",
+                "D) Pincel de Formatação (Ctrl + Shift + C), na guia Página Inicial",
                 "E) Substituir (Ctrl + U), na guia Página Inicial"
             ],
             "correta": 4,
@@ -5394,11 +5394,11 @@ window.bancoDeQuestoes = {
             "id": 22060,
             "enunciado": "Na elaboração de um relatório no Word, o servidor quer gerar um SUMÁRIO automático. Para isso, os títulos das seções devem estar formatados com:",
             "opcoes": [
-                "A) texto em caixa alta",
-                "B) cor de destaque amarela",
+                "A) texto em caixa alta e alinhamento centralizado",
+                "B) cor de destaque amarela e fonte maior que o corpo do texto",
                 "C) marcadores numerados",
                 "D) estilos de Título (Título 1, Título 2...)",
-                "E) fonte em negrito e tamanho maior, apenas"
+                "E) fonte em negrito e tamanho maior, sem aplicar nenhum estilo"
             ],
             "correta": 3,
             "comentario": "O sumário automático (guia Referências) é montado a partir dos estilos de título. Negrito ou tamanho maior, sozinhos, não são reconhecidos como títulos."
@@ -5420,11 +5420,11 @@ window.bancoDeQuestoes = {
             "id": 22062,
             "enunciado": "A Câmara precisa enviar o mesmo convite a 200 pessoas, cada um com o nome e o endereço do destinatário, a partir de uma planilha. O recurso do Word mais adequado é:",
             "opcoes": [
-                "A) Controlar Alterações",
-                "B) Sumário",
-                "C) Hifenização",
+                "A) Controlar Alterações, na guia Revisão do Word",
+                "B) Sumário automático, na guia Referências",
+                "C) Hifenização automática, na guia Layout",
                 "D) Mala Direta, na guia Correspondências",
-                "E) Quebra de seção"
+                "E) Quebra de seção, na guia Layout, entre os convites"
             ],
             "correta": 3,
             "comentario": "A Mala Direta combina um documento-modelo com uma lista de dados (como uma planilha do Excel), gerando um documento personalizado para cada destinatário."
@@ -5433,10 +5433,10 @@ window.bancoDeQuestoes = {
             "id": 22063,
             "enunciado": "No Word, para que apenas uma página do documento fique em orientação paisagem e as demais continuem em retrato, deve-se:",
             "opcoes": [
-                "A) mudar o tamanho da fonte da página",
+                "A) mudar o tamanho da fonte e as margens apenas da página que deve ficar na orientação paisagem",
                 "B) inserir uma quebra de página e mudar a orientação do documento inteiro",
-                "C) inserir uma tabela com largura maior que a página",
-                "D) aplicar uma marca d'água na página",
+                "C) inserir uma tabela com largura maior que a página, para forçar automaticamente a mudança de orientação",
+                "D) aplicar uma marca d'água na página e girar o conteúdo em 90 graus pela guia Design do Word",
                 "E) inserir quebras de seção antes e depois da página e alterar a orientação só dessa seção"
             ],
             "correta": 4,
@@ -5511,9 +5511,9 @@ window.bancoDeQuestoes = {
             "id": 22069,
             "enunciado": "No Word, os campos de cabeçalho e rodapé são úteis para:",
             "opcoes": [
-                "A) contar as palavras do texto",
-                "B) corrigir automaticamente erros de ortografia",
-                "C) repetir em todas as páginas informações como o brasão da Câmara, o número da página e o nome do documento",
+                "A) contar as palavras do texto e exibir o total no rodapé de cada página, atualizando a cada digitação",
+                "B) corrigir automaticamente os erros de ortografia e gramática presentes no início e no fim das páginas",
+                "C) repetir em todas as páginas informações como o brasão, o número da página e o nome do documento",
                 "D) proteger o arquivo com senha",
                 "E) converter o documento em planilha"
             ],
@@ -5524,9 +5524,9 @@ window.bancoDeQuestoes = {
             "id": 22070,
             "enunciado": "Um servidor quer saber quantas palavras tem o parecer que está redigindo no Word. Essa informação aparece na barra de status e na opção:",
             "opcoes": [
-                "A) Hifenização, na guia Layout",
+                "A) Hifenização, na guia Layout, em Configurar Página",
                 "B) Marca d'água, na guia Design",
-                "C) Sumário, na guia Referências",
+                "C) Sumário, na guia Referências, em Atualizar Sumário",
                 "D) Margens, na guia Layout",
                 "E) Contar Palavras, na guia Revisão"
             ],
@@ -5538,9 +5538,9 @@ window.bancoDeQuestoes = {
             "enunciado": "No PowerPoint, a tecla F5 serve para:",
             "opcoes": [
                 "A) iniciar a apresentação a partir do primeiro slide",
-                "B) abrir o modo de classificação de slides",
+                "B) abrir o modo de classificação de slides em tela cheia",
                 "C) iniciar a apresentação a partir do slide atual",
-                "D) salvar a apresentação",
+                "D) salvar a apresentação no formato de apresentação de slides",
                 "E) inserir um novo slide"
             ],
             "correta": 0,
@@ -5563,11 +5563,11 @@ window.bancoDeQuestoes = {
             "id": 22073,
             "enunciado": "No PowerPoint, a diferença entre TRANSIÇÃO e ANIMAÇÃO é que:",
             "opcoes": [
-                "A) a animação só funciona em vídeos",
-                "B) a transição só pode ser usada no primeiro slide",
-                "C) a transição é o efeito na passagem de um slide para outro; a animação é o efeito aplicado a objetos dentro do slide",
-                "D) ambas são o mesmo recurso, em guias diferentes",
-                "E) a transição é aplicada a textos e a animação, a slides inteiros"
+                "A) a animação só funciona em vídeos e áudios inseridos, enquanto a transição se aplica aos textos",
+                "B) a transição só pode ser usada no primeiro e no último slide; a animação, nos demais slides",
+                "C) a transição ocorre na passagem de um slide para outro; a animação, nos objetos do slide",
+                "D) ambas são o mesmo recurso, apenas apresentado em guias diferentes da faixa de opções do programa",
+                "E) a transição é aplicada a textos e imagens; a animação, à passagem entre os slides inteiros da apresentação"
             ],
             "correta": 2,
             "comentario": "Transições (guia Transições) ocorrem entre slides. Animações (guia Animações) fazem textos, imagens e formas entrarem, saírem ou se moverem no slide."
@@ -5589,11 +5589,11 @@ window.bancoDeQuestoes = {
             "id": 22075,
             "enunciado": "O Modo de Exibição do Apresentador, no PowerPoint, permite ao orador:",
             "opcoes": [
-                "A) impedir que os slides sejam impressos",
-                "B) ver suas anotações, o próximo slide e o tempo decorrido, enquanto o público vê apenas o slide atual",
-                "C) exibir a apresentação somente em preto e branco",
-                "D) editar o Slide Mestre durante a apresentação",
-                "E) converter a apresentação em documento do Word"
+                "A) impedir que os slides sejam impressos ou copiados pelo público durante a apresentação em tela cheia",
+                "B) ver suas anotações, o próximo slide e o tempo decorrido, enquanto o público vê só o slide",
+                "C) exibir a apresentação somente em preto e branco, para economizar energia do projetor da sala",
+                "D) editar o Slide Mestre durante a apresentação, sem que o público perceba as alterações feitas",
+                "E) converter a apresentação em documento do Word, com os slides e as anotações completas do orador"
             ],
             "correta": 1,
             "comentario": "Com dois monitores (ou projetor), o Modo do Apresentador mostra ao orador anotações, próximo slide e cronômetro, enquanto a tela do público exibe só o slide."
@@ -5617,7 +5617,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) editar o texto de cada caixa",
                 "B) escrever as anotações do orador",
-                "C) criar gráficos a partir de planilhas",
+                "C) criar gráficos a partir de planilhas do Excel e inseri-los em vários slides ao mesmo tempo",
                 "D) visualizar miniaturas de todos os slides e reorganizar sua ordem arrastando-os",
                 "E) gravar narração em áudio"
             ],
@@ -5762,7 +5762,7 @@ window.bancoDeQuestoes = {
                 "B) =CONT.SE(C2:C40;\"Protocolo\")",
                 "C) =SOMA(A2:A40;\"Protocolo\")",
                 "D) =SE(A2:A40=\"Protocolo\";C2:C40)",
-                "E) =MÉDIASE(C2:C40;\"Protocolo\")"
+                "E) =MÉDIASE(A2:A40;\"Protocolo\";C2:C40)"
             ],
             "correta": 0,
             "comentario": "SOMASE tem a estrutura (intervalo do critério; critério; intervalo a somar). Assim soma só os gastos cujas linhas têm \"Protocolo\" na coluna A."
@@ -5814,7 +5814,7 @@ window.bancoDeQuestoes = {
                 "B) a fórmula divide por zero",
                 "C) a coluna é muito estreita",
                 "D) o nome da função está escrito incorretamente; o correto é SOMA",
-                "E) o intervalo tem mais de quatro células"
+                "E) o intervalo tem mais de quatro células, limite da versão em português"
             ],
             "correta": 3,
             "comentario": "#NOME? indica que o Excel não reconheceu o nome usado na fórmula. A função correta é SOMA."
@@ -5824,10 +5824,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Uma célula exibe \"#####\" no lugar de uma data. A causa mais comum é:",
             "opcoes": [
                 "A) a coluna é estreita demais para mostrar o conteúdo",
-                "B) o arquivo está corrompido",
-                "C) a célula foi excluída",
-                "D) a planilha está protegida por senha",
-                "E) a fórmula tem um nome de função inválido"
+                "B) o arquivo está corrompido e precisa ser recuperado",
+                "C) a célula foi excluída, mas o formato de data permaneceu",
+                "D) a planilha está protegida por senha contra edição",
+                "E) a fórmula tem um nome de função inválido ou digitado errado"
             ],
             "correta": 0,
             "comentario": "As cerquilhas aparecem quando o valor (número ou data) não cabe na largura da coluna. Basta alargá-la."
@@ -5862,11 +5862,11 @@ window.bancoDeQuestoes = {
             "id": 22096,
             "enunciado": "Na planilha de controle de processos, o servidor quer exibir apenas as linhas de um determinado mês, sem apagar as demais. O recurso adequado é:",
             "opcoes": [
-                "A) a exclusão das outras linhas",
-                "B) Congelar Painéis",
+                "A) a exclusão das outras linhas, com cópia de segurança",
+                "B) Congelar Painéis, na guia Exibir, na linha do mês",
                 "C) o Filtro (AutoFiltro), na guia Dados",
                 "D) Mesclar células",
-                "E) Formatação de moeda"
+                "E) Classificar de A a Z, na guia Dados, pela coluna do mês"
             ],
             "correta": 2,
             "comentario": "O Filtro oculta temporariamente as linhas que não atendem ao critério. Ao limpar o filtro, todas voltam a aparecer."
@@ -5889,10 +5889,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Para impedir que o usuário digite em uma célula algo diferente das opções \"Sim\" e \"Não\", oferecendo uma lista suspensa, utiliza-se:",
             "opcoes": [
                 "A) Validação de Dados, na guia Dados",
-                "B) Localizar e Selecionar",
-                "C) Formatação Condicional",
+                "B) Localizar e Selecionar, na guia Página Inicial",
+                "C) Formatação Condicional, na guia Página Inicial",
                 "D) Mesclar e Centralizar",
-                "E) Congelar Painéis"
+                "E) Proteger Planilha, na guia Revisão, com senha"
             ],
             "correta": 0,
             "comentario": "A Validação de Dados restringe o que pode ser digitado e pode exibir uma lista suspensa de opções permitidas."
@@ -5979,10 +5979,10 @@ window.bancoDeQuestoes = {
             "id": 22105,
             "enunciado": "Ao acessar um site, o usuário percebe que o endereço começa com \"https://\" e há um cadeado na barra do navegador. Isso indica que:",
             "opcoes": [
-                "A) o site está livre de qualquer golpe ou vírus",
+                "A) o site está livre de qualquer golpe, vírus ou tentativa de fraude",
                 "B) a comunicação entre o navegador e o site é criptografada",
                 "C) o acesso dispensa senha",
-                "D) o site é oficial do governo, com certeza",
+                "D) o site é oficial do governo e teve sua autenticidade confirmada",
                 "E) a página não usa cookies"
             ],
             "correta": 1,
@@ -6005,11 +6005,11 @@ window.bancoDeQuestoes = {
             "id": 22107,
             "enunciado": "Na navegação anônima (janela InPrivate do Edge ou anônima do Chrome):",
             "opcoes": [
-                "A) os sites deixam de saber o endereço IP do usuário",
-                "B) o usuário fica invisível para o provedor de internet e para a rede da empresa",
-                "C) o navegador não guarda localmente o histórico, os cookies e os dados digitados após fechar a janela",
+                "A) os sites deixam de saber o endereço IP do usuário e não conseguem identificar sua localização",
+                "B) o usuário fica invisível para o provedor de internet e para o administrador da rede da empresa",
+                "C) o navegador não guarda localmente o histórico e os cookies depois que a janela é fechada",
                 "D) o computador fica protegido contra vírus",
-                "E) os downloads feitos são apagados automaticamente do computador"
+                "E) os arquivos baixados durante a sessão são apagados automaticamente do computador ao fechar a janela"
             ],
             "correta": 2,
             "comentario": "O modo anônimo só evita que o histórico, os cookies e os formulários fiquem salvos no computador. A rede, o provedor e os sites ainda veem o acesso, e os arquivos baixados permanecem."
@@ -6083,9 +6083,9 @@ window.bancoDeQuestoes = {
             "id": 22113,
             "enunciado": "No Google, a pesquisa \"relatório de gestão site:gov.br\" retorna:",
             "opcoes": [
-                "A) somente imagens",
-                "B) resultados de qualquer site, exceto gov.br",
-                "C) somente arquivos em PDF",
+                "A) somente imagens publicadas em sites do governo federal",
+                "B) resultados de qualquer site, exceto os do domínio gov.br",
+                "C) somente arquivos em PDF hospedados em sites do governo",
                 "D) apenas notícias publicadas hoje",
                 "E) resultados apenas de páginas sob o domínio gov.br"
             ],
@@ -6096,11 +6096,11 @@ window.bancoDeQuestoes = {
             "id": 22114,
             "enunciado": "Os cookies armazenados pelo navegador são:",
             "opcoes": [
-                "A) pequenos arquivos com informações de navegação, como preferências e sessões de login",
-                "B) programas que bloqueiam anúncios",
-                "C) vírus que se instalam ao abrir qualquer site",
-                "D) senhas do Wi-Fi do computador",
-                "E) cópias completas das páginas visitadas para uso sem internet"
+                "A) pequenos arquivos com dados de navegação, como preferências e login",
+                "B) programas que bloqueiam anúncios e janelas pop-up durante a navegação",
+                "C) vírus que se instalam automaticamente ao abrir qualquer site desconhecido",
+                "D) senhas do Wi-Fi e das redes às quais o computador já se conectou antes",
+                "E) cópias completas das páginas visitadas, para consulta sem acesso à internet"
             ],
             "correta": 0,
             "comentario": "Cookies guardam dados como itens de carrinho, preferências e sessão ativa. Podem ser apagados nas configurações do navegador."
@@ -6110,9 +6110,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Ao enviar um e-mail, o campo \"Cco\" (cópia oculta) é usado para:",
             "opcoes": [
                 "A) marcar a mensagem como urgente",
-                "B) agendar o envio para outro horário",
+                "B) agendar o envio da mensagem para outro dia ou horário escolhido pelo remetente",
                 "C) criptografar o anexo",
-                "D) enviar uma cópia apenas ao remetente",
+                "D) enviar uma cópia da mensagem apenas para a caixa do próprio remetente",
                 "E) enviar a mensagem a destinatários que não aparecem para os demais"
             ],
             "correta": 4,
@@ -6135,10 +6135,10 @@ window.bancoDeQuestoes = {
             "id": 22117,
             "enunciado": "Ao receber um e-mail com outros três destinatários, a opção \"Responder a todos\" envia a resposta:",
             "opcoes": [
-                "A) somente ao remetente",
-                "B) a todos os contatos da agenda",
-                "C) ao remetente e também aos destinatários em Cco",
-                "D) apenas aos que estavam em cópia oculta",
+                "A) somente ao remetente, sem incluir nenhum dos outros destinatários da mensagem",
+                "B) a todos os contatos da agenda de quem está respondendo à mensagem",
+                "C) ao remetente e também aos destinatários que estavam em cópia oculta (Cco)",
+                "D) apenas aos destinatários que estavam em cópia oculta na mensagem original recebida",
                 "E) ao remetente e a todos os destinatários visíveis da mensagem original"
             ],
             "correta": 4,
@@ -6188,9 +6188,9 @@ window.bancoDeQuestoes = {
             "enunciado": "No endereço de e-mail protocolo@cmrb.ac.leg.br, a parte que vem depois do @ identifica:",
             "opcoes": [
                 "A) o domínio do provedor ou da instituição",
-                "B) o nome do usuário",
-                "C) a pasta de destino",
-                "D) o assunto da mensagem",
+                "B) o nome do usuário que é dono da caixa postal",
+                "C) a pasta de destino onde a mensagem será salva",
+                "D) o assunto padrão das mensagens enviadas pela conta",
                 "E) a senha da conta"
             ],
             "correta": 0,
@@ -6213,8 +6213,8 @@ window.bancoDeQuestoes = {
             "id": 22123,
             "enunciado": "Ao anexar um arquivo de planilha a um e-mail, o servidor deve observar que:",
             "opcoes": [
-                "A) o anexo dispensa revisão quanto a dados pessoais",
-                "B) os anexos não podem ser abertos pelo destinatário",
+                "A) o anexo dispensa revisão quanto a dados pessoais, já que o e-mail institucional é seguro",
+                "B) os anexos não podem ser abertos pelo destinatário se ele usar um provedor de e-mail diferente",
                 "C) há limite de tamanho para anexos, e arquivos grandes devem ser compartilhados por link",
                 "D) só é possível anexar arquivos de texto",
                 "E) o anexo é enviado sem o conteúdo original"
@@ -6226,11 +6226,11 @@ window.bancoDeQuestoes = {
             "id": 22124,
             "enunciado": "Uma assinatura automática configurada no e-mail institucional serve para:",
             "opcoes": [
-                "A) certificar juridicamente o conteúdo, como assinatura digital",
-                "B) impedir que a mensagem seja encaminhada",
-                "C) confirmar que o destinatário leu a mensagem",
+                "A) certificar juridicamente o conteúdo, com o mesmo valor de uma assinatura digital",
+                "B) impedir que a mensagem seja encaminhada a pessoas de fora do órgão sem autorização",
+                "C) confirmar automaticamente que o destinatário recebeu e leu toda a mensagem enviada",
                 "D) incluir automaticamente nome, cargo, setor e contato ao fim das mensagens",
-                "E) criptografar os anexos"
+                "E) criptografar os anexos enviados para destinatários externos ao órgão público"
             ],
             "correta": 3,
             "comentario": "A assinatura de e-mail é só um texto padrão no fim da mensagem. Não tem valor de assinatura digital com certificado."
@@ -6252,11 +6252,11 @@ window.bancoDeQuestoes = {
             "id": 22126,
             "enunciado": "Limpar o cache do navegador pode ajudar quando:",
             "opcoes": [
-                "A) um site atualizado continua aparecendo com conteúdo antigo ou com erro de carregamento",
-                "B) o teclado não responde",
-                "C) a impressora não imprime",
-                "D) o computador está sem energia",
-                "E) o e-mail não tem assunto"
+                "A) um site atualizado continua aparecendo com conteúdo antigo ou com erro",
+                "B) o teclado não responde aos comandos digitados na barra de endereços do navegador",
+                "C) a impressora não imprime os documentos enviados a partir de páginas da internet",
+                "D) o computador está sem energia ou a bateria do notebook não carrega corretamente",
+                "E) o e-mail enviado não tem assunto e o sistema impede o envio da mensagem"
             ],
             "correta": 0,
             "comentario": "O cache guarda cópias de partes dos sites para carregá-los mais rápido. Se ficar desatualizado, pode exibir versões antigas; limpá-lo força o download novo."
@@ -6265,11 +6265,11 @@ window.bancoDeQuestoes = {
             "id": 22127,
             "enunciado": "A sigla URL refere-se:",
             "opcoes": [
-                "A) ao programa que bloqueia vírus",
-                "B) ao cabo de conexão com a rede",
-                "C) ao endereço de um recurso na internet, como https://www.exemplo.gov.br/pagina",
-                "D) ao nome do usuário do e-mail",
-                "E) à velocidade da conexão"
+                "A) ao programa que bloqueia vírus e outras ameaças que chegam pela internet",
+                "B) ao cabo de conexão que liga o computador à rede local cabeada do órgão",
+                "C) ao endereço de um recurso na internet, como https://www.exemplo.gov.br",
+                "D) ao nome do usuário do e-mail, que vem antes do símbolo @ no endereço",
+                "E) à velocidade da conexão, medida em megabits por segundo pelo provedor"
             ],
             "correta": 2,
             "comentario": "URL (Localizador Uniforme de Recursos) é o endereço que identifica uma página ou arquivo na internet."
@@ -6291,11 +6291,11 @@ window.bancoDeQuestoes = {
             "id": 22129,
             "enunciado": "Uma rede Wi-Fi pública, como a de uma praça ou rodoviária, exige cuidado porque:",
             "opcoes": [
-                "A) outras pessoas na mesma rede podem tentar interceptar dados, por isso deve-se evitar acessar sistemas sensíveis sem proteção",
-                "B) ela sempre instala vírus no aparelho",
+                "A) outras pessoas na mesma rede podem tentar interceptar os dados transmitidos",
+                "B) ela sempre instala vírus no aparelho no momento em que o usuário aceita os termos de uso",
                 "C) ela apaga os arquivos do celular",
                 "D) ela bloqueia o acesso a e-mails",
-                "E) ela impede o uso de HTTPS"
+                "E) ela impede o uso de HTTPS, obrigando todos os sites a funcionarem sem criptografia"
             ],
             "correta": 0,
             "comentario": "Redes abertas são compartilhadas por desconhecidos. Para serviços sensíveis, prefira a rede móvel, uma VPN ou, no mínimo, sites com HTTPS."
@@ -6304,10 +6304,10 @@ window.bancoDeQuestoes = {
             "id": 22130,
             "enunciado": "Um plugin ou extensão de navegador é:",
             "opcoes": [
-                "A) o endereço IP do computador",
+                "A) o endereço IP atribuído ao computador pelo roteador quando ele se conecta à rede do órgão",
                 "B) um tipo de cabo de rede",
-                "C) um complemento que adiciona funções ao navegador e deve ser instalado apenas de fontes confiáveis",
-                "D) o histórico de navegação",
+                "C) um complemento que adiciona funções ao navegador, a ser instalado só de fontes confiáveis",
+                "D) o histórico de navegação sincronizado entre os dispositivos em que o usuário fez login com a conta",
                 "E) uma senha armazenada"
             ],
             "correta": 2,
@@ -6318,10 +6318,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Um servidor recebe um e-mail que imita o banco, com logotipo oficial, pedindo que clique em um link para \"atualizar seus dados\" em até 24 horas. Trata-se de:",
             "opcoes": [
                 "A) phishing, golpe que usa mensagens falsas para roubar dados",
-                "B) atualização legítima do sistema",
-                "C) firewall",
-                "D) backup incremental",
-                "E) spam inofensivo de propaganda"
+                "B) atualização legítima do sistema bancário, que deve ser feita no prazo",
+                "C) firewall, recurso que bloqueia conexões não autorizadas à rede",
+                "D) backup incremental, que copia apenas os dados alterados da conta",
+                "E) spam inofensivo, mensagem de propaganda sem risco ao usuário"
             ],
             "correta": 0,
             "comentario": "Phishing usa mensagens que imitam instituições conhecidas, com senso de urgência, para levar a vítima a informar dados ou senhas em páginas falsas."
@@ -6330,7 +6330,7 @@ window.bancoDeQuestoes = {
             "id": 22132,
             "enunciado": "Diante de uma mensagem suspeita pedindo a senha do sistema da Câmara, a atitude correta do servidor é:",
             "opcoes": [
-                "A) clicar no link para verificar se é verdadeiro",
+                "A) clicar no link apenas para verificar se a mensagem é verdadeira, sem digitar nada",
                 "B) não clicar nos links, não informar dados e comunicar o fato à equipe de TI",
                 "C) responder pedindo mais informações",
                 "D) informar a senha, desde que troque depois",
@@ -6356,11 +6356,11 @@ window.bancoDeQuestoes = {
             "id": 22134,
             "enunciado": "A autenticação em dois fatores (2FA) aumenta a segurança de uma conta porque:",
             "opcoes": [
-                "A) troca a senha automaticamente todos os dias",
+                "A) troca a senha automaticamente todos os dias e a envia por mensagem para o celular do usuário",
                 "B) impede o uso da conta em outro país",
                 "C) exige, além da senha, uma segunda prova de identidade, como um código no celular",
                 "D) dispensa o uso de senha",
-                "E) criptografa o disco do computador"
+                "E) criptografa o disco do computador, impedindo a leitura dos arquivos por terceiros"
             ],
             "correta": 2,
             "comentario": "Com 2FA, quem descobrir a senha ainda precisa do segundo fator (código, aplicativo autenticador, biometria ou chave física)."
@@ -6382,10 +6382,10 @@ window.bancoDeQuestoes = {
             "id": 22136,
             "enunciado": "Uma boa prática no uso de senhas é:",
             "opcoes": [
-                "A) repetir a mesma senha em todos os sistemas para não esquecer",
-                "B) anotar a senha em um papel colado no monitor",
+                "A) repetir a mesma senha forte em todos os sistemas, para não correr o risco de esquecer",
+                "B) anotar a senha em um papel colado no monitor, para não precisar redefini-la sempre",
                 "C) usar senhas diferentes para cada serviço, com apoio de um gerenciador de senhas",
-                "D) usar a data de nascimento como senha",
+                "D) usar a data de nascimento combinada com o nome, que é fácil de lembrar e difícil de adivinhar",
                 "E) compartilhar a senha com o colega de setor"
             ],
             "correta": 2,
@@ -6421,11 +6421,11 @@ window.bancoDeQuestoes = {
             "id": 22139,
             "enunciado": "O cavalo de troia (trojan) caracteriza-se por:",
             "opcoes": [
-                "A) ser um antivírus gratuito",
-                "B) ser um tipo de backup em nuvem",
+                "A) ser um antivírus gratuito que remove programas maliciosos instalados no computador",
+                "B) ser um tipo de backup em nuvem que copia os arquivos do usuário sem sua autorização",
                 "C) parecer um programa útil ou legítimo, mas executar ações maliciosas escondidas",
-                "D) se espalhar apenas por pendrive, sem ser instalado",
-                "E) bloquear anúncios em sites"
+                "D) se espalhar apenas por pendrive, sem precisar ser instalado ou executado pelo usuário",
+                "E) bloquear anúncios em sites e coletar dados de navegação para fins de propaganda"
             ],
             "correta": 2,
             "comentario": "O trojan se disfarça de programa legítimo (jogo, atualização, ferramenta) e, ao ser instalado, abre portas para o atacante ou rouba dados."
@@ -6450,7 +6450,7 @@ window.bancoDeQuestoes = {
                 "A) corrigir erros de ortografia em e-mails",
                 "B) controlar o tráfego de rede, bloqueando conexões não autorizadas",
                 "C) acelerar a internet",
-                "D) fazer cópias de segurança automáticas",
+                "D) fazer cópias de segurança automáticas dos arquivos enviados pela rede",
                 "E) remover vírus de arquivos infectados"
             ],
             "correta": 1,
@@ -6461,9 +6461,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Sobre os tipos de backup, o backup INCREMENTAL copia:",
             "opcoes": [
                 "A) apenas arquivos apagados",
-                "B) apenas os arquivos alterados desde o último backup completo",
+                "B) apenas os arquivos alterados desde o último backup completo (full), acumulando as alterações",
                 "C) somente os arquivos de sistema",
-                "D) todos os arquivos, sempre",
+                "D) todos os arquivos do sistema, sempre, independentemente de alterações",
                 "E) apenas os arquivos alterados desde o último backup, de qualquer tipo"
             ],
             "correta": 4,
@@ -6487,9 +6487,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A regra de backup conhecida como 3-2-1 recomenda:",
             "opcoes": [
                 "A) três cópias dos dados, em dois tipos de mídia diferentes, com uma cópia fora do local",
-                "B) três backups por dia, durante dois dias, uma vez por semana",
+                "B) três backups por dia, durante dois dias por semana, com uma cópia mensal guardada em nuvem",
                 "C) três senhas, dois usuários e um administrador",
-                "D) guardar só uma cópia, em três pastas do mesmo disco",
+                "D) guardar só uma cópia de segurança, distribuída em três pastas diferentes do mesmo disco",
                 "E) três antivírus, dois firewalls e um roteador"
             ],
             "correta": 0,
@@ -6500,10 +6500,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Manter o sistema operacional e os programas atualizados é uma medida de segurança porque:",
             "opcoes": [
                 "A) as atualizações corrigem falhas que poderiam ser exploradas por atacantes",
-                "B) impede o uso de pendrives",
+                "B) impede o uso de pendrives e outros dispositivos removíveis não autorizados",
                 "C) aumenta o espaço do disco",
                 "D) dispensa o uso de senhas",
-                "E) apaga automaticamente os vírus existentes"
+                "E) apaga automaticamente os vírus que já estão instalados no computador do usuário"
             ],
             "correta": 0,
             "comentario": "Muitas atualizações são correções de segurança. Sistemas desatualizados ficam expostos a ataques que exploram falhas já conhecidas."
@@ -6512,7 +6512,7 @@ window.bancoDeQuestoes = {
             "id": 22146,
             "enunciado": "Engenharia social, no contexto da segurança da informação, é:",
             "opcoes": [
-                "A) o desenvolvimento de redes sociais institucionais",
+                "A) o desenvolvimento e a gestão das redes sociais institucionais, com regras de segurança para as postagens",
                 "B) a instalação de antivírus em rede",
                 "C) a criptografia de discos rígidos",
                 "D) a manipulação de pessoas para que revelem informações ou executem ações que comprometam a segurança",
@@ -6525,7 +6525,7 @@ window.bancoDeQuestoes = {
             "id": 22147,
             "enunciado": "Um pendrive encontrado no estacionamento da Câmara deve ser:",
             "opcoes": [
-                "A) conectado ao computador do setor para descobrir o dono",
+                "A) conectado ao computador do setor para descobrir quem é o dono e devolvê-lo",
                 "B) deixado em qualquer computador para quem quiser usar",
                 "C) usado para guardar backups",
                 "D) entregue à equipe de TI, sem ser conectado a nenhum computador",
@@ -6539,10 +6539,10 @@ window.bancoDeQuestoes = {
             "enunciado": "No ambiente de trabalho, a LGPD considera DADO PESSOAL SENSÍVEL, entre outros, a informação sobre:",
             "opcoes": [
                 "A) o endereço da sede da Câmara",
-                "B) o nome do setor de lotação",
+                "B) o nome do setor de lotação e o cargo ocupado pelo servidor",
                 "C) saúde do servidor ou do cidadão, como um atestado médico",
                 "D) o número de um projeto de lei",
-                "E) o horário de funcionamento do protocolo"
+                "E) o horário de funcionamento do protocolo e dos demais setores"
             ],
             "correta": 2,
             "comentario": "Pelo art. 5º, II, da LGPD, são sensíveis dados sobre origem racial ou étnica, convicção religiosa, opinião política, filiação sindical, saúde, vida sexual, genéticos e biométricos. Exigem cuidado redobrado."
@@ -6551,11 +6551,11 @@ window.bancoDeQuestoes = {
             "id": 22149,
             "enunciado": "Ao deixar a estação de trabalho com processos que contêm CPF e endereço de cidadãos abertos na tela, a conduta adequada do servidor é:",
             "opcoes": [
-                "A) deixar a tela aberta, pois o setor é interno",
+                "A) deixar a tela aberta, pois o setor é interno e apenas servidores autorizados circulam por ali",
                 "B) enviar os dados para o e-mail pessoal",
-                "C) imprimir os dados para consultar depois",
+                "C) imprimir os dados para consultar depois e deixá-los organizados sobre a mesa até retornar",
                 "D) bloquear o computador e não deixar documentos com dados pessoais expostos na mesa",
-                "E) compartilhar a senha com quem ficar no setor"
+                "E) compartilhar a senha com quem ficar no setor, para que o atendimento não seja interrompido"
             ],
             "correta": 3,
             "comentario": "Proteger dados pessoais inclui medidas simples: bloquear a tela (Windows + L), adotar a política de mesa limpa e não levar dados para contas pessoais."
@@ -6565,10 +6565,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Um servidor percebe que enviou, por engano, uma planilha com dados pessoais de cidadãos para um destinatário externo. Segundo as boas práticas de proteção de dados, ele deve:",
             "opcoes": [
                 "A) comunicar imediatamente o ocorrido ao encarregado de dados ou à chefia, para as providências de incidente",
-                "B) enviar a planilha a outros destinatários para \"diluir\" o erro",
+                "B) enviar a planilha a outros destinatários para \"diluir\" o erro e evitar que alguém perceba o problema ocorrido",
                 "C) esperar o destinatário reclamar",
                 "D) trocar o nome do arquivo e reenviar",
-                "E) apagar o e-mail da caixa de enviados e não contar a ninguém"
+                "E) apagar o e-mail da caixa de enviados e não contar a ninguém, já que o destinatário pode nem ter aberto a mensagem"
             ],
             "correta": 0,
             "comentario": "Vazamentos são incidentes de segurança. A LGPD prevê a comunicação de incidentes relevantes à ANPD e aos titulares, e o órgão precisa ser avisado rápido para agir."
@@ -6580,7 +6580,7 @@ window.bancoDeQuestoes = {
                 "A) travar o computador ao serem usadas",
                 "B) apagar arquivos sem autorização",
                 "C) funcionar apenas sem internet",
-                "D) traduzir textos somente para o inglês",
+                "D) traduzir textos somente para o inglês, perdendo o sentido em outras línguas",
                 "E) produzir informações falsas ou inventadas com aparência convincente"
             ],
             "correta": 4,
@@ -6592,7 +6592,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) copiar o texto gerado diretamente para documentos oficiais",
                 "B) enviar à ferramenta a lista completa de servidores com CPF",
-                "C) confiar nas citações de leis geradas, sem conferir",
+                "C) confiar nas citações de leis geradas, sem conferir, já que a ferramenta consulta bases oficiais",
                 "D) não inserir dados pessoais ou sigilosos e revisar o resultado antes de usá-lo",
                 "E) usar a IA para assinar documentos em nome do servidor"
             ],
@@ -6616,10 +6616,10 @@ window.bancoDeQuestoes = {
             "id": 22154,
             "enunciado": "Um limite importante das ferramentas de IA generativa é que elas:",
             "opcoes": [
-                "A) dispensam revisão humana em documentos oficiais",
+                "A) dispensam revisão humana em documentos oficiais, por serem treinadas com leis",
                 "B) conhecem todos os fatos atualizados do dia",
                 "C) sempre citam fontes verdadeiras",
-                "D) garantem neutralidade total nas respostas",
+                "D) garantem neutralidade total nas respostas, por não terem opinião própria",
                 "E) podem reproduzir vieses presentes nos dados com que foram treinadas"
             ],
             "correta": 4,
@@ -6642,11 +6642,11 @@ window.bancoDeQuestoes = {
             "id": 22156,
             "enunciado": "Para proteger o acesso ao celular funcional com aplicativos institucionais, é recomendado:",
             "opcoes": [
-                "A) instalar aplicativos de qualquer site",
-                "B) desativar o bloqueio de tela para agilizar o uso",
+                "A) instalar aplicativos de qualquer site, desde que o download seja gratuito e rápido",
+                "B) desativar o bloqueio de tela para agilizar o uso durante o atendimento ao público",
                 "C) usar bloqueio de tela com PIN, senha ou biometria e manter o sistema atualizado",
                 "D) usar a mesma senha do e-mail pessoal",
-                "E) emprestar o aparelho desbloqueado a terceiros"
+                "E) emprestar o aparelho desbloqueado apenas a colegas de setor que precisem fazer ligações"
             ],
             "correta": 2,
             "comentario": "Bloqueio de tela, atualizações e instalação apenas pelas lojas oficiais reduzem o risco de acesso indevido e de malware."
