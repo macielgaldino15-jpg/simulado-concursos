@@ -6683,22 +6683,22 @@ window.bancoDeQuestoes = {
             "id": 10003,
             "enunciado": "No âmbito da Lei de Improbidade Administrativa (Lei nº 8.429/1992 e suas atualizações), constitui ato de improbidade administrativa que atenta contra os princípios da administração pública qualquer ação ou omissão que viole os deveres de honestidade, imparcialidade, legalidade, e lealdade às instituições. Assinale a alternativa que exemplifica corretamente essa infração:",
             "opcoes": [
-                "A) Frustrar a licitude de concurso público visando beneficiar parente direto.",
+                "A) Frustrar a licitude de processo licitatório, causando perda patrimonial efetiva ao erário.",
                 "B) Perceber vantagem econômica para intermediar a liberação de verba pública.",
-                "C) Utilizar, em obra particular, veículos e máquinas pertencentes à frota do órgão legislativo.",
-                "D) Praticar ato visando fim proibido em lei ou diverso daquele previsto na regra de competência.",
-                "E) Doar bens públicos de grande valor a uma entidade privada sem autorização legal."
+                "C) Utilizar, em obra particular, veículos, máquinas e equipamentos pertencentes à frota do órgão legislativo.",
+                "D) Revelar fato ou circunstância de que tem ciência em razão das atribuições e que deva permanecer em segredo.",
+                "E) Doar bens públicos de grande valor a uma entidade privada sem observância das formalidades legais aplicáveis."
             ],
             "correta": 3,
-            "comentario": "Atentar contra os princípios (Art. 11 da LIA) engloba ações genéricas de desvio de finalidade, violação de deveres funcionais e atos que desrespeitam a legalidade e a moralidade sem necessariamente causar enriquecimento ilícito ou dano direto ao erário de forma material isolada."
+            "comentario": "Desde a Lei nº 14.230/2021, o art. 11 da Lei nº 8.429/1992 traz um rol taxativo de atos que atentam contra os princípios; revelar fato que deva permanecer em segredo, conhecido em razão das atribuições, é a hipótese do inciso III. Usar veículos do órgão em obra particular e receber vantagem para liberar verba são enriquecimento ilícito (art. 9º); doar bens sem as formalidades legais e frustrar a licitude de licitação com perda patrimonial causam lesão ao erário (art. 10)."
         },
         {
             "id": 10004,
             "enunciado": "Um servidor da Câmara Municipal recebeu de um cidadão um presente de alto valor comercial em agradecimento a um atendimento rápido prestado no setor de protocolo. Diante das normas que regem a ética no serviço público, o servidor deve:",
             "opcoes": [
                 "A) Aceitar o presente, desde que o valor não ultrapasse o limite de um salário mínimo.",
-                "B) Aceitar o presente de forma discreta, registrando-o no patrimônio pessoal para uso exclusivo fora do expediente.",
-                "C) Recusar o presente, visto que é vedado ao servidor público o recebimento de presentes, brindes ou favores de quem tenha interesse na repartição.",
+                "B) Aceitar o presente de forma discreta, registrando-o no patrimônio pessoal para uso exclusivo fora do horário de expediente.",
+                "C) Recusar o presente, pois é vedado ao servidor receber presentes ou favores de quem tenha interesse na repartição.",
                 "D) Repassar o presente imediatamente para o superior hierárquico utilizar na sala de reuniões.",
                 "E) Vender o presente e doar o valor arrecadado para uma instituição de caridade municipal."
             ],
@@ -6724,9 +6724,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) 20 dias, prorrogável por mais 10 dias, mediante justificativa expressa.",
                 "B) 5 dias úteis, improrrogáveis.",
-                "C) 30 dias, prorrogável por mais 30 dias.",
+                "C) 30 dias, prorrogável por mais 30 dias, mediante justificativa expressa ao requerente.",
                 "D) 48 horas, sob pena de responsabilidade.",
-                "E) 60 dias, sem possibilidade de prorrogação."
+                "E) 60 dias, sem possibilidade de prorrogação, sob pena de responsabilidade do servidor."
             ],
             "correta": 0,
             "comentario": "O art. 11 da LAI determina acesso imediato quando possível; não sendo, o prazo é de até 20 dias, prorrogável por mais 10, com justificativa ao requerente."
@@ -6735,8 +6735,8 @@ window.bancoDeQuestoes = {
             "id": 9003,
             "enunciado": "Segundo a Constituição Federal (art. 37, XVI), é permitida, havendo compatibilidade de horários, a acumulação remunerada de:",
             "opcoes": [
-                "A) dois cargos de professor; um de professor com outro técnico ou científico; ou dois cargos privativos de profissionais de saúde com profissões regulamentadas.",
-                "B) quaisquer dois cargos públicos, desde que em entes federativos diferentes.",
+                "A) dois de professor; um de professor com outro técnico ou científico; ou dois privativos de profissionais de saúde regulamentados.",
+                "B) quaisquer dois cargos públicos, desde que em entes federativos diferentes e com jornada total não superior a sessenta horas semanais.",
                 "C) três cargos, se a soma das jornadas não exceder 60 horas semanais.",
                 "D) um cargo efetivo com um mandato de vereador, em qualquer hipótese, com as duas remunerações e sem compatibilidade de horários.",
                 "E) dois cargos administrativos de nível médio no mesmo órgão."
@@ -6748,11 +6748,11 @@ window.bancoDeQuestoes = {
             "id": 9004,
             "enunciado": "Na Lei nº 9.784/1999, que regula o processo administrativo federal (aplicada, em muitos casos, por analogia a estados e municípios), salvo disposição legal específica, o prazo para interposição de recurso administrativo é de:",
             "opcoes": [
-                "A) 5 dias úteis, contados da assinatura da decisão.",
-                "B) 15 dias, contados da publicação no diário oficial do estado.",
+                "A) 5 dias úteis, contados da assinatura da decisão pela autoridade competente.",
+                "B) 15 dias, contados da publicação da decisão no diário oficial do estado.",
                 "C) 30 dias, contados do fim do processo.",
                 "D) 10 dias, contados da ciência ou divulgação oficial da decisão.",
-                "E) 48 horas, contadas da notificação pessoal."
+                "E) 48 horas, contadas da notificação pessoal do interessado no processo."
             ],
             "correta": 3,
             "comentario": "O art. 59 da Lei nº 9.784/1999 fixa 10 dias para recorrer, salvo disposição legal específica. O recurso é dirigido à autoridade que proferiu a decisão, que pode reconsiderá-la em 5 dias."
@@ -6787,11 +6787,11 @@ window.bancoDeQuestoes = {
             "id": 10011,
             "enunciado": "De acordo com o Decreto nº 1.171/1994, a Comissão de Ética encarregada de orientar e aconselhar sobre a ética profissional do servidor no âmbito de cada órgão público tem como uma de suas penalidades aplicáveis aos servidores a:",
             "opcoes": [
-                "A) Demissão a bem do serviço público.",
+                "A) Demissão a bem do serviço público, após o devido processo disciplinar.",
                 "B) Cassação de aposentadoria.",
-                "C) Suspensão preventiva por até 90 dias.",
+                "C) Suspensão preventiva por até 90 dias, sem prejuízo da remuneração.",
                 "D) Censura, fundamentada e registrada nos antecedentes funcionais.",
-                "E) Multa pecuniária equivalente a 10 vezes a remuneração."
+                "E) Multa pecuniária equivalente a 10 vezes a remuneração mensal do servidor."
             ],
             "correta": 3,
             "comentario": "A penalidade máxima que a Comissão de Ética pode aplicar no âmbito do Decreto 1.171/94 é a pena de censura, cuja decisão é fundamentada e registrada nos assentamentos funcionais do servidor."
@@ -6813,7 +6813,7 @@ window.bancoDeQuestoes = {
             "id": 10013,
             "enunciado": "O ato de improbidade administrativa que importa em enriquecimento ilícito, conforme a Lei nº 8.429/1992, caracteriza-se por:",
             "opcoes": [
-                "A) Causar prejuízo material ao erário por negligência ou imprudência funcional.",
+                "A) Causar prejuízo material ao erário por negligência ou imprudência funcional, ainda que sem obtenção de vantagem.",
                 "B) Violar princípios norteadores da administração pública sem ganho financeiro.",
                 "C) Frustrar o caráter competitivo de processo licitatório de forma culposa.",
                 "D) Conceder facilidade administrativa sem recebimento de propina.",
@@ -6878,10 +6878,10 @@ window.bancoDeQuestoes = {
             "id": 10018,
             "enunciado": "Constitui ato de improbidade administrativa que causa lesão ao erário, nos termos da Lei nº 8.429/1992:",
             "opcoes": [
-                "A) Aceitar emprego ou comissão de empresa que mantenha relação com a repartição.",
+                "A) Aceitar emprego ou comissão de empresa que mantenha relação com a repartição, enquanto ocupar o cargo público.",
                 "B) Revelar segredo de que se apropriou em razão do cargo.",
                 "C) Negar publicidade aos atos oficiais de forma culposa.",
-                "D) Receber auxílio financeiro para fins particulares de entidade privada.",
+                "D) Receber auxílio financeiro de entidade privada para custear despesas particulares do próprio agente público.",
                 "E) Facilitar ou concorrer para a incorporação ao patrimônio particular de bens públicos por ação dolosa."
             ],
             "correta": 4,
@@ -6917,11 +6917,11 @@ window.bancoDeQuestoes = {
             "id": 10021,
             "enunciado": "O direito de acesso às informações públicas previsto na Constituição e na Lei nº 12.527/2011 compreende, entre outros, o direito de:",
             "opcoes": [
-                "A) Pagar taxa obrigatória de protocolo para qualquer solicitação de dados estatísticos simples.",
-                "B) Ter sigilo absoluto sobre pedidos formulados por autoridades políticas.",
-                "C) Exigir relatórios particulares elaborados sob medida por servidores da repartição.",
-                "D) Recorrer de decisões de negação de acesso apenas ao Poder Judiciário em instância única.",
-                "E) Obter orientação sobre os procedimentos para a consecução de acesso, bem como do local onde poderão ser obtidas as informações."
+                "A) Pagar taxa obrigatória de protocolo para qualquer solicitação, inclusive de dados estatísticos simples e já publicados.",
+                "B) Ter sigilo absoluto sobre os pedidos formulados por autoridades políticas, que não podem ser divulgados em nenhuma hipótese.",
+                "C) Exigir relatórios particulares elaborados sob medida por servidores da repartição, com análises e conclusões inéditas.",
+                "D) Recorrer das decisões que neguem o acesso apenas ao Poder Judiciário, em instância única e sem recurso administrativo.",
+                "E) Obter orientação sobre os procedimentos de acesso e sobre o local onde a informação pode ser encontrada."
             ],
             "correta": 4,
             "comentario": "A Lei de Acesso à Informação assegura o direito de obter orientação sobre procedimentos e locais para obtenção de dados de forma gratuita, salvo reprodução de documentos."
@@ -6930,11 +6930,11 @@ window.bancoDeQuestoes = {
             "id": 10022,
             "enunciado": "O servidor público que deixar de prestar atendimento rápido e cortês aos cidadãos usuários do serviço público incorre em violação direta aos deveres fundamentais estabelecidos pelo:",
             "opcoes": [
-                "A) Código Penal brasileiro.",
-                "B) Código Civil brasileiro.",
+                "A) Código Penal brasileiro, no capítulo dos crimes contra a administração pública.",
+                "B) Código Civil brasileiro, na parte que trata da responsabilidade por atos ilícitos.",
                 "C) Estatuto das Licitações e Contratos.",
-                "D) Código de Ética Profissional do Servidor Público Civil (Decreto nº 1.171/94).",
-                "E) Código de Defesa do Consumidor exclusivamente."
+                "D) Código de Ética Profissional do Servidor Público (Decreto nº 1.171/94).",
+                "E) Código de Defesa do Consumidor, que regula exclusivamente os serviços públicos."
             ],
             "correta": 3,
             "comentario": "O Decreto nº 1.171/94 determina que o servidor deve cortesia, atenção e respeito aos cidadãos, sendo falta ética qualquer descaso ou atendimento negligente."
@@ -6959,7 +6959,7 @@ window.bancoDeQuestoes = {
                 "A) A superioridade da vontade do administrador sobre a lei vigente.",
                 "B) A total isenção de fiscalização dos atos públicos por tribunais externos.",
                 "C) As prerrogativas conferidas à Administração Pública para alcançar o bem comum, como a desapropriação e a autotutela.",
-                "D) A possibilidade de preterir direitos fundamentais sem qualquer justificativa formal.",
+                "D) A possibilidade de preterir direitos fundamentais sem qualquer justificativa formal, sempre que houver interesse do gestor.",
                 "E) A impossibilidade de celebração de contratos com empresas privadas."
             ],
             "correta": 2,
@@ -6982,7 +6982,7 @@ window.bancoDeQuestoes = {
             "id": 10026,
             "enunciado": "O princípio da autotutela administrativa autoriza a Administração Pública a:",
             "opcoes": [
-                "A) Julgar crimes comuns cometidos por autoridades políticas sem intervenção judicial.",
+                "A) Julgar crimes comuns cometidos por autoridades políticas sem intervenção do Poder Judiciário, por meio de processo interno.",
                 "B) Modificar contratos administrativos de forma unilateral sem qualquer indenização.",
                 "C) Punir cidadãos particulares por infrações civis em tribunais administrativos.",
                 "D) Recusar cumprir decisões judiciais transitadas em julgado.",
@@ -6995,24 +6995,24 @@ window.bancoDeQuestoes = {
             "id": 10027,
             "enunciado": "De acordo com o Código de Ética Profissional do Servidor Público (Decreto nº 1.171/94), o trabalho desenvolvido pelo servidor público perante a comunidade deve ser entendido como:",
             "opcoes": [
-                "A) Um favor prestado aos eleitores da gestão vigente.",
-                "B) Um acréscimo opcional às suas obrigações contratuais.",
-                "C) Um acréscimo à própria vida particular de cada um, somando-se as horas trabalhadas ao esforço pelo bem comum.",
-                "D) Um acréscimo dispensável em épocas de recesso parlamentar.",
-                "E) Uma atividade estritamente comercial de prestação de serviços remunerados."
+                "A) Um favor prestado aos eleitores da gestão vigente, como forma de retribuir o voto recebido nas eleições.",
+                "B) Um acréscimo opcional às suas obrigações contratuais, realizado conforme a disponibilidade de cada servidor.",
+                "C) Um acréscimo ao seu próprio bem-estar, já que, como cidadão, o êxito desse trabalho é seu maior patrimônio.",
+                "D) Um acréscimo dispensável em épocas de recesso parlamentar, quando a demanda da população costuma diminuir.",
+                "E) Uma atividade estritamente comercial de prestação de serviços, remunerada conforme a produtividade do servidor."
             ],
             "correta": 2,
-            "comentario": "O Decreto estabelece que a função pública deve ser tida como verdadeiro sacerdócio, somando-se o esforço do trabalho ao bem comum da sociedade."
+            "comentario": "Decreto nº 1.171/1994, Anexo, Seção I, inciso V: o trabalho desenvolvido pelo servidor perante a comunidade deve ser entendido como acréscimo ao seu próprio bem-estar, já que, como cidadão, integrante da sociedade, o êxito desse trabalho pode ser considerado como seu maior patrimônio."
         },
         {
             "id": 10028,
             "enunciado": "A exigência de licitação pública para a contratação de obras, serviços, compras e alienações por parte da Administração Pública decorre diretamente dos princípios da:",
             "opcoes": [
-                "A) Soberania e segurança nacional.",
+                "A) Soberania nacional e segurança das contratações públicas.",
                 "B) Moralidade, impessoalidade e economicidade.",
-                "C) Irretroatividade e taxatividade penal.",
+                "C) Irretroatividade das leis e taxatividade das sanções penais.",
                 "D) Supremacia privada e autonomia.",
-                "E) Centralização e hierarquia absoluta."
+                "E) Centralização administrativa e hierarquia absoluta entre os órgãos."
             ],
             "correta": 1,
             "comentario": "A licitação visa garantir a isonomia, a seleção da proposta mais vantajosa (economicidade) e a impessoalidade na aplicação dos recursos públicos."
@@ -7021,11 +7021,11 @@ window.bancoDeQuestoes = {
             "id": 10029,
             "enunciado": "O servidor público que revelar fato ou informação de natureza sigilosa de que teve ciência em razão do cargo comete infração disciplinar e atenta contra o princípio da:",
             "opcoes": [
-                "A) Publicidade irrestrita.",
+                "A) Publicidade irrestrita de todos os atos administrativos.",
                 "B) Legalidade e sigilo profissional.",
-                "C) Eficiência operacional.",
-                "D) Autonomia federativa.",
-                "E) Razoabilidade orçamentária."
+                "C) Eficiência operacional na prestação do serviço público.",
+                "D) Autonomia federativa dos entes da administração.",
+                "E) Razoabilidade orçamentária na gestão dos recursos."
             ],
             "correta": 1,
             "comentario": "O sigilo funcional é um dever ético e legal. Revelar informações sigilosas sem amparo legal viola o dever de lealdade e probidade institucional."
@@ -7034,9 +7034,9 @@ window.bancoDeQuestoes = {
             "id": 10030,
             "enunciado": "Nos termos da Lei de Improbidade Administrativa, as sanções aplicáveis aos atos de improbidade incluem, entre outras:",
             "opcoes": [
-                "A) Pena de reclusão em regime fechado perpétuo.",
-                "B) Banimento do território nacional e perda de bens adquiridos antes do serviço público.",
-                "C) Multa penal de caráter imprescritível executada por tribunais militares.",
+                "A) Pena de reclusão em regime fechado, aplicada pelo juiz da ação de improbidade, sem prejuízo da multa civil e da perda dos bens.",
+                "B) Banimento do território nacional e perda dos bens adquiridos antes do ingresso no serviço público, mesmo que de origem lícita.",
+                "C) Multa penal de caráter imprescritível, executada por tribunais militares, e perda definitiva da nacionalidade brasileira.",
                 "D) Cassação imediata de direitos civis básicos como o direito à vida e à livre expressão.",
                 "E) Perda da função pública, suspensão dos direitos políticos, ressarcimento integral do dano e pagamento de multa civil."
             ],
@@ -7047,11 +7047,11 @@ window.bancoDeQuestoes = {
             "id": 10031,
             "enunciado": "A proibição de acumulação remunerada de cargos públicos abrange, ressalvadas as exceções constitucionais:",
             "opcoes": [
-                "A) Apenas cargos efetivos federais, excluindo municípios.",
-                "B) Empregos e funções na administração direta e indireta (autarquias, fundações, empresas públicas e sociedades de economia mista).",
-                "C) Apenas cargos comissionados de livre nomeação.",
-                "D) Exclusivamente cargos do Poder Legislativo.",
-                "E) Cargos eletivos combinados com funções técnicas."
+                "A) Apenas cargos efetivos federais, excluindo os servidores estaduais e municipais, que seguem regras próprias de acumulação.",
+                "B) Empregos e funções na administração direta e indireta, inclusive autarquias, fundações e empresas estatais.",
+                "C) Apenas cargos comissionados de livre nomeação, já que os efetivos podem acumular livremente se houver compatibilidade.",
+                "D) Exclusivamente cargos do Poder Legislativo, por força do regime próprio dos servidores das Câmaras e Assembleias.",
+                "E) Cargos eletivos combinados com funções técnicas, sendo permitida a acumulação entre cargos efetivos de quaisquer áreas."
             ],
             "correta": 1,
             "comentario": "A proibição de acumulação estende-se a autarquias, fundações, empresas públicas, sociedades de economia mista, suas subsidiárias e sociedades controladas pelo poder público."
@@ -7061,7 +7061,7 @@ window.bancoDeQuestoes = {
             "enunciado": "O princípio da razoabilidade e da proporcionalidade na Administração Pública impõe que os atos administrativos sejam:",
             "opcoes": [
                 "A) Adequados, necessários e equilibrados em relação aos fins públicos pretendidos, vedando excessos e arbitrariedades.",
-                "B) Baseados exclusivamente na vontade discricionária da autoridade máxima.",
+                "B) Baseados exclusivamente na vontade discricionária da autoridade máxima, que não precisa justificar a medida adotada.",
                 "C) Executados sem necessidade de fundamentação escrita.",
                 "D) Restritos a critérios de preferência pessoal do gestor.",
                 "E) Isentos de qualquer controle judicial de legalidade."
@@ -7112,11 +7112,11 @@ window.bancoDeQuestoes = {
             "id": 10036,
             "enunciado": "A Lei de Acesso à Informação (Lei nº 12.527/2011) estabelece que o pedido de acesso a informações pode ser feito por qualquer interessado, exigindo-se do requerente apenas:",
             "opcoes": [
-                "A) Identificação e especificação clara da informação requerida, sendo vedada exigência de motivação.",
-                "B) Comprovação de propriedade de imóvel no município.",
-                "C) Justificativa detalhada de motivos políticos ou acadêmicos.",
-                "D) Pagamento antecipado de emolumentos cartorários.",
-                "E) Apresentação de carta de recomendação de autoridade competente."
+                "A) Identificação e especificação da informação, vedada a exigência de motivação.",
+                "B) Comprovação de propriedade de imóvel no município ou de residência fixa na cidade.",
+                "C) Justificativa detalhada dos motivos políticos ou acadêmicos que levaram ao pedido.",
+                "D) Pagamento antecipado dos emolumentos cartorários e da taxa de reprodução dos documentos.",
+                "E) Apresentação de carta de recomendação assinada por autoridade competente do Município."
             ],
             "correta": 0,
             "comentario": "A LAI proíbe a exigência de motivação para o requerimento de acesso a informações públicas, bastando a identificação do solicitante e especificação do dado."
@@ -7138,11 +7138,11 @@ window.bancoDeQuestoes = {
             "id": 10038,
             "enunciado": "De acordo com a Constituição Federal, a responsabilidade civil do Estado por danos causados por seus agentes a terceiros é:",
             "opcoes": [
-                "A) Subjetiva, exigindo comprovação obrigatória de dolo ou culpa do agente em qualquer caso.",
-                "B) Integral, respondendo o Estado por qualquer dano, inclusive eventos da natureza.",
-                "C) Objetiva, sob a modalidade de risco administrativo, cabendo direito de regresso contra o agente em caso de dolo ou culpa.",
-                "D) Inexistente quando o dano decorrer de omissão estatal.",
-                "E) Limitada ao valor do orçamento anual da repartição envolvida."
+                "A) Subjetiva, exigindo a comprovação obrigatória de dolo ou culpa do agente em qualquer caso, inclusive nos danos por omissão.",
+                "B) Integral, respondendo o Estado por qualquer dano, inclusive os causados por eventos da natureza e por culpa exclusiva da vítima.",
+                "C) Objetiva, na modalidade risco administrativo, com direito de regresso contra o agente em caso de dolo ou culpa.",
+                "D) Inexistente quando o dano decorrer de omissão estatal, hipótese em que apenas o servidor responde perante a vítima.",
+                "E) Limitada ao valor do orçamento anual da repartição envolvida, cabendo ao agente responder pelo valor que exceder esse limite."
             ],
             "correta": 2,
             "comentario": "Conforme o art. 37, § 6º da CF/88, as pessoas jurídicas de direito público respondem pelos danos que seus agentes causarem, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa."
@@ -7164,7 +7164,7 @@ window.bancoDeQuestoes = {
             "id": 10040,
             "enunciado": "As normas que regulam a conduta ética do servidor público visam principal e diretamente garantir:",
             "opcoes": [
-                "A) O aumento salarial automático por tempo de serviço.",
+                "A) O aumento salarial automático por tempo de serviço, desde que o servidor não tenha sofrido nenhuma penalidade disciplinar.",
                 "B) A imunidade total contra processos judiciais civis.",
                 "C) A preservação da imagem, da credibilidade e do respeito da Administração Pública perante a sociedade.",
                 "D) A extinção de comissões de sindicância internas.",
@@ -7177,10 +7177,10 @@ window.bancoDeQuestoes = {
             "id": 10041,
             "enunciado": "Nos termos da Lei de Improbidade Administrativa, a alteração promovida pela Lei nº 14.230/2021 estabeleceu que os atos de improbidade administrativa exigem para a sua configuração a comprovação de:",
             "opcoes": [
-                "A) Dolo específico do agente público na prática da conduta ilícita.",
+                "A) Dolo específico do agente na conduta ilícita.",
                 "B) Culpa grave ou negligência corriqueira em qualquer hipótese.",
-                "C) Apenas prejuízo financeiro apurado ao erário.",
-                "D) Vontade genérica sem dolo.",
+                "C) Apenas prejuízo financeiro efetivamente apurado ao erário.",
+                "D) Vontade genérica do agente, ainda que sem dolo.",
                 "E) Responsabilidade objetiva independente de elemento subjetivo."
             ],
             "correta": 0,
@@ -7218,7 +7218,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Soberania absoluta.",
                 "B) Publicidade e do controle administrativo.",
-                "C) Irresponsabilidade civil do Estado.",
+                "C) Irresponsabilidade civil do Estado pelos atos de seus agentes.",
                 "D) Hierarquia militar estrita.",
                 "E) Concentração de poderes."
             ],
@@ -7229,11 +7229,11 @@ window.bancoDeQuestoes = {
             "id": 10045,
             "enunciado": "Segundo o Decreto nº 1.171/94, o servidor público jamais poderá desprezar o elemento ético de sua conduta, devendo decidir entre:",
             "opcoes": [
-                "A) O menor custo e a maior velocidade burocrática.",
+                "A) O menor custo e a maior velocidade na tramitação burocrática dos processos.",
                 "B) A honestidade e a desonestidade, bem como entre o justo e o injusto.",
-                "C) A ordem do superior e a lei federal.",
-                "D) O interesse do partido e o interesse da união.",
-                "E) O sigilo absoluto e a divulgação irrestrita."
+                "C) A ordem do superior hierárquico e a determinação expressa da lei federal.",
+                "D) O interesse do partido que governa e o interesse da União e dos Estados.",
+                "E) O sigilo absoluto e a divulgação irrestrita de todos os atos administrativos."
             ],
             "correta": 1,
             "comentario": "Trecho literal do Código de Ética Profissional do Servidor Público Civil do Executivo Federal: o servidor jamais poderá desprezar o elemento ético, decidindo sempre entre a honestidade e a desonestidade."
@@ -7268,11 +7268,11 @@ window.bancoDeQuestoes = {
             "id": 10048,
             "enunciado": "O servidor público que desvia dinheiro, valor ou bem móvel público, de que dispõe em razão do cargo, em proveito próprio ou alheio, comete o crime de:",
             "opcoes": [
-                "A) Corrupção passiva.",
-                "B) Prevaricação.",
+                "A) Corrupção passiva, por solicitar vantagem indevida.",
+                "B) Prevaricação, por retardar ato de ofício para satisfazer interesse pessoal.",
                 "C) Peculato apropriação ou desvio.",
-                "D) Concussão.",
-                "E) Desobediência funcional."
+                "D) Concussão, por exigir vantagem indevida em razão da função.",
+                "E) Excesso de exação, por empregar meio vexatório na cobrança de tributo."
             ],
             "correta": 2,
             "comentario": "O crime de peculato (Art. 312 do CP) abrange a apropriação ou desvio de dinheiro, valor ou bem móvel público por parte do funcionário público que o tem em sua posse em razão do cargo."
@@ -7295,7 +7295,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A Administração Pública direta e indireta de qualquer dos Poderes deve pautar seus atos pela transparência ativa e passiva. A transparência ativa consiste em:",
             "opcoes": [
                 "A) Divulgar de ofício, em sítios oficiais da internet, informações de interesse coletivo ou geral sem necessidade de requerimento prévio.",
-                "B) Responder exclusivamente a pedidos judiciais de mandado de segurança.",
+                "B) Responder aos pedidos de informação apresentados pelos cidadãos no Serviço de Informação ao Cidadão, dentro do prazo legal de vinte dias.",
                 "C) Manter documentos sob sigilo absoluto por 100 anos em arquivos físicos.",
                 "D) Fornecer dados apenas mediante pagamento de taxa de protocolo.",
                 "E) Publicar leis apenas em jornais impressos de circulação restrita."
@@ -7321,10 +7321,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Dentre as vedações impostas ao servidor público pelo Decreto nº 1.171/94, destaca-se a proibição de:",
             "opcoes": [
                 "A) Participar de sindicatos ou associações de classe da categoria.",
-                "B) Pleitear melhorias salariais por meio de petições coletivas formais.",
-                "C) Usar do cargo ou função, facilidades, amizades, tempo, posições e influências para obter qualquer favorecimento para si ou para outrem.",
+                "B) Pleitear melhorias salariais e de condições de trabalho por meio de petições coletivas formais dirigidas à chefia.",
+                "C) Usar do cargo, amizades, posições e influências para obter qualquer favorecimento para si ou para outrem.",
                 "D) Sugerir alterações em regulamentos internos da repartição.",
-                "E) Utilizar computadores do órgão para consulta a legislações oficiais."
+                "E) Utilizar computadores e acesso à internet do órgão para consulta a legislações e normas oficiais durante o expediente."
             ],
             "correta": 2,
             "comentario": "O Código de Ética veda expressamente o uso da função pública, influências, amizades ou facilidades para obtenção de favorecimentos pessoais ou de terceiros."
@@ -7333,9 +7333,9 @@ window.bancoDeQuestoes = {
             "id": 10053,
             "enunciado": "O ato administrativo que apresenta defeito insanável em seu elemento 'objeto' ou 'finalidade' é classificado como:",
             "opcoes": [
-                "A) Perfeitamente regular, exigindo apenas correção ortográfica.",
-                "B) Apenas anulável após manifestação favorável do Ministério Público.",
-                "C) Válido e insuscetível de controle após 30 dias.",
+                "A) Perfeitamente regular, exigindo apenas a correção ortográfica e gramatical do texto publicado.",
+                "B) Apenas anulável, após manifestação favorável do Ministério Público e do Tribunal de Contas.",
+                "C) Válido e insuscetível de controle, se não for impugnado no prazo de 30 dias da publicação.",
                 "D) Vínculo contratual irrevogável.",
                 "E) Nulo, não gerando efeitos jurídicos válidos e devendo ser desmanchado pela autotutela."
             ],
@@ -7346,11 +7346,11 @@ window.bancoDeQuestoes = {
             "id": 10054,
             "enunciado": "A exigência de que os editais de licitação e concursos públicos contenham regras claras, objetivas e sem exigências desnecessárias ou restritivas decorre dos princípios da:",
             "opcoes": [
-                "A) Centralização e sigilo militar.",
-                "B) Supremacia absoluta sem controle externo.",
-                "C) Irretroatividade tributária.",
+                "A) Centralização administrativa e sigilo das decisões da comissão.",
+                "B) Supremacia absoluta da administração, sem controle externo.",
+                "C) Irretroatividade tributária e anterioridade do exercício financeiro.",
                 "D) Legalidade, impessoalidade, moralidade e competitividade.",
-                "E) Discricionariedade plena e ilimitada."
+                "E) Discricionariedade plena e ilimitada da comissão organizadora."
             ],
             "correta": 3,
             "comentario": "A impessoalidade e a competitividade exigem regras claras em editais públicos, vedando exigências que restrinjam indevidamente a participação de interessados."
@@ -7360,10 +7360,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O servidor público que, no exercício de suas funções, manifestar respeito e urbanidade para com o público em geral, cumprindo zelosamente seus deveres funcionais, cumpre preceito fundamental exigido pelo:",
             "opcoes": [
                 "A) Código de Trânsito Brasileiro.",
-                "B) Estatuto da Advocacia e da OAB.",
+                "B) Estatuto da Advocacia e da OAB, aplicável aos procuradores e advogados públicos.",
                 "C) Código de Ética Profissional do Servidor Público Civil do Executivo Federal.",
                 "D) Código Comercial e Marítimo.",
-                "E) Regulamento de Entidades Privadas de Comércio."
+                "E) Regulamento de Entidades Privadas de Comércio e de prestação de serviços ao consumidor."
             ],
             "correta": 2,
             "comentario": "A urbanidade, o respeito e o zelo profissional são deveres fundamentais explícitos no Código de Ética Profissional do Servidor Público (Decreto nº 1.171/94)."
@@ -7372,7 +7372,7 @@ window.bancoDeQuestoes = {
             "id": 23001,
             "enunciado": "Segundo a LGPD (Lei nº 13.709/2018), considera-se \"dado pessoal\":",
             "opcoes": [
-                "A) qualquer informação sobre pessoa jurídica de direito privado",
+                "A) qualquer informação sobre pessoa jurídica de direito privado, como razão social e CNPJ",
                 "B) apenas o nome e o CPF de uma pessoa",
                 "C) somente as informações publicadas em redes sociais",
                 "D) apenas os dados armazenados em meio digital",
@@ -7450,11 +7450,11 @@ window.bancoDeQuestoes = {
             "id": 23007,
             "enunciado": "Para a LGPD, \"tratamento\" de dados pessoais abrange:",
             "opcoes": [
-                "A) apenas a venda de dados a terceiros",
-                "B) apenas o armazenamento em computadores",
-                "C) toda operação realizada com dados pessoais, como coleta, acesso, armazenamento, compartilhamento e eliminação",
+                "A) apenas a venda de dados a terceiros, já que o uso interno pela própria organização não é considerado tratamento",
+                "B) apenas o armazenamento em computadores e servidores, excluídos os dados mantidos em documentos de papel",
+                "C) toda operação realizada com dados pessoais, como coleta, armazenamento, compartilhamento e eliminação",
                 "D) somente a coleta inicial dos dados",
-                "E) somente o envio de dados para fora do país"
+                "E) somente a transferência internacional de dados, ou seja, o envio de informações para fora do território nacional"
             ],
             "correta": 2,
             "comentario": "O art. 5º, X, define tratamento de forma ampla: coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, entre outras operações."
@@ -7515,10 +7515,10 @@ window.bancoDeQuestoes = {
             "id": 23012,
             "enunciado": "Segundo a LGPD, o consentimento do titular deve ser uma manifestação:",
             "opcoes": [
-                "A) tácita, presumida pelo silêncio do titular",
+                "A) tácita, presumida pelo silêncio do titular após a coleta dos dados",
                 "B) obrigatória para qualquer tratamento feito pelo poder público",
                 "C) feita exclusivamente em cartório",
-                "D) válida por tempo indeterminado e irrevogável",
+                "D) válida por tempo indeterminado e irrevogável depois de manifestada",
                 "E) livre, informada e inequívoca, para uma finalidade determinada"
             ],
             "correta": 4,
@@ -7530,8 +7530,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) é sempre proibido, salvo autorização judicial",
                 "B) só pode ser feito por empresas privadas contratadas",
-                "C) depende sempre de consentimento escrito de cada cidadão",
-                "D) é permitido para a execução de políticas públicas e o cumprimento de atribuições legais, sem depender, nesses casos, do consentimento do titular",
+                "C) depende sempre de consentimento escrito e específico de cada cidadão, renovado a cada nova finalidade do tratamento",
+                "D) é permitido para executar políticas públicas e cumprir atribuições legais, sem depender de consentimento",
                 "E) dispensa qualquer transparência sobre as finalidades"
             ],
             "correta": 3,
@@ -7554,10 +7554,10 @@ window.bancoDeQuestoes = {
             "id": 23015,
             "enunciado": "A LGPD NÃO se aplica ao tratamento de dados pessoais realizado:",
             "opcoes": [
-                "A) por órgão público para executar política pública",
+                "A) por órgão público para executar política pública prevista em lei ou contrato",
                 "B) por empresas privadas para vender produtos",
                 "C) por pessoa natural para fins exclusivamente particulares e não econômicos",
-                "D) por hospitais privados para atendimento de pacientes",
+                "D) por hospitais privados para atendimento de pacientes e gestão de prontuários",
                 "E) por bancos para concessão de crédito"
             ],
             "correta": 2,
@@ -7567,11 +7567,11 @@ window.bancoDeQuestoes = {
             "id": 23016,
             "enunciado": "Dado anonimizado, segundo a LGPD, é aquele que:",
             "opcoes": [
-                "A) foi publicado sem o nome do autor",
+                "A) foi publicado sem o nome do autor, mas com todos os demais dados preservados",
                 "B) não permite identificar o titular, considerando meios técnicos razoáveis",
-                "C) foi criptografado com senha",
+                "C) foi criptografado com senha, podendo ser lido apenas por quem possui a chave",
                 "D) está guardado em papel",
-                "E) pertence a pessoa já falecida"
+                "E) pertence a pessoa já falecida, cujos herdeiros não pediram formalmente a sua exclusão"
             ],
             "correta": 1,
             "comentario": "Pelo art. 5º, III, dado anonimizado é o que não pode ser associado ao titular, considerados os meios técnicos razoáveis disponíveis. Em regra, não é considerado dado pessoal (art. 12)."
@@ -7580,11 +7580,11 @@ window.bancoDeQuestoes = {
             "id": 23017,
             "enunciado": "O órgão responsável por zelar pela proteção de dados pessoais, fiscalizar e aplicar sanções previstas na LGPD é a:",
             "opcoes": [
-                "A) Polícia Federal",
+                "A) Polícia Federal, por meio da Diretoria de Crimes Cibernéticos",
                 "B) Autoridade Nacional de Proteção de Dados (ANPD)",
-                "C) Agência Nacional de Telecomunicações (Anatel)",
+                "C) Agência Nacional de Telecomunicações (Anatel), em conjunto com o Procon",
                 "D) Defensoria Pública da União",
-                "E) Controladoria-Geral da União (CGU)"
+                "E) Controladoria-Geral da União (CGU), por meio da Ouvidoria-Geral"
             ],
             "correta": 1,
             "comentario": "A ANPD é a autoridade responsável por zelar, implementar e fiscalizar o cumprimento da LGPD em todo o território nacional."
@@ -7606,11 +7606,11 @@ window.bancoDeQuestoes = {
             "id": 23019,
             "enunciado": "O tratamento de dados pessoais de crianças, segundo a LGPD, deve ser realizado:",
             "opcoes": [
-                "A) com consentimento da própria criança, a partir dos 7 anos",
-                "B) somente com autorização judicial",
-                "C) em seu melhor interesse, com consentimento específico de pelo menos um dos pais ou do responsável legal, nas hipóteses que o exigem",
+                "A) com consentimento da própria criança, a partir dos 7 anos, desde que acompanhado da assinatura de uma testemunha maior de idade",
+                "B) somente com autorização judicial, concedida pelo juiz da infância e da juventude da comarca onde a criança reside",
+                "C) em seu melhor interesse, com consentimento específico de ao menos um dos pais ou do responsável legal",
                 "D) apenas por instituições de ensino",
-                "E) livremente, pois crianças não são titulares de dados"
+                "E) livremente, pois as crianças não são consideradas titulares de dados pessoais até completarem dezoito anos"
             ],
             "correta": 2,
             "comentario": "O art. 14 exige que o tratamento de dados de crianças seja feito em seu melhor interesse, com consentimento específico e em destaque de pelo menos um dos pais ou responsável legal."
@@ -7632,11 +7632,11 @@ window.bancoDeQuestoes = {
             "id": 23021,
             "enunciado": "A LGPD protege os dados pessoais com o objetivo de assegurar os direitos fundamentais de:",
             "opcoes": [
-                "A) sigilo absoluto de todos os atos públicos",
+                "A) sigilo absoluto de todos os atos públicos que envolvam informações sobre pessoas naturais",
                 "B) liberdade, privacidade e livre desenvolvimento da personalidade da pessoa natural",
                 "C) segurança nacional exclusivamente",
                 "D) livre comércio de bancos de dados",
-                "E) propriedade industrial das empresas"
+                "E) propriedade industrial das empresas sobre os bancos de dados que elas mesmas produzem"
             ],
             "correta": 1,
             "comentario": "O art. 1º declara que a lei tem o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural."
@@ -7649,7 +7649,7 @@ window.bancoDeQuestoes = {
                 "B) portabilidade, pois não transferiu os dados",
                 "C) finalidade, pois o uso não corresponde ao propósito legítimo do tratamento",
                 "D) livre iniciativa",
-                "E) qualidade dos dados, pois os dados estavam corretos"
+                "E) qualidade dos dados, pois os dados consultados estavam corretos e atualizados no cadastro"
             ],
             "correta": 2,
             "comentario": "Os dados só podem ser usados para as finalidades legítimas que justificaram o tratamento. O acesso por curiosidade desvia a finalidade e pode gerar responsabilização."
@@ -7659,10 +7659,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei de Acesso à Informação (Lei nº 12.527/2011), uma das diretrizes da lei é:",
             "opcoes": [
                 "A) a exigência de justificativa para todo pedido de informação",
-                "B) a divulgação de informações apenas mediante requerimento",
-                "C) o sigilo como regra e a publicidade como exceção",
-                "D) a observância da publicidade como preceito geral e do sigilo como exceção",
-                "E) a restrição do acesso a cidadãos com nível superior"
+                "B) a divulgação de informações apenas mediante requerimento do interessado",
+                "C) o sigilo como regra geral e a publicidade como exceção justificada",
+                "D) a publicidade como preceito geral e o sigilo como exceção",
+                "E) a restrição do acesso aos cidadãos que comprovarem nível superior completo"
             ],
             "correta": 3,
             "comentario": "O art. 3º, I, da LAI fixa como diretriz a publicidade como preceito geral e o sigilo como exceção."
@@ -7671,11 +7671,11 @@ window.bancoDeQuestoes = {
             "id": 23024,
             "enunciado": "A Lei de Acesso à Informação aplica-se:",
             "opcoes": [
-                "A) aos órgãos dos Poderes Executivo, Legislativo e Judiciário de todos os entes, inclusive às Câmaras Municipais",
-                "B) somente aos ministérios e às agências reguladoras",
-                "C) apenas às empresas privadas que recebem recursos públicos",
-                "D) somente aos órgãos que tenham site na internet",
-                "E) apenas aos órgãos do Poder Executivo federal"
+                "A) aos órgãos dos três Poderes de todos os entes, inclusive às Câmaras Municipais",
+                "B) somente aos ministérios, às agências reguladoras e às demais entidades da administração federal",
+                "C) apenas às empresas privadas que recebem recursos públicos para executar projetos sociais",
+                "D) somente aos órgãos que mantenham site oficial na internet com mais de mil acessos mensais",
+                "E) apenas aos órgãos do Poder Executivo federal, estadual e municipal, excluídos os Legislativos"
             ],
             "correta": 0,
             "comentario": "O art. 1º, parágrafo único, subordina à LAI os órgãos públicos de todos os Poderes, de todos os entes federativos, incluindo os Legislativos e as Cortes de Contas."
@@ -7710,11 +7710,11 @@ window.bancoDeQuestoes = {
             "id": 23027,
             "enunciado": "De acordo com a LAI, para pedir acesso a uma informação, o interessado:",
             "opcoes": [
-                "A) deve identificar-se e especificar a informação, sendo proibido exigir os motivos do pedido",
-                "B) deve justificar por que deseja a informação",
-                "C) precisa comprovar residência no município",
-                "D) precisa pagar taxa prévia de análise",
-                "E) deve ser representado por advogado"
+                "A) deve identificar-se e especificar a informação, sem precisar dizer o motivo",
+                "B) deve justificar por escrito por que deseja a informação e como pretende utilizá-la",
+                "C) precisa comprovar residência no município onde fica o órgão que detém a informação",
+                "D) precisa pagar uma taxa prévia de análise, devolvida caso o pedido seja indeferido",
+                "E) deve ser representado por advogado, com procuração específica para o pedido"
             ],
             "correta": 0,
             "comentario": "O art. 10 exige identificação do requerente e especificação da informação. O § 3º veda quaisquer exigências relativas aos motivos determinantes da solicitação."
@@ -7723,11 +7723,11 @@ window.bancoDeQuestoes = {
             "id": 23028,
             "enunciado": "Não sendo possível conceder o acesso imediato à informação, o órgão deve responder ao pedido no prazo de até:",
             "opcoes": [
-                "A) 60 dias, prorrogáveis indefinidamente",
-                "B) 10 dias, improrrogáveis",
-                "C) 30 dias, prorrogável por mais 30 dias",
-                "D) 20 dias, prorrogável por mais 10 dias mediante justificativa expressa",
-                "E) 5 dias, prorrogável por mais 5 dias"
+                "A) 60 dias, prorrogáveis indefinidamente enquanto houver pesquisa em andamento",
+                "B) 10 dias, improrrogáveis, sob pena de responsabilidade do servidor",
+                "C) 30 dias, prorrogável por mais 30 dias, mediante justificativa expressa",
+                "D) 20 dias, prorrogável por mais 10 dias, com justificativa expressa",
+                "E) 5 dias, prorrogável por mais 5 dias, mediante justificativa expressa"
             ],
             "correta": 3,
             "comentario": "O art. 11, § 1º, fixa o prazo de até 20 dias, e o § 2º permite prorrogação por mais 10 dias, com justificativa e ciência do requerente."
@@ -7736,11 +7736,11 @@ window.bancoDeQuestoes = {
             "id": 23029,
             "enunciado": "Quanto aos custos, a LAI determina que o serviço de busca e fornecimento da informação é:",
             "opcoes": [
-                "A) sempre cobrado, conforme tabela de cada órgão",
-                "B) gratuito, salvo a cobrança do custo de reprodução de documentos, da qual fica isento quem declarar insuficiência econômica",
-                "C) gratuito apenas para servidores públicos",
-                "D) gratuito somente para pedidos feitos pela internet",
-                "E) cobrado em dobro quando o pedido é urgente"
+                "A) sempre cobrado, conforme a tabela de cada órgão, com desconto de metade para estudantes e aposentados",
+                "B) gratuito, salvo o custo de reprodução, dispensado para quem declarar insuficiência econômica",
+                "C) gratuito apenas para os servidores públicos e cobrado dos demais cidadãos conforme o volume de páginas",
+                "D) gratuito somente para os pedidos feitos pela internet, cobrando-se taxa nos pedidos presenciais",
+                "E) cobrado em dobro quando o pedido é urgente, para cobrir as horas extras dos servidores envolvidos"
             ],
             "correta": 1,
             "comentario": "O art. 12 prevê a gratuidade do serviço de busca, podendo ser cobrado apenas o custo de reprodução, com isenção para quem declarar não ter condições de pagar."
@@ -7789,9 +7789,9 @@ window.bancoDeQuestoes = {
             "enunciado": "As informações pessoais relativas à intimidade, à vida privada, à honra e à imagem, segundo a LAI, terão acesso restrito pelo prazo máximo de:",
             "opcoes": [
                 "A) 100 anos, independentemente de classificação de sigilo",
-                "B) apenas enquanto a pessoa estiver viva",
-                "C) 15 anos, como as secretas",
-                "D) 25 anos, como as ultrassecretas",
+                "B) apenas enquanto a pessoa estiver viva, extinguindo-se a restrição com a morte",
+                "C) 15 anos, como as informações classificadas no grau secreto",
+                "D) 25 anos, como as informações classificadas no grau ultrassecreto",
                 "E) 5 anos, como as reservadas"
             ],
             "correta": 0,
@@ -7801,11 +7801,11 @@ window.bancoDeQuestoes = {
             "id": 23034,
             "enunciado": "A LAI determina a criação, nos órgãos públicos, de um Serviço de Informações ao Cidadão (SIC), com a função de:",
             "opcoes": [
-                "A) aplicar multas aos cidadãos que fizerem pedidos repetidos",
-                "B) substituir a ouvidoria e a corregedoria",
-                "C) atender e orientar o público, informar sobre a tramitação de documentos e protocolizar pedidos de acesso",
-                "D) julgar os recursos contra negativa de acesso em última instância",
-                "E) classificar todas as informações como sigilosas"
+                "A) aplicar multas aos cidadãos que fizerem pedidos repetidos ou genéricos, conforme regulamento do órgão",
+                "B) substituir a ouvidoria e a corregedoria, recebendo denúncias contra servidores e aplicando penalidades",
+                "C) atender e orientar o público, informar sobre a tramitação de documentos e protocolar pedidos",
+                "D) julgar em última instância os recursos contra negativa de acesso, no lugar da Controladoria-Geral",
+                "E) classificar as informações produzidas pelo órgão como reservadas, secretas ou ultrassecretas conforme o caso"
             ],
             "correta": 2,
             "comentario": "O art. 9º, I, prevê o SIC para atender e orientar o público, informar sobre a tramitação de documentos e protocolizar requerimentos de acesso."
@@ -7814,11 +7814,11 @@ window.bancoDeQuestoes = {
             "id": 23035,
             "enunciado": "Segundo a LAI, a divulgação obrigatória de informações pela internet, em sítios oficiais, é DISPENSADA:",
             "opcoes": [
-                "A) para todas as Câmaras Municipais",
-                "B) para os municípios com população de até 10.000 habitantes, mantida a divulgação em tempo real das informações orçamentárias e financeiras",
-                "C) para os órgãos do Poder Judiciário",
-                "D) para os municípios com mais de 100.000 habitantes",
-                "E) para os órgãos que tenham ouvidoria"
+                "A) para todas as Câmaras Municipais, que devem divulgar seus dados apenas no mural da sede e no diário oficial",
+                "B) para municípios de até 10 mil habitantes, salvo as informações orçamentárias e financeiras em tempo real",
+                "C) para os órgãos do Poder Judiciário, que já publicam suas decisões no diário da justiça eletrônico do tribunal",
+                "D) para os municípios com mais de 100.000 habitantes, que podem divulgar as informações apenas mediante pedido",
+                "E) para os órgãos que mantenham ouvidoria em funcionamento e atendam os pedidos de informação no prazo legal"
             ],
             "correta": 1,
             "comentario": "O art. 8º, § 4º, dispensa da divulgação obrigatória na internet os municípios com até 10.000 habitantes, mas mantém a obrigação de divulgar em tempo real as informações orçamentárias e financeiras."
@@ -7829,9 +7829,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) orientar o cidadão sobre onde encontrar a informação",
                 "B) responder o pedido dentro do prazo legal",
-                "C) informar que o dado está classificado e indicar o fundamento",
-                "D) pedir a prorrogação do prazo com justificativa",
-                "E) recusar-se a fornecer informação requerida, retardar deliberadamente seu fornecimento ou fornecê-la de forma intencionalmente incorreta"
+                "C) informar ao requerente que o dado está classificado como sigiloso, indicando o fundamento legal e a autoridade que o classificou",
+                "D) pedir a prorrogação do prazo de resposta por mais dez dias, apresentando justificativa expressa e por escrito ao requerente",
+                "E) recusar-se a fornecer a informação, retardar deliberadamente o fornecimento ou fornecê-la de forma incorreta"
             ],
             "correta": 4,
             "comentario": "O art. 32, I, lista como conduta ilícita recusar, retardar deliberadamente ou fornecer intencionalmente de forma incorreta, incompleta ou imprecisa a informação."
@@ -7840,11 +7840,11 @@ window.bancoDeQuestoes = {
             "id": 23037,
             "enunciado": "Segundo a LAI, quando a informação solicitada estiver disponível ao público em formato impresso, eletrônico ou em outro meio de acesso universal, o órgão:",
             "opcoes": [
-                "A) deve exigir que o cidadão comprove o motivo do pedido",
-                "B) deve classificá-la como reservada",
-                "C) deve negar o pedido sem justificativa",
-                "D) pode informar ao requerente o lugar e a forma de acessá-la, desonerando-se da obrigação de fornecê-la diretamente",
-                "E) deve cobrar taxa pelo fornecimento"
+                "A) deve exigir que o cidadão comprove o motivo do pedido, já que a informação está disponível ao público",
+                "B) deve classificá-la como reservada, já que a divulgação repetida pode comprometer a segurança do órgão",
+                "C) deve negar o pedido sem justificativa, pois o cidadão tem o dever de pesquisar antes de solicitar",
+                "D) pode indicar ao requerente o lugar e a forma de acessá-la, sem precisar fornecê-la diretamente",
+                "E) deve cobrar taxa pelo fornecimento, já que a busca exige trabalho adicional dos servidores do órgão"
             ],
             "correta": 3,
             "comentario": "O art. 11, § 6º, permite ao órgão indicar o local e a forma de consultar a informação já disponível, salvo se o requerente declarar não dispor de meios para isso."
@@ -7879,11 +7879,11 @@ window.bancoDeQuestoes = {
             "id": 23040,
             "enunciado": "Na transparência ativa, a LAI determina como conteúdo mínimo de divulgação, entre outros:",
             "opcoes": [
-                "A) informações classificadas como secretas",
-                "B) dados pessoais de saúde dos servidores",
+                "A) informações classificadas como secretas, desde que já tenham passado cinco anos da data de sua produção",
+                "B) dados pessoais de saúde dos servidores, para permitir o controle social sobre as licenças médicas concedidas",
                 "C) senhas dos sistemas internos",
-                "D) endereços residenciais dos vereadores",
-                "E) registros de despesas, informações sobre licitações e contratos, e respostas a perguntas frequentes da sociedade"
+                "D) endereços residenciais e telefones particulares dos vereadores, para facilitar o contato da população",
+                "E) registros de despesas, informações sobre licitações e contratos e respostas a perguntas frequentes"
             ],
             "correta": 4,
             "comentario": "O art. 8º, § 1º, inclui registros de competências e estrutura, repasses, despesas, licitações e contratos, dados de programas e obras e respostas a perguntas frequentes."
@@ -7892,11 +7892,11 @@ window.bancoDeQuestoes = {
             "id": 23041,
             "enunciado": "Os sítios oficiais na internet usados para a transparência ativa devem, segundo a LAI:",
             "opcoes": [
-                "A) conter ferramenta de pesquisa, permitir a gravação de relatórios em formatos abertos e adotar medidas de acessibilidade",
-                "B) restringir a consulta ao horário de expediente",
-                "C) disponibilizar dados apenas em imagens escaneadas",
+                "A) conter ferramenta de pesquisa, permitir gravar relatórios em formatos abertos e ter medidas de acessibilidade",
+                "B) restringir a consulta ao horário de expediente do órgão, para que haja servidores disponíveis para tirar dúvidas",
+                "C) disponibilizar os dados apenas em imagens escaneadas dos documentos originais, para garantir a sua autenticidade",
                 "D) ser acessados somente dentro do prédio do órgão",
-                "E) exigir cadastro com CPF para qualquer consulta"
+                "E) exigir cadastro prévio com CPF e endereço para qualquer consulta, permitindo o controle de quem acessou os dados"
             ],
             "correta": 0,
             "comentario": "O art. 8º, § 3º, exige ferramenta de pesquisa, relatórios em formatos eletrônicos abertos e legíveis por máquina, atualização e acessibilidade para pessoas com deficiência."
@@ -7906,8 +7906,8 @@ window.bancoDeQuestoes = {
             "enunciado": "A negativa de acesso a uma informação deve ser, segundo a LAI:",
             "opcoes": [
                 "A) fundamentada, com indicação das razões, e acompanhada de informação sobre a possibilidade de recurso",
-                "B) justificada somente se o cidadão pagar taxa",
-                "C) definitiva, sem possibilidade de recurso",
+                "B) justificada por escrito somente se o cidadão pagar a taxa de análise prevista no regulamento do órgão",
+                "C) definitiva, sem possibilidade de recurso, cabendo ao cidadão apenas recorrer ao Poder Judiciário competente",
                 "D) comunicada apenas ao Ministério Público",
                 "E) verbal e sem registro"
             ],
@@ -7918,11 +7918,11 @@ window.bancoDeQuestoes = {
             "id": 23043,
             "enunciado": "Assinale a alternativa que traz um objetivo da Lei de Acesso à Informação:",
             "opcoes": [
-                "A) garantir sigilo sobre os gastos públicos",
-                "B) substituir os tribunais de contas",
-                "C) fomentar o desenvolvimento da cultura de transparência e o controle social da administração pública",
-                "D) reduzir o número de servidores nas ouvidorias",
-                "E) impedir que a imprensa publique dados oficiais"
+                "A) garantir sigilo sobre os gastos públicos considerados estratégicos para a segurança do órgão",
+                "B) substituir os tribunais de contas na fiscalização das despesas realizadas pelos órgãos públicos",
+                "C) fomentar a cultura de transparência e o controle social da administração pública",
+                "D) reduzir o número de servidores nas ouvidorias, transferindo o atendimento para sistemas automáticos",
+                "E) impedir que a imprensa publique dados oficiais antes da divulgação feita pelo próprio órgão"
             ],
             "correta": 2,
             "comentario": "O art. 3º, IV e V, coloca entre as diretrizes o desenvolvimento da cultura de transparência e o controle social da administração pública."
@@ -7933,7 +7933,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) extinção do atendimento presencial em todos os órgãos",
                 "B) desburocratização, da inovação, da transformação digital e da participação do cidadão",
-                "C) centralização de todos os serviços em um único município",
+                "C) centralização de todos os serviços públicos em uma única plataforma federal, gerida pela União",
                 "D) privatização dos serviços públicos digitais",
                 "E) substituição dos servidores por sistemas automáticos"
             ],
@@ -7945,7 +7945,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Quanto ao alcance, a Lei nº 14.129/2021 aplica-se aos Estados, ao Distrito Federal e aos Municípios:",
             "opcoes": [
                 "A) apenas em relação aos serviços de saúde",
-                "B) de forma automática e obrigatória, desde a publicação",
+                "B) de forma automática e obrigatória, desde a data de sua publicação oficial",
                 "C) somente aos municípios com mais de um milhão de habitantes",
                 "D) apenas quando autorizados pelo Tribunal de Contas da União",
                 "E) que adotarem seus comandos por meio de atos normativos próprios"
@@ -7983,11 +7983,11 @@ window.bancoDeQuestoes = {
             "id": 23048,
             "enunciado": "Em relação ao atendimento presencial, a Lei nº 14.129/2021 prevê:",
             "opcoes": [
-                "A) a permanência da possibilidade de atendimento presencial, de acordo com as características, a relevância e o público-alvo do serviço",
-                "B) o atendimento presencial somente com agendamento judicial",
+                "A) a manutenção do atendimento presencial, conforme as características, a relevância e o público-alvo do serviço",
+                "B) o atendimento presencial somente com agendamento prévio autorizado por decisão judicial, em casos excepcionais",
                 "C) o atendimento presencial apenas para servidores",
                 "D) a cobrança de taxa extra para atendimento presencial",
-                "E) a extinção imediata de todo atendimento presencial"
+                "E) a extinção imediata de todo atendimento presencial, substituído por canais digitais e centrais telefônicas"
             ],
             "correta": 0,
             "comentario": "A lei incentiva o digital, mas o art. 3º garante a permanência do atendimento presencial conforme a natureza do serviço e o público atendido."
@@ -7996,8 +7996,8 @@ window.bancoDeQuestoes = {
             "id": 23049,
             "enunciado": "A Lei do Governo Digital define \"autosserviço\" como:",
             "opcoes": [
-                "A) o atendimento feito pelo próprio servidor em sua residência",
-                "B) a autorização para o servidor prestar serviços particulares",
+                "A) o atendimento feito pelo próprio servidor em sua residência, por meio do regime de teletrabalho integral",
+                "B) a autorização para o servidor prestar serviços particulares fora do horário, desde que não haja conflito",
                 "C) a prestação de serviço sem qualquer controle do órgão",
                 "D) o acesso pelo cidadão a serviço público prestado por meio digital, sem necessidade de mediação humana",
                 "E) o pagamento de serviços públicos por aplicativos privados"
@@ -8009,10 +8009,10 @@ window.bancoDeQuestoes = {
             "id": 23050,
             "enunciado": "Segundo a Lei nº 14.129/2021, \"dados abertos\" são dados acessíveis ao público, em meio digital, estruturados em formato aberto, processáveis por máquina e:",
             "opcoes": [
-                "A) restritos a pesquisadores credenciados",
-                "B) disponibilizados sob licença aberta que permita sua livre utilização, limitando-se a exigir o crédito da autoria ou da fonte",
-                "C) disponíveis somente mediante pagamento",
-                "D) acessíveis apenas aos servidores do órgão",
+                "A) restritos a pesquisadores credenciados pelo órgão, que assinam termo de responsabilidade sobre o uso das informações",
+                "B) disponibilizados sob licença aberta que permita a livre utilização, exigindo-se apenas o crédito da fonte",
+                "C) disponíveis somente mediante pagamento de taxa proporcional ao volume, destinada à manutenção dos sistemas públicos",
+                "D) acessíveis apenas aos servidores do órgão e aos órgãos de controle, mediante senha individual e registro de acesso",
                 "E) publicados exclusivamente em formato de imagem"
             ],
             "correta": 1,
@@ -8035,11 +8035,11 @@ window.bancoDeQuestoes = {
             "id": 23052,
             "enunciado": "Pela Lei do Governo Digital, um órgão que exige do cidadão a apresentação de uma certidão que ele próprio pode obter em outro órgão público, por compartilhamento de dados, contraria a diretriz de:",
             "opcoes": [
-                "A) segurança nacional",
-                "B) publicidade dos atos administrativos",
-                "C) autonomia municipal",
-                "D) simplificação e eliminação de exigências desnecessárias, com compartilhamento de dados entre órgãos",
-                "E) separação dos Poderes"
+                "A) segurança nacional, já que a certidão comprova a identidade do cidadão perante o poder público",
+                "B) publicidade dos atos administrativos, pois a certidão torna pública a situação do cidadão",
+                "C) autonomia municipal, que permite a cada órgão definir livremente os documentos exigidos",
+                "D) simplificação e eliminação de exigências desnecessárias, com compartilhamento de dados",
+                "E) separação dos Poderes, já que cada órgão é responsável apenas pelos próprios cadastros"
             ],
             "correta": 3,
             "comentario": "A lei estimula a atuação integrada e o compartilhamento de dados para que o cidadão não precise buscar documentos que o próprio poder público já possui."
@@ -8087,10 +8087,10 @@ window.bancoDeQuestoes = {
             "id": 23056,
             "enunciado": "No uso de ferramentas de inteligência artificial pela administração pública, a \"supervisão humana\" significa que:",
             "opcoes": [
-                "A) os servidores não precisam conhecer o funcionamento da ferramenta",
+                "A) os servidores não precisam conhecer o funcionamento da ferramenta, bastando conferir o resultado final",
                 "B) a IA substitui a assinatura da autoridade competente",
                 "C) decisões que afetam direitos devem ser acompanhadas, revisadas e assumidas por pessoas responsáveis",
-                "D) os sistemas de IA podem decidir sozinhos qualquer processo",
+                "D) os sistemas de IA podem decidir sozinhos qualquer processo, desde que um servidor assine o resultado depois",
                 "E) basta que o resultado seja rápido para ser válido"
             ],
             "correta": 2,
@@ -8104,7 +8104,7 @@ window.bancoDeQuestoes = {
                 "B) publicar senhas dos sistemas de IA",
                 "C) informar quando e para que a ferramenta é usada e permitir compreender os critérios que influenciaram o resultado",
                 "D) impedir que o cidadão questione o resultado",
-                "E) ocultar do cidadão que a resposta foi gerada por IA"
+                "E) ocultar do cidadão que a resposta foi gerada por IA, para evitar desconfiança sobre a qualidade do atendimento prestado"
             ],
             "correta": 2,
             "comentario": "Transparência envolve informar o uso da IA, sua finalidade e os critérios relevantes, permitindo controle e contestação."
@@ -8113,11 +8113,11 @@ window.bancoDeQuestoes = {
             "id": 23058,
             "enunciado": "Um risco ético relevante no uso de sistemas de IA pela administração pública é:",
             "opcoes": [
-                "A) a reprodução de vieses dos dados de treinamento, que pode gerar tratamento discriminatório",
-                "B) a redução automática de custos sem qualquer risco",
-                "C) a eliminação de todos os erros humanos",
-                "D) a dispensa de proteção de dados",
-                "E) a garantia de imparcialidade absoluta"
+                "A) a reprodução de vieses dos dados de treinamento, gerando discriminação",
+                "B) a redução automática de custos operacionais, sem qualquer risco para os cidadãos",
+                "C) a eliminação de todos os erros humanos nas decisões tomadas pelos servidores",
+                "D) a dispensa da proteção de dados pessoais, já que os sistemas são automatizados",
+                "E) a garantia de imparcialidade absoluta, por se tratar de decisão tomada por máquina"
             ],
             "correta": 0,
             "comentario": "Se os dados de treinamento contêm distorções, o sistema pode reproduzi-las, violando a impessoalidade e o princípio da não discriminação."
@@ -8126,11 +8126,11 @@ window.bancoDeQuestoes = {
             "id": 23059,
             "enunciado": "Antes de inserir em uma ferramenta pública de IA generativa o texto de um processo com dados de cidadãos, o servidor deve:",
             "opcoes": [
-                "A) pedir à ferramenta que guarde os dados em sigilo",
-                "B) inserir o processo completo para obter um resultado melhor",
-                "C) publicar o processo nas redes sociais para consulta",
+                "A) pedir à própria ferramenta que guarde os dados em sigilo após o processamento do texto",
+                "B) inserir o processo completo, com todos os dados, para obter um resultado melhor",
+                "C) publicar o processo nas redes sociais do órgão para consulta pública prévia",
                 "D) verificar se o uso é autorizado e retirar ou anonimizar os dados pessoais",
-                "E) enviar os dados para o e-mail pessoal antes"
+                "E) enviar os dados para o seu e-mail pessoal antes, como cópia de segurança do trabalho"
             ],
             "correta": 3,
             "comentario": "O uso responsável de IA respeita a LGPD: dados pessoais só podem ser tratados para finalidade legítima e com segurança, o que pode não ocorrer em ferramentas externas."
@@ -8140,9 +8140,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A finalidade, no uso de IA e de tecnologias digitais no serviço público, exige que:",
             "opcoes": [
                 "A) a ferramenta seja usada sem registro de sua utilização",
-                "B) os dados coletados sejam reaproveitados livremente para outros fins",
+                "B) os dados coletados sejam reaproveitados livremente para outros fins, desde que sejam úteis ao órgão",
                 "C) qualquer uso seja permitido desde que gere economia",
-                "D) o servidor use a ferramenta para fins pessoais no expediente",
+                "D) o servidor possa usar a ferramenta para fins pessoais durante o expediente, se não houver custo",
                 "E) a ferramenta seja utilizada para propósitos legítimos e compatíveis com as atribuições do órgão"
             ],
             "correta": 4,
@@ -8165,8 +8165,8 @@ window.bancoDeQuestoes = {
             "id": 23062,
             "enunciado": "Assinale a conduta adequada ao uso ético e seguro de tecnologias digitais por um servidor público:",
             "opcoes": [
-                "A) salvar processos com dados pessoais em pendrive particular sem proteção",
-                "B) compartilhar a senha do sistema com estagiários para agilizar o trabalho",
+                "A) salvar processos com dados pessoais em pendrive particular sem proteção, para trabalhar em casa",
+                "B) compartilhar a senha do sistema com estagiários do setor para agilizar o trabalho de rotina",
                 "C) enviar documentos internos por aplicativo pessoal sem autorização",
                 "D) utilizar apenas sistemas e contas institucionais autorizados para tratar documentos do órgão",
                 "E) desativar o antivírus para instalar programas não homologados"
@@ -8178,7 +8178,7 @@ window.bancoDeQuestoes = {
             "id": 23063,
             "enunciado": "A acessibilidade digital nos serviços públicos significa:",
             "opcoes": [
-                "A) permitir acesso apenas a quem tem computador de última geração",
+                "A) permitir o acesso apenas a quem tem computador de última geração e internet de alta velocidade, para garantir a segurança dos sistemas",
                 "B) garantir que pessoas com deficiência, idosos e pessoas com pouca familiaridade com tecnologia consigam usar os serviços digitais",
                 "C) limitar o acesso a horários comerciais",
                 "D) usar linguagem técnica para garantir precisão",
@@ -8192,8 +8192,8 @@ window.bancoDeQuestoes = {
             "enunciado": "A \"plataforma única de acesso às informações e aos serviços públicos\", prevista entre as diretrizes da Lei do Governo Digital, busca:",
             "opcoes": [
                 "A) facilitar o acesso do cidadão, reunindo serviços e informações em um mesmo ambiente digital",
-                "B) restringir o acesso de cidadãos de outros estados",
-                "C) substituir a necessidade de publicação dos atos oficiais",
+                "B) restringir o acesso dos cidadãos de outros estados aos serviços oferecidos pelo órgão municipal",
+                "C) substituir a necessidade de publicação dos atos oficiais no diário oficial e no portal da transparência",
                 "D) impedir o atendimento por telefone",
                 "E) obrigar o cidadão a criar uma conta para cada órgão"
             ],
@@ -8206,7 +8206,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) a eliminação de dados pessoais",
                 "B) o anonimato dos servidores",
-                "C) o aumento do espaço de armazenamento",
+                "C) o aumento do espaço de armazenamento disponível no servidor de dados",
                 "D) a rastreabilidade e a responsabilização dos agentes",
                 "E) a dispensa de senhas"
             ],
@@ -8217,11 +8217,11 @@ window.bancoDeQuestoes = {
             "id": 23066,
             "enunciado": "Sobre a distinção entre ética e moral, é correto afirmar que:",
             "opcoes": [
-                "A) ética e moral são sinônimos perfeitos, sem qualquer distinção conceitual",
+                "A) ética e moral são sinônimos perfeitos, sem qualquer distinção conceitual entre os dois termos na filosofia",
                 "B) a ética se limita às leis escritas, e a moral às decisões judiciais",
                 "C) a moral é uma ciência, e a ética é apenas um costume regional",
-                "D) a moral é universal e imutável, e a ética muda a cada geração",
-                "E) a moral é o conjunto de normas e costumes de um grupo, e a ética é a reflexão crítica sobre essas normas e valores"
+                "D) a moral é universal e imutável em todas as sociedades, e a ética muda a cada geração conforme as leis",
+                "E) a moral é o conjunto de normas e costumes de um grupo, e a ética é a reflexão crítica sobre eles"
             ],
             "correta": 4,
             "comentario": "Em geral, a moral se refere às regras e costumes praticados por uma sociedade em certo tempo; a ética é a reflexão teórica que analisa e fundamenta esses comportamentos."
@@ -8246,7 +8246,7 @@ window.bancoDeQuestoes = {
                 "A) cumpre as regras apenas quando há fiscalização",
                 "B) favorece conhecidos em casos duvidosos",
                 "C) aceita presentes de quem tem interesse em decisões do setor",
-                "D) oculta erros para preservar a imagem do órgão",
+                "D) oculta os próprios erros e os dos colegas para preservar a imagem do órgão perante o público",
                 "E) age com coerência entre valores, palavras e atos, mesmo quando ninguém o observa"
             ],
             "correta": 4,
@@ -8257,10 +8257,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O DECORO, no exercício da função pública, refere-se:",
             "opcoes": [
                 "A) à conduta compatível com a dignidade do cargo, com respeito, compostura e decência",
-                "B) à decoração do ambiente de trabalho",
+                "B) à decoração adequada do ambiente de trabalho, conforme o padrão definido pelo órgão",
                 "C) à rapidez no atendimento",
-                "D) ao conhecimento técnico das leis",
-                "E) ao uso obrigatório de terno e gravata"
+                "D) ao conhecimento técnico das leis e regulamentos aplicáveis às atribuições do cargo",
+                "E) ao uso obrigatório de traje formal, como terno e gravata, durante todo o expediente"
             ],
             "correta": 0,
             "comentario": "Decoro é o comportamento adequado à dignidade da função, com postura respeitosa no trato com o público e com os colegas."
@@ -8269,10 +8269,10 @@ window.bancoDeQuestoes = {
             "id": 23070,
             "enunciado": "O ZELO, como valor do servidor público, significa:",
             "opcoes": [
-                "A) rigidez excessiva no atendimento",
-                "B) obediência cega a qualquer ordem",
+                "A) rigidez excessiva no atendimento, exigindo do cidadão o cumprimento de todas as formalidades",
+                "B) obediência cega a qualquer ordem superior, mesmo quando contrária à lei ou à ética",
                 "C) busca de vantagem pessoal no cargo",
-                "D) ciúme profissional em relação aos colegas",
+                "D) ciúme profissional em relação aos colegas que recebem tarefas de maior responsabilidade",
                 "E) cuidado e diligência com o serviço, os bens públicos e os interesses dos cidadãos"
             ],
             "correta": 4,
@@ -8282,11 +8282,11 @@ window.bancoDeQuestoes = {
             "id": 23071,
             "enunciado": "Do ponto de vista ético, a VIRTUDE pode ser entendida como:",
             "opcoes": [
-                "A) uma regra jurídica com sanção prevista em lei",
-                "B) uma habilidade técnica específica do cargo",
+                "A) uma regra jurídica com sanção prevista em lei para quem a descumprir",
+                "B) uma habilidade técnica específica exigida para o exercício do cargo",
                 "C) a disposição constante para agir bem, cultivada pela prática",
-                "D) o cumprimento das metas de produtividade",
-                "E) um benefício concedido pela chefia"
+                "D) o cumprimento das metas de produtividade estabelecidas pela chefia",
+                "E) um benefício concedido pela chefia aos servidores com bom desempenho"
             ],
             "correta": 2,
             "comentario": "Na tradição ética, a virtude é um hábito de agir de forma correta, desenvolvido e fortalecido pela prática."
@@ -8295,9 +8295,9 @@ window.bancoDeQuestoes = {
             "id": 23072,
             "enunciado": "Um servidor recebe de uma empresa que participa de licitação na Câmara um convite para viagem com todas as despesas pagas. A conduta ética é:",
             "opcoes": [
-                "A) aceitar e não comentar com ninguém",
-                "B) aceitar, pois não houve pedido em troca",
-                "C) aceitar e repassar o convite a um colega",
+                "A) aceitar o convite e não comentar com ninguém, para evitar mal-entendidos no setor",
+                "B) aceitar, pois a empresa não fez nenhum pedido em troca do convite que foi oferecido",
+                "C) aceitar e repassar o convite a um colega que não participa da comissão de licitação",
                 "D) recusar, pois a vantagem pode comprometer a imparcialidade e a confiança pública",
                 "E) aceitar, desde que viaje nas férias"
             ],
@@ -8308,11 +8308,11 @@ window.bancoDeQuestoes = {
             "id": 23073,
             "enunciado": "Conflito de interesses, no serviço público, ocorre quando:",
             "opcoes": [
-                "A) o servidor tem opinião política diferente do chefe",
-                "B) interesses particulares do agente podem comprometer o interesse público ou influenciar o desempenho de sua função",
+                "A) o servidor tem opinião política diferente da do chefe e a manifesta nas redes sociais fora do expediente",
+                "B) interesses particulares do agente podem comprometer o interesse público ou influenciar sua atuação",
                 "C) o cidadão reclama do atendimento",
                 "D) dois setores discordam sobre um prazo",
-                "E) dois servidores disputam a mesma vaga de estacionamento"
+                "E) dois servidores disputam a mesma vaga de estacionamento ou o mesmo período de férias na escala anual do setor"
             ],
             "correta": 1,
             "comentario": "Há conflito de interesses quando interesses privados do agente (próprios ou de parentes e amigos) se chocam com o dever de agir pelo interesse público."
@@ -8322,10 +8322,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O servidor público, em uma sociedade democrática, deve compreender que:",
             "opcoes": [
                 "A) exerce sua função a serviço da coletividade, e não em benefício próprio ou de grupos",
-                "B) pode deixar de cumprir a lei quando achar justo",
+                "B) pode deixar de cumprir a lei quando achar que ela é injusta, desde que justifique por escrito",
                 "C) deve atender primeiro os cidadãos de sua preferência",
-                "D) o cargo lhe pertence e pode ser usado para interesses pessoais",
-                "E) sua função é proteger apenas os interesses da chefia"
+                "D) o cargo lhe pertence e pode ser usado para interesses pessoais, desde que não haja prejuízo",
+                "E) sua função é proteger os interesses da chefia, a quem deve obediência acima de qualquer outro valor"
             ],
             "correta": 0,
             "comentario": "Na democracia, o poder emana do povo e a função pública existe para servir ao interesse coletivo, com respeito a todos os cidadãos."
@@ -8336,7 +8336,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) atender com prioridade quem tem cargo ou influência",
                 "B) restringir informações para evitar questionamentos",
-                "C) priorizar a conveniência do servidor sobre o atendimento",
+                "C) priorizar a conveniência do servidor sobre o atendimento, para preservar a qualidade do trabalho interno",
                 "D) reconhecer o cidadão como titular de direitos e tratá-lo com respeito, cortesia e igualdade",
                 "E) tratar o cidadão como alguém que pede favores"
             ],
@@ -8347,9 +8347,9 @@ window.bancoDeQuestoes = {
             "id": 23076,
             "enunciado": "Um servidor percebe que um colega está desviando material de escritório. Do ponto de vista ético e legal, a atitude adequada é:",
             "opcoes": [
-                "A) exigir parte do material para guardar segredo",
+                "A) exigir parte do material desviado em troca de guardar segredo sobre o fato",
                 "B) comunicar o fato à autoridade competente pelos canais adequados",
-                "C) ignorar para não se indispor com o colega",
+                "C) ignorar o fato para não se indispor com o colega nem prejudicar o ambiente do setor",
                 "D) fazer o mesmo, já que outros também fazem",
                 "E) divulgar o fato nas redes sociais"
             ],
@@ -8360,11 +8360,11 @@ window.bancoDeQuestoes = {
             "id": 23077,
             "enunciado": "Ética e legalidade não se confundem. Isso significa que:",
             "opcoes": [
-                "A) a ética só existe quando está escrita em lei",
-                "B) tudo o que é legal é automaticamente ético",
-                "C) a lei nunca se baseia em valores morais",
+                "A) a ética só existe quando está escrita em lei, já que valores não podem ser exigidos",
+                "B) tudo o que é legal é automaticamente ético, pois a lei expressa a moral da sociedade",
+                "C) a lei nunca se baseia em valores morais, sendo apenas uma decisão técnica do legislador",
                 "D) uma conduta pode ser legal e, ainda assim, ser questionável do ponto de vista ético",
-                "E) o servidor pode descumprir a lei sempre que a considerar antiética"
+                "E) o servidor pode descumprir a lei sempre que a considerar antiética, por razões de consciência"
             ],
             "correta": 3,
             "comentario": "A lei estabelece o mínimo obrigatório; a ética exige mais, como honestidade, respeito e boa-fé. Por isso a moralidade é princípio autônomo da administração."
@@ -8376,7 +8376,7 @@ window.bancoDeQuestoes = {
                 "A) irrelevante, pois o veículo estaria parado",
                 "B) permitida, se o servidor for chefe do setor",
                 "C) inadequada, pois usa bem público para fins particulares",
-                "D) adequada, desde que o combustível seja reposto depois",
+                "D) adequada, desde que o combustível seja reposto depois pelo próprio servidor",
                 "E) aceitável, por se tratar de situação excepcional"
             ],
             "correta": 2,
@@ -8387,7 +8387,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A HONESTIDADE no exercício da função pública está ligada principalmente:",
             "opcoes": [
                 "A) à verdade, à lisura e ao respeito ao patrimônio e ao interesse público",
-                "B) à obediência a qualquer ordem superior",
+                "B) à obediência a qualquer ordem superior, mesmo quando contrária ao interesse público",
                 "C) à simpatia no atendimento",
                 "D) à quantidade de cursos realizados",
                 "E) à rapidez em concluir as tarefas"
@@ -8399,11 +8399,11 @@ window.bancoDeQuestoes = {
             "id": 23080,
             "enunciado": "O atendimento ético ao cidadão exige que o servidor:",
             "opcoes": [
-                "A) responda apenas o que for perguntado de forma literal, sem orientar",
-                "B) priorize os atendimentos de pessoas conhecidas",
+                "A) responda apenas o que for perguntado, de forma literal, sem orientar o cidadão sobre outros caminhos",
+                "B) priorize os atendimentos de pessoas conhecidas, desde que elas cheguem cedo à repartição",
                 "C) trate todos com cortesia e sem discriminação, prestando informações claras e corretas",
-                "D) altere a ordem da fila conforme sua conveniência",
-                "E) deixe de atender quem chega perto do fim do expediente"
+                "D) altere a ordem da fila conforme sua conveniência, chamando primeiro os casos mais simples",
+                "E) deixe de atender quem chega perto do fim do expediente, para não ultrapassar o horário"
             ],
             "correta": 2,
             "comentario": "Cortesia, igualdade de tratamento e informação clara são deveres do servidor no atendimento ao público."
@@ -8412,10 +8412,10 @@ window.bancoDeQuestoes = {
             "id": 23081,
             "enunciado": "A afirmação \"a função pública deve ser tida como exercício profissional e, portanto, se integra na vida particular de cada servidor\" expressa a ideia de que:",
             "opcoes": [
-                "A) o servidor pode usar o cargo em assuntos pessoais",
-                "B) a vida particular do servidor deve ser fiscalizada pela chefia",
+                "A) o servidor pode usar o cargo em assuntos pessoais, já que a função passa a se integrar à sua vida privada",
+                "B) a vida particular do servidor deve ser fiscalizada pela chefia, inclusive nos fins de semana e feriados",
                 "C) o servidor não tem vida privada",
-                "D) o servidor deve trabalhar 24 horas por dia",
+                "D) o servidor deve permanecer à disposição do órgão 24 horas por dia, inclusive durante as férias e as licenças",
                 "E) a conduta do servidor fora do trabalho também pode refletir na imagem e na confiança da instituição"
             ],
             "correta": 4,
@@ -8441,7 +8441,7 @@ window.bancoDeQuestoes = {
                 "A) aceitável, desde que avise outros amigos também",
                 "B) adequada, se o amigo for bom candidato",
                 "C) antiética e ilícita, pois usa a função para favorecer terceiro e quebra o dever de sigilo",
-                "D) correta, pois a informação seria pública depois",
+                "D) correta, pois a informação seria pública depois e o amigo apenas se antecipou aos demais candidatos",
                 "E) neutra, pois não recebeu dinheiro"
             ],
             "correta": 2,
@@ -8465,9 +8465,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A ética no serviço público contribui para a democracia porque:",
             "opcoes": [
                 "A) fortalece a confiança da sociedade nas instituições e no uso correto dos recursos públicos",
-                "B) impede a participação popular",
-                "C) substitui a necessidade de leis",
-                "D) dispensa a fiscalização pelos órgãos de controle",
+                "B) impede a participação popular nas decisões, concentrando-as nos servidores mais preparados",
+                "C) substitui a necessidade de leis, já que cada servidor passa a agir segundo a própria consciência",
+                "D) dispensa a fiscalização pelos órgãos de controle, pois os servidores éticos não cometem erros",
                 "E) garante que todas as decisões agradem a maioria"
             ],
             "correta": 0,
@@ -8481,7 +8481,7 @@ window.bancoDeQuestoes = {
                 "B) competição desleal para obter promoções",
                 "C) respeito, colaboração e repúdio a qualquer forma de assédio ou discriminação",
                 "D) divulgação de falhas dos colegas ao público",
-                "E) omissão diante de assédio para evitar conflitos"
+                "E) omissão diante de situações de assédio, para evitar conflitos e preservar o clima do setor"
             ],
             "correta": 2,
             "comentario": "O ambiente de trabalho ético exige respeito mútuo, cooperação e combate ao assédio moral, ao assédio sexual e à discriminação."
@@ -8490,9 +8490,9 @@ window.bancoDeQuestoes = {
             "id": 23087,
             "enunciado": "Um servidor erra ao lançar uma informação no sistema e percebe o equívoco no dia seguinte. A atitude ética é:",
             "opcoes": [
-                "A) apagar os registros do sistema",
-                "B) ignorar, pois o prejuízo é pequeno",
-                "C) esperar que ninguém perceba",
+                "A) apagar os registros do sistema para que o erro não apareça no histórico",
+                "B) ignorar o erro, pois o prejuízo causado é pequeno e ninguém reclamou",
+                "C) esperar que ninguém perceba e corrigir apenas se alguém reclamar",
                 "D) comunicar e corrigir o erro o quanto antes, pelos meios formais",
                 "E) culpar um colega pelo erro"
             ],
@@ -8529,10 +8529,10 @@ window.bancoDeQuestoes = {
             "id": 23090,
             "enunciado": "O princípio da impessoalidade veda que a publicidade dos atos e programas de governo contenha:",
             "opcoes": [
-                "A) informações sobre os gastos públicos",
-                "B) dados de contato dos órgãos públicos",
-                "C) nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores",
-                "D) o brasão oficial do município",
+                "A) informações sobre os gastos públicos com obras e serviços realizados no período",
+                "B) dados de contato dos órgãos públicos responsáveis pelo programa ou serviço divulgado",
+                "C) nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades",
+                "D) o brasão oficial do município, as cores da bandeira e o nome do órgão responsável",
                 "E) resultados de obras concluídas"
             ],
             "correta": 2,
@@ -8558,7 +8558,7 @@ window.bancoDeQuestoes = {
                 "A) conduta honesta, leal e de boa-fé, além do simples cumprimento formal da lei",
                 "B) obediência às opiniões religiosas da maioria",
                 "C) sigilo sobre todos os atos do órgão",
-                "D) apenas o cumprimento literal da lei",
+                "D) apenas o cumprimento literal da lei, independentemente da intenção do agente público",
                 "E) rapidez acima de qualquer outro valor"
             ],
             "correta": 0,
@@ -8570,9 +8570,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) os atos da administração devem ser divulgados, como regra, para conhecimento e controle da sociedade",
                 "B) o sigilo é a regra nos atos administrativos",
-                "C) todas as informações, inclusive pessoais, devem ser divulgadas sem restrição",
+                "C) todas as informações, inclusive as pessoais e as classificadas como sigilosas, devem ser divulgadas sem restrição",
                 "D) os atos só valem se publicados em jornais privados",
-                "E) a administração deve investir em propaganda das autoridades"
+                "E) a administração deve investir em propaganda das autoridades, para que a população conheça quem toma as decisões"
             ],
             "correta": 0,
             "comentario": "A publicidade garante transparência e permite o controle social. O sigilo é exceção, admitido para proteger a intimidade ou a segurança da sociedade e do Estado."
@@ -8581,11 +8581,11 @@ window.bancoDeQuestoes = {
             "id": 23094,
             "enunciado": "O princípio da eficiência, incluído no art. 37 pela Emenda Constitucional nº 19/1998, exige:",
             "opcoes": [
-                "A) que o serviço público gere lucro",
-                "B) que o resultado seja alcançado a qualquer custo, inclusive com ilegalidade",
+                "A) que o serviço público gere lucro, como ocorre nas empresas da iniciativa privada",
+                "B) que o resultado seja alcançado a qualquer custo, inclusive com ilegalidade, se necessário",
                 "C) atuação com qualidade, presteza e melhor aproveitamento dos recursos públicos",
-                "D) a dispensa dos controles internos para ganhar tempo",
-                "E) a redução do número de servidores em qualquer situação"
+                "D) a dispensa dos controles internos para ganhar tempo na execução dos serviços públicos",
+                "E) a redução do número de servidores em qualquer situação, para economizar recursos"
             ],
             "correta": 2,
             "comentario": "Eficiência é fazer bem, com qualidade, rapidez e economia de recursos, sempre dentro da legalidade."
@@ -8607,11 +8607,11 @@ window.bancoDeQuestoes = {
             "id": 23096,
             "enunciado": "A realização de concurso público para o provimento de cargos efetivos concretiza, principalmente, os princípios da:",
             "opcoes": [
-                "A) eficiência e do lucro",
+                "A) eficiência e do lucro, ao selecionar os candidatos que aceitam receber menos",
                 "B) impessoalidade e da moralidade, ao garantir igualdade de oportunidades",
-                "C) legalidade tributária e da anterioridade",
-                "D) autonomia e da hierarquia",
-                "E) publicidade e da soberania"
+                "C) legalidade tributária e da anterioridade, ao exigir o pagamento da taxa de inscrição",
+                "D) autonomia e da hierarquia, ao permitir que cada chefe escolha sua equipe",
+                "E) publicidade e da soberania, ao divulgar o edital no Diário Oficial da União"
             ],
             "correta": 1,
             "comentario": "O concurso permite que qualquer interessado concorra em igualdade de condições, afastando escolhas pessoais."
@@ -8633,11 +8633,11 @@ window.bancoDeQuestoes = {
             "id": 23098,
             "enunciado": "Uma autoridade pratica um ato que obedece à forma prevista em lei, mas com o objetivo de prejudicar um desafeto. Esse ato viola, principalmente:",
             "opcoes": [
-                "A) apenas a eficiência",
+                "A) apenas a eficiência, pois o ato foi praticado sem utilidade",
                 "B) a moralidade e a impessoalidade, por desvio de finalidade",
                 "C) apenas a publicidade",
                 "D) a autonomia municipal",
-                "E) a irredutibilidade de vencimentos"
+                "E) a irredutibilidade de vencimentos, se o desafeto for servidor"
             ],
             "correta": 1,
             "comentario": "O ato tem aparência legal, mas busca fim pessoal. Há desvio de finalidade, que ofende a impessoalidade e a moralidade."
@@ -8646,11 +8646,11 @@ window.bancoDeQuestoes = {
             "id": 23099,
             "enunciado": "A aplicação dos princípios éticos na administração pública exige que o servidor:",
             "opcoes": [
-                "A) cumpra apenas as tarefas que considerar agradáveis",
-                "B) mantenha em segredo os critérios de suas decisões",
-                "C) adote decisões conforme a pressão de grupos",
+                "A) cumpra apenas as tarefas que considerar agradáveis e compatíveis com sua formação acadêmica",
+                "B) mantenha em segredo os critérios de suas decisões, para evitar pressões externas indevidas",
+                "C) adote decisões conforme a pressão de grupos organizados, para garantir apoio político",
                 "D) oriente suas decisões pelo interesse público, com transparência e respeito às normas",
-                "E) priorize os interesses da chefia acima da lei"
+                "E) priorize os interesses da chefia acima da lei, em nome do respeito à hierarquia administrativa"
             ],
             "correta": 3,
             "comentario": "Os princípios da administração dão base à conduta ética: legalidade, imparcialidade, honestidade, transparência e bom uso dos recursos."
@@ -8685,11 +8685,11 @@ window.bancoDeQuestoes = {
             "id": 23102,
             "enunciado": "Sobre o princípio da publicidade, é correto afirmar que:",
             "opcoes": [
-                "A) admite restrições quando o sigilo for imprescindível à segurança da sociedade e do Estado ou para proteger a intimidade",
-                "B) é absoluto e não admite qualquer exceção",
-                "C) dispensa a publicação dos atos normativos",
+                "A) admite restrições quando o sigilo for imprescindível à segurança da sociedade e do Estado ou à intimidade",
+                "B) é absoluto e não admite qualquer exceção, devendo todos os atos e informações ser divulgados integralmente",
+                "C) dispensa a publicação dos atos normativos, bastando a sua assinatura pela autoridade competente para produzir efeitos",
                 "D) só se aplica ao Poder Executivo",
-                "E) é cumprido com a divulgação apenas em redes sociais pessoais"
+                "E) é cumprido com a divulgação dos atos apenas nas redes sociais pessoais das autoridades que os assinaram e editaram"
             ],
             "correta": 0,
             "comentario": "A Constituição admite exceções à publicidade, como o sigilo para proteger a intimidade (art. 5º, X) e a segurança da sociedade e do Estado (art. 5º, XXXIII)."
@@ -8698,7 +8698,7 @@ window.bancoDeQuestoes = {
             "id": 23103,
             "enunciado": "O princípio da legalidade NÃO é respeitado quando um servidor:",
             "opcoes": [
-                "A) aplica uma sanção prevista em lei após processo",
+                "A) aplica uma sanção prevista em lei, após o devido processo administrativo",
                 "B) concede um benefício sem previsão em lei, por considerá-lo justo",
                 "C) segue o procedimento previsto no regimento",
                 "D) recusa um pedido que a lei proíbe",
@@ -8709,13 +8709,13 @@ window.bancoDeQuestoes = {
         },
         {
             "id": 23104,
-            "enunciado": "Assinale a alternativa que associa corretamente o princípio à situação:",
+            "enunciado": "Assinale a alternativa em que a situação descrita CONCRETIZA (e não viola) o princípio indicado:",
             "opcoes": [
-                "A) Legalidade — criação de taxa por portaria, sem lei",
-                "B) Impessoalidade — contratação de parentes do presidente",
-                "C) Publicidade — sigilo sobre os contratos firmados pela Câmara",
-                "D) Moralidade — uso de veículo oficial para passeio da família",
-                "E) Eficiência — informatização do protocolo para reduzir o tempo de tramitação dos documentos"
+                "A) Legalidade — criação de taxa por portaria do Presidente, sem a aprovação de lei específica",
+                "B) Impessoalidade — contratação de parentes do presidente para cargos em comissão",
+                "C) Publicidade — sigilo sobre os contratos firmados pela Câmara com fornecedores",
+                "D) Moralidade — uso de veículo oficial para passeio da família no fim de semana",
+                "E) Eficiência — informatização do protocolo para reduzir o tempo de tramitação"
             ],
             "correta": 4,
             "comentario": "Modernizar processos para atender melhor e mais rápido é aplicação da eficiência. As demais associações descrevem violações dos princípios citados."
@@ -8738,10 +8738,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Os princípios do art. 37 da Constituição aplicam-se:",
             "opcoes": [
                 "A) apenas ao Poder Executivo federal",
-                "B) somente aos servidores efetivos, e não aos comissionados",
-                "C) à administração direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios",
+                "B) somente aos servidores efetivos, e não aos comissionados, que se submetem apenas à confiança da autoridade",
+                "C) à administração direta e indireta de qualquer dos Poderes de todos os entes federativos",
                 "D) somente às empresas privadas concessionárias",
-                "E) apenas aos órgãos que prestam serviços de saúde"
+                "E) apenas aos órgãos que prestam serviços essenciais à população, como saúde, educação e segurança pública"
             ],
             "correta": 2,
             "comentario": "O caput do art. 37 abrange todos os Poderes e todos os entes, incluindo o Poder Legislativo municipal e seus agentes."
@@ -8750,11 +8750,11 @@ window.bancoDeQuestoes = {
             "id": 23107,
             "enunciado": "A exigência de que os atos administrativos indiquem os fatos e os fundamentos jurídicos que os justificam (motivação) favorece, principalmente:",
             "opcoes": [
-                "A) a dispensa da publicação",
+                "A) a dispensa da publicação, já que os fundamentos ficam registrados no próprio processo",
                 "B) o controle da legalidade e da moralidade pelos cidadãos e órgãos de controle",
-                "C) o sigilo dos atos administrativos",
-                "D) a promoção pessoal da autoridade",
-                "E) a demora na tomada de decisões"
+                "C) o sigilo dos atos administrativos, que passam a ser analisados apenas pela chefia",
+                "D) a promoção pessoal da autoridade, que demonstra conhecimento jurídico ao decidir",
+                "E) a demora na tomada de decisões, já que cada ato exige parecer jurídico prévio"
             ],
             "correta": 1,
             "comentario": "A motivação permite verificar se o ato atendeu à lei e ao interesse público, facilitando o controle e a defesa do interessado."
