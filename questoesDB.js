@@ -12552,7 +12552,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) cinco dias, e aprovada por maioria simples, com sanção do Prefeito",
                 "B) trinta dias, e aprovada por três quintos, com sanção do Governador",
-                "C) quinze dias, e aprovada por unanimidade, promulgada pelo Tribunal de Contas",
+                "C) quinze dias, e aprovada por unanimidade dos Vereadores, promulgada pelo Tribunal de Contas do Estado",
                 "D) dez dias, e aprovada por maioria absoluta, com sanção do Prefeito",
                 "E) dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará"
             ],
@@ -12618,7 +12618,7 @@ window.bancoDeQuestoes = {
                 "A) pelo Poder Executivo Municipal, mediante controle externo, e pela Câmara Municipal, mediante controle interno",
                 "B) pelo Tribunal de Contas do Estado, mediante controle externo exclusivo, sem participação da Câmara Municipal",
                 "C) pelo Poder Legislativo Municipal, mediante controle interno, e pelo Ministério Público, mediante controle externo",
-                "D) pelo Poder Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Poder Executivo Municipal",
+                "D) pelo Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Executivo",
                 "E) pelo Poder Legislativo Municipal, mediante controle externo, e pelo Poder Judiciário, mediante controle interno"
             ],
             "correta": 3,
@@ -12629,7 +12629,7 @@ window.bancoDeQuestoes = {
             "enunciado": "O controle externo da Câmara Municipal será exercido:",
             "opcoes": [
                 "A) com o auxílio dos Tribunais de Contas dos Estados ou do Município, ou dos Conselhos ou Tribunais de Contas dos Municípios, onde houver",
-                "B) com o auxílio do Tribunal de Contas da União, em todos os Municípios, inclusive onde houver Tribunal de Contas municipal",
+                "B) com o auxílio do Tribunal de Contas da União, em todos os Municípios do país, inclusive naqueles onde já houver Tribunal de Contas municipal",
                 "C) com o auxílio do Ministério Público Estadual, que emite parecer prévio vinculante sobre as contas do Prefeito",
                 "D) com o auxílio exclusivo do controle interno do Poder Executivo, vedada a participação de órgãos externos",
                 "E) com o auxílio de Tribunais de Contas municipais, que podem ser criados livremente por qualquer Município"
@@ -12643,9 +12643,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) unanimidade dos Vereadores",
                 "B) dois terços dos membros da Câmara Municipal",
-                "C) maioria absoluta dos membros da Câmara",
+                "C) maioria absoluta dos membros da Câmara Municipal",
                 "D) três quintos dos membros da Câmara",
-                "E) maioria simples dos Vereadores presentes"
+                "E) maioria simples dos Vereadores presentes à sessão"
             ],
             "correta": 1,
             "comentario": "O art. 31, § 2º, exige o voto de dois terços dos membros da Câmara para rejeitar o parecer prévio do Tribunal de Contas."
@@ -12668,9 +12668,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Quanto à criação de órgãos de contas, a Constituição Federal:",
             "opcoes": [
                 "A) veda a criação de Tribunais, Conselhos ou órgãos de Contas Municipais",
-                "B) obriga todo Município a criar seu Tribunal de Contas",
-                "C) autoriza o Prefeito a criar o Conselho de Contas por decreto",
-                "D) permite que a Câmara crie um Tribunal de Contas por resolução",
+                "B) obriga todo Município com mais de 500 mil habitantes a criar seu Tribunal de Contas",
+                "C) autoriza o Prefeito a criar, por decreto, o Conselho de Contas do Município",
+                "D) permite que a Câmara Municipal crie um Tribunal de Contas por meio de resolução",
                 "E) determina que cada Vereador indique um conselheiro de contas"
             ],
             "correta": 0,
@@ -12720,7 +12720,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Na estrutura federativa brasileira, o Poder Legislativo do Município é exercido:",
             "opcoes": [
                 "A) pela Câmara Municipal, composta de Vereadores",
-                "B) pelo Prefeito e pelos Secretários Municipais",
+                "B) pelo Prefeito, pelo Vice-Prefeito e pelos Secretários Municipais",
                 "C) pelo Senado Federal",
                 "D) pela Assembleia Legislativa",
                 "E) pelo Tribunal de Contas do Estado"
@@ -12732,11 +12732,11 @@ window.bancoDeQuestoes = {
             "id": 25015,
             "enunciado": "Compete aos Municípios, segundo o art. 30 da Constituição Federal:",
             "opcoes": [
-                "A) legislar sobre trânsito e transporte urbano, matéria de competência privativa municipal",
-                "B) legislar sobre direito do trabalho aplicável aos empregados de empresas locais",
+                "A) legislar sobre trânsito e transporte urbano, por se tratar de matéria de competência privativa municipal",
+                "B) legislar sobre direito do trabalho aplicável aos empregados das empresas sediadas no território municipal",
                 "C) legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual",
-                "D) legislar sobre desapropriação de imóveis situados no território municipal",
-                "E) legislar sobre registros públicos e serviços de cartório sediados no Município"
+                "D) legislar sobre desapropriação de imóveis urbanos e rurais situados no território municipal, por interesse local",
+                "E) legislar sobre registros públicos e sobre os serviços de cartório sediados no território do Município"
             ],
             "correta": 2,
             "comentario": "O art. 30, I e II, atribui ao Município legislar sobre assuntos de interesse local e suplementar a legislação federal e a estadual no que couber. Trânsito e transporte, direito do trabalho, desapropriação e registros públicos são competência privativa da União (art. 22)."
@@ -12746,7 +12746,7 @@ window.bancoDeQuestoes = {
             "enunciado": "É competência do Município, conforme o art. 30 da Constituição Federal:",
             "opcoes": [
                 "A) legislar privativamente sobre trânsito e transporte, inclusive o transporte coletivo intermunicipal e interestadual",
-                "B) organizar e manter, diretamente ou por convênio, a polícia civil e o corpo de bombeiros responsáveis pela segurança local",
+                "B) organizar e manter, diretamente ou mediante convênio com o Estado, a polícia civil e o corpo de bombeiros responsáveis pela segurança local",
                 "C) organizar e prestar, diretamente ou sob concessão ou permissão, os serviços públicos de interesse local, incluído o transporte coletivo",
                 "D) explorar diretamente, ou mediante concessão a empresa estatal, os serviços locais de gás canalizado no território municipal",
                 "E) autorizar, conceder e fiscalizar a pesquisa e a lavra de recursos minerais situados no território do Município"
@@ -12771,7 +12771,7 @@ window.bancoDeQuestoes = {
             "id": 25018,
             "enunciado": "A independência e a harmonia entre os Poderes, no Município, significa que:",
             "opcoes": [
-                "A) a Câmara pode rever e anular os atos administrativos do Prefeito sempre que discordar do mérito deles",
+                "A) a Câmara pode rever e anular os atos administrativos do Prefeito sempre que discordar do mérito deles, por ser o Poder fiscalizador",
                 "B) Câmara e Prefeitura exercem funções próprias, com controles recíprocos previstos na Constituição e na lei orgânica",
                 "C) o Prefeito pode dissolver a Câmara quando houver impasse na aprovação do orçamento anual",
                 "D) Câmara e Prefeitura exercem funções próprias, vedado qualquer controle de um Poder sobre o outro",
@@ -12786,9 +12786,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) arrecadar tributos estaduais",
                 "B) legislar e fiscalizar os atos do Poder Executivo",
-                "C) administrar escolas e postos de saúde",
+                "C) administrar diretamente as escolas e os postos de saúde municipais",
                 "D) julgar crimes comuns",
-                "E) executar obras e prestar serviços públicos"
+                "E) executar obras públicas e prestar os serviços públicos locais"
             ],
             "correta": 1,
             "comentario": "As funções típicas do Legislativo são legislar e fiscalizar. A Câmara também exerce funções atípicas, como administrar seus próprios serviços e julgar o Prefeito por infrações político-administrativas."
@@ -12814,7 +12814,7 @@ window.bancoDeQuestoes = {
                 "B) definidas exclusivamente pela lei orgânica municipal, sem nenhuma relação com as regras aplicáveis aos parlamentares federais",
                 "C) similares, no que couber, às previstas para os Prefeitos e Vice-Prefeitos na Constituição do Estado e na lei orgânica municipal",
                 "D) idênticas às previstas para os servidores efetivos no estatuto dos servidores municipais, inclusive quanto ao regime disciplinar",
-                "E) similares, no que couber, às dos membros do Congresso Nacional e, na Constituição do Estado, às dos membros da Assembleia Legislativa"
+                "E) similares, no que couber, às dos membros do Congresso Nacional e, na Constituição do Estado, às dos Deputados Estaduais"
             ],
             "correta": 4,
             "comentario": "O art. 29, IX, determina que as proibições e incompatibilidades dos Vereadores sejam similares, no que couber, às dos membros do Congresso Nacional e, na Constituição do respectivo Estado, às dos membros da Assembleia Legislativa."
@@ -12888,10 +12888,10 @@ window.bancoDeQuestoes = {
             "id": 25027,
             "enunciado": "Após o veto, o projeto volta ao Legislativo, que pode mantê-lo ou rejeitá-lo. Se o veto for rejeitado, o projeto:",
             "opcoes": [
-                "A) é enviado ao Tribunal de Justiça para decisão",
-                "B) perde a validade e precisa ser reapresentado",
+                "A) é enviado ao Tribunal de Justiça, que decide se ele vira lei",
+                "B) perde a validade e precisa ser reapresentado na sessão seguinte",
                 "C) é arquivado definitivamente",
-                "D) volta para nova votação em dois turnos",
+                "D) volta para nova votação em dois turnos, com quórum qualificado",
                 "E) é enviado para promulgação, transformando-se em lei"
             ],
             "correta": 4,
@@ -13032,8 +13032,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Seguindo o modelo do art. 58, § 3º, da Constituição Federal, uma Comissão Parlamentar de Inquérito (CPI) é criada mediante requerimento de:",
             "opcoes": [
                 "A) qualquer cidadão, por abaixo-assinado simples",
-                "B) metade mais um dos membros, para investigar qualquer assunto, sem prazo",
-                "C) dois terços dos membros, apenas com autorização do Prefeito",
+                "B) metade mais um dos membros, para investigar qualquer assunto, sem prazo definido",
+                "C) dois terços dos membros, desde que haja autorização prévia do Prefeito Municipal",
                 "D) um Vereador, sem necessidade de fato determinado",
                 "E) um terço dos membros, para apuração de fato determinado e por prazo certo"
             ],
@@ -13174,11 +13174,11 @@ window.bancoDeQuestoes = {
             "id": 25049,
             "enunciado": "Segundo a 3ª edição do Manual de Redação da Presidência da República, os antigos expedientes ofício, aviso e memorando foram unificados no chamado:",
             "opcoes": [
-                "A) padrão carta, com o nome \"carta oficial\"",
+                "A) padrão carta, com todos passando a ser denominados \"carta oficial\"",
                 "B) padrão aviso, usado entre ministros",
                 "C) padrão ofício, passando todos a ser denominados \"ofício\"",
-                "D) padrão e-mail, que substituiu todos os documentos",
-                "E) padrão memorando, com o nome \"memorando\""
+                "D) padrão e-mail, que substituiu todos os documentos impressos",
+                "E) padrão memorando, com todos passando a ser chamados \"memorando\""
             ],
             "correta": 2,
             "comentario": "A 3ª edição do Manual (2018) eliminou a distinção entre aviso, memorando e ofício, adotando apenas o ofício, com a mesma diagramação."
@@ -13266,7 +13266,7 @@ window.bancoDeQuestoes = {
             "enunciado": "O Manual de Redação recomenda que o texto do ofício que encaminha documentos inicie, por exemplo, com:",
             "opcoes": [
                 "A) uma referência ao expediente ou ao assunto que motivou a comunicação, seguida do encaminhamento",
-                "B) uma saudação cordial ao destinatário, seguida de agradecimentos pela atenção dispensada",
+                "B) uma saudação cordial ao destinatário, seguida de agradecimentos pela atenção que costuma dispensar ao órgão",
                 "C) a transcrição integral do documento encaminhado, para que o destinatário não precise abri-lo",
                 "D) uma avaliação pessoal do redator sobre a importância do documento, seguida do encaminhamento",
                 "E) a lista dos servidores que trabalharam no documento, seguida do encaminhamento"
@@ -13343,7 +13343,7 @@ window.bancoDeQuestoes = {
             "id": 25062,
             "enunciado": "Para garantir CLAREZA na redação de um ofício, o redator deve:",
             "opcoes": [
-                "A) escrever frases longas, com várias orações intercaladas, para reunir todas as informações",
+                "A) escrever frases longas, com várias orações intercaladas, para reunir todas as informações num só período",
                 "B) usar palavras de sentido conhecido, frases em ordem direta e evitar jargões desnecessários",
                 "C) empregar regionalismos e expressões coloquiais, para aproximar o texto do leitor",
                 "D) usar siglas sem explicação, pois a repetição do nome por extenso prejudica a concisão",
@@ -13384,9 +13384,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) a manifestação da autoridade que dá andamento ao processo, deferindo, indeferindo ou encaminhando o pedido",
                 "B) o requerimento inicial apresentado pelo interessado para dar início ao processo",
-                "C) o documento que certifica a autenticidade das cópias e das peças juntadas aos autos do processo",
+                "C) o documento que certifica a autenticidade das cópias e das peças juntadas aos autos do processo administrativo",
                 "D) o registro, em ata, das deliberações tomadas pelo Plenário durante a sessão",
-                "E) a comunicação escrita enviada a outro órgão para solicitar informações sobre o processo"
+                "E) a comunicação escrita enviada a outro órgão ou entidade para solicitar informações necessárias à instrução do processo"
             ],
             "correta": 0,
             "comentario": "O despacho é a manifestação da autoridade no processo, determinando providências ou decidindo sobre o pedido. O pedido inicial é o requerimento; a comunicação a outro órgão é feita por ofício; e o registro das deliberações do Plenário é a ata."
@@ -13434,7 +13434,7 @@ window.bancoDeQuestoes = {
             "id": 25069,
             "enunciado": "Segundo a Lei nº 8.159/1991, é dever do Poder Público:",
             "opcoes": [
-                "A) a transferência da guarda dos arquivos públicos a entidades privadas especializadas em gestão documental",
+                "A) a transferência da guarda dos arquivos públicos a entidades privadas especializadas em gestão documental e conservação de acervos",
                 "B) a eliminação dos documentos de arquivo após cinco anos, liberando espaço físico para a administração",
                 "C) a manutenção em sigilo dos documentos públicos, salvo autorização judicial ou do chefe do Poder",
                 "D) a gestão documental e a proteção especial a documentos de arquivos, como apoio à administração, à cultura e à ciência",
@@ -13461,9 +13461,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A Lei nº 8.159/1991 define GESTÃO DE DOCUMENTOS como o conjunto de procedimentos e operações técnicas referentes à:",
             "opcoes": [
                 "A) produção, tramitação, uso, avaliação e arquivamento em fase corrente e intermediária, visando à eliminação ou ao recolhimento para guarda permanente",
-                "B) produção, tramitação e arquivamento em fase permanente, visando à eliminação dos documentos de valor histórico e probatório",
-                "C) avaliação e eliminação dos documentos em fase permanente, visando à redução do acervo e à liberação de espaço físico",
-                "D) digitalização e microfilmagem do acervo em fase corrente, visando à substituição obrigatória dos documentos originais",
+                "B) produção, tramitação e arquivamento em fase permanente, visando à eliminação dos documentos de valor histórico e probatório após o prazo de guarda",
+                "C) avaliação e eliminação dos documentos em fase permanente, visando à redução do acervo e à liberação de espaço físico nos arquivos dos órgãos públicos",
+                "D) digitalização e microfilmagem do acervo em fase corrente, visando à substituição obrigatória dos documentos originais em papel por cópias certificadas",
                 "E) guarda, conservação e restauração dos documentos em fase permanente, visando exclusivamente à pesquisa histórica"
             ],
             "correta": 0,
@@ -13473,10 +13473,10 @@ window.bancoDeQuestoes = {
             "id": 25072,
             "enunciado": "Segundo a Lei nº 8.159/1991, os documentos públicos são identificados como:",
             "opcoes": [
-                "A) primários, secundários e terciários",
-                "B) físicos, digitais e híbridos",
+                "A) primários, secundários e terciários, conforme a origem",
+                "B) físicos, digitais e híbridos, conforme o suporte",
                 "C) ativos, passivos e mortos",
-                "D) sigilosos, ostensivos e públicos",
+                "D) sigilosos, ostensivos e públicos, conforme o acesso",
                 "E) correntes, intermediários e permanentes"
             ],
             "correta": 4,
@@ -13538,11 +13538,11 @@ window.bancoDeQuestoes = {
             "id": 25077,
             "enunciado": "A eliminação de documentos produzidos por instituições públicas, segundo a Lei nº 8.159/1991:",
             "opcoes": [
-                "A) depende apenas de decisão da chefia do setor que produziu o documento",
+                "A) depende apenas de decisão da chefia do setor que produziu ou recebeu o documento",
                 "B) é vedada em qualquer caso, pois todo documento público é permanente",
                 "C) pode ser feita por qualquer servidor, após o prazo da tabela de temporalidade",
-                "D) depende de ordem judicial que reconheça a perda de valor do documento",
-                "E) depende de autorização da instituição arquivística pública, na sua esfera de competência"
+                "D) depende de ordem judicial que reconheça a perda total de valor do documento",
+                "E) depende de autorização da instituição arquivística pública competente"
             ],
             "correta": 4,
             "comentario": "O art. 9º da Lei nº 8.159/1991 condiciona a eliminação de documentos públicos à autorização da instituição arquivística pública, na sua específica esfera de competência, observando os prazos da tabela de temporalidade. Nem o setor produtor nem o servidor decidem sozinhos."
@@ -13604,10 +13604,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A autuação de um documento, no protocolo, corresponde a:",
             "opcoes": [
                 "A) transformá-lo em processo, com capa, numeração e registro próprios",
-                "B) juntá-lo a um processo já existente, sem atribuir-lhe novo número",
+                "B) juntá-lo a um processo já existente, sem atribuir-lhe novo número de protocolo",
                 "C) registrá-lo apenas no livro de entrada, sem formar processo",
-                "D) transferi-lo ao arquivo intermediário após o fim da tramitação",
-                "E) digitalizá-lo e eliminar o original após a conferência da cópia"
+                "D) transferi-lo ao arquivo intermediário assim que terminar a tramitação no setor",
+                "E) digitalizá-lo e eliminar o original logo após a conferência da cópia digital"
             ],
             "correta": 0,
             "comentario": "Autuar é formar o processo: o documento recebe capa, número único e passa a ter tramitação controlada. Juntar um documento a processo já existente é juntada, não autuação."
@@ -13655,7 +13655,7 @@ window.bancoDeQuestoes = {
             "id": 25086,
             "enunciado": "A avaliação de documentos, na gestão documental, consiste em:",
             "opcoes": [
-                "A) classificar os documentos por assunto, conforme o plano de classificação",
+                "A) classificar os documentos por assunto, conforme o código do plano de classificação do órgão",
                 "B) analisar os documentos para definir seus prazos de guarda e sua destinação final",
                 "C) registrar a entrada dos documentos e controlar sua tramitação interna",
                 "D) ordenar os documentos dentro de cada pasta, por data ou por número",
@@ -13668,10 +13668,10 @@ window.bancoDeQuestoes = {
             "id": 25087,
             "enunciado": "Segundo a Lei nº 8.159/1991, aquele que desfigurar ou destruir documentos de valor permanente ou considerado de interesse público e social:",
             "opcoes": [
-                "A) responde apenas administrativamente, se for servidor público efetivo",
+                "A) responde apenas administrativamente, e somente se for servidor público efetivo",
                 "B) responde apenas civilmente, ressarcindo o valor histórico estimado",
                 "C) fica isento de sanção, se o documento já tiver sido digitalizado",
-                "D) responde penalmente somente se a destruição causar prejuízo financeiro",
+                "D) responde penalmente somente se a destruição causar prejuízo financeiro ao erário",
                 "E) será responsabilizado penal, civil e administrativamente, na forma da lei"
             ],
             "correta": 4,
@@ -13708,10 +13708,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A digitalização de documentos em papel:",
             "opcoes": [
                 "A) é vedada pela legislação arquivística para documentos de valor permanente",
-                "B) dispensa a tabela de temporalidade, pois a cópia digital substitui o original",
+                "B) dispensa a tabela de temporalidade, pois a cópia digital substitui o original em todos os casos",
                 "C) facilita o acesso e a consulta, mas não autoriza, por si só, a eliminação dos originais",
-                "D) autoriza a eliminação imediata dos originais, desde que a cópia seja conferida",
-                "E) substitui a classificação, pois a busca digital dispensa o plano de classificação"
+                "D) autoriza a eliminação imediata dos originais, desde que a cópia seja conferida por um servidor",
+                "E) substitui a classificação, pois a busca digital por palavras dispensa o plano de classificação"
             ],
             "correta": 2,
             "comentario": "A digitalização melhora o acesso, mas a destinação dos originais deve seguir a tabela de temporalidade e a autorização da instituição arquivística. Ela também não substitui a classificação dos documentos."
@@ -13734,8 +13734,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Um cidadão chega ao Serviço de Informação ao Cidadão (SIC) da Câmara querendo saber quanto foi gasto com diárias no último ano. O servidor deve:",
             "opcoes": [
                 "A) registrar o pedido de acesso, informar o número de protocolo e o prazo legal de resposta",
-                "B) registrar o pedido somente depois que o cidadão justificar o uso da informação",
-                "C) negar o pedido, pois gastos com diárias são informações pessoais dos servidores",
+                "B) registrar o pedido somente depois que o cidadão justificar por escrito o uso da informação",
+                "C) negar o pedido, pois os gastos com diárias são informações pessoais dos servidores beneficiados",
                 "D) orientar o cidadão a protocolar o pedido por escrito, com firma reconhecida",
                 "E) informar que o pedido só será analisado após a aprovação das contas do ano"
             ],
@@ -13759,11 +13759,11 @@ window.bancoDeQuestoes = {
             "id": 25094,
             "enunciado": "O prazo para responder a um pedido de acesso à informação que não pode ser atendido de imediato é de até 20 dias. Esse prazo pode ser prorrogado:",
             "opcoes": [
-                "A) por mais 20 dias, sem necessidade de justificativa ao requerente",
-                "B) por mais 10 dias, sem necessidade de comunicação ao requerente",
-                "C) por mais 30 dias, mediante autorização da autoridade máxima do órgão",
+                "A) por mais 20 dias, sem necessidade de justificativa ou de comunicação ao requerente",
+                "B) por mais 10 dias, sem necessidade de justificativa ou de comunicação ao requerente",
+                "C) por mais 30 dias, mediante autorização expressa e fundamentada da autoridade máxima do órgão",
                 "D) por mais 10 dias, mediante justificativa expressa, com ciência do requerente",
-                "E) por quantas vezes forem necessárias, sempre mediante justificativa expressa"
+                "E) por quantas vezes forem necessárias, desde que sempre mediante justificativa expressa"
             ],
             "correta": 3,
             "comentario": "O art. 11, § 2º, da LAI permite prorrogar o prazo de 20 dias por mais 10 dias, mediante justificativa expressa, da qual será cientificado o requerente."
@@ -13772,11 +13772,11 @@ window.bancoDeQuestoes = {
             "id": 25095,
             "enunciado": "Durante o atendimento presencial, a técnica de \"escuta ativa\" consiste em:",
             "opcoes": [
-                "A) anotar as palavras do cidadão e encaminhá-lo ao setor responsável sem fazer perguntas",
-                "B) antecipar a resposta assim que identificar o assunto, para reduzir o tempo de espera",
+                "A) anotar as palavras do cidadão e encaminhá-lo logo ao setor responsável, sem fazer perguntas adicionais",
+                "B) antecipar a resposta assim que identificar o assunto principal, para reduzir o tempo de espera na fila",
                 "C) ouvir o cidadão com atenção, sem interrompê-lo, e confirmar o entendimento antes de responder",
                 "D) ouvir o cidadão em silêncio e responder com a orientação padrão do setor",
-                "E) pedir que o cidadão escreva o problema, para evitar mal-entendidos na conversa"
+                "E) pedir que o cidadão escreva o problema num formulário, para evitar mal-entendidos durante a conversa"
             ],
             "correta": 2,
             "comentario": "A escuta ativa demonstra respeito e evita mal-entendidos: o servidor ouve sem interromper, faz perguntas quando necessário e confirma o que entendeu antes de responder."
@@ -13786,9 +13786,9 @@ window.bancoDeQuestoes = {
             "enunciado": "No atendimento telefônico de um setor da Câmara, a conduta adequada ao atender uma ligação é:",
             "opcoes": [
                 "A) transferir a ligação sem informar o motivo",
-                "B) atender com \"Alô, quem fala?\"",
+                "B) atender com \"Alô, quem fala?\" e aguardar que o cidadão se identifique",
                 "C) deixar o telefone tocar até que o cidadão desista",
-                "D) pedir que o cidadão ligue mais tarde, sem verificar o assunto",
+                "D) pedir que o cidadão ligue mais tarde, sem verificar o assunto, para não interromper o trabalho do setor",
                 "E) identificar o setor e o próprio nome, cumprimentar e perguntar como pode ajudar"
             ],
             "correta": 4,
@@ -13798,9 +13798,9 @@ window.bancoDeQuestoes = {
             "id": 25097,
             "enunciado": "Quando o servidor não sabe responder a uma dúvida do cidadão, a atitude mais adequada é:",
             "opcoes": [
-                "A) dar a resposta que considerar mais provável, para não deixar o cidadão sem retorno",
+                "A) dar a resposta que considerar mais provável, para não deixar o cidadão sem nenhum retorno no atendimento",
                 "B) orientar o cidadão a buscar a informação no portal, sem indicar onde ela está",
-                "C) pedir que o cidadão retorne outro dia, quando o servidor responsável estiver presente",
+                "C) pedir que o cidadão retorne outro dia, quando o servidor responsável pelo assunto estiver presente no setor",
                 "D) encaminhar o cidadão a outro setor, sem verificar se é o setor competente",
                 "E) informar que vai verificar ou encaminhar ao setor competente, orientando sobre o próximo passo"
             ],
@@ -13837,11 +13837,11 @@ window.bancoDeQuestoes = {
             "id": 25100,
             "enunciado": "Um cidadão irritado eleva o tom de voz no balcão de atendimento. A conduta mais adequada do servidor é:",
             "opcoes": [
-                "A) encerrar o atendimento e pedir que o cidadão retorne quando estiver mais calmo",
-                "B) responder com firmeza no mesmo tom, para deixar claro quem conduz o atendimento",
+                "A) encerrar o atendimento de imediato e pedir que o cidadão retorne somente quando estiver mais calmo",
+                "B) responder com firmeza no mesmo tom de voz, para deixar claro ao cidadão quem conduz o atendimento",
                 "C) manter a calma, ouvir, demonstrar disposição para ajudar e buscar uma solução dentro das normas",
-                "D) aguardar em silêncio, sem responder, até que o cidadão se acalme sozinho",
-                "E) atender imediatamente o pedido do cidadão, mesmo fora das normas, para encerrar o conflito"
+                "D) aguardar em silêncio, sem responder nada, até que o cidadão se acalme sozinho e baixe o tom de voz",
+                "E) atender imediatamente o pedido do cidadão, mesmo que esteja fora das normas, para encerrar o conflito"
             ],
             "correta": 2,
             "comentario": "O equilíbrio emocional é essencial no atendimento: ouvir, manter a cortesia e focar na solução dentro das normas costuma reduzir o conflito. Ceder fora das regras ou responder no mesmo tom agrava a situação."
@@ -13851,10 +13851,10 @@ window.bancoDeQuestoes = {
             "enunciado": "No atendimento a distância, como por e-mail, a resposta ao cidadão deve:",
             "opcoes": [
                 "A) ser clara, objetiva, cordial e conter as orientações necessárias para resolver a demanda",
-                "B) ser enviada apenas quando o cidadão insistir",
-                "C) remeter sempre a outro setor, sem explicação",
-                "D) conter dados pessoais de outros cidadãos como exemplo",
-                "E) usar abreviações e linguagem informal para ganhar tempo"
+                "B) ser enviada apenas quando o cidadão reiterar o pedido, para evitar respostas desnecessárias ao mesmo assunto",
+                "C) remeter o cidadão a outro setor, sem explicar o motivo, sempre que a demanda não for de competência direta do servidor",
+                "D) reproduzir trechos de atendimentos anteriores, incluindo dados de outros cidadãos, para servir de modelo de solução",
+                "E) usar abreviações e linguagem informal, típicas das mensagens instantâneas, para dar mais agilidade ao atendimento"
             ],
             "correta": 0,
             "comentario": "O atendimento por e-mail segue os mesmos princípios do presencial: clareza, cortesia, correção da informação e respeito à privacidade."
@@ -13863,10 +13863,10 @@ window.bancoDeQuestoes = {
             "id": 25102,
             "enunciado": "Durante o atendimento, um cidadão pede informações sobre o endereço e o telefone pessoal de um vereador. O servidor deve:",
             "opcoes": [
-                "A) fornecer o endereço residencial, pois vereador é pessoa pública",
-                "B) pedir os dados pessoais do cidadão para enviar ao vereador sem autorização",
+                "A) fornecer o endereço residencial, pois o vereador é pessoa pública e deve estar acessível ao cidadão",
+                "B) pedir os dados pessoais do cidadão e repassá-los ao gabinete do vereador sem autorização do titular",
                 "C) passar o número de celular particular do vereador",
-                "D) negar qualquer informação sobre o vereador, inclusive o gabinete",
+                "D) negar qualquer informação sobre o vereador, inclusive o telefone do gabinete, por se tratar de dado sigiloso",
                 "E) informar os canais institucionais de contato, sem divulgar dados pessoais do vereador"
             ],
             "correta": 4,
@@ -13876,9 +13876,9 @@ window.bancoDeQuestoes = {
             "id": 25103,
             "enunciado": "Ao recolher cópias de documentos pessoais de cidadãos no atendimento, o servidor deve observar que:",
             "opcoes": [
-                "A) as cópias podem ser descartadas no lixo comum, inteiras",
+                "A) as cópias podem ser descartadas no lixo comum, inteiras, já que o atendimento foi concluído com sucesso",
                 "B) os dados podem ser repassados a empresas parceiras",
-                "C) os documentos podem ficar sobre o balcão ao alcance de todos",
+                "C) as cópias podem ficar sobre o balcão, ao alcance de todos, até o fim do expediente, para agilizar a conferência",
                 "D) as cópias podem ser usadas como rascunho depois",
                 "E) esses dados só podem ser usados para a finalidade do pedido e devem ser guardados com segurança"
             ],
@@ -13902,10 +13902,10 @@ window.bancoDeQuestoes = {
             "id": 25105,
             "enunciado": "Para que um pedido de acesso à informação seja protocolado, o cidadão:",
             "opcoes": [
-                "A) deve comprovar que é eleitor do município",
+                "A) deve comprovar que é eleitor do município e residente na cidade",
                 "B) deve se identificar e especificar a informação desejada",
-                "C) precisa pagar uma taxa de protocolo",
-                "D) precisa apresentar justificativa por escrito",
+                "C) precisa pagar uma taxa de protocolo, que é devolvida se o pedido for negado",
+                "D) precisa apresentar justificativa por escrito sobre o uso da informação",
                 "E) deve ter mais de 21 anos"
             ],
             "correta": 1,
@@ -13915,11 +13915,11 @@ window.bancoDeQuestoes = {
             "id": 25106,
             "enunciado": "Um servidor do SIC recebe um pedido de acesso que trata de informação de outro órgão público. A conduta correta é:",
             "opcoes": [
-                "A) responder com informações aproximadas",
-                "B) cobrar taxa de encaminhamento",
-                "C) arquivar o pedido sem resposta",
-                "D) exigir que o cidadão faça novo pedido presencialmente",
-                "E) informar ao requerente qual órgão detém a informação ou, se souber, remeter o pedido a esse órgão, cientificando o interessado"
+                "A) responder com as informações aproximadas de que o setor dispuser, para não deixar o pedido sem resposta dentro do prazo legal",
+                "B) cobrar taxa de encaminhamento do pedido ao outro órgão",
+                "C) arquivar o pedido sem resposta, pois o SIC só pode responder sobre informações produzidas pelo próprio órgão",
+                "D) exigir que o cidadão faça um novo pedido presencialmente, no órgão que detém a informação, apresentando documento com foto",
+                "E) informar ao requerente qual órgão detém a informação ou remeter o pedido a esse órgão, cientificando o interessado"
             ],
             "correta": 4,
             "comentario": "Pela LAI (art. 11, § 1º, III), quando o órgão não possui a informação, deve indicar quem a detém ou remeter o pedido, comunicando o requerente."
@@ -13928,10 +13928,10 @@ window.bancoDeQuestoes = {
             "id": 25107,
             "enunciado": "Na rotina de atendimento, o encaminhamento de uma demanda ao setor responsável deve ser:",
             "opcoes": [
-                "A) condicionado à aprovação da imprensa",
-                "B) feito apenas verbalmente, sem registro",
+                "A) condicionado à aprovação prévia da chefia de gabinete, que decide se a demanda merece ser encaminhada",
+                "B) feito apenas verbalmente entre os servidores, sem registro, para dar mais rapidez à solução do caso",
                 "C) registrado, para que o cidadão possa acompanhar o andamento e o setor possa ser cobrado pelo prazo",
-                "D) evitado, para não sobrecarregar outros setores",
+                "D) evitado sempre que possível, para não sobrecarregar os outros setores, cabendo ao atendente resolver tudo",
                 "E) feito sem informar o cidadão"
             ],
             "correta": 2,
@@ -13941,11 +13941,11 @@ window.bancoDeQuestoes = {
             "id": 25108,
             "enunciado": "A linguagem simples no atendimento ao cidadão consiste em:",
             "opcoes": [
-                "A) usar o máximo de termos jurídicos para demonstrar conhecimento",
+                "A) usar o máximo de termos jurídicos e técnicos, para demonstrar conhecimento e transmitir segurança ao cidadão",
                 "B) evitar qualquer explicação",
                 "C) falar de forma infantilizada",
                 "D) usar palavras comuns, frases curtas e explicar termos técnicos quando forem necessários",
-                "E) responder apenas com números de artigos de lei"
+                "E) responder apenas com os números dos artigos de lei aplicáveis, para que o cidadão consulte a norma completa"
             ],
             "correta": 3,
             "comentario": "A linguagem simples aproxima o cidadão do serviço público e reduz erros e retornos."
@@ -13954,11 +13954,11 @@ window.bancoDeQuestoes = {
             "id": 25109,
             "enunciado": "Um cidadão com deficiência auditiva procura atendimento. Em atenção à acessibilidade, o órgão deve:",
             "opcoes": [
-                "A) falar mais alto até ser compreendido",
-                "B) pedir que ele volte acompanhado de familiar",
+                "A) falar mais alto e mais devagar até ser compreendido, sem precisar recorrer a outros meios de comunicação",
+                "B) pedir que ele volte outro dia acompanhado de um familiar, que fará a intermediação do atendimento",
                 "C) oferecer meios adequados de comunicação, como intérprete de Libras ou atendimento por escrito",
-                "D) atendê-lo por último",
-                "E) recusar o atendimento por falta de intérprete"
+                "D) atendê-lo somente ao final do expediente, quando houver mais tempo disponível para conversar com calma",
+                "E) recusar o atendimento presencial por falta de intérprete e orientar que a demanda seja feita pela ouvidoria"
             ],
             "correta": 2,
             "comentario": "A acessibilidade na comunicação é direito da pessoa com deficiência (Lei nº 13.146/2015). O órgão deve buscar formas de garantir o atendimento."
@@ -13981,7 +13981,7 @@ window.bancoDeQuestoes = {
             "enunciado": "No atendimento ao público, o sigilo profissional exige que o servidor:",
             "opcoes": [
                 "A) não divulgue informações pessoais ou sigilosas de que tomou conhecimento em razão do cargo",
-                "B) comente os casos nas redes sociais sem citar nomes completos",
+                "B) comente os casos nas redes sociais, desde que não cite os nomes completos das pessoas atendidas pelo setor",
                 "C) conte os casos interessantes a familiares",
                 "D) divulgue apenas para os colegas de setor",
                 "E) divulgue quando o cidadão for pessoa pública"
@@ -13996,7 +13996,7 @@ window.bancoDeQuestoes = {
                 "A) negar todo o documento",
                 "B) fornecer apenas mediante pagamento de taxa extra",
                 "C) fornecer a parte pública, ocultando os dados pessoais protegidos (tarja), conforme orientação do órgão",
-                "D) fornecer o documento integral, sem qualquer cuidado",
+                "D) fornecer o documento integral, sem qualquer tarja, já que ele contém informações públicas de interesse geral",
                 "E) exigir autorização judicial para qualquer cópia"
             ],
             "correta": 2,
@@ -14006,8 +14006,8 @@ window.bancoDeQuestoes = {
             "id": 25113,
             "enunciado": "O atendimento ao público com qualidade busca, principalmente:",
             "opcoes": [
-                "A) evitar qualquer contato com o público",
-                "B) priorizar a conveniência do servidor",
+                "A) evitar o contato direto com o público, concentrando todas as demandas em canais digitais automatizados",
+                "B) priorizar a conveniência do servidor e a rotina interna do setor",
                 "C) resolver a demanda do cidadão com cortesia, correção e no menor tempo possível",
                 "D) aumentar a burocracia para garantir controle",
                 "E) reduzir o número de cidadãos atendidos"
@@ -14045,11 +14045,11 @@ window.bancoDeQuestoes = {
             "id": 25116,
             "enunciado": "Em um fluxograma, o símbolo em forma de losango é usado para representar:",
             "opcoes": [
-                "A) um documento impresso",
-                "B) o arquivamento definitivo",
-                "C) o início e o fim do processo",
-                "D) uma decisão, com caminhos alternativos (por exemplo, \"sim\" ou \"não\")",
-                "E) uma atividade comum"
+                "A) um documento impresso, como um relatório ou formulário gerado no processo",
+                "B) o arquivamento definitivo dos documentos produzidos ao longo do processo",
+                "C) o início e o fim do processo, também chamados de terminais do fluxo",
+                "D) uma decisão, com caminhos alternativos (\"sim\" ou \"não\")",
+                "E) uma atividade ou tarefa comum executada por um responsável do processo"
             ],
             "correta": 3,
             "comentario": "Na simbologia básica, o losango indica decisão; o retângulo, atividade; e a forma oval (ou retângulo arredondado), início e fim."
@@ -14084,11 +14084,11 @@ window.bancoDeQuestoes = {
             "id": 25119,
             "enunciado": "O gráfico de Gantt é muito utilizado para:",
             "opcoes": [
-                "A) representar decisões de um processo",
-                "B) mostrar a hierarquia de cargos",
+                "A) representar as decisões de um processo, com caminhos alternativos de \"sim\" ou \"não\"",
+                "B) mostrar a hierarquia de cargos e as relações de subordinação entre os setores do órgão",
                 "C) calcular a folha de pagamento",
                 "D) medir a satisfação do cidadão",
-                "E) representar cronogramas, com barras que mostram a duração de cada atividade ao longo do tempo"
+                "E) representar cronogramas, com barras que mostram a duração de cada atividade"
             ],
             "correta": 4,
             "comentario": "No gráfico de Gantt, cada atividade é uma barra horizontal posicionada nas datas de início e término."
@@ -14098,8 +14098,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Em um organograma tradicional, os órgãos de assessoria (como a assessoria jurídica da Presidência) costumam ser representados:",
             "opcoes": [
                 "A) por linhas laterais ligadas ao órgão assessorado, sem subordinação hierárquica sobre os demais setores",
-                "B) no nível mais baixo da estrutura",
-                "C) como setores de linha com subordinados diretos",
+                "B) no nível mais baixo da estrutura, abaixo de todos os setores operacionais, por não terem poder decisório",
+                "C) como setores de linha, com subordinados diretos e autoridade hierárquica sobre os demais setores do órgão",
                 "D) fora do organograma",
                 "E) acima da Presidência"
             ],
@@ -14111,8 +14111,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a regra geral da Lei nº 9.784/1999, os prazos do processo administrativo começam a correr a partir da data da cientificação oficial:",
             "opcoes": [
                 "A) apenas a partir do primeiro dia do mês seguinte",
-                "B) incluindo-se o dia do começo e o do vencimento",
-                "C) incluindo-se o dia do começo e excluindo-se o do vencimento",
+                "B) incluindo-se na contagem tanto o dia do começo quanto o dia do vencimento",
+                "C) incluindo-se na contagem o dia do começo e excluindo-se o dia do vencimento",
                 "D) excluindo-se da contagem o dia do começo e incluindo-se o do vencimento",
                 "E) contando-se apenas os dias úteis, sempre"
             ],
@@ -14149,11 +14149,11 @@ window.bancoDeQuestoes = {
             "id": 25124,
             "enunciado": "O controle de prazos administrativos e legislativos em uma planilha é mais eficiente quando:",
             "opcoes": [
-                "A) a planilha é atualizada uma vez por ano",
-                "B) os processos são anotados apenas em papéis avulsos",
-                "C) as datas são registradas sem padrão",
+                "A) a planilha é atualizada uma vez por ano, no encerramento do exercício, para consolidar todos os prazos",
+                "B) os processos são anotados em papéis avulsos e só depois transferidos para a planilha, quando houver tempo",
+                "C) as datas são registradas em formatos variados, conforme o hábito de cada servidor que alimenta a planilha",
                 "D) cada processo tem data de entrada, prazo, data de vencimento calculada e situação atualizada",
-                "E) não se registra quem é o responsável"
+                "E) não se registra quem é o responsável, para que qualquer servidor do setor possa cuidar de todos os processos"
             ],
             "correta": 3,
             "comentario": "Uma planilha estruturada permite filtrar, ordenar e destacar prazos próximos do vencimento, evitando perdas de prazo."
@@ -14163,7 +14163,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Em uma planilha de controle de processos, a coluna C contém as datas de vencimento. Para destacar automaticamente em vermelho os prazos já vencidos, o recurso adequado é:",
             "opcoes": [
                 "A) o recurso de congelar painéis",
-                "B) a inserção de comentários em cada célula",
+                "B) a inserção de comentários em cada célula da coluna C com a palavra \"vencido\"",
                 "C) a mesclagem das células da coluna",
                 "D) a proteção da planilha com senha",
                 "E) a formatação condicional com a regra \"data menor que HOJE()\""
@@ -14201,10 +14201,10 @@ window.bancoDeQuestoes = {
             "id": 25128,
             "enunciado": "Na rotina de expedição de documentos, antes de enviar um ofício, o servidor deve conferir:",
             "opcoes": [
-                "A) se o destinatário é conhecido pessoalmente",
+                "A) se o destinatário é conhecido pessoalmente pelo chefe do setor que assina o ofício",
                 "B) apenas a cor do papel",
-                "C) somente se o envelope está fechado",
-                "D) a opinião dos colegas sobre o conteúdo",
+                "C) somente se o envelope está fechado e com o selo do órgão, já que o conteúdo foi revisado",
+                "D) a opinião dos colegas do setor sobre o conteúdo, a redação e o tom adotado no ofício",
                 "E) a assinatura, o endereçamento, os anexos indicados e o registro de saída"
             ],
             "correta": 4,
@@ -14214,11 +14214,11 @@ window.bancoDeQuestoes = {
             "id": 25129,
             "enunciado": "A triagem de documentos recebidos no protocolo consiste em:",
             "opcoes": [
-                "A) eliminar documentos sem valor sem autorização",
+                "A) eliminar de imediato os documentos que pareçam sem valor, sem necessidade de autorização superior",
                 "B) separar e classificar os documentos conforme o tipo, a urgência e o setor de destino",
-                "C) arquivar todos os documentos no arquivo permanente",
-                "D) responder aos documentos no próprio protocolo",
-                "E) devolver todos os documentos ao remetente"
+                "C) arquivar todos os documentos recebidos diretamente no arquivo permanente, sem passar pelos setores",
+                "D) responder aos documentos no próprio protocolo, para evitar que eles circulem pelos demais setores",
+                "E) devolver ao remetente todos os documentos que não tenham sido entregues com ofício de encaminhamento"
             ],
             "correta": 1,
             "comentario": "A triagem organiza o fluxo: identifica o assunto, a prioridade e o destino de cada documento antes da distribuição."
@@ -14227,11 +14227,11 @@ window.bancoDeQuestoes = {
             "id": 25130,
             "enunciado": "O registro de entrada e saída de documentos, com número, data, origem, destino e assunto, tem como principal finalidade:",
             "opcoes": [
-                "A) aumentar o volume de papel no setor",
+                "A) aumentar o controle sobre o trabalho dos servidores, medindo a quantidade de papéis produzidos",
                 "B) permitir o controle e a localização dos documentos a qualquer momento",
-                "C) impedir o acesso do cidadão aos documentos",
-                "D) dispensar a tabela de temporalidade",
-                "E) substituir a assinatura das autoridades"
+                "C) impedir que o cidadão tenha acesso aos documentos que estão tramitando no órgão",
+                "D) dispensar a tabela de temporalidade, já que todos os documentos ficam registrados",
+                "E) substituir a assinatura das autoridades, já que o registro comprova a autoria do documento"
             ],
             "correta": 1,
             "comentario": "O registro garante a rastreabilidade: é possível saber onde está cada documento e há quanto tempo."
@@ -14281,8 +14281,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) a mesa seja limpa apenas uma vez por mês",
                 "B) documentos sigilosos ou com dados pessoais não fiquem expostos sobre a mesa quando o servidor se ausentar",
-                "C) todos os papéis sejam jogados fora no fim do dia",
-                "D) os documentos fiquem espalhados para facilitar o acesso dos colegas",
+                "C) todos os papéis sejam descartados no fim de cada dia, inclusive os documentos que ainda estão em tramitação",
+                "D) os documentos fiquem espalhados sobre a mesa durante todo o expediente, para facilitar o acesso dos colegas",
                 "E) o servidor não use papel no trabalho"
             ],
             "correta": 1,
@@ -14306,10 +14306,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A descrição formal das etapas, responsáveis e regras de um procedimento administrativo, usada para padronizar o trabalho, é o:",
             "opcoes": [
                 "A) manual de procedimentos (ou procedimento operacional padrão)",
-                "B) diário oficial",
-                "C) certificado de conclusão",
-                "D) regimento eleitoral",
-                "E) organograma"
+                "B) regimento interno, que define a organização e o funcionamento do órgão",
+                "C) organograma, que representa graficamente a estrutura e a hierarquia do órgão",
+                "D) relatório de gestão, que apresenta os resultados alcançados pelo setor no exercício",
+                "E) cronograma, que distribui as atividades e os prazos do setor ao longo do tempo"
             ],
             "correta": 0,
             "comentario": "O manual de procedimentos padroniza a execução das tarefas, reduz erros e facilita o treinamento de novos servidores."
@@ -14322,7 +14322,7 @@ window.bancoDeQuestoes = {
                 "B) convite, tomada de preços, concorrência, concurso e leilão",
                 "C) pregão, concorrência, concurso, leilão e diálogo competitivo",
                 "D) pregão, concurso, convite, dispensa e inexigibilidade",
-                "E) concorrência, cotação, convite, pregão e licitação direta"
+                "E) concorrência, cotação eletrônica, convite, pregão e licitação direta"
             ],
             "correta": 2,
             "comentario": "O art. 28 da Lei nº 14.133/2021 prevê cinco modalidades. Convite e tomada de preços deixaram de existir, e dispensa e inexigibilidade são casos de contratação direta, não modalidades."
@@ -14358,9 +14358,9 @@ window.bancoDeQuestoes = {
             "enunciado": "O leilão, na Lei nº 14.133/2021, é a modalidade utilizada para:",
             "opcoes": [
                 "A) a alienação de bens imóveis ou de bens móveis inservíveis ou legalmente apreendidos, a quem oferecer o maior lance",
-                "B) a escolha de trabalhos artísticos",
-                "C) a compra de material de expediente",
-                "D) a contratação de serviços de limpeza",
+                "B) a escolha de trabalho técnico, científico ou artístico, com a concessão de prêmio ou remuneração ao vencedor da disputa",
+                "C) a aquisição de bens e serviços comuns, cujo critério de julgamento poderá ser o de menor preço ou o de maior desconto",
+                "D) a contratação de obras e serviços especiais de engenharia, com critério de julgamento por técnica e preço ou maior retorno",
                 "E) a contratação de obras de grande porte"
             ],
             "correta": 0,
@@ -14370,11 +14370,11 @@ window.bancoDeQuestoes = {
             "id": 25141,
             "enunciado": "Segundo a Lei nº 14.133/2021, o portal oficial destinado à divulgação centralizada e obrigatória dos atos exigidos pela lei, como editais e contratos, é o:",
             "opcoes": [
-                "A) Portal da Câmara dos Deputados",
+                "A) Portal da Transparência do Governo Federal (CGU)",
                 "B) Sistema de Informações do INSS",
                 "C) Portal Nacional de Contratações Públicas (PNCP)",
-                "D) Diário Oficial do Município, exclusivamente",
-                "E) Portal do Tribunal Superior Eleitoral"
+                "D) Diário Oficial da União, em seção exclusiva para licitações",
+                "E) Sistema Integrado de Administração Financeira (SIAFI)"
             ],
             "correta": 2,
             "comentario": "O art. 174 cria o PNCP, sítio eletrônico oficial para divulgação centralizada dos atos das contratações públicas."
@@ -14383,11 +14383,11 @@ window.bancoDeQuestoes = {
             "id": 25142,
             "enunciado": "Na Lei nº 14.133/2021, a fase preparatória da licitação é caracterizada pelo:",
             "opcoes": [
-                "A) aplicação de sanções ao contratado",
-                "B) julgamento das propostas",
-                "C) pagamento do contratado",
-                "D) planejamento, incluindo a descrição da necessidade, o estudo técnico preliminar e o termo de referência ou projeto básico",
-                "E) recebimento definitivo do objeto"
+                "A) aplicação de sanções ao contratado que descumpriu cláusulas do contrato anterior com o órgão",
+                "B) julgamento das propostas, com a definição da proposta mais vantajosa segundo o critério do edital",
+                "C) pagamento do contratado, após a liquidação da despesa e a emissão da nota de empenho correspondente",
+                "D) planejamento, com estudo técnico preliminar e termo de referência ou projeto básico",
+                "E) recebimento definitivo do objeto, com a verificação da qualidade e da quantidade do que foi entregue"
             ],
             "correta": 3,
             "comentario": "O art. 18 determina que a fase preparatória seja marcada pelo planejamento, com documentos como o estudo técnico preliminar e o termo de referência."
@@ -14396,8 +14396,8 @@ window.bancoDeQuestoes = {
             "id": 25143,
             "enunciado": "Segundo a Lei nº 14.133/2021, a regra geral é que a fase de habilitação ocorra:",
             "opcoes": [
-                "A) antes da publicação do edital",
-                "B) somente após a assinatura do contrato",
+                "A) antes da publicação do edital, na fase preparatória",
+                "B) somente após a assinatura do contrato com o vencedor",
                 "C) apenas quando houver recurso",
                 "D) antes da fase preparatória",
                 "E) depois da fase de julgamento das propostas"
@@ -14422,11 +14422,11 @@ window.bancoDeQuestoes = {
             "id": 25145,
             "enunciado": "Na contratação direta por INEXIGIBILIDADE de licitação, prevista na Lei nº 14.133/2021, o que justifica a ausência de licitação é:",
             "opcoes": [
-                "A) a urgência criada por falta de planejamento",
+                "A) a urgência decorrente de falta de planejamento do próprio órgão contratante",
                 "B) a preferência por empresas locais",
                 "C) a vontade do gestor",
                 "D) a inviabilidade de competição, como no caso de fornecedor exclusivo",
-                "E) o baixo valor da contratação, apenas"
+                "E) o baixo valor da contratação, desde que abaixo do limite fixado na lei"
             ],
             "correta": 3,
             "comentario": "A inexigibilidade (art. 74) ocorre quando a competição é inviável. A dispensa (art. 75) ocorre quando a licitação seria possível, mas a lei permite não fazê-la, como em contratações de pequeno valor."
@@ -14435,11 +14435,11 @@ window.bancoDeQuestoes = {
             "id": 25146,
             "enunciado": "Na instrução de uma minuta de contrato administrativo, o servidor deve verificar se o documento contém, entre outros elementos:",
             "opcoes": [
-                "A) a lista de todos os licitantes derrotados",
+                "A) a lista de todos os licitantes derrotados, com os valores das propostas e os motivos da desclassificação",
                 "B) a opinião do servidor sobre a empresa",
-                "C) apenas o nome da empresa e a assinatura do gestor",
+                "C) apenas o nome da empresa e a assinatura do gestor, já que as demais condições constam do edital",
                 "D) o objeto, o preço e as condições de pagamento, o prazo de vigência e as obrigações das partes",
-                "E) somente a data da sessão de licitação"
+                "E) somente a data da sessão de licitação e a ata com os lances oferecidos por cada empresa participante"
             ],
             "correta": 3,
             "comentario": "A Lei nº 14.133/2021 (art. 92) lista cláusulas necessárias do contrato, como objeto, regime de execução, preço, condições de pagamento, prazos e obrigações."
@@ -14475,10 +14475,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Constituição Federal, a investidura em cargo ou emprego público depende, em regra, de:",
             "opcoes": [
                 "A) aprovação prévia em concurso público de provas ou de provas e títulos",
-                "B) entrevista com o chefe do setor",
-                "C) apresentação de currículo e carta de recomendação",
-                "D) indicação de vereador",
-                "E) sorteio entre os inscritos"
+                "B) entrevista com o chefe do setor e análise do histórico profissional do candidato",
+                "C) apresentação de currículo e carta de recomendação, seguida de análise da chefia",
+                "D) indicação da autoridade competente, desde que o indicado tenha nível superior completo",
+                "E) sorteio público entre os inscritos que comprovarem a escolaridade exigida para o cargo"
             ],
             "correta": 0,
             "comentario": "O art. 37, II, exige concurso público, ressalvadas as nomeações para cargos em comissão declarados em lei de livre nomeação e exoneração."
@@ -14513,11 +14513,11 @@ window.bancoDeQuestoes = {
             "id": 25152,
             "enunciado": "O servidor público estável só perderá o cargo, conforme a Constituição Federal:",
             "opcoes": [
-                "A) por ter opinião política diferente da maioria",
+                "A) por decisão da autoridade máxima do órgão, após parecer da chefia imediata, quando houver mudança de governo ou reorganização administrativa",
                 "B) por mudança de governo",
-                "C) por simples reclamação de um cidadão",
-                "D) por decisão pessoal do chefe imediato",
-                "E) em virtude de sentença judicial transitada em julgado, mediante processo administrativo com ampla defesa ou mediante avaliação periódica de desempenho, na forma de lei complementar"
+                "C) por simples reclamação de um cidadão, desde que registrada na ouvidoria do órgão e confirmada por escrito pela chefia imediata do servidor",
+                "D) por decisão pessoal do chefe imediato, desde que o servidor tenha recebido advertência por escrito ao menos duas vezes no mesmo ano de exercício",
+                "E) em virtude de sentença judicial transitada em julgado, de processo administrativo com ampla defesa ou de avaliação periódica de desempenho"
             ],
             "correta": 4,
             "comentario": "O art. 41, § 1º, lista essas três hipóteses de perda do cargo pelo servidor estável, sempre com garantias de defesa."
@@ -14578,7 +14578,7 @@ window.bancoDeQuestoes = {
             "id": 25157,
             "enunciado": "O regime jurídico estatutário, aplicado aos servidores efetivos dos órgãos públicos, caracteriza-se por:",
             "opcoes": [
-                "A) depender de contrato individual negociado com o servidor",
+                "A) depender de contrato individual de trabalho, negociado diretamente entre o servidor e a administração",
                 "B) ter direitos, deveres, proibições e regime disciplinar definidos em lei própria do ente",
                 "C) ser regido exclusivamente pela CLT",
                 "D) permitir a demissão sem qualquer processo",
@@ -14591,7 +14591,7 @@ window.bancoDeQuestoes = {
             "id": 25158,
             "enunciado": "A sindicância e o processo administrativo disciplinar (PAD) são instrumentos destinados a:",
             "opcoes": [
-                "A) avaliar o desempenho para promoção",
+                "A) avaliar o desempenho do servidor durante o estágio probatório, para fins de estabilidade e de promoção na carreira",
                 "B) conceder férias e licenças",
                 "C) elaborar o orçamento do órgão",
                 "D) apurar irregularidades praticadas por servidores, assegurando o contraditório e a ampla defesa",
@@ -14607,7 +14607,7 @@ window.bancoDeQuestoes = {
                 "A) em caixas abertas no corredor",
                 "B) doados como papel de rascunho",
                 "C) no lixo comum, inteiros",
-                "D) entregues a qualquer interessado",
+                "D) entregues a cooperativas de reciclagem, inteiros, desde que acompanhados de termo de doação",
                 "E) por fragmentação ou outro meio que impeça a leitura e a reconstituição"
             ],
             "correta": 4,
@@ -14618,7 +14618,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Ao digitalizar processos que contêm dados pessoais, o setor deve:",
             "opcoes": [
                 "A) armazenar os arquivos em sistemas institucionais com controle de acesso",
-                "B) publicar os arquivos na internet para facilitar a consulta",
+                "B) publicar os arquivos no portal da transparência, para facilitar a consulta por qualquer cidadão",
                 "C) enviar as cópias para o e-mail particular dos servidores",
                 "D) salvar os arquivos em pendrives pessoais",
                 "E) deixar as pastas digitais sem senha para todos da rede"
@@ -14630,11 +14630,11 @@ window.bancoDeQuestoes = {
             "id": 25161,
             "enunciado": "Um servidor recebe um pedido, por telefone, de alguém que se diz advogado e solicita o CPF e o endereço de um cidadão que protocolou um requerimento. O servidor deve:",
             "opcoes": [
-                "A) divulgar os dados e avisar o cidadão depois",
-                "B) não fornecer os dados por telefone e orientar o solicitante a fazer pedido formal, que será analisado conforme a lei",
+                "A) divulgar os dados solicitados e avisar o cidadão depois, por escrito, sobre o repasse feito ao advogado",
+                "B) não fornecer os dados por telefone e orientar o solicitante a fazer pedido formal",
                 "C) fornecer apenas o CPF",
-                "D) fornecer os dados, pois o solicitante é advogado",
-                "E) pedir o número do cartão de crédito do solicitante para confirmar a identidade"
+                "D) fornecer os dados, pois o solicitante é advogado e tem prerrogativa de acesso a informações de clientes",
+                "E) pedir o número do cartão de crédito do solicitante para confirmar a identidade dele"
             ],
             "correta": 1,
             "comentario": "Dados pessoais não podem ser repassados sem base legal e sem verificação. Pedidos devem ser formais e analisados pelo setor competente."
@@ -14643,11 +14643,11 @@ window.bancoDeQuestoes = {
             "id": 25162,
             "enunciado": "Na rotina de protocolo, o princípio da necessidade da LGPD orienta o servidor a:",
             "opcoes": [
-                "A) guardar os dados para sempre, mesmo sem utilidade",
+                "A) guardar os dados indefinidamente, mesmo sem utilidade, para eventual consulta em pedidos futuros",
                 "B) coletar do cidadão apenas os dados indispensáveis para registrar e atender o pedido",
-                "C) pedir sempre informações de saúde e religião",
-                "D) exigir cópias de documentos que não têm relação com o pedido",
-                "E) coletar o máximo de dados possível, para uso futuro"
+                "C) pedir sempre informações de saúde e religião, para oferecer um atendimento mais personalizado",
+                "D) exigir cópias de documentos sem relação com o pedido, para manter o cadastro do cidadão completo",
+                "E) coletar o máximo de dados possível, já que eles poderão ser úteis em atendimentos futuros"
             ],
             "correta": 1,
             "comentario": "O princípio da necessidade limita o tratamento ao mínimo necessário para a finalidade."
@@ -14659,7 +14659,7 @@ window.bancoDeQuestoes = {
                 "A) publicar a lista sem qualquer critério",
                 "B) divulgar o endereço residencial de cada participante",
                 "C) incluir fotos dos documentos de identidade",
-                "D) publicar todos os dados de cadastro, inclusive telefone",
+                "D) publicar todos os dados do cadastro, inclusive telefone e e-mail, para garantir a transparência da audiência",
                 "E) divulgar apenas o necessário para a finalidade, evitando expor dados como CPF completo e endereço"
             ],
             "correta": 4,
@@ -14669,10 +14669,10 @@ window.bancoDeQuestoes = {
             "id": 25164,
             "enunciado": "Uma ferramenta de inteligência artificial generativa pode ser usada nas rotinas administrativas para:",
             "opcoes": [
-                "A) guardar senhas dos sistemas da Câmara",
+                "A) guardar as senhas dos sistemas da Câmara, facilitando o acesso dos servidores a cada um deles",
                 "B) substituir o registro formal de protocolo",
-                "C) decidir sozinha pedidos de cidadãos",
-                "D) assinar documentos oficiais em nome da autoridade",
+                "C) decidir sozinha os pedidos de cidadãos, desde que o resultado seja publicado no portal",
+                "D) assinar documentos oficiais em nome da autoridade, quando ela estiver ausente do órgão",
                 "E) auxiliar na redação de rascunhos e resumos, que devem ser revisados pelo servidor"
             ],
             "correta": 4,
@@ -14684,8 +14684,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) se as informações, os números e as citações de leis estão corretos e se o texto segue a redação oficial",
                 "B) nada, pois a IA não comete erros",
-                "C) apenas se o texto tem o tamanho adequado",
-                "D) apenas se o texto tem muitas palavras difíceis",
+                "C) apenas se o texto tem o tamanho adequado ao padrão ofício, já que o conteúdo produzido pela IA é confiável",
+                "D) apenas se o texto evita palavras difíceis, já que a IA costuma acertar as informações e as citações de leis",
                 "E) somente se a fonte usada é bonita"
             ],
             "correta": 0,
@@ -14696,10 +14696,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Não é recomendado inserir em ferramentas públicas de IA generativa:",
             "opcoes": [
                 "A) um pedido para melhorar a clareza de um texto genérico",
-                "B) dados pessoais de cidadãos e informações sigilosas do órgão",
-                "C) um texto público já divulgado no portal",
-                "D) um pedido de sugestão de títulos para um evento",
-                "E) uma pergunta sobre regras gerais de pontuação"
+                "B) dados pessoais de cidadãos e informações sigilosas",
+                "C) um texto público que já foi divulgado no portal da Câmara",
+                "D) um pedido de sugestão de títulos para um evento do órgão",
+                "E) uma pergunta sobre as regras gerais de pontuação e crase"
             ],
             "correta": 1,
             "comentario": "O conteúdo enviado a ferramentas externas pode ser armazenado por terceiros. Dados pessoais e sigilosos devem ficar fora."
@@ -14747,10 +14747,10 @@ window.bancoDeQuestoes = {
             "id": 25170,
             "enunciado": "Ao receber um e-mail com anexo inesperado, de remetente desconhecido, com o título \"Intimação urgente – abra agora\", o servidor deve:",
             "opcoes": [
-                "A) encaminhar para todos os colegas",
+                "A) encaminhar o e-mail para todos os colegas, alertando sobre a intimação",
                 "B) baixar o anexo no computador pessoal",
-                "C) responder pedindo mais informações",
-                "D) abrir o anexo para verificar a intimação",
+                "C) responder ao remetente pedindo mais informações sobre o processo",
+                "D) abrir o anexo para verificar se a intimação é verdadeira",
                 "E) não abrir o anexo e comunicar a equipe de TI"
             ],
             "correta": 4,
@@ -14774,10 +14774,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O uso de autenticação em dois fatores nos sistemas da Câmara contribui para:",
             "opcoes": [
                 "A) acelerar a internet do órgão",
-                "B) eliminar a necessidade de antivírus",
+                "B) eliminar a necessidade de antivírus, já que o acesso passa a ser verificado pelo celular",
                 "C) dificultar o acesso indevido mesmo que a senha do servidor seja descoberta",
                 "D) dispensar o uso de senhas",
-                "E) permitir que a senha seja compartilhada"
+                "E) permitir que a senha seja compartilhada com os colegas sem risco, pois o segundo fator protege a conta"
             ],
             "correta": 2,
             "comentario": "O segundo fator (código no celular, aplicativo ou biometria) impede o acesso apenas com a senha."
@@ -14786,11 +14786,11 @@ window.bancoDeQuestoes = {
             "id": 25173,
             "enunciado": "Fazer cópias de segurança (backup) periódicas das planilhas de controle de prazos do setor serve para:",
             "opcoes": [
-                "A) aumentar o tamanho das planilhas",
+                "A) aumentar a capacidade das planilhas, permitindo que recebam mais linhas e colunas de dados",
                 "B) permitir a recuperação dos dados em caso de falha, exclusão acidental ou ataque",
-                "C) evitar o uso de senhas",
-                "D) impedir que outros setores vejam as planilhas",
-                "E) substituir a tabela de temporalidade"
+                "C) evitar o uso de senhas, já que os dados ficam guardados em outro local considerado seguro",
+                "D) impedir que outros setores vejam as planilhas, já que a cópia fica guardada em local restrito",
+                "E) substituir a tabela de temporalidade, já que as cópias guardam todas as versões dos documentos"
             ],
             "correta": 1,
             "comentario": "O backup garante a continuidade do trabalho se os arquivos originais forem perdidos ou corrompidos, inclusive por ransomware."
@@ -14800,10 +14800,10 @@ window.bancoDeQuestoes = {
             "enunciado": "No Excel, para impedir que colegas alterem por engano as fórmulas de uma planilha compartilhada, pode-se usar o recurso:",
             "opcoes": [
                 "A) Proteger Planilha, na guia Revisão",
-                "B) Congelar Painéis",
-                "C) Mesclar e Centralizar",
-                "D) Inserir Gráfico",
-                "E) Classificar de A a Z"
+                "B) Congelar Painéis, na guia Exibir, para fixar as fórmulas",
+                "C) Validação de Dados, na guia Dados, para bloquear as fórmulas",
+                "D) Mesclar e Centralizar, na guia Página Inicial",
+                "E) Classificar de A a Z, na guia Dados, para ordenar as fórmulas"
             ],
             "correta": 0,
             "comentario": "Proteger Planilha impede alterações em células bloqueadas, permitindo liberar apenas as células de preenchimento."
@@ -14812,11 +14812,11 @@ window.bancoDeQuestoes = {
             "id": 25175,
             "enunciado": "Ao compartilhar com outro setor uma pasta na nuvem com documentos da Câmara, a prática mais segura é:",
             "opcoes": [
-                "A) compartilhar a senha da conta do setor",
+                "A) compartilhar a senha da conta do setor apenas com os servidores do outro setor que vão usar a pasta",
                 "B) publicar o link nas redes sociais",
-                "C) gerar um link público acessível a qualquer pessoa na internet",
+                "C) gerar um link público acessível a qualquer pessoa na internet, desde que ele não seja divulgado",
                 "D) conceder acesso apenas às pessoas que precisam, com permissão adequada (leitura ou edição)",
-                "E) dar permissão de edição a todos os contatos do e-mail"
+                "E) dar permissão de edição a todos os contatos do e-mail institucional, para agilizar o trabalho conjunto"
             ],
             "correta": 3,
             "comentario": "O compartilhamento deve seguir o princípio do menor privilégio: cada pessoa recebe apenas o acesso necessário."
@@ -14825,11 +14825,11 @@ window.bancoDeQuestoes = {
             "id": 25176,
             "enunciado": "Para organizar arquivos digitais de forma que sejam encontrados facilmente, uma boa prática é:",
             "opcoes": [
-                "A) salvar tudo na área de trabalho com nomes como \"documento1\"",
-                "B) adotar uma estrutura de pastas por assunto ou ano e nomes padronizados, como \"2026_Oficio_015_Secretaria\"",
+                "A) salvar tudo na área de trabalho com nomes como \"documento1\", para localizar os arquivos mais rápido",
+                "B) adotar pastas por assunto ou ano e nomes padronizados, como \"2026_Oficio_015_Secretaria\"",
                 "C) guardar todos os arquivos em uma única pasta sem nome",
                 "D) apagar os arquivos após a impressão",
-                "E) usar nomes diferentes para cada versão sem critério"
+                "E) usar nomes diferentes para cada versão, sem critério fixo, para que cada servidor escolha o seu padrão"
             ],
             "correta": 1,
             "comentario": "Pastas organizadas e nomes padronizados facilitam a busca, a gestão documental e o trabalho em equipe."
@@ -14838,11 +14838,11 @@ window.bancoDeQuestoes = {
             "id": 25177,
             "enunciado": "O tratamento de dados pessoais pelos servidores da Câmara no atendimento é permitido porque:",
             "opcoes": [
-                "A) é necessário ao cumprimento das atribuições legais e à execução de políticas públicas, observados os princípios da LGPD",
-                "B) a LGPD não se aplica ao Poder Legislativo",
-                "C) o cidadão perde seus direitos ao fazer um pedido",
-                "D) qualquer uso é permitido dentro do prédio",
-                "E) os dados passam a pertencer ao servidor que os recebeu"
+                "A) é necessário ao cumprimento das atribuições legais e à execução de políticas públicas",
+                "B) a LGPD não se aplica ao Poder Legislativo, que segue apenas a Lei de Acesso à Informação e o regimento interno",
+                "C) o cidadão autoriza qualquer uso dos seus dados ao protocolar um pedido, inclusive o compartilhamento com terceiros",
+                "D) qualquer uso dos dados é permitido dentro do prédio da Câmara, desde que feito por servidor efetivo",
+                "E) os dados passam a pertencer ao órgão que os recebeu, que pode usá-los livremente para qualquer finalidade"
             ],
             "correta": 0,
             "comentario": "O poder público pode tratar dados para cumprir suas atribuições legais (art. 23 da LGPD), mas sempre com finalidade, necessidade, segurança e transparência."
@@ -14851,11 +14851,11 @@ window.bancoDeQuestoes = {
             "id": 25178,
             "enunciado": "Ao identificar que um sistema mostra a qualquer servidor os dados completos de todos os cidadãos atendidos, inclusive de outros setores, o servidor deve:",
             "opcoes": [
-                "A) aproveitar para consultar dados de conhecidos",
-                "B) divulgar o problema nas redes sociais antes de comunicar o órgão",
-                "C) ignorar, pois não foi ele quem criou o sistema",
-                "D) copiar os dados para uma planilha pessoal",
-                "E) comunicar a situação ao responsável pela TI ou pelo tratamento de dados, para ajuste dos acessos"
+                "A) aproveitar o acesso para consultar dados de conhecidos, sem alterar nenhum registro",
+                "B) divulgar o problema nas redes sociais antes de comunicar o órgão, para pressionar por solução",
+                "C) ignorar a situação, pois não foi ele quem criou nem configurou o sistema",
+                "D) copiar os dados para uma planilha pessoal, como prova da falha, antes de avisar a chefia",
+                "E) comunicar a situação à TI ou ao responsável pelo tratamento de dados"
             ],
             "correta": 4,
             "comentario": "Acessos excessivos violam a segurança e a necessidade. Comunicar o problema permite corrigir as permissões e evitar incidentes."
@@ -14866,9 +14866,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) usar a mesma senha em todos os sistemas",
                 "B) deixar a sessão aberta para os colegas usarem",
-                "C) desativar o antivírus quando ele deixar o computador lento",
+                "C) desativar o antivírus sempre que ele deixar o computador lento, reativando-o apenas no fim do expediente de trabalho",
                 "D) utilizar contas institucionais, manter sistemas atualizados e bloquear o computador ao se ausentar",
-                "E) instalar programas de fontes desconhecidas para agilizar o trabalho"
+                "E) instalar programas de fontes desconhecidas, desde que sejam gratuitos e ajudem a agilizar o trabalho"
             ],
             "correta": 3,
             "comentario": "Essas práticas reduzem riscos de acesso indevido, malware e vazamento de dados."
@@ -14916,10 +14916,10 @@ window.bancoDeQuestoes = {
             "id": 25183,
             "enunciado": "Segundo a Lei nº 1.794/2009, às pessoas com deficiência é reservado, nos concursos para cargos efetivos com atribuições compatíveis, o percentual mínimo de:",
             "opcoes": [
-                "A) 50% das vagas, quando houver somente uma vaga",
-                "B) 1% das vagas, apenas quando houver mais de 100 vagas",
+                "A) 50% das vagas, quando houver somente uma vaga, arredondando-se para uma vaga reservada ao candidato com deficiência",
+                "B) 1% das vagas, apenas quando houver mais de 100 vagas, desprezando-se as frações resultantes do cálculo do percentual",
                 "C) 5% das vagas oferecidas, elevando-se ao primeiro número inteiro seguinte quando o cálculo resultar em fração",
-                "D) 10% das vagas, desprezando-se as frações",
+                "D) 10% das vagas, desprezando-se as frações quando o cálculo do percentual não resultar em número inteiro de vagas",
                 "E) 20% das vagas, em qualquer concurso"
             ],
             "correta": 2,
@@ -14957,7 +14957,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) durará até o fim do mandato do Prefeito",
                 "B) será sempre de um ano, sem prorrogação",
-                "C) não excederá dois anos, prorrogável duas vezes",
+                "C) não excederá dois anos, contados da publicação do edital, prorrogável duas vezes por igual período",
                 "D) não excederá dois anos, contados da homologação, prorrogável uma única vez por igual período",
                 "E) não excederá quatro anos, prorrogável indefinidamente"
             ],
@@ -14981,11 +14981,11 @@ window.bancoDeQuestoes = {
             "id": 25188,
             "enunciado": "A posse, segundo a Lei nº 1.794/2009, ocorrerá no prazo de:",
             "opcoes": [
-                "A) quinze dias contados da homologação do concurso, improrrogáveis",
-                "B) noventa dias contados da convocação, prorrogáveis por mais noventa",
+                "A) quinze dias contados da homologação do concurso, improrrogáveis em qualquer hipótese legal",
+                "B) noventa dias contados da convocação, prorrogáveis por mais noventa a pedido do interessado",
                 "C) dez dias contados da inspeção médica",
-                "D) trinta dias contados da publicação do ato de provimento, prorrogável por igual período a critério da autoridade competente",
-                "E) sessenta dias contados da aprovação no concurso"
+                "D) trinta dias contados da publicação do ato de provimento, prorrogável por igual período",
+                "E) sessenta dias contados da aprovação no concurso, prorrogável uma vez por igual período"
             ],
             "correta": 3,
             "comentario": "O art. 17, § 1º, fixa trinta dias a partir da publicação do ato de provimento, prorrogáveis por igual período."
@@ -14995,10 +14995,10 @@ window.bancoDeQuestoes = {
             "enunciado": "De acordo com a Lei nº 1.794/2009, se a posse não ocorrer dentro do prazo legal:",
             "opcoes": [
                 "A) o ato de provimento será tornado sem efeito",
-                "B) o servidor será exonerado de ofício",
+                "B) o servidor será exonerado de ofício pela autoridade",
                 "C) o candidato perde apenas a classificação",
                 "D) o servidor será demitido",
-                "E) o prazo será prorrogado automaticamente"
+                "E) o prazo será prorrogado automaticamente por igual período"
             ],
             "correta": 0,
             "comentario": "O art. 19 determina que o ato de provimento seja tornado sem efeito. A exoneração ocorre quando o servidor toma posse, mas não entra em exercício (art. 20, § 2º)."
@@ -15047,10 +15047,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Quanto à jornada de trabalho, a Lei nº 1.794/2009 estabelece duração máxima semanal de:",
             "opcoes": [
                 "A) quarenta horas, observados os limites mínimo de quatro e máximo de oito horas diárias",
-                "B) quarenta e quatro horas, com no máximo dez horas diárias",
-                "C) trinta horas, com no mínimo seis horas diárias",
+                "B) quarenta e quatro horas, observados os limites mínimo de seis e máximo de dez horas diárias",
+                "C) trinta horas, observados os limites mínimo de seis horas e máximo de oito horas diárias",
                 "D) trinta e seis horas, sem limite diário",
-                "E) quarenta e oito horas, com no máximo doze horas diárias"
+                "E) quarenta e oito horas, observados os limites mínimo de quatro e máximo de doze horas diárias"
             ],
             "correta": 0,
             "comentario": "O art. 22 limita a jornada a 40 horas semanais, com mínimo de 4 e máximo de 8 horas diárias, ressalvadas as situações de acúmulo lícito e as leis especiais."
@@ -15072,11 +15072,11 @@ window.bancoDeQuestoes = {
             "id": 25195,
             "enunciado": "NÃO consta entre os fatores de avaliação do estágio probatório previstos na Lei nº 1.794/2009:",
             "opcoes": [
-                "A) produtividade",
+                "A) assiduidade e disciplina no exercício das atribuições do cargo",
                 "B) assiduidade",
-                "C) disciplina",
+                "C) responsabilidade",
                 "D) tempo de serviço anterior na iniciativa privada",
-                "E) capacidade de iniciativa"
+                "E) capacidade de iniciativa no desempenho das atribuições do cargo"
             ],
             "correta": 3,
             "comentario": "O art. 23 avalia assiduidade, disciplina, capacidade de iniciativa, produtividade, responsabilidade e conduta incompatível com a função pública."
@@ -15085,8 +15085,8 @@ window.bancoDeQuestoes = {
             "id": 25196,
             "enunciado": "Segundo a Lei nº 1.794/2009, a avaliação de desempenho do servidor em estágio probatório será submetida à homologação da autoridade competente:",
             "opcoes": [
-                "A) um mês depois da posse",
-                "B) seis meses após o fim do estágio",
+                "A) um mês depois da posse, para orientar o servidor desde o início",
+                "B) seis meses após o fim do estágio, junto com a primeira progressão",
                 "C) quatro meses antes de findo o período do estágio",
                 "D) no primeiro dia do estágio",
                 "E) apenas se o servidor pedir"
@@ -15100,7 +15100,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) nenhuma licença, em hipótese alguma",
                 "B) para capacitação e mandato classista",
-                "C) para tratar de interesses particulares e licença prêmio",
+                "C) para tratar de interesses particulares e licença-prêmio, além do afastamento para exercício de mandato classista e para capacitação",
                 "D) todas as licenças previstas na lei, sem restrição",
                 "E) para tratamento de saúde, serviço militar e atividade política, além do afastamento para curso de formação de outro concurso"
             ],
@@ -15111,10 +15111,10 @@ window.bancoDeQuestoes = {
             "id": 25198,
             "enunciado": "Segundo a Lei nº 1.794/2009, o servidor estável perderá o cargo em virtude de:",
             "opcoes": [
-                "A) simples reclamação de cidadão na ouvidoria",
-                "B) decisão pessoal do chefe imediato",
+                "A) simples reclamação de cidadão registrada na ouvidoria, desde que confirmada por escrito pela chefia imediata e publicada no Diário Oficial do Município",
+                "B) decisão pessoal do chefe imediato, mudança de governo, reorganização administrativa ou extinção do setor em que o servidor estiver lotado no momento",
                 "C) mudança de governo",
-                "D) sentença judicial transitada em julgado, processo administrativo disciplinar, avaliação periódica de desempenho ou excesso de despesas de pessoal, na forma do art. 169 da Constituição",
+                "D) sentença judicial transitada em julgado, processo administrativo disciplinar, avaliação periódica de desempenho ou excesso de despesas de pessoal",
                 "E) pedido de qualquer vereador"
             ],
             "correta": 3,
@@ -15124,10 +15124,10 @@ window.bancoDeQuestoes = {
             "id": 25199,
             "enunciado": "A readaptação, segundo a Lei nº 1.794/2009, é a atribuição de encargos mais compatíveis com a capacidade física ou psíquica do servidor e:",
             "opcoes": [
-                "A) garante promoção automática",
-                "B) sempre reduz os vencimentos pela metade",
+                "A) garante promoção automática para a classe seguinte da carreira",
+                "B) sempre reduz os vencimentos pela metade enquanto durar a limitação",
                 "C) não acarretará diminuição nem aumento dos vencimentos",
-                "D) implica exoneração do cargo anterior",
+                "D) implica exoneração do cargo anterior e nomeação no novo cargo",
                 "E) independe de avaliação médica"
             ],
             "correta": 2,
@@ -15137,11 +15137,11 @@ window.bancoDeQuestoes = {
             "id": 25200,
             "enunciado": "A reversão, na Lei nº 1.794/2009, é:",
             "opcoes": [
-                "A) o retorno do servidor estável ao cargo anterior após inabilitação em estágio de outro cargo",
-                "B) a transferência do cargo para uma autarquia",
-                "C) o retorno à atividade de servidor aposentado, de ofício, quando insubsistentes as razões que determinaram a aposentadoria",
-                "D) o retorno do servidor em disponibilidade",
-                "E) a reinvestidura do servidor demitido injustamente"
+                "A) o retorno do servidor estável ao cargo anterior após inabilitação em estágio probatório de outro cargo",
+                "B) a transferência do cargo, com o respectivo ocupante, para uma autarquia ou fundação pública do Município",
+                "C) o retorno à atividade, de ofício, do aposentado quando insubsistentes os motivos da aposentadoria",
+                "D) o retorno à atividade do servidor posto em disponibilidade, em cargo de atribuições compatíveis com o anterior",
+                "E) a reinvestidura do servidor estável no cargo anteriormente ocupado, quando invalidada a sua demissão"
             ],
             "correta": 2,
             "comentario": "O art. 27 define a reversão. Não pode reverter o aposentado que já tiver completado 70 anos (art. 28)."
@@ -15166,7 +15166,7 @@ window.bancoDeQuestoes = {
                 "A) inabilitação em estágio probatório relativo a outro cargo ou reintegração do anterior ocupante",
                 "B) aposentadoria por invalidez",
                 "C) demissão por abandono de cargo",
-                "D) aprovação em novo concurso",
+                "D) aprovação em novo concurso público para cargo de atribuições e vencimentos compatíveis com o anterior",
                 "E) pedido de qualquer chefia"
             ],
             "correta": 0,
@@ -15176,9 +15176,9 @@ window.bancoDeQuestoes = {
             "id": 25203,
             "enunciado": "Segundo a Lei nº 1.794/2009, o retorno à atividade do servidor em disponibilidade far-se-á mediante:",
             "opcoes": [
-                "A) nomeação em cargo em comissão",
-                "B) readaptação compulsória",
-                "C) reversão facultativa",
+                "A) nomeação em cargo em comissão de atribuições compatíveis, até que surja vaga em cargo efetivo do quadro de pessoal",
+                "B) readaptação compulsória em cargo de atribuições compatíveis com a limitação física ou psíquica do servidor",
+                "C) reversão facultativa, a pedido do servidor, em cargo de vencimentos compatíveis com o anteriormente ocupado",
                 "D) aproveitamento obrigatório em cargo de atribuições e vencimentos compatíveis com o anteriormente ocupado",
                 "E) novo concurso público"
             ],
@@ -15202,7 +15202,7 @@ window.bancoDeQuestoes = {
             "id": 25205,
             "enunciado": "Pela Lei nº 1.794/2009, nenhum servidor poderá perceber, mensalmente, a título de remuneração, importância superior:",
             "opcoes": [
-                "A) à remuneração do Presidente da República",
+                "A) à remuneração do Presidente da República, que é o teto aplicável a todos os servidores municipais",
                 "B) ao subsídio dos Vereadores",
                 "C) à soma dos valores percebidos como subsídio pelo Prefeito do Município de Rio Branco",
                 "D) ao dobro do salário mínimo nacional",
@@ -15215,11 +15215,11 @@ window.bancoDeQuestoes = {
             "id": 25206,
             "enunciado": "Nas reposições e indenizações ao erário parceladas a pedido do servidor, a Lei nº 1.794/2009 estabelece que o valor de cada parcela:",
             "opcoes": [
-                "A) será sempre de 50% da remuneração",
+                "A) será sempre de 50% da remuneração, do provento ou da pensão, até a quitação total do débito",
                 "B) não poderá ser inferior a 10% nem exceder 25% da remuneração, do provento ou da pensão",
-                "C) será livremente fixado pela chefia",
-                "D) corresponderá a uma remuneração integral por mês",
-                "E) não poderá exceder 5% da remuneração"
+                "C) será livremente fixado pela chefia imediata, conforme a situação financeira declarada pelo servidor",
+                "D) corresponderá a uma remuneração integral por mês, descontada até a completa quitação do débito",
+                "E) não poderá ser inferior a 5% nem exceder 15% da remuneração, do provento ou da pensão recebida"
             ],
             "correta": 1,
             "comentario": "O art. 43, § 1º, fixa esses limites. As reposições têm atualização monetária e juros de 0,5% ao mês (§ 3º)."
@@ -15229,9 +15229,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei nº 1.794/2009, o vencimento base, a remuneração e o provento:",
             "opcoes": [
                 "A) só são protegidos para servidores estáveis",
-                "B) são penhoráveis apenas para pagar tributos estaduais",
+                "B) são penhoráveis apenas para pagar tributos estaduais e municipais em atraso, mediante decisão judicial definitiva e prévia notificação",
                 "C) não serão objeto de arresto, sequestro ou penhora, exceto nos casos de prestação de alimentos resultante de decisão judicial",
-                "D) podem ser descontados sem autorização para pagar dívidas pessoais",
+                "D) podem ser descontados sem autorização do servidor para pagar dívidas pessoais contraídas com instituições financeiras credenciadas",
                 "E) podem ser penhorados livremente por qualquer credor"
             ],
             "correta": 2,
@@ -15243,8 +15243,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) 30 dias, adquirindo o direito depois de 12 meses de exercício no serviço público municipal",
                 "B) 20 dias, após 6 meses de exercício",
-                "C) 45 dias, após 12 meses de exercício",
-                "D) 30 dias, desde o primeiro mês de exercício",
+                "C) 45 dias, adquirindo o direito depois de 12 meses de efetivo exercício no serviço público municipal",
+                "D) 30 dias, com direito adquirido desde o primeiro mês de exercício no serviço público municipal",
                 "E) 15 dias, após 24 meses de exercício"
             ],
             "correta": 0,
@@ -15258,7 +15258,7 @@ window.bancoDeQuestoes = {
                 "B) apenas por absoluta necessidade de serviço e pelo máximo de dois anos consecutivos",
                 "C) por até cinco anos, sem justificativa",
                 "D) livremente, a pedido do servidor",
-                "E) somente no último ano antes da aposentadoria"
+                "E) somente no último ano antes da aposentadoria, mediante requerimento do servidor à chefia"
             ],
             "correta": 1,
             "comentario": "O art. 70, § 2º, proíbe a acumulação, salvo absoluta necessidade de serviço, por no máximo dois anos consecutivos."
@@ -15267,11 +15267,11 @@ window.bancoDeQuestoes = {
             "id": 25210,
             "enunciado": "Pela Lei nº 1.794/2009, o período de férias será reduzido para 20 dias se o servidor, no exercício anterior, tiver, por exemplo:",
             "opcoes": [
-                "A) tirado férias em dois períodos",
-                "B) apenas uma falta justificada",
-                "C) trabalhado em regime de dedicação integral",
-                "D) participado de comissão de sindicância",
-                "E) mais de 10 não comparecimentos correspondentes a faltas justificadas e injustificadas"
+                "A) tirado férias em dois períodos, a pedido, no exercício anterior",
+                "B) apenas uma falta justificada por atestado médico no exercício",
+                "C) trabalhado em regime de integral dedicação ao serviço durante todo o ano",
+                "D) participado de comissão de sindicância ou de processo disciplinar",
+                "E) mais de 10 faltas, justificadas ou injustificadas"
             ],
             "correta": 4,
             "comentario": "O art. 70, § 3º, prevê a redução para 20 dias em casos como mais de 10 faltas, licença de saúde acima de 180 dias, licença para capacitação ou licença por doença em pessoa da família acima de 90 dias."
@@ -15281,9 +15281,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei nº 1.794/2009, para converter um terço das férias em abono pecuniário, o servidor deve requerê-lo com antecedência mínima de:",
             "opcoes": [
                 "A) 60 dias do período escalado de férias",
-                "B) 5 dias do início das férias",
+                "B) 5 dias do início das férias, por escrito, à chefia imediata",
                 "C) 30 dias após o fim das férias",
-                "D) 12 meses antes do período aquisitivo",
+                "D) 12 meses antes do início do período aquisitivo das férias",
                 "E) 90 dias antes da escala anual"
             ],
             "correta": 0,
@@ -15294,7 +15294,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei nº 1.794/2009, a licença por motivo de doença em pessoa da família é concedida com remuneração integral do cargo efetivo até:",
             "opcoes": [
                 "A) 30 dias; depois, sempre sem remuneração",
-                "B) 180 dias; depois, com metade da remuneração por tempo indeterminado",
+                "B) 180 dias; depois, com metade da remuneração por tempo indeterminado, enquanto durar a doença comprovada do familiar",
                 "C) 90 dias; de 90 a 180 dias, com dois terços; de 180 a 365 dias, com um terço; e, acima disso, sem remuneração",
                 "D) 60 dias; depois, com um quarto da remuneração",
                 "E) 365 dias, sempre com remuneração integral"
@@ -15320,9 +15320,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Na licença para atividade política prevista na Lei nº 1.794/2009, o afastamento do servidor efetivo candidato terá início:",
             "opcoes": [
                 "A) três meses antes da data do pleito eleitoral, com direito à remuneração do cargo efetivo",
-                "B) somente após a diplomação",
+                "B) somente após a diplomação dos eleitos, com direito à remuneração integral do cargo efetivo",
                 "C) uma semana antes da eleição",
-                "D) um ano antes da eleição, sem remuneração",
+                "D) um ano antes da eleição, sem remuneração, devendo o servidor reassumir no dia seguinte ao pleito",
                 "E) no dia da convenção partidária, sem remuneração"
             ],
             "correta": 0,
@@ -15332,10 +15332,10 @@ window.bancoDeQuestoes = {
             "id": 25215,
             "enunciado": "Segundo a Lei nº 1.794/2009, é DEVER do servidor:",
             "opcoes": [
-                "A) divulgar assuntos da repartição para dar transparência",
+                "A) divulgar assuntos internos da repartição nas redes sociais, para dar transparência à gestão pública municipal",
                 "B) levar ao conhecimento da autoridade superior as irregularidades de que tiver ciência em razão do cargo",
-                "C) atender com prioridade as pessoas de seu relacionamento",
-                "D) cumprir todas as ordens superiores, inclusive as manifestamente ilegais",
+                "C) atender com prioridade as pessoas de seu relacionamento pessoal, desde que não haja prejuízo aos demais cidadãos",
+                "D) cumprir todas as ordens superiores, inclusive as manifestamente ilegais, sob pena de responder por insubordinação",
                 "E) promover manifestações de apreço no recinto da repartição"
             ],
             "correta": 1,
@@ -15346,10 +15346,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A Lei nº 1.794/2009 impõe ao servidor o dever de atender com presteza, entre outros:",
             "opcoes": [
                 "A) à expedição de certidões requeridas para defesa de direito ou esclarecimento de situações de interesse pessoal",
-                "B) aos pedidos de favores pessoais de autoridades",
+                "B) aos pedidos de favores pessoais de autoridades, desde que não causem prejuízo financeiro direto à repartição pública",
                 "C) aos pedidos de colegas para trocar de setor",
                 "D) às requisições de partidos políticos",
-                "E) às solicitações de empresas privadas para obter dados sigilosos"
+                "E) às solicitações de empresas privadas para obter dados sigilosos de contribuintes, quando houver interesse comercial legítimo"
             ],
             "correta": 0,
             "comentario": "O art. 106, V, exige presteza no atendimento ao público, na expedição de certidões e nas requisições para a defesa da Fazenda Pública."
@@ -15358,10 +15358,10 @@ window.bancoDeQuestoes = {
             "id": 25217,
             "enunciado": "Segundo a Lei nº 1.794/2009, a representação contra ilegalidade, omissão ou abuso de poder:",
             "opcoes": [
-                "A) depende de autorização do chefe imediato para ser protocolada",
-                "B) é proibida ao servidor em estágio probatório",
-                "C) é julgada pela própria autoridade representada",
-                "D) deve ser feita diretamente à imprensa",
+                "A) depende de autorização prévia do chefe imediato para ser protocolada e encaminhada à autoridade superior competente",
+                "B) é proibida ao servidor em estágio probatório, que só poderá apresentá-la depois de adquirir a estabilidade no cargo",
+                "C) é julgada pela própria autoridade representada, que poderá rever o ato ou mantê-lo de forma devidamente fundamentada",
+                "D) deve ser feita diretamente à imprensa ou ao Ministério Público, sem passar pela via hierárquica do órgão público",
                 "E) será encaminhada pela via hierárquica e apreciada pela autoridade superior àquela contra a qual é formulada"
             ],
             "correta": 4,
@@ -15371,11 +15371,11 @@ window.bancoDeQuestoes = {
             "id": 25218,
             "enunciado": "É PROIBIDO ao servidor, nos termos da Lei nº 1.794/2009:",
             "opcoes": [
-                "A) manter sob sua chefia imediata, em cargo ou função de confiança, cônjuge, companheiro ou parente até o segundo grau civil",
-                "B) atuar como procurador em benefício previdenciário de seu cônjuge",
-                "C) ser acionista ou cotista de sociedade privada",
-                "D) atualizar seus dados cadastrais",
-                "E) participar de associação sindical"
+                "A) manter sob sua chefia imediata, em cargo de confiança, cônjuge ou parente até o segundo grau civil",
+                "B) atuar como procurador ou intermediário junto a repartições públicas em benefício previdenciário do próprio cônjuge",
+                "C) ser acionista ou cotista de sociedade privada, mesmo sem exercer a gerência ou a administração da empresa",
+                "D) atualizar seus dados cadastrais quando solicitado pela administração, por meio do sistema de recursos humanos",
+                "E) participar de associação sindical e exercer mandato classista, com afastamento do cargo na forma da lei"
             ],
             "correta": 0,
             "comentario": "O art. 107, VIII, proíbe essa forma de nepotismo. Ser acionista ou cotista é permitido (inciso X) e a atuação para cônjuge em benefício previdenciário é exceção expressa (inciso XI)."
@@ -15397,11 +15397,11 @@ window.bancoDeQuestoes = {
             "id": 25220,
             "enunciado": "Um servidor utiliza o carro e a impressora da repartição para atender à sua atividade particular de vendas. Pela Lei nº 1.794/2009, ele violou a proibição de:",
             "opcoes": [
-                "A) ausentar-se do serviço sem autorização",
+                "A) ausentar-se do serviço durante o expediente, sem prévia autorização do chefe imediato, para fins particulares",
                 "B) recusar-se a atualizar dados cadastrais",
                 "C) promover manifestação de desapreço",
                 "D) utilizar pessoal ou recursos materiais da repartição em serviços ou atividades particulares",
-                "E) recusar fé a documentos públicos"
+                "E) recusar fé a documentos públicos apresentados pelo cidadão no balcão de atendimento da repartição"
             ],
             "correta": 3,
             "comentario": "O art. 107, XVI, proíbe o uso de pessoal ou de recursos materiais da repartição em atividades particulares. É uma das transgressões punidas com demissão (art. 123, XIII)."
@@ -15423,11 +15423,11 @@ window.bancoDeQuestoes = {
             "id": 25222,
             "enunciado": "Pela Lei nº 1.794/2009, o servidor responde civil, penal e administrativamente pelo exercício irregular de suas atribuições. Sobre essas responsabilidades, é correto afirmar que:",
             "opcoes": [
-                "A) o pagamento da indenização isenta o servidor da pena disciplinar",
-                "B) o servidor só responde se houver dolo, nunca por culpa",
-                "C) a responsabilidade civil não alcança os sucessores",
+                "A) o pagamento da indenização ao erário isenta o servidor da pena disciplinar pelo mesmo fato apurado",
+                "B) o servidor só responde se houver dolo, nunca por culpa, seja civil, penal ou administrativamente",
+                "C) a obrigação de reparar o dano não se estende aos sucessores, nem até o limite da herança recebida",
                 "D) as sanções civis, penais e administrativas poderão cumular-se, sendo independentes entre si",
-                "E) a condenação penal impede qualquer sanção administrativa"
+                "E) a condenação penal impede a aplicação de qualquer sanção administrativa pelo mesmo fato praticado pelo servidor"
             ],
             "correta": 3,
             "comentario": "O art. 115 prevê a cumulação e a independência das sanções. O art. 114 diz que a indenização não exime da pena disciplinar, e o art. 111, § 3º, estende a reparação aos sucessores até o limite da herança."
@@ -15437,9 +15437,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei nº 1.794/2009, a responsabilidade administrativa do servidor será afastada no caso de:",
             "opcoes": [
                 "A) absolvição criminal que negue a existência do fato ou sua autoria",
-                "B) transferência do servidor para outro órgão",
-                "C) pagamento da indenização ao erário",
-                "D) arquivamento de inquérito policial por qualquer motivo",
+                "B) transferência do servidor para outro órgão antes da conclusão do processo",
+                "C) pagamento integral da indenização ao erário antes do julgamento do processo",
+                "D) arquivamento do inquérito policial por qualquer motivo, inclusive falta de provas",
                 "E) absolvição criminal por falta de provas"
             ],
             "correta": 0,
@@ -15462,11 +15462,11 @@ window.bancoDeQuestoes = {
             "id": 25225,
             "enunciado": "São penalidades disciplinares previstas na Lei nº 1.794/2009:",
             "opcoes": [
-                "A) multa, censura, prisão e cassação de mandato",
-                "B) advertência, suspensão, demissão, cassação de aposentadoria ou disponibilidade, destituição de cargo em comissão e destituição de função comissionada",
-                "C) repreensão, suspensão, rebaixamento de cargo e demissão",
-                "D) advertência verbal, multa, prisão administrativa e demissão",
-                "E) advertência, suspensão, transferência compulsória e exoneração"
+                "A) multa, censura, prisão administrativa, cassação de mandato, perda dos direitos políticos e destituição de cargo em comissão",
+                "B) advertência, suspensão, demissão, cassação de aposentadoria ou disponibilidade e destituição de cargo em comissão",
+                "C) repreensão, suspensão, rebaixamento de cargo, demissão, cassação de aposentadoria e destituição de função comissionada",
+                "D) advertência verbal, multa, prisão administrativa, demissão, cassação de disponibilidade e destituição de cargo em comissão",
+                "E) advertência, suspensão, transferência compulsória, exoneração, cassação de aposentadoria e destituição de cargo em comissão"
             ],
             "correta": 1,
             "comentario": "O art. 117 lista as seis penalidades disciplinares. A multa só aparece como conversão da suspensão (art. 120, § 2º)."
@@ -15475,11 +15475,11 @@ window.bancoDeQuestoes = {
             "id": 25226,
             "enunciado": "Na Lei nº 1.794/2009, a penalidade de suspensão:",
             "opcoes": [
-                "A) pode durar até um ano",
-                "B) é sempre convertida em advertência",
-                "C) não pode exceder 30 dias e nunca pode ser convertida em multa",
-                "D) não pode exceder 90 dias e pode ser convertida em multa de 50% por dia de remuneração, permanecendo o servidor em serviço",
-                "E) implica perda definitiva do cargo"
+                "A) pode durar até um ano, conforme a gravidade da infração e os antecedentes funcionais do servidor",
+                "B) é sempre convertida em advertência quando o servidor for primário e tiver bons antecedentes",
+                "C) não pode exceder 30 dias e nunca pode ser convertida em multa, por ter caráter estritamente pessoal",
+                "D) não pode exceder 90 dias e pode ser convertida em multa de 50% por dia de remuneração",
+                "E) implica perda definitiva do cargo quando aplicada pela segunda vez no mesmo período aquisitivo"
             ],
             "correta": 3,
             "comentario": "O art. 120 limita a suspensão a 90 dias, e o § 2º permite convertê-la em multa de 50% por dia de remuneração, quando houver conveniência para o serviço."
@@ -15501,10 +15501,10 @@ window.bancoDeQuestoes = {
             "id": 25228,
             "enunciado": "Pela Lei nº 1.794/2009, os registros das penalidades de advertência e de suspensão serão cancelados, se o servidor não praticar nova infração disciplinar, após:",
             "opcoes": [
-                "A) 5 e 10 anos, respectivamente",
+                "A) 5 e 10 anos de efetivo exercício no cargo, respectivamente",
                 "B) 6 meses e 1 ano, respectivamente",
                 "C) nunca são cancelados",
-                "D) 1 e 2 anos, respectivamente",
+                "D) 1 e 2 anos de efetivo exercício no cargo, respectivamente",
                 "E) 3 e 5 anos de efetivo exercício, respectivamente"
             ],
             "correta": 4,
@@ -15516,8 +15516,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) tirar férias sem autorização por 5 dias",
                 "B) faltar 10 dias interpolados no ano",
-                "C) faltar 60 dias interpoladamente em 12 meses",
-                "D) chegar atrasado mais de cinco vezes no mês",
+                "C) faltar 60 dias, interpoladamente, durante o período de 12 meses",
+                "D) chegar atrasado mais de cinco vezes no mesmo mês, sem justificativa",
                 "E) faltar ao serviço por mais de 30 dias consecutivos"
             ],
             "correta": 4,
@@ -15527,11 +15527,11 @@ window.bancoDeQuestoes = {
             "id": 25230,
             "enunciado": "Segundo a Lei nº 1.794/2009, entende-se por INASSIDUIDADE HABITUAL a falta ao serviço, sem causa justificada, por:",
             "opcoes": [
-                "A) 30 dias consecutivos",
-                "B) 90 dias consecutivos",
+                "A) 30 dias consecutivos, sem qualquer justificativa apresentada à chefia",
+                "B) 90 dias, interpoladamente, durante o período de 24 meses seguidos",
                 "C) 60 dias, interpoladamente, durante o período de 12 meses",
-                "D) 15 dias, interpoladamente, em 6 meses",
-                "E) 10 dias, interpoladamente, em 30 dias"
+                "D) 15 dias, interpoladamente, durante o período de 6 meses consecutivos",
+                "E) 10 dias, interpoladamente, durante o período de 30 dias corridos"
             ],
             "correta": 2,
             "comentario": "O art. 130 define a inassiduidade habitual. Abandono de cargo e inassiduidade habitual são punidos com demissão (art. 123, II e III)."
@@ -15567,8 +15567,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei nº 1.794/2009, a ação disciplinar prescreverá em:",
             "opcoes": [
                 "A) 2 anos para qualquer infração",
-                "B) 10 anos para demissão, 5 anos para suspensão e 1 ano para advertência",
-                "C) 1 ano para demissão, 6 meses para suspensão e 30 dias para advertência",
+                "B) 10 anos para as infrações puníveis com demissão, 5 anos para a suspensão e 1 (um) ano para a advertência",
+                "C) 1 ano para as infrações puníveis com demissão, 6 meses para a suspensão e 30 (trinta) dias para a advertência",
                 "D) 5 anos para as infrações puníveis com demissão, 2 anos para a suspensão e 180 dias para a advertência",
                 "E) 5 anos para todas as infrações"
             ],
@@ -15579,9 +15579,9 @@ window.bancoDeQuestoes = {
             "id": 25234,
             "enunciado": "Pela Lei nº 1.794/2009, a abertura de sindicância ou a instauração de processo disciplinar:",
             "opcoes": [
-                "A) extingue automaticamente a punibilidade",
-                "B) suspende a prescrição por apenas 30 dias",
-                "C) torna a infração imprescritível",
+                "A) extingue automaticamente a punibilidade, desde que o servidor colabore com a apuração",
+                "B) suspende a prescrição por apenas 30 dias, voltando o prazo a correr normalmente depois disso",
+                "C) torna a infração imprescritível, independentemente do resultado final da apuração",
                 "D) interrompe a prescrição, até a decisão final proferida por autoridade competente",
                 "E) não tem qualquer efeito sobre a prescrição"
             ],
@@ -15592,10 +15592,10 @@ window.bancoDeQuestoes = {
             "id": 25235,
             "enunciado": "Segundo a Lei nº 1.794/2009, da sindicância poderá resultar:",
             "opcoes": [
-                "A) destituição de cargo em comissão, sem processo disciplinar",
-                "B) aplicação direta da pena de demissão",
-                "C) arquivamento do processo, aplicação de advertência ou suspensão de até 30 dias, ou instauração de processo disciplinar",
-                "D) condenação criminal do servidor",
+                "A) destituição de cargo em comissão e demissão, dispensando-se o processo disciplinar quando houver confissão do servidor",
+                "B) aplicação direta da pena de demissão, desde que assegurado ao servidor o direito de defesa na própria sindicância",
+                "C) arquivamento do processo, advertência ou suspensão de até 30 dias, ou instauração de processo disciplinar",
+                "D) advertência ou suspensão de até 90 dias, vedada a instauração de processo disciplinar sobre os mesmos fatos apurados",
                 "E) cassação da aposentadoria"
             ],
             "correta": 2,
@@ -15609,7 +15609,7 @@ window.bancoDeQuestoes = {
                 "B) apenas a perda de remuneração do dia de falta",
                 "C) advertência por escrito",
                 "D) suspensão por mais de 30 dias, demissão, cassação de aposentadoria ou disponibilidade, ou destituição de cargo em comissão ou função de confiança",
-                "E) qualquer penalidade, inclusive advertência"
+                "E) qualquer penalidade, inclusive advertência e suspensão de até 30 dias, bem como a destituição de cargo em comissão ou de função de confiança ocupada pelo servidor"
             ],
             "correta": 3,
             "comentario": "O art. 137 exige o PAD para as penalidades mais graves."
@@ -15618,8 +15618,8 @@ window.bancoDeQuestoes = {
             "id": 25237,
             "enunciado": "Como medida cautelar, a autoridade instauradora do processo disciplinar poderá afastar o servidor do exercício do cargo, segundo a Lei nº 1.794/2009, pelo prazo de até:",
             "opcoes": [
-                "A) tempo indeterminado, até o julgamento",
-                "B) 90 dias, com metade da remuneração",
+                "A) tempo indeterminado, até o julgamento final, sem prejuízo da remuneração",
+                "B) 90 dias, com metade da remuneração, prorrogável uma única vez por igual prazo",
                 "C) 60 dias, sem prejuízo da remuneração, prorrogável por igual prazo",
                 "D) 120 dias, improrrogáveis",
                 "E) 30 dias, sem remuneração"
@@ -15631,9 +15631,9 @@ window.bancoDeQuestoes = {
             "id": 25238,
             "enunciado": "O processo disciplinar, segundo a Lei nº 1.794/2009, será conduzido por comissão composta de:",
             "opcoes": [
-                "A) dois servidores quaisquer, efetivos ou comissionados",
+                "A) dois servidores quaisquer, efetivos ou comissionados, indicados pela chefia",
                 "B) representantes do sindicato e da imprensa",
-                "C) um único servidor, que atua como julgador",
+                "C) um único servidor estável, que atua como instrutor e julgador do processo",
                 "D) três servidores estáveis designados pela autoridade competente",
                 "E) cinco vereadores"
             ],
@@ -15645,9 +15645,9 @@ window.bancoDeQuestoes = {
             "enunciado": "As fases do processo disciplinar, conforme a Lei nº 1.794/2009, são:",
             "opcoes": [
                 "A) instauração, inquérito administrativo (instrução, defesa e relatório) e julgamento",
-                "B) sindicância, prisão e julgamento",
-                "C) denúncia, condenação e recurso",
-                "D) notificação, multa e arquivamento",
+                "B) sindicância obrigatória, inquérito policial (investigação, denúncia e defesa) e julgamento",
+                "C) denúncia, instrução (provas, interrogatório e defesa) e julgamento pela própria comissão",
+                "D) notificação, inquérito administrativo (instrução e relatório), recurso e arquivamento",
                 "E) instrução, sentença e execução penal"
             ],
             "correta": 0,
@@ -15657,11 +15657,11 @@ window.bancoDeQuestoes = {
             "id": 25240,
             "enunciado": "O prazo para a conclusão do processo disciplinar, segundo a Lei nº 1.794/2009, é de:",
             "opcoes": [
-                "A) 60 dias, contados da publicação do ato que constituir a comissão, prorrogável por igual prazo",
-                "B) 1 ano, prorrogável por mais 1 ano",
-                "C) 15 dias úteis",
-                "D) 30 dias, improrrogáveis",
-                "E) 120 dias, sem prorrogação"
+                "A) 60 dias da publicação do ato que constituir a comissão, prorrogável por igual prazo",
+                "B) 1 ano, contado da ciência do fato pela autoridade, prorrogável por mais 1 ano a critério da comissão",
+                "C) 15 dias úteis, contados da citação do indiciado, prorrogáveis enquanto houver provas a produzir",
+                "D) 30 dias, contados da publicação da portaria de instauração, improrrogáveis em qualquer hipótese",
+                "E) 120 dias, contados da instalação dos trabalhos da comissão, sem possibilidade de prorrogação"
             ],
             "correta": 0,
             "comentario": "O art. 143 fixa 60 dias, prorrogáveis por igual prazo quando as circunstâncias o exigirem."
@@ -15671,7 +15671,7 @@ window.bancoDeQuestoes = {
             "enunciado": "No processo disciplinar regido pela Lei nº 1.794/2009, o indiciado será citado para apresentar defesa escrita no prazo de:",
             "opcoes": [
                 "A) 30 dias, prorrogáveis indefinidamente",
-                "B) 15 dias; com dois indiciados, 30 dias para cada",
+                "B) 15 dias; havendo dois ou mais indiciados, o prazo será de 30 dias para cada um",
                 "C) 10 dias; havendo dois ou mais indiciados, o prazo será comum e de 20 dias",
                 "D) 48 horas",
                 "E) 5 dias para qualquer número de indiciados"
@@ -15683,9 +15683,9 @@ window.bancoDeQuestoes = {
             "id": 25242,
             "enunciado": "Segundo a Lei nº 1.794/2009, considera-se revel o indiciado que, regularmente citado, não apresentar defesa no prazo legal. Nesse caso:",
             "opcoes": [
-                "A) o servidor é automaticamente demitido",
+                "A) o servidor é automaticamente demitido, por abandono do processo disciplinar",
                 "B) o processo é arquivado",
-                "C) a comissão aplica a pena sem relatório",
+                "C) a comissão aplica a pena sem elaborar relatório, por ausência de defesa",
                 "D) o prazo de defesa não é devolvido",
                 "E) a autoridade instauradora designará um servidor como defensor dativo"
             ],
@@ -15697,8 +15697,8 @@ window.bancoDeQuestoes = {
             "enunciado": "No inquérito disciplinar da Lei nº 1.794/2009, o depoimento das testemunhas:",
             "opcoes": [
                 "A) será prestado oralmente e reduzido a termo, não sendo lícito à testemunha trazê-lo por escrito",
-                "B) é proibido quando a testemunha for servidor público",
-                "C) pode ser feito em conjunto com outras testemunhas",
+                "B) é proibido quando a testemunha for servidor público lotado no mesmo setor do servidor indiciado no processo",
+                "C) pode ser feito em conjunto com outras testemunhas, para que a comissão confronte as versões apresentadas",
                 "D) dispensa registro nos autos",
                 "E) deve ser sempre entregue por escrito"
             ],
@@ -15722,11 +15722,11 @@ window.bancoDeQuestoes = {
             "id": 25245,
             "enunciado": "Quanto ao julgamento do processo disciplinar, a Lei nº 1.794/2009 estabelece que:",
             "opcoes": [
-                "A) a autoridade nunca pode discordar do relatório",
+                "A) a autoridade nunca pode discordar do relatório, ficando vinculada à conclusão apresentada pela comissão",
                 "B) o relatório da comissão é dispensável",
-                "C) a autoridade pode agravar a pena sem motivação",
+                "C) a autoridade pode agravar a pena proposta pela comissão sem necessidade de qualquer motivação",
                 "D) a autoridade acatará o relatório da comissão, salvo quando contrário às provas dos autos",
-                "E) o julgamento é feito pela própria comissão"
+                "E) o julgamento é feito pela própria comissão, cabendo à autoridade apenas publicar a decisão"
             ],
             "correta": 3,
             "comentario": "O art. 159 exige que o julgamento siga o relatório, salvo se contrário às provas; nesse caso, a autoridade pode, motivadamente, agravar, abrandar ou isentar."
@@ -15735,11 +15735,11 @@ window.bancoDeQuestoes = {
             "id": 25246,
             "enunciado": "Segundo a Lei nº 1.794/2009, o servidor que responde a processo disciplinar:",
             "opcoes": [
-                "A) perde imediatamente a remuneração",
-                "B) é automaticamente aposentado",
-                "C) só poderá ser exonerado a pedido ou aposentado voluntariamente após a conclusão do processo e o cumprimento da penalidade, se aplicada",
-                "D) pode pedir exoneração a qualquer momento para encerrar o processo",
-                "E) pode escolher os membros da comissão"
+                "A) perde imediatamente a remuneração, que só será restituída se for absolvido ao final do processo",
+                "B) é afastado automaticamente do cargo, sem remuneração, até o julgamento final do processo disciplinar",
+                "C) só poderá ser exonerado a pedido ou aposentado voluntariamente após a conclusão do processo",
+                "D) pode pedir exoneração a qualquer momento, o que encerra o processo e extingue a punibilidade",
+                "E) pode recusar os membros da comissão sem justificativa e indicar servidores de sua confiança"
             ],
             "correta": 2,
             "comentario": "O art. 163 impede que o servidor use a exoneração ou a aposentadoria voluntária para escapar do processo."
@@ -15752,7 +15752,7 @@ window.bancoDeQuestoes = {
                 "B) o ônus da prova cabe à administração",
                 "C) pode ocorrer a qualquer tempo, diante de fatos novos, e dela não poderá resultar agravamento da penalidade",
                 "D) pode resultar em pena mais grave",
-                "E) a simples alegação de injustiça da pena basta para revisá-la"
+                "E) a simples alegação de injustiça da pena basta para revisá-la, desde que o pedido seja feito pelo próprio servidor"
             ],
             "correta": 2,
             "comentario": "Os arts. 165 a 173 permitem a revisão a qualquer tempo com fatos novos. O ônus da prova é do requerente (art. 166), a mera alegação de injustiça não basta (art. 167) e não pode haver agravamento (art. 173, parágrafo único)."
@@ -15762,10 +15762,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Lei nº 1.794/2009, as denúncias sobre irregularidades serão objeto de apuração desde que:",
             "opcoes": [
                 "A) sejam publicadas em rede social",
-                "B) contenham a identificação e o endereço do denunciante e sejam formuladas por escrito, confirmada a autenticidade",
-                "C) tenham a assinatura de três testemunhas",
-                "D) sejam apresentadas por advogado",
-                "E) sejam feitas por telefone, de forma anônima"
+                "B) contenham a identificação e o endereço do denunciante e sejam formuladas por escrito",
+                "C) tenham a assinatura de três testemunhas e sejam registradas em cartório antes do protocolo",
+                "D) sejam apresentadas por advogado constituído, com procuração específica para o caso denunciado",
+                "E) sejam feitas por telefone, de forma anônima, à ouvidoria do órgão em que o servidor atua"
             ],
             "correta": 1,
             "comentario": "O art. 135 exige identificação e endereço do denunciante, por escrito. Se o fato não configurar infração ou ilícito penal, a denúncia é arquivada."
