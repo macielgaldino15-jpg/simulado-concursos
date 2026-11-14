@@ -13396,26 +13396,26 @@ window.bancoDeQuestoes = {
             "enunciado": "O ofício circular é utilizado quando:",
             "opcoes": [
                 "A) a mesma comunicação é dirigida a vários destinatários ao mesmo tempo",
-                "B) o documento é dirigido a um único cidadão",
-                "C) se deseja homenagear uma personalidade",
-                "D) se pretende registrar a ata da sessão",
-                "E) o documento tem caráter sigiloso e pessoal"
+                "B) a comunicação é dirigida a um único destinatário de hierarquia superior",
+                "C) a comunicação circula apenas entre setores do mesmo órgão, sem sair dele",
+                "D) o documento precisa retornar ao remetente com o ciente de cada leitor",
+                "E) o assunto tem caráter sigiloso e deve ser lido somente pelo destinatário"
             ],
             "correta": 0,
-            "comentario": "O ofício circular leva o mesmo conteúdo a vários destinatários, como todas as secretarias ou todos os gabinetes."
+            "comentario": "O ofício circular leva o mesmo conteúdo a vários destinatários ao mesmo tempo, como todas as secretarias ou todos os gabinetes. Desde a 3ª edição do Manual, a comunicação interna também é feita por ofício."
         },
         {
             "id": 25067,
             "enunciado": "Na redação oficial, a PADRONIZAÇÃO dos documentos tem como finalidade:",
             "opcoes": [
-                "A) dispensar a assinatura",
-                "B) impedir a leitura por cidadãos",
+                "A) dispensar a assinatura, já que o formato padronizado identifica o órgão emissor",
+                "B) permitir que cada setor adote o próprio modelo, desde que mantenha a formalidade",
                 "C) facilitar a identificação, a leitura e o arquivamento das comunicações",
-                "D) permitir o uso de linguagem informal",
-                "E) tornar os documentos mais longos"
+                "D) assegurar que o texto seja longo o bastante para registrar todos os detalhes",
+                "E) substituir a numeração dos documentos pelo nome do redator responsável"
             ],
             "correta": 2,
-            "comentario": "Seguir um padrão de diagramação e estrutura torna as comunicações uniformes e facilita a gestão documental."
+            "comentario": "Seguir um padrão de diagramação e estrutura torna as comunicações uniformes e facilita a identificação, a leitura e a gestão documental. A padronização não dispensa assinatura nem numeração."
         },
         {
             "id": 25068,
@@ -13434,27 +13434,27 @@ window.bancoDeQuestoes = {
             "id": 25069,
             "enunciado": "Segundo a Lei nº 8.159/1991, é dever do Poder Público:",
             "opcoes": [
-                "A) transferir seus arquivos para empresas privadas",
-                "B) eliminar todos os documentos com mais de cinco anos",
-                "C) manter em sigilo todos os documentos públicos",
-                "D) a gestão documental e a proteção especial a documentos de arquivos, como instrumento de apoio à administração, à cultura e ao desenvolvimento científico",
-                "E) guardar somente os documentos digitais"
+                "A) a transferência da guarda dos arquivos públicos a entidades privadas especializadas em gestão documental",
+                "B) a eliminação dos documentos de arquivo após cinco anos, liberando espaço físico para a administração",
+                "C) a manutenção em sigilo dos documentos públicos, salvo autorização judicial ou do chefe do Poder",
+                "D) a gestão documental e a proteção especial a documentos de arquivos, como apoio à administração, à cultura e à ciência",
+                "E) a preservação apenas dos documentos em meio digital, com a eliminação progressiva dos originais em papel"
             ],
             "correta": 3,
-            "comentario": "O art. 1º da Lei nº 8.159/1991 atribui ao Poder Público a gestão documental e a proteção especial aos documentos de arquivo, também como elementos de prova e informação."
+            "comentario": "O art. 1º da Lei nº 8.159/1991 diz que é dever do Poder Público a gestão documental e a proteção especial a documentos de arquivos, como instrumento de apoio à administração, à cultura, ao desenvolvimento científico e como elementos de prova e informação."
         },
         {
             "id": 25070,
             "enunciado": "A Lei nº 8.159/1991 considera \"arquivos\" os conjuntos de documentos produzidos e recebidos por órgãos públicos e entidades privadas em decorrência do exercício de atividades específicas:",
             "opcoes": [
-                "A) apenas quando produzidos pelo Poder Executivo",
+                "A) desde que produzidos por órgãos do Poder Executivo e registrados em papel",
                 "B) qualquer que seja o suporte da informação ou a natureza dos documentos",
-                "C) desde que tenham mais de dez anos",
-                "D) apenas quando registrados em papel",
-                "E) somente se tiverem valor histórico"
+                "C) desde que tenham mais de dez anos e valor histórico reconhecido",
+                "D) desde que registrados em papel, excluídos os documentos em meio digital",
+                "E) desde que recolhidos ao arquivo permanente da instituição produtora"
             ],
             "correta": 1,
-            "comentario": "O art. 2º define arquivos independentemente do suporte: papel, meio digital, fotografia, áudio ou vídeo."
+            "comentario": "O art. 2º da Lei nº 8.159/1991 define arquivos independentemente do suporte (papel, meio digital, fotografia, áudio ou vídeo) e da natureza dos documentos. A idade e o valor histórico não são requisitos da definição."
         },
         {
             "id": 25071,
@@ -13538,14 +13538,14 @@ window.bancoDeQuestoes = {
             "id": 25077,
             "enunciado": "A eliminação de documentos produzidos por instituições públicas, segundo a Lei nº 8.159/1991:",
             "opcoes": [
-                "A) depende apenas de decisão do setor que produziu o documento",
-                "B) é proibida em qualquer caso",
-                "C) pode ser feita livremente por qualquer servidor",
-                "D) só pode ocorrer por ordem judicial",
+                "A) depende apenas de decisão da chefia do setor que produziu o documento",
+                "B) é vedada em qualquer caso, pois todo documento público é permanente",
+                "C) pode ser feita por qualquer servidor, após o prazo da tabela de temporalidade",
+                "D) depende de ordem judicial que reconheça a perda de valor do documento",
                 "E) depende de autorização da instituição arquivística pública, na sua esfera de competência"
             ],
             "correta": 4,
-            "comentario": "O art. 9º condiciona a eliminação à autorização da instituição arquivística pública competente, observando os prazos da tabela de temporalidade."
+            "comentario": "O art. 9º da Lei nº 8.159/1991 condiciona a eliminação de documentos públicos à autorização da instituição arquivística pública, na sua específica esfera de competência, observando os prazos da tabela de temporalidade. Nem o setor produtor nem o servidor decidem sozinhos."
         },
         {
             "id": 25078,
@@ -13590,27 +13590,27 @@ window.bancoDeQuestoes = {
             "id": 25081,
             "enunciado": "O setor de protocolo é responsável, entre outras atividades, por:",
             "opcoes": [
-                "A) eliminar documentos sem autorização",
+                "A) avaliar os documentos produzidos pelo órgão e autorizar a eliminação dos que perderam o valor",
                 "B) receber, registrar, classificar, distribuir, controlar a tramitação e expedir documentos",
-                "C) julgar os recursos administrativos",
-                "D) aprovar os pareceres das comissões",
-                "E) elaborar as leis municipais"
+                "C) guardar os documentos de valor permanente e atender os pesquisadores interessados no acervo",
+                "D) elaborar as minutas de ofícios, memorandos e despachos que serão assinados pela autoridade",
+                "E) restaurar e higienizar os documentos danificados pelo uso frequente ou pela ação do tempo"
             ],
             "correta": 1,
-            "comentario": "O protocolo controla a entrada, o registro, a distribuição, a movimentação e a saída dos documentos da instituição."
+            "comentario": "O protocolo controla a entrada, o registro, a classificação, a distribuição, a movimentação e a saída dos documentos. Avaliação e eliminação dependem de comissão e de autorização própria; guarda permanente e atendimento a pesquisadores são do arquivo permanente."
         },
         {
             "id": 25082,
             "enunciado": "A autuação de um documento, no protocolo, corresponde a:",
             "opcoes": [
                 "A) transformá-lo em processo, com capa, numeração e registro próprios",
-                "B) devolvê-lo ao remetente",
-                "C) digitalizá-lo sem registro",
-                "D) arquivá-lo definitivamente",
-                "E) eliminá-lo após o uso"
+                "B) juntá-lo a um processo já existente, sem atribuir-lhe novo número",
+                "C) registrá-lo apenas no livro de entrada, sem formar processo",
+                "D) transferi-lo ao arquivo intermediário após o fim da tramitação",
+                "E) digitalizá-lo e eliminar o original após a conferência da cópia"
             ],
             "correta": 0,
-            "comentario": "Autuar é formar o processo: o documento recebe capa, número único e passa a ter tramitação controlada."
+            "comentario": "Autuar é formar o processo: o documento recebe capa, número único e passa a ter tramitação controlada. Juntar um documento a processo já existente é juntada, não autuação."
         },
         {
             "id": 25083,
@@ -13655,27 +13655,27 @@ window.bancoDeQuestoes = {
             "id": 25086,
             "enunciado": "A avaliação de documentos, na gestão documental, consiste em:",
             "opcoes": [
-                "A) verificar a ortografia do texto",
+                "A) classificar os documentos por assunto, conforme o plano de classificação",
                 "B) analisar os documentos para definir seus prazos de guarda e sua destinação final",
-                "C) calcular o custo de impressão",
-                "D) decidir quais servidores podem ser promovidos",
-                "E) dar nota à qualidade da redação"
+                "C) registrar a entrada dos documentos e controlar sua tramitação interna",
+                "D) ordenar os documentos dentro de cada pasta, por data ou por número",
+                "E) verificar a autenticidade das assinaturas antes do arquivamento"
             ],
             "correta": 1,
-            "comentario": "A avaliação identifica os valores dos documentos (administrativo, legal, histórico) e define quanto tempo guardá-los e se serão eliminados ou preservados."
+            "comentario": "A avaliação identifica os valores dos documentos (administrativo, legal, histórico) e define quanto tempo guardá-los e se serão eliminados ou preservados. Classificar por assunto é classificação; registrar e controlar a tramitação é tarefa do protocolo."
         },
         {
             "id": 25087,
             "enunciado": "Segundo a Lei nº 8.159/1991, aquele que desfigurar ou destruir documentos de valor permanente ou considerado de interesse público e social:",
             "opcoes": [
-                "A) recebe apenas advertência verbal",
-                "B) só responde se for servidor efetivo",
-                "C) não sofre qualquer sanção",
-                "D) deve apenas pagar o custo do papel",
-                "E) será responsabilizado penal, civil e administrativamente, na forma da legislação em vigor"
+                "A) responde apenas administrativamente, se for servidor público efetivo",
+                "B) responde apenas civilmente, ressarcindo o valor histórico estimado",
+                "C) fica isento de sanção, se o documento já tiver sido digitalizado",
+                "D) responde penalmente somente se a destruição causar prejuízo financeiro",
+                "E) será responsabilizado penal, civil e administrativamente, na forma da lei"
             ],
             "correta": 4,
-            "comentario": "O art. 25 prevê a responsabilização penal, civil e administrativa de quem destruir ou desfigurar documentos de valor permanente."
+            "comentario": "O art. 25 da Lei nº 8.159/1991 prevê a responsabilidade penal, civil e administrativa, na forma da legislação em vigor, de quem desfigurar ou destruir documentos de valor permanente ou considerado de interesse público e social."
         },
         {
             "id": 25088,
@@ -13694,92 +13694,92 @@ window.bancoDeQuestoes = {
             "id": 25089,
             "enunciado": "Ao receber um documento no protocolo, o primeiro procedimento a ser adotado, em regra, é:",
             "opcoes": [
-                "A) enviá-lo ao arquivo permanente",
+                "A) encaminhá-lo diretamente ao destinatário, deixando o registro para depois",
                 "B) conferir e registrar o documento, atribuindo-lhe número e data de entrada",
-                "C) arquivá-lo definitivamente",
-                "D) publicá-lo no Diário Oficial",
-                "E) eliminá-lo se estiver repetido"
+                "C) autuá-lo imediatamente como processo, qualquer que seja o assunto",
+                "D) classificá-lo e enviá-lo ao arquivo intermediário para guarda",
+                "E) digitalizá-lo e devolver o original ao remetente no mesmo dia"
             ],
             "correta": 1,
-            "comentario": "O recebimento começa com a conferência (se está completo e endereçado corretamente) e o registro, que permite o controle da tramitação."
+            "comentario": "O recebimento começa com a conferência (se o documento está completo e endereçado corretamente) e o registro, com número e data de entrada, que permite o controle da tramitação. Nem todo documento vira processo."
         },
         {
             "id": 25090,
             "enunciado": "A digitalização de documentos em papel:",
             "opcoes": [
-                "A) é proibida pela legislação arquivística",
-                "B) dispensa a tabela de temporalidade",
-                "C) facilita o acesso e a consulta, mas não autoriza, por si só, a eliminação dos originais sem observar as regras de gestão documental",
-                "D) permite eliminar imediatamente todos os originais",
-                "E) substitui a necessidade de classificação"
+                "A) é vedada pela legislação arquivística para documentos de valor permanente",
+                "B) dispensa a tabela de temporalidade, pois a cópia digital substitui o original",
+                "C) facilita o acesso e a consulta, mas não autoriza, por si só, a eliminação dos originais",
+                "D) autoriza a eliminação imediata dos originais, desde que a cópia seja conferida",
+                "E) substitui a classificação, pois a busca digital dispensa o plano de classificação"
             ],
             "correta": 2,
-            "comentario": "A digitalização melhora o acesso, mas a destinação dos originais deve seguir a tabela de temporalidade e a autorização da instituição arquivística."
+            "comentario": "A digitalização melhora o acesso, mas a destinação dos originais deve seguir a tabela de temporalidade e a autorização da instituição arquivística. Ela também não substitui a classificação dos documentos."
         },
         {
             "id": 25091,
             "enunciado": "A teoria das três idades dos documentos relaciona-se ao(à):",
             "opcoes": [
-                "A) idade dos servidores que trabalham no arquivo",
-                "B) quantidade de assinaturas exigidas",
-                "C) tempo de duração de cada legislatura",
-                "D) número de cópias de cada documento",
+                "A) classificação dos documentos em ostensivos, reservados e secretos",
+                "B) divisão do acervo entre os arquivos do Executivo, do Legislativo e do Judiciário",
+                "C) ordem de tramitação do processo: protocolo, setor técnico e arquivo",
+                "D) separação dos documentos em originais, cópias e versões digitais",
                 "E) ciclo de vida dos documentos, em fases corrente, intermediária e permanente"
             ],
             "correta": 4,
-            "comentario": "A teoria das três idades organiza os documentos conforme a frequência de uso e o valor, desde a produção até a destinação final."
+            "comentario": "A teoria das três idades organiza os documentos conforme a frequência de uso e o valor: corrente (uso frequente), intermediária (uso eventual, aguardando destinação) e permanente (valor histórico, guarda definitiva)."
         },
         {
             "id": 25092,
             "enunciado": "Um cidadão chega ao Serviço de Informação ao Cidadão (SIC) da Câmara querendo saber quanto foi gasto com diárias no último ano. O servidor deve:",
             "opcoes": [
                 "A) registrar o pedido de acesso, informar o número de protocolo e o prazo legal de resposta",
-                "B) orientar o cidadão a procurar a imprensa",
-                "C) pedir que o cidadão volte com um advogado",
-                "D) negar o pedido, pois diárias são informações sigilosas",
-                "E) exigir que o cidadão explique por que deseja a informação"
+                "B) registrar o pedido somente depois que o cidadão justificar o uso da informação",
+                "C) negar o pedido, pois gastos com diárias são informações pessoais dos servidores",
+                "D) orientar o cidadão a protocolar o pedido por escrito, com firma reconhecida",
+                "E) informar que o pedido só será analisado após a aprovação das contas do ano"
             ],
             "correta": 0,
-            "comentario": "O SIC deve protocolar o pedido, informar o prazo (até 20 dias, prorrogável por 10) e não pode exigir justificativa do requerente."
+            "comentario": "O SIC deve protocolar o pedido e informar o prazo (até 20 dias, prorrogável por mais 10). A LAI proíbe exigir os motivos do pedido (art. 10, § 3º) e exigências que inviabilizem a solicitação, como firma reconhecida. Gastos com diárias são informação de interesse público."
         },
         {
             "id": 25093,
             "enunciado": "Na rotina do SIC, quando a informação pedida já está publicada no portal da transparência, o servidor pode:",
             "opcoes": [
-                "A) cobrar taxa pela indicação",
+                "A) cobrar taxa pela pesquisa, já que a informação está disponível em meio público",
                 "B) indicar ao requerente, por escrito, o local e a forma de acessá-la",
-                "C) recusar-se a responder",
-                "D) arquivar o pedido sem resposta",
-                "E) exigir que o cidadão compareça presencialmente"
+                "C) arquivar o pedido sem resposta, pois a informação já é pública",
+                "D) exigir que o requerente consulte o portal antes de apresentar novo pedido",
+                "E) responder somente se o requerente comparecer presencialmente ao SIC"
             ],
             "correta": 1,
-            "comentario": "A LAI (art. 11, § 6º) permite indicar onde e como acessar a informação já disponível, salvo se o requerente declarar não ter meios para isso."
+            "comentario": "A LAI (art. 11, § 6º) permite indicar, por escrito, o lugar e a forma de acessar a informação já disponível, desobrigando o órgão de fornecê-la diretamente, salvo se o requerente declarar não dispor de meios para acessá-la. O pedido não pode ficar sem resposta."
         },
         {
             "id": 25094,
             "enunciado": "O prazo para responder a um pedido de acesso à informação que não pode ser atendido de imediato é de até 20 dias. Esse prazo pode ser prorrogado:",
             "opcoes": [
-                "A) por mais 20 dias, sem necessidade de justificativa",
-                "B) indefinidamente, até que a informação fique pronta",
-                "C) apenas com autorização do Prefeito",
+                "A) por mais 20 dias, sem necessidade de justificativa ao requerente",
+                "B) por mais 10 dias, sem necessidade de comunicação ao requerente",
+                "C) por mais 30 dias, mediante autorização da autoridade máxima do órgão",
                 "D) por mais 10 dias, mediante justificativa expressa, com ciência do requerente",
-                "E) por 60 dias, se a Câmara estiver em recesso"
+                "E) por quantas vezes forem necessárias, sempre mediante justificativa expressa"
             ],
             "correta": 3,
-            "comentario": "O art. 11, § 2º, da LAI permite uma única prorrogação de 10 dias, com justificativa e comunicação ao requerente."
+            "comentario": "O art. 11, § 2º, da LAI permite prorrogar o prazo de 20 dias por mais 10 dias, mediante justificativa expressa, da qual será cientificado o requerente."
         },
         {
             "id": 25095,
             "enunciado": "Durante o atendimento presencial, a técnica de \"escuta ativa\" consiste em:",
             "opcoes": [
-                "A) encaminhar o cidadão a outro setor sem ouvi-lo",
-                "B) responder antes que o cidadão termine de falar, para ganhar tempo",
+                "A) anotar as palavras do cidadão e encaminhá-lo ao setor responsável sem fazer perguntas",
+                "B) antecipar a resposta assim que identificar o assunto, para reduzir o tempo de espera",
                 "C) ouvir o cidadão com atenção, sem interrompê-lo, e confirmar o entendimento antes de responder",
-                "D) olhar o celular enquanto o cidadão explica o problema",
-                "E) repetir sempre a mesma resposta padrão"
+                "D) ouvir o cidadão em silêncio e responder com a orientação padrão do setor",
+                "E) pedir que o cidadão escreva o problema, para evitar mal-entendidos na conversa"
             ],
             "correta": 2,
-            "comentario": "A escuta ativa demonstra respeito e evita mal-entendidos: o servidor ouve, faz perguntas e confirma o que entendeu."
+            "comentario": "A escuta ativa demonstra respeito e evita mal-entendidos: o servidor ouve sem interromper, faz perguntas quando necessário e confirma o que entendeu antes de responder."
         },
         {
             "id": 25096,
@@ -13798,37 +13798,37 @@ window.bancoDeQuestoes = {
             "id": 25097,
             "enunciado": "Quando o servidor não sabe responder a uma dúvida do cidadão, a atitude mais adequada é:",
             "opcoes": [
-                "A) inventar uma resposta para não parecer despreparado",
-                "B) pedir que o cidadão procure a informação na internet",
-                "C) dizer que o assunto não é problema dele",
-                "D) encerrar o atendimento sem explicação",
-                "E) informar que vai verificar ou encaminhar ao setor competente, orientando o cidadão sobre o próximo passo"
+                "A) dar a resposta que considerar mais provável, para não deixar o cidadão sem retorno",
+                "B) orientar o cidadão a buscar a informação no portal, sem indicar onde ela está",
+                "C) pedir que o cidadão retorne outro dia, quando o servidor responsável estiver presente",
+                "D) encaminhar o cidadão a outro setor, sem verificar se é o setor competente",
+                "E) informar que vai verificar ou encaminhar ao setor competente, orientando sobre o próximo passo"
             ],
             "correta": 4,
-            "comentario": "Ser honesto e encaminhar corretamente evita informações erradas e mostra compromisso com a solução do problema do cidadão."
+            "comentario": "Ser honesto e encaminhar corretamente evita informações erradas e mostra compromisso com a solução. Dar uma resposta 'provável' ou mandar o cidadão de um setor a outro sem verificar são falhas comuns."
         },
         {
             "id": 25098,
             "enunciado": "Segundo a Lei nº 10.048/2000, têm direito a atendimento prioritário, entre outros:",
             "opcoes": [
-                "A) apenas pessoas acompanhadas de advogado",
-                "B) pessoas com deficiência, idosos com idade igual ou superior a 60 anos, gestantes, lactantes e pessoas com crianças de colo",
-                "C) apenas pessoas com mais de 80 anos",
-                "D) qualquer pessoa que chegue com pressa",
-                "E) somente servidores públicos"
+                "A) pessoas com deficiência, idosos a partir de 65 anos, gestantes, lactantes e pessoas com crianças de colo",
+                "B) pessoas com deficiência, idosos a partir de 60 anos, gestantes, lactantes e pessoas com crianças de colo",
+                "C) pessoas com deficiência, idosos a partir de 60 anos e gestantes, excluídas as lactantes",
+                "D) idosos a partir de 80 anos, gestantes e pessoas com deficiência, apenas em serviços de saúde",
+                "E) pessoas com deficiência e idosos a partir de 70 anos, apenas em órgãos públicos federais"
             ],
             "correta": 1,
-            "comentario": "A Lei nº 10.048/2000 garante atendimento prioritário a pessoas com deficiência, idosos (60 anos ou mais), gestantes, lactantes, pessoas com crianças de colo e obesos, entre outros grupos previstos."
+            "comentario": "A Lei nº 10.048/2000 garante atendimento prioritário a pessoas com deficiência, idosos com 60 anos ou mais, gestantes, lactantes, pessoas com crianças de colo e obesos, entre outros grupos previstos, em repartições públicas, empresas concessionárias e instituições financeiras."
         },
         {
             "id": 25099,
             "enunciado": "Segundo o Estatuto da Pessoa Idosa, entre as pessoas idosas, a prioridade especial no atendimento é assegurada às maiores de:",
             "opcoes": [
                 "A) 80 anos, que têm preferência em relação aos demais idosos",
-                "B) 65 anos, apenas em bancos",
-                "C) 70 anos, apenas em serviços de saúde",
-                "D) 60 anos, sem distinção entre eles",
-                "E) 75 anos, apenas em órgãos federais"
+                "B) 65 anos, que têm preferência em relação aos maiores de 60",
+                "C) 70 anos, que têm preferência apenas em serviços de saúde",
+                "D) 75 anos, que têm preferência em relação aos demais idosos",
+                "E) 85 anos, que têm preferência sobre gestantes e lactantes"
             ],
             "correta": 0,
             "comentario": "O Estatuto da Pessoa Idosa (art. 3º, § 2º) assegura prioridade especial aos maiores de 80 anos, atendendo-se suas necessidades sempre preferencialmente em relação aos demais idosos."
@@ -13837,14 +13837,14 @@ window.bancoDeQuestoes = {
             "id": 25100,
             "enunciado": "Um cidadão irritado eleva o tom de voz no balcão de atendimento. A conduta mais adequada do servidor é:",
             "opcoes": [
-                "A) encerrar o atendimento imediatamente",
-                "B) responder no mesmo tom para impor respeito",
+                "A) encerrar o atendimento e pedir que o cidadão retorne quando estiver mais calmo",
+                "B) responder com firmeza no mesmo tom, para deixar claro quem conduz o atendimento",
                 "C) manter a calma, ouvir, demonstrar disposição para ajudar e buscar uma solução dentro das normas",
-                "D) ignorar o cidadão até que ele se acalme sozinho",
-                "E) chamar outros cidadãos para testemunhar contra ele"
+                "D) aguardar em silêncio, sem responder, até que o cidadão se acalme sozinho",
+                "E) atender imediatamente o pedido do cidadão, mesmo fora das normas, para encerrar o conflito"
             ],
             "correta": 2,
-            "comentario": "O equilíbrio emocional é essencial no atendimento: ouvir, manter a cortesia e focar na solução costuma reduzir o conflito."
+            "comentario": "O equilíbrio emocional é essencial no atendimento: ouvir, manter a cortesia e focar na solução dentro das normas costuma reduzir o conflito. Ceder fora das regras ou responder no mesmo tom agrava a situação."
         },
         {
             "id": 25101,
