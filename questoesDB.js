@@ -12602,40 +12602,40 @@ window.bancoDeQuestoes = {
             "id": 25005,
             "enunciado": "Segundo a Constituição Federal, o subsídio dos Vereadores é fixado:",
             "opcoes": [
-                "A) pelo Prefeito, por decreto, a cada ano",
-                "B) pela Assembleia Legislativa do Estado",
+                "A) pelo Prefeito, por meio de lei de sua iniciativa, em cada legislatura para a subsequente",
+                "B) pelas respectivas Câmaras Municipais, em cada legislatura, para vigorar na própria legislatura",
                 "C) pelas respectivas Câmaras Municipais, em cada legislatura para a subsequente",
-                "D) pelo Tribunal de Contas, conforme a arrecadação",
-                "E) pelos próprios Vereadores, para a mesma legislatura"
+                "D) pela Assembleia Legislativa do Estado, em cada legislatura para a subsequente",
+                "E) pelas respectivas Câmaras Municipais, anualmente, conforme a receita do exercício anterior"
             ],
             "correta": 2,
-            "comentario": "O art. 29, VI, determina que o subsídio seja fixado pela Câmara em uma legislatura para valer na seguinte, evitando que o Vereador fixe o próprio subsídio do mandato em curso."
+            "comentario": "O art. 29, VI, da Constituição determina que o subsídio dos Vereadores seja fixado pelas respectivas Câmaras Municipais em cada legislatura para a subsequente. Assim, o Vereador não fixa o subsídio do próprio mandato em curso, e a fixação não cabe ao Prefeito nem à Assembleia Legislativa."
         },
         {
             "id": 25006,
             "enunciado": "A fiscalização do Município, segundo o art. 31 da Constituição Federal, será exercida:",
             "opcoes": [
-                "A) exclusivamente pelo Tribunal de Justiça do Estado",
-                "B) apenas pelo Prefeito, mediante controle interno",
-                "C) somente pelo Ministério Público",
+                "A) pelo Poder Executivo Municipal, mediante controle externo, e pela Câmara Municipal, mediante controle interno",
+                "B) pelo Tribunal de Contas do Estado, mediante controle externo exclusivo, sem participação da Câmara Municipal",
+                "C) pelo Poder Legislativo Municipal, mediante controle interno, e pelo Ministério Público, mediante controle externo",
                 "D) pelo Poder Legislativo Municipal, mediante controle externo, e pelos sistemas de controle interno do Poder Executivo Municipal",
-                "E) pelo Governador do Estado, com auxílio da Polícia Civil"
+                "E) pelo Poder Legislativo Municipal, mediante controle externo, e pelo Poder Judiciário, mediante controle interno"
             ],
             "correta": 3,
-            "comentario": "O art. 31, caput, atribui à Câmara o controle externo e ao Executivo os sistemas de controle interno."
+            "comentario": "O art. 31, caput, atribui à Câmara (Poder Legislativo Municipal) o controle externo e ao Executivo os sistemas de controle interno. O Tribunal de Contas auxilia a Câmara, mas não exerce o controle sozinho."
         },
         {
             "id": 25007,
             "enunciado": "O controle externo da Câmara Municipal será exercido:",
             "opcoes": [
                 "A) com o auxílio dos Tribunais de Contas dos Estados ou do Município, ou dos Conselhos ou Tribunais de Contas dos Municípios, onde houver",
-                "B) com o auxílio da Polícia Federal",
-                "C) sem qualquer auxílio técnico externo",
-                "D) exclusivamente pelo Poder Judiciário",
-                "E) pelo Tribunal Superior Eleitoral"
+                "B) com o auxílio do Tribunal de Contas da União, em todos os Municípios, inclusive onde houver Tribunal de Contas municipal",
+                "C) com o auxílio do Ministério Público Estadual, que emite parecer prévio vinculante sobre as contas do Prefeito",
+                "D) com o auxílio exclusivo do controle interno do Poder Executivo, vedada a participação de órgãos externos",
+                "E) com o auxílio de Tribunais de Contas municipais, que podem ser criados livremente por qualquer Município"
             ],
             "correta": 0,
-            "comentario": "O art. 31, § 1º, prevê o auxílio dos Tribunais de Contas no controle externo exercido pela Câmara."
+            "comentario": "O art. 31, § 1º, prevê que o controle externo da Câmara será exercido com o auxílio dos Tribunais de Contas dos Estados ou do Município, ou dos Conselhos ou Tribunais de Contas dos Municípios, onde houver. O § 4º do mesmo artigo proíbe a criação de novos Tribunais, Conselhos ou órgãos de Contas municipais."
         },
         {
             "id": 25008,
@@ -12654,14 +12654,14 @@ window.bancoDeQuestoes = {
             "id": 25009,
             "enunciado": "Segundo a Constituição Federal, as contas dos Municípios ficarão, durante sessenta dias, anualmente, à disposição de:",
             "opcoes": [
-                "A) apenas dos partidos políticos",
-                "B) exclusivamente dos servidores da Câmara",
+                "A) qualquer contribuinte, apenas para exame, vedado questionar-lhes a legitimidade",
+                "B) qualquer eleitor do Município, desde que mediante requerimento aprovado pela Mesa da Câmara",
                 "C) qualquer contribuinte, para exame e apreciação, que poderá questionar-lhes a legitimidade",
-                "D) somente do Ministério Público",
-                "E) apenas dos Vereadores da oposição"
+                "D) partidos políticos e entidades de classe, para exame e eventual representação ao Tribunal de Contas",
+                "E) Ministério Público e Tribunal de Contas, para exame e apreciação, em caráter sigiloso"
             ],
             "correta": 2,
-            "comentario": "O art. 31, § 3º, garante a qualquer contribuinte o exame das contas por sessenta dias por ano, podendo questionar sua legitimidade."
+            "comentario": "O art. 31, § 3º, determina que as contas dos Municípios fiquem, durante sessenta dias, anualmente, à disposição de qualquer contribuinte, para exame e apreciação, o qual poderá questionar-lhes a legitimidade, nos termos da lei. Não há restrição a eleitores, partidos ou órgãos de controle."
         },
         {
             "id": 25010,
@@ -12693,27 +12693,27 @@ window.bancoDeQuestoes = {
             "id": 25012,
             "enunciado": "Segundo a Constituição Federal, a Câmara Municipal não gastará mais de setenta por cento de sua receita com:",
             "opcoes": [
-                "A) publicidade institucional",
+                "A) folha de pagamento, excluído o gasto com o subsídio de seus Vereadores",
                 "B) folha de pagamento, incluído o gasto com o subsídio de seus Vereadores",
-                "C) diárias e passagens",
-                "D) obras de construção da sede",
-                "E) aquisição de material de consumo"
+                "C) despesas de custeio em geral, incluídos os gastos com diárias e publicidade",
+                "D) subsídio de seus Vereadores, excluídos os gastos com a folha dos servidores",
+                "E) obras e aquisição de bens permanentes, incluída a construção da sede"
             ],
             "correta": 1,
-            "comentario": "O art. 29-A, § 1º, limita a 70% da receita da Câmara o gasto com folha de pagamento, incluídos os subsídios dos Vereadores."
+            "comentario": "O art. 29-A, § 1º, da Constituição limita a 70% da receita da Câmara o gasto com folha de pagamento, incluído o gasto com o subsídio de seus Vereadores. O desrespeito a esse limite é crime de responsabilidade do Presidente da Câmara (§ 3º)."
         },
         {
             "id": 25013,
             "enunciado": "Segundo o art. 29-A, § 3º, da Constituição, constitui crime de responsabilidade do Presidente da Câmara Municipal:",
             "opcoes": [
-                "A) a convocação de sessão extraordinária",
-                "B) a instalação de comissão parlamentar de inquérito",
-                "C) a rejeição de veto do Prefeito",
-                "D) a nomeação de servidores aprovados em concurso",
-                "E) o desrespeito ao limite de gastos da Câmara com folha de pagamento"
+                "A) deixar de enviar o repasse à Câmara até o dia vinte de cada mês",
+                "B) enviar o repasse à Câmara a menor em relação à proporção fixada na lei orçamentária",
+                "C) efetuar repasse à Câmara que supere os limites definidos no art. 29-A",
+                "D) ter as contas anuais da Mesa da Câmara rejeitadas pelo Tribunal de Contas",
+                "E) desrespeitar o limite de gasto da Câmara com folha de pagamento"
             ],
             "correta": 4,
-            "comentario": "O § 3º do art. 29-A considera crime de responsabilidade do Presidente da Câmara o desrespeito ao § 1º, que limita a 70% o gasto com folha de pagamento."
+            "comentario": "O § 3º do art. 29-A considera crime de responsabilidade do Presidente da Câmara o desrespeito ao § 1º, que limita a 70% da receita da Câmara o gasto com folha de pagamento. As condutas ligadas ao repasse (superar os limites, não enviar até o dia vinte ou enviar a menor) são crimes de responsabilidade do Prefeito (§ 2º)."
         },
         {
             "id": 25014,
@@ -12732,27 +12732,27 @@ window.bancoDeQuestoes = {
             "id": 25015,
             "enunciado": "Compete aos Municípios, segundo o art. 30 da Constituição Federal:",
             "opcoes": [
-                "A) legislar sobre direito penal",
-                "B) organizar as Forças Armadas",
-                "C) legislar sobre assuntos de interesse local",
-                "D) legislar sobre direito eleitoral",
-                "E) emitir moeda"
+                "A) legislar sobre trânsito e transporte urbano, matéria de competência privativa municipal",
+                "B) legislar sobre direito do trabalho aplicável aos empregados de empresas locais",
+                "C) legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual",
+                "D) legislar sobre desapropriação de imóveis situados no território municipal",
+                "E) legislar sobre registros públicos e serviços de cartório sediados no Município"
             ],
             "correta": 2,
-            "comentario": "O art. 30, I, atribui ao Município a competência para legislar sobre assuntos de interesse local. Direito penal e eleitoral são competência privativa da União (art. 22)."
+            "comentario": "O art. 30, I e II, atribui ao Município legislar sobre assuntos de interesse local e suplementar a legislação federal e a estadual no que couber. Trânsito e transporte, direito do trabalho, desapropriação e registros públicos são competência privativa da União (art. 22)."
         },
         {
             "id": 25016,
             "enunciado": "É competência do Município, conforme o art. 30 da Constituição Federal:",
             "opcoes": [
-                "A) legislar sobre trânsito e transporte de forma privativa",
-                "B) julgar crimes cometidos no Município",
-                "C) organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos de interesse local, incluído o transporte coletivo",
-                "D) manter a Polícia Federal",
-                "E) autorizar a exploração de jazidas minerais"
+                "A) legislar privativamente sobre trânsito e transporte, inclusive o transporte coletivo intermunicipal e interestadual",
+                "B) organizar e manter, diretamente ou por convênio, a polícia civil e o corpo de bombeiros responsáveis pela segurança local",
+                "C) organizar e prestar, diretamente ou sob concessão ou permissão, os serviços públicos de interesse local, incluído o transporte coletivo",
+                "D) explorar diretamente, ou mediante concessão a empresa estatal, os serviços locais de gás canalizado no território municipal",
+                "E) autorizar, conceder e fiscalizar a pesquisa e a lavra de recursos minerais situados no território do Município"
             ],
             "correta": 2,
-            "comentario": "O art. 30, V, inclui entre as competências municipais os serviços públicos de interesse local, como o transporte coletivo, que tem caráter essencial."
+            "comentario": "O art. 30, V, inclui entre as competências municipais organizar e prestar os serviços públicos de interesse local, como o transporte coletivo, que tem caráter essencial. Os serviços locais de gás canalizado cabem aos Estados (art. 25, § 2º); trânsito e transporte e recursos minerais são da União; e as polícias civis e os bombeiros são organizados pelos Estados."
         },
         {
             "id": 25017,
@@ -12771,14 +12771,14 @@ window.bancoDeQuestoes = {
             "id": 25018,
             "enunciado": "A independência e a harmonia entre os Poderes, no Município, significa que:",
             "opcoes": [
-                "A) a Câmara pode julgar processos judiciais",
+                "A) a Câmara pode rever e anular os atos administrativos do Prefeito sempre que discordar do mérito deles",
                 "B) Câmara e Prefeitura exercem funções próprias, com controles recíprocos previstos na Constituição e na lei orgânica",
-                "C) o Prefeito pode dissolver a Câmara",
-                "D) a Câmara deve obedecer às ordens do Prefeito",
-                "E) os Vereadores podem exercer funções de Secretário sem se licenciar"
+                "C) o Prefeito pode dissolver a Câmara quando houver impasse na aprovação do orçamento anual",
+                "D) Câmara e Prefeitura exercem funções próprias, vedado qualquer controle de um Poder sobre o outro",
+                "E) a lei orgânica pode atribuir ao Prefeito a função de presidir as sessões da Câmara Municipal"
             ],
             "correta": 1,
-            "comentario": "Cada Poder tem atribuições próprias (legislar e fiscalizar, de um lado; administrar e executar, de outro), com mecanismos de controle mútuo, como o veto e a fiscalização das contas."
+            "comentario": "Cada Poder tem atribuições próprias (legislar e fiscalizar, de um lado; administrar e executar, de outro), com mecanismos de controle mútuo, como o veto e a fiscalização das contas. A independência não exclui esses controles, e nenhum Poder pode dissolver o outro."
         },
         {
             "id": 25019,
@@ -12810,14 +12810,14 @@ window.bancoDeQuestoes = {
             "id": 25021,
             "enunciado": "Segundo a Constituição Federal, os Vereadores, no exercício do mandato, estão sujeitos a proibições e incompatibilidades:",
             "opcoes": [
-                "A) idênticas às dos juízes de direito",
-                "B) definidas exclusivamente pelo Prefeito",
-                "C) que só valem nos anos eleitorais",
-                "D) que dispensam regulamentação na lei orgânica",
-                "E) similares, no que couber, às previstas para os membros do Congresso Nacional e, na Constituição do Estado, para os membros da Assembleia Legislativa"
+                "A) idênticas às previstas para os juízes de direito, definidas na Lei Orgânica da Magistratura e no Regimento Interno da Câmara",
+                "B) definidas exclusivamente pela lei orgânica municipal, sem nenhuma relação com as regras aplicáveis aos parlamentares federais",
+                "C) similares, no que couber, às previstas para os Prefeitos e Vice-Prefeitos na Constituição do Estado e na lei orgânica municipal",
+                "D) idênticas às previstas para os servidores efetivos no estatuto dos servidores municipais, inclusive quanto ao regime disciplinar",
+                "E) similares, no que couber, às dos membros do Congresso Nacional e, na Constituição do Estado, às dos membros da Assembleia Legislativa"
             ],
             "correta": 4,
-            "comentario": "O art. 29, IX, determina que as proibições e incompatibilidades dos Vereadores sejam similares, no que couber, às dos parlamentares federais e estaduais."
+            "comentario": "O art. 29, IX, determina que as proibições e incompatibilidades dos Vereadores sejam similares, no que couber, às dos membros do Congresso Nacional e, na Constituição do respectivo Estado, às dos membros da Assembleia Legislativa."
         },
         {
             "id": 25022,
@@ -12875,14 +12875,14 @@ window.bancoDeQuestoes = {
             "id": 25026,
             "enunciado": "O veto do chefe do Executivo a um projeto de lei, segundo o modelo da Constituição Federal, pode ter como fundamento:",
             "opcoes": [
-                "A) somente a vontade pessoal, sem necessidade de motivação",
-                "B) a opinião dos Secretários Municipais",
-                "C) apenas a falta de verbas",
-                "D) apenas a ausência de parecer de comissão",
+                "A) a vontade pessoal do chefe do Executivo, dispensada a motivação por se tratar de ato político",
+                "B) apenas a inconstitucionalidade, pois o veto por contrariedade ao interesse público foi abolido",
+                "C) apenas a contrariedade ao interesse público, pois a inconstitucionalidade só o Judiciário declara",
+                "D) a ausência de parecer favorável de todas as comissões por onde o projeto tramitou",
                 "E) a inconstitucionalidade (veto jurídico) ou a contrariedade ao interesse público (veto político)"
             ],
             "correta": 4,
-            "comentario": "O veto pode ser jurídico (o projeto é inconstitucional) ou político (contrário ao interesse público) e deve ser motivado."
+            "comentario": "Pelo modelo do art. 66, § 1º, da Constituição, o veto pode ser jurídico (o projeto é inconstitucional) ou político (contrário ao interesse público) e deve ser sempre expresso e motivado."
         },
         {
             "id": 25027,
@@ -13135,40 +13135,40 @@ window.bancoDeQuestoes = {
             "id": 25046,
             "enunciado": "São atributos da redação oficial, segundo o Manual de Redação da Presidência da República:",
             "opcoes": [
-                "A) uso livre de abreviações e expressões coloquiais",
-                "B) linguagem técnica rebuscada e frases longas",
+                "A) clareza, criatividade, objetividade, concisão, pessoalidade, informalidade e uso da norma-padrão",
+                "B) precisão, objetividade, prolixidade, coesão, impessoalidade, formalidade e linguagem técnica rebuscada",
                 "C) clareza, precisão, objetividade, concisão, coesão, impessoalidade, formalidade e uso da norma-padrão",
-                "D) criatividade, informalidade, uso de gírias e opiniões pessoais",
-                "E) subjetividade, emotividade e regionalismos"
+                "D) clareza, precisão, objetividade, concisão, coesão, pessoalidade, informalidade e uso da norma-padrão",
+                "E) clareza, precisão, criatividade, concisão, coesão, impessoalidade, formalidade e expressões coloquiais"
             ],
             "correta": 2,
-            "comentario": "O Manual define a redação oficial pela clareza, precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização, e uso da norma-padrão."
+            "comentario": "O Manual define a redação oficial pela clareza, precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização, e uso da norma-padrão. Criatividade, pessoalidade, informalidade, prolixidade e expressões coloquiais são o oposto do que se espera."
         },
         {
             "id": 25047,
             "enunciado": "A IMPESSOALIDADE na redação oficial significa que:",
             "opcoes": [
-                "A) é proibido o uso de pronomes de tratamento",
-                "B) o texto não deve ter destinatário definido",
-                "C) o redator deve usar a primeira pessoa e expressar opiniões",
+                "A) o redator deve evitar pronomes de tratamento, dirigindo-se ao destinatário sempre pelo nome",
+                "B) o texto é emitido em nome do redator, que responde pessoalmente pelo conteúdo comunicado",
+                "C) o redator pode usar a primeira pessoa e expressar opiniões, desde que mantenha a formalidade",
                 "D) o texto é emitido em nome do serviço público, sem impressões pessoais do redator",
-                "E) o documento dispensa assinatura"
+                "E) o documento dispensa assinatura, pois é emitido em nome do órgão, e não de uma pessoa"
             ],
             "correta": 3,
-            "comentario": "A comunicação oficial é feita em nome do órgão e trata de assuntos de interesse público, por isso evita marcas pessoais do redator."
+            "comentario": "A comunicação oficial é feita em nome do serviço público e trata de assuntos de interesse público, por isso evita impressões pessoais do redator. Isso não elimina os pronomes de tratamento nem a assinatura de quem expede o documento."
         },
         {
             "id": 25048,
             "enunciado": "A CONCISÃO, como atributo da redação oficial, consiste em:",
             "opcoes": [
-                "A) escrever textos curtos mesmo que fiquem incompletos",
+                "A) escrever textos curtos, ainda que algumas informações essenciais precisem ser omitidas",
                 "B) transmitir o máximo de informações com o mínimo de palavras, sem prejudicar o sentido",
-                "C) usar o maior número possível de sinônimos",
-                "D) omitir o assunto do documento",
-                "E) usar apenas siglas"
+                "C) usar sinônimos variados para evitar repetições, ainda que isso alongue o texto",
+                "D) substituir expressões por siglas sempre que possível, sem a necessidade de explicá-las",
+                "E) encadear as informações em frases longas, para não fragmentar o raciocínio do leitor"
             ],
             "correta": 1,
-            "comentario": "Concisão é eliminar palavras inúteis e repetições, mantendo a informação completa e clara."
+            "comentario": "Concisão é transmitir o máximo de informações com o mínimo de palavras: eliminar palavras inúteis e repetições, mas sem cortar informação essencial. Siglas sem explicação prejudicam a clareza."
         },
         {
             "id": 25049,
@@ -13187,14 +13187,14 @@ window.bancoDeQuestoes = {
             "id": 25050,
             "enunciado": "No padrão ofício, a identificação do expediente deve conter:",
             "opcoes": [
-                "A) somente a data, sem numeração",
-                "B) o nome do documento, o número, o ano e a sigla do órgão que o expede, como \"OFÍCIO Nº 123/2026/SG\"",
-                "C) o nome completo do redator e seu CPF",
-                "D) apenas o nome do destinatário",
-                "E) a palavra \"Urgente\" em todos os casos"
+                "A) o nome do documento e a data por extenso, dispensadas a numeração e a sigla do órgão",
+                "B) o nome do documento, o número, o ano e a sigla do órgão, como \"OFÍCIO Nº 123/2026/SG\"",
+                "C) o nome do documento, o nome do redator e a sigla do órgão, como \"OFÍCIO – João Silva/SG\"",
+                "D) o número e o ano, seguidos do nome do destinatário, como \"Nº 123/2026 – Sr. Presidente\"",
+                "E) o nome do documento, o número, o ano e a palavra urgente, como \"OFÍCIO Nº 123/2026 – URGENTE\""
             ],
             "correta": 1,
-            "comentario": "A identificação traz o tipo de documento, seu número, o ano de emissão e a sigla do órgão. Exemplo: OFÍCIO Nº 652/2018/SAA/SE/MT."
+            "comentario": "A identificação do expediente traz o tipo de documento, seu número, o ano de emissão e a sigla do órgão que o expede. Exemplo do Manual: OFÍCIO Nº 652/2018/SAA/SE/MT."
         },
         {
             "id": 25051,
@@ -13266,13 +13266,13 @@ window.bancoDeQuestoes = {
             "enunciado": "O Manual de Redação recomenda que o texto do ofício que encaminha documentos inicie, por exemplo, com:",
             "opcoes": [
                 "A) uma referência ao expediente ou ao assunto que motivou a comunicação, seguida do encaminhamento",
-                "B) a transcrição integral do regimento interno",
-                "C) a opinião pessoal do redator sobre o documento",
-                "D) uma saudação informal, como \"Olá, tudo bem?\"",
-                "E) uma lista de todos os servidores do setor"
+                "B) uma saudação cordial ao destinatário, seguida de agradecimentos pela atenção dispensada",
+                "C) a transcrição integral do documento encaminhado, para que o destinatário não precise abri-lo",
+                "D) uma avaliação pessoal do redator sobre a importância do documento, seguida do encaminhamento",
+                "E) a lista dos servidores que trabalharam no documento, seguida do encaminhamento"
             ],
             "correta": 0,
-            "comentario": "No ofício de encaminhamento, o primeiro parágrafo deve informar o expediente a que se refere (se houver) e o que está sendo encaminhado, de forma objetiva."
+            "comentario": "No ofício de encaminhamento, o primeiro parágrafo deve informar o expediente a que se refere (se houver) e o que está sendo encaminhado, de forma objetiva, sem saudações, opiniões pessoais ou transcrições desnecessárias."
         },
         {
             "id": 25057,
@@ -13330,11 +13330,11 @@ window.bancoDeQuestoes = {
             "id": 25061,
             "enunciado": "O Manual de Redação recomenda que, nas comunicações oficiais, os parágrafos do texto sejam:",
             "opcoes": [
-                "A) iniciados sempre com vocativo",
-                "B) redigidos em linguagem informal",
-                "C) escritos em letras maiúsculas",
-                "D) separados por asteriscos",
-                "E) numerados, exceto nos casos em que haja apenas um parágrafo ou no fecho"
+                "A) iniciados com o vocativo e numerados, inclusive o fecho e o próprio vocativo",
+                "B) numerados apenas quando o documento tiver mais de cinco parágrafos",
+                "C) separados por linhas em branco e nunca numerados, para facilitar a leitura",
+                "D) numerados com letras maiúsculas, inclusive o vocativo e o fecho",
+                "E) numerados, exceto quando houver apenas um parágrafo, e sem numerar o fecho"
             ],
             "correta": 4,
             "comentario": "No padrão ofício, os parágrafos do texto são numerados, salvo quando houver um só parágrafo. O vocativo e o fecho não são numerados."
@@ -13343,27 +13343,27 @@ window.bancoDeQuestoes = {
             "id": 25062,
             "enunciado": "Para garantir CLAREZA na redação de um ofício, o redator deve:",
             "opcoes": [
-                "A) escrever frases longas com várias orações intercaladas",
-                "B) usar palavras de sentido conhecido, frases em ordem direta e evitar jargões técnicos desnecessários",
-                "C) empregar regionalismos para aproximar o leitor",
-                "D) usar siglas sem explicar seu significado",
-                "E) usar o maior número possível de termos técnicos e estrangeiros"
+                "A) escrever frases longas, com várias orações intercaladas, para reunir todas as informações",
+                "B) usar palavras de sentido conhecido, frases em ordem direta e evitar jargões desnecessários",
+                "C) empregar regionalismos e expressões coloquiais, para aproximar o texto do leitor",
+                "D) usar siglas sem explicação, pois a repetição do nome por extenso prejudica a concisão",
+                "E) preferir termos técnicos e estrangeiros, que conferem maior precisão ao texto oficial"
             ],
             "correta": 1,
-            "comentario": "A clareza permite a compreensão imediata do texto pelo destinatário, exigindo vocabulário comum, ordem direta e explicação de siglas na primeira ocorrência."
+            "comentario": "A clareza permite a compreensão imediata do texto pelo destinatário, exigindo vocabulário comum, ordem direta e explicação das siglas na primeira ocorrência. Jargões, estrangeirismos e regionalismos dificultam a leitura."
         },
         {
             "id": 25063,
             "enunciado": "Segundo o Manual de Redação, ao empregar uma sigla pela primeira vez em um texto oficial, o redator deve:",
             "opcoes": [
-                "A) colocar a sigla entre aspas, sem o nome",
-                "B) evitar totalmente o uso de siglas",
+                "A) escrever apenas a sigla, entre aspas, e explicar seu significado em nota de rodapé",
+                "B) escrever a sigla seguida do nome entre parênteses, como \"LAI (Lei de Acesso à Informação)\"",
                 "C) escrever o nome por extenso seguido da sigla, como \"Lei de Acesso à Informação (LAI)\"",
-                "D) escrever a sigla em letras minúsculas",
-                "E) usar apenas a sigla, pois todos a conhecem"
+                "D) escrever o nome por extenso todas as vezes, pois siglas são vedadas em textos oficiais",
+                "E) usar apenas a sigla, desde que ela seja conhecida pelo órgão que emite o documento"
             ],
             "correta": 2,
-            "comentario": "Na primeira menção, usa-se o nome completo seguido da sigla entre parênteses. Depois, a sigla pode ser usada sozinha."
+            "comentario": "Na primeira menção, usa-se o nome completo seguido da sigla entre parênteses. Depois, a sigla pode ser usada sozinha. Siglas não são proibidas, mas precisam ser explicadas na primeira ocorrência."
         },
         {
             "id": 25064,
@@ -13382,14 +13382,14 @@ window.bancoDeQuestoes = {
             "id": 25065,
             "enunciado": "O despacho, em um processo administrativo, é:",
             "opcoes": [
-                "A) a manifestação da autoridade que dá andamento ao processo, como encaminhar, deferir ou indeferir um pedido",
-                "B) o pedido inicial do cidadão",
-                "C) a publicação de uma lei",
-                "D) a certidão de nascimento do interessado",
-                "E) o registro da sessão plenária"
+                "A) a manifestação da autoridade que dá andamento ao processo, deferindo, indeferindo ou encaminhando o pedido",
+                "B) o requerimento inicial apresentado pelo interessado para dar início ao processo",
+                "C) o documento que certifica a autenticidade das cópias e das peças juntadas aos autos do processo",
+                "D) o registro, em ata, das deliberações tomadas pelo Plenário durante a sessão",
+                "E) a comunicação escrita enviada a outro órgão para solicitar informações sobre o processo"
             ],
             "correta": 0,
-            "comentario": "O despacho é a decisão ou orientação da autoridade no processo, determinando providências ou decidindo sobre o pedido."
+            "comentario": "O despacho é a manifestação da autoridade no processo, determinando providências ou decidindo sobre o pedido. O pedido inicial é o requerimento; a comunicação a outro órgão é feita por ofício; e o registro das deliberações do Plenário é a ata."
         },
         {
             "id": 25066,
