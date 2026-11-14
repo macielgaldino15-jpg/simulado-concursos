@@ -33,7 +33,7 @@ const PROTEGIDOS = new Set(['index.html', 'questoesDB.js', 'questoes_PRF.js', 'q
 const PUBLICOS = {
   '/entrar': 'publico/entrar.html', '/admin': 'publico/admin.html', '/bem-vindo': 'publico/bem-vindo.html',
   '/termos': 'publico/termos.html', '/privacidade': 'publico/privacidade.html', '/rodape.js': 'publico/rodape.js',
-  '/conheca': 'publico/inicio.html',
+  '/conheca': 'publico/inicio.html', '/gratis': 'publico/gratis.html',
 };
 
 // ======================= ARMAZENAMENTO =======================

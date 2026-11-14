@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulado grátis — 10 questões com gabarito comentado</title>
+<meta name="description" content="Resolva 10 questões de concurso de graça, sem cadastro, com gabarito comentado. Câmara de Rio Branco, PRF, Petrobras e Polícia Civil.">
+<meta property="og:title" content="Simulado grátis: 10 questões, sem cadastro">
+<meta property="og:description" content="Escolha seu concurso, responda 10 questões e veja o gabarito comentado na hora.">
+<meta name="theme-color" content="#0A1830">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F4F6FA;color:#0F172A;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+.sg{font-family:'Space Grotesk',sans-serif}
+.narrow{max-width:640px;margin:0 auto;padding:0 16px}
+.top{background:radial-gradient(ellipse 90% 70% at 50% 0%,#13294F 0%,#0A1830 65%);color:#fff;padding:18px 0 84px}
+.brand{display:flex;align-items:center;gap:10px;font:700 17px 'Space Grotesk',sans-serif}
+.brand i{width:32px;height:32px;border-radius:9px;background:#1E6FD9;display:flex;align-items:center;justify-content:center}
+.pill{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:7px 14px;border-radius:99px;background:rgba(245,184,0,.14);border:1px solid rgba(245,184,0,.5);color:#F5B800;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.pill:before{content:"";width:7px;height:7px;border-radius:50%;background:#F5B800}
+.top h1{font:700 clamp(28px,7vw,40px)/1.08 'Space Grotesk',sans-serif;margin-top:14px;letter-spacing:-.01em}
+.top h1 em{font-style:normal;color:#F5B800}
+.top p.sub{margin-top:10px;color:#C7D2E5;font-size:16px;line-height:1.45}
+.card{background:#fff;border-radius:20px;box-shadow:0 24px 60px -20px rgba(10,24,48,.35),0 0 0 1px #E3E7F0;margin-top:-64px;overflow:hidden}
+.pad{padding:22px 20px}
+.h3{font:700 19px 'Space Grotesk',sans-serif}
+.muted{color:#475569;font-size:14px;line-height:1.5}
+/* escolha do concurso */
+.lista{display:grid;gap:10px;margin-top:16px}
+.conc{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid #E3E7F0;background:#fff;cursor:pointer;text-align:left;font:inherit;color:inherit;transition:border-color .15s,transform .1s}
+.conc:hover{border-color:#1E6FD9}.conc:active{transform:scale(.99)}
+.conc .e{font-size:24px;width:36px;text-align:center}
+.conc b{display:block;font-size:16px}.conc small{color:#64748B;font-size:13px}
+.conc .dest{margin-left:auto;font-size:11px;font-weight:700;color:#1A1300;background:#F5B800;border-radius:99px;padding:4px 9px;white-space:nowrap}
+.conc.on{border-color:#F5B800;background:#FFFBEB}
+.selos{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:16px;font-size:13px;color:#475569}
+.selos span:before{content:"✓ ";color:#15803D;font-weight:700}
+/* quiz */
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;color:#64748B}
+.qsub{font-weight:600;color:#1E5FC2}
+.bar{height:6px;border-radius:9px;background:#E3E7F0;margin:10px 0 16px;overflow:hidden}
+.bar div{height:100%;background:#1E6FD9;border-radius:9px;transition:width .3s}
+.qtext{font-size:17px;line-height:1.5;font-weight:500;white-space:pre-line}
+.opts{display:grid;gap:9px;margin-top:16px}
+.opt{display:flex;align-items:flex-start;gap:10px;width:100%;padding:12px 14px;border-radius:12px;border:1.5px solid #E3E7F0;background:#fff;text-align:left;font:inherit;font-size:15px;line-height:1.45;color:#0F172A;cursor:pointer}
+.opt:hover:not(:disabled){border-color:#1E6FD9;background:#F5F9FF}
+.opt b{color:#1E5FC2;min-width:18px}.opt span{flex:1}.opt i{font-style:normal;font-weight:700}
+.opt.ok{border-color:#15803D;background:#F0FDF4}.opt.ok i{color:#15803D}
+.opt.bad{border-color:#DC2626;background:#FEF2F2}.opt.bad i{color:#DC2626}
+.opt.off{opacity:.55}.opt:disabled{cursor:default}
+.why{margin-top:14px;padding:12px 14px;border-radius:12px;background:#F4F6FA;font-size:14px;line-height:1.5;color:#334155}
+.why strong{color:#0F172A}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;margin-top:16px;border:none;border-radius:14px;font:700 16px Inter,sans-serif;cursor:pointer;text-decoration:none}
+.btn.azul{background:#1E6FD9;color:#fff}.btn.azul:disabled{background:#B9C7DD;cursor:default}
+.btn.amar{background:#F5B800;color:#1A1300;box-shadow:0 5px 0 #B98500}
+.btn.ig{background:linear-gradient(90deg,#833AB4,#E1306C,#F77737);color:#fff}
+.btn.cl{background:#fff;color:#1E5FC2;border:1.5px solid #CBD5E1}
+.linkbtn{display:block;margin:14px auto 0;background:none;border:none;color:#64748B;font:500 14px Inter,sans-serif;text-decoration:underline;cursor:pointer}
+/* resultado */
+.res{text-align:center}
+.ring{position:relative;width:132px;height:132px;margin:4px auto 10px}
+.ring svg{transform:rotate(-90deg)}
+.ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 30px 'Space Grotesk',sans-serif}
+.res h2{font:700 24px 'Space Grotesk',sans-serif}
+.res p{margin-top:8px}
+.box{margin-top:18px;padding:16px;border-radius:14px;background:#0A1830;color:#fff;text-align:left}
+.box p{color:#C7D2E5;font-size:14px;line-height:1.5;margin-top:6px}
+.box .h3{color:#fff}
+.mini{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.mini span{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+body.emquiz .top h1,body.emquiz .top .sub,body.emquiz .top .pill{display:none}
+body.emquiz .top{padding-bottom:76px}
+#rodape{padding:28px 16px;text-align:center;font-size:12px;color:#64748B;line-height:1.5}
+#rodape p{margin:0 0 6px}#rodape a{color:#475569}
+#rodape p:nth-child(2),#rodape p:nth-child(3){display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px}
+</style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1160768672955431');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1160768672955431&amp;ev=PageView&amp;noscript=1"></noscript>
+</head>
+<body>
+<header class="top">
+  <div class="narrow">
+    <div class="brand"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></i>Simulados Concursos</div>
+    <span class="pill">Grátis · sem cadastro</span>
+    <h1 id="h1">Resolva <em>10 questões</em> e descubra como você está</h1>
+    <p class="sub" id="sub">Escolha seu concurso, responda e veja o gabarito comentado na hora. Leva uns 10 minutos.</p>
+  </div>
+</header>
+<main class="narrow">
+  <div class="card"><div class="pad" id="app"></div></div>
+</main>
+<footer id="rodape"></footer>
+<script src="/rodape.js"></script>
+<script>
+(function () {
+  var DADOS = {"cmrb":[{"s":"Língua Portuguesa","t":"Assinale a alternativa em que o acento indicativo de crase está empregado corretamente:","o":["O vereador começou à discursar logo após o intervalo regimental da sessão.","Encaminhamos o ofício à Vossa Excelência para conhecimento e providências.","O vereador votou à favor do projeto de lei apresentado pela Mesa.","A sessão foi encerrada à duas horas da tarde, após longa discussão.","O servidor entregou o requerimento à secretária da Mesa Diretora."],"c":4,"w":"Entregar algo \"a alguém\" (preposição) + \"a secretária\" (artigo) = à. Não há crase antes de verbo (a discursar), antes de pronome de tratamento (a Vossa Excelência) e na expressão \"a favor\"; com horas no plural, seria \"às duas horas\"."},{"s":"Língua Portuguesa","t":"Assinale a opção em que a frase apresenta paralelismo sintático adequado:","o":["O candidato gosta de ler livros, de escrever artigos e frequentar debates.","O chefe orientou a equipe a cumprir os prazos e a manter a organização.","O projeto exige dedicação, responsabilidade e que haja pontualidade.","O setor busca profissionais competentes, honestos e que tenham compromisso.","Precisamos analisar os custos, os prazos e verificar a viabilidade."],"c":1,"w":"O paralelismo sintático exige que elementos coordenados tenham a mesma estrutura gramatical. A alternativa B mantém a regência simétrica ('a cumprir' e 'a manter')."},{"s":"Raciocínio Lógico","t":"Numa progressão geométrica (PG) em que o primeiro termo é 2 e a razão é 3, a soma dos 4 primeiros termos é igual a:","o":["40","60","100","120","80"],"c":4,"w":"Termos da PG: 1º=2, 2º=6, 3º=18, 4º=54. Soma = 2 + 6 + 18 + 54 = 80."},{"s":"Noções de Informática","t":"No navegador, ao baixar um arquivo, ele normalmente é salvo, por padrão, na pasta:","o":["Windows","Lixeira","Área de transferência","Arquivos de Programas","Downloads"],"c":4,"w":"A pasta Downloads é o destino padrão dos arquivos baixados. O local pode ser alterado nas configurações do navegador."},{"s":"Ética no Serviço Público e Legislação","t":"Assinale a conduta adequada ao uso ético e seguro de tecnologias digitais por um servidor público:","o":["salvar processos com dados pessoais em pendrive particular sem proteção, para trabalhar em casa","compartilhar a senha do sistema com estagiários do setor para agilizar o trabalho de rotina","enviar documentos internos por aplicativo pessoal sem autorização","utilizar apenas sistemas e contas institucionais autorizados para tratar documentos do órgão","desativar o antivírus para instalar programas não homologados"],"c":3,"w":"Usar ferramentas autorizadas, não compartilhar credenciais e proteger os dados são medidas básicas de segurança da informação no serviço público."},{"s":"Ética no Serviço Público e Legislação","t":"Para a LGPD, \"tratamento\" de dados pessoais abrange:","o":["apenas a venda de dados a terceiros, já que o uso interno pela própria organização não é considerado tratamento","apenas o armazenamento em computadores e servidores, excluídos os dados mantidos em documentos de papel","toda operação realizada com dados pessoais, como coleta, armazenamento, compartilhamento e eliminação","somente a coleta inicial dos dados","somente a transferência internacional de dados, ou seja, o envio de informações para fora do território nacional"],"c":2,"w":"O art. 5º, X, define tratamento de forma ampla: coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, entre outras operações."},{"s":"Conhecimentos Específicos","t":"Segundo a Constituição Federal, a investidura em cargo ou emprego público depende, em regra, de:","o":["aprovação prévia em concurso público de provas ou de provas e títulos","entrevista com o chefe do setor e análise do histórico profissional do candidato","apresentação de currículo e carta de recomendação, seguida de análise da chefia","indicação da autoridade competente, desde que o indicado tenha nível superior completo","sorteio público entre os inscritos que comprovarem a escolaridade exigida para o cargo"],"c":0,"w":"O art. 37, II, exige concurso público, ressalvadas as nomeações para cargos em comissão declarados em lei de livre nomeação e exoneração."},{"s":"Conhecimentos Específicos","t":"O órgão diretor dos trabalhos legislativos e dos serviços administrativos da Câmara, normalmente composto por Presidente, Vice-Presidente e Secretários, é a:","o":["Corregedoria do Tribunal de Contas","Procuradoria-Geral do Município","Mesa Diretora","Comissão de Finanças","Ouvidoria"],"c":2,"w":"A Mesa Diretora dirige os trabalhos legislativos e a administração da Casa. Sua composição e competências estão no regimento interno."},{"s":"Conhecimentos Específicos","t":"A sanção de um projeto de lei aprovado pela Câmara Municipal é ato de competência:","o":["do Tribunal de Contas","do Presidente da Câmara","da Comissão de Constituição e Justiça","do Vereador autor do projeto","do Prefeito"],"c":4,"w":"A sanção (concordância) ou o veto (discordância) cabem ao chefe do Executivo, que no Município é o Prefeito."},{"s":"Conhecimentos Específicos","t":"A IMPESSOALIDADE na redação oficial significa que:","o":["o redator deve evitar pronomes de tratamento, dirigindo-se ao destinatário sempre pelo nome","o texto é emitido em nome do redator, que responde pessoalmente pelo conteúdo comunicado","o redator pode usar a primeira pessoa e expressar opiniões, desde que mantenha a formalidade","o texto é emitido em nome do serviço público, sem impressões pessoais do redator","o documento dispensa assinatura, pois é emitido em nome do órgão, e não de uma pessoa"],"c":3,"w":"A comunicação oficial é feita em nome do serviço público e trata de assuntos de interesse público, por isso evita impressões pessoais do redator. Isso não elimina os pronomes de tratamento nem a assinatura de quem expede o documento."}],"prf":[{"s":"Língua Portuguesa","t":"Assinale a alternativa em que a concordância verbal está correta:","o":["Vendem-se casas na região.","Consertam-se o carro da família.","Alugam-se um apartamento no centro.","Vende-se casas na região.","Precisam-se de funcionários."],"c":0,"w":"Na voz passiva sintética o verbo concorda com o sujeito paciente: “casas” (plural) → “Vendem-se casas”."},{"s":"Raciocínio Lógico","t":"A proposição composta 'Se o semáforo está vermelho, então o veículo para' só é FALSA quando:","o":["o semáforo está vermelho e o veículo para.","o semáforo não está vermelho e o veículo para.","o semáforo não está vermelho e o veículo não para.","o semáforo está vermelho e o veículo não para.","em nenhum caso; ela é sempre verdadeira."],"c":3,"w":"A condicional P → Q só é falsa quando o antecedente é verdadeiro e o consequente é falso (V → F)."},{"s":"Informática","t":"Em uma planilha, a função =SE(C2>=7;\"Aprovado\";\"Reprovado\"), com C2 igual a 6,5, retorna:","o":["um erro, pois a função não aceita decimais","6,5","Reprovado","VERDADEIRO","Aprovado"],"c":2,"w":"A função SE testa a condição C2 >= 7. Como 6,5 não é maior ou igual a 7, retorna o valor se falso: 'Reprovado'."},{"s":"Física","t":"Um veículo a 20 m/s freia com desaceleração constante de 5 m/s² até parar. A distância percorrida na frenagem é de:","o":["20 m","60 m","80 m","100 m","40 m"],"c":4,"w":"Por Torricelli: v² = 2·a·d → 400 = 10·d → d = 40 m."},{"s":"Legislação de Trânsito","t":"Segundo o art. 281, parágrafo único, II, do CTB, o auto de infração será arquivado e seu registro julgado insubsistente se a notificação da autuação não for expedida no prazo máximo de:","o":["90 dias.","15 dias.","60 dias.","30 dias.","180 dias."],"c":3,"w":"A autoridade tem 30 dias, contados da infração, para expedir a notificação de autuação. Ultrapassado esse prazo, o auto é arquivado."},{"s":"Direito Constitucional","t":"A Constituição Federal estabelece que a prática do racismo constitui crime:","o":["inafiançável e imprescritível.","inafiançável e prescritível.","afiançável e prescritível.","sujeito apenas a pena de multa.","afiançável e imprescritível."],"c":0,"w":"Art. 5º, XLII: a prática do racismo é crime inafiançável e imprescritível, sujeito à pena de reclusão."},{"s":"Direito Penal","t":"O agente que, voluntariamente, desiste de prosseguir na execução ou impede que o resultado se produza:","o":["responde com a pena reduzida pela metade.","só responde pelos atos já praticados.","responde pela tentativa do crime pretendido.","fica isento de qualquer responsabilidade, em todos os casos.","responde pelo crime consumado."],"c":1,"w":"É a desistência voluntária ou o arrependimento eficaz (art. 15 do CP). O agente não responde pela tentativa, mas pelos atos já praticados, se forem crimes."},{"s":"Direito Processual Penal","t":"Segundo o art. 322 do CPP, a autoridade policial poderá conceder fiança nos casos de infração cuja pena privativa de liberdade máxima não seja superior a:","o":["2 anos.","1 ano.","10 anos.","8 anos.","4 anos."],"c":4,"w":"Nos demais casos, a fiança é requerida ao juiz, que decide em 48 horas."},{"s":"Direito Administrativo","t":"NÃO é modalidade de licitação prevista na Lei nº 14.133/2021:","o":["Pregão.","Tomada de preços.","Leilão.","Diálogo competitivo.","Concorrência."],"c":1,"w":"A Lei nº 14.133/2021 prevê pregão, concorrência, concurso, leilão e diálogo competitivo. A tomada de preços e o convite deixaram de existir."},{"s":"Direitos Humanos","t":"A característica dos direitos humanos segundo a qual eles se aplicam a todas as pessoas, independentemente de nacionalidade, sexo, raça, religião ou qualquer outra condição, é a:","o":["disponibilidade.","relatividade cultural absoluta.","universalidade.","temporariedade.","exclusividade."],"c":2,"w":"Os direitos humanos são universais, indivisíveis, interdependentes, inalienáveis, imprescritíveis e irrenunciáveis, entre outras características."}],"adm":[{"s":"Língua Portuguesa","t":"Assinale a alternativa em que a palavra \"mesmo\" está corretamente empregada:","o":["Nós mesmo, as servidoras, fizemos.","Elas mesmas fizeram o relatório.","Elas mesmos fizeram o relatório.","Ele mesma fez o relatório.","Ela mesmos fez o relatório."],"c":1,"w":"\"Mesmo\", com valor de reforço (= próprio), concorda com o termo a que se refere. Como advérbio (= realmente), é invariável."},{"s":"Língua Portuguesa","t":"Assinale a alternativa em que a regência do verbo \"assistir\" está de acordo com a norma-padrão:","o":["Os servidores assistiram a palestra sobre segurança viária.","Os servidores assistiram com a palestra sobre segurança viária.","Os servidores assistiram à palestra sobre segurança viária.","Os servidores assistiram na palestra sobre segurança viária.","Os servidores assistiram da palestra sobre segurança viária."],"c":2,"w":"\"Assistir\", no sentido de ver ou presenciar, é transitivo indireto e exige a preposição \"a\". No sentido de prestar assistência, é transitivo direto: \"o médico assistiu o ferido\"."},{"s":"Ética e Conduta Pública","t":"A afirmação \"aquilo que uma sociedade considera aceitável pode mudar com o tempo\" refere-se mais diretamente ao caráter:","o":["exclusivamente individual da ética","imutável dos valores éticos","técnico da administração pública","histórico e cultural da moral","absoluto da legislação penal"],"c":3,"w":"As normas morais variam conforme a época e o grupo social."},{"s":"Raciocínio Lógico","t":"A bicondicional \"p ↔ q\" é verdadeira quando:","o":["p é verdadeira, qualquer que seja q","apenas q é falsa","apenas p é verdadeira","p e q têm valores lógicos diferentes","p e q têm o mesmo valor lógico"],"c":4,"w":"A bicondicional é verdadeira quando ambas são verdadeiras ou ambas são falsas."},{"s":"Noções de Direito Constitucional","t":"Quanto à forma, a Constituição Federal de 1988 é classificada como:","o":["histórica","não escrita","escrita","consuetudinária","costumeira"],"c":2,"w":"A CF/1988 é um texto codificado e sistematizado, por isso é escrita."},{"s":"Noções de Direito Administrativo","t":"A distribuição interna de competências entre órgãos de uma mesma pessoa jurídica, com hierarquia, denomina-se:","o":["terceirização","delegação legislativa","desconcentração","descentralização","privatização"],"c":2,"w":"Na desconcentração, cria-se um órgão dentro da mesma pessoa. Na descentralização, transfere-se a atividade a outra pessoa jurídica."},{"s":"Noções de Administração","t":"Na EaD, a comunicação que ocorre ao mesmo tempo, em tempo real, como em uma videoconferência ao vivo, é chamada de:","o":["unidirecional, obrigatoriamente","assíncrona","off-line","síncrona","presencial"],"c":3,"w":"Comunicação síncrona acontece em tempo real. A assíncrona, como fóruns e e-mails, permite interação em momentos diferentes."},{"s":"Noções de Arquivologia","t":"Na diplomática e na arquivística, ata, ofício, certidão e requerimento são exemplos de:","o":["formatos","gêneros iconográficos","suportes","fundos","espécies documentais"],"c":4,"w":"A espécie é a configuração que o documento assume segundo a disposição e a natureza das informações. Somada à atividade, forma o tipo documental, como \"ata de reunião de comissão\"."},{"s":"Noções de Informática","t":"O formato de arquivo padrão do LibreOffice Writer é o:","o":[".docx",".odp",".txt",".ods",".odt"],"c":4,"w":"O Writer usa o formato aberto ODF de texto (.odt). O Calc usa .ods e o Impress, .odp."},{"s":"Legislação Relativa à PRF","t":"Conforme o art. 144, § 2º, da Constituição Federal, a Polícia Rodoviária Federal é órgão permanente, organizado e mantido pela União e estruturado em carreira, que se destina, na forma da lei:","o":["à apuração de infrações penais militares","ao patrulhamento ostensivo das ferrovias federais","à polícia marítima, aeroportuária e de fronteiras","ao patrulhamento ostensivo das rodovias federais","às funções de polícia judiciária da União"],"c":3,"w":"O § 2º atribui à PRF o patrulhamento ostensivo das rodovias federais. Polícia judiciária da União e polícia de fronteiras são funções da Polícia Federal (§ 1º); as ferrovias cabem à Polícia Ferroviária Federal (§ 3º)."}],"pet":[{"s":"Língua Portuguesa","t":"Leia:\n\"A manutenção preditiva não elimina a necessidade de intervenções, mas permite programá-las no momento mais oportuno, reduzindo paradas não planejadas.\"\nInfere-se do texto que a manutenção preditiva:","o":["contribui para planejar as intervenções e evitar paradas inesperadas.","aumenta o número de paradas não planejadas.","substitui completamente a manutenção corretiva emergencial em todos os casos.","torna desnecessária qualquer intervenção nos equipamentos.","é aplicada somente após a quebra do equipamento."],"c":0,"w":"O texto afirma que a preditiva 'não elimina' as intervenções, mas permite 'programá-las', reduzindo paradas não planejadas. As demais alternativas contradizem ou extrapolam o trecho."},{"s":"Língua Portuguesa","t":"Assinale a frase correta quanto à concordância nominal.","o":["Seguem anexas as notas fiscais e o certificado de calibração.","É proibido a entrada de pessoas sem crachá na sala de controle.","Segue anexo as notas fiscais e o certificado de calibração.","As operadoras disseram que elas mesmo fariam a medição.","Havia bastante equipamentos aguardando manutenção."],"c":0,"w":"'Anexo' é adjetivo e concorda com o substantivo: 'Seguem anexas as notas' (concordância com o mais próximo, no feminino plural). 'É proibida a entrada' — quando o substantivo vem determinado por artigo, o predicativo concorda. 'Elas mesmas' e 'bastantes equipamentos' (bastante como adjetivo = muitos) também variam."},{"s":"Língua Portuguesa","t":"Em qual das alternativas o verbo 'haver' foi empregado de forma INCORRETA quanto à concordância?","o":["Há anos o terminal não registra acidentes com afastamento.","Deve haver sobressalentes suficientes no almoxarifado.","Havia, no pátio, dezenas de tubos aguardando inspeção.","Os operadores haviam concluído a partida antes do fim do turno.","Houveram atrasos significativos na entrega dos equipamentos."],"c":4,"w":"No sentido de 'existir' ou 'ocorrer', 'haver' é impessoal e fica no singular: 'Houve atrasos'. Como auxiliar de tempo composto ('haviam concluído'), ele concorda normalmente com o sujeito. 'Há anos' indica tempo decorrido e também é impessoal."},{"s":"Língua Portuguesa","t":"Assinale a alternativa em que o emprego de 'onde' está de acordo com a norma-padrão.","o":["A refinaria onde trabalho fica em São José dos Campos.","Houve uma época onde o petróleo era barato.","Foi uma reunião onde todos opinaram.","O relatório mostrou falhas, onde concluímos que o sensor estava descalibrado.","É uma situação onde não há saída fácil."],"c":0,"w":"'Onde' deve referir-se a lugar físico (a refinaria). Para reunião, época ou situação, usam-se 'em que' ou 'na qual'. Também não se usa 'onde' como conectivo conclusivo ('do que concluímos')."},{"s":"Matemática","t":"O preço do óleo diesel subiu de R$ 5,60 para R$ 6,16 por litro. O aumento foi de:","o":["56%","10%","9,1%","5,6%","11%"],"c":1,"w":"Aumento = 6,16 − 5,60 = 0,56. Percentual = 0,56 ÷ 5,60 = 0,10 = 10%."},{"s":"Matemática","t":"Em um mapa de instalações na escala 1:2.500, a distância entre dois tanques é de 8 cm. A distância real entre eles é:","o":["312,5 metros","20 metros","250 metros","2.000 metros","200 metros"],"c":4,"w":"Na escala 1:2.500, cada 1 cm no mapa corresponde a 2.500 cm reais. 8 × 2.500 = 20.000 cm = 200 m."},{"s":"Matemática","t":"Se 3 kg de eletrodo são suficientes para 45 metros de solda, quantos quilos são necessários para 120 metros?","o":["7,5 kg","8 kg","9 kg","6 kg","12 kg"],"c":1,"w":"Consumo de 3 ÷ 45 = 1/15 kg por metro. Para 120 m: 120 ÷ 15 = 8 kg."},{"s":"Conhecimentos Específicos","t":"Um trocador de calor tem a temperatura do fluido quente caindo de 150 °C para 90 °C e a do fluido frio subindo de 30 °C para 70 °C, em contracorrente. As diferenças de temperatura nas extremidades são:","o":["60 °C e 40 °C","80 °C e 60 °C","90 °C e 70 °C","150 °C e 30 °C","120 °C e 20 °C"],"c":1,"w":"Em contracorrente, a entrada do quente encontra a saída do frio: 150 − 70 = 80 °C. Na outra ponta, a saída do quente encontra a entrada do frio: 90 − 30 = 60 °C. A MLDT = (80 − 60)/ln(80/60) ≈ 69,5 °C."},{"s":"Conhecimentos Específicos","t":"A unidade de recuperação de enxofre (URE), que utiliza o processo Claus, converte:","o":["CO₂ em carbonato de cálcio.","mercaptanas em gasolina.","enxofre em ácido sulfúrico concentrado.","H₂S em enxofre elementar.","SO₂ em H₂S."],"c":3,"w":"No processo Claus, parte do H₂S é queimada formando SO₂, que reage com o H₂S restante em reatores catalíticos, produzindo enxofre elementar líquido e água."},{"s":"Conhecimentos Específicos","t":"O GLP (gás liquefeito de petróleo) é composto principalmente por:","o":["metano e etano.","hidrogênio e monóxido de carbono.","propano e butano.","benzeno e tolueno.","pentano e hexano."],"c":2,"w":"O GLP é uma mistura de hidrocarbonetos de 3 e 4 carbonos (propano e butano), que se liquefazem sob pressão moderada à temperatura ambiente. O metano é o principal componente do gás natural."}],"pc":[{"s":"Língua Portuguesa","t":"Assinale a alternativa que apresenta um período composto por coordenação sindética adversativa.","o":["O suspeito tentou fugir, mas foi detido pelos policiais.","O investigador analisou as provas e concluiu o inquérito.","Ou o meliante se entrega, ou a polícia invadirá o local.","O perito examinou o local, portanto o laudo será emitido logo.","Estude muito, porque o concurso da Polícia Civil é concorrido."],"c":0,"w":"A conjunção 'mas' liga orações coordenadas exprimindo oposição (adversativa)."},{"s":"Língua Portuguesa","t":"Assinale a alternativa em que a palavra destacada tem valor restritivo.","o":["O perito criminal, **que** é especialista em balística, analisou a arma.","O policial civil, **cujo** distintivo foi furtado, registrou boletim.","Os suspeitos, **que** fugiram em um carro preto, foram capturados.","O delegado, **que** coordenou a operação, foi elogiado.","Os investigadores **que** participaram da operação receberam medalha."],"c":4,"w":"A oração sem vírgulas ('que participaram da operação') restringe o universo dos investigadores aos que participaram da ação específica. As demais são explicativas (isoladas por vírgulas)."},{"s":"Direito Penal","t":"O funcionário público que retarda ou deixa de praticar ato de ofício, indevidamente, para satisfazer interesse ou sentimento pessoal, comete o crime de:","o":["Concussão.","Corrupção passiva.","Condescendência criminosa.","Advocacia administrativa.","Prevaricação."],"c":4,"w":"Prevaricação (art. 319 do CP): retardar ou omitir ato de ofício, ou praticá-lo contra expressa disposição de lei, para satisfazer interesse ou sentimento pessoal."},{"s":"Direito Penal","t":"Subtrair coisa alheia móvel, para si ou para outrem, mediante grave ameaça ou violência a pessoa, ou depois de havê-la, por qualquer meio, reduzido à impossibilidade de resistência, caracteriza o crime de:","o":["Furto qualificado.","Extorsão.","Roubo.","Apropriação indébita.","Estelionato."],"c":2,"w":"Definição legal do crime de Roubo (art. 157 do CP)."},{"s":"Direito Processual Penal","t":"O inquérito policial, procedimento administrativo inquisitório conduzido pela Polícia Judiciária, tem como uma de suas características principais:","o":["Garantir o contraditório e a ampla defesa em sua plenitude durante todas as oitivas.","Ser imprescritível e indispensável para a propositura de qualquer ação penal.","Ser sigiloso, inquisitivo, dispensável, escrito e oficial.","Ser da competência exclusiva dos juízes de direito das varas criminais.","Exigir a presença obrigatória de defensor constituído para o indiciado em todos os atos."],"c":2,"w":"O inquérito policial é inquisitivo (não há contraditório amplo), dispensável (se a denúncia já tiver base em outras provas), escrito, sigiloso e oficial."},{"s":"Direito Processual Penal","t":"O flagrante preparado (delito putativo por obra do agente provocador), consagrado na jurisprudência pátria (Súmula 145 do STF):","o":["Torna o crime perfeitamente válido e enseja condenação severa.","É lícito quando autorizado pelo delegado de polícia.","Valida a prisão em flagrante se houver consentimento da vítima.","Aplica-se apenas aos crimes hediondos.","É considerado crime impossível, tornando a conduta atípica."],"c":4,"w":"Súmula 145 do STF: 'Não há crime quando a preparação do flagrante pela polícia torna impossível a sua consumação.' (Crime impossível)."},{"s":"Direito Constitucional","t":"O mandado de segurança coletivo pode ser impetrado por partido político com representação no Congresso Nacional, organização sindical, entidade de classe ou associação legalmente constituída e em funcionamento há pelo menos:","o":["6 meses.","2 anos.","5 anos.","3 anos.","1 ano."],"c":4,"w":"Requisito temporal para impetração de mandado de segurança coletivo por associação: em funcionamento há pelo menos 1 ano (art. 5°, LXX, b, da CF)."},{"s":"Direito Constitucional","t":"A competência para legislar privativamente sobre direito penal, processual penal, civil e eleitoral é:","o":["Exclusiva dos Municípios.","Concorrente entre Estados e União.","Privativa da União.","Comum entre União, Estados e Distrito Federal.","Facultativa aos Estados-membros."],"c":2,"w":"Art. 22, I, da CF: Compete privativamente à União legislar sobre direito civil, comercial, penal, processual, eleitoral, agrário, marítimo, aeronáutico, espacial e do trabalho."},{"s":"Direito Administrativo","t":"O ato administrativo que apresenta vício insanável no objeto (por ser impossível ou ilícito) ou na finalidade (desvio de poder) é considerado:","o":["Perfeitamente válido e sanável por ratificação.","Anulável, produzindo efeitos até que o juiz o declare inválido.","Inexistente sem repercussão jurídica.","Nulo, não podendo ser convalidado.","Meramente irregular."],"c":3,"w":"O ato com vício insanável no objeto, motivo ou finalidade é nulo e não admite convalidação (ao contrário de incompetência em razão do lugar e vício de forma, que podem ser convalidados se não forem essenciais)."},{"s":"Noções de Informática","t":"Sobre computação em nuvem (Cloud Computing), o modelo de serviço em que a infraestrutura completa (servidores, redes, armazenamento) é alugada e disponibilizada para que o usuário instale sistemas operacionais e aplicações próprias denomina-se:","o":["SaaS (Software as a Service).","IaaS (Infrastructure as a Service).","PaaS (Platform as a Service).","DaaS (Desktop as a Service estrito).","NaaS (Network as a Service isolado)."],"c":1,"w":"IaaS (Infraestrutura como Serviço) fornece recursos computacionais básicos de infraestrutura (máquinas virtuais, armazenamento, redes)."}]};
+  var CONC = [
+    ['cmrb', '🏛️', 'Câmara de Rio Branco', 'Edital IDIB · prova em 22/11', 'mais procurado'],
+    ['prf', '🚓', 'PRF – Policial', 'Trânsito, Direito e Física'],
+    ['adm', '🗂️', 'PRF – Agente Administrativo', 'Formato FUNCAB'],
+    ['pet', '🛢️', 'Petrobras', 'Português, Matemática e Específicos'],
+    ['pc', '🕵️', 'Polícia Civil', 'Penal, Processo Penal e Constitucional']
+  ];
+  var INSTA = 'simulado.aprova';
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (t) { var d = document.createElement('div'); d.textContent = String(t == null ? '' : t); return d.innerHTML.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>'); };
+  var params = new URLSearchParams(location.search);
+  var L = 'ABCDE';
+  var app = $('app');
+  var st = null, iniciou = false;
+
+  function nomeDe(k) { for (var i = 0; i < CONC.length; i++) if (CONC[i][0] === k) return CONC[i][2]; return ''; }
+  function ev(nome, dados) { try { if (window.fbq) fbq('trackCustom', nome, dados || {}); } catch (e) {} }
+  function topo() { var y = app.getBoundingClientRect().top + window.scrollY - 12; if (window.scrollY > y) window.scrollTo({ top: y, behavior: 'smooth' }); }
+
+  function escolha() {
+    st = null; document.body.classList.remove('emquiz');
+    app.innerHTML = '<h2 class="h3">Qual é o seu concurso?</h2><p class="muted" style="margin-top:4px">São 10 questões no estilo da banca, todas com explicação.</p>' +
+      '<div class="lista">' + CONC.map(function (c) {
+        return '<button type="button" class="conc" data-k="' + c[0] + '"><span class="e">' + c[1] + '</span><span><b>' + c[2] + '</b><small>' + c[3] + '</small></span>' + (c[4] ? '<span class="dest">' + c[4] + '</span>' : '') + '</button>';
+      }).join('') + '</div>' +
+      '<div class="selos"><span>Sem cadastro</span><span>Sem pagar nada</span><span>Gabarito comentado</span></div>';
+    app.querySelectorAll('.conc').forEach(function (b) { b.onclick = function () { comecar(b.dataset.k); }; });
+  }
+
+  function comecar(k) {
+    document.body.classList.add('emquiz');
+    st = { k: k, q: DADOS[k], step: 0, picked: null, score: 0, hist: [] };
+    try { history.replaceState(null, '', '?' + new URLSearchParams(Object.assign(Object.fromEntries(params), { c: k })).toString()); } catch (e) {}
+    ev('GratisEscolheu', { concurso: k });
+    quiz(); topo();
+  }
+
+  function quiz() {
+    var q = st.q[st.step], ans = st.picked !== null, n = st.q.length;
+    var h = '<div class="qtop"><span class="qsub">' + esc(q.s) + '</span><span>' + (st.step + 1) + ' de ' + n + '</span></div>' +
+      '<div class="bar"><div style="width:' + ((st.step + (ans ? 1 : 0)) / n * 100) + '%"></div></div>' +
+      '<p class="qtext">' + esc(q.t) + '</p><div class="opts">';
+    q.o.forEach(function (o, i) {
+      var cls = 'opt', mk = '';
+      if (ans) { if (i === q.c) { cls += ' ok'; mk = '✓'; } else if (i === st.picked) { cls += ' bad'; mk = '✕'; } else cls += ' off'; }
+      h += '<button type="button" class="' + cls + '" data-i="' + i + '"' + (ans ? ' disabled' : '') + '><b>' + L[i] + ')</b><span>' + esc(o) + '</span><i>' + mk + '</i></button>';
+    });
+    h += '</div>';
+    if (ans) h += '<div class="why"><strong>' + (st.picked === q.c ? 'Correto!' : 'Resposta: ' + L[q.c] + '.') + '</strong> ' + esc(q.w) + '</div>';
+    h += '<button type="button" class="btn azul" id="prox"' + (ans ? '' : ' disabled') + '>' + (st.step < n - 1 ? 'Próxima questão' : 'Ver meu resultado') + '</button>';
+    if (st.step === 0 && !ans) h += '<button type="button" class="linkbtn" id="trocar">Trocar de concurso</button>';
+    app.innerHTML = h;
+    app.querySelectorAll('.opt').forEach(function (b) {
+      b.onclick = function () {
+        if (st.picked !== null) return;
+        var i = +b.dataset.i; st.picked = i; var ok = i === st.q[st.step].c; if (ok) st.score++; st.hist.push(ok);
+        if (!iniciou) { iniciou = true; ev('GratisIniciado', { concurso: st.k }); }
+        quiz();
+      };
+    });
+    $('prox').onclick = function () { if (st.step < n - 1) { st.step++; st.picked = null; quiz(); topo(); } else resultado(); };
+    if ($('trocar')) $('trocar').onclick = escolha;
+  }
+
+  function resultado() {
+    var n = st.q.length, s = st.score, C = 2 * Math.PI * 56;
+    var cor = s >= 8 ? '#15803D' : s >= 6 ? '#1E6FD9' : '#C2410C';
+    var msg = s >= 8 ? ['Mandou muito bem!', 'Você está no caminho. Agora o desafio é manter esse ritmo numa prova completa, com tempo e com os pesos do edital.']
+            : s >= 6 ? ['Bom resultado', 'Você acertou a maior parte, mas ' + (n - s) + ' erros em 10 questões, numa prova real, podem custar a vaga.']
+            : ['Agora você sabe onde focar', 'Errar aqui é bom: é treino. Veja nas explicações o que caiu e revise esses assuntos antes da prova.'];
+    var camara = st.k === 'cmrb';
+    var conheca = '/conheca?' + new URLSearchParams({ modo: camara ? 'camara' : 'geral', utm_source: params.get('utm_source') || 'instagram', utm_medium: params.get('utm_medium') || 'dm', utm_campaign: 'gratis', utm_content: st.k }).toString();
+    app.innerHTML = '<div class="res">' +
+      '<div class="ring"><svg viewBox="0 0 132 132" width="132" height="132" aria-hidden="true"><circle cx="66" cy="66" r="56" fill="none" stroke="#E3E7F0" stroke-width="12"/>' +
+      '<circle id="arc" cx="66" cy="66" r="56" fill="none" stroke="' + cor + '" stroke-width="12" stroke-linecap="round" stroke-dasharray="' + C + '" stroke-dashoffset="' + C + '" style="transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1)"/></svg><b>' + s + '/' + n + '</b></div>' +
+      '<h2>' + msg[0] + '</h2><p class="muted">' + msg[1] + '</p>' +
+      '<div class="mini">' + st.hist.map(function (ok, i) { return '<span style="background:' + (ok ? '#15803D' : '#DC2626') + '">' + (i + 1) + '</span>'; }).join('') + '</div>' +
+      '<a class="btn ig" id="seguir" href="https://www.instagram.com/' + INSTA + '/" target="_blank" rel="noopener">Seguir @' + INSTA + '</a><p class="muted" style="margin-top:8px;font-size:13px">Questões novas toda semana no perfil</p>' +
+      '<button type="button" class="btn cl" id="compart">Desafiar um amigo</button>' +
+      '<div class="box"><div class="h3">Quer treinar com a prova inteira?</div>' +
+      '<p>' + (camara ? '1.212 questões da Câmara de Rio Branco no formato do edital IDIB, com nota pelos pesos e o critério de aprovação.' : '3.263 questões de 5 concursos, no formato do edital, com cronômetro e relatório por matéria.') + ' Pagamento único, acesso vitalício.</p>' +
+      '<a class="btn amar" id="completo" href="' + conheca + '">Conhecer o simulado completo</a></div>' +
+      '<button type="button" class="linkbtn" id="outro">Fazer com outro concurso</button></div>';
+    requestAnimationFrame(function () { requestAnimationFrame(function () { var a = $('arc'); if (a) a.style.strokeDashoffset = C * (1 - s / n); }); });
+    ev('GratisConcluido', { concurso: st.k, acertos: s });
+    $('seguir').onclick = function () { ev('GratisSeguir', { concurso: st.k }); };
+    $('completo').onclick = function () { ev('GratisQuerCompleto', { concurso: st.k }); };
+    $('outro').onclick = escolha;
+    $('compart').onclick = function () {
+      var url = location.origin + '/gratis?c=' + st.k + '&utm_source=compartilhar&utm_campaign=gratis';
+      var txt = 'Acertei ' + s + ' de 10 no simulado grátis de ' + nomeDe(st.k) + '. Consegue mais?';
+      ev('GratisCompartilhou', { concurso: st.k });
+      if (navigator.share) navigator.share({ title: 'Simulado grátis', text: txt, url: url }).catch(function () {});
+      else window.open('https://wa.me/?text=' + encodeURIComponent(txt + ' ' + url), '_blank');
+    };
+    topo();
+  }
+
+  var k0 = params.get('c');
+  if (k0 && DADOS[k0]) comecar(k0); else escolha();
+})();
+</script>
+</body>
+</html>
