@@ -8779,10 +8779,10 @@ window.bancoDeQuestoes = {
             "enunciado": "No âmbito do processo legislativo municipal, a iniciativa das leis complementares e ordinárias, salvo nos casos de competência exclusiva estabelecida na Lei Orgânica, compete, entre outros, a:",
             "opcoes": [
                 "A) Exclusivamente ao Prefeito Municipal.",
-                "B) Apenas aos cidadãos por meio de iniciativa popular qualificada por quórum de 10% dos eleitores.",
+                "B) Apenas aos cidadãos, por meio de iniciativa popular subscrita por, no mínimo, 10% dos eleitores inscritos no Município.",
                 "C) Qualquer vereador, à Mesa Diretora, às comissões da Câmara e ao Prefeito, observadas as restrições de competência.",
-                "D) Exclusivamente ao Presidente da Câmara Municipal.",
-                "E) Ao Tribunal de Contas do Estado de forma privativa."
+                "D) Exclusivamente ao Presidente da Câmara Municipal, após deliberação da Mesa Diretora e parecer das comissões permanentes.",
+                "E) Ao Tribunal de Contas do Estado, de forma privativa, nas matérias que envolvam orçamento, finanças e contas públicas municipais."
             ],
             "correta": 2,
             "comentario": "A iniciativa legislativa nas câmaras municipais é, em regra, concorrente, cabendo aos vereadores, comissões, Mesa Diretora e ao Chefe do Executivo, ressalvadas as matérias de iniciativa privativa."
@@ -8795,7 +8795,7 @@ window.bancoDeQuestoes = {
                 "B) Apreciado em turno único, podendo ser rejeitado pelo voto da maioria absoluta dos membros da Câmara.",
                 "C) Decidido de forma irrecorrível pela Comissão de Constituição e Justiça.",
                 "D) Submetido a referendo popular obrigatório no prazo de 60 dias.",
-                "E) Arquivado definitivamente sem possibilidade de reapreciação no mesmo ano legislativo."
+                "E) Arquivado definitivamente, sem possibilidade de reapreciação no mesmo ano legislativo, cabendo ao Prefeito decidir."
             ],
             "correta": 1,
             "comentario": "O veto do Executivo vai à Câmara para apreciação em discussão única, sendo rejeitado pelo voto da maioria absoluta dos vereadores, em votação aberta."
@@ -8804,9 +8804,9 @@ window.bancoDeQuestoes = {
             "id": 2003,
             "enunciado": "As comissões permanentes da Câmara Municipal desempenham papéis fundamentais na análise técnica das proposições. Entre elas, a comissão encarregada de examinar a conformidade constitucional, legal e jurídica dos projetos antes de irem a plenário é a:",
             "opcoes": [
-                "A) Comissão de Finanças e Orçamento.",
+                "A) Comissão de Finanças, Orçamento e Tomada de Contas.",
                 "B) Comissão de Obras e Serviços Públicos.",
-                "C) Comissão de Educação, Cultura e Saúde.",
+                "C) Comissão de Educação, Cultura, Saúde e Assistência Social.",
                 "D) Comissão de Ética Parlamentar.",
                 "E) Comissão de Constituição, Justiça e Redação."
             ],
@@ -8895,10 +8895,10 @@ window.bancoDeQuestoes = {
             "id": 2010,
             "enunciado": "Quando um projeto de lei tramita em regime de urgência especial (ou urgência urgentíssima), aprovado pelo Plenário, os prazos regimentais normais de análise pelas comissões e inclusão em pauta são:",
             "opcoes": [
-                "A) Ampliados para garantir ampla discussão pública por 90 dias.",
-                "B) Suspensos até que o Tribunal de Contas emita parecer favorável.",
+                "A) Ampliados, para garantir ampla discussão pública da matéria por, no mínimo, 90 dias.",
+                "B) Suspensos até que o Tribunal de Contas emita parecer favorável sobre o impacto financeiro.",
                 "C) Reduzidos ou dispensados, permitindo a imediata apreciação em Plenário.",
-                "D) Prorrogados por solicitação de qualquer partido político.",
+                "D) Prorrogados a pedido de qualquer líder partidário, para permitir a apresentação de emendas.",
                 "E) Convertidos em deliberação exclusiva da Mesa Diretora."
             ],
             "correta": 2,
@@ -8909,9 +8909,9 @@ window.bancoDeQuestoes = {
             "enunciado": "As reuniões ordinárias da Câmara Municipal são públicas. Contudo, em situações excepcionais previstas no regimento interno, a câmara poderá realizar reuniões secretas, que exigem para sua convocação e deliberação:",
             "opcoes": [
                 "A) Requerimento fundamentado aprovado por maioria qualificada ou absoluta dos membros.",
-                "B) Apenas a vontade do Presidente da Casa.",
-                "C) Autorização prévia do Poder Judiciário.",
-                "D) A presença obrigatória do Prefeito Municipal.",
+                "B) Apenas a decisão do Presidente da Casa, independentemente de requerimento ou de votação.",
+                "C) Autorização prévia do Poder Judiciário, mediante pedido fundamentado da Mesa Diretora.",
+                "D) A presença obrigatória do Prefeito Municipal e de um representante do Ministério Público.",
                 "E) Proibição absoluta em qualquer esfera municipal."
             ],
             "correta": 0,
@@ -8924,8 +8924,8 @@ window.bancoDeQuestoes = {
                 "A) O suplente só pode ser convocado em caso de morte do titular.",
                 "B) O suplente é convocado nos casos de vaga, de investidura em cargo de secretário municipal ou licença superior ao prazo regimental estabelecido.",
                 "C) A convocação de suplente depende de nova eleição municipal.",
-                "D) Durante o recesso parlamentar, os suplentes assumem automaticamente.",
-                "E) O suplente assume com direito a voto apenas em comissões, nunca em plenário."
+                "D) Durante o recesso parlamentar, os suplentes assumem automaticamente as cadeiras dos titulares, que só retornam com o início da nova sessão legislativa.",
+                "E) O suplente assume com direito a voto apenas nas comissões permanentes, nunca em plenário, enquanto durar a licença ou o afastamento do vereador titular."
             ],
             "correta": 1,
             "comentario": "A convocação de suplentes ocorre nas hipóteses de vaga definitiva ou de afastamento temporário do titular (investidura em cargos do Executivo ou licenças médicas/particulares longas)."
@@ -8934,10 +8934,10 @@ window.bancoDeQuestoes = {
             "id": 2013,
             "enunciado": "O instrumento de fiscalização pelo qual a Câmara Municipal convoca Secretários Municipais ou dirigentes de autarquias para prestarem informações sobre assunto determinado de sua Pasta denomina-se:",
             "opcoes": [
-                "A) Mandado de Segurança coletivo.",
+                "A) Mandado de Segurança coletivo, impetrado pela Mesa da Câmara.",
                 "B) Ação Popular legislativa.",
-                "C) Recurso extraordinário de fiscalização.",
-                "D) Arguição de descumprimento de preceito municipal.",
+                "C) Recurso extraordinário de fiscalização, aprovado pela Comissão de Finanças.",
+                "D) Arguição de descumprimento de preceito da Lei Orgânica Municipal.",
                 "E) Requerimento de Informação Legislativa ou Convocação."
             ],
             "correta": 4,
@@ -8948,10 +8948,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A guarda, a conservação e a catalogação oficial das leis, decretos, resoluções e arquivos históricos da câmara municipal competem ordinariamente à unidade administrativa interna de:",
             "opcoes": [
                 "A) Guarda Municipal.",
-                "B) Secretaria de Obras do Município.",
+                "B) Secretaria Municipal de Administração, vinculada ao Prefeito.",
                 "C) Ouvidoria Geral do Estado.",
                 "D) Secretaria-Geral ou Departamento de Apoio Legislativo.",
-                "E) Auditoria Independente Contábil."
+                "E) Auditoria Independente Contábil, contratada por licitação pela Mesa."
             ],
             "correta": 3,
             "comentario": "O Departamento de Apoio Legislativo / Secretaria-Geral é o setor responsável pela tramitação, guarda de documentos oficiais, autuação e arquivo das proposições e leis aprovadas."
@@ -8974,10 +8974,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O quórum de votação exigido para a aprovação de uma Emenda à Lei Orgânica do Município difere das leis ordinárias por exigir, no mínimo:",
             "opcoes": [
                 "A) Dois terços dos membros da Câmara, em dois turnos de discussão e votação.",
-                "B) Maioria simples, em turno único.",
-                "C) Unanimidade absoluta de todos os vereadores em exercício.",
-                "D) Maioria absoluta em turno único sem interstício.",
-                "E) Apenas a concordância da Mesa Diretora."
+                "B) Maioria simples dos vereadores presentes, em turno único de discussão e votação.",
+                "C) Unanimidade dos vereadores em exercício, em dois turnos com interstício de trinta dias.",
+                "D) Maioria absoluta dos membros da Câmara, em turno único, dispensado o interstício.",
+                "E) Apenas a concordância da Mesa Diretora, seguida de promulgação pelo Prefeito Municipal."
             ],
             "correta": 0,
             "comentario": "A Lei Orgânica do Municipal pode ser emendada mediante proposta de fração qualificada de vereadores e aprovação de dois terços dos membros da Câmara, em dois turnos, com interstício mínimo."
@@ -8986,11 +8986,11 @@ window.bancoDeQuestoes = {
             "id": 2017,
             "enunciado": "Um cidadão apresentou uma denúncia formal de irregularidade administrativa contra um agente público do município perante a Câmara. O recebimento, protocolo e encaminhamento adequado dessa petição aos órgãos competentes cabem às rotinas de:",
             "opcoes": [
-                "A) Destruição sumária de papéis apócrifos.",
+                "A) Destruição sumária dos papéis apócrifos, sem registro em livro de protocolo.",
                 "B) Atendimento ao público, protocolo legislativo e Comissão competente.",
-                "C) Encaminhamento direto ao gabinete particular do prefeito.",
-                "D) Divulgação em rede social sem registro oficial.",
-                "E) Arquivamento automático sem análise prévia."
+                "C) Encaminhamento direto ao gabinete particular do Prefeito, para resposta informal.",
+                "D) Divulgação imediata nas redes sociais da Câmara, sem registro oficial do documento.",
+                "E) Arquivamento automático sem análise prévia, por se tratar de pedido de cidadão comum."
             ],
             "correta": 1,
             "comentario": "O setor de protocolo e atendimento é a porta de entrada para documentos e denúncias protocoladas por cidadãos, devendo seguir os trâmites formais de registro e encaminhamento interno."
@@ -9000,10 +9000,10 @@ window.bancoDeQuestoes = {
             "enunciado": "As imunidades parlamentares materiais asseguram aos vereadores, nos termos da Constituição Federal e orgânica local:",
             "opcoes": [
                 "A) Inviolabilidade por suas opiniões, palavras e votos no exercício do mandato e na circunscrição do Município.",
-                "B) Isenção total de pagamento de impostos municipais e estaduais.",
+                "B) Isenção total de pagamento de impostos municipais e estaduais durante todo o mandato e na circunscrição do Município.",
                 "C) Direito de julgar crimes comuns cometidos por particulares.",
                 "D) Prisão preventiva imediata em caso de desacato político.",
-                "E) Prerrogativa de legislar sobre matérias federais exclusivas."
+                "E) Prerrogativa de legislar sobre matérias federais exclusivas quando houver interesse local comprovado no Município."
             ],
             "correta": 0,
             "comentario": "A inviolabilidade (imunidade material) protege os vereadores por suas opiniões, palavras e votos profiridos no exercício do mandato e dentro da circunscrição do município."
@@ -9039,7 +9039,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Constituição Federal (art. 29, VI), o subsídio dos Vereadores será fixado:",
             "opcoes": [
                 "A) pelo Prefeito, por decreto, a cada ano.",
-                "B) pela própria Câmara, para vigorar na mesma legislatura, logo após a aprovação.",
+                "B) pela própria Câmara, para vigorar na mesma legislatura, logo após a aprovação, observados os limites da Constituição.",
                 "C) pela Câmara Municipal, em cada legislatura para a subsequente, observados os limites da Constituição.",
                 "D) pelo Tribunal de Contas do Estado, por resolução.",
                 "E) pela Assembleia Legislativa, por lei estadual."
@@ -9051,10 +9051,10 @@ window.bancoDeQuestoes = {
             "id": 9007,
             "enunciado": "De acordo com o art. 29, IV, da Constituição Federal, o número de Vereadores de cada Câmara Municipal:",
             "opcoes": [
-                "A) é sempre igual a 21, independentemente da população.",
-                "B) é definido a cada eleição pelo Tribunal Regional Eleitoral, sem limites constitucionais.",
+                "A) é sempre igual a 21, independentemente da população, cabendo à Lei Orgânica apenas definir a composição das comissões permanentes.",
+                "B) é definido a cada eleição pelo Tribunal Regional Eleitoral, conforme o número de eleitores, sem limites fixados na Constituição Federal.",
                 "C) é fixado na Lei Orgânica, observados os limites máximos definidos pela Constituição conforme faixas de população do Município.",
-                "D) corresponde a 1% do número de eleitores do Município.",
+                "D) corresponde a 1% do número de eleitores do Município, arredondado para o número ímpar mais próximo, conforme dispuser a Lei Orgânica.",
                 "E) é fixado por decreto do Prefeito."
             ],
             "correta": 2,
@@ -9064,11 +9064,11 @@ window.bancoDeQuestoes = {
             "id": 9008,
             "enunciado": "Pelo modelo constitucional do processo legislativo, aplicado por simetria aos Municípios, se o Chefe do Executivo considerar um projeto de lei inconstitucional ou contrário ao interesse público, poderá vetá-lo, total ou parcialmente, no prazo de:",
             "opcoes": [
-                "A) quinze dias úteis, contados da data do recebimento, comunicando os motivos ao Presidente do Legislativo em 48 horas.",
-                "B) trinta dias corridos, sem necessidade de comunicar os motivos.",
-                "C) cinco dias úteis, com comunicação em 24 horas.",
-                "D) sessenta dias, prorrogáveis por igual período.",
-                "E) quarenta e oito horas, contadas da votação em Plenário."
+                "A) quinze dias úteis, contados do recebimento, comunicando os motivos ao Presidente do Legislativo em 48 horas.",
+                "B) trinta dias corridos, contados da data do recebimento, sem necessidade de comunicar os motivos ao Presidente do Legislativo.",
+                "C) cinco dias úteis, contados da data do recebimento, comunicando os motivos ao Presidente do Legislativo em 24 horas.",
+                "D) sessenta dias, prorrogáveis por igual período, comunicando os motivos ao Presidente do Legislativo em até 48 horas.",
+                "E) quarenta e oito horas, contadas da votação em Plenário, comunicando os motivos ao Presidente do Legislativo em 15 dias."
             ],
             "correta": 0,
             "comentario": "O art. 66, §1º, da Constituição fixa 15 dias úteis para o veto e 48 horas para comunicar os motivos. A Lei Orgânica municipal costuma reproduzir esse modelo; em caso de divergência, vale o texto da Lei Orgânica e do Regimento Interno."
@@ -9090,11 +9090,11 @@ window.bancoDeQuestoes = {
             "id": 9010,
             "enunciado": "Segundo o art. 29 da Constituição Federal, a Lei Orgânica do Município será:",
             "opcoes": [
-                "A) votada em turno único e aprovada por maioria simples.",
+                "A) votada em turno único e aprovada por maioria simples dos Vereadores, cabendo ao Prefeito sancioná-la ou vetá-la em quinze dias.",
                 "B) elaborada pela Assembleia Legislativa do Estado.",
-                "C) aprovada pelo Prefeito por decreto e referendada pela população.",
-                "D) votada em dois turnos, com intervalo de 24 horas, por maioria absoluta.",
-                "E) votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal, que a promulgará."
+                "C) aprovada pelo Prefeito por decreto e referendada pela população em consulta realizada junto com a eleição municipal seguinte.",
+                "D) votada em dois turnos, com intervalo mínimo de 24 horas, e aprovada por maioria absoluta dos membros da Câmara Municipal.",
+                "E) votada em dois turnos, com interstício mínimo de dez dias, e aprovada por dois terços dos membros da Câmara Municipal."
             ],
             "correta": 4,
             "comentario": "A Lei Orgânica é a 'constituição' do Município. Seu processo de aprovação é solene: dois turnos, intervalo mínimo de 10 dias e quórum de 2/3, com promulgação pela própria Câmara."
@@ -9104,9 +9104,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Conforme o art. 31, §2º, da Constituição Federal, o parecer prévio emitido pelo órgão competente sobre as contas que o Prefeito deve anualmente prestar:",
             "opcoes": [
                 "A) só deixará de prevalecer por decisão de dois terços dos membros da Câmara Municipal.",
-                "B) é vinculante e não pode ser rejeitado pela Câmara.",
-                "C) pode ser rejeitado por maioria simples dos presentes.",
-                "D) é emitido pela própria Câmara, sem participação do Tribunal de Contas.",
+                "B) é vinculante e não pode ser rejeitado pela Câmara, cabendo recurso apenas ao Tribunal de Contas.",
+                "C) pode ser rejeitado por maioria simples dos Vereadores presentes à sessão de julgamento das contas.",
+                "D) é emitido pela própria Câmara, por sua Comissão de Finanças, sem participação do Tribunal de Contas.",
                 "E) só tem efeito se for homologado pelo Poder Judiciário."
             ],
             "correta": 0,
@@ -9155,11 +9155,11 @@ window.bancoDeQuestoes = {
             "id": 9014,
             "enunciado": "De acordo com o art. 29-A, §3º, da Constituição Federal, constitui crime de responsabilidade do Presidente da Câmara Municipal:",
             "opcoes": [
-                "A) a convocação de sessão extraordinária.",
-                "B) a promulgação de lei após veto rejeitado.",
-                "C) a abertura de comissão parlamentar de inquérito.",
+                "A) a convocação de sessão extraordinária durante o período de recesso parlamentar.",
+                "B) a promulgação de lei após a rejeição do veto, quando o Prefeito se omitir.",
+                "C) a abertura de comissão parlamentar de inquérito contra o Prefeito Municipal.",
                 "D) o desrespeito ao limite de gastos com folha de pagamento da Câmara.",
-                "E) a convocação de suplente de vereador."
+                "E) a convocação de suplente de vereador para assumir vaga decorrente de licença."
             ],
             "correta": 3,
             "comentario": "O §3º do art. 29-A atribui ao Presidente da Câmara a responsabilidade pelo cumprimento do limite de 70% da receita com folha de pagamento (§1º). As demais condutas listadas são atos regulares do Legislativo."
@@ -9195,10 +9195,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Pela Lei de Introdução às Normas do Direito Brasileiro (art. 1º), salvo disposição em contrário, a lei começa a vigorar em todo o País:",
             "opcoes": [
                 "A) na data de sua sanção.",
-                "B) trinta dias depois de aprovada pelo Legislativo.",
+                "B) trinta dias depois de aprovada pelo Legislativo e sancionada pelo Chefe do Executivo.",
                 "C) quarenta e cinco dias depois de oficialmente publicada.",
-                "D) noventa dias depois de publicada.",
-                "E) imediatamente após a votação em Plenário."
+                "D) noventa dias depois de oficialmente publicada no Diário Oficial.",
+                "E) imediatamente após a votação em Plenário, independentemente de publicação."
             ],
             "correta": 2,
             "comentario": "O período entre a publicação e a entrada em vigor chama-se 'vacatio legis'. A LC 95/1998 recomenda que leis de pequena repercussão entrem em vigor na data da publicação, com cláusula expressa."
@@ -9247,9 +9247,9 @@ window.bancoDeQuestoes = {
             "enunciado": "O recebimento e o encaminhamento de denúncias de cidadãos contra atos do Executivo perante a Câmara cabem às rotinas de:",
             "opcoes": [
                 "A) Protocolo, atendimento e comissões competentes.",
-                "B) Destruição sumária de papéis.",
-                "C) Gabinete do Prefeito.",
-                "D) Redes sociais institucionais.",
+                "B) Arquivamento sumário dos papéis sem identificação do autor.",
+                "C) Gabinete do Prefeito, que decide se a denúncia será analisada.",
+                "D) Redes sociais institucionais, para manifestação pública imediata.",
                 "E) Arquivamento automático."
             ],
             "correta": 0,
@@ -9259,10 +9259,10 @@ window.bancoDeQuestoes = {
             "id": 9021,
             "enunciado": "Aplicando-se aos Vereadores, no que couber, as proibições previstas para os membros do Congresso Nacional (CF, arts. 29, IX, e 54), é vedado ao Vereador, desde a expedição do diploma:",
             "opcoes": [
-                "A) apresentar projetos de lei de sua autoria.",
-                "B) participar de comissões permanentes da Câmara.",
+                "A) apresentar projetos de lei de sua autoria que tratem de matéria tributária ou de criação de cargos públicos na administração municipal.",
+                "B) participar de comissões permanentes da Câmara que fiscalizem órgãos aos quais tenha sido vinculado nos últimos quatro anos.",
                 "C) exercer o direito de voto em Plenário.",
-                "D) manifestar opiniões no exercício do mandato.",
+                "D) manifestar opiniões no exercício do mandato sobre processos judiciais em que o Município figure como parte ou interessado.",
                 "E) firmar ou manter contrato com pessoa jurídica de direito público, salvo quando o contrato obedecer a cláusulas uniformes."
             ],
             "correta": 4,
@@ -9312,9 +9312,9 @@ window.bancoDeQuestoes = {
             "enunciado": "O documento oficial emitido pela Presidência da Câmara para disciplinar rotinas administrativas internas ou delegar competências denomina-se:",
             "opcoes": [
                 "A) Portaria ou Ato da Presidência.",
-                "B) Lei Complementar.",
+                "B) Lei Complementar de iniciativa da Mesa.",
                 "C) Decreto do Executivo.",
-                "D) Resolução de Plenário.",
+                "D) Resolução de Plenário, aprovada pelos Vereadores.",
                 "E) Emenda Constitucional."
             ],
             "correta": 0,
@@ -9337,8 +9337,8 @@ window.bancoDeQuestoes = {
             "id": 2043,
             "enunciado": "Se um projeto de lei for rejeitado integralmente no plenário, a regra regimental geral determina que:",
             "opcoes": [
-                "A) Poderá ser reapresentado no dia seguinte sem restrições.",
-                "B) Será encaminhado diretamente ao Prefeito para sanção tácita.",
+                "A) Poderá ser reapresentado já na sessão seguinte, sem qualquer restrição, desde que subscrito pelo mesmo autor e acompanhado de nova justificativa escrita.",
+                "B) Será encaminhado diretamente ao Prefeito para sanção tácita, cabendo ao Executivo decidir se a matéria será novamente submetida à Câmara Municipal.",
                 "C) Poderá ser apresentado novo projeto sobre a mesma matéria na mesma sessão legislativa apenas mediante proposta da maioria absoluta dos membros.",
                 "D) Irá a referendo popular obrigatório.",
                 "E) Causará a dissolução automática da câmara."
@@ -9351,9 +9351,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A manifestação técnica emitida pela Procuradoria Jurídica da Câmara sobre um projeto em tramitação tem natureza:",
             "opcoes": [
                 "A) Consultiva e opinativa, subsidiando os trabalhos das comissões e da Mesa.",
-                "B) Vinculante e irrecorrível para o plenário.",
-                "C) Decisória com força de lei municipal.",
-                "D) Executiva de sanção direta.",
+                "B) Vinculante e irrecorrível, devendo ser seguida obrigatoriamente pelo plenário na votação.",
+                "C) Decisória, com força de lei municipal após a publicação no Diário Oficial.",
+                "D) Executiva, substituindo a sanção do Prefeito nos projetos de iniciativa da Mesa.",
                 "E) Irrelevante para o processo."
             ],
             "correta": 0,
@@ -9415,8 +9415,8 @@ window.bancoDeQuestoes = {
             "id": 2049,
             "enunciado": "O Requerimento, na prática parlamentar do regimento interno, caracteriza-se como:",
             "opcoes": [
-                "A) Um projeto de lei de iniciativa exclusiva do prefeito.",
-                "B) Um decreto autônomo do poder executivo.",
+                "A) Um projeto de lei de iniciativa exclusiva do Prefeito, apresentado em regime de urgência.",
+                "B) Um decreto legislativo que dispensa a votação em plenário e produz efeitos externos imediatos.",
                 "C) Uma lei complementar orçamentária.",
                 "D) Todo pedido formulado por vereador ou comissão sobre assunto de competência da câmara.",
                 "E) Um veto institucional."
@@ -9430,8 +9430,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Votação secreta de contas do prefeito.",
                 "B) Pronunciamentos de munícipes e representantes da sociedade civil organizada sobre temas de interesse público.",
-                "C) Deliberação exclusiva de vetos do executivo.",
-                "D) Julgamento disciplinar de servidores.",
+                "C) Deliberação exclusiva dos vetos do Executivo, com a participação dos líderes partidários e dos membros da Mesa Diretora.",
+                "D) Julgamento disciplinar de servidores da Câmara, com direito de defesa oral perante os vereadores presentes na sessão.",
                 "E) Assinatura de contratos de licitação."
             ],
             "correta": 1,
@@ -9441,9 +9441,9 @@ window.bancoDeQuestoes = {
             "id": 2051,
             "enunciado": "O conjunto de vereadores reunidos em plenário com quórum legal para deliberar e votar constitui a:",
             "opcoes": [
-                "A) Auditoria contábil.",
-                "B) Procuradoria jurídica.",
-                "C) Guarda institucional.",
+                "A) Mesa Diretora reunida em caráter extraordinário.",
+                "B) Comissão Geral de líderes partidários.",
+                "C) Junta Executiva da Câmara Municipal.",
                 "D) Sessão legislativa ou plenária.",
                 "E) Junta executiva."
             ],
@@ -9467,9 +9467,9 @@ window.bancoDeQuestoes = {
             "id": 2053,
             "enunciado": "Cada ano da legislatura subdivide-se em períodos de trabalho denominados:",
             "opcoes": [
-                "A) Mandatos extraordinários.",
-                "B) Ciclos contábeis.",
-                "C) Biênios de gestão.",
+                "A) Mandatos extraordinários de quatro meses.",
+                "B) Ciclos contábeis do exercício financeiro.",
+                "C) Biênios de gestão da Mesa Diretora.",
                 "D) Interstícios de recesso.",
                 "E) Sessões legislativas ordinárias."
             ],
@@ -9481,9 +9481,9 @@ window.bancoDeQuestoes = {
             "enunciado": "O voto aberto (nominal) é regra obrigatória nas deliberações das câmaras municipais para:",
             "opcoes": [
                 "A) A quase totalidade das matérias legislativas, salvo exceções de voto secreto previstas na lei orgânica e regimento.",
-                "B) Exclusivamente a eleição interna da mesa diretora em escrutínio secreto.",
-                "C) Julgamento político de contas em votação secreta.",
-                "D) Votação simbólica sem registro.",
+                "B) Exclusivamente a eleição interna da Mesa Diretora, sendo todas as demais matérias decididas em escrutínio secreto pelos vereadores.",
+                "C) O julgamento político das contas do Prefeito, sendo as demais deliberações tomadas em votação simbólica e sem registro individual.",
+                "D) Votação simbólica sem registro, aplicada apenas às matérias de iniciativa do Prefeito e às indicações dos vereadores da Casa.",
                 "E) Decisões administrativas de chefia."
             ],
             "correta": 0,
@@ -9508,7 +9508,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Votação definitiva de projetos de lei complementares.",
                 "B) Julgamento de contas de gestão.",
-                "C) Sorteio de comissões parlamentares de inquérito.",
+                "C) Sorteio dos membros das comissões parlamentares de inquérito e das comissões temporárias de representação.",
                 "D) Encerramento compulsório dos trabalhos.",
                 "E) Leitura de correspondências, proposições recebidas, comunicações da mesa e pronunciamentos breves."
             ],
@@ -9519,11 +9519,11 @@ window.bancoDeQuestoes = {
             "id": 2057,
             "enunciado": "A Ordem do Dia corresponde à fase da sessão ordinária reservada para:",
             "opcoes": [
-                "A) Apresentação informal de indicações de rua.",
+                "A) Apresentação informal de indicações e de pedidos de providências de rua pelos vereadores.",
                 "B) A discussão e votação das matérias pautadas para deliberação do plenário.",
                 "C) Credenciamento de visitantes externos.",
                 "D) Intervalo de almoço dos servidores.",
-                "E) Protocolo físico de documentos novos."
+                "E) Protocolo físico dos documentos novos recebidos pela Câmara durante a semana."
             ],
             "correta": 1,
             "comentario": "A Ordem do Dia é o núcleo central da sessão, onde os projetos, vetos e requerimentos constantes na pauta são discutidos e votados."
@@ -9532,9 +9532,9 @@ window.bancoDeQuestoes = {
             "id": 2058,
             "enunciado": "A Questão de Ordem levantada por um vereador durante a sessão deve versar estritamente sobre:",
             "opcoes": [
-                "A) Reclamação salarial de servidores administrativos.",
-                "B) Críticas à política macroeconômica federal.",
-                "C) Sugestões de trânsito para bairros afastados.",
+                "A) Reclamação salarial de servidores administrativos lotados nos gabinetes dos vereadores.",
+                "B) Críticas à política econômica do governo federal e seus reflexos no Município.",
+                "C) Sugestões de melhorias no trânsito e no transporte coletivo dos bairros afastados.",
                 "D) A observância ou interpretação correta de dispositivo do Regimento Interno.",
                 "E) Pedido de aumento de verba de gabinete."
             ],
@@ -9545,9 +9545,9 @@ window.bancoDeQuestoes = {
             "id": 2059,
             "enunciado": "O preenchimento de vagas na composição das comissões permanentes da câmara deve observar, sempre que possível, o princípio da:",
             "opcoes": [
-                "A) Sorteio randômico entre todos os cidadãos.",
-                "B) Escolha exclusiva do partido majoritário.",
-                "C) Indicação direta e arbitrária do Prefeito.",
+                "A) Sorteio entre todos os vereadores, independentemente do partido ou do bloco parlamentar.",
+                "B) Escolha exclusiva do partido majoritário, que indica todos os membros das comissões.",
+                "C) Indicação direta do Prefeito, ouvidos os líderes partidários com assento na Câmara.",
                 "D) Antiguidade de idade civil.",
                 "E) Proporcionalidade partidária ou representação dos blocos parlamentares."
             ],
@@ -9558,11 +9558,11 @@ window.bancoDeQuestoes = {
             "id": 2060,
             "enunciado": "A Comissão Parlamentar de Inquérito (CPI) no âmbito municipal é criada mediante requerimento de:",
             "opcoes": [
-                "A) Apenas pelo Presidente da Casa.",
+                "A) Apenas o Presidente da Casa, que define o fato a ser apurado e o prazo de funcionamento.",
                 "B) Decisão exclusiva do Prefeito.",
-                "C) Maioria absoluta do Tribunal de Contas.",
-                "D) Iniciativa popular de eleitores.",
-                "E) Pelo menos um terço dos membros da Câmara Municipal, para apurar fato determinado e por prazo certo."
+                "C) Maioria absoluta dos membros da Câmara, para investigar qualquer assunto, sem prazo definido.",
+                "D) Iniciativa popular de, no mínimo, 5% dos eleitores do Município, para apurar fato determinado.",
+                "E) Um terço dos membros da Câmara, para apurar fato determinado e por prazo certo."
             ],
             "correta": 4,
             "comentario": "Requisito constitucional das CPIs: requerimento de 1/3 dos membros da Câmara, fato determinado e prazo certo de funcionamento."
@@ -9573,7 +9573,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Decretar prisões penais preventivas de suspeitos.",
                 "B) Julgar e condenar réus a penas privativas de liberdade.",
-                "C) Anular contratos celebrados por particulares sem processo judicial.",
+                "C) Anular contratos celebrados pela Prefeitura com particulares, sem necessidade de processo judicial ou de manifestação do Tribunal de Contas.",
                 "D) Determinar quebras de sigilo fiscal, bancário e telefônico, respeitadas as reservas constitucionais, além de convocar testemunhas.",
                 "E) Intervir diretamente em empresas privadas."
             ],
@@ -9585,10 +9585,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O relatório final de uma CPI, após aprovado em comissão, é encaminhado preferencialmente para:",
             "opcoes": [
                 "A) Arquivamento direto sem publicidade.",
-                "B) Sanção imediata do Prefeito Municipal.",
+                "B) Sanção imediata do Prefeito Municipal, que poderá vetá-lo total ou parcialmente no prazo de quinze dias úteis contados do recebimento.",
                 "C) Descarte físico em arquivo morto.",
                 "D) O Ministério Público, a Mesa Diretora e órgãos competentes para adoção de providências civis, penais ou administrativas.",
-                "E) Homologação pelo Tribunal de Justiça."
+                "E) Homologação pelo Tribunal de Justiça do Estado, que decide se as conclusões da comissão produzirão efeitos civis, penais e administrativos."
             ],
             "correta": 3,
             "comentario": "O relatório da CPI conclui os trabalhos investigativos e é remetido ao Ministério Público e órgãos de controle para responsabilização dos culpados."
@@ -9613,7 +9613,7 @@ window.bancoDeQuestoes = {
                 "A) A transparência, a celeridade processual e a segurança documental.",
                 "B) O aumento de gastos com papelaria física.",
                 "C) O isolamento dos processos em armários fechados.",
-                "D) A lentidão deliberada na tramitação de requerimentos.",
+                "D) A centralização das decisões no Presidente, reduzindo a participação dos setores na tramitação.",
                 "E) A exclusão do acesso público aos autos."
             ],
             "correta": 0,
@@ -9623,10 +9623,10 @@ window.bancoDeQuestoes = {
             "id": 2065,
             "enunciado": "A licitação pública é o procedimento administrativo obrigatório para a contratação de compras, serviços e obras pela Câmara Municipal, encontrando atualmente seu marco normativo federal geral na:",
             "opcoes": [
-                "A) Lei nº 8.666/1993 (revogada).",
+                "A) Lei nº 8.666/1993, que permanece como marco geral de licitações.",
                 "B) Lei nº 14.133/2021 (Nova Lei de Licitações e Contratos).",
-                "C) Lei Complementar nº 101/2000.",
-                "D) Lei de Improbidade Administrativa.",
+                "C) Lei Complementar nº 101/2000, que regula licitações e contratos.",
+                "D) Lei nº 10.520/2002, que rege todas as modalidades de licitação.",
                 "E) Estatuto dos Servidores Federais."
             ],
             "correta": 1,
@@ -9688,22 +9688,22 @@ window.bancoDeQuestoes = {
             "id": 2070,
             "enunciado": "A alienação de bens móveis inservíveis ou de bens imóveis insubstituíveis da Câmara Municipal para particulares exige, em regra, a modalidade licitatória de:",
             "opcoes": [
-                "A) Pregão eletrônico obrigatório.",
+                "A) Pregão eletrônico obrigatório, pelo critério de maior desconto.",
                 "B) Concurso cultural.",
-                "C) Dispensa por valor irrisório.",
+                "C) Dispensa de licitação, por se tratar de bens de valor irrisório.",
                 "D) Diálogo competitivo.",
-                "E) Leilão (para bens móveis) ou Concorrência (para imóveis)."
+                "E) Leilão, tanto para bens móveis quanto para bens imóveis."
             ],
             "correta": 4,
-            "comentario": "Para venda de bens inservíveis (móveis), utiliza-se o leilão. Para alienação de imóveis, a modalidade padrão é a concorrência (ou leilão em hipóteses específicas)."
+            "comentario": "Na Lei nº 14.133/2021, a alienação de bens imóveis e de bens móveis inservíveis ou legalmente apreendidos é feita por leilão (art. 6º, XL, e art. 76). A concorrência para imóveis era a regra da antiga Lei nº 8.666/1993, já revogada."
         },
         {
             "id": 2071,
             "enunciado": "A contratação direta sem licitação pode ocorrer em hipóteses expressamente previstas em lei, dividindo-se fundamentalmente em:",
             "opcoes": [
                 "A) Inexigibilidade de licitação (inviabilidade de competição) e Dispensa de licitação.",
-                "B) Pregão prioritário e Concorrência sumária.",
-                "C) Decreto presidencial e Resolução interna.",
+                "B) Pregão prioritário, para bens comuns, e Concorrência sumária, para obras e serviços de engenharia.",
+                "C) Credenciamento de fornecedores e Pré-qualificação de licitantes (procedimentos auxiliares).",
                 "D) Julgamento de contas e Veto legislativo.",
                 "E) Audiência pública e Referendo."
             ],
@@ -9714,11 +9714,11 @@ window.bancoDeQuestoes = {
             "id": 2072,
             "enunciado": "Um exemplo clássico de inexigibilidade de licitação por inviabilidade de competição é a contratação de:",
             "opcoes": [
-                "A) Compra de material de escritório de consumo diário.",
+                "A) Compra de material de escritório de consumo diário, disponível em vários fornecedores locais.",
                 "B) Profissional de setor artístico consagrado pela crítica especializada e opinião pública.",
-                "C) Obras civis comuns de engenharia com múltiplos concorrentes no mercado.",
-                "D) Aquisição de computadores genéricos de balcão.",
-                "E) Contratação de serviços comuns de limpeza predial."
+                "C) Obras civis comuns de engenharia, com múltiplos concorrentes capazes de executá-las no mercado.",
+                "D) Aquisição de computadores de configuração padrão, vendidos por diversas lojas e distribuidoras.",
+                "E) Serviços comuns de limpeza predial, oferecidos por várias empresas especializadas da região."
             ],
             "correta": 1,
             "comentario": "A contratação de artista consagrado com características singulares enquadra-se na inexigibilidade por inviabilidade de competição."
@@ -9727,11 +9727,11 @@ window.bancoDeQuestoes = {
             "id": 2073,
             "enunciado": "O contrato administrativo celebrado pela Câmara Municipal deve conter cláusulas essenciais. É vedada em contratos administrativos a cláusula de:",
             "opcoes": [
-                "A) Definição clara do objeto contratual.",
-                "B) Preço e condições de pagamento.",
+                "A) Definição clara e precisa do objeto contratual, com seus elementos característicos.",
+                "B) Preço e condições de pagamento, com os critérios, a data-base e a periodicidade do reajustamento.",
                 "C) Perpetuidade ou caráter irrevogável que impeça a modulação de interesse público.",
                 "D) Prazos de execução.",
-                "E) Hipóteses de rescisão."
+                "E) Hipóteses de extinção do contrato e as consequências do inadimplemento das partes."
             ],
             "correta": 2,
             "comentario": "Contratos administrativos possuem prerrogativas públicas (cláusulas exorbitantes), sendo inadmissível perpetuidade ou cláusulas que renunciem ao interesse público."
@@ -9740,8 +9740,8 @@ window.bancoDeQuestoes = {
             "id": 2074,
             "enunciado": "A prerrogativa da Administração Pública de alterar unilateralmente os contratos administrativos para melhor adequação às finalidades de interesse público denomina-se:",
             "opcoes": [
-                "A) Autonomia civil de igualdade contratual.",
-                "B) Rescisão arbitrária sem indenização.",
+                "A) Autonomia civil, decorrente da igualdade entre as partes contratantes.",
+                "B) Rescisão arbitrária, sem direito a qualquer indenização ao contratado.",
                 "C) Cláusula exorbitante / alteração unilateral.",
                 "D) Novação de dívida comercial.",
                 "E) Prescrição quinquenal."
@@ -9753,10 +9753,10 @@ window.bancoDeQuestoes = {
             "id": 2075,
             "enunciado": "O reequilíbrio econômico-financeiro (equilíbrio financeiro inicial) de um contrato administrativo pode ser pleiteado quando:",
             "opcoes": [
-                "A) Sobrevierem fatos imprevisíveis, ou previsíveis porém de consequências incalculáveis, retardadores ou impeditivos da execução (teoria da imprevisão / álea extraordinária).",
-                "B) A empresa contratada desejar aumentar sua margem de lucro por mera vaidade.",
-                "C) Ocorre inflação ordinária previsível e ordinária de mercado já embutida na proposta.",
-                "D) Houve erro de cálculo grosseiro do próprio licitante em sua proposta comercial inicial.",
+                "A) Sobrevierem fatos imprevisíveis, ou previsíveis de consequências incalculáveis, que retardem ou impeçam a execução do contrato.",
+                "B) A empresa contratada desejar aumentar sua margem de lucro, ainda que não tenha ocorrido nenhum fato novo após a assinatura do contrato.",
+                "C) Ocorrer apenas a inflação ordinária e previsível do mercado, já considerada pela empresa na formação do preço da proposta apresentada.",
+                "D) Houver erro de cálculo grosseiro cometido pelo próprio licitante na proposta comercial inicial, ainda que ele tenha assumido o risco.",
                 "E) A câmara mudar de sede administrativa."
             ],
             "correta": 0,
@@ -9766,9 +9766,9 @@ window.bancoDeQuestoes = {
             "id": 2076,
             "enunciado": "A fiscalização da execução de um contrato administrativo firmado pela Câmara é atribuída formalmente a um:",
             "opcoes": [
-                "A) Cidadão eleito em assembleia de bairro.",
+                "A) Cidadão eleito em assembleia de bairro para acompanhar a execução.",
                 "B) Fornecedor concorrente derrotado.",
-                "C) Juiz de direito da comarca.",
+                "C) Juiz de direito da comarca, mediante provocação do Ministério Público.",
                 "D) Fiscal ou gestor de contrato designado pela administração.",
                 "E) Sindicato patronal externo."
             ],
@@ -9792,11 +9792,11 @@ window.bancoDeQuestoes = {
             "id": 2078,
             "enunciado": "O orçamento público municipal compreende três instrumentos fundamentais previstos na Constituição Federal:",
             "opcoes": [
-                "A) CPI, LOA e Veto.",
-                "B) Estatuto, Regimento e Ata.",
-                "C) Decreto, Portaria e Edital.",
+                "A) Plano Plurianual, Lei de Responsabilidade Fiscal e Lei Orçamentária Anual do Município.",
+                "B) Plano Diretor Municipal, Lei de Diretrizes Orçamentárias e Lei Orçamentária Anual.",
+                "C) Plano Plurianual, Lei de Diretrizes Orçamentárias e Lei de Créditos Adicionais.",
                 "D) Balancete, Tomada e Diário.",
-                "E) PPA (Plano Plurianual), LDO (Lei de Diretrizes Orçamentárias) e LOA (Lei Orçamentária Anual)."
+                "E) Plano Plurianual, Lei de Diretrizes Orçamentárias e Lei Orçamentária Anual."
             ],
             "correta": 4,
             "comentario": "O sistema orçamentário brasileiro é composto pelo PPA (planejamento estratégico de 4 anos), LDO (metas anuais) e LOA (orçamento anual de receitas e despesas)."
@@ -9805,9 +9805,9 @@ window.bancoDeQuestoes = {
             "id": 2079,
             "enunciado": "A Lei de Diretrizes Orçamentárias (LDO) tem como função principal no ciclo orçamentário:",
             "opcoes": [
-                "A) Estabelecer as metas e prioridades para o exercício financeiro seguinte, orientando a elaboração da LOA e dispondo sobre alterações tributárias.",
-                "B) Planejar investimentos de longo prazo por 20 anos.",
-                "C) Executar diretamente pagamentos de salários de servidores.",
+                "A) Estabelecer as metas e prioridades para o exercício seguinte, orientando a elaboração da LOA.",
+                "B) Planejar os investimentos de longo prazo da administração por um período de 20 anos, com metas físicas e financeiras.",
+                "C) Autorizar a execução das despesas do exercício, como o pagamento dos salários dos servidores e das obras contratadas.",
                 "D) Julgar contas de gestões passadas.",
                 "E) Substituir a Lei Orgânica Municipal."
             ],
@@ -9818,8 +9818,8 @@ window.bancoDeQuestoes = {
             "id": 2080,
             "enunciado": "A competência para apreciar e votar o orçamento anual (LOA) e o plano plurianual do município cabe primariamente a:",
             "opcoes": [
-                "A) Poder Executivo (Prefeito).",
-                "B) Tribunal de Contas.",
+                "A) Poder Executivo (Prefeito), por meio de decreto.",
+                "B) Tribunal de Contas do Estado, em parecer prévio.",
                 "C) Poder Legislativo (Câmara Municipal).",
                 "D) Conselho de Contribuintes.",
                 "E) Ministério Público."
@@ -9831,10 +9831,10 @@ window.bancoDeQuestoes = {
             "id": 2081,
             "enunciado": "Os créditos adicionais classificam-se em três espécies legais:",
             "opcoes": [
-                "A) Prévios, Posteriores e Condicionais.",
+                "A) Ordinários, Suplementares e Extraordinários de Urgência.",
                 "B) Fixos, Variáveis e Opcionais.",
                 "C) Suplementares, Especiais e Extraordinários.",
-                "D) Ordinários, Sumários e Especiais.",
+                "D) Suplementares, Especiais e Ordinários de Reforço.",
                 "E) Internos, Externos e Cambiais."
             ],
             "correta": 2,
@@ -9844,11 +9844,11 @@ window.bancoDeQuestoes = {
             "id": 2082,
             "enunciado": "Créditos extraordinários abertos pelo Executivo em casos de calamidade pública ou urgência imprevisível destinam-se a despesas urgentes e são abertos por meio de:",
             "opcoes": [
-                "A) Projeto de lei ordinária com tramitação de 90 dias.",
-                "B) Resolução interna da mesa diretora.",
-                "C) Portaria de secretaria municipal.",
-                "D) Acordo verbal com sindicatos.",
-                "E) Decreto do Executivo, com posterior ciência ou ratificação legislativa conforme regras constitucionais."
+                "A) Projeto de lei ordinária, com tramitação em regime de urgência e votação em até 90 dias.",
+                "B) Resolução da Mesa Diretora da Câmara, publicada no Diário Oficial do Município.",
+                "C) Portaria do Secretário Municipal de Finanças, com prévia autorização do Prefeito.",
+                "D) Lei complementar específica, aprovada por maioria absoluta dos membros da Câmara.",
+                "E) Decreto do Executivo, dando-se imediato conhecimento ao Poder Legislativo."
             ],
             "correta": 4,
             "comentario": "Créditos extraordinários destinam-se a urgências extremas (guerra, comoção ou calamidade pública) e são abertos por decreto do Executivo com comunicação imediata ao Legislativo."
@@ -9858,10 +9858,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A responsabilidade fiscal na gestão pública brasileira é disciplinada de forma rigorosa pela Lei Complementar nº 101/2000, conhecida como:",
             "opcoes": [
                 "A) Lei de Improbidade Administrativa.",
-                "B) Nova Lei de Licitações.",
-                "C) Estatuto do Servidor.",
-                "D) Lei de Responsabilidade Fiscal (LRF).",
-                "E) Lei de Acesso à Informação."
+                "B) Nova Lei de Licitações e Contratos.",
+                "C) Lei de Normas Gerais de Direito Financeiro.",
+                "D) Lei de Responsabilidade Fiscal.",
+                "E) Lei de Acesso à Informação (LAI)."
             ],
             "correta": 3,
             "comentario": "A LC nº 101/2000 é a Lei de Responsabilidade Fiscal (LRF), estabelecendo normas de finanças públicas voltadas para a responsabilidade na gestão fiscal."
@@ -9883,10 +9883,10 @@ window.bancoDeQuestoes = {
             "id": 2085,
             "enunciado": "O relatório bimestral ou quadrimestral de execução orçamentária exigido pela LRF para garantir transparência fiscal denomina-se:",
             "opcoes": [
-                "A) Balancete de caixa particular.",
+                "A) Balanço Orçamentário Anual (BOA) e Demonstrativo de Variações Patrimoniais (DVP) do Município.",
                 "B) Relatório Resumido da Execução Orçamentária (RREO) e Relatório de Gestão Fiscal (RGF).",
-                "C) Ata de reunião de comissão.",
-                "D) Parecer de CPI.",
+                "C) Relatório de Execução Financeira (REF) e Relatório de Controle de Despesas com Pessoal (RCDP).",
+                "D) Relatório Anual de Gestão (RAG) e Prestação de Contas Simplificada (PCS) ao Tribunal.",
                 "E) Edital de licitação."
             ],
             "correta": 1,
@@ -9896,10 +9896,10 @@ window.bancoDeQuestoes = {
             "id": 2086,
             "enunciado": "A guarda e preservação de documentos arquivísticos na Câmara Municipal seguem o ciclo vital dos documentos, que compreende as fases de:",
             "opcoes": [
-                "A) Arquivo físico, digital e destruído.",
+                "A) Arquivo físico, arquivo digital e arquivo eliminado (descartado).",
                 "B) Arquivo corrente, intermediário e permanente (histórico).",
-                "C) Arquivo secreto, aberto e restrito.",
-                "D) Arquivo temporário, perpétuo e nulo.",
+                "C) Arquivo sigiloso, arquivo ostensivo e arquivo restrito ao órgão.",
+                "D) Arquivo setorial, arquivo central e arquivo histórico municipal.",
                 "E) Arquivo de gaveta, pasta e lixeira."
             ],
             "correta": 1,
@@ -9910,9 +9910,9 @@ window.bancoDeQuestoes = {
             "enunciado": "O instrumento arquivístico que define os prazos de guarda e a destinação final (eliminação ou guarda permanente) dos documentos de um órgão é a:",
             "opcoes": [
                 "A) Lista de compras anual.",
-                "B) Tabela de vencimentos salariais.",
+                "B) Plano de Classificação de Documentos por assunto (PCD).",
                 "C) Ata de sessão solene.",
-                "D) Ordem de serviço de limpeza.",
+                "D) Tabela de Prazos de Tramitação Processual (TPT).",
                 "E) Tabela de Temporalidade de Documentos (TTD)."
             ],
             "correta": 4,
@@ -9922,11 +9922,11 @@ window.bancoDeQuestoes = {
             "id": 2088,
             "enunciado": "A microfilmagem ou digitalização de documentos oficiais arquivados na Câmara Municipal, quando realizada conforme normas técnicas legais, confere aos arquivos digitais:",
             "opcoes": [
-                "A) Apenas caráter decorativo sem validade jurídica.",
-                "B) Proibição absoluta de consulta pública.",
-                "C) Necessidade de reescrita manual em cartório.",
+                "A) Apenas caráter informativo, sem nenhuma validade jurídica.",
+                "B) Proibição absoluta de consulta pública pelos cidadãos.",
+                "C) Necessidade de autenticação de cada página em cartório.",
                 "D) Valor legal equivalente ao dos documentos originais.",
-                "E) Destruição imediata de backups."
+                "E) Autorização para a destruição imediata das cópias de segurança."
             ],
             "correta": 3,
             "comentario": "A digitalização certificada e a microfilmagem seguem padrões legais que garantem fé pública e validade jurídica equivalente aos originais físicos."
@@ -9937,7 +9937,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) A omissão intencional de prazos legais.",
                 "B) A eliminação de etapas de controle externo.",
-                "C) A supressão de direitos de defesa dos interessados.",
+                "C) A supressão de etapas de defesa dos interessados, para que as decisões sejam tomadas no menor tempo possível.",
                 "D) O arquivamento sumário de denúncias.",
                 "E) A rapidez na prestação do serviço e na tomada de decisões sem sacrificar a segurança jurídica."
             ],
@@ -9948,7 +9948,7 @@ window.bancoDeQuestoes = {
             "id": 2090,
             "enunciado": "A Ouvidoria Parlamentar da Câmara Municipal tem como atribuição precípua:",
             "opcoes": [
-                "A) Julgar em última instância recursos judiciais de particulares.",
+                "A) Julgar em última instância os recursos administrativos apresentados por cidadãos contra as decisões tomadas pela Mesa Diretora.",
                 "B) Nomear secretários municipais para o executivo.",
                 "C) Executar diretamente obras de pavimentação urbana.",
                 "D) Servir de canal direto de comunicação entre o cidadão e a câmara, recebendo reclamações, sugestões e denúncias.",
@@ -9961,10 +9961,10 @@ window.bancoDeQuestoes = {
             "id": 2091,
             "enunciado": "O controle interno na Câmara Municipal, exercido por unidade administrativa especializada, tem por finalidade:",
             "opcoes": [
-                "A) Substituir o Tribunal de Contas em julgamentos externos.",
-                "B) Decidir candidaturas eleitorais de partidos.",
+                "A) Substituir o Tribunal de Contas no julgamento das contas anuais apresentadas pelo Presidente da Câmara.",
+                "B) Fiscalizar a execução dos contratos de forma exclusiva, dispensando a designação de fiscais pela Mesa.",
                 "C) Aplicar penas privativas de liberdade a criminosos comuns.",
-                "D) Controlar a vida privada dos servidores.",
+                "D) Controlar a frequência dos vereadores e aplicar descontos nos subsídios dos que faltarem às sessões.",
                 "E) Avaliar a legalidade, a eficácia e a eficiência da gestão orçamentária, financeira e patrimonial."
             ],
             "correta": 4,
@@ -9974,10 +9974,10 @@ window.bancoDeQuestoes = {
             "id": 2092,
             "enunciado": "A exigência de concurso público para provimento de cargos efetivos no âmbito da Câmara Municipal decorre de mandamento constitucional que visa garantir:",
             "opcoes": [
-                "A) A indicação político-partidária de simpatizantes.",
+                "A) A indicação de profissionais de confiança das autoridades, com base na afinidade político-partidária.",
                 "B) A meritocracia, a igualdade de condições e a impessoalidade no acesso ao serviço público.",
-                "C) A perpetuação de cargos comissionados sem limite.",
-                "D) A contratação direta de parentes.",
+                "C) A ocupação de todos os cargos por servidores comissionados, de livre nomeação e exoneração.",
+                "D) A contratação direta de profissionais experientes, dispensando a comprovação de conhecimento.",
                 "E) A isenção de fiscalização de trabalho."
             ],
             "correta": 1,
@@ -9987,9 +9987,9 @@ window.bancoDeQuestoes = {
             "id": 2093,
             "enunciado": "O servidor público aprovado em concurso e empossado em cargo efetivo cumpre estágio probatório pelo prazo de 3 anos, durante o qual será avaliado quanto aos requisitos de:",
             "opcoes": [
-                "A) Fidelidade partidária e concordância ideológica com a mesa.",
-                "B) Fortuna familiar e bens imobiliários.",
-                "C) Filiação a sindicatos específicos.",
+                "A) Fidelidade partidária, concordância ideológica com a Mesa Diretora e participação em eventos políticos.",
+                "B) Formação acadêmica, tempo de serviço anterior na iniciativa privada e domínio de idiomas estrangeiros.",
+                "C) Filiação sindical, participação em associações de servidores e engajamento em causas institucionais.",
                 "D) Aptidão esportiva e artística.",
                 "E) Assiduidade, disciplina, capacidade de iniciativa, produtividade e responsabilidade."
             ],
@@ -10000,11 +10000,11 @@ window.bancoDeQuestoes = {
             "id": 2094,
             "enunciado": "A perda do cargo público por servidor efetivo estável pode ocorrer em virtude de:",
             "opcoes": [
-                "A) Mera vontade do Presidente da Câmara em ano eleitoral.",
-                "B) Mudança de partido político da maioria da mesa.",
-                "C) Sentença judicial transitada em julgado, processo administrativo disciplinar assegurada ampla defesa, ou insuficiência de desempenho em avaliação periódica.",
-                "D) Votação secreta de plenário sem processo.",
-                "E) Término de mandato do prefeito municipal."
+                "A) Vontade do Presidente da Câmara em ano eleitoral, desde que fundamentada em contenção de despesas e publicada no Diário Oficial.",
+                "B) Mudança de partido político da maioria da Mesa Diretora, quando o servidor ocupar cargo efetivo em setor estratégico da Câmara.",
+                "C) Sentença judicial transitada em julgado, processo administrativo com ampla defesa ou avaliação periódica de desempenho.",
+                "D) Votação secreta em plenário, sem necessidade de processo, quando a maioria absoluta dos vereadores entender que houve falta grave.",
+                "E) Término do mandato do Presidente da Câmara, quando o servidor tiver sido nomeado durante a gestão da Mesa Diretora anterior."
             ],
             "correta": 2,
             "comentario": "Conforme o art. 41 da CF/88, o servidor estável só perde o cargo por sentença judicial, PAD com ampla defesa ou avaliação periódica de desempenho insatisfatória."
@@ -10026,11 +10026,11 @@ window.bancoDeQuestoes = {
             "id": 2096,
             "enunciado": "O regime jurídico dos servidores da Câmara Municipal de Rio Branco é disciplinado pelo estatuto próprio dos servidores públicos do município, garantindo-lhes direitos como:",
             "opcoes": [
-                "A) Isenção total de recolhimento previdenciário.",
+                "A) Isenção total de recolhimento previdenciário nos primeiros cinco anos de exercício no cargo efetivo da Câmara.",
                 "B) Licenças para tratamento de saúde, vencimentos regulares, direito de petição e férias anuais remuneradas.",
-                "C) Direito de greve ilimitada sem corte de ponto em serviços essenciais.",
+                "C) Direito de greve ilimitada, sem corte de ponto, inclusive nos serviços essenciais e nas atividades de atendimento ao público.",
                 "D) Acumulação livre de cargos comissionados.",
-                "E) Estabilidade imediata na posse sem estágio probatório."
+                "E) Estabilidade imediata a partir da posse, dispensado o estágio probatório para quem já foi servidor de outro ente."
             ],
             "correta": 1,
             "comentario": "Os estatutos estatutários municipais asseguram direitos fundamentais como férias, licenças médicas, vencimentos e garantias processuais administrativas."
@@ -10040,9 +10040,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A responsabilidade civil, penal e administrativa do servidor público significa que este responde perante o Estado e a sociedade por:",
             "opcoes": [
                 "A) Atos comissivos ou omissivos irregulares praticados no exercício de suas funções ou em razão delas.",
-                "B) Apenas opiniões emitidas em sua vida estritamente privada.",
+                "B) Apenas opiniões emitidas em sua vida estritamente privada, ainda que não tenham relação com o cargo ocupado.",
                 "C) Fatos praticados por terceiros estranhos ao órgão.",
-                "D) Decisões políticas tomadas exclusivamente por vereadores.",
+                "D) Decisões políticas tomadas exclusivamente pelos vereadores, mesmo que o servidor não tenha participado delas.",
                 "E) Situações fortuitas de força maior da natureza."
             ],
             "correta": 0,
@@ -10052,10 +10052,10 @@ window.bancoDeQuestoes = {
             "id": 2098,
             "enunciado": "O direito de petição assegurado aos servidores e cidadãos perante a Câmara Municipal consiste na faculdade de:",
             "opcoes": [
-                "A) Exigir alteração imediata de leis federais.",
-                "B) Votar em projetos de lei diretamente no plenário.",
+                "A) Exigir a alteração imediata de leis federais que considere injustas, mediante simples requerimento escrito à Mesa.",
+                "B) Votar diretamente os projetos de lei no plenário, ao lado dos vereadores, quando a matéria for de interesse próprio.",
                 "C) Requerer aos poderes públicos contra ilegalidade ou abuso de poder, e obter certidões para defesa de direitos.",
-                "D) Revogar decretos executivos por petição simples.",
+                "D) Revogar decretos do Executivo por meio de petição simples, desde que assinada por um número mínimo de eleitores.",
                 "E) Nomear servidores em comissão."
             ],
             "correta": 2,
@@ -10066,8 +10066,8 @@ window.bancoDeQuestoes = {
             "enunciado": "A certidão emitida pela Câmara Municipal a pedido de interessado para defesa de direitos e esclarecimento de situações deve ser fornecida no prazo legal, assegurando o princípio da:",
             "opcoes": [
                 "A) Publicidade, direito de informação e transparência.",
-                "B) Confidencialidade absoluta de atos públicos.",
-                "C) Restrição severa de acesso a documentos gerais.",
+                "B) Confidencialidade absoluta dos atos públicos de interesse particular.",
+                "C) Restrição de acesso aos documentos gerais, salvo ordem judicial.",
                 "D) Cobrança de emolumentos proibidos.",
                 "E) Discricionariedade de atendimento."
             ],
@@ -10078,10 +10078,10 @@ window.bancoDeQuestoes = {
             "id": 2100,
             "enunciado": "O princípio da impessoalidade na administração de uma câmara municipal impede que o gestor utilize recursos públicos para:",
             "opcoes": [
-                "A) Executar obras aprovadas na LOA.",
+                "A) Executar as obras e os serviços previstos na Lei Orçamentária Anual, conforme o cronograma aprovado.",
                 "B) Divulgar marcas, slogans ou nomes que caracterizem promoção pessoal de autoridades ou servidores.",
-                "C) Manter sistemas de protocolo digital.",
-                "D) Realizar licitações na modalidade pregão.",
+                "C) Manter sistemas de protocolo digital que registrem o nome dos servidores responsáveis por cada etapa.",
+                "D) Realizar licitações na modalidade pregão para a contratação de serviços de publicidade institucional.",
                 "E) Publicar leis no diário oficial."
             ],
             "correta": 1,
@@ -10091,7 +10091,7 @@ window.bancoDeQuestoes = {
             "id": 2101,
             "enunciado": "No âmbito do processo legislativo, o veto parcial do Prefeito somente abrangerá:",
             "opcoes": [
-                "A) Qualquer palavra solta dentro de um parágrafo.",
+                "A) Qualquer palavra ou expressão isolada dentro de um dispositivo, desde que o sentido do texto aprovado seja preservado pela Câmara.",
                 "B) Apenas o título do projeto de lei.",
                 "C) Texto integral de artigo, de parágrafo, de inciso ou de alínea, sendo vedada a cisão de palavras ou expressões isoladas.",
                 "D) Somente a justificativa enviada pelo vereador.",
@@ -10104,11 +10104,11 @@ window.bancoDeQuestoes = {
             "id": 2102,
             "enunciado": "A rejeição de veto pelo Plenário da Câmara Municipal transforma o trecho vetado em lei, devendo esta ser promulgada por:",
             "opcoes": [
-                "A) Juiz de direito da comarca.",
-                "B) Tribunal de Contas do Estado.",
-                "C) Presidente da Câmara Municipal, caso o Prefeito deixe de fazê-lo no prazo legal.",
-                "D) Secretário de Finanças do Executivo.",
-                "E) Promotor público local."
+                "A) Juiz de direito da comarca, após o trânsito em julgado da decisão da Câmara.",
+                "B) Tribunal de Contas do Estado, quando a lei envolver despesa pública.",
+                "C) Presidente da Câmara, se o Prefeito não o fizer no prazo legal.",
+                "D) Secretário de Governo do Executivo, por delegação expressa do Prefeito.",
+                "E) Vice-Prefeito, sempre que o veto rejeitado tiver sido aposto pelo Prefeito."
             ],
             "correta": 2,
             "comentario": "Rejeitado o veto, o projeto é enviado ao Prefeito para promulgação. Se este não o fizer em 48 horas, o Presidente da Câmara promulgará a lei."
@@ -10119,7 +10119,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Concessão de títulos honoríficos a cidadãos ilustres.",
                 "B) Convocação de comissões parlamentares de inquérito.",
-                "C) Alteração do Regimento Interno da Câmara.",
+                "C) Alteração do Regimento Interno da Câmara, da composição das comissões permanentes e da organização dos serviços administrativos do Legislativo.",
                 "D) Criação de cargos, funções ou empregos públicos na administração direta e autárquica, aumento de remuneração e regime jurídico de pessoal.",
                 "E) Concessão de licença a vereadores."
             ],
@@ -10131,9 +10131,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A apresentação de projeto de lei por iniciativa popular no âmbito do município exige, como regra geral comum nas leis orgânicas:",
             "opcoes": [
                 "A) Aprovação unânime prévia de sindicatos.",
-                "B) Ordem judicial expedida pelo Supremo Tribunal Federal.",
+                "B) Ordem judicial expedida pelo Tribunal de Justiça, reconhecendo a relevância social da proposta apresentada.",
                 "C) Autorização do Tribunal de Contas.",
-                "D) Pagamento de taxa de protocolo de iniciativa.",
+                "D) Pagamento de taxa de protocolo de iniciativa, proporcional ao número de assinaturas apresentadas.",
                 "E) Assinatura de um percentual mínimo de eleitores inscritos no município (ex: 5% do eleitorado)."
             ],
             "correta": 4,
@@ -10145,7 +10145,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Servidores públicos gozem de férias anuais regulamentadas.",
                 "B) O orçamento anual seja aprovado dentro do prazo constitucional.",
-                "C) Contratos administrativos sejam encerrados no término regular do prazo.",
+                "C) Contratos administrativos sejam encerrados no término regular do prazo de vigência previsto no edital.",
                 "D) Sistemas de protocolo eletrônico sofram manutenção programada.",
                 "E) Os serviços essenciais prestados à população sejam interrompidos de forma arbitrária ou sumária."
             ],
@@ -10156,9 +10156,9 @@ window.bancoDeQuestoes = {
             "id": 2106,
             "enunciado": "O princípio da legalidade orçamentária impede que a administração realize despesas ou assuma obrigações diretas que excedam:",
             "opcoes": [
-                "A) A vontade pessoal do Presidente da Câmara.",
+                "A) A vontade pessoal do Presidente da Câmara, expressa em ato da Mesa.",
                 "B) Os créditos orçamentários ou adicionais autorizados na LOA.",
-                "C) O faturamento de empresas privadas locais.",
+                "C) O faturamento anual das empresas contratadas para prestar serviços.",
                 "D) Doações voluntárias de munícipes.",
                 "E) Empréstimos informais entre gabinetes."
             ],
@@ -10169,10 +10169,10 @@ window.bancoDeQuestoes = {
             "id": 2107,
             "enunciado": "A Tomada de Contas Especial (TCE) é um processo administrativo rigoroso instaurado para:",
             "opcoes": [
-                "A) Conceder férias a servidores administrativos.",
-                "B) Eleger nova mesa diretora bianual.",
-                "C) Aprovar licitações de grande vulto na modalidade pregão.",
-                "D) Apurar responsabilidade por ocorrência de dano à administração pública e apurar prejuízo ao erário, com vistas ao ressarcimento.",
+                "A) Conceder férias e licenças aos servidores administrativos que tenham prestado contas de diárias e adiantamentos.",
+                "B) Eleger a nova Mesa Diretora para o biênio seguinte, após a análise e aprovação das contas da gestão anterior.",
+                "C) Aprovar licitações de grande vulto na modalidade pregão, com prévia análise da assessoria jurídica e do controle interno.",
+                "D) Apurar responsabilidade por dano à administração pública, quantificar o prejuízo e obter o ressarcimento.",
                 "E) Arquivar projetos de lei rejeitados."
             ],
             "correta": 3,
@@ -10195,10 +10195,10 @@ window.bancoDeQuestoes = {
             "id": 2109,
             "enunciado": "A imunidade parlamentar formal (processual) conferida a membros do Legislativo costuma proteger contra:",
             "opcoes": [
-                "A) Processos civis por inadimplência comercial particular.",
-                "B) Prisões cautelares arbitrárias e restrições indevidas à liberdade no exercício do mandato, conforme as regras constitucionais aplicáveis.",
-                "C) Cobrança de impostos municipais e federais pessoais.",
-                "D) Cumprimento de obrigações de direito de família.",
+                "A) Processos civis por inadimplência comercial particular, enquanto durar o mandato e até a diplomação seguinte.",
+                "B) Prisões e restrições indevidas à liberdade no exercício do mandato, conforme as regras constitucionais.",
+                "C) Cobrança de impostos municipais e federais pessoais, enquanto o parlamentar estiver no exercício do mandato.",
+                "D) Cumprimento de obrigações de direito de família, como pensão alimentícia, durante todo o mandato eletivo.",
                 "E) Aplicação de leis de trânsito em vias públicas."
             ],
             "correta": 1,
@@ -10208,7 +10208,7 @@ window.bancoDeQuestoes = {
             "id": 2110,
             "enunciado": "O impedimento e a suspeição de membros de comissões ou relatores de processos administrativos garantem a aplicação do princípio da:",
             "opcoes": [
-                "A) Centralização jerárquica absoluta.",
+                "A) Centralização hierárquica absoluta das decisões administrativas.",
                 "B) Supremacia privada nos contratos.",
                 "C) Publicidade restrita e sigilosa.",
                 "D) Imparcialidade e do devido processo legal.",
@@ -10223,8 +10223,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Redes sociais particulares de vereadores.",
                 "B) Órgão oficial de imprensa do município, Diário Oficial eletrônico ou portal de transparência designado em lei.",
-                "C) Murais de papel fixados em praça pública exclusiva.",
-                "D) Cartas particulares enviadas aos eleitores.",
+                "C) Murais de papel fixados exclusivamente em praça pública, dispensada qualquer publicação em meio oficial ou eletrônico.",
+                "D) Cartas enviadas aos eleitores cadastrados, com cópia arquivada no gabinete de cada vereador que votou favoravelmente à matéria.",
                 "E) Anúncios sonoros em carros de som."
             ],
             "correta": 1,
@@ -10234,9 +10234,9 @@ window.bancoDeQuestoes = {
             "id": 2112,
             "enunciado": "O princípio da boa-fé objetiva aplicado aos processos administrativos e licitatórios exige que administrados e agentes públicos ajam com:",
             "opcoes": [
-                "A) Malícia processual para vencer concorrentes.",
+                "A) Malícia processual, desde que dentro das regras, para vencer os concorrentes.",
                 "B) Ocultação de documentos relevantes.",
-                "C) Rigor formal sem respeito à justiça.",
+                "C) Rigor formal absoluto, ainda que isso cause injustiça ao administrado.",
                 "D) Intenção de burlar prazos legais.",
                 "E) Lealdade, honestidade, transparência e cooperação mútua."
             ],
@@ -10248,9 +10248,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A consulta pública e a audiência pública promovidas no âmbito do processo legislativo visam primordialmente fomentar:",
             "opcoes": [
                 "A) A participação popular democrática, a transparência e o debate de projetos de grande relevância social.",
-                "B) A lentidão proposital de pautas da mesa.",
-                "C) O encerramento antecipado de comissões.",
-                "D) A votação secreta de cargos internos.",
+                "B) A lentidão proposital das pautas da Mesa, permitindo que os projetos polêmicos sejam arquivados por decurso de prazo.",
+                "C) O encerramento antecipado dos trabalhos das comissões, com votação imediata do projeto sem parecer técnico.",
+                "D) A votação secreta dos cargos internos da Câmara, com a participação de representantes da sociedade civil.",
                 "E) A exclusão de entidades de classe."
             ],
             "correta": 0,
@@ -10260,11 +10260,11 @@ window.bancoDeQuestoes = {
             "id": 2114,
             "enunciado": "O decurso de prazo regimental sem manifestação de comissão técnica em projeto de lei pode gerar, conforme regimentos internos, a figura da:",
             "opcoes": [
-                "A) Extinção definitiva e automática do município.",
-                "B) Conversão do projeto em decreto do prefeito.",
+                "A) Extinção definitiva e automática do projeto, que não poderá ser reapresentado na legislatura.",
+                "B) Conversão automática do projeto em decreto do Prefeito, com força de lei ordinária municipal.",
                 "C) Aposição de regime de urgência, avocação ou tramitação autônoma para votação em plenário.",
-                "D) Prorrogação infinita por 10 anos.",
-                "E) Destituição automática de todos os vereadores."
+                "D) Prorrogação automática do prazo da comissão por mais dez anos, até a emissão do parecer técnico.",
+                "E) Destituição automática de todos os membros da comissão, com nova eleição pela Mesa Diretora."
             ],
             "correta": 2,
             "comentario": "Esgotados os prazos regimentais sem parecer de comissões, os regimentos preveem mecanismos como avocação ou inclusão em pauta para destravamento da pauta."
@@ -10273,9 +10273,9 @@ window.bancoDeQuestoes = {
             "id": 2115,
             "enunciado": "O servidor encarregado de protocolar documentos que constate rasuras graves ou irregularidades formais em requerimentos deve:",
             "opcoes": [
-                "A) Rasgar o documento na frente do cidadão.",
+                "A) Recusar o recebimento do documento e devolvê-lo ao cidadão sem qualquer orientação sobre como corrigi-lo.",
                 "B) Orientar o interessado sobre a regularização formal e registrar a ocorrência conforme normas do setor.",
-                "C) Modificar o texto por conta própria sem consentimento.",
+                "C) Corrigir o texto por conta própria, sem consentimento do interessado, para não atrasar a tramitação do pedido.",
                 "D) Ignorar o fato e arquivar na lixeira.",
                 "E) Prender o cidadão por desacato."
             ],
@@ -10287,7 +10287,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A responsabilidade patrimonial por danos causados por atos comissivos de agentes públicos recai primariamente sobre:",
             "opcoes": [
                 "A) A pessoa jurídica de direito público (o Estado/Município), que depois poderá cobrar em ação de regresso do agente em caso de dolo ou culpa.",
-                "B) Diretamente no bolso do servidor em primeira instância perante a vítima.",
+                "B) Diretamente sobre o patrimônio do servidor causador do dano, que responde em primeira instância perante a vítima, cabendo ao Estado apenas responder subsidiariamente.",
                 "C) Exclusivamente na seguradora privada contratada pelo servidor.",
                 "D) Nos partidos políticos dos vereadores.",
                 "E) No Ministério Público."
@@ -10301,7 +10301,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) Cortar totalmente qualquer gasto com servidores e gabinetes.",
                 "B) Obtenção do melhor resultado com o menor dispêndio de recursos públicos, garantindo qualidade e eficiência.",
-                "C) Comprar sempre o produto mais barato do mercado, independentemente de falhas.",
+                "C) Comprar sempre o produto de menor preço do mercado, independentemente da qualidade, da durabilidade e de eventuais falhas.",
                 "D) Paralisar construções pela metade.",
                 "E) Ocultar balancetes de despesa."
             ],
@@ -10312,10 +10312,10 @@ window.bancoDeQuestoes = {
             "id": 2118,
             "enunciado": "O direito de greve dos servidores públicos civis, assegurado na Constituição Federal, possui regulação específica que estabelece:",
             "opcoes": [
-                "A) Proibição absoluta em qualquer hipótese sem exceções.",
+                "A) Proibição absoluta da greve em qualquer hipótese, por se tratar de serviço público, sem exceção para nenhuma categoria.",
                 "B) Liberação total de cargos de chefia para paralisação.",
-                "C) Pagamento dobrado de diárias durante o movimento.",
-                "D) Seu exercício nos termos e nos limites definidos em lei específica (ainda pendente de preenchimento integral, aplicando-se jurisprudência do STF sobre serviços essenciais).",
+                "C) Pagamento em dobro das diárias e dos dias parados durante o movimento, como forma de compensação aos servidores.",
+                "D) Seu exercício nos termos e nos limites definidos em lei específica, conforme o art. 37, VII, da Constituição.",
                 "E) Demissão sumária automática de grevistas."
             ],
             "correta": 3,
@@ -10328,7 +10328,7 @@ window.bancoDeQuestoes = {
                 "A) Fechamento permanente da cidade.",
                 "B) Atendimento ao interesse público, à legalidade democrática e ao aprimoramento institucional da Câmara Municipal.",
                 "C) Reajuste salarial automático de vereadores.",
-                "D) Término definitivo da legislatura de 4 anos em todos os anos.",
+                "D) Término definitivo da legislatura de quatro anos, que se encerra ao fim de cada sessão legislativa ordinária anual.",
                 "E) Afastamento de todos os servidores efetivos."
             ],
             "correta": 1,
@@ -10353,9 +10353,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) as normas de conteúdo substantivo",
                 "B) a epígrafe, a ementa, o preâmbulo, o enunciado do objeto e a indicação do âmbito de aplicação",
-                "C) as cláusulas de vigência e de revogação",
+                "C) as cláusulas de vigência e de revogação, a justificativa do autor e as disposições transitórias",
                 "D) as disposições transitórias e os anexos",
-                "E) a justificativa do autor e o parecer das comissões"
+                "E) a justificativa do autor, o parecer das comissões técnicas e o enunciado do objeto e da ementa"
             ],
             "correta": 1,
             "comentario": "Pelo art. 3º, I, a parte preliminar reúne epígrafe, ementa, preâmbulo, objeto e âmbito de aplicação. Vigência e revogação ficam na parte final."
@@ -10365,10 +10365,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A epígrafe da lei, nos termos da LC nº 95/1998:",
             "opcoes": [
                 "A) é a cláusula que determina a entrada em vigor",
-                "B) indica o órgão competente e a base legal do ato",
+                "B) indica o órgão ou instituição competente para a prática do ato e a sua base legal, logo após a ementa da lei",
                 "C) é grafada em maiúsculas e formada pelo título da espécie normativa, pelo número e pelo ano de promulgação",
                 "D) é a lista das leis revogadas",
-                "E) resume o objeto da lei em forma de título"
+                "E) resume, de forma concisa e sob a forma de título, o objeto da lei, sendo grafada em negrito e em itálico"
             ],
             "correta": 2,
             "comentario": "O art. 4º define a epígrafe, por exemplo: \"LEI Nº 2.500, DE 10 DE MARÇO DE 2026\". O resumo do objeto é a ementa (art. 5º)."
@@ -10390,10 +10390,10 @@ window.bancoDeQuestoes = {
             "id": 24005,
             "enunciado": "Segundo a LC nº 95/1998, o preâmbulo da lei:",
             "opcoes": [
-                "A) resume o objeto da lei",
+                "A) resume, de modo conciso e sob a forma de título, o objeto da lei e a sua finalidade principal",
                 "B) indica o órgão ou a instituição competente para a prática do ato e sua base legal",
-                "C) traz a numeração da lei",
-                "D) define o prazo de vacância",
+                "C) traz o título da espécie normativa, o número e o ano de promulgação, em maiúsculas",
+                "D) define o prazo de vacância e a cláusula de vigência da lei, quando ela for extensa",
                 "E) enumera as leis revogadas"
             ],
             "correta": 1,
@@ -10403,11 +10403,11 @@ window.bancoDeQuestoes = {
             "id": 24006,
             "enunciado": "De acordo com a LC nº 95/1998, excetuadas as codificações, cada lei tratará:",
             "opcoes": [
-                "A) de matérias diversas, se aprovada por maioria absoluta",
-                "B) de no máximo três objetos relacionados",
-                "C) de um único objeto, sem conter matéria estranha a ele ou a ele não vinculada por afinidade, pertinência ou conexão",
-                "D) de quantos assuntos forem necessários, a critério do autor",
-                "E) de assuntos de diferentes Poderes, desde que urgentes"
+                "A) de matérias diversas, desde que aprovada por maioria absoluta e com indicação expressa de cada objeto na ementa",
+                "B) de no máximo três objetos, desde que todos relacionados entre si por afinidade, pertinência ou conexão",
+                "C) de um único objeto, sem conter matéria estranha a ele ou a ele não vinculada por afinidade ou conexão",
+                "D) de quantos assuntos forem necessários, a critério do autor, desde que indicados na ementa e no preâmbulo",
+                "E) de assuntos de diferentes Poderes, desde que urgentes e aprovados em regime especial de tramitação na Casa"
             ],
             "correta": 2,
             "comentario": "O art. 7º, I e II, proíbe as chamadas \"caudas\" ou \"jabutis\": a lei deve ter objeto único e não pode conter matéria estranha."
@@ -10429,7 +10429,7 @@ window.bancoDeQuestoes = {
             "id": 24008,
             "enunciado": "Segundo a LC nº 95/1998, as leis que estabeleçam período de vacância devem utilizar a cláusula:",
             "opcoes": [
-                "A) \"esta lei entra em vigor no prazo que o regulamento fixar\"",
+                "A) \"esta lei entra em vigor na data que o regulamento fixar, contada de sua publicação oficial\"",
                 "B) \"esta lei entra em vigor quando for conveniente\"",
                 "C) \"esta lei entra em vigor em data incerta\"",
                 "D) \"revogam-se as disposições em contrário\"",
@@ -10455,11 +10455,11 @@ window.bancoDeQuestoes = {
             "id": 24010,
             "enunciado": "Quanto à cláusula de revogação, a LC nº 95/1998 determina que ela:",
             "opcoes": [
-                "A) é proibida em leis municipais",
-                "B) deve ser sempre \"revogam-se as disposições em contrário\"",
+                "A) é proibida em leis municipais, que só podem revogar outras por lei específica",
+                "B) deve ser sempre \"revogam-se as disposições em contrário\", sem enumeração",
                 "C) deve enumerar expressamente as leis ou disposições legais revogadas",
-                "D) só pode ser usada em códigos",
-                "E) deve ficar na parte preliminar"
+                "D) só pode ser usada em códigos e consolidações, nunca em leis ordinárias",
+                "E) deve ficar na parte preliminar, logo após a ementa e o preâmbulo da lei"
             ],
             "correta": 2,
             "comentario": "O art. 9º exige a indicação expressa do que é revogado. A fórmula genérica \"revogam-se as disposições em contrário\" deve ser evitada."
@@ -10481,11 +10481,11 @@ window.bancoDeQuestoes = {
             "id": 24012,
             "enunciado": "Na numeração dos artigos, a LC nº 95/1998 determina o uso de:",
             "opcoes": [
-                "A) numeração cardinal em todos os artigos",
-                "B) algarismos romanos até o décimo",
+                "A) numeração cardinal em todos os artigos, inclusive do primeiro ao nono",
+                "B) algarismos romanos até o décimo artigo e arábicos a partir do décimo primeiro",
                 "C) numeração ordinal até o nono e cardinal a partir do décimo",
-                "D) numeração ordinal em todos os artigos",
-                "E) letras maiúsculas para artigos acrescidos sempre"
+                "D) numeração ordinal em todos os artigos, qualquer que seja a extensão da lei",
+                "E) letras maiúsculas para todos os artigos acrescidos, sem qualquer numeração"
             ],
             "correta": 2,
             "comentario": "O art. 10, I, prevê \"Art. 1º\" a \"Art. 9º\" (ordinal) e, a partir de \"Art. 10\", numeração cardinal."
@@ -10520,10 +10520,10 @@ window.bancoDeQuestoes = {
             "id": 24015,
             "enunciado": "Na estrutura da lei, segundo a LC nº 95/1998, os artigos desdobram-se em:",
             "opcoes": [
-                "A) incisos apenas, sem outros desdobramentos",
-                "B) itens; os itens, em alíneas; as alíneas, em artigos",
+                "A) incisos apenas, sem outros desdobramentos, sendo os parágrafos dispositivos autônomos em relação ao artigo",
+                "B) itens ou alíneas; os itens, em alíneas; as alíneas, em incisos; e os incisos, em parágrafos e subitens",
                 "C) parágrafos ou incisos; os parágrafos, em incisos; os incisos, em alíneas; e as alíneas, em itens",
-                "D) alíneas; as alíneas, em incisos; os incisos, em parágrafos",
+                "D) alíneas ou parágrafos; as alíneas, em incisos; os incisos, em itens; e os itens, em parágrafos únicos",
                 "E) capítulos; os capítulos, em seções; as seções, em artigos"
             ],
             "correta": 2,
@@ -10547,7 +10547,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Para obter CLAREZA, a LC nº 95/1998 recomenda, entre outras práticas:",
             "opcoes": [
                 "A) usar frases longas com várias intercalações",
-                "B) usar sinônimos para evitar repetição de termos técnicos",
+                "B) usar sinônimos para evitar a repetição de termos técnicos e dar preferência a frases longas, com orações intercaladas",
                 "C) usar frases curtas e concisas, na ordem direta, e dar preferência ao tempo presente ou ao futuro simples do presente",
                 "D) variar livremente os tempos verbais",
                 "E) empregar neologismos e preciosismos"
@@ -10562,7 +10562,7 @@ window.bancoDeQuestoes = {
                 "A) expresse a ideia, quando repetida no texto, por meio das mesmas palavras, evitando o emprego de sinonímia com propósito meramente estilístico",
                 "B) grafe todos os números em algarismos, inclusive percentuais",
                 "C) use sinônimos para enriquecer o texto",
-                "D) empregue expressões como \"o artigo anterior\" em vez de indicar o dispositivo",
+                "D) empregue expressões como \"o artigo anterior\" ou \"o dispositivo seguinte\" em vez de indicar expressamente o número e a localização do dispositivo referido",
                 "E) use siglas pouco conhecidas sem explicação"
             ],
             "correta": 0,
@@ -10573,10 +10573,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Na alteração de uma lei, segundo a LC nº 95/1998, para acrescentar um novo artigo entre os arts. 5º e 6º, deve-se:",
             "opcoes": [
                 "A) utilizar o número do artigo anterior seguido de letra maiúscula, como \"Art. 5º-A\"",
-                "B) renumerar todos os artigos seguintes",
-                "C) aproveitar o número de um artigo revogado",
+                "B) renumerar todos os artigos seguintes, republicando a lei inteira com a nova numeração dos dispositivos",
+                "C) aproveitar o número de um artigo revogado anteriormente, mantendo a ordem original da lei",
                 "D) criar o \"Art. 5º e meio\"",
-                "E) publicar uma nova lei sem relação com a anterior"
+                "E) publicar uma nova lei autônoma, sem relação com a anterior, para tratar do novo assunto"
             ],
             "correta": 0,
             "comentario": "O art. 12, III, \"b\", proíbe a renumeração e determina o uso de letras maiúsculas após o número do artigo anterior."
@@ -10585,11 +10585,11 @@ window.bancoDeQuestoes = {
             "id": 24020,
             "enunciado": "Segundo a LC nº 95/1998, o número de um dispositivo revogado ou vetado:",
             "opcoes": [
-                "A) pode ser excluído da lei, renumerando-se os demais",
+                "A) pode ser excluído da lei, renumerando-se os demais dispositivos na republicação oficial",
                 "B) não pode ser reaproveitado, devendo a lei manter a indicação \"revogado\" ou \"vetado\"",
-                "C) deve ser substituído por letra minúscula",
-                "D) deve ser reaproveitado no próximo acréscimo",
-                "E) só pode ser reaproveitado após dez anos"
+                "C) deve ser substituído por letra minúscula, indicando ao leitor que o dispositivo foi alterado",
+                "D) deve ser reaproveitado no próximo acréscimo, para manter a sequência numérica da lei",
+                "E) só pode ser reaproveitado após dez anos da revogação, desde que haja nova redação aprovada"
             ],
             "correta": 1,
             "comentario": "O art. 12, III, \"c\", veda o aproveitamento do número de dispositivo revogado, vetado ou declarado inconstitucional."
@@ -10599,9 +10599,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Na alteração de lei por substituição de redação de um artigo, a LC nº 95/1998 prevê a identificação do artigo modificado com:",
             "opcoes": [
                 "A) as letras \"NR\" maiúsculas, entre parênteses, ao seu final",
-                "B) a data da alteração entre colchetes",
-                "C) um asterisco antes do número",
-                "D) a palavra \"alterado\" em negrito",
+                "B) a data da alteração entre colchetes, ao final do artigo modificado",
+                "C) um asterisco antes do número, com nota de rodapé indicando a lei nova",
+                "D) a palavra \"alterado\" em negrito, seguida do número da lei modificadora",
                 "E) a sigla \"ART\" após o texto"
             ],
             "correta": 0,
@@ -10624,11 +10624,11 @@ window.bancoDeQuestoes = {
             "id": 24023,
             "enunciado": "No setor público, governança pode ser entendida como o conjunto de mecanismos de:",
             "opcoes": [
-                "A) execução operacional das tarefas diárias de cada servidor",
-                "B) arrecadação de tributos pelo Poder Legislativo",
-                "C) propaganda institucional das autoridades",
-                "D) liderança, estratégia e controle postos em prática para avaliar, direcionar e monitorar a gestão, com vistas à prestação de serviços de interesse da sociedade",
-                "E) contratação de empresas privadas para administrar o órgão"
+                "A) execução operacional das tarefas diárias de cada servidor, conforme as metas do setor",
+                "B) arrecadação e fiscalização de tributos pelo Poder Legislativo, em parceria com o Executivo",
+                "C) propaganda institucional das autoridades, para fortalecer a imagem do órgão perante a sociedade",
+                "D) liderança, estratégia e controle para avaliar, direcionar e monitorar a gestão",
+                "E) contratação de empresas privadas para administrar o órgão e definir as suas prioridades"
             ],
             "correta": 3,
             "comentario": "Essa é a definição adotada pelo Decreto federal nº 9.203/2017 e pelo TCU: governança é avaliar, direcionar e monitorar; a gestão é quem executa."
@@ -10638,9 +10638,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Na distinção entre governança e gestão, é correto afirmar que:",
             "opcoes": [
                 "A) a governança avalia, direciona e monitora; a gestão planeja, executa e controla as operações",
-                "B) a gestão define a estratégia e a governança executa as tarefas",
-                "C) a governança cuida apenas da folha de pagamento",
-                "D) governança e gestão são exatamente a mesma coisa",
+                "B) a gestão define a estratégia e monitora os resultados, enquanto a governança executa as tarefas",
+                "C) a governança cuida apenas da folha de pagamento e dos contratos, e a gestão, do planejamento",
+                "D) governança e gestão são a mesma coisa, mudando apenas o nome conforme o tamanho e a natureza do órgão",
                 "E) a gestão é exercida exclusivamente por órgãos externos"
             ],
             "correta": 0,
@@ -10650,11 +10650,11 @@ window.bancoDeQuestoes = {
             "id": 24025,
             "enunciado": "São princípios da governança pública previstos no Decreto federal nº 9.203/2017:",
             "opcoes": [
-                "A) pessoalidade, conveniência e oportunidade",
-                "B) lucratividade, competitividade e marketing",
-                "C) discricionariedade ilimitada e autonomia sem controle",
-                "D) sigilo, hierarquia rígida, centralização e informalidade",
-                "E) capacidade de resposta, integridade, confiabilidade, melhoria regulatória, prestação de contas e responsabilidade, e transparência"
+                "A) pessoalidade, conveniência, oportunidade, discricionariedade, hierarquia, sigilo e centralização administrativa",
+                "B) lucratividade, competitividade, marketing institucional, eficiência econômica, rentabilidade e autonomia gerencial",
+                "C) legalidade estrita, supremacia do interesse privado, autonomia sem controle, informalidade e discricionariedade ilimitada",
+                "D) sigilo, hierarquia rígida, centralização, informalidade, conveniência política e oportunidade administrativa do gestor",
+                "E) capacidade de resposta, integridade, confiabilidade, melhoria regulatória, prestação de contas e transparência"
             ],
             "correta": 4,
             "comentario": "O art. 3º do Decreto nº 9.203/2017 lista esses seis princípios, referência usual para a governança no setor público."
@@ -10665,7 +10665,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) substituir a auditoria interna",
                 "B) justificar o descumprimento de leis",
-                "C) transferir todas as responsabilidades para os servidores",
+                "C) transferir todas as responsabilidades pelos resultados para os servidores que executam as atividades",
                 "D) eliminar totalmente qualquer risco das atividades",
                 "E) identificar, avaliar e tratar eventos que possam afetar o alcance dos objetivos da organização"
             ],
@@ -10691,7 +10691,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) transferir (compartilhar) o risco",
                 "B) ignorar o risco",
-                "C) aceitar o risco",
+                "C) aceitar o risco e reservar recursos para cobrir perdas",
                 "D) aumentar o risco",
                 "E) evitar o risco"
             ],
@@ -10715,11 +10715,11 @@ window.bancoDeQuestoes = {
             "id": 24030,
             "enunciado": "Os controles internos, no setor público, são:",
             "opcoes": [
-                "A) atividades de fiscalização da população sobre os servidores",
-                "B) procedimentos dispensáveis em órgãos pequenos",
-                "C) atribuição exclusiva do Tribunal de Contas",
-                "D) auditorias feitas apenas por empresas privadas",
-                "E) processos e medidas adotados pela gestão para dar razoável segurança ao alcance dos objetivos e ao cumprimento das normas"
+                "A) atividades de fiscalização exercidas pela população sobre os servidores, por meio da ouvidoria",
+                "B) procedimentos dispensáveis em órgãos pequenos, que podem contar apenas com o controle externo",
+                "C) atribuição exclusiva do Tribunal de Contas, que os exerce diretamente dentro de cada órgão",
+                "D) auditorias realizadas apenas por empresas privadas contratadas ao fim de cada exercício",
+                "E) processos adotados pela gestão para dar razoável segurança ao alcance dos objetivos"
             ],
             "correta": 4,
             "comentario": "O controle interno é responsabilidade da própria organização e envolve procedimentos como segregação de funções, autorizações, conferências e registros."
@@ -10728,11 +10728,11 @@ window.bancoDeQuestoes = {
             "id": 24031,
             "enunciado": "A segregação de funções, como medida de controle interno, consiste em:",
             "opcoes": [
-                "A) distribuir os servidores entre turnos",
-                "B) separar os servidores por idade",
-                "C) separar entre pessoas diferentes atividades como autorizar, executar, registrar e fiscalizar uma mesma operação",
-                "D) dividir o prédio em alas",
-                "E) permitir que o mesmo servidor autorize, pague e fiscalize a despesa"
+                "A) distribuir os servidores entre turnos de trabalho, para que o setor funcione durante todo o dia",
+                "B) separar os servidores por tempo de serviço, de modo que os mais antigos supervisionem os novatos",
+                "C) separar entre pessoas diferentes as atividades de autorizar, executar, registrar e fiscalizar",
+                "D) dividir fisicamente o setor em salas separadas, para evitar a circulação de documentos entre servidores",
+                "E) permitir que o mesmo servidor autorize, pague e fiscalize a despesa, para agilizar a execução do contrato"
             ],
             "correta": 2,
             "comentario": "A segregação reduz o risco de erros e fraudes, pois ninguém controla sozinho todas as etapas de uma operação sensível."
@@ -10743,9 +10743,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) missão, visão, valores, metas e prêmios",
                 "B) ambiente de controle, avaliação de riscos, atividades de controle, informação e comunicação, e monitoramento",
-                "C) eficiência, eficácia, efetividade, economicidade e equidade",
+                "C) eficiência, eficácia, efetividade, economicidade, equidade, avaliação de desempenho e auditoria independente",
                 "D) iniciativa, discussão, votação, sanção e promulgação",
-                "E) planejamento, orçamento, licitação, contrato e pagamento"
+                "E) planejamento, orçamento, licitação, contrato, pagamento, prestação de contas e julgamento pelo Tribunal de Contas"
             ],
             "correta": 1,
             "comentario": "O COSO organiza o controle interno em cinco componentes integrados, que devem funcionar em conjunto."
@@ -10767,11 +10767,11 @@ window.bancoDeQuestoes = {
             "id": 24034,
             "enunciado": "Um programa de integridade em um órgão público tem como objetivo principal:",
             "opcoes": [
-                "A) aumentar a arrecadação do órgão",
+                "A) aumentar a arrecadação do órgão por meio da cobrança de multas dos servidores",
                 "B) prevenir, detectar e remediar fraudes, corrupção e desvios éticos",
-                "C) substituir o processo administrativo disciplinar",
-                "D) punir os cidadãos que reclamam",
-                "E) eliminar a necessidade de controle externo"
+                "C) substituir o processo administrativo disciplinar por acordos internos de conduta",
+                "D) punir os cidadãos que apresentam reclamações consideradas improcedentes",
+                "E) eliminar a necessidade de controle externo exercido pelo Tribunal de Contas"
             ],
             "correta": 1,
             "comentario": "O programa de integridade reúne medidas como código de conduta, canais de denúncia, gestão de conflitos de interesse e treinamento."
@@ -10780,7 +10780,7 @@ window.bancoDeQuestoes = {
             "id": 24035,
             "enunciado": "Um canal de denúncias, como parte do programa de integridade, deve garantir principalmente:",
             "opcoes": [
-                "A) o arquivamento automático das denúncias anônimas",
+                "A) o arquivamento automático das denúncias anônimas, por falta de identificação",
                 "B) a cobrança de taxa para registrar a denúncia",
                 "C) o julgamento imediato do denunciado, sem defesa",
                 "D) a proteção da identidade do denunciante e a vedação a retaliações",
@@ -10793,10 +10793,10 @@ window.bancoDeQuestoes = {
             "id": 24036,
             "enunciado": "Accountability, no contexto da administração pública, refere-se:",
             "opcoes": [
-                "A) ao direito de o gestor não justificar suas decisões",
-                "B) à contabilidade privada das empresas contratadas",
+                "A) ao direito de o gestor não justificar suas decisões, quando tomadas dentro de sua competência",
+                "B) à contabilidade privada das empresas contratadas, auditada anualmente pelo órgão contratante",
                 "C) ao sigilo dos atos de gestão",
-                "D) à obrigação de os agentes prestarem contas de seus atos e se responsabilizarem por eles perante a sociedade e os órgãos de controle",
+                "D) à obrigação de os agentes prestarem contas de seus atos e responderem por eles",
                 "E) ao lucro obtido pelos serviços públicos"
             ],
             "correta": 3,
@@ -10806,11 +10806,11 @@ window.bancoDeQuestoes = {
             "id": 24037,
             "enunciado": "A transparência ATIVA, prevista na Lei nº 12.527/2011, ocorre quando o órgão:",
             "opcoes": [
-                "A) divulga informações de interesse coletivo por iniciativa própria, independentemente de requerimento",
-                "B) classifica informações como sigilosas",
-                "C) aplica sanções a quem pede informações",
-                "D) responde a um pedido feito pelo cidadão",
-                "E) julga recursos contra negativas de acesso"
+                "A) divulga informações de interesse coletivo por iniciativa própria, sem requerimento",
+                "B) classifica as informações como sigilosas e publica a lista das informações desclassificadas",
+                "C) aplica sanções aos cidadãos que fazem pedidos de informação considerados abusivos ou genéricos",
+                "D) responde, no prazo legal, a um pedido de informação apresentado pelo cidadão no SIC do órgão",
+                "E) julga os recursos apresentados pelos cidadãos contra as negativas de acesso à informação"
             ],
             "correta": 0,
             "comentario": "Transparência ativa é a publicação espontânea, como no portal da transparência. A passiva responde aos pedidos dos cidadãos."
@@ -10819,9 +10819,9 @@ window.bancoDeQuestoes = {
             "id": 24038,
             "enunciado": "A disponibilização dos dados de despesas da Câmara em formato aberto, que possa ser lido por computadores e reutilizado pela sociedade, favorece:",
             "opcoes": [
-                "A) a substituição do Tribunal de Contas",
+                "A) a substituição do Tribunal de Contas pela fiscalização dos próprios cidadãos",
                 "B) a dispensa da prestação de contas",
-                "C) o aumento do sigilo das informações",
+                "C) o aumento do sigilo das informações, já que só especialistas conseguem lê-las",
                 "D) o controle social e a reutilização dos dados para análises independentes",
                 "E) a restrição do acesso aos especialistas"
             ],
@@ -10832,11 +10832,11 @@ window.bancoDeQuestoes = {
             "id": 24039,
             "enunciado": "O mapeamento de riscos de um processo de compras identificou o risco de \"direcionamento do edital a uma empresa\". Um controle adequado para mitigá-lo é:",
             "opcoes": [
-                "A) permitir que a empresa interessada redija o edital",
-                "B) exigir pesquisa de preços ampla, revisão do termo de referência por outra área e publicidade do edital",
-                "C) dispensar a publicação do edital",
-                "D) eliminar a análise jurídica",
-                "E) reduzir o prazo de divulgação ao mínimo possível"
+                "A) permitir que a empresa interessada redija o edital, já que conhece melhor o produto a ser comprado",
+                "B) exigir pesquisa ampla de preços e revisão do termo de referência por outra área",
+                "C) dispensar a publicação do edital, enviando o convite apenas às empresas já cadastradas no órgão",
+                "D) eliminar a análise jurídica do edital, para reduzir o tempo de tramitação do processo de compra",
+                "E) reduzir o prazo de divulgação do edital ao mínimo possível, para acelerar a contratação"
             ],
             "correta": 1,
             "comentario": "Controles como revisão independente, pesquisa de mercado e ampla publicidade reduzem a chance de direcionamento."
@@ -10845,11 +10845,11 @@ window.bancoDeQuestoes = {
             "id": 24040,
             "enunciado": "O apetite a risco de uma organização pública pode ser definido como:",
             "opcoes": [
-                "A) o desejo dos servidores de correr riscos pessoais",
-                "B) a lista de riscos já ocorridos",
+                "A) o desejo dos servidores de correr riscos pessoais no exercício de suas atribuições diárias",
+                "B) a lista dos riscos que já ocorreram na organização, registrada no relatório anual de gestão",
                 "C) o nível de risco que a organização está disposta a aceitar na busca de seus objetivos",
-                "D) o número de auditorias realizadas por ano",
-                "E) a quantidade de recursos destinada a seguros"
+                "D) o número de auditorias internas e externas que a organização realiza a cada exercício",
+                "E) a quantidade de recursos que a organização destina à contratação de seguros patrimoniais"
             ],
             "correta": 2,
             "comentario": "O apetite a risco orienta quais riscos podem ser aceitos e quais precisam de tratamento."
@@ -10860,7 +10860,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) dispensar regras para cargos em comissão",
                 "B) impedir qualquer servidor de ter vida privada",
-                "C) permitir que o agente decida sobre contratos de empresas de sua família",
+                "C) permitir que o agente decida sobre contratos com empresas de sua família, desde que registre o fato em ata",
                 "D) exigir declarações de interesses e afastar o agente de decisões em que tenha interesse particular",
                 "E) esconder relações pessoais dos agentes com fornecedores"
             ],
@@ -10871,9 +10871,9 @@ window.bancoDeQuestoes = {
             "id": 24042,
             "enunciado": "A prestação de contas e a transparência no Poder Legislativo municipal contribuem para:",
             "opcoes": [
-                "A) impedir a fiscalização do Executivo",
-                "B) dispensar o controle do Tribunal de Contas",
-                "C) diminuir a publicidade das votações",
+                "A) impedir a fiscalização do Executivo, ao concentrar as informações no Poder Legislativo",
+                "B) dispensar o controle do Tribunal de Contas, já que os dados ficam disponíveis à população",
+                "C) diminuir a publicidade das votações nominais, preservando a independência dos vereadores",
                 "D) aumentar a confiança da sociedade e permitir o controle social sobre a gestão",
                 "E) reduzir a participação popular"
             ],
@@ -10884,11 +10884,11 @@ window.bancoDeQuestoes = {
             "id": 24043,
             "enunciado": "O monitoramento, como componente dos controles internos, consiste em:",
             "opcoes": [
-                "A) divulgar dados pessoais",
-                "B) vigiar a vida particular dos servidores",
+                "A) divulgar os dados pessoais dos servidores que cometeram falhas nos procedimentos de controle",
+                "B) vigiar a vida particular dos servidores, inclusive as suas manifestações nas redes sociais",
                 "C) avaliar continuamente se os controles estão funcionando e corrigir as falhas identificadas",
-                "D) eliminar os registros antigos",
-                "E) criar novos cargos de chefia"
+                "D) eliminar os registros antigos dos controles, mantendo apenas os do exercício financeiro em curso",
+                "E) criar novos cargos de chefia para supervisionar cada um dos servidores responsáveis pelos controles"
             ],
             "correta": 2,
             "comentario": "O monitoramento verifica a eficácia dos controles ao longo do tempo, por meio de acompanhamento contínuo e avaliações específicas."
@@ -10898,9 +10898,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo o art. 23 da LGPD, o tratamento de dados pessoais pelas pessoas jurídicas de direito público deverá ser realizado:",
             "opcoes": [
                 "A) apenas para fins comerciais autorizados pelo gestor",
-                "B) para o atendimento de sua finalidade pública, na persecução do interesse público, com o objetivo de executar as competências legais ou cumprir as atribuições legais do serviço público",
-                "C) somente mediante consentimento expresso de cada titular",
-                "D) livremente, sem qualquer limite, por se tratar de órgão público",
+                "B) para o atendimento de sua finalidade pública, na persecução do interesse público, para executar suas competências legais",
+                "C) somente mediante consentimento expresso, específico e por escrito de cada titular, renovado a cada nova finalidade do tratamento",
+                "D) livremente, sem qualquer limite de finalidade, por se tratar de órgão público que já detém legalmente os dados pessoais dos cidadãos",
                 "E) somente após autorização judicial"
             ],
             "correta": 1,
@@ -10910,9 +10910,9 @@ window.bancoDeQuestoes = {
             "id": 24045,
             "enunciado": "Para o tratamento de dados pessoais pelo poder público, o art. 23 da LGPD exige, entre outras condições:",
             "opcoes": [
-                "A) que o órgão venda os dados para custear o serviço",
-                "B) que os dados sejam excluídos em 24 horas",
-                "C) que o órgão mantenha sigilo sobre todas as finalidades",
+                "A) que o órgão comercialize os dados tratados para custear a manutenção dos sistemas de informação e do atendimento",
+                "B) que os dados sejam excluídos em até 24 horas após o atendimento, independentemente da finalidade do tratamento",
+                "C) que o órgão mantenha sigilo sobre as finalidades do tratamento, para proteger a segurança dos sistemas públicos",
                 "D) que sejam informadas as hipóteses em que o órgão realiza o tratamento e que seja indicado um encarregado",
                 "E) que nenhum servidor tenha acesso aos dados"
             ],
@@ -10923,10 +10923,10 @@ window.bancoDeQuestoes = {
             "id": 24046,
             "enunciado": "Segundo a LGPD, o uso compartilhado de dados pessoais pelo poder público:",
             "opcoes": [
-                "A) é sempre proibido, mesmo entre órgãos públicos",
+                "A) é sempre proibido, mesmo entre órgãos públicos, salvo quando houver consentimento expresso, específico e por escrito do próprio titular",
                 "B) é livre, sem qualquer finalidade definida",
                 "C) só é permitido para fins de propaganda institucional",
-                "D) depende sempre de autorização do Congresso Nacional",
+                "D) depende sempre de autorização prévia do Congresso Nacional e de parecer favorável da Autoridade Nacional de Proteção de Dados (ANPD)",
                 "E) deve atender a finalidades específicas de execução de políticas públicas e atribuição legal, respeitados os princípios da lei"
             ],
             "correta": 4,
@@ -10936,7 +10936,7 @@ window.bancoDeQuestoes = {
             "id": 24047,
             "enunciado": "Em regra, a LGPD veda ao poder público transferir a entidades privadas dados pessoais constantes de bases de dados a que tenha acesso. Constitui exceção prevista na lei:",
             "opcoes": [
-                "A) o interesse comercial de empresas parceiras",
+                "A) o interesse comercial de empresas parceiras do órgão, desde que elas se comprometam a manter os dados em sigilo e a não repassá-los",
                 "B) a venda de dados para campanhas publicitárias",
                 "C) a vontade do gestor do órgão",
                 "D) o pedido verbal de qualquer empresa privada",
@@ -10950,9 +10950,9 @@ window.bancoDeQuestoes = {
             "enunciado": "O documento que descreve os processos de tratamento de dados pessoais que podem gerar riscos às liberdades civis e aos direitos fundamentais, com medidas e salvaguardas de mitigação, é o:",
             "opcoes": [
                 "A) relatório de impacto à proteção de dados pessoais",
-                "B) parecer de comissão",
-                "C) balanço patrimonial",
-                "D) termo de posse",
+                "B) parecer de conformidade da Autoridade Nacional de Proteção de Dados",
+                "C) termo de consentimento e uso de dados pessoais do titular",
+                "D) inventário de dados pessoais (registro das operações de tratamento)",
                 "E) plano plurianual"
             ],
             "correta": 0,
@@ -10963,7 +10963,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Quanto às sanções administrativas previstas na LGPD, é correto afirmar que, para órgãos e entidades públicas:",
             "opcoes": [
                 "A) aplicam-se sanções como advertência, publicização da infração, bloqueio e eliminação dos dados, mas não as multas",
-                "B) aplicam-se apenas multas, sem advertência",
+                "B) aplicam-se apenas multas simples e diárias, de até 2% do orçamento anual do órgão, sem qualquer advertência prévia ao gestor",
                 "C) nenhuma sanção da LGPD é aplicável",
                 "D) aplicam-se apenas sanções criminais",
                 "E) aplica-se a pena de prisão do gestor"
@@ -10975,11 +10975,11 @@ window.bancoDeQuestoes = {
             "id": 24050,
             "enunciado": "No contexto da inteligência artificial, o \"aprendizado de máquina\" (machine learning) é:",
             "opcoes": [
-                "A) a digitação automática de textos ditados",
-                "B) a manutenção física de computadores",
-                "C) um tipo de cabo de rede de alta velocidade",
-                "D) um curso de informática para servidores",
-                "E) um ramo da IA em que sistemas aprendem padrões a partir de dados, sem serem programados explicitamente para cada regra"
+                "A) a digitação automática de textos ditados pelo usuário, sem necessidade de teclado",
+                "B) a manutenção física e preventiva dos computadores feita por técnicos especializados",
+                "C) um tipo de cabo de rede de alta velocidade usado em centros de processamento de dados",
+                "D) um curso de informática básica oferecido aos servidores que operam os sistemas do órgão",
+                "E) um ramo da IA em que os sistemas aprendem padrões a partir de dados"
             ],
             "correta": 4,
             "comentario": "No machine learning, o sistema ajusta seus parâmetros com base em exemplos (dados), aprendendo a fazer previsões ou classificações."
@@ -10988,11 +10988,11 @@ window.bancoDeQuestoes = {
             "id": 24051,
             "enunciado": "A IA generativa distingue-se de outros sistemas de IA por:",
             "opcoes": [
-                "A) produzir conteúdos novos, como textos, imagens ou áudios, a partir de instruções (prompts)",
-                "B) apenas classificar dados em categorias predefinidas",
-                "C) funcionar sem qualquer dado de treinamento",
-                "D) substituir integralmente a decisão humana",
-                "E) garantir respostas sempre verdadeiras"
+                "A) produzir conteúdos novos, como textos, imagens ou áudios, a partir de instruções",
+                "B) apenas classificar dados em categorias predefinidas, sem criar nenhum conteúdo novo",
+                "C) funcionar sem qualquer dado de treinamento, a partir apenas das regras definidas pelo usuário",
+                "D) substituir integralmente a decisão humana, dispensando a revisão do conteúdo produzido",
+                "E) garantir respostas sempre verdadeiras, já que consulta fontes oficiais em tempo real"
             ],
             "correta": 0,
             "comentario": "Modelos generativos criam conteúdo novo com base em padrões aprendidos. Podem errar e gerar informações falsas."
@@ -11005,7 +11005,7 @@ window.bancoDeQuestoes = {
                 "B) anonimização de dados",
                 "C) acessibilidade digital",
                 "D) viés algorítmico, com risco de discriminação",
-                "E) interoperabilidade de sistemas"
+                "E) interoperabilidade entre sistemas de diferentes órgãos"
             ],
             "correta": 3,
             "comentario": "O viés algorítmico reproduz desigualdades presentes nos dados. Por isso, sistemas de IA no setor público exigem avaliação, supervisão humana e auditoria."
@@ -11016,7 +11016,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) sejam definitivas e sem possibilidade de revisão",
                 "B) sejam tomadas sem registro",
-                "C) sejam mantidas em segredo para evitar recursos",
+                "C) sejam mantidas em segredo, para evitar recursos e a sobrecarga do setor responsável",
                 "D) dispensem motivação",
                 "E) possam ser explicadas, revisadas por pessoas e contestadas pelos interessados"
             ],
@@ -11030,7 +11030,7 @@ window.bancoDeQuestoes = {
                 "A) à transparência e ao controle humano sobre decisões automatizadas",
                 "B) ao sigilo dos critérios de decisão",
                 "C) à obrigação de usar IA em todas as decisões",
-                "D) à proibição de qualquer uso de computadores no serviço público",
+                "D) à proibição de qualquer uso de computadores na análise de pedidos dos cidadãos",
                 "E) ao direito de propriedade intelectual dos algoritmos"
             ],
             "correta": 0,
@@ -11040,11 +11040,11 @@ window.bancoDeQuestoes = {
             "id": 24055,
             "enunciado": "Dados abertos governamentais devem ser publicados preferencialmente em formatos que:",
             "opcoes": [
-                "A) sejam alterados a cada consulta",
+                "A) sejam alterados a cada consulta, para garantir que as informações estejam sempre atualizadas",
                 "B) sejam legíveis por máquina, não proprietários e acompanhados de descrição (metadados)",
-                "C) estejam apenas em imagens escaneadas",
-                "D) só possam ser abertos por um programa pago",
-                "E) exijam senha individual para leitura"
+                "C) estejam apenas em imagens escaneadas dos documentos originais, para garantir a autenticidade",
+                "D) só possam ser abertos por um programa pago, adquirido pelo órgão com garantia do fornecedor",
+                "E) exijam senha individual para leitura, fornecida pelo órgão após cadastro prévio do cidadão"
             ],
             "correta": 1,
             "comentario": "Formatos como CSV e JSON, com metadados, permitem que qualquer pessoa reutilize e analise os dados."
@@ -11053,11 +11053,11 @@ window.bancoDeQuestoes = {
             "id": 24056,
             "enunciado": "A interoperabilidade entre sistemas públicos traz como principal benefício ao cidadão:",
             "opcoes": [
-                "A) exigir atendimento presencial em todos os casos",
-                "B) aumentar o número de formulários a preencher",
+                "A) exigir atendimento presencial em todos os casos, para confirmar a identidade do cidadão",
+                "B) aumentar o número de formulários a preencher, para que cada órgão tenha seu próprio cadastro",
                 "C) restringir os serviços digitais",
-                "D) impedir o compartilhamento de dados entre órgãos",
-                "E) evitar que ele precise apresentar repetidamente documentos e informações que o poder público já possui"
+                "D) impedir o compartilhamento de dados entre órgãos, preservando cada base de forma isolada",
+                "E) evitar que ele apresente de novo documentos que o poder público já possui"
             ],
             "correta": 4,
             "comentario": "Com sistemas que \"conversam\" entre si, o órgão consulta a informação diretamente na fonte, simplificando a vida do cidadão."
@@ -11066,11 +11066,11 @@ window.bancoDeQuestoes = {
             "id": 24057,
             "enunciado": "A acessibilidade digital nos sites e sistemas da Câmara é garantida, por exemplo, quando:",
             "opcoes": [
-                "A) há textos alternativos em imagens, contraste adequado e compatibilidade com leitores de tela",
-                "B) o site só funciona em um navegador específico",
-                "C) os formulários exigem uso do mouse para tudo",
-                "D) os vídeos não têm legendas",
-                "E) as informações são publicadas apenas em imagens sem descrição"
+                "A) há textos alternativos em imagens, bom contraste e compatibilidade com leitores de tela",
+                "B) o site funciona apenas em um navegador específico, indicado na página inicial do portal da Câmara",
+                "C) os formulários exigem o uso do mouse em todas as etapas, sem possibilidade de navegação pelo teclado",
+                "D) os vídeos institucionais são publicados sem legendas, para não poluir a imagem das sessões",
+                "E) as informações são publicadas apenas em imagens sem descrição, para preservar o layout original"
             ],
             "correta": 0,
             "comentario": "A acessibilidade permite que pessoas com deficiência acessem os serviços. A Lei Brasileira de Inclusão (Lei nº 13.146/2015) torna obrigatória a acessibilidade dos sítios mantidos pelo poder público."
@@ -11080,9 +11080,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Na segurança da informação aplicada ao uso de IA no setor público, uma medida recomendada é:",
             "opcoes": [
                 "A) utilizar ferramentas aprovadas pelo órgão e evitar inserir dados pessoais ou sigilosos em serviços externos",
-                "B) compartilhar senhas dos sistemas com a ferramenta de IA",
-                "C) usar qualquer ferramenta disponível na internet",
-                "D) enviar bases completas de cidadãos para testes",
+                "B) compartilhar as senhas dos sistemas com a ferramenta de IA, para que ela consulte diretamente os dados do órgão",
+                "C) usar qualquer ferramenta disponível na internet, desde que seja gratuita e de fácil acesso pelos servidores do setor",
+                "D) enviar bases completas de cidadãos para testes, desde que a ferramenta prometa não armazenar nem repassar as informações",
                 "E) desativar os registros de uso para preservar a privacidade do servidor"
             ],
             "correta": 0,
@@ -11092,10 +11092,10 @@ window.bancoDeQuestoes = {
             "id": 24059,
             "enunciado": "A anonimização de dados, antes de sua publicação como dados abertos, tem como finalidade:",
             "opcoes": [
-                "A) aumentar o volume de dados pessoais publicados",
+                "A) aumentar o volume de dados pessoais publicados, para ampliar o controle social",
                 "B) tornar os dados ilegíveis por máquina",
                 "C) substituir a necessidade de base legal",
-                "D) impedir qualquer uso dos dados pela sociedade",
+                "D) impedir qualquer uso dos dados pela sociedade, mantendo-os apenas para consulta interna",
                 "E) permitir a divulgação de informações úteis sem identificar os titulares"
             ],
             "correta": 4,
@@ -11105,11 +11105,11 @@ window.bancoDeQuestoes = {
             "id": 24060,
             "enunciado": "O encarregado pelo tratamento de dados pessoais em um órgão público tem como atribuições, entre outras:",
             "opcoes": [
-                "A) autorizar a venda de dados pessoais",
-                "B) aceitar reclamações dos titulares, prestar esclarecimentos, receber comunicações da ANPD e orientar os servidores sobre as práticas de proteção de dados",
+                "A) autorizar a venda ou o compartilhamento de dados pessoais com empresas privadas, desde que haja contrato assinado com o órgão",
+                "B) aceitar reclamações dos titulares, prestar esclarecimentos, receber comunicações da ANPD e orientar os servidores",
                 "C) substituir o chefe do Poder",
-                "D) julgar os processos disciplinares do órgão",
-                "E) aprovar o orçamento anual"
+                "D) julgar os processos disciplinares abertos contra servidores que descumprirem a LGPD, aplicando as penalidades cabíveis",
+                "E) aprovar o orçamento anual destinado à segurança da informação e assinar os contratos de tecnologia do órgão público"
             ],
             "correta": 1,
             "comentario": "O art. 41, § 2º, da LGPD lista as atividades do encarregado, que atua como canal entre controlador, titulares e ANPD."
@@ -11119,10 +11119,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Ao avaliar a adoção de um chatbot com IA para responder dúvidas dos cidadãos no portal da Câmara, a gestão deve considerar, entre outros pontos:",
             "opcoes": [
                 "A) apenas o custo mais baixo, sem outros critérios",
-                "B) a eliminação de todos os canais de atendimento humano",
+                "B) a eliminação de todos os canais de atendimento humano, já que o chatbot funciona 24 horas por dia, todos os dias",
                 "C) a coleta máxima de dados dos usuários",
-                "D) a ocultação de que as respostas são automatizadas",
-                "E) a precisão das respostas, a indicação clara de que se trata de atendimento automatizado e a possibilidade de atendimento humano"
+                "D) a ocultação de que as respostas são automatizadas, para que o cidadão confie mais nas informações recebidas",
+                "E) a precisão das respostas, o aviso de que o atendimento é automatizado e a opção de falar com uma pessoa"
             ],
             "correta": 4,
             "comentario": "O uso responsável de IA exige transparência, qualidade das respostas, proteção de dados e alternativa de atendimento humano."
@@ -11132,9 +11132,9 @@ window.bancoDeQuestoes = {
             "enunciado": "A transparência algorítmica, no setor público, busca:",
             "opcoes": [
                 "A) tornar compreensíveis os critérios e a lógica dos sistemas automatizados usados em decisões públicas",
-                "B) publicar as senhas dos sistemas",
+                "B) publicar as senhas de acesso aos sistemas, para que qualquer cidadão possa auditar os algoritmos utilizados",
                 "C) impedir o uso de tecnologia",
-                "D) divulgar dados pessoais dos usuários",
+                "D) divulgar os dados pessoais dos usuários atendidos, para demonstrar como o sistema chegou a cada decisão",
                 "E) tornar os sistemas mais lentos"
             ],
             "correta": 0,
@@ -11144,8 +11144,8 @@ window.bancoDeQuestoes = {
             "id": 24063,
             "enunciado": "O princípio da responsabilização e prestação de contas da LGPD exige do órgão controlador:",
             "opcoes": [
-                "A) apenas afirmar que cumpre a lei, sem provas",
-                "B) manter em sigilo as medidas de segurança adotadas perante a ANPD",
+                "A) apenas declarar formalmente que cumpre a lei, sem necessidade de apresentar provas ou registros das medidas adotadas",
+                "B) manter em sigilo as medidas de segurança adotadas, inclusive perante a ANPD, para não expor vulnerabilidades dos sistemas",
                 "C) transferir toda a responsabilidade aos titulares",
                 "D) dispensar registros das operações",
                 "E) demonstrar a adoção de medidas eficazes e capazes de comprovar o cumprimento das normas de proteção de dados"
@@ -11222,9 +11222,9 @@ window.bancoDeQuestoes = {
             "id": 24069,
             "enunciado": "Na avaliação de desempenho na gestão pública, EFICIÊNCIA refere-se a:",
             "opcoes": [
-                "A) cumprir a lei sem qualquer análise de custo",
-                "B) atingir as metas, independentemente do custo",
-                "C) gerar impacto positivo na vida da população",
+                "A) cumprir a lei de forma estrita, sem qualquer análise de custo dos serviços prestados",
+                "B) atingir as metas previstas no planejamento, independentemente dos recursos gastos",
+                "C) gerar impacto positivo e duradouro na vida da população atendida pelos serviços públicos",
                 "D) aumentar o número de servidores",
                 "E) fazer mais e melhor com os recursos disponíveis, relacionando produtos e insumos"
             ],
@@ -11261,10 +11261,10 @@ window.bancoDeQuestoes = {
             "id": 24072,
             "enunciado": "Um bom indicador de desempenho deve ser, entre outras características:",
             "opcoes": [
-                "A) baseado em dados sigilosos e impossíveis de verificar",
-                "B) vago e subjetivo, para permitir várias interpretações",
-                "C) calculado apenas uma vez a cada década",
-                "D) definido depois que os resultados aparecem",
+                "A) baseado em dados sigilosos, impossíveis de verificar por terceiros",
+                "B) vago e subjetivo, para permitir várias interpretações pelos gestores",
+                "C) calculado apenas uma vez a cada década, para evitar custos de coleta",
+                "D) definido depois que os resultados aparecem, para garantir bons números",
                 "E) mensurável, relevante, confiável e de fácil compreensão"
             ],
             "correta": 4,
@@ -11275,7 +11275,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A gestão por processos tem como característica:",
             "opcoes": [
                 "A) enxergar a organização como um conjunto de atividades encadeadas que geram valor para o usuário, atravessando os setores",
-                "B) focar apenas na hierarquia de cada departamento isolado",
+                "B) focar apenas na hierarquia de cada departamento isolado, de modo que cada chefia responda somente pelas tarefas do seu setor",
                 "C) organizar o trabalho somente por ordem alfabética",
                 "D) eliminar todos os controles da organização",
                 "E) impedir a padronização de rotinas"
@@ -11287,10 +11287,10 @@ window.bancoDeQuestoes = {
             "id": 24074,
             "enunciado": "O mapeamento de processos com a notação BPMN é utilizado para:",
             "opcoes": [
-                "A) calcular a folha de pagamento",
+                "A) calcular a folha de pagamento e os encargos sociais dos servidores a partir das horas trabalhadas",
                 "B) representar graficamente as atividades, os eventos, as decisões e os responsáveis de um processo",
                 "C) elaborar a lei orçamentária",
-                "D) fazer a contabilidade patrimonial",
+                "D) fazer a contabilidade patrimonial do órgão, registrando a entrada e a saída dos bens permanentes",
                 "E) organizar o arquivo permanente"
             ],
             "correta": 1,
@@ -11313,10 +11313,10 @@ window.bancoDeQuestoes = {
             "id": 24076,
             "enunciado": "A principal diferença entre projeto e processo (ou operação contínua) é que o projeto:",
             "opcoes": [
-                "A) é sempre executado por uma única pessoa",
+                "A) é sempre executado por uma única pessoa, responsável por todas as etapas",
                 "B) dispensa planejamento",
                 "C) é temporário, com início e fim definidos, e gera um resultado único",
-                "D) se repete indefinidamente, sem prazo",
+                "D) se repete indefinidamente, sem prazo, mantendo as rotinas da organização",
                 "E) não tem objetivos definidos"
             ],
             "correta": 2,
@@ -11352,11 +11352,11 @@ window.bancoDeQuestoes = {
             "id": 24079,
             "enunciado": "Na gestão de pessoas no setor público, a gestão por competências busca:",
             "opcoes": [
-                "A) eliminar a capacitação",
-                "B) avaliar os servidores apenas pela antiguidade",
-                "C) promover servidores por indicação política",
-                "D) substituir o concurso público",
-                "E) identificar os conhecimentos, as habilidades e as atitudes necessários e desenvolver os servidores para alcançar os objetivos institucionais"
+                "A) eliminar a capacitação continuada, contratando apenas profissionais já prontos para as funções do cargo",
+                "B) avaliar os servidores apenas pela antiguidade, garantindo promoções automáticas a cada período de exercício",
+                "C) promover servidores por indicação política, desde que tenham afinidade com os objetivos da Mesa Diretora",
+                "D) substituir o concurso público por entrevistas que avaliem o perfil comportamental de cada candidato",
+                "E) identificar os conhecimentos, habilidades e atitudes necessários e desenvolver os servidores"
             ],
             "correta": 4,
             "comentario": "O modelo de competências (conhecimentos, habilidades e atitudes) orienta seleção interna, capacitação e avaliação de desempenho."
@@ -11365,11 +11365,11 @@ window.bancoDeQuestoes = {
             "id": 24080,
             "enunciado": "A avaliação de desempenho dos servidores, quando bem estruturada, serve principalmente para:",
             "opcoes": [
-                "A) definir o subsídio dos vereadores",
-                "B) punir servidores sem processo",
-                "C) reduzir a transparência da gestão",
-                "D) acompanhar resultados, identificar necessidades de capacitação e subsidiar decisões sobre desenvolvimento na carreira",
-                "E) substituir o estágio probatório por sorteio"
+                "A) definir o valor do subsídio dos vereadores, conforme a produtividade dos servidores lotados em cada gabinete",
+                "B) punir os servidores com baixo rendimento sem necessidade de processo, aplicando descontos na remuneração",
+                "C) reduzir a transparência da gestão, já que os resultados ficam restritos à chefia imediata de cada setor",
+                "D) acompanhar resultados, identificar necessidades de capacitação e apoiar o desenvolvimento na carreira",
+                "E) substituir o estágio probatório por um sorteio entre os servidores que tiverem obtido as melhores notas"
             ],
             "correta": 3,
             "comentario": "A avaliação é ferramenta de desenvolvimento e gestão, com critérios objetivos e retorno ao servidor."
@@ -11379,7 +11379,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A comunicação institucional de uma Câmara Municipal deve ter caráter:",
             "opcoes": [
                 "A) educativo, informativo ou de orientação social, sem promoção pessoal de autoridades",
-                "B) eleitoral, divulgando os vereadores da situação",
+                "B) eleitoral, divulgando as ações dos vereadores da situação durante o período de campanha",
                 "C) sigiloso, restrito aos servidores",
                 "D) informal, sem compromisso com a precisão",
                 "E) publicitário, com foco em propaganda pessoal"
@@ -11391,11 +11391,11 @@ window.bancoDeQuestoes = {
             "id": 24082,
             "enunciado": "A cadeia de valor de uma organização pública representa:",
             "opcoes": [
-                "A) o calendário de sessões",
-                "B) a lista de fornecedores cadastrados",
-                "C) a escala de férias dos servidores",
-                "D) o conjunto dos macroprocessos finalísticos, de gestão e de suporte que geram resultados para a sociedade",
-                "E) o organograma de cargos comissionados"
+                "A) o calendário anual de sessões ordinárias e extraordinárias aprovado pela Mesa Diretora da Câmara",
+                "B) a lista de fornecedores cadastrados e homologados para participar das licitações do órgão",
+                "C) a escala anual de férias dos servidores, organizada por setor e aprovada pela chefia imediata",
+                "D) o conjunto dos macroprocessos finalísticos, de gestão e de suporte que geram resultados",
+                "E) o organograma dos cargos comissionados, com a indicação da hierarquia entre as funções de chefia"
             ],
             "correta": 3,
             "comentario": "A cadeia de valor mostra como os macroprocessos da organização se articulam para entregar valor ao cidadão."
@@ -11405,9 +11405,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Na Câmara, os macroprocessos de legislar e fiscalizar são considerados processos:",
             "opcoes": [
                 "A) finalísticos, pois estão ligados diretamente à missão institucional",
-                "B) secundários e dispensáveis",
-                "C) de suporte, como compras e manutenção",
-                "D) de gestão de pessoas apenas",
+                "B) secundários e dispensáveis, pois podem ser delegados a outros Poderes",
+                "C) de suporte, como compras, manutenção e gestão de contratos do órgão",
+                "D) de gestão de pessoas, pois dependem do desempenho dos vereadores eleitos",
                 "E) terceirizados por natureza"
             ],
             "correta": 0,
@@ -11417,7 +11417,7 @@ window.bancoDeQuestoes = {
             "id": 24084,
             "enunciado": "Um gestor deseja reduzir o tempo médio de resposta aos requerimentos da Câmara de 30 para 15 dias até dezembro. Essa definição corresponde a uma:",
             "opcoes": [
-                "A) visão de longo prazo",
+                "A) visão de longo prazo, por definir aonde a organização quer chegar",
                 "B) missão institucional",
                 "C) ameaça externa",
                 "D) competência individual",
@@ -11430,11 +11430,11 @@ window.bancoDeQuestoes = {
             "id": 24085,
             "enunciado": "Segundo o art. 165 da Constituição Federal, os instrumentos de planejamento e orçamento, de iniciativa do Poder Executivo, são:",
             "opcoes": [
-                "A) o balanço patrimonial, o RREO e o RGF",
-                "B) o plano plurianual, a lei orgânica e a resolução orçamentária",
-                "C) o regimento interno, a lei orgânica e o plano diretor",
+                "A) o balanço patrimonial, o relatório resumido da execução orçamentária e o de gestão fiscal",
+                "B) o plano plurianual, a lei orgânica do município e a resolução orçamentária da Câmara",
+                "C) o regimento interno, a lei de diretrizes orçamentárias e o plano diretor do município",
                 "D) o plano plurianual, a lei de diretrizes orçamentárias e a lei orçamentária anual",
-                "E) a lei de licitações, a LRF e a LAI"
+                "E) a lei de licitações, a lei de responsabilidade fiscal e a lei de acesso à informação"
             ],
             "correta": 3,
             "comentario": "O art. 165 prevê o PPA, a LDO e a LOA, todos de iniciativa do chefe do Poder Executivo."
@@ -11443,10 +11443,10 @@ window.bancoDeQuestoes = {
             "id": 24086,
             "enunciado": "O plano plurianual (PPA) estabelece, de forma regionalizada:",
             "opcoes": [
-                "A) as metas fiscais de cada bimestre",
+                "A) as metas fiscais de cada bimestre, com a previsão das receitas e o limite das despesas obrigatórias de caráter continuado do exercício",
                 "B) a lista dos servidores a serem nomeados",
-                "C) as diretrizes, os objetivos e as metas da administração para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada",
-                "D) apenas a previsão de receitas do exercício seguinte",
+                "C) as diretrizes, objetivos e metas para as despesas de capital e outras delas decorrentes e para os programas de duração continuada",
+                "D) apenas a previsão das receitas do exercício seguinte, com a estimativa da arrecadação de impostos, taxas e transferências constitucionais",
                 "E) somente as despesas com pessoal"
             ],
             "correta": 2,
@@ -11456,7 +11456,7 @@ window.bancoDeQuestoes = {
             "id": 24087,
             "enunciado": "No modelo constitucional, o PPA tem vigência de quatro anos, iniciando-se:",
             "opcoes": [
-                "A) no primeiro dia do mandato e terminando no último",
+                "A) no primeiro dia do mandato do chefe do Executivo e terminando no último dia útil desse mesmo mandato",
                 "B) no segundo ano do mandato do chefe do Executivo e terminando no primeiro ano do mandato seguinte",
                 "C) a cada ano, com duração de doze meses",
                 "D) no último ano do mandato, por oito anos",
@@ -11471,7 +11471,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) definir a estrutura do regimento interno",
                 "B) aprovar as contas do Prefeito",
-                "C) fixar o subsídio dos Vereadores para a próxima legislatura",
+                "C) fixar o subsídio dos Vereadores para a legislatura seguinte, com base na receita prevista no plano plurianual",
                 "D) compreender as metas e prioridades da administração e orientar a elaboração da lei orçamentária anual",
                 "E) substituir o plano plurianual em anos eleitorais"
             ],
@@ -11482,9 +11482,9 @@ window.bancoDeQuestoes = {
             "id": 24089,
             "enunciado": "Segundo a LRF, integrará o projeto de LDO o Anexo de Metas Fiscais, em que serão estabelecidas metas anuais relativas a:",
             "opcoes": [
-                "A) número de sessões ordinárias",
+                "A) número de sessões ordinárias e extraordinárias e de projetos votados pela Câmara",
                 "B) receitas, despesas, resultados nominal e primário e montante da dívida pública",
-                "C) quantidade de servidores aposentados",
+                "C) quantidade de servidores aposentados e pensionistas a serem incluídos na folha anual",
                 "D) número de leis a serem aprovadas",
                 "E) salário de cada Vereador"
             ],
@@ -11495,7 +11495,7 @@ window.bancoDeQuestoes = {
             "id": 24090,
             "enunciado": "A lei orçamentária anual (LOA), segundo a Constituição Federal, compreende:",
             "opcoes": [
-                "A) o orçamento da Câmara e o do Tribunal de Contas",
+                "A) o orçamento fiscal da Prefeitura, o orçamento da Câmara Municipal e o orçamento do Tribunal de Contas do Estado",
                 "B) apenas o orçamento fiscal",
                 "C) o orçamento fiscal e o plano plurianual",
                 "D) o orçamento fiscal, o orçamento de investimento das empresas estatais e o orçamento da seguridade social",
@@ -11548,8 +11548,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Na Lei nº 4.320/1964, a liquidação da despesa consiste em:",
             "opcoes": [
                 "A) verificar o direito adquirido pelo credor, com base nos documentos que comprovem o respectivo crédito",
-                "B) reservar a dotação orçamentária",
-                "C) entregar o dinheiro ao credor",
+                "B) reservar a dotação orçamentária para a despesa, por meio da emissão da nota de empenho em nome do credor",
+                "C) entregar o valor devido ao credor, mediante ordem bancária emitida após a assinatura do contrato administrativo",
                 "D) publicar o edital de licitação",
                 "E) aprovar o orçamento"
             ],
@@ -11573,11 +11573,11 @@ window.bancoDeQuestoes = {
             "id": 24096,
             "enunciado": "Na esfera municipal, a LRF reparte o limite de despesa com pessoal da seguinte forma:",
             "opcoes": [
-                "A) 6% para o Legislativo, incluído o Tribunal de Contas do Município quando houver, e 54% para o Executivo",
-                "B) 6% para o Executivo e 54% para o Legislativo",
-                "C) 3% para o Legislativo e 57% para o Executivo",
-                "D) 30% para cada Poder",
-                "E) 10% para o Legislativo e 50% para o Executivo"
+                "A) 6% para o Legislativo (incluído o TCM, se houver) e 54% para o Executivo",
+                "B) 6% para o Executivo, incluídas as autarquias, e 54% para o Legislativo municipal",
+                "C) 3% para o Legislativo, incluído o Tribunal de Contas, e 57% para o Executivo municipal",
+                "D) 30% para cada Poder, cabendo ao Tribunal de Contas fiscalizar a divisão do limite",
+                "E) 10% para o Legislativo, incluídos os gabinetes, e 50% para o Executivo municipal"
             ],
             "correta": 0,
             "comentario": "O art. 20, III, da LRF estabelece 6% para o Legislativo municipal e 54% para o Executivo."
@@ -11625,7 +11625,7 @@ window.bancoDeQuestoes = {
             "id": 24100,
             "enunciado": "Ultrapassado o limite de despesa com pessoal, a LRF determina que o percentual excedente seja eliminado:",
             "opcoes": [
-                "A) no prazo do mandato seguinte",
+                "A) no prazo do mandato seguinte, mediante plano aprovado pelo Tribunal de Contas",
                 "B) em até cinco anos",
                 "C) no mesmo mês da apuração",
                 "D) nos dois quadrimestres seguintes, sendo pelo menos um terço no primeiro",
@@ -11638,11 +11638,11 @@ window.bancoDeQuestoes = {
             "id": 24101,
             "enunciado": "Segundo o art. 42 da LRF, é vedado ao titular de Poder, nos últimos dois quadrimestres do seu mandato:",
             "opcoes": [
-                "A) publicar relatórios fiscais",
+                "A) publicar os relatórios fiscais do último quadrimestre, que passam a ser divulgados apenas pelo sucessor eleito após a posse",
                 "B) executar o orçamento aprovado",
-                "C) realizar qualquer despesa, inclusive as obrigatórias",
-                "D) pagar salários dos servidores",
-                "E) contrair obrigação de despesa que não possa ser cumprida integralmente dentro dele, ou que tenha parcelas a serem pagas no exercício seguinte sem suficiente disponibilidade de caixa"
+                "C) realizar qualquer despesa, inclusive as obrigatórias, como salários, contas de energia e contribuições previdenciárias",
+                "D) pagar os salários e encargos dos servidores com recursos do exercício seguinte, mesmo havendo dotação orçamentária suficiente",
+                "E) contrair obrigação de despesa que não possa ser cumprida no mandato ou deixar parcelas sem disponibilidade de caixa"
             ],
             "correta": 4,
             "comentario": "O art. 42 evita que o gestor deixe dívidas sem caixa para o sucessor."
@@ -11651,10 +11651,10 @@ window.bancoDeQuestoes = {
             "id": 24102,
             "enunciado": "O Relatório de Gestão Fiscal (RGF), previsto na LRF, deve ser emitido:",
             "opcoes": [
-                "A) somente quando houver irregularidade",
-                "B) pelo Tribunal de Contas, a cada bimestre",
+                "A) somente quando houver irregularidade apontada pelo Tribunal de Contas na execução do orçamento do exercício financeiro",
+                "B) pelo Tribunal de Contas, a cada bimestre, com base nos dados enviados pelos Poderes Executivo e Legislativo",
                 "C) pelo Ministério Público, a cada mês",
-                "D) apenas pelo Prefeito, uma vez por ano",
+                "D) apenas pelo Prefeito, uma vez por ano, consolidando os dados da Prefeitura, da Câmara e das autarquias municipais",
                 "E) ao final de cada quadrimestre, pelos titulares dos Poderes, inclusive pelo Presidente da Câmara Municipal"
             ],
             "correta": 4,
@@ -11665,10 +11665,10 @@ window.bancoDeQuestoes = {
             "enunciado": "O Relatório Resumido da Execução Orçamentária (RREO), segundo a LRF, é publicado:",
             "opcoes": [
                 "A) até trinta dias após o encerramento de cada bimestre",
-                "B) apenas ao final do mandato",
-                "C) anualmente, junto com a LOA",
-                "D) somente quando solicitado pelo Tribunal de Contas",
-                "E) a cada quadrimestre, pela Câmara"
+                "B) apenas ao final do mandato, consolidando os quatro exercícios",
+                "C) anualmente, junto com a lei orçamentária anual do exercício seguinte",
+                "D) somente quando solicitado pelo Tribunal de Contas ou pelo Ministério Público",
+                "E) a cada quadrimestre, pela Câmara Municipal, junto com o RGF"
             ],
             "correta": 0,
             "comentario": "O art. 165, § 3º, da Constituição e o art. 52 da LRF determinam a publicação do RREO até trinta dias após cada bimestre."
@@ -11677,11 +11677,11 @@ window.bancoDeQuestoes = {
             "id": 24104,
             "enunciado": "Segundo a LRF, a transparência da gestão fiscal será assegurada também mediante:",
             "opcoes": [
-                "A) incentivo à participação popular e realização de audiências públicas durante a elaboração e a discussão dos planos, da LDO e dos orçamentos",
-                "B) publicação somente em jornais impressos privados",
+                "A) incentivo à participação popular e realização de audiências públicas na elaboração dos planos e orçamentos",
+                "B) publicação dos relatórios fiscais somente em jornais impressos de grande circulação, vedada a divulgação eletrônica",
                 "C) proibição de consulta pela internet",
                 "D) divulgação apenas para os servidores",
-                "E) sigilo dos relatórios até o fim do mandato"
+                "E) sigilo dos relatórios de gestão fiscal até o fim do mandato, quando serão julgados pelo Tribunal de Contas"
             ],
             "correta": 0,
             "comentario": "O art. 48, § 1º, I, da LRF prevê a participação popular e as audiências públicas no processo orçamentário."
@@ -11731,7 +11731,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) partidos políticos e sindicatos",
                 "B) autarquias, fundações públicas, empresas públicas e sociedades de economia mista",
-                "C) ministérios, secretarias e departamentos",
+                "C) ministérios, secretarias, departamentos e demais órgãos subordinados ao chefe do Executivo",
                 "D) Câmara Municipal e Prefeitura",
                 "E) organizações não governamentais"
             ],
@@ -11743,10 +11743,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Segundo a Constituição Federal, somente por lei específica poderá ser criada autarquia e autorizada a instituição de:",
             "opcoes": [
                 "A) empresa pública, de sociedade de economia mista e de fundação",
-                "B) consórcio entre particulares",
+                "B) consórcio público entre Municípios vizinhos, por meio de simples convênio",
                 "C) secretaria municipal",
                 "D) cargo em comissão",
-                "E) comissão parlamentar de inquérito"
+                "E) comissão parlamentar de inquérito, mediante requerimento da Mesa"
             ],
             "correta": 0,
             "comentario": "O art. 37, XIX, prevê que a lei cria a autarquia e autoriza a instituição das demais entidades, cabendo à lei complementar definir as áreas de atuação das fundações."
@@ -11781,11 +11781,11 @@ window.bancoDeQuestoes = {
             "id": 24112,
             "enunciado": "O poder de polícia, no Direito Administrativo, é a atividade da administração que:",
             "opcoes": [
-                "A) organiza as eleições",
-                "B) elabora as leis",
-                "C) limita ou disciplina direitos, interesses ou liberdades individuais em benefício do interesse público",
-                "D) investiga crimes e prende suspeitos",
-                "E) julga ações judiciais"
+                "A) organiza as eleições e fiscaliza a propaganda partidária, aplicando multas aos partidos infratores",
+                "B) elabora as leis que definem crimes e contravenções, fixando as penas aplicáveis a cada conduta",
+                "C) limita ou condiciona direitos e liberdades individuais em benefício do interesse público",
+                "D) investiga crimes e prende suspeitos, atividade típica da polícia judiciária civil e federal",
+                "E) julga as ações judiciais propostas contra o poder público, com efeitos sobre os particulares"
             ],
             "correta": 2,
             "comentario": "O poder de polícia administrativa condiciona o uso da propriedade e da liberdade, como na fiscalização sanitária ou no alvará de funcionamento."
@@ -11807,11 +11807,11 @@ window.bancoDeQuestoes = {
             "id": 24114,
             "enunciado": "São atributos do ato administrativo:",
             "opcoes": [
-                "A) conveniência e oportunidade, apenas",
+                "A) discricionariedade, conveniência e oportunidade, presentes em todos os atos administrativos",
                 "B) gratuidade e informalidade",
-                "C) irrevogabilidade absoluta e sigilo",
+                "C) irrevogabilidade absoluta, sigilo, informalidade e pessoalidade do agente público",
                 "D) presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade",
-                "E) competência, finalidade, forma, motivo e objeto"
+                "E) competência, finalidade, forma, motivo e objeto, previstos na Lei de Ação Popular"
             ],
             "correta": 3,
             "comentario": "Atributos são características que distinguem o ato administrativo dos atos privados. Requisitos (elementos) são os componentes necessários à sua validade."
@@ -11833,11 +11833,11 @@ window.bancoDeQuestoes = {
             "id": 24116,
             "enunciado": "Nos atos discricionários, a lei confere à administração margem de escolha quanto à:",
             "opcoes": [
-                "A) competência, que pode ser escolhida livremente",
-                "B) possibilidade de descumprir a lei",
+                "A) competência, que pode ser escolhida livremente pelo agente público conforme a urgência do caso concreto",
+                "B) possibilidade de deixar de cumprir a lei quando ela contrariar o interesse público do momento",
                 "C) conveniência e oportunidade, relacionadas ao motivo e ao objeto, dentro dos limites legais",
                 "D) forma, sempre livre",
-                "E) finalidade, que pode ser pessoal"
+                "E) finalidade, que pode ser pessoal desde que não haja prejuízo direto ou indireto ao erário público"
             ],
             "correta": 2,
             "comentario": "A discricionariedade recai sobre o mérito (motivo e objeto). Competência, finalidade e forma são sempre vinculadas."
@@ -11846,11 +11846,11 @@ window.bancoDeQuestoes = {
             "id": 24117,
             "enunciado": "A ANULAÇÃO do ato administrativo ocorre quando:",
             "opcoes": [
-                "A) muda o chefe do Poder",
+                "A) muda o chefe do Poder e o novo gestor discorda do ato praticado, com efeitos a partir do início da nova gestão",
                 "B) o ato é publicado com atraso",
-                "C) o servidor que praticou o ato se aposenta",
-                "D) há ilegalidade, podendo ser feita pela própria administração ou pelo Poder Judiciário, em regra com efeitos retroativos",
-                "E) o ato válido deixa de ser conveniente, com efeitos apenas futuros"
+                "C) o servidor que praticou o ato se aposenta ou é exonerado, perdendo o ato a sua validade de forma automática",
+                "D) há ilegalidade, podendo ser feita pela administração ou pelo Judiciário, em regra com efeitos retroativos",
+                "E) o ato válido deixa de ser conveniente ou oportuno para a administração, com efeitos produzidos apenas para o futuro"
             ],
             "correta": 3,
             "comentario": "A anulação recai sobre atos ilegais e produz, em regra, efeitos ex tunc (retroativos). A revogação atinge atos válidos por conveniência e oportunidade, com efeitos ex nunc."
@@ -11859,7 +11859,7 @@ window.bancoDeQuestoes = {
             "id": 24118,
             "enunciado": "A REVOGAÇÃO do ato administrativo:",
             "opcoes": [
-                "A) recai sobre atos ilegais, com efeitos retroativos",
+                "A) recai sobre atos ilegais, podendo ser feita pela administração ou pelo Judiciário, com efeitos retroativos à data de edição do ato revogado",
                 "B) é obrigatória sempre que houver mudança de governo",
                 "C) é feita pelo Poder Judiciário em qualquer caso",
                 "D) é feita pela própria administração, por razões de conveniência e oportunidade, em relação a atos válidos, com efeitos para o futuro",
@@ -11872,11 +11872,11 @@ window.bancoDeQuestoes = {
             "id": 24119,
             "enunciado": "Segundo a Súmula nº 473 do STF, a administração:",
             "opcoes": [
-                "A) pode anular seus próprios atos quando eivados de vícios que os tornem ilegais, ou revogá-los por conveniência ou oportunidade, respeitados os direitos adquiridos",
+                "A) pode anular seus atos ilegais e revogá-los por conveniência ou oportunidade, respeitados os direitos adquiridos",
                 "B) nunca pode rever seus próprios atos",
-                "C) só pode anular atos com autorização judicial",
-                "D) pode revogar atos ilegais e anular atos convenientes",
-                "E) deve manter todos os atos, mesmo ilegais"
+                "C) só pode anular atos ilegais mediante autorização judicial, mas pode revogá-los livremente, sem respeitar direitos adquiridos",
+                "D) pode revogar os atos ilegais e anular os atos inconvenientes ou inoportunos, respeitados sempre os direitos adquiridos",
+                "E) deve manter todos os atos praticados, mesmo os ilegais, em respeito à segurança jurídica e aos direitos adquiridos"
             ],
             "correta": 0,
             "comentario": "A Súmula 473 consagra o princípio da autotutela, ressalvando sempre a apreciação judicial."
@@ -11888,7 +11888,7 @@ window.bancoDeQuestoes = {
                 "A) vinte anos, como no Código Civil",
                 "B) um ano, em qualquer caso",
                 "C) dez anos, salvo boa-fé",
-                "D) nunca, pois a ilegalidade não convalida",
+                "D) nunca, pois a ilegalidade não se convalida com o tempo, mesmo havendo boa-fé do destinatário",
                 "E) cinco anos, contados da data em que foram praticados, salvo comprovada má-fé"
             ],
             "correta": 4,
@@ -11898,11 +11898,11 @@ window.bancoDeQuestoes = {
             "id": 24121,
             "enunciado": "O vício de competência em um ato praticado por servidor sem atribuição para tanto pode, quando não se tratar de competência exclusiva, ser corrigido por meio da:",
             "opcoes": [
-                "A) publicação em jornal",
-                "B) repetição do ato pelo mesmo servidor",
+                "A) publicação do ato em jornal de grande circulação local",
+                "B) repetição do ato pelo mesmo servidor, com nova assinatura",
                 "C) convalidação (ratificação) pela autoridade competente",
-                "D) revogação obrigatória",
-                "E) anulação pelo Tribunal de Contas"
+                "D) revogação obrigatória do ato pela autoridade superior",
+                "E) anulação do ato pelo Tribunal de Contas, de ofício ou a pedido"
             ],
             "correta": 2,
             "comentario": "Vícios sanáveis, como o de competência não exclusiva e o de forma não essencial, podem ser convalidados quando não acarretarem lesão ao interesse público nem prejuízo a terceiros (art. 55 da Lei nº 9.784/1999)."
@@ -11912,8 +11912,8 @@ window.bancoDeQuestoes = {
             "enunciado": "A delegação de competência, segundo a Lei nº 9.784/1999, NÃO pode ter por objeto:",
             "opcoes": [
                 "A) a edição de atos de caráter normativo, a decisão de recursos administrativos e as matérias de competência exclusiva",
-                "B) atividades de atendimento ao público",
-                "C) a assinatura de ofícios de rotina",
+                "B) atividades de atendimento ao público e de protocolo, desde que haja portaria publicada no Diário Oficial do órgão competente",
+                "C) a assinatura de ofícios de rotina e de despachos de mero encaminhamento, quando o delegado for servidor efetivo e estável",
                 "D) a organização de arquivos",
                 "E) atos de mero expediente"
             ],
@@ -11928,7 +11928,7 @@ window.bancoDeQuestoes = {
                 "B) o superior hierárquico chamar para si, temporariamente e em caráter excepcional, competência atribuída a órgão subordinado",
                 "C) delegar competência exclusiva",
                 "D) anular atos do subordinado",
-                "E) transferir a competência a outra pessoa jurídica"
+                "E) transferir a competência a outra pessoa jurídica, por meio de ato administrativo unilateral da autoridade superior competente"
             ],
             "correta": 1,
             "comentario": "O art. 15 da Lei nº 9.784/1999 admite a avocação temporária, em caráter excepcional e por motivos relevantes devidamente justificados."
@@ -11937,7 +11937,7 @@ window.bancoDeQuestoes = {
             "id": 24124,
             "enunciado": "O desvio de finalidade ocorre quando o agente:",
             "opcoes": [
-                "A) pratica o ato sem a forma exigida",
+                "A) pratica o ato sem observar a forma exigida em lei, como a ausência de publicação oficial ou de assinatura do responsável",
                 "B) pratica o ato com a assinatura ilegível",
                 "C) demora para praticar o ato",
                 "D) pratica o ato visando a fim diverso daquele previsto, explícita ou implicitamente, na regra de competência",
@@ -11951,7 +11951,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A teoria dos motivos determinantes estabelece que:",
             "opcoes": [
                 "A) apenas atos vinculados precisam de motivo",
-                "B) motivos falsos não afetam a validade do ato",
+                "B) os motivos falsos ou inexistentes não afetam a validade do ato, desde que a finalidade de interesse público seja efetivamente alcançada",
                 "C) o motivo pode ser alterado depois, livremente",
                 "D) a validade do ato fica vinculada aos motivos indicados como seu fundamento; se forem falsos ou inexistentes, o ato é nulo",
                 "E) a administração nunca precisa indicar motivos"
@@ -11964,7 +11964,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A exoneração de um servidor ocupante de cargo em comissão, por ser de livre exoneração, é ato:",
             "opcoes": [
                 "A) nulo por natureza",
-                "B) vinculado, que exige processo administrativo disciplinar",
+                "B) vinculado, que exige a instauração de processo administrativo disciplinar com ampla defesa e contraditório",
                 "C) discricionário, que dispensa motivação, mas, se motivado, vincula-se aos motivos declarados",
                 "D) que só pode ocorrer ao fim do mandato",
                 "E) que depende de autorização judicial"
@@ -11976,11 +11976,11 @@ window.bancoDeQuestoes = {
             "id": 24127,
             "enunciado": "Os agentes políticos, como os Vereadores, distinguem-se dos servidores públicos por:",
             "opcoes": [
-                "A) não estarem sujeitos a qualquer responsabilização",
-                "B) exercerem funções de direção política do Estado, em geral por mandato eletivo, com regime próprio previsto na Constituição",
+                "A) não estarem sujeitos a qualquer responsabilização, já que gozam de imunidade em todos os atos praticados no mandato",
+                "B) exercerem funções de direção política, em geral por mandato eletivo, com regime próprio na Constituição",
                 "C) adquirirem estabilidade após três anos",
                 "D) serem contratados pela CLT",
-                "E) ingressarem por concurso público de provas e títulos"
+                "E) ingressarem por concurso público de provas e títulos, com estágio probatório reduzido para apenas dois anos"
             ],
             "correta": 1,
             "comentario": "Agentes políticos exercem funções de governo e legislação, com atribuições e prerrogativas definidas na Constituição, diferentemente dos servidores de carreira."
@@ -12003,7 +12003,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A Lei nº 8.429/1992 classifica os atos de improbidade administrativa em três categorias:",
             "opcoes": [
                 "A) civis, penais e eleitorais",
-                "B) dolosos, culposos e preterdolosos",
+                "B) os dolosos, os culposos e os que atentam contra os princípios, conforme o grau de reprovação da conduta do agente público e o valor do dano causado",
                 "C) leves, médios e graves",
                 "D) internos, externos e sociais",
                 "E) os que importam enriquecimento ilícito, os que causam prejuízo ao erário e os que atentam contra os princípios da administração pública"
@@ -12028,11 +12028,11 @@ window.bancoDeQuestoes = {
             "id": 24131,
             "enunciado": "A Constituição Federal prevê que os atos de improbidade administrativa importarão:",
             "opcoes": [
-                "A) prisão imediata, sem processo",
-                "B) a suspensão dos direitos políticos, a perda da função pública, a indisponibilidade dos bens e o ressarcimento ao erário, sem prejuízo da ação penal cabível",
-                "C) perda da nacionalidade",
-                "D) apenas multa administrativa",
-                "E) somente advertência por escrito"
+                "A) prisão imediata do agente, sem processo, além da perda da função pública e da devolução integral dos valores desviados",
+                "B) suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário",
+                "C) perda da nacionalidade brasileira, cassação dos direitos políticos e confisco de todos os bens do agente e de seus familiares",
+                "D) apenas multa administrativa, aplicada pelo Tribunal de Contas, sem possibilidade de perda da função pública ou do mandato",
+                "E) somente advertência por escrito e suspensão do exercício do cargo, sem reflexo sobre os direitos políticos do agente"
             ],
             "correta": 1,
             "comentario": "O art. 37, § 4º, da Constituição lista essas consequências, na forma e gradação previstas em lei."
@@ -12041,10 +12041,10 @@ window.bancoDeQuestoes = {
             "id": 24132,
             "enunciado": "Segundo a Constituição Federal, as pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos respondem pelos danos que seus agentes, nessa qualidade, causarem a terceiros:",
             "opcoes": [
-                "A) somente quando o agente for servidor efetivo",
+                "A) somente quando o agente causador do dano for servidor efetivo, excluídos os comissionados e temporários",
                 "B) apenas se comprovada a culpa do agente",
                 "C) de forma subsidiária, após o agente",
-                "D) apenas mediante autorização do chefe do Poder",
+                "D) apenas mediante autorização do chefe do Poder, após processo administrativo que comprove a culpa do agente",
                 "E) de forma objetiva, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa"
             ],
             "correta": 4,
@@ -12054,9 +12054,9 @@ window.bancoDeQuestoes = {
             "id": 24133,
             "enunciado": "Na teoria do risco administrativo, adotada pela Constituição, a responsabilidade do Estado pode ser excluída ou atenuada quando houver:",
             "opcoes": [
-                "A) dano a pessoa jurídica",
-                "B) reclamação tardia da vítima, sempre",
-                "C) dano causado em horário de expediente",
+                "A) dano causado a pessoa jurídica de direito privado, que deve suportar os riscos da atividade",
+                "B) reclamação tardia da vítima, apresentada após trinta dias da data de ocorrência do dano sofrido",
+                "C) dano causado durante o horário de expediente, quando o agente cumpria ordens de seus superiores",
                 "D) culpa exclusiva da vítima, caso fortuito ou força maior, ou fato exclusivo de terceiro",
                 "E) qualquer dano causado por servidor efetivo"
             ],
@@ -12093,7 +12093,7 @@ window.bancoDeQuestoes = {
             "id": 24136,
             "enunciado": "O controle exercido pelo Poder Judiciário sobre os atos administrativos:",
             "opcoes": [
-                "A) é proibido em relação a atos discricionários, em qualquer aspecto",
+                "A) é proibido em relação a atos discricionários, em qualquer aspecto, inclusive quanto à competência, à forma e à finalidade do ato",
                 "B) permite ao juiz revogar atos por discordar do mérito",
                 "C) abrange a legalidade e a legitimidade, mas não pode substituir o juízo de conveniência e oportunidade da administração",
                 "D) é exercido apenas de ofício, sem provocação",
@@ -12106,11 +12106,11 @@ window.bancoDeQuestoes = {
             "id": 24137,
             "enunciado": "A Lei nº 9.784/1999, que regula o processo administrativo no âmbito federal, determina que a administração obedeça, entre outros, aos princípios da:",
             "opcoes": [
-                "A) oralidade, gratuidade e irrecorribilidade",
-                "B) sigilo, celeridade a qualquer custo e informalidade absoluta",
-                "C) hierarquia, disciplina e obediência militar",
+                "A) oralidade, gratuidade irrestrita, irrecorribilidade das decisões, informalidade absoluta e sigilo dos autos do processo",
+                "B) sigilo, celeridade a qualquer custo, informalidade absoluta, discricionariedade ilimitada e pessoalidade do julgador",
+                "C) hierarquia, disciplina, obediência, autoridade, conveniência política e supremacia do interesse pessoal do gestor",
                 "D) pessoalidade, conveniência e lucratividade",
-                "E) legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público e eficiência"
+                "E) legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa e eficiência"
             ],
             "correta": 4,
             "comentario": "O art. 2º da Lei nº 9.784/1999 lista esses princípios. A lei serve de referência também para Estados e Municípios sem norma própria, conforme entendimento do STJ."
@@ -12119,10 +12119,10 @@ window.bancoDeQuestoes = {
             "id": 24138,
             "enunciado": "Segundo a Lei nº 9.784/1999, concluída a instrução do processo, a administração tem o prazo de até:",
             "opcoes": [
-                "A) sessenta dias, prorrogáveis livremente",
+                "A) sessenta dias para decidir, prorrogáveis livremente a critério da autoridade julgadora do processo",
                 "B) cinco dias, improrrogáveis",
-                "C) dez dias úteis, prorrogáveis por mais dez",
-                "D) um ano, sem prorrogação",
+                "C) dez dias úteis para decidir, prorrogáveis por mais dez, mediante despacho motivado da autoridade",
+                "D) um ano para decidir, sem possibilidade de prorrogação, sob pena de nulidade do processo",
                 "E) trinta dias para decidir, salvo prorrogação por igual período expressamente motivada"
             ],
             "correta": 4,
@@ -12132,10 +12132,10 @@ window.bancoDeQuestoes = {
             "id": 24139,
             "enunciado": "Na Lei nº 9.784/1999, o prazo para interposição de recurso administrativo, salvo disposição legal específica, é de:",
             "opcoes": [
-                "A) cinco dias úteis",
+                "A) cinco dias úteis, contados da publicação da decisão no Diário Oficial",
                 "B) trinta dias",
                 "C) dez dias, contados da ciência ou divulgação oficial da decisão",
-                "D) quinze dias corridos",
+                "D) quinze dias corridos, contados da intimação pessoal do interessado",
                 "E) quarenta e oito horas"
             ],
             "correta": 2,
@@ -12145,10 +12145,10 @@ window.bancoDeQuestoes = {
             "id": 24140,
             "enunciado": "Segundo a Lei nº 9.784/1999, o recurso administrativo será dirigido:",
             "opcoes": [
-                "A) ao Tribunal de Contas",
-                "B) à autoridade que proferiu a decisão, a qual, se não a reconsiderar no prazo de cinco dias, o encaminhará à autoridade superior",
+                "A) ao Tribunal de Contas, que reexaminará a legalidade da decisão e poderá determinar a sua anulação ou a sua reforma integral",
+                "B) à autoridade que proferiu a decisão, que, se não a reconsiderar em cinco dias, o encaminhará à autoridade superior",
                 "C) diretamente ao Poder Judiciário",
-                "D) sempre ao chefe do Poder, sem passar pela autoridade que decidiu",
+                "D) sempre ao chefe do Poder, sem passar pela autoridade que decidiu, para garantir a imparcialidade no reexame da decisão",
                 "E) ao Ministério Público"
             ],
             "correta": 1,
@@ -12184,8 +12184,8 @@ window.bancoDeQuestoes = {
             "id": 24143,
             "enunciado": "Segundo a Lei nº 9.784/1999, os atos administrativos deverão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando, entre outros casos:",
             "opcoes": [
-                "A) sejam assinados pelo chefe do Poder, apenas",
-                "B) tratem de qualquer assunto de rotina, como bom-dia ao público",
+                "A) sejam assinados pelo chefe do Poder ou por autoridade que exerça cargo em comissão de direção e assessoramento superior",
+                "B) tratem de qualquer assunto, inclusive os de mera rotina, como a marcação de reuniões e o envio de convites oficiais do órgão",
                 "C) sejam praticados aos sábados",
                 "D) envolvam apenas informações públicas",
                 "E) neguem, limitem ou afetem direitos ou interesses, imponham deveres ou sanções, ou decidam recursos administrativos"
@@ -12210,9 +12210,9 @@ window.bancoDeQuestoes = {
             "id": 24145,
             "enunciado": "Na Lei nº 9.784/1999, o interessado poderá, na fase de instrução e antes da tomada da decisão:",
             "opcoes": [
-                "A) escolher o servidor que decidirá",
+                "A) escolher o servidor que decidirá o processo, entre os que tenham competência para a matéria em discussão",
                 "B) juntar documentos e pareceres, requerer diligências e perícias e aduzir alegações referentes à matéria",
-                "C) impedir a produção de provas pela administração",
+                "C) impedir a produção de provas pela administração, quando entender que elas podem prejudicar a sua defesa no processo",
                 "D) substituir a autoridade julgadora",
                 "E) exigir decisão sem instrução"
             ],
@@ -12236,11 +12236,11 @@ window.bancoDeQuestoes = {
             "id": 24147,
             "enunciado": "O princípio da segurança jurídica, previsto na Lei nº 9.784/1999, impede:",
             "opcoes": [
-                "A) a motivação dos atos",
-                "B) a anulação de atos ilegais em qualquer prazo",
-                "C) a publicação dos atos administrativos",
+                "A) a motivação dos atos que modifiquem entendimentos anteriores da administração",
+                "B) a anulação de atos ilegais em qualquer prazo, mesmo quando houver má-fé comprovada",
+                "C) a publicação dos atos administrativos que alterem a interpretação de normas",
                 "D) a aplicação retroativa de nova interpretação a fatos já ocorridos",
-                "E) qualquer mudança de entendimento da administração"
+                "E) qualquer mudança de entendimento da administração, mesmo para casos futuros"
             ],
             "correta": 3,
             "comentario": "O art. 2º, parágrafo único, XIII, veda a aplicação retroativa de nova interpretação, protegendo a confiança e a estabilidade das relações."
@@ -12249,10 +12249,10 @@ window.bancoDeQuestoes = {
             "id": 24148,
             "enunciado": "O controle de legalidade exercido pelo ente central sobre as entidades da administração indireta, nos limites da lei, é chamado de:",
             "opcoes": [
-                "A) autotutela",
-                "B) controle social",
+                "A) autotutela, exercida pela própria entidade sobre seus atos",
+                "B) controle social, exercido pelos cidadãos e conselhos de políticas",
                 "C) tutela administrativa (ou supervisão ministerial)",
-                "D) controle hierárquico pleno",
+                "D) controle hierárquico pleno, por subordinação direta",
                 "E) controle jurisdicional"
             ],
             "correta": 2,
@@ -12262,8 +12262,8 @@ window.bancoDeQuestoes = {
             "id": 24149,
             "enunciado": "São critérios de julgamento previstos na Lei nº 14.133/2021, entre outros:",
             "opcoes": [
-                "A) menor prazo, maior capital social e maior número de funcionários",
-                "B) preferência por empresas locais, sorteio e antiguidade",
+                "A) menor prazo de entrega, maior capital social, maior número de funcionários e maior tempo de atuação comprovada no mercado nacional",
+                "B) preferência por empresas locais, sorteio entre as propostas empatadas, antiguidade no cadastro de fornecedores e menor prazo de entrega",
                 "C) indicação política e maior lucro",
                 "D) menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance e maior retorno econômico",
                 "E) menor preço apenas"
@@ -12304,8 +12304,8 @@ window.bancoDeQuestoes = {
                 "A) exigir que o contratado trabalhe sem pagamento",
                 "B) dispensar a motivação dos atos",
                 "C) alterar e extinguir unilateralmente o contrato, fiscalizar sua execução e aplicar sanções",
-                "D) alterar o objeto do contrato sem limites",
-                "E) renunciar ao equilíbrio econômico-financeiro do contratado"
+                "D) alterar o objeto do contrato sem limites, desde que haja dotação orçamentária suficiente disponível",
+                "E) exigir que o contratado renuncie ao equilíbrio econômico-financeiro em troca de prazo maior"
             ],
             "correta": 2,
             "comentario": "O art. 104 da Lei nº 14.133/2021 prevê essas prerrogativas, que devem respeitar os direitos do contratado, como o equilíbrio econômico-financeiro."
@@ -12315,9 +12315,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Nas alterações unilaterais quantitativas, a Lei nº 14.133/2021 obriga o contratado a aceitar, nas mesmas condições contratuais, acréscimos ou supressões de até:",
             "opcoes": [
                 "A) 10% em qualquer caso",
-                "B) 25% do valor inicial atualizado do contrato, e, no caso de reforma de edifício ou equipamento, até 50% para os acréscimos",
-                "C) 100% do valor, desde que haja dotação",
-                "D) 50% em qualquer caso, inclusive supressões",
+                "B) 25% do valor inicial atualizado do contrato e, na reforma de edifício ou equipamento, 50% para os acréscimos",
+                "C) 100% do valor inicial do contrato, desde que haja dotação orçamentária e concordância prévia da autoridade superior",
+                "D) 50% do valor inicial em qualquer caso, tanto para acréscimos quanto para supressões, inclusive em obras e reformas",
                 "E) 75% do valor do contrato"
             ],
             "correta": 1,
@@ -12340,11 +12340,11 @@ window.bancoDeQuestoes = {
             "id": 24155,
             "enunciado": "Segundo a Lei nº 14.133/2021, os contratos de serviços e fornecimentos contínuos poderão ser celebrados por prazo de até:",
             "opcoes": [
-                "A) um ano, sem prorrogação",
+                "A) um ano, sem prorrogação, devendo nova licitação ser realizada ao término de cada exercício financeiro do órgão",
                 "B) cinco anos, admitida a prorrogação sucessiva até o limite de dez anos, observadas as condições legais",
-                "C) vinte anos, em qualquer caso",
+                "C) vinte anos em qualquer caso, desde que haja previsão no plano plurianual e na lei de diretrizes orçamentárias",
                 "D) prazo indeterminado",
-                "E) dois anos, prorrogáveis por mais dois"
+                "E) dois anos, prorrogáveis por mais dois, até o limite de quatro anos, conforme o mandato do chefe do Executivo"
             ],
             "correta": 1,
             "comentario": "Os arts. 106 e 107 permitem contratos contínuos de até cinco anos, prorrogáveis até dez, se a autoridade atestar que as condições continuam vantajosas."
@@ -12353,11 +12353,11 @@ window.bancoDeQuestoes = {
             "id": 24156,
             "enunciado": "São sanções administrativas aplicáveis aos licitantes e contratados, segundo a Lei nº 14.133/2021:",
             "opcoes": [
-                "A) prisão, multa e confisco de bens",
-                "B) advertência, suspensão de direitos políticos e cassação",
+                "A) prisão administrativa, multa, confisco de bens e suspensão das atividades empresariais da contratada por até cinco anos",
+                "B) advertência, suspensão dos direitos políticos dos sócios, cassação do registro empresarial e multa compensatória",
                 "C) apenas multa e advertência",
                 "D) advertência, multa, impedimento de licitar e contratar e declaração de inidoneidade para licitar ou contratar",
-                "E) demissão, exoneração e disponibilidade"
+                "E) demissão, exoneração e disponibilidade dos representantes legais, além de multa moratória e advertência por escrito"
             ],
             "correta": 3,
             "comentario": "O art. 156 lista essas quatro sanções, aplicadas conforme a gravidade, com contraditório e ampla defesa."
@@ -12379,11 +12379,11 @@ window.bancoDeQuestoes = {
             "id": 24158,
             "enunciado": "É hipótese de inexigibilidade de licitação, segundo o art. 74 da Lei nº 14.133/2021:",
             "opcoes": [
-                "A) a contratação em situação de emergência",
-                "B) a contratação de qualquer empresa local",
-                "C) a contratação de profissional do setor artístico consagrado pela crítica especializada ou pela opinião pública, diretamente ou por empresário exclusivo",
-                "D) a aquisição de bens comuns por pregão",
-                "E) a compra de material de escritório de baixo valor"
+                "A) a contratação em situação de emergência ou de calamidade pública, para atender a situação que possa causar prejuízo",
+                "B) a contratação de qualquer empresa sediada no Município, quando o valor estiver abaixo do limite fixado na lei de licitações",
+                "C) a contratação de profissional do setor artístico consagrado pela crítica especializada ou pela opinião pública",
+                "D) a aquisição de bens e serviços comuns, cujos padrões de desempenho e qualidade possam ser objetivamente definidos no edital",
+                "E) a compra de material de escritório de baixo valor, dentro do limite anual de dispensa previsto para compras e outros serviços"
             ],
             "correta": 2,
             "comentario": "O art. 74 trata da inviabilidade de competição: fornecedor exclusivo, artista consagrado, serviços técnicos especializados de notória especialização, credenciamento e certos imóveis."
@@ -12392,10 +12392,10 @@ window.bancoDeQuestoes = {
             "id": 24159,
             "enunciado": "A contratação direta em situação de emergência ou calamidade pública, segundo a Lei nº 14.133/2021, é caso de:",
             "opcoes": [
-                "A) pregão eletrônico obrigatório",
-                "B) modalidade concurso",
-                "C) inexigibilidade, sem prazo",
-                "D) leilão de bens",
+                "A) pregão eletrônico obrigatório, com prazos de divulgação reduzidos pela metade",
+                "B) modalidade concurso, com escolha do contratado por comissão especial designada pelo órgão",
+                "C) inexigibilidade de licitação, sem prazo máximo para a duração do contrato",
+                "D) leilão de serviços, vencendo a empresa que oferecer o maior desconto sobre o valor estimado",
                 "E) dispensa de licitação, com prazo máximo de um ano e vedada a prorrogação"
             ],
             "correta": 4,
@@ -12405,11 +12405,11 @@ window.bancoDeQuestoes = {
             "id": 24160,
             "enunciado": "O sistema de registro de preços (SRP), previsto na Lei nº 14.133/2021, é indicado quando:",
             "opcoes": [
-                "A) há necessidade de contratações frequentes ou não é possível definir previamente o quantitativo a ser demandado",
-                "B) se pretende vender bens inservíveis",
-                "C) o objeto é inviável de competição",
-                "D) a administração precisa contratar uma única obra de grande porte",
-                "E) não há qualquer planejamento das compras"
+                "A) há contratações frequentes ou não é possível definir previamente a quantidade a ser demandada",
+                "B) se pretende vender bens móveis inservíveis ou legalmente apreendidos, a quem oferecer o maior lance",
+                "C) o objeto é inviável de competição, como na contratação de fornecedor exclusivo de um equipamento",
+                "D) a administração precisa contratar uma única obra de grande porte, com quantitativos totalmente definidos",
+                "E) não há qualquer planejamento das compras, permitindo que cada setor adquira o que precisar a qualquer momento"
             ],
             "correta": 0,
             "comentario": "No SRP, a ata de registro de preços permite contratar conforme a necessidade, sem obrigação de adquirir toda a quantidade registrada."
@@ -12419,7 +12419,7 @@ window.bancoDeQuestoes = {
             "enunciado": "O equilíbrio econômico-financeiro do contrato administrativo significa que:",
             "opcoes": [
                 "A) o preço nunca pode ser alterado",
-                "B) o contratado deve ter lucro garantido em qualquer situação",
+                "B) o contratado deve ter lucro garantido em qualquer situação, inclusive quando der causa ao atraso da execução",
                 "C) a relação entre os encargos do contratado e a remuneração pactuada deve ser mantida ao longo da execução",
                 "D) a administração pode reduzir o pagamento livremente",
                 "E) o contrato dispensa reajuste em qualquer prazo"
@@ -12431,10 +12431,10 @@ window.bancoDeQuestoes = {
             "id": 24162,
             "enunciado": "Na Lei nº 14.133/2021, a garantia contratual exigida do contratado pode ser prestada, à escolha dele, por:",
             "opcoes": [
-                "A) imóvel residencial do servidor responsável",
-                "B) apenas cheque pré-datado",
-                "C) caução em dinheiro ou em títulos da dívida pública, seguro-garantia ou fiança bancária, entre outras modalidades previstas",
-                "D) declaração de bens do contratado",
+                "A) hipoteca de imóvel residencial do servidor responsável pela fiscalização, registrada em cartório",
+                "B) apenas cheque pré-datado ou nota promissória emitida pelos sócios da empresa contratada",
+                "C) caução em dinheiro ou títulos da dívida pública, seguro-garantia ou fiança bancária",
+                "D) declaração de bens do contratado, com compromisso de não aliená-los até o fim do contrato",
                 "E) nota promissória do sócio"
             ],
             "correta": 2,
@@ -12444,10 +12444,10 @@ window.bancoDeQuestoes = {
             "id": 24163,
             "enunciado": "O recebimento do objeto do contrato, segundo a Lei nº 14.133/2021, ocorre, em regra:",
             "opcoes": [
-                "A) pelo próprio contratado",
+                "A) pelo próprio contratado, que emite o termo de recebimento definitivo e o envia à administração para pagamento",
                 "B) somente após o pagamento integral",
                 "C) sem qualquer verificação técnica",
-                "D) provisoriamente, pelo responsável pelo acompanhamento, e definitivamente, por servidor ou comissão designada, após verificação do cumprimento das exigências",
+                "D) provisoriamente, pelo fiscal do contrato, e definitivamente, por servidor ou comissão designada",
                 "E) apenas no momento da assinatura do contrato"
             ],
             "correta": 3,
@@ -12457,11 +12457,11 @@ window.bancoDeQuestoes = {
             "id": 24164,
             "enunciado": "Na Lei nº 14.133/2021, o princípio da segregação de funções exige que:",
             "opcoes": [
-                "A) os servidores sejam separados por concurso",
-                "B) o mesmo servidor conduza a licitação, fiscalize o contrato e atesta o pagamento",
-                "C) cada órgão contrate apenas uma empresa por ano",
-                "D) as funções mais suscetíveis a riscos não sejam atribuídas à mesma pessoa, para reduzir a possibilidade de erros e fraudes",
-                "E) o pregoeiro seja sempre o chefe do Poder"
+                "A) os servidores sejam separados por concurso, conforme a área de formação de cada um",
+                "B) o mesmo servidor conduza a licitação, fiscalize o contrato e ateste o pagamento",
+                "C) cada órgão contrate apenas uma empresa por ano para cada tipo de serviço ou fornecimento",
+                "D) as funções mais suscetíveis a riscos não sejam atribuídas à mesma pessoa",
+                "E) o pregoeiro seja sempre o chefe do Poder, para garantir a responsabilidade das decisões"
             ],
             "correta": 3,
             "comentario": "O art. 5º inclui a segregação de funções entre os princípios, e o art. 7º, § 1º, veda a designação do mesmo agente para funções suscetíveis a riscos."
@@ -12470,11 +12470,11 @@ window.bancoDeQuestoes = {
             "id": 24165,
             "enunciado": "O termo de referência, na Lei nº 14.133/2021, é o documento necessário para a contratação de:",
             "opcoes": [
-                "A) leilão de bens imóveis apenas",
-                "B) bens e serviços, contendo, entre outros, a definição do objeto, os quantitativos, o prazo e os critérios de medição e pagamento",
-                "C) serviços jurídicos de advogados públicos",
-                "D) servidores efetivos",
-                "E) obras de engenharia de grande porte, exclusivamente"
+                "A) leilão de bens imóveis apenas, com a descrição do bem, a avaliação prévia e o valor mínimo de arrematação",
+                "B) bens e serviços, com a definição do objeto, os quantitativos, o prazo e os critérios de pagamento",
+                "C) serviços jurídicos de advogados públicos, com a indicação das causas e do valor dos honorários de sucumbência",
+                "D) servidores efetivos, com a descrição das atribuições do cargo, a remuneração inicial e os requisitos de ingresso",
+                "E) obras de engenharia de grande porte, exclusivamente, substituindo o projeto básico e o projeto executivo da obra"
             ],
             "correta": 1,
             "comentario": "O termo de referência (art. 6º, XXIII) é usado em bens e serviços. Para obras e serviços de engenharia, utiliza-se o projeto básico."
@@ -12484,10 +12484,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A extinção do contrato administrativo por ato unilateral da administração, segundo a Lei nº 14.133/2021, deve ser:",
             "opcoes": [
                 "A) formalmente motivada nos autos do processo, assegurados o contraditório e a ampla defesa",
-                "B) feita sem qualquer justificativa",
-                "C) decidida pelo próprio contratado",
+                "B) feita sem qualquer justificativa, por se tratar de prerrogativa exorbitante da administração pública",
+                "C) decidida pelo próprio contratado, mediante notificação à administração com trinta dias de antecedência",
                 "D) verbal e sem registro",
-                "E) comunicada apenas ao Tribunal de Contas"
+                "E) comunicada apenas ao Tribunal de Contas, dispensada a notificação prévia da empresa contratada"
             ],
             "correta": 0,
             "comentario": "O art. 137 exige motivação formal nos autos e garantia de contraditório e ampla defesa na extinção do contrato."
@@ -12496,11 +12496,11 @@ window.bancoDeQuestoes = {
             "id": 24167,
             "enunciado": "A publicação do edital e do contrato no Portal Nacional de Contratações Públicas (PNCP), segundo a Lei nº 14.133/2021, é:",
             "opcoes": [
-                "A) substituída pela publicação em rede social",
-                "B) facultativa, a critério do gestor",
-                "C) exigida apenas para contratos acima de R$ 10 milhões",
+                "A) substituída pela publicação nas redes sociais oficiais do órgão contratante",
+                "B) facultativa, a critério do gestor, quando houver publicação no Diário Oficial",
+                "C) exigida apenas para contratos acima de R$ 10 milhões, de obras e serviços de engenharia",
                 "D) condição indispensável para a eficácia do contrato e de seus aditamentos",
-                "E) proibida para contratos municipais"
+                "E) proibida para contratos municipais, que devem ser publicados apenas no diário local"
             ],
             "correta": 3,
             "comentario": "O art. 94 estabelece que a divulgação no PNCP é condição indispensável para a eficácia do contrato, dentro dos prazos previstos."
@@ -12509,11 +12509,11 @@ window.bancoDeQuestoes = {
             "id": 24168,
             "enunciado": "A matriz de riscos, cláusula prevista na Lei nº 14.133/2021, serve para:",
             "opcoes": [
-                "A) transferir todos os riscos à administração",
-                "B) definir a alocação de riscos e responsabilidades entre contratante e contratado, caracterizando o equilíbrio econômico-financeiro",
-                "C) eliminar todos os riscos do contrato",
-                "D) substituir o termo de referência",
-                "E) impedir qualquer revisão de preços"
+                "A) transferir todos os riscos do contrato à administração, garantindo o lucro do contratado",
+                "B) definir a alocação de riscos e responsabilidades entre contratante e contratado",
+                "C) eliminar todos os riscos do contrato, já que nenhum evento futuro poderá alterar o preço",
+                "D) substituir o termo de referência na definição do objeto, dos quantitativos e dos prazos",
+                "E) impedir qualquer revisão de preços durante a execução, mesmo diante de fatos imprevisíveis"
             ],
             "correta": 1,
             "comentario": "A matriz de riscos (art. 6º, XXVII) distribui previamente os riscos do contrato, reduzindo conflitos sobre revisões."
@@ -12522,7 +12522,7 @@ window.bancoDeQuestoes = {
             "id": 24169,
             "enunciado": "Na fase recursal da licitação, segundo a Lei nº 14.133/2021, o prazo para interposição de recurso contra o julgamento das propostas ou a habilitação é de:",
             "opcoes": [
-                "A) cinco dias úteis",
+                "A) cinco dias úteis, contados da publicação do resultado final no PNCP",
                 "B) dez dias corridos",
                 "C) vinte e quatro horas",
                 "D) trinta dias",
