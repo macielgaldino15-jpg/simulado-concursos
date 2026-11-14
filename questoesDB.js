@@ -9,8 +9,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Assinale a alternativa em que a regência verbal está correta de acordo com a norma-padrão.",
             "opcoes": [
                 "A) Visando ao bem-estar de todos, o prefeito assinou o decreto.",
-                "B) Assistimos o jogo de futebol no estádio.",
-                "C) O médico aspirava o cargo de diretor.",
+                "B) Assistimos o jogo de futebol decisivo no estádio municipal da cidade.",
+                "C) O médico aspirava o cargo de diretor do hospital regional da cidade.",
                 "D) Obedeci o regulamento rigorosamente.",
                 "E) Implicou-se com o atraso do colega."
             ],
@@ -34,10 +34,10 @@ window.bancoDeQuestoes = {
             "id": 3,
             "enunciado": "Quanto à concordância verbal, assinale a opção correta:",
             "opcoes": [
-                "A) Fazem dez anos que estudo para concursos públicos.",
-                "B) Houveram muitos imprevistos durante a prova objetiva.",
-                "C) Tratam-se de questões complexas de gramática.",
-                "D) Faltou o candidato e o fiscal na sala.",
+                "A) Fazem dez anos que estudo para os concursos públicos da região.",
+                "B) Houveram muitos imprevistos durante a aplicação da prova objetiva.",
+                "C) Tratam-se de questões complexas de gramática e de interpretação.",
+                "D) Existe, nas salas de prova, muitos candidatos ansiosos.",
                 "E) Devem existir novos critérios para a seleção de candidatos."
             ],
             "correta": 4,
@@ -73,10 +73,10 @@ window.bancoDeQuestoes = {
             "id": 6,
             "enunciado": "Assinale a alternativa em que a palavra 'como' possui valor causal:",
             "opcoes": [
-                "A) Ele agiu como seu irmão havia sugerido.",
+                "A) Ele agiu exatamente como seu irmão havia sugerido.",
                 "B) Como estava chovendo forte, adiamos a reunião.",
-                "C) Ela trabalha como analista de sistemas.",
-                "D) O candidato estudou tanto como o colega.",
+                "C) Ela trabalha como analista de sistemas na Câmara.",
+                "D) O candidato estudou tanto como o colega de sala.",
                 "E) Sinto-me como se estivesse em casa."
             ],
             "correta": 1,
@@ -99,11 +99,11 @@ window.bancoDeQuestoes = {
             "id": 8,
             "enunciado": "Assinale a alternativa que apresenta um exemplo de figura de linguagem do tipo Metáfora:",
             "opcoes": [
-                "A) O vento sussurrava segredos pela janela.",
+                "A) O vento sussurrava segredos antigos pela janela aberta.",
                 "B) Chorei rios de lágrimas após o resultado.",
                 "C) Aquele aluno é uma verdadeira águia nos estudos.",
                 "D) Ele é corajoso como um leão em campo.",
-                "E) A cidade inteira aplaudiu de pé o espetáculo."
+                "E) A cidade inteira aplaudiu de pé o espetáculo de estreia."
             ],
             "correta": 2,
             "comentario": "A metáfora ocorre quando há uma comparação implícita, sem o uso de conectivos comparativos (o aluno 'é' uma águia)."
@@ -203,10 +203,10 @@ window.bancoDeQuestoes = {
             "id": 16,
             "enunciado": "Assinale a alternativa em que o uso da crase é obrigatório:",
             "opcoes": [
-                "A) O candidato dirigiu-se a uma sala reservada.",
-                "B) Entreguei o documento a sua senhoria.",
+                "A) O candidato dirigiu-se a uma sala reservada no térreo.",
+                "B) Entreguei o documento a sua senhoria, conforme solicitado.",
                 "C) Os servidores assistiram a palestra com atenção.",
-                "D) Fomos a Curitiba nas férias de julho.",
+                "D) Fomos a Curitiba nas férias de julho do ano passado.",
                 "E) Ficamos cara a cara durante a reunião."
             ],
             "correta": 2,
@@ -217,10 +217,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Identifique a opção em que a oração subordinada possui valor semântico de concessão:",
             "opcoes": [
                 "A) Conquanto estivesse chovendo, realizamos a vistoria.",
-                "B) Se houver verba, a obra será realizada.",
-                "C) Como o trânsito estava lento, cheguei atrasado.",
-                "D) Trabalhou tanto que conseguiu a promoção.",
-                "E) Conforme combinamos, o relatório foi entregue."
+                "B) Se houver verba disponível, a obra será realizada neste ano.",
+                "C) Como o trânsito estava muito lento, cheguei atrasado à sessão.",
+                "D) Trabalhou tanto durante o ano que conseguiu a promoção.",
+                "E) Conforme combinamos na reunião, o relatório foi entregue."
             ],
             "correta": 0,
             "comentario": "A conjunção 'conquanto' introduz uma oração subordinada adverbial concessiva, indicando um contraste que não anula a ação principal."
@@ -268,14 +268,14 @@ window.bancoDeQuestoes = {
             "id": 21,
             "enunciado": "Assinale a alternativa em que a regência nominal está incorreta:",
             "opcoes": [
-                "A) Ele era favorável a medidas drásticas.",
-                "B) Ela demonstrou respeito com os colegas.",
-                "C) Tenho grande ojeriza a injustiças.",
-                "D) Estou apto para assumir o cargo.",
+                "A) Ele era favorável a medidas drásticas de contenção.",
+                "B) O servidor é residente à Rua Benjamin Constant.",
+                "C) Tenho grande ojeriza a injustiças de qualquer natureza.",
+                "D) Estou apto para assumir o cargo de coordenador do setor.",
                 "E) O projeto é propício a mudanças."
             ],
             "correta": 1,
-            "comentario": "O nome 'respeito' rege comumente a preposição 'por' (respeito pelos colegas), e não 'com'."
+            "comentario": "A norma-padrão exige 'residente em' ('residente na Rua...'), e não 'residente à Rua'. As demais regências estão corretas: favorável a, ojeriza a, apto para e propício a."
         },
         {
             "id": 22,
@@ -333,14 +333,14 @@ window.bancoDeQuestoes = {
             "id": 26,
             "enunciado": "Assinale a alternativa em que a concordância nominal apresenta erro:",
             "opcoes": [
-                "A) Seguem anensos os documentos solicitados.",
+                "A) Seguem anexos os documentos solicitados pelo setor.",
                 "B) A própria diretora assinou o termo de posse.",
-                "C) Bastantes candidatos compareceram à prova.",
+                "C) Bastantes candidatos compareceram à prova de domingo.",
                 "D) Meio-dia e meia em ponto nos encontraremos.",
-                "E) É proibido entrada de pessoas não autorizadas."
+                "E) É proibida entrada de pessoas não autorizadas."
             ],
             "correta": 4,
-            "comentario": "A expressão 'é proibido' só varia se o substantivo vier precedido de determinante (artigo ou pronome). O correto seria 'É proibida a entrada...'"
+            "comentario": "Sem artigo, a expressão fica invariável: 'É proibido entrada'. Com artigo, concorda: 'É proibida a entrada'. Por isso 'É proibida entrada' está errada. As demais estão corretas: 'seguem anexos', 'a própria diretora', 'bastantes candidatos' (adjetivo, concorda com o substantivo) e 'meio-dia e meia (hora)'."
         },
         {
             "id": 27,
@@ -359,11 +359,11 @@ window.bancoDeQuestoes = {
             "id": 28,
             "enunciado": "Indique a alternativa cuja função do 'se' está corretamente classificada em: 'Tratam-se de assuntos confidenciais':",
             "opcoes": [
-                "A) Partícula apassivadora",
+                "A) Partícula apassivadora (pronome apassivador)",
                 "B) Índice de indeterminação do sujeito",
-                "C) Pronome reflexivo",
+                "C) Pronome reflexivo, com função de objeto direto",
                 "D) Conjunção integrante",
-                "E) Parte integrante do verbo"
+                "E) Parte integrante do verbo pronominal"
             ],
             "correta": 1,
             "comentario": "O verbo 'tratar' acompanhado da preposição 'de' (tratar de algo) é transitivo indireto. Com o 'se', ele atua como índice de indeterminação do sujeito, exigindo o verbo no singular (embora o português popular erre muito com 'tratam-se')."
@@ -372,10 +372,10 @@ window.bancoDeQuestoes = {
             "id": 29,
             "enunciado": "Assinale a alternativa em que a palavra destacada funciona como predicativo do sujeito:",
             "opcoes": [
-                "A) O candidato estudou exaustivamente.",
-                "B) O coordenador entregou o relatório ao chefe.",
-                "C) A reunião ocorreu na sala de reuniões.",
-                "D) O protocolo recebeu novos documentos.",
+                "A) O candidato estudou exaustivamente para a prova objetiva.",
+                "B) O coordenador entregou o relatório final ao chefe do setor.",
+                "C) A reunião ocorreu na sala de reuniões do segundo andar.",
+                "D) O protocolo recebeu novos documentos durante a manhã.",
                 "E) Os servidores pareciam cansados após o expediente."
             ],
             "correta": 4,
@@ -463,14 +463,14 @@ window.bancoDeQuestoes = {
             "id": 36,
             "enunciado": "Assinale a alternativa em que a substituição de termos gerou alteração indevida de sentido ou erro gramatical:",
             "opcoes": [
-                "A) 'A par de tudo' equivale a 'ciente de tudo'.",
+                "A) 'A par de tudo' equivale a 'ciente de tudo', como em 'estou a par do caso'.",
                 "B) 'A fim de' indica finalidade.",
                 "C) 'Afim' junto indica parentesco ou afinidade.",
                 "D) 'Mal' com 'l' opõe-se a 'bem'.",
-                "E) 'Ao par do dólar' está correto para indicar cotação monetária."
+                "E) 'A par do dólar' está correto para indicar a equivalência entre moedas."
             ],
             "correta": 4,
-            "comentario": "A expressão correta para cotação monetária em pé de igualdade é 'ao par', mas a distinção entre estar 'a par' (ciente) e 'ao par' (equivalência) é muito cobrada."
+            "comentario": "Para indicar equivalência cambial usa-se 'ao par' ('o real ficou ao par do dólar'); 'a par' significa 'ciente'. As demais afirmações estão corretas: 'a fim de' indica finalidade, 'afim' indica afinidade e 'mal' opõe-se a 'bem'."
         },
         {
             "id": 37,
@@ -594,9 +594,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Identifique a oração que se classifica como subordinada adverbial concessiva:",
             "opcoes": [
                 "A) Embora estivesse exausto, o candidato concluiu o simulado.",
-                "B) Caso o edital seja publicado, iniciaremos os estudos.",
-                "C) Conforme determinava o regimento, a sessão foi aberta.",
-                "D) Trabalhou tanto que conquistou a estabilidade desejada.",
+                "B) Caso o edital seja publicado em breve, iniciaremos os estudos.",
+                "C) Conforme determinava o regimento interno, a sessão foi aberta.",
+                "D) Trabalhou tanto que conquistou a tão desejada estabilidade no cargo.",
                 "E) Visto que o prazo expirou, o protocolo foi encerrado."
             ],
             "correta": 0,
@@ -673,7 +673,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) O servidor trabalhou com afinco durante todo o dia.",
                 "B) O coordenador entregou o relatório ao chefe.",
-                "C) A sala de reuniões foi decorada com flores tropicais.",
+                "C) A sala de reuniões foi decorada com flores tropicais da região.",
                 "D) O projeto foi aprovado por unanimidade pelos vereadores.",
                 "E) O cidadão confia plenamente nas leis municipais."
             ],
@@ -684,11 +684,11 @@ window.bancoDeQuestoes = {
             "id": 53,
             "enunciado": "Assinale a alternativa em que a regência do verbo 'implicar' está correta:",
             "opcoes": [
-                "A) A nova norma implicará em mudanças profundas na rotina.",
+                "A) A nova norma implicará em mudanças profundas na rotina do setor.",
                 "B) A atitude do funcionário implicou a sua demissão imediata.",
-                "C) O fiscal implicou com o atraso do motorista.",
-                "D) As novas regras implicam em benefícios para a categoria.",
-                "E) O erro cometido implicará com a anulação do processo."
+                "C) O novo regulamento implicou na demissão de três servidores.",
+                "D) As novas regras implicam em benefícios para toda a categoria.",
+                "E) O erro cometido implicará com a anulação de todo o processo."
             ],
             "correta": 1,
             "comentario": "O verbo 'implicar' no sentido de acarretar ou resultar em é transitivo direto, ou seja, não rege preposição ('implicou a demissão', sem 'em')."
@@ -697,8 +697,8 @@ window.bancoDeQuestoes = {
             "id": 54,
             "enunciado": "Assinale a alternativa correta quanto à flexão de grau dos adjetivos (superlativo absoluto sintético):",
             "opcoes": [
-                "A) amável - amabilíssimo",
-                "B) bom - boníssimo (ou ótimo)",
+                "A) amável - amabilíssimo, forma sintética erudita do adjetivo",
+                "B) bom - boníssimo (ou ótimo), ambas registradas pela norma",
                 "C) comum - comuníssimo",
                 "D) fiel - fidelíssimo",
                 "E) Todas as alternativas anteriores estão corretas."
@@ -723,10 +723,10 @@ window.bancoDeQuestoes = {
             "id": 56,
             "enunciado": "Identifique a opção em que a oração subordinada substantiva exerce a função de predicativo do sujeito:",
             "opcoes": [
-                "A) Desejo que você seja aprovado no concurso.",
-                "B) O fato de ter passado na prova me alegrou.",
+                "A) Desejo que você seja aprovado no concurso da Câmara.",
+                "B) O fato de ter passado na prova me alegrou bastante.",
                 "C) A verdade é que todos estudaram com afinco.",
-                "D) Convém que o edital seja publicado hoje.",
+                "D) Convém que o edital seja publicado ainda hoje.",
                 "E) Tenho certeza de que passará no exame."
             ],
             "correta": 2,
@@ -736,14 +736,14 @@ window.bancoDeQuestoes = {
             "id": 57,
             "enunciado": "Assinale a alternativa em que a troca da ordem dos termos altera o sentido original da frase:",
             "opcoes": [
-                "A) O Diretor comprou um carro novo. / O novo Diretor comprou um carro.",
-                "B) O candidato alto gabaritou a prova. / O alto candidato gabaritou a prova.",
+                "A) A sala ampla foi reformada durante o recesso. / A ampla sala foi reformada durante o recesso.",
+                "B) O texto claro agradou à banca. / O claro texto agradou à banca.",
                 "C) O edifício alto foi construído no centro. / O alto edifício foi construído...",
                 "D) O funcionário pobre realizou a tarefa. / O pobre funcionário realizou a tarefa.",
                 "E) A casa branca pertence ao prefeito. / A branca casa pertence..."
             ],
             "correta": 3,
-            "comentario": "O pospujamento ou anteposição do adjetivo altera o sentido: 'funcionário pobre' (sem dinheiro) difere de 'pobre funcionário' (infeliz, digno de pena)."
+            "comentario": "Alguns adjetivos mudam de sentido conforme a posição: 'funcionário pobre' (sem dinheiro) e 'pobre funcionário' (digno de pena). Nos demais pares, antepor o adjetivo é apenas uma escolha de estilo, sem mudança de sentido."
         },
         {
             "id": 58,
@@ -762,9 +762,9 @@ window.bancoDeQuestoes = {
             "id": 59,
             "enunciado": "Assinale a alternativa em que a oração destacada possui valor semântico causal:",
             "opcoes": [
-                "A) Agiu exatamente como o regimento interno determinava.",
+                "A) Agiu exatamente como o regimento interno da Câmara Municipal determinava.",
                 "B) O concurso será concorrido, como todos já previam.",
-                "C) Choveu tanto durante a noite que a rua ficou alagada.",
+                "C) Choveu tanto durante a noite que a rua principal ficou totalmente alagada.",
                 "D) Como os documentos estavam incompletos, o processo foi devolvido.",
                 "E) Como o chefe orientou, realizamos a auditoria."
             ],
@@ -775,11 +775,11 @@ window.bancoDeQuestoes = {
             "id": 60,
             "enunciado": "Assinale a alternativa que apresenta um exemplo correto de figura de linguagem do tipo Antítese:",
             "opcoes": [
-                "A) O vento sussurrava canções de ninar pela janela.",
+                "A) O vento sussurrava canções de ninar pela janela entreaberta do quarto.",
                 "B) O silêncio da noite contrastava com o barulho ensurdecedor da rua.",
-                "C) Aquela criança é um anjo de bondade.",
-                "D) Comprei um Picasso original na galeria de arte.",
-                "E) Chorei rios de lágrimas após o resultado da prova."
+                "C) Aquela criança é um verdadeiro anjo de bondade com todos os colegas.",
+                "D) Comprei um Picasso original na galeria de arte do centro da cidade.",
+                "E) Chorei rios de lágrimas após saber do resultado final da prova objetiva."
             ],
             "correta": 1,
             "comentario": "A antítese consiste no emprego de palavras ou expressões de sentidos opostos em uma mesma frase ('silêncio' e 'barulho'), criando contraste expressivo."
@@ -828,9 +828,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Identifique a opção em que a classe gramatical da palavra destacada foi alterada por derivação imprópria:",
             "opcoes": [
                 "A) O sim foi decisivo para a aprovação do projeto.",
-                "B) O jantar estava excelente.",
+                "B) A refeição estava excelente.",
                 "C) O prudente motorista evitou o acidente.",
-                "D) A clareza da exposição impressionou a banca.",
+                "D) A clareza da exposição do candidato impressionou a banca.",
                 "E) O corredor estreito dificultava a passagem."
             ],
             "correta": 0,
@@ -880,8 +880,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Identifique a alternativa em que o aposto está corretamente isolado por vírgulas:",
             "opcoes": [
                 "A) Rio Branco, capital do Acre, abriga a sede da Câmara Municipal.",
-                "B) O prefeito municipal, sancionou a nova lei de diretrizes.",
-                "C) Os candidatos que estudaram muito, foram aprovados.",
+                "B) O prefeito municipal, sancionou a nova lei de diretrizes orçamentárias.",
+                "C) Os candidatos que estudaram muito para a prova, foram aprovados.",
                 "D) Entreguei os documentos ao chefe, e saí rapidamente.",
                 "E) Ontem à noite, ocorreu uma reunião extraordinária."
             ],
@@ -944,21 +944,21 @@ window.bancoDeQuestoes = {
             "id": 73,
             "enunciado": "Assinale a alternativa em que a conjunção 'enquanto' possui valor estritamente temporal:",
             "opcoes": [
-                "A) Enquanto alguns estudavam, outros descansavam.",
+                "A) Alguns servidores estudavam muito, enquanto outros apenas descansavam.",
                 "B) Enquanto o edital não sai, continuo revisando a matéria.",
-                "C) O cargo exige dedicação, enquanto o salário é fixo.",
-                "D) Faço o protocolo, enquanto você separa os anexos.",
-                "E) Todas as opções acima apresentam valor temporal simultâneo."
+                "C) O cargo exige muita dedicação, enquanto o salário é relativamente baixo.",
+                "D) Ele é extrovertido, enquanto a irmã é tímida.",
+                "E) Todas as frases acima apresentam valor temporal."
             ],
-            "correta": 4,
-            "comentario": "Em todas as situações apresentadas, 'enquanto' estabelece relação de simultaneidade temporal entre as ações expressas nas orações."
+            "correta": 1,
+            "comentario": "Em B, 'enquanto' indica tempo (durante o período em que o edital não sai). Em A, C e D, 'enquanto' marca contraste entre duas situações, com sentido de 'ao passo que'; por isso E também está errada."
         },
         {
             "id": 74,
             "enunciado": "Assinale a alternativa em que o pronome de tratamento exige concordância verbal na terceira pessoa:",
             "opcoes": [
-                "A) Vossa Excelência sancionareis a lei municipal?",
-                "B) Vossa Senhoria convocastes o secretário?",
+                "A) Vossa Excelência sancionareis a lei municipal aprovada ontem?",
+                "B) Vossa Senhoria convocastes o secretário para a reunião?",
                 "C) Vossa Senhoria analisará o relatório com cautela?",
                 "D) Vossa Excelência determinastes o arquivamento?",
                 "E) Vossa Eminência decidistes o impasse político?"
@@ -1035,11 +1035,11 @@ window.bancoDeQuestoes = {
             "id": 80,
             "enunciado": "Assinale a alternativa em que a pontuação cumpre o papel de isolar um adjunto adverbial deslocado de longa extensão:",
             "opcoes": [
-                "A) Os candidatos estudaram, e foram aprovados.",
+                "A) Os candidatos estudaram, e foram aprovados no concurso público.",
                 "B) Na sessão de ontem à tarde, a câmara aprovou o projeto.",
-                "C) O relatório final foi entregue pelo chefe.",
-                "D) Brasília, capital federal, sediou o congresso.",
-                "E) Meus amigos, venham até a sala de reuniões."
+                "C) O relatório final foi entregue pelo chefe do setor na sexta-feira.",
+                "D) Brasília, capital federal, sediou o congresso nacional de vereadores.",
+                "E) Meus amigos, venham até a sala de reuniões para o início da sessão."
             ],
             "correta": 1,
             "comentario": "O adjunto adverbial de tempo e lugar de longa extensão deslocado para o início da oração ('Na sessão de ontem à tarde,') é isolado por vírgula para manter a clareza e correção sintática."
@@ -1103,7 +1103,7 @@ window.bancoDeQuestoes = {
                 "A) Comprei meio quilo de café para o escritório.",
                 "B) Bebi meia xícara de chá antes da reunião.",
                 "C) Restam meias verdades nessa declaração.",
-                "D) A porta permaneceu meia aberta durante a sessão.",
+                "D) A porta permaneceu meia aberta durante toda a sessão plenária.",
                 "E) A candidata estava meio preocupada com o resultado."
             ],
             "correta": 4,
@@ -1113,11 +1113,11 @@ window.bancoDeQuestoes = {
             "id": 86,
             "enunciado": "Identifique a alternativa em que a oração coordenada sintética adversativa está corretamente empregada:",
             "opcoes": [
-                "A) O candidato estudou muito, portanto foi aprovado.",
+                "A) O candidato estudou muito, portanto foi aprovado no concurso público.",
                 "B) O servidor trabalhou com dedicação, contudo não obteve a promoção.",
-                "C) Não compareceu à sessão, pois estava em missão oficial.",
-                "D) O funcionário ora atende no protocolo, ora na recepção.",
-                "E) Estudei bastante, e consegui a vaga desejada."
+                "C) Não compareceu à sessão, pois estava em missão oficial fora do Estado.",
+                "D) O funcionário ora atende no protocolo, ora trabalha na recepção da Câmara.",
+                "E) Estudei bastante durante o ano, e consegui finalmente a vaga tão desejada."
             ],
             "correta": 1,
             "comentario": "A conjunção 'contudo' introduz uma oposição/contraste entre as orações, caracterizando a coordenada sindética adversativa."
@@ -1126,7 +1126,7 @@ window.bancoDeQuestoes = {
             "id": 87,
             "enunciado": "Assinale a alternativa em que a crase é facultativa:",
             "opcoes": [
-                "A) Entreguei o documento à diretora do departamento.",
+                "A) Entreguei o documento à diretora do departamento de pessoal.",
                 "B) Fui a Salvador nas férias de julho passado.",
                 "C) O projeto foi enviado à Vossa Senhoria.",
                 "D) Obedeço às regras estabelecidas no edital.",
@@ -1152,9 +1152,9 @@ window.bancoDeQuestoes = {
             "id": 89,
             "enunciado": "Assinale a alternativa em que o sujeito da oração está corretamente classificado como composto:",
             "opcoes": [
-                "A) Faltou coragem aos servidores públicos na assembleia.",
-                "B) Choveu muito durante a madrugada em Rio Branco.",
-                "C) Existem novos critérios para a seleção de pessoal.",
+                "A) Faltou coragem aos servidores públicos durante a assembleia geral.",
+                "B) Choveu muito durante toda a madrugada de ontem em Rio Branco.",
+                "C) Existem novos critérios para a seleção de pessoal da Câmara.",
                 "D) Precisa-se de analistas legislativos com experiência.",
                 "E) O candidato e o seu colega foram aprovados no concurso."
             ],
@@ -1178,10 +1178,10 @@ window.bancoDeQuestoes = {
             "id": 20001,
             "enunciado": "Assinale a alternativa em que o acento indicativo de crase está empregado corretamente:",
             "opcoes": [
-                "A) O vereador começou à discursar após o intervalo.",
-                "B) Encaminhamos o ofício à Vossa Excelência.",
-                "C) O vereador votou à favor do projeto.",
-                "D) A sessão foi encerrada à duas horas da tarde.",
+                "A) O vereador começou à discursar logo após o intervalo regimental da sessão.",
+                "B) Encaminhamos o ofício à Vossa Excelência para conhecimento e providências.",
+                "C) O vereador votou à favor do projeto de lei apresentado pela Mesa.",
+                "D) A sessão foi encerrada à duas horas da tarde, após longa discussão.",
                 "E) O servidor entregou o requerimento à secretária da Mesa Diretora."
             ],
             "correta": 4,
@@ -1217,10 +1217,10 @@ window.bancoDeQuestoes = {
             "id": 20004,
             "enunciado": "Considerando a regra prática \"vou a, volto da, crase há; vou a, volto de, crase pra quê?\", está correta a frase:",
             "opcoes": [
-                "A) Os vereadores viajaram à Rio Branco para a sessão.",
+                "A) Os vereadores viajaram à Rio Branco para a sessão solene de posse.",
                 "B) O servidor foi à Curitiba em missão oficial.",
                 "C) Retornamos à Portugal no ano passado.",
-                "D) Ela irá à Manaus amanhã.",
+                "D) Ela irá à Manaus amanhã cedo para participar do congresso de vereadores.",
                 "E) Os vereadores viajaram à Brasília dos anos 60 em um documentário."
             ],
             "correta": 4,
@@ -1256,9 +1256,9 @@ window.bancoDeQuestoes = {
             "id": 20007,
             "enunciado": "Assinale a frase em que o verbo \"aspirar\" está empregado de acordo com a norma-padrão:",
             "opcoes": [
-                "A) O servidor aspirou ao ar puro da manhã.",
-                "B) Os jovens aspiram em uma carreira pública.",
-                "C) Aspiramos pelo cargo com dedicação.",
+                "A) O servidor aspirou ao ar puro da manhã antes de iniciar o expediente.",
+                "B) Os jovens aspiram em uma carreira pública estável e bem remunerada.",
+                "C) Aspiramos pelo cargo de analista com muita dedicação e estudo.",
                 "D) Muitos candidatos aspiram o cargo de analista legislativo.",
                 "E) Muitos candidatos aspiram ao cargo de analista legislativo."
             ],
@@ -1412,11 +1412,11 @@ window.bancoDeQuestoes = {
             "id": 20019,
             "enunciado": "Assinale a alternativa que apresenta ERRO de regência:",
             "opcoes": [
-                "A) O assessor informou aos vereadores que a sessão seria adiada.",
-                "B) O assessor informou os vereadores de que a sessão seria adiada.",
+                "A) O assessor informou aos vereadores que a sessão seria adiada para segunda.",
+                "B) O assessor informou os vereadores de que a sessão seria adiada para segunda.",
                 "C) O assessor informou aos vereadores de que a sessão seria adiada.",
-                "D) O assessor informou-os de que a sessão seria adiada.",
-                "E) O assessor informou-lhes que a sessão seria adiada."
+                "D) O assessor informou-os, por telefone, de que a sessão seria adiada.",
+                "E) O assessor informou-lhes, por telefone, que a sessão seria adiada."
             ],
             "correta": 2,
             "comentario": "\"Informar\" admite duas construções: informar alguém DE algo ou informar algo A alguém. Não se pode usar preposição nos dois complementos ao mesmo tempo, como em \"informou aos vereadores de que\"."
@@ -1427,7 +1427,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) O programa visa na redução das filas.",
                 "B) O atirador visou ao alvo central e acertou.",
-                "C) O gerente visou ao cheque antes do pagamento.",
+                "C) O gerente visou ao cheque antes de autorizar o pagamento ao fornecedor.",
                 "D) O programa visa à redução das filas no atendimento.",
                 "E) O programa visa para a redução das filas."
             ],
@@ -1438,10 +1438,10 @@ window.bancoDeQuestoes = {
             "id": 20021,
             "enunciado": "Assinale a alternativa correta quanto ao emprego de \"onde\" e \"aonde\":",
             "opcoes": [
-                "A) Aonde fica o protocolo da Câmara?",
-                "B) Onde você vai com esses documentos?",
-                "C) O setor aonde trabalho é o arquivo.",
-                "D) Não sei aonde guardei a pasta.",
+                "A) Aonde fica o protocolo da Câmara Municipal?",
+                "B) Onde você vai com esses documentos todos?",
+                "C) O setor aonde trabalho é o arquivo central.",
+                "D) Não sei aonde guardei a pasta com os ofícios.",
                 "E) Aonde você vai com esses documentos?"
             ],
             "correta": 4,
@@ -1477,7 +1477,7 @@ window.bancoDeQuestoes = {
             "id": 20024,
             "enunciado": "Na frase \"Os documentos chegaram, mas ainda não os conferimos\", o pronome \"os\" retoma:",
             "opcoes": [
-                "A) o sujeito oculto \"nós\"",
+                "A) o sujeito oculto \"nós\", que pratica a ação expressa por \"conferimos\"",
                 "B) a conjunção \"mas\"",
                 "C) os documentos, funcionando como objeto direto de \"conferimos\"",
                 "D) o verbo \"chegaram\"",
@@ -1503,9 +1503,9 @@ window.bancoDeQuestoes = {
             "id": 20026,
             "enunciado": "Assinale a alternativa pontuada de acordo com a norma-padrão:",
             "opcoes": [
-                "A) Os vereadores aprovaram, por unanimidade o projeto de lei.",
-                "B) Os vereadores, aprovaram por unanimidade o projeto de lei.",
-                "C) Os vereadores aprovaram o projeto, de lei por unanimidade.",
+                "A) Os vereadores aprovaram, por unanimidade o projeto de lei municipal.",
+                "B) Os vereadores, aprovaram por unanimidade o projeto de lei municipal.",
+                "C) Os vereadores aprovaram o projeto, de lei municipal por unanimidade.",
                 "D) Os vereadores aprovaram por unanimidade, o projeto de lei.",
                 "E) Os vereadores aprovaram, por unanimidade, o projeto de lei."
             ],
@@ -1544,8 +1544,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) em I, todos os servidores fizeram o curso; em II, só parte deles",
                 "B) a frase I está incorreta, pois toda oração com \"que\" exige vírgula",
-                "C) as duas frases têm exatamente o mesmo sentido",
-                "D) em I, só parte dos servidores fez o curso; em II, todos os servidores fizeram o curso",
+                "C) as duas frases têm exatamente o mesmo sentido, mudando apenas a pontuação",
+                "D) em I, só parte dos servidores fez o curso; em II, todos fizeram",
                 "E) a frase II está incorreta, pois oração adjetiva nunca leva vírgula"
             ],
             "correta": 3,
@@ -1555,10 +1555,10 @@ window.bancoDeQuestoes = {
             "id": 20030,
             "enunciado": "Assinale a alternativa em que o uso da vírgula antes de \"e\" está correto:",
             "opcoes": [
-                "A) O servidor organizou, e arquivou os documentos.",
-                "B) O presidente abriu a sessão, e leu a pauta.",
+                "A) O servidor organizou, e arquivou os documentos recebidos ontem no protocolo.",
+                "B) O presidente abriu a sessão, e leu a pauta do dia para os vereadores presentes.",
                 "C) O presidente abriu a sessão, e os vereadores, em seguida, votaram a pauta.",
-                "D) Compramos papel, e canetas para o setor.",
+                "D) Compramos papel, e canetas para o setor de protocolo e para o arquivo central.",
                 "E) O vereador leu, e aprovou o parecer."
             ],
             "correta": 2,
@@ -1581,11 +1581,11 @@ window.bancoDeQuestoes = {
             "id": 20032,
             "enunciado": "Os dois-pontos estão empregados corretamente em:",
             "opcoes": [
-                "A) O servidor: entregou o relatório no prazo.",
-                "B) O presidente disse que: a sessão foi encerrada.",
+                "A) O servidor: entregou o relatório no prazo e recebeu elogios da chefia do setor de protocolo.",
+                "B) O presidente disse que: a sessão foi encerrada por falta de quórum e será retomada amanhã.",
                 "C) Entreguei o ofício ao: protocolo.",
-                "D) São: requisitos do cargo o nível médio e a idade mínima.",
-                "E) São requisitos do cargo: nível médio completo, idade mínima de 18 anos e quitação eleitoral."
+                "D) São: requisitos do cargo o nível médio completo, a idade mínima e a quitação eleitoral.",
+                "E) São requisitos do cargo: nível médio, idade mínima de 18 anos e quitação eleitoral."
             ],
             "correta": 4,
             "comentario": "Os dois-pontos introduzem enumerações, explicações e citações. Não devem separar o sujeito do verbo nem o verbo de seu complemento."
@@ -1621,7 +1621,7 @@ window.bancoDeQuestoes = {
             "enunciado": "A palavra \"pôde\" leva acento para:",
             "opcoes": [
                 "A) indicar que é proparoxítona",
-                "B) atender à regra das oxítonas terminadas em \"e\"",
+                "B) atender à regra que acentua as oxítonas terminadas em \"e\", como acontece em \"você\" e \"bebê\"",
                 "C) diferenciar o pretérito perfeito (\"ontem ele pôde\") do presente (\"hoje ele pode\")",
                 "D) marcar um hiato",
                 "E) indicar o plural"
@@ -1660,10 +1660,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A palavra \"juízes\" é acentuada, mas \"juiz\" não. Isso ocorre porque:",
             "opcoes": [
                 "A) em \"juiz\" o \"i\" tônico do hiato é seguido de \"z\" na mesma sílaba",
-                "B) \"juiz\" é proparoxítona",
-                "C) o Acordo Ortográfico aboliu o acento dos hiatos",
-                "D) \"juízes\" é oxítona terminada em \"es\"",
-                "E) \"juiz\" tem ditongo decrescente"
+                "B) \"juiz\" é proparoxítona e, por isso, não recebe acento como \"juízes\"",
+                "C) o Acordo Ortográfico aboliu o acento dos hiatos em palavras oxítonas",
+                "D) \"juízes\" é oxítona terminada em \"es\", que sempre recebe acento gráfico",
+                "E) \"juiz\" tem ditongo decrescente, que dispensa o uso do acento gráfico"
             ],
             "correta": 0,
             "comentario": "O \"i\" e o \"u\" tônicos de hiato são acentuados (ju-í-zes), exceto quando formam sílaba com consoante que não seja \"s\", como em ju-iz, ra-iz."
@@ -1776,10 +1776,10 @@ window.bancoDeQuestoes = {
             "id": 20047,
             "enunciado": "Assinale a frase em que \"a fim de\" está empregado corretamente:",
             "opcoes": [
-                "A) O nosso trabalho é a fim ao do setor jurídico.",
+                "A) O nosso trabalho é a fim ao do setor jurídico, por isso atuamos juntos.",
                 "B) O servidor ligou para o protocolo a fim de confirmar o recebimento.",
-                "C) O servidor ligou para o protocolo afim de confirmar o recebimento.",
-                "D) Ele estava afim de terminar cedo e a fim com a equipe.",
+                "C) O servidor ligou para o protocolo afim de confirmar o recebimento do ofício.",
+                "D) Ele estava afim de terminar cedo e a fim com toda a equipe do setor jurídico.",
                 "E) As duas áreas são a fim e trabalham juntas."
             ],
             "correta": 1,
@@ -1789,11 +1789,11 @@ window.bancoDeQuestoes = {
             "id": 20048,
             "enunciado": "Assinale a alternativa correta quanto ao uso de \"acerca de\", \"a cerca de\" e \"há cerca de\":",
             "opcoes": [
-                "A) O assessor falou a cerca do novo regimento; a sede fica acerca de dois quilômetros.",
-                "B) O assessor falou acerca do regimento; a sede fica há cerca de dois quilômetros do centro.",
-                "C) O assessor falou a cerca do regimento; a sede fica há cerca de dois quilômetros.",
+                "A) O assessor falou a cerca do novo regimento; a sede fica acerca de dois quilômetros do centro da cidade.",
+                "B) O assessor falou acerca do regimento; a sede fica há cerca de dois quilômetros do centro da cidade.",
+                "C) O assessor falou a cerca do regimento; a sede fica há cerca de dois quilômetros do centro da cidade.",
                 "D) O assessor falou acerca do novo regimento; a sede fica a cerca de dois quilômetros do centro.",
-                "E) O assessor falou há cerca do novo regimento; a sede fica a cerca de dois quilômetros."
+                "E) O assessor falou há cerca do novo regimento; a sede fica a cerca de dois quilômetros do centro."
             ],
             "correta": 3,
             "comentario": "\"Acerca de\" significa \"sobre, a respeito de\". \"A cerca de\" indica distância ou tempo futuro aproximado. \"Há cerca de\" indica tempo passado aproximado (\"há cerca de dez anos\")."
@@ -1908,9 +1908,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) é indefinido e indica quantidade",
                 "B) é demonstrativo e retoma \"vereador\"",
-                "C) deveria vir acompanhado do artigo: \"cujo o projeto\"",
+                "C) deveria vir acompanhado do artigo, como em \"cujo o projeto\"",
                 "D) é relativo e indica posse, concordando com \"projeto\"",
-                "E) é interrogativo e introduz uma pergunta indireta"
+                "E) é interrogativo e introduz uma pergunta indireta sobre o projeto"
             ],
             "correta": 3,
             "comentario": "\"Cujo\" é pronome relativo que indica posse (o projeto do vereador) e concorda com o termo possuído. Nunca se usa artigo depois dele (\"cujo o\" é erro)."
@@ -2049,9 +2049,9 @@ window.bancoDeQuestoes = {
             "id": 20068,
             "enunciado": "Assinale a alternativa em que a palavra \"que\" é pronome relativo:",
             "opcoes": [
-                "A) Ele falou tanto que ficou rouco.",
-                "B) Espero que o ofício chegue hoje.",
-                "C) Que beleza de plenário!",
+                "A) Ele falou tanto durante a sessão que ficou rouco.",
+                "B) Espero que o ofício chegue hoje ao protocolo.",
+                "C) Que beleza de plenário a Câmara acabou de inaugurar!",
                 "D) O ofício que chegou ontem já foi respondido.",
                 "E) Que dia é a sessão?"
             ],
@@ -2101,11 +2101,11 @@ window.bancoDeQuestoes = {
             "id": 20072,
             "enunciado": "Na frase \"Os vereadores propuseram novas emendas\", o verbo \"propor\":",
             "opcoes": [
-                "A) deveria ser \"propuseram-se\" obrigatoriamente",
+                "A) deveria ser \"propuseram-se\" obrigatoriamente, por se tratar de verbo pronominal",
                 "B) está no presente do subjuntivo",
                 "C) está no futuro do presente",
                 "D) está corretamente conjugado no pretérito perfeito, seguindo o verbo \"pôr\"",
-                "E) deveria ser \"proporam\""
+                "E) deveria ser \"proporam\", forma regular do pretérito perfeito desse verbo"
             ],
             "correta": 3,
             "comentario": "\"Propor\" deriva de \"pôr\": eles puseram → eles propuseram. A forma \"proporam\" não existe na norma-padrão."
@@ -2115,7 +2115,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Em \"Os candidatos aprovados serão convocados\", a palavra \"aprovados\" é:",
             "opcoes": [
                 "A) um adjetivo (particípio) que caracteriza \"candidatos\"",
-                "B) um verbo no presente do indicativo",
+                "B) um verbo no presente do indicativo, concordando com \"candidatos\"",
                 "C) um advérbio de modo",
                 "D) uma conjunção",
                 "E) um substantivo abstrato"
@@ -2192,10 +2192,10 @@ window.bancoDeQuestoes = {
             "id": 20079,
             "enunciado": "Assinale a alternativa em que \"eminente\" e \"iminente\" estão empregados corretamente:",
             "opcoes": [
-                "A) O iminente jurista alertou para o risco iminente de colapso.",
+                "A) O iminente jurista alertou para o risco iminente de colapso no sistema público.",
                 "B) O eminente jurista alertou para o risco iminente de colapso no sistema.",
-                "C) O eminente jurista alertou para o risco eminente de colapso.",
-                "D) O iminente jurista alertou para o risco eminente de colapso.",
+                "C) O eminente jurista alertou para o risco eminente de colapso no sistema público.",
+                "D) O iminente jurista alertou para o risco eminente de colapso no sistema público.",
                 "E) O risco era eminente porque o jurista era iminente."
             ],
             "correta": 1,
@@ -2309,10 +2309,10 @@ window.bancoDeQuestoes = {
             "id": 20088,
             "enunciado": "Assinale a alternativa que apresenta pleonasmo vicioso, que deve ser evitado na redação oficial:",
             "opcoes": [
-                "A) Os vereadores vão encerrar a sessão.",
+                "A) Os vereadores vão encerrar a sessão às dezoito horas.",
                 "B) Os vereadores vão subir para cima do palanque.",
                 "C) Os vereadores vão subir ao palanque.",
-                "D) Os vereadores vão discutir o projeto.",
+                "D) Os vereadores vão discutir o projeto na próxima semana.",
                 "E) Os vereadores vão analisar a emenda."
             ],
             "correta": 1,
@@ -2322,11 +2322,11 @@ window.bancoDeQuestoes = {
             "id": 20089,
             "enunciado": "A palavra \"plenário\" está empregada em sentido FIGURADO em:",
             "opcoes": [
-                "A) As cadeiras do plenário foram trocadas.",
-                "B) O plenário aprovou a proposta por maioria.",
+                "A) As cadeiras do plenário foram trocadas durante o último recesso parlamentar.",
+                "B) O plenário passou por reforma e recebeu novo sistema de som e de votação.",
                 "C) A decisão foi tomada no plenário da opinião pública, nas redes sociais.",
                 "D) O plenário da Câmara estava lotado.",
-                "E) O presidente chegou ao plenário às nove horas."
+                "E) O presidente chegou ao plenário às nove horas para abrir a sessão ordinária."
             ],
             "correta": 2,
             "comentario": "Em sentido figurado, \"plenário\" não é o local ou o colegiado da Câmara, mas um espaço simbólico de debate (a opinião pública)."
@@ -2452,10 +2452,10 @@ window.bancoDeQuestoes = {
             "id": 20099,
             "enunciado": "Na frase \"Recebemos o requerimento e o encaminhamos ao setor competente\", a palavra \"competente\" significa:",
             "opcoes": [
-                "A) rápido",
+                "A) rápido no atendimento das demandas recebidas",
                 "B) agradável",
                 "C) responsável legalmente pelo assunto",
-                "D) muito habilidoso",
+                "D) muito habilidoso na execução de tarefas",
                 "E) disponível"
             ],
             "correta": 2,
@@ -2491,10 +2491,10 @@ window.bancoDeQuestoes = {
             "id": 20102,
             "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" A principal ideia defendida no texto é que:",
             "opcoes": [
-                "A) o poder público deve publicar apenas planilhas técnicas",
+                "A) o poder público deve publicar apenas planilhas técnicas, que são mais precisas e completas",
                 "B) a informação pública, além de disponível, precisa ser compreensível para o cidadão",
-                "C) a linguagem técnica aproxima o cidadão das informações",
-                "D) basta publicar os dados para garantir a transparência",
+                "C) a linguagem técnica aproxima o cidadão das informações sobre gastos, contratos e votações",
+                "D) basta publicar os dados na internet para garantir a transparência do poder público",
                 "E) a sociedade não tem interesse em acompanhar gastos"
             ],
             "correta": 1,
@@ -2504,7 +2504,7 @@ window.bancoDeQuestoes = {
             "id": 20103,
             "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" A expressão \"Ainda assim\", no início do terceiro período, introduz uma ideia de:",
             "opcoes": [
-                "A) comparação entre gastos e contratos",
+                "A) comparação entre gastos, contratos e votações públicas",
                 "B) causa da disponibilidade dos dados",
                 "C) ressalva em relação ao que foi dito antes",
                 "D) conclusão do raciocínio, sem oposição",
@@ -2518,9 +2518,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" Os dois-pontos em \"publicar dados não basta: é preciso que eles sejam compreensíveis\" introduzem:",
             "opcoes": [
                 "A) uma explicação do que foi afirmado antes",
-                "B) um vocativo",
-                "C) uma citação direta de outra pessoa",
-                "D) uma oração de finalidade",
+                "B) um vocativo dirigido diretamente ao leitor",
+                "C) uma citação direta da fala de outra pessoa",
+                "D) uma oração que expressa a finalidade da publicação",
                 "E) uma enumeração de gastos"
             ],
             "correta": 0,
@@ -2530,10 +2530,10 @@ window.bancoDeQuestoes = {
             "id": 20105,
             "enunciado": "Texto: \"A transparência não é um favor que o poder público faz ao cidadão, mas um dever. Quando as informações sobre gastos, contratos e votações ficam disponíveis, a sociedade pode acompanhar, cobrar e participar. Ainda assim, publicar dados não basta: é preciso que eles sejam compreensíveis. Planilhas confusas e linguagem técnica afastam justamente quem mais precisa da informação.\" No último período, a expressão \"quem mais precisa da informação\" refere-se, no contexto, a:",
             "opcoes": [
-                "A) vereadores da oposição",
-                "B) servidores especialistas em planilhas",
-                "C) empresas contratadas pelo poder público",
-                "D) órgãos de controle externo",
+                "A) vereadores da oposição que fiscalizam os gastos do Executivo",
+                "B) servidores especialistas em planilhas e em linguagem técnica",
+                "C) empresas contratadas pelo poder público para publicar os dados",
+                "D) órgãos de controle externo, como os tribunais de contas estaduais",
                 "E) cidadãos que dependem de informação clara para participar"
             ],
             "correta": 4,
@@ -2557,10 +2557,10 @@ window.bancoDeQuestoes = {
             "enunciado": "Texto: \"O atendimento ao público vai além de responder perguntas. Um servidor atento percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda. Essa postura reduz retornos desnecessários e fortalece a confiança na instituição.\" Segundo o texto, um bom atendimento:",
             "opcoes": [
                 "A) antecipa dúvidas e orienta o cidadão sobre os próximos passos",
-                "B) deve evitar indicar outros locais de ajuda",
-                "C) depende apenas da rapidez da resposta",
-                "D) limita-se a responder exatamente o que foi perguntado",
-                "E) aumenta a quantidade de retornos ao setor"
+                "B) deve evitar indicar outros locais de ajuda, para não confundir o cidadão",
+                "C) depende apenas da rapidez da resposta dada ao cidadão no balcão",
+                "D) limita-se a responder exatamente o que foi perguntado pelo cidadão",
+                "E) aumenta a quantidade de retornos ao setor, por gerar novas dúvidas"
             ],
             "correta": 0,
             "comentario": "O texto diz que o servidor atento \"percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda\"."
@@ -2569,11 +2569,11 @@ window.bancoDeQuestoes = {
             "id": 20108,
             "enunciado": "Texto: \"O atendimento ao público vai além de responder perguntas. Um servidor atento percebe a dúvida que o cidadão não conseguiu formular, explica os próximos passos e indica onde buscar ajuda. Essa postura reduz retornos desnecessários e fortalece a confiança na instituição.\" A expressão \"Essa postura\", no último período, retoma:",
             "opcoes": [
-                "A) a dúvida do cidadão",
-                "B) a instituição pública",
-                "C) os retornos desnecessários",
-                "D) as perguntas sem resposta",
-                "E) o comportamento atento do servidor descrito anteriormente"
+                "A) a dúvida que o cidadão não conseguiu formular sozinho",
+                "B) a instituição pública responsável pelo atendimento",
+                "C) os retornos desnecessários do cidadão ao setor público",
+                "D) as perguntas que o cidadão faz no início do atendimento",
+                "E) o comportamento atento do servidor descrito antes"
             ],
             "correta": 4,
             "comentario": "\"Essa postura\" é um mecanismo de coesão que resume o conjunto de atitudes descritas no período anterior."
@@ -2584,9 +2584,9 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) a dispensa de servidores no setor",
                 "B) o aumento do número de reclamações",
-                "C) o fim de todas as dúvidas do cidadão",
-                "D) a diminuição da necessidade de informação",
-                "E) a redução de retornos desnecessários e o aumento da confiança na instituição"
+                "C) o fim de todas as dúvidas do cidadão, que não precisará mais procurar o órgão",
+                "D) a diminuição da necessidade de informação, já que o cidadão passa a saber tudo",
+                "E) a redução de retornos desnecessários e mais confiança na instituição"
             ],
             "correta": 4,
             "comentario": "O último período afirma que a postura \"reduz retornos desnecessários e fortalece a confiança na instituição\"."
@@ -2624,7 +2624,7 @@ window.bancoDeQuestoes = {
                 "A) Como a sessão foi cancelada, a votação ficou para a próxima semana.",
                 "B) Como a sessão foi cancelada, os vereadores votaram todos os projetos da pauta naquela sessão.",
                 "C) A sessão foi cancelada; por isso, a votação foi adiada.",
-                "D) Embora a sessão tenha sido cancelada, as comissões se reuniram.",
+                "D) Embora a sessão tenha sido cancelada, as comissões permanentes se reuniram normalmente para votar os pareceres.",
                 "E) A sessão foi cancelada porque não houve quórum."
             ],
             "correta": 1,
@@ -2634,11 +2634,11 @@ window.bancoDeQuestoes = {
             "id": 20113,
             "enunciado": "Em \"O vereador apresentou a emenda. A proposta, no entanto, foi rejeitada\", o termo \"A proposta\" exerce papel de coesão por:",
             "opcoes": [
-                "A) repetição exata da palavra anterior",
-                "B) introdução de um novo assunto",
-                "C) uso de conjunção aditiva",
-                "D) substituição de \"emenda\" por uma expressão de sentido equivalente",
-                "E) elipse do verbo"
+                "A) repetição exata da palavra anterior, para evitar ambiguidade no texto",
+                "B) introdução de um novo assunto, sem relação com a frase anterior",
+                "C) uso de conjunção aditiva, que soma as duas informações do período",
+                "D) substituição de \"emenda\" por expressão de sentido equivalente",
+                "E) elipse do verbo, que fica subentendido na segunda oração do trecho"
             ],
             "correta": 3,
             "comentario": "\"A proposta\" retoma \"a emenda\" por meio de uma expressão de sentido próximo, evitando repetição. É coesão referencial por substituição."
@@ -2660,10 +2660,10 @@ window.bancoDeQuestoes = {
             "id": 20115,
             "enunciado": "Assinale a alternativa em que o termo destacado tem função de anunciar algo que ainda será dito (catáfora):",
             "opcoes": [
-                "A) O ofício chegou, e o protocolo o registrou.",
+                "A) O ofício chegou ontem, e o protocolo O registrou no mesmo dia.",
                 "B) O presidente pediu apenas ISTO: silêncio durante a votação.",
-                "C) A ata foi lida. ELA foi aprovada.",
-                "D) O presidente pediu silêncio. ISSO garantiu a ordem.",
+                "C) A ata da sessão anterior foi lida. ELA foi aprovada por unanimidade.",
+                "D) O presidente pediu silêncio absoluto. ISSO garantiu a ordem na sessão.",
                 "E) Os vereadores votaram; ELES aprovaram o projeto."
             ],
             "correta": 1,
@@ -2699,11 +2699,11 @@ window.bancoDeQuestoes = {
             "id": 20118,
             "enunciado": "O ditado \"Quem tem boca vai a Roma\" é usado para dizer que quem pergunta consegue chegar aonde quer. O sentido da frase é:",
             "opcoes": [
-                "A) literal, pois fala de uma viagem real",
-                "B) científico, pois descreve um fato comprovado",
+                "A) literal, pois fala de uma viagem real até a capital da Itália",
+                "B) científico, pois descreve um fato comprovado por pesquisas",
                 "C) figurado, pois não se refere literalmente a viajar a Roma",
-                "D) técnico, pois vem da linguagem jurídica",
-                "E) denotativo, pois é usado em dicionários"
+                "D) técnico, pois vem da linguagem jurídica usada nos tribunais",
+                "E) denotativo, pois é usado nos dicionários com seu sentido próprio"
             ],
             "correta": 2,
             "comentario": "Provérbios usam linguagem conotativa: \"ir a Roma\" representa atingir um objetivo."
@@ -2764,11 +2764,11 @@ window.bancoDeQuestoes = {
             "id": 20123,
             "enunciado": "Assinale a frase que apresenta inferência adequada a partir de: \"Desde que o sistema eletrônico foi implantado, o tempo médio de tramitação caiu pela metade.\"",
             "opcoes": [
-                "A) A quantidade de processos caiu pela metade.",
+                "A) A quantidade de processos em tramitação caiu pela metade desde a implantação.",
                 "B) A tramitação ficou mais rápida após a implantação do sistema.",
-                "C) Todos os processos passaram a tramitar em um único dia.",
+                "C) Todos os processos passaram a tramitar em um único dia útil após o protocolo.",
                 "D) O sistema eletrônico ainda não foi implantado.",
-                "E) O sistema eletrônico aumentou o tempo de tramitação."
+                "E) O sistema eletrônico aumentou o tempo médio de tramitação dos processos."
             ],
             "correta": 1,
             "comentario": "Se o tempo médio caiu pela metade, a tramitação ficou mais rápida. A frase não fala da quantidade de processos nem de um prazo de um dia."
@@ -2779,7 +2779,7 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) concorda que a política não interfere no cotidiano",
                 "B) contesta uma opinião comum, mostrando a presença da política no cotidiano",
-                "C) afirma que as creches são responsabilidade apenas das famílias",
+                "C) afirma que as creches e o transporte são responsabilidade apenas das famílias",
                 "D) critica o aumento do preço do transporte",
                 "E) defende que o transporte não depende de decisões políticas"
             ],
@@ -2790,11 +2790,11 @@ window.bancoDeQuestoes = {
             "id": 20125,
             "enunciado": "Em \"O projeto, aliás, já havia sido discutido no ano anterior\", a palavra \"aliás\" introduz:",
             "opcoes": [
-                "A) uma conclusão definitiva do texto",
-                "B) uma condição para a discussão",
-                "C) uma informação adicional que reforça ou complementa o que se diz",
-                "D) uma oposição ao que foi dito antes",
-                "E) uma finalidade do projeto"
+                "A) uma conclusão definitiva, encerrando a argumentação do texto",
+                "B) uma condição necessária para que a discussão do projeto aconteça",
+                "C) uma informação adicional que complementa o que se diz",
+                "D) uma oposição ao que foi dito anteriormente sobre o projeto",
+                "E) uma finalidade do projeto que foi discutido no ano anterior"
             ],
             "correta": 2,
             "comentario": "\"Aliás\" acrescenta uma observação complementar, muitas vezes com valor de retificação ou reforço."
@@ -2803,10 +2803,10 @@ window.bancoDeQuestoes = {
             "id": 20126,
             "enunciado": "Na oração \"Chegaram os novos computadores da Câmara\", o sujeito é:",
             "opcoes": [
-                "A) inexistente",
+                "A) inexistente, por se tratar de verbo impessoal",
                 "B) a Câmara",
                 "C) os novos computadores da Câmara",
-                "D) oculto (eles)",
+                "D) oculto (eles), identificado pela desinência verbal",
                 "E) indeterminado"
             ],
             "correta": 2,
@@ -2829,10 +2829,10 @@ window.bancoDeQuestoes = {
             "id": 20128,
             "enunciado": "Em \"Choveu muito durante a sessão\", a oração é:",
             "opcoes": [
-                "A) de sujeito composto",
-                "B) de sujeito indeterminado",
-                "C) de sujeito oculto",
-                "D) sem sujeito, pois o verbo indica fenômeno da natureza",
+                "A) de sujeito composto, formado por \"chuva\" e \"sessão\"",
+                "B) de sujeito indeterminado, com verbo na terceira pessoa",
+                "C) de sujeito oculto, identificado pela desinência do verbo",
+                "D) inexistente, por indicar fenômeno da natureza",
                 "E) de sujeito simples \"sessão\""
             ],
             "correta": 3,
@@ -2895,9 +2895,9 @@ window.bancoDeQuestoes = {
             "enunciado": "Em \"Os vereadores votaram ontem no plenário\", os termos \"ontem\" e \"no plenário\" são:",
             "opcoes": [
                 "A) adjuntos adverbiais de tempo e de lugar",
-                "B) predicativos do sujeito",
-                "C) complementos nominais",
-                "D) objetos indiretos",
+                "B) predicativos do sujeito, pois caracterizam \"os vereadores\"",
+                "C) complementos nominais do substantivo \"vereadores\"",
+                "D) objetos indiretos do verbo \"votar\", que é transitivo",
                 "E) apostos"
             ],
             "correta": 0,
@@ -2920,11 +2920,11 @@ window.bancoDeQuestoes = {
             "id": 20135,
             "enunciado": "Em \"O presidente informou que a sessão seria suspensa\", a oração destacada exerce função de:",
             "opcoes": [
-                "A) aposto do sujeito",
-                "B) predicativo do objeto",
+                "A) aposto explicativo do sujeito \"presidente\"",
+                "B) predicativo do objeto direto do verbo",
                 "C) objeto direto do verbo \"informou\"",
-                "D) sujeito do verbo \"informou\"",
-                "E) adjunto adverbial de tempo"
+                "D) sujeito oracional do verbo \"informou\"",
+                "E) adjunto adverbial de tempo da oração principal"
             ],
             "correta": 2,
             "comentario": "Informou o quê? \"Que a sessão seria suspensa\". A oração completa o verbo como objeto direto: subordinada substantiva objetiva direta."
@@ -2946,11 +2946,11 @@ window.bancoDeQuestoes = {
             "id": 20137,
             "enunciado": "Em \"O servidor estudou, mas não conseguiu a vaga\", as orações são:",
             "opcoes": [
-                "A) coordenadas, sendo a segunda conclusiva",
+                "A) coordenadas, sendo a segunda conclusiva (portanto)",
                 "B) coordenadas, sendo a segunda adversativa",
-                "C) subordinadas substantivas",
+                "C) subordinadas substantivas objetivas diretas",
                 "D) coordenadas assindéticas aditivas",
-                "E) subordinadas adverbiais concessivas"
+                "E) subordinadas adverbiais concessivas, introduzidas por \"mas\""
             ],
             "correta": 1,
             "comentario": "As orações são independentes sintaticamente (coordenadas). A segunda, iniciada por \"mas\", expressa oposição: coordenada sindética adversativa."
@@ -2959,10 +2959,10 @@ window.bancoDeQuestoes = {
             "id": 20138,
             "enunciado": "Na frase \"Os vereadores debateram, votaram, aprovaram o projeto\", as orações estão ligadas:",
             "opcoes": [
-                "A) por pronomes relativos",
-                "B) por conjunções subordinativas",
-                "C) por preposições",
-                "D) por conjunções adversativas",
+                "A) por pronomes relativos que retomam \"vereadores\"",
+                "B) por conjunções subordinativas implícitas no texto",
+                "C) por preposições que ligam os três verbos entre si",
+                "D) por conjunções adversativas subentendidas na frase",
                 "E) sem conectivos, sendo coordenadas assindéticas"
             ],
             "correta": 4,
@@ -2973,7 +2973,7 @@ window.bancoDeQuestoes = {
             "enunciado": "Em \"Terminada a sessão, os vereadores saíram\", a oração \"Terminada a sessão\" é:",
             "opcoes": [
                 "A) adjetiva explicativa desenvolvida",
-                "B) reduzida de infinitivo com valor final",
+                "B) reduzida de infinitivo com valor final (finalidade)",
                 "C) coordenada aditiva",
                 "D) substantiva objetiva direta",
                 "E) reduzida de particípio com valor temporal"
@@ -3089,9 +3089,9 @@ window.bancoDeQuestoes = {
             "id": 20148,
             "enunciado": "Assinale a alternativa em que há oração subordinada adverbial CONFORMATIVA:",
             "opcoes": [
-                "A) À medida que o regimento muda, a ata muda.",
-                "B) Embora o regimento determine, a ata não foi lida.",
-                "C) Se o regimento determinar, a ata será lida.",
+                "A) À medida que o regimento muda, a ata também muda de formato e de conteúdo.",
+                "B) Embora o regimento determine a leitura, a ata não foi lida no início da sessão.",
+                "C) Se o regimento determinar, a ata será lida no início da próxima sessão.",
                 "D) Conforme determina o regimento, a ata será lida no início da sessão.",
                 "E) Porque o regimento determina, a ata foi lida."
             ],
@@ -3154,11 +3154,11 @@ window.bancoDeQuestoes = {
         },
         {
             "id": 1003,
-            "enunciado": "Considere a afirmação falsa: 'Todos os vereadores compareceram à sessão ordinária'. Se essa afirmação é falsa, do ponto de vista da lógica formal, écorreto afirmar que:",
+            "enunciado": "Considere a afirmação falsa: 'Todos os vereadores compareceram à sessão ordinária'. Se essa afirmação é falsa, do ponto de vista da lógica formal, é correto afirmar que:",
             "opcoes": [
-                "A) Nenhum vereador compareceu à sessão ordinária.",
-                "B) Todos os vereadores faltaram à sessão ordinária.",
-                "C) Apenas o presidente da câmara compareceu à sessão.",
+                "A) Nenhum vereador compareceu à sessão ordinária daquele dia.",
+                "B) Todos os vereadores faltaram à sessão ordinária daquele dia.",
+                "C) Apenas o presidente da câmara compareceu à sessão ordinária.",
                 "D) A maioria dos vereadores faltou à sessão.",
                 "E) Pelo menos um vereador não compareceu à sessão ordinária."
             ],
@@ -3327,8 +3327,8 @@ window.bancoDeQuestoes = {
             "opcoes": [
                 "A) O candidato não estuda e não é reprovado.",
                 "B) O candidato estuda e é reprovado, ou não estuda e não é reprovado.",
-                "C) Se o candidato estuda, então ele não é reprovado.",
-                "D) O candidato estuda ou é reprovado.",
+                "C) Se o candidato estuda, então ele não é reprovado, e reciprocamente.",
+                "D) O candidato estuda ou é reprovado, podendo ocorrer as duas coisas juntas.",
                 "E) O candidato não estuda ou é reprovado."
             ],
             "correta": 1,
@@ -3628,7 +3628,7 @@ window.bancoDeQuestoes = {
                 "B) Se os candidatos estudam, o edital foi publicado.",
                 "C) O edital foi publicado e os candidatos não estudam.",
                 "D) O edital não foi publicado e os candidatos estudam.",
-                "E) Se o edital não é publicado, os candidatos não estudam."
+                "E) Se o edital não é publicado, então os candidatos não estudam."
             ],
             "correta": 0,
             "comentario": "A contraposição inverte e nega ambos os termos da condicional: Se ~Q, então ~P ('Se os candidatos não estudam, o edital não foi publicado')."
@@ -3845,10 +3845,10 @@ window.bancoDeQuestoes = {
             "id": 21001,
             "enunciado": "A negação da proposição \"O servidor é pontual e o relatório está pronto\" é:",
             "opcoes": [
-                "A) Se o servidor é pontual, então o relatório está pronto.",
-                "B) O servidor não é pontual e o relatório não está pronto.",
-                "C) O servidor é pontual ou o relatório está pronto.",
-                "D) O servidor não é pontual e o relatório está pronto.",
+                "A) Se o servidor é pontual, então o relatório está pronto também.",
+                "B) O servidor não é pontual e o relatório também não está pronto.",
+                "C) O servidor é pontual ou o relatório está pronto, ou ambos.",
+                "D) O servidor não é pontual, mas o relatório já está todo pronto.",
                 "E) O servidor não é pontual ou o relatório não está pronto."
             ],
             "correta": 4,
@@ -3910,11 +3910,11 @@ window.bancoDeQuestoes = {
             "id": 21006,
             "enunciado": "A negação de \"Todos os servidores participaram da capacitação\" é:",
             "opcoes": [
-                "A) Somente um servidor participou da capacitação.",
+                "A) Somente um servidor participou da capacitação oferecida.",
                 "B) Pelo menos um servidor não participou da capacitação.",
-                "C) Todos os servidores não participaram da capacitação.",
-                "D) Alguns servidores participaram da capacitação.",
-                "E) Nenhum servidor participou da capacitação."
+                "C) Todos os servidores deixaram de participar da capacitação.",
+                "D) Alguns servidores participaram da capacitação oferecida.",
+                "E) Nenhum servidor participou da capacitação que foi oferecida."
             ],
             "correta": 1,
             "comentario": "Para negar \"todos são\", basta mostrar que existe ao menos um que não é: \"algum não é\" ou \"pelo menos um não é\"."
@@ -4001,11 +4001,11 @@ window.bancoDeQuestoes = {
             "id": 21013,
             "enunciado": "Premissas: \"Se o relatório está pronto, a reunião ocorre\" e \"A reunião ocorreu\". Assinale a conclusão correta:",
             "opcoes": [
-                "A) A reunião não ocorreu.",
+                "A) A reunião não ocorreu, pois o relatório ainda não estava pronto naquele dia.",
                 "B) Não é possível concluir, com certeza, se o relatório está pronto.",
-                "C) A reunião ocorreria de qualquer jeito.",
-                "D) O relatório não está pronto.",
-                "E) O relatório está pronto."
+                "C) A reunião ocorreria de qualquer jeito, com ou sem o relatório pronto.",
+                "D) O relatório não está pronto, já que a condicional foi satisfeita.",
+                "E) O relatório está pronto, pois a reunião só ocorre quando ele está pronto."
             ],
             "correta": 1,
             "comentario": "Afirmar o consequente não garante o antecedente: a reunião pode ter ocorrido por outro motivo. Concluir que o relatório está pronto é uma falácia."
@@ -4015,8 +4015,8 @@ window.bancoDeQuestoes = {
             "enunciado": "Premissas: \"Todo analista legislativo é servidor público\" e \"Todo servidor público deve obedecer ao princípio da legalidade\". Conclui-se que:",
             "opcoes": [
                 "A) todo analista legislativo deve obedecer ao princípio da legalidade",
-                "B) quem obedece à legalidade é analista",
-                "C) todo servidor público é analista legislativo",
+                "B) todo aquele que obedece ao princípio da legalidade é analista legislativo",
+                "C) todo servidor público é analista legislativo e obedece à legalidade",
                 "D) alguns analistas não são servidores públicos",
                 "E) nenhum servidor público é analista"
             ],
@@ -4027,11 +4027,11 @@ window.bancoDeQuestoes = {
             "id": 21015,
             "enunciado": "Premissas: \"Todos os agentes do setor fizeram o curso\" e \"Carlos fez o curso\". Pode-se concluir que:",
             "opcoes": [
-                "A) Carlos é agente do setor",
-                "B) todos os que fizeram o curso são agentes",
-                "C) nenhum agente fez o curso",
+                "A) Carlos certamente é agente do setor, pois fez o curso",
+                "B) todos os que fizeram o curso são, necessariamente, agentes do setor",
+                "C) nenhum agente do setor fez o curso, com exceção de Carlos",
                 "D) não é possível afirmar que Carlos é agente do setor",
-                "E) Carlos não é agente do setor"
+                "E) Carlos não é agente do setor, pois não foi citado entre eles"
             ],
             "correta": 3,
             "comentario": "O conjunto dos que fizeram o curso pode ser maior que o dos agentes. Carlos pode estar nele sem ser agente."
@@ -4044,7 +4044,7 @@ window.bancoDeQuestoes = {
                 "B) é sempre verdadeira, quaisquer que sejam os valores das proposições simples",
                 "C) não tem valor lógico definido",
                 "D) é sempre falsa",
-                "E) é verdadeira somente quando todas as simples são verdadeiras"
+                "E) é verdadeira somente quando todas as proposições simples que a compõem são verdadeiras"
             ],
             "correta": 1,
             "comentario": "Exemplo de tautologia: \"p ou não p\". A contradição é sempre falsa (\"p e não p\")."
@@ -4066,10 +4066,10 @@ window.bancoDeQuestoes = {
             "id": 21018,
             "enunciado": "A bicondicional \"A lei é aprovada se e somente se tem maioria dos votos\" é verdadeira quando:",
             "opcoes": [
-                "A) as duas têm valores diferentes",
+                "A) as duas proposições têm valores lógicos diferentes",
                 "B) as duas proposições têm o mesmo valor lógico",
                 "C) apenas a primeira é verdadeira",
-                "D) a primeira é falsa e a segunda é verdadeira",
+                "D) a primeira é falsa e a segunda é verdadeira, ou vice-versa",
                 "E) apenas a segunda é verdadeira"
             ],
             "correta": 1,
@@ -4092,9 +4092,9 @@ window.bancoDeQuestoes = {
             "id": 21020,
             "enunciado": "Qual das frases a seguir é uma PROPOSIÇÃO lógica (tem valor verdadeiro ou falso)?",
             "opcoes": [
-                "A) Que belo plenário!",
+                "A) Que belo plenário tem a nossa Câmara!",
                 "B) Rio Branco é a capital do Acre.",
-                "C) Que horas começa a sessão?",
+                "C) Que horas começa a sessão de hoje?",
                 "D) x + 3 = 10",
                 "E) Entregue o ofício hoje."
             ],
@@ -4209,10 +4209,10 @@ window.bancoDeQuestoes = {
             "id": 21029,
             "enunciado": "Considere: \"Todos os vereadores são eleitores\" e \"Alguns eleitores são servidores públicos\". Com base apenas nessas afirmações, é correto concluir que:",
             "opcoes": [
-                "A) nenhum vereador é servidor público",
+                "A) nenhum vereador é servidor público, pois são grupos totalmente distintos",
                 "B) todo eleitor é vereador",
-                "C) algum vereador é servidor público",
-                "D) todo servidor público é eleitor",
+                "C) algum vereador é servidor público, pois ambos fazem parte dos eleitores",
+                "D) todo servidor público é eleitor, assim como todos os vereadores",
                 "E) não se pode garantir que algum vereador seja servidor público"
             ],
             "correta": 4,
@@ -4352,9 +4352,9 @@ window.bancoDeQuestoes = {
             "id": 21040,
             "enunciado": "Em uma comissão, todo membro titular é vereador, e nenhum vereador é servidor efetivo da Câmara. Logo:",
             "opcoes": [
-                "A) algum membro titular é servidor efetivo",
+                "A) algum membro titular pode ser servidor efetivo da Câmara",
                 "B) todo vereador é membro titular",
-                "C) algum servidor efetivo é vereador",
+                "C) algum servidor efetivo da Câmara é vereador e membro titular",
                 "D) nenhum membro titular é servidor efetivo da Câmara",
                 "E) todo servidor efetivo é membro titular"
             ],
@@ -4522,10 +4522,10 @@ window.bancoDeQuestoes = {
             "enunciado": "A afirmação \"Não é verdade que o servidor faltou e chegou atrasado\" é equivalente a:",
             "opcoes": [
                 "A) O servidor não faltou ou não chegou atrasado.",
-                "B) O servidor faltou e não chegou atrasado.",
-                "C) O servidor faltou ou chegou atrasado.",
-                "D) O servidor não faltou e não chegou atrasado.",
-                "E) Se o servidor faltou, ele chegou atrasado."
+                "B) O servidor faltou, mas não chegou atrasado naquele dia.",
+                "C) O servidor faltou ou chegou atrasado, mas não ambos.",
+                "D) O servidor não faltou e também não chegou atrasado.",
+                "E) Se o servidor faltou, então ele também chegou atrasado."
             ],
             "correta": 0,
             "comentario": "Pela Lei de De Morgan: não (p e q) é equivalente a (não p) ou (não q)."
