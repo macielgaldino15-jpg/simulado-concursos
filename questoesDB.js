@@ -12837,13 +12837,13 @@ window.bancoDeQuestoes = {
             "enunciado": "O processo legislativo ordinário, seguindo o modelo da Constituição Federal aplicado aos Municípios, compreende, em ordem, as fases de:",
             "opcoes": [
                 "A) iniciativa, discussão e votação, sanção ou veto, promulgação e publicação",
-                "B) publicação, iniciativa, votação, sanção e discussão",
-                "C) sanção, discussão, iniciativa, votação e promulgação",
-                "D) votação, iniciativa, publicação, discussão e veto",
-                "E) promulgação, publicação, iniciativa, veto e votação"
+                "B) iniciativa, sanção ou veto, discussão e votação, promulgação e publicação",
+                "C) discussão e votação, iniciativa, sanção ou veto, promulgação e publicação",
+                "D) iniciativa, discussão e votação, promulgação, sanção ou veto e publicação",
+                "E) iniciativa, discussão e votação, sanção ou veto, publicação e promulgação"
             ],
             "correta": 0,
-            "comentario": "O projeto nasce com a iniciativa, é discutido e votado, segue para sanção ou veto do chefe do Executivo e, depois, é promulgado e publicado."
+            "comentario": "O projeto nasce com a iniciativa, é discutido e votado, segue para sanção ou veto do chefe do Executivo e, depois, é promulgado e publicado. Atenção à ordem final: a promulgação (que atesta a existência da lei) vem antes da publicação (que a torna obrigatória), e a sanção ou veto só ocorre depois da votação."
         },
         {
             "id": 25024,
@@ -12992,14 +12992,14 @@ window.bancoDeQuestoes = {
             "id": 25035,
             "enunciado": "Uma votação por maioria SIMPLES (ou relativa) exige:",
             "opcoes": [
-                "A) o voto de mais da metade de todos os membros da Câmara",
+                "A) o voto favorável da maioria absoluta dos membros da Câmara, independentemente do número de presentes",
                 "B) o voto favorável da maioria dos Vereadores presentes, estando presente a maioria absoluta dos membros",
-                "C) a unanimidade dos presentes",
-                "D) o voto de dois terços dos membros",
-                "E) o voto de todos os membros da Mesa"
+                "C) o voto favorável de dois terços dos Vereadores presentes, estando presente a maioria absoluta dos membros",
+                "D) o voto favorável da maioria dos Vereadores presentes, qualquer que seja o número de presentes na sessão",
+                "E) o voto favorável da maioria absoluta dos Vereadores presentes, estando presente um terço dos membros"
             ],
             "correta": 1,
-            "comentario": "Na maioria simples, conta-se a maioria dos presentes, desde que haja quórum para deliberar (presença da maioria absoluta dos membros)."
+            "comentario": "Na maioria simples (ou relativa), conta-se a maioria dos presentes, desde que haja quórum para deliberar: a presença da maioria absoluta dos membros. A maioria absoluta é calculada sobre o total de membros da Casa, e não sobre os presentes; dois terços é quórum qualificado."
         },
         {
             "id": 25036,
@@ -13018,14 +13018,14 @@ window.bancoDeQuestoes = {
             "id": 25037,
             "enunciado": "Nas Casas Legislativas, as comissões permanentes têm como função principal:",
             "opcoes": [
-                "A) julgar processos judiciais",
-                "B) executar as obras públicas",
-                "C) sancionar os projetos aprovados",
+                "A) votar em caráter definitivo todos os projetos de lei, dispensando sempre a deliberação do Plenário",
+                "B) julgar as contas anuais do Prefeito em caráter definitivo, sem necessidade de votação em Plenário",
+                "C) sancionar ou vetar as proposições aprovadas, antes do envio delas ao chefe do Poder Executivo",
                 "D) analisar e emitir parecer sobre as proposições de sua área antes da deliberação do Plenário",
-                "E) nomear os Secretários Municipais"
+                "E) investigar fato determinado por prazo certo, com poderes de investigação próprios das autoridades judiciais"
             ],
             "correta": 3,
-            "comentario": "As comissões fazem o exame técnico das matérias (constitucionalidade, mérito, finanças) e emitem pareceres que orientam o Plenário."
+            "comentario": "As comissões permanentes fazem o exame técnico das matérias (constitucionalidade, mérito, finanças) e emitem pareceres que orientam o Plenário. Investigar fato determinado por prazo certo é papel da CPI, que é comissão temporária; o julgamento das contas do Prefeito cabe ao Plenário; e sancionar ou vetar é ato do Executivo."
         },
         {
             "id": 25038,
@@ -13461,13 +13461,13 @@ window.bancoDeQuestoes = {
             "enunciado": "A Lei nº 8.159/1991 define GESTÃO DE DOCUMENTOS como o conjunto de procedimentos e operações técnicas referentes à:",
             "opcoes": [
                 "A) produção, tramitação, uso, avaliação e arquivamento em fase corrente e intermediária, visando à eliminação ou ao recolhimento para guarda permanente",
-                "B) venda de documentos sem valor",
-                "C) divulgação de documentos em redes sociais",
-                "D) apenas digitalização dos documentos antigos",
-                "E) restauração de documentos danificados"
+                "B) produção, tramitação e arquivamento em fase permanente, visando à eliminação dos documentos de valor histórico e probatório",
+                "C) avaliação e eliminação dos documentos em fase permanente, visando à redução do acervo e à liberação de espaço físico",
+                "D) digitalização e microfilmagem do acervo em fase corrente, visando à substituição obrigatória dos documentos originais",
+                "E) guarda, conservação e restauração dos documentos em fase permanente, visando exclusivamente à pesquisa histórica"
             ],
             "correta": 0,
-            "comentario": "O art. 3º define gestão de documentos abrangendo todo o ciclo, da produção à destinação final."
+            "comentario": "O art. 3º da Lei nº 8.159/1991 define gestão de documentos como o conjunto de procedimentos e operações técnicas referentes à produção, tramitação, uso, avaliação e arquivamento em fase corrente e intermediária, visando à eliminação ou ao recolhimento para guarda permanente. Documentos de valor permanente não são eliminados, e a digitalização, por si só, não autoriza descartar os originais."
         },
         {
             "id": 25072,
@@ -14253,14 +14253,14 @@ window.bancoDeQuestoes = {
             "id": 25132,
             "enunciado": "Ao organizar a agenda de um gabinete, uma boa prática é:",
             "opcoes": [
-                "A) não informar o local dos compromissos",
+                "A) registrar apenas os compromissos externos, deixando as reuniões internas para confirmação verbal no próprio dia",
                 "B) registrar compromissos com data, horário, local, participantes e assunto, confirmando-os com antecedência",
-                "C) anotar apenas o nome do visitante",
-                "D) marcar vários compromissos no mesmo horário",
-                "E) confirmar os compromissos somente depois que acontecerem"
+                "C) registrar compromissos com data e horário, deixando local e participantes para serem definidos no momento do encontro",
+                "D) agendar os compromissos em sequência, sem intervalos entre eles, para aproveitar ao máximo o tempo da autoridade",
+                "E) registrar compromissos com data, horário e assunto, confirmando-os apenas quando houver pedido de alteração"
             ],
             "correta": 1,
-            "comentario": "Uma agenda completa e confirmada evita conflitos de horário e garante a preparação adequada para cada compromisso."
+            "comentario": "Uma agenda completa (data, horário, local, participantes e assunto) e confirmada com antecedência evita conflitos e garante a preparação para cada compromisso. Deixar informações para depois, não prever intervalos ou confirmar só quando há mudança são falhas comuns de organização."
         },
         {
             "id": 25133,
@@ -15488,14 +15488,14 @@ window.bancoDeQuestoes = {
             "id": 25227,
             "enunciado": "Segundo a Lei nº 1.794/2009, o servidor que, injustificadamente, se recusar a ser submetido a inspeção médica determinada pela autoridade competente será punido com:",
             "opcoes": [
-                "A) suspensão de 90 dias, sem possibilidade de cessar",
+                "A) suspensão de até 30 dias, cessando os efeitos da penalidade quando cumprida a determinação",
                 "B) suspensão de até 15 dias, cessando os efeitos da penalidade quando cumprida a determinação",
-                "C) advertência verbal apenas",
-                "D) demissão",
-                "E) cassação da aposentadoria"
+                "C) advertência por escrito, convertida em suspensão de até 15 dias em caso de nova recusa",
+                "D) suspensão de até 15 dias, mantidos os efeitos da penalidade mesmo após cumprida a determinação",
+                "E) suspensão de 15 a 30 dias, cessando os efeitos da penalidade quando cumprida a determinação"
             ],
             "correta": 1,
-            "comentario": "O art. 120, § 1º, prevê suspensão de até 15 dias nessa hipótese."
+            "comentario": "O art. 120, § 1º, da Lei nº 1.794/2009 prevê suspensão de até 15 dias para o servidor que, injustificadamente, se recusar à inspeção médica, cessando os efeitos da penalidade assim que ele cumprir a determinação. Atenção aos detalhes que a banca costuma trocar: o prazo (até 15 dias) e a cessação dos efeitos."
         },
         {
             "id": 25228,
