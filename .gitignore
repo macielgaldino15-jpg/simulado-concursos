@@ -1,3 +1,4 @@
 .dados-locais.json
 node_modules/
 .depoimentos-locais.json
+.indicacoes-locais.json

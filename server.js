@@ -47,6 +47,7 @@ const armazenamento = SUPABASE_URL && SUPABASE_KEY ? criarSupabase() : criarArqu
 function criarSupabase() {
   const base = `${SUPABASE_URL}/rest/v1/usuarios`;
   const baseDep = `${SUPABASE_URL}/rest/v1/depoimentos`;
+  const baseInd = `${SUPABASE_URL}/rest/v1/indicacoes`;
   const cab = { apikey: SUPABASE_KEY, 'Content-Type': 'application/json' };
   if (SUPABASE_KEY.startsWith('eyJ')) cab.Authorization = `Bearer ${SUPABASE_KEY}`; // chaves antigas (JWT)
   async function req(url, opcoes = {}) {
@@ -81,6 +82,12 @@ function criarSupabase() {
       },
       async listar() { return req(`${baseDep}?nota=not.is.null&select=*&order=criado_em.desc&limit=1000`); },
       async aprovados() { return req(`${baseDep}?aprovado=is.true&autoriza=is.true&select=nome,cidade,concurso,texto,criado_em&order=aprovado_em.desc&limit=${MAX_DEPOIMENTOS_SITE}`); },
+    },
+    indicacoes: {
+      async registrar(ref, tipo, ip_hash) {
+        await req(baseInd, { method: 'POST', headers: { Prefer: 'resolution=ignore-duplicates,return=minimal' }, body: JSON.stringify({ ref, tipo, ip_hash }) });
+      },
+      async listar(ref) { return req(`${baseInd}?ref=eq.${encodeURIComponent(ref)}&select=tipo,ip_hash&limit=200`); },
     },
   };
 }
@@ -130,6 +137,16 @@ function criarArquivoLocal() {
           .map(({ nome, cidade, concurso, texto, criado_em }) => ({ nome, cidade, concurso, texto, criado_em }));
       },
     },
+    indicacoes: {
+      async registrar(ref, tipo, ip_hash) {
+        const arqInd = path.join(RAIZ, '.indicacoes-locais.json');
+        let l = []; try { l = JSON.parse(fs.readFileSync(arqInd, 'utf8')); } catch {}
+        if (!l.some(x => x.ref === ref && x.tipo === tipo && x.ip_hash === ip_hash)) { l.push({ ref, tipo, ip_hash, criado_em: new Date().toISOString() }); fs.writeFileSync(arqInd, JSON.stringify(l, null, 2)); }
+      },
+      async listar(ref) {
+        try { return JSON.parse(fs.readFileSync(path.join(RAIZ, '.indicacoes-locais.json'), 'utf8')).filter(x => x.ref === ref); } catch { return []; }
+      },
+    },
   };
 }
 
@@ -138,6 +155,7 @@ const normEmail = e => String(e || '').trim().toLowerCase();
 const soDigitos = s => String(s || '').replace(/\D/g, '');
 const sha256 = s => crypto.createHash('sha256').update(s).digest('hex');
 const novoToken = () => crypto.randomBytes(32).toString('base64url');
+const hashIp = ip => sha256('indicacao:' + ip).slice(0, 32); // guarda só um resumo do IP, nunca o IP
 
 function iguais(a, b) {
   const x = Buffer.from(String(a)), y = Buffer.from(String(b));
@@ -266,6 +284,30 @@ async function rotear(req, res) {
     return enviarArquivo(res, PUBLICOS[rota], false);
   }
   if (metodo === 'GET' && rota === '/saude') return json(res, 200, { ok: true });
+
+  // ---------- Simulado grátis: indicação de amigos ----------
+  // Cada visitante tem um código. Quando um amigo abre o link com esse código, em outra conexão (IP diferente
+  // do dono do link), conta uma indicação. Cada indicação libera mais 10 questões grátis (no máximo 2).
+  if (rota === '/api/gratis/visita' && metodo === 'POST') {
+    const ip = ipDe(req), chave = 'gratisvis:' + ip;
+    if (excedeu(chave, 30)) return json(res, 429, { erro: 'Muitas tentativas.' });
+    registrarFalha(chave);
+    const { ref } = await lerJson(req);
+    if (!/^[a-z0-9]{10}$/.test(String(ref || ''))) return json(res, 400, { erro: 'Código inválido.' });
+    try { await armazenamento.indicacoes.registrar(ref, 'visita', hashIp(ip)); return json(res, 200, { ok: true }); }
+    catch (e) { console.error('indicacao/visita', e.message); return json(res, 503, { erro: 'Indisponível agora.' }); }
+  }
+  if (rota === '/api/gratis/indicacoes' && metodo === 'GET') {
+    const ref = String(url.searchParams.get('ref') || '');
+    if (!/^[a-z0-9]{10}$/.test(ref)) return json(res, 400, { erro: 'Código inválido.' });
+    try {
+      await armazenamento.indicacoes.registrar(ref, 'dono', hashIp(ipDe(req)));
+      const linhas = await armazenamento.indicacoes.listar(ref);
+      const donos = new Set(linhas.filter(l => l.tipo === 'dono').map(l => l.ip_hash));
+      const amigos = new Set(linhas.filter(l => l.tipo === 'visita' && !donos.has(l.ip_hash)).map(l => l.ip_hash)).size;
+      return json(res, 200, { amigos, liberadas: Math.min(2, amigos) });
+    } catch (e) { console.error('indicacao/listar', e.message); return json(res, 503, { erro: 'Indisponível agora.' }); }
+  }
 
   // ---------- Link curto da bio do Instagram ----------
   // Aluno (logado ou que já entrou neste navegador) vai para o simulado/login; visitante vai para a página de vendas, marcado como vindo da bio
