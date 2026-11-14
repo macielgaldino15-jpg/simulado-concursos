@@ -110,6 +110,7 @@ fbq('track', 'PageView');
     ['pc', '🕵️', 'Polícia Civil', 'Penal, Processo Penal e Constitucional']
   ];
   var INSTA = 'simulado.aprova';
+  var QTD = { cmrb: '1.212', prf: '550', adm: '901', pet: '500', pc: '100' };
   var $ = function (id) { return document.getElementById(id); };
   var esc = function (t) { var d = document.createElement('div'); d.textContent = String(t == null ? '' : t); return d.innerHTML.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>'); };
   var params = new URLSearchParams(location.search);
@@ -172,8 +173,7 @@ fbq('track', 'PageView');
     var msg = s >= 8 ? ['Mandou muito bem!', 'Você está no caminho. Agora o desafio é manter esse ritmo numa prova completa, com tempo e com os pesos do edital.']
             : s >= 6 ? ['Bom resultado', 'Você acertou a maior parte, mas ' + (n - s) + ' erros em 10 questões, numa prova real, podem custar a vaga.']
             : ['Agora você sabe onde focar', 'Errar aqui é bom: é treino. Veja nas explicações o que caiu e revise esses assuntos antes da prova.'];
-    var camara = st.k === 'cmrb';
-    var conheca = '/conheca?' + new URLSearchParams({ modo: camara ? 'camara' : 'geral', utm_source: params.get('utm_source') || 'instagram', utm_medium: params.get('utm_medium') || 'dm', utm_campaign: 'gratis', utm_content: st.k }).toString();
+    var conheca = '/conheca?' + new URLSearchParams({ modo: 'geral', utm_source: params.get('utm_source') || 'instagram', utm_medium: params.get('utm_medium') || 'dm', utm_campaign: 'gratis', utm_content: st.k }).toString();
     app.innerHTML = '<div class="res">' +
       '<div class="ring"><svg viewBox="0 0 132 132" width="132" height="132" aria-hidden="true"><circle cx="66" cy="66" r="56" fill="none" stroke="#E3E7F0" stroke-width="12"/>' +
       '<circle id="arc" cx="66" cy="66" r="56" fill="none" stroke="' + cor + '" stroke-width="12" stroke-linecap="round" stroke-dasharray="' + C + '" stroke-dashoffset="' + C + '" style="transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1)"/></svg><b>' + s + '/' + n + '</b></div>' +
@@ -181,8 +181,9 @@ fbq('track', 'PageView');
       '<div class="mini">' + st.hist.map(function (ok, i) { return '<span style="background:' + (ok ? '#15803D' : '#DC2626') + '">' + (i + 1) + '</span>'; }).join('') + '</div>' +
       '<a class="btn ig" id="seguir" href="https://www.instagram.com/' + INSTA + '/" target="_blank" rel="noopener">Seguir @' + INSTA + '</a><p class="muted" style="margin-top:8px;font-size:13px">Questões novas toda semana no perfil</p>' +
       '<button type="button" class="btn cl" id="compart">Desafiar um amigo</button>' +
-      '<div class="box"><div class="h3">Quer treinar com a prova inteira?</div>' +
-      '<p>' + (camara ? '1.212 questões da Câmara de Rio Branco no formato do edital IDIB, com nota pelos pesos e o critério de aprovação.' : '3.263 questões de 5 concursos, no formato do edital, com cronômetro e relatório por matéria.') + ' Pagamento único, acesso vitalício.</p>' +
+      '<div class="box"><div class="h3">3.263 questões comentadas em um só acesso</div>' +
+      '<p>PRF Policial, PRF Agente Administrativo, Petrobras, Polícia Civil e Câmara de Rio Branco. Provas completas no formato de cada edital, com cronômetro e relatório por matéria.</p>' +
+      '<p><b style="color:#F5B800">' + QTD[st.k] + ' questões</b> só de ' + nomeDe(st.k) + '. Pagamento único, acesso vitalício.</p>' +
       '<a class="btn amar" id="completo" href="' + conheca + '">Conhecer o simulado completo</a></div>' +
       '<button type="button" class="linkbtn" id="outro">Fazer com outro concurso</button></div>';
     requestAnimationFrame(function () { requestAnimationFrame(function () { var a = $('arc'); if (a) a.style.strokeDashoffset = C * (1 - s / n); }); });
